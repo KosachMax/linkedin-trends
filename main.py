@@ -1,0 +1,169 @@
+"""
+LinkedIn Trends Aggregator + World News
+Запуск: python main.py [--mode tech|news|all]
+"""
+import os
+import sys
+import argparse
+from pathlib import Path
+from datetime import date
+from dotenv import load_dotenv
+
+load_dotenv()
+
+sys.path.insert(0, str(Path(__file__).parent))
+
+import config
+from collectors import reddit, hackernews, devto
+from collectors import rss_news, guardian_news
+from analyzer.llm_analyzer import analyze as analyze_tech
+from analyzer.news_analyzer import analyze as analyze_news
+from output.obsidian_writer import save as save_tech
+from output.news_writer import save as save_news
+from output.html_writer import write_index
+from config import SOURCES
+
+
+def collect_tech() -> list:
+    all_posts = []
+
+    if SOURCES["reddit"]["enabled"]:
+        print("\n📥 Reddit...")
+        posts = reddit.collect()
+        print(f"  Итого: {len(posts)} постов")
+        all_posts.extend(posts)
+
+    if SOURCES["hackernews"]["enabled"]:
+        print("\n📥 Hacker News...")
+        posts = hackernews.collect()
+        print(f"  Итого: {len(posts)} постов")
+        all_posts.extend(posts)
+
+    if SOURCES["devto"]["enabled"]:
+        print("\n📥 Dev.to...")
+        posts = devto.collect()
+        print(f"  Итого: {len(posts)} постов")
+        all_posts.extend(posts)
+
+    return all_posts
+
+
+def deduplicate(posts: list) -> list:
+    seen: set[str] = set()
+    unique = []
+    for p in posts:
+        if p.url not in seen:
+            seen.add(p.url)
+            unique.append(p)
+    return unique
+
+
+def sort_by_engagement(posts: list) -> list:
+    return sorted(posts, key=lambda p: p.score + p.comments * 2, reverse=True)
+
+
+def collect_news() -> list:
+    all_items = []
+
+    print("\n📡 RSS feeds...")
+    all_items.extend(rss_news.collect())
+
+    print("\n📰 The Guardian...")
+    all_items.extend(guardian_news.collect())
+
+    seen: set[str] = set()
+    unique = []
+    for item in all_items:
+        if item.url not in seen:
+            seen.add(item.url)
+            unique.append(item)
+    return unique
+
+
+def run_tech(vault_path: str):
+    print(f"\n{'='*50}")
+    print(f"🚀 Tech Pipeline — {date.today()}")
+    print(f"{'='*50}")
+
+    try:
+        all_posts = collect_tech()
+        all_posts = deduplicate(all_posts)
+        all_posts = sort_by_engagement(all_posts)
+        print(f"\n✅ Всего уникальных постов: {len(all_posts)}")
+
+        if not all_posts:
+            print("❌ Нет постов для анализа.")
+            return
+
+        print("\n🧠 Анализ через Gemini API...")
+        result = analyze_tech(all_posts)
+        result["total_posts_analyzed"] = len(all_posts)
+
+        print(f"\n💾 Сохранение...")
+        filepath = save_tech(result, all_posts, vault_path)
+        print(f"✅ Файл создан: {filepath}")
+
+        clusters = result.get("clusters", [])
+        print(f"\n📊 Топ-3 темы дня:")
+        for c in clusters[:3]:
+            print(f"  {c['rank']}. {c['topic']} (engagement: {c.get('total_engagement', 0):,})")
+
+    except Exception as e:
+        print(f"❌ Tech pipeline failed: {e}")
+
+
+def run_news(vault_path: str):
+    print(f"\n{'='*50}")
+    print(f"🌍 News Pipeline — {date.today()}")
+    print(f"{'='*50}")
+
+    try:
+        all_items = collect_news()
+        print(f"\n✅ Всего уникальных новостей: {len(all_items)}")
+
+        if not all_items:
+            print("❌ Нет новостей для анализа.")
+            return
+
+        print("\n🧠 Анализ через Gemini API...")
+        result = analyze_news(all_items)
+
+        print(f"\n💾 Сохранение...")
+        filepath = save_news(result, all_items, vault_path)
+        print(f"✅ Файл создан: {filepath}")
+
+        clusters = result.get("clusters", [])
+        print(f"\n📊 Топ-3 новости дня:")
+        for c in clusters[:3]:
+            print(f"  {c['rank']}. {c['topic']} (significance: {c.get('significance', '?')}/10)")
+
+    except Exception as e:
+        print(f"❌ News pipeline failed: {e}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Daily digest aggregator")
+    parser.add_argument(
+        "--mode",
+        choices=["tech", "news", "all"],
+        default="all",
+        help="Which pipeline to run (default: all)",
+    )
+    args = parser.parse_args()
+
+    vault_path = os.environ.get("OBSIDIAN_VAULT_PATH", "./output/vault")
+
+    if args.mode in ("tech", "all"):
+        run_tech(vault_path)
+
+    if args.mode in ("news", "all"):
+        run_news(vault_path)
+
+    if config.OUTPUT_MODE == "github":
+        print("\n🌐 Генерация index.html...")
+        index_path = write_index(config.DOCS_PATH)
+        print(f"✅ index.html: {index_path}")
+
+
+if __name__ == "__main__":
+    main()

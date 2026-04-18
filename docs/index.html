@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Trends</title>
+<style>
+:root {
+  --bg: #0d1117; --bg2: #161b22; --border: #30363d;
+  --text: #c9d1d9; --muted: #8b949e; --blue: #58a6ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; line-height: 1.6; padding: 2rem 1rem; }
+.page { max-width: 860px; margin: 0 auto; }
+h1 { color: var(--blue); font-size: 2rem; border-bottom: 1px solid var(--border); padding-bottom: .6rem; margin-bottom: .4rem; }
+.subtitle { color: var(--muted); font-size: .9rem; margin-bottom: 2.5rem; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 600px) { .columns { grid-template-columns: 1fr; } }
+.col h2 { font-size: 1.2rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: .4rem; }
+.col h2.tech { color: #ff7b72; }
+.col h2.news { color: #3fb950; }
+.date-list { list-style: none; padding: 0; }
+.date-list li { display: flex; align-items: center; padding: .3rem 0; border-bottom: 1px solid var(--border); }
+.date-list li:last-child { border-bottom: none; }
+.date-list a { color: var(--blue); text-decoration: none; font-family: monospace; font-size: .95rem; flex: 1; }
+.date-list a:hover { text-decoration: underline; }
+.date-list .new { background: #388bfd22; color: var(--blue); font-size: .7rem; padding: .1rem .4rem; border-radius: 4px; margin-left: .5rem; border: 1px solid #388bfd44; }
+.empty { color: var(--muted); font-size: .9rem; }
+.footer { margin-top: 3rem; color: var(--muted); font-size: .8rem; border-top: 1px solid var(--border); padding-top: .8rem; }
+</style>
+</head>
+<body>
+<div class="page">
+<h1>📊 Daily Trends</h1>
+<p class="subtitle">Автоматический дайджест — tech тренды и мировые новости</p>
+<div class="columns">
+  <div class="col">
+    <h2 class="tech">🚀 Tech Trends</h2>
+    <ul class="date-list"><li><a href="tech/2026-04-19.html">2026-04-19</a> <span class="new">new</span></li></ul>
+  </div>
+  <div class="col">
+    <h2 class="news">🌍 World News</h2>
+    <ul class="date-list"><li><a href="news/2026-04-19.html">2026-04-19</a> <span class="new">new</span></li></ul>
+  </div>
+</div>
+<div class="footer">Обновляется ежедневно в 09:00 МСК &middot; 2026-04-19</div>
+</div>
+</body>
+</html>
