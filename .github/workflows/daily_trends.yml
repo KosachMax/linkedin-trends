@@ -2,8 +2,8 @@ name: Daily Trends
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # UTC 06:00 = Moscow 09:00
-  workflow_dispatch:        # manual run button in GitHub UI
+    - cron: '30 5 * * *'   # UTC 05:30 = Moscow 08:30
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -33,10 +33,5 @@ jobs:
           OUTPUT_MODE: github
         run: python main.py --mode all
 
-      - name: Commit and push docs
-        run: |
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
-          git add docs/
-          git diff --staged --quiet || git commit -m "Daily trends $(date +%Y-%m-%d)"
-          git push
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force --clean

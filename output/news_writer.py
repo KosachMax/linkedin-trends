@@ -5,7 +5,7 @@ import requests
 from datetime import date
 from pathlib import Path
 import config
-from output.html_writer import md_to_html
+from output.html_writer import prepare_for_mkdocs
 
 GEO_FLAGS = {
     "USA": "🇺🇸", "US": "🇺🇸", "United States": "🇺🇸", "America": "🇺🇸",
@@ -140,13 +140,8 @@ def save(data: dict, items: list, vault_path: str) -> Path:
         output_dir = Path(config.DOCS_PATH) / "news"
         output_dir.mkdir(parents=True, exist_ok=True)
         md_path = output_dir / f"{today}.md"
-        md_path.write_text(md_content, encoding="utf-8")
-        html_path = output_dir / f"{today}.html"
-        html_path.write_text(
-            md_to_html(md_content, f"World News {today}"),
-            encoding="utf-8",
-        )
-        return html_path
+        md_path.write_text(prepare_for_mkdocs(md_content), encoding="utf-8")
+        return md_path
     else:
         output_dir = Path(vault_path)
         output_dir.mkdir(parents=True, exist_ok=True)
