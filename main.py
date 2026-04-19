@@ -114,7 +114,7 @@ def run_tech(vault_path: str):
         return None
 
 
-def run_news(vault_path: str, rates_delta: dict | None = None):
+def run_news(vault_path: str, rates_delta=None):
     print(f"\n{'='*50}")
     print(f"🌍 News Pipeline — {date.today()}")
     print(f"{'='*50}")

@@ -55,7 +55,7 @@ def _render_currency_block(rates_delta: dict, today: str) -> list[str]:
     return lines
 
 
-def render(data: dict, item_count: int, rates_delta: dict = None) -> str:
+def render(data: dict, item_count: int, rates_delta=None) -> str:
     today = date.today().strftime("%Y-%m-%d")
     clusters = data.get("clusters", [])
 
@@ -153,7 +153,7 @@ def render(data: dict, item_count: int, rates_delta: dict = None) -> str:
     return "\n".join(lines)
 
 
-def save(data: dict, items: list, vault_path: str, rates_delta: dict = None) -> Path:
+def save(data: dict, items: list, vault_path: str, rates_delta=None) -> Path:
     today = date.today().strftime("%Y-%m-%d")
     md_content = render(data, len(items), rates_delta=rates_delta)
 
