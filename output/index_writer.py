@@ -36,13 +36,16 @@ def generate_index(docs_path: str, tech_data: dict = None, news_data: dict = Non
 
     tech_block = _build_tech_callout(tech_cache, today)
     news_block = _build_news_callout(news_cache, today)
+    currency_line = _build_currency_line()
     archive_rows = _build_archive_rows(all_dates[:30], tech_dates, news_dates)
     all_rows = _build_archive_rows(all_dates, tech_dates, news_dates)
+
+    currency_section = f"\n{currency_line}\n" if currency_line else ""
 
     index_content = f"""---
 title: Daily Trends
 ---
-
+{currency_section}
 {tech_block}
 
 {news_block}
@@ -107,6 +110,30 @@ def _build_news_callout(data: dict, today: str) -> str:
         lines.append(f"> - {marker} **{c['topic']}** — {sig}/10")
     lines += [">", f"> [[news/{today}|Читать полный отчёт →]]"]
     return "\n".join(lines)
+
+
+def _build_currency_line() -> str:
+    try:
+        from collectors.currency import get_rates_with_delta
+        rates = get_rates_with_delta()
+        parts = []
+        for key in ["USDRUB", "EURRUB", "CNYRUB"]:
+            r = rates.get(key)
+            if not r or r.get("rate") is None:
+                continue
+            label = r["label"]
+            rate = r["rate"]
+            suffix = r["suffix"]
+            arrow = r.get("arrow", "—")
+            delta_str = r.get("delta_str", "—")
+            pct = r.get("pct", "—")
+            if arrow != "—" and delta_str != "—":
+                parts.append(f"{label}: {rate:.2f} {suffix} {arrow} {delta_str} ({pct})")
+            else:
+                parts.append(f"{label}: {rate:.2f} {suffix}")
+        return f"💱 {' · '.join(parts)}" if parts else ""
+    except Exception:
+        return ""
 
 
 def _build_archive_rows(dates: list, tech_dates: set, news_dates: set) -> str:

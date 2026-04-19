@@ -32,27 +32,25 @@ def _render_currency_block(rates_delta: dict, today: str) -> list[str]:
     if not rates_delta:
         return []
 
-    lines = [
-        f"> [!abstract] 💱 Курсы валют на {today}",
-        ">",
-        "> | Валюта | Курс | Изменение | |",
-        "> |--------|------|-----------|--|",
-    ]
-
-    for key in ["USDRUB", "EURRUB", "CNYRUB", "GBPRUB", "EURUSD"]:
+    parts = []
+    for key in ["USDRUB", "EURRUB", "CNYRUB"]:
         r = rates_delta.get(key)
         if not r or r.get("rate") is None:
             continue
         label = r["label"]
+        rate = r["rate"]
         suffix = r["suffix"]
-        rate_str = f"**{r['rate']:.2f} {suffix}**"
-        delta_str = r.get("delta_str", "—")
         arrow = r.get("arrow", "—")
+        delta_str = r.get("delta_str", "—")
         pct = r.get("pct", "—")
-        lines.append(f"> | {label} | {rate_str} | {delta_str} {suffix} | {arrow} {pct} |")
+        if arrow != "—" and delta_str != "—":
+            parts.append(f"{label}: {rate:.2f} {suffix} {arrow} {delta_str} ({pct})")
+        else:
+            parts.append(f"{label}: {rate:.2f} {suffix}")
 
-    lines += [">", "> *Источник: Yahoo Finance*"]
-    return lines
+    if not parts:
+        return []
+    return [f"💱 {' · '.join(parts)}", ""]
 
 
 def render(data: dict, item_count: int, rates_delta=None) -> str:
