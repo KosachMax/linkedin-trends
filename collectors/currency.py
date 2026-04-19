@@ -1,19 +1,17 @@
 """
-Currency collector — курсы валют через yfinance с историей изменений.
+Currency collector — курсы валют через API ЦБ РФ.
 """
 import json
+import xml.etree.ElementTree as ET
 from datetime import date, timedelta
 from pathlib import Path
 
-PAIRS = {
-    "USDRUB": "USDRUB=X",
-    "EURRUB": "EURRUB=X",
-    "CNYRUB": "CNYRUB=X",
-    "GBPRUB": "GBPRUB=X",
-    "EURUSD": "EURUSD=X",
-}
+import requests
 
 HISTORY_FILE = Path("data/currency_history.json")
+
+# CharCode → key
+CBR_CODES = {"USD": "USDRUB", "EUR": "EURRUB", "CNY": "CNYRUB", "GBP": "GBPRUB"}
 
 DISPLAY = {
     "USDRUB": {"label": "🇺🇸 USD/RUB", "suffix": "₽"},
@@ -40,29 +38,57 @@ def _save_history(history: dict) -> None:
     HISTORY_FILE.write_text(json.dumps(trimmed, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def _fetch_cbr(day: date) -> dict:
+    date_str = day.strftime("%d/%m/%Y")
+    url = f"https://www.cbr.ru/scripts/XML_daily.asp?date_req={date_str}"
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.encoding = "windows-1251"
+        root = ET.fromstring(resp.text)
+    except Exception as e:
+        print(f"  [currency] CBR fetch error: {e}")
+        return {}
+
+    rates = {}
+    for valute in root.findall("Valute"):
+        code = valute.findtext("CharCode", "")
+        key = CBR_CODES.get(code)
+        if not key:
+            continue
+        nominal_text = valute.findtext("Nominal", "1").replace(",", ".")
+        value_text = valute.findtext("Value", "").replace(",", ".")
+        try:
+            nominal = float(nominal_text)
+            value = float(value_text)
+            rates[key] = round(value / nominal, 4)
+            print(f"  [currency] {key}: {rates[key]}")
+        except ValueError:
+            pass
+
+    # Derived EURUSD
+    if "EURRUB" in rates and "USDRUB" in rates and rates["USDRUB"] > 0:
+        rates["EURUSD"] = round(rates["EURRUB"] / rates["USDRUB"], 4)
+        print(f"  [currency] EURUSD: {rates['EURUSD']}")
+
+    return rates
+
+
 def fetch_and_save_rates() -> dict:
-    today = date.today().strftime("%Y-%m-%d")
+    today = date.today()
+    today_str = today.strftime("%Y-%m-%d")
     history = _load_history()
 
-    try:
-        import yfinance as yf
-        rates = {}
-        for key, ticker in PAIRS.items():
-            try:
-                data = yf.download(ticker, period="2d", interval="1d", progress=False, auto_adjust=True)
-                if not data.empty:
-                    rates[key] = round(float(data["Close"].iloc[-1]), 4)
-                    print(f"  [currency] {key}: {rates[key]}")
-            except Exception as e:
-                print(f"  [currency] Ошибка {key}: {e}")
+    rates = _fetch_cbr(today)
+    if not rates:
+        # Weekend fallback: try up to 3 days back
+        for delta in range(1, 4):
+            rates = _fetch_cbr(today - timedelta(days=delta))
+            if rates:
+                break
 
-        if rates:
-            history[today] = rates
-            _save_history(history)
-    except ImportError:
-        print("  [currency] yfinance не установлен — пропускаю")
-    except Exception as e:
-        print(f"  [currency] Ошибка загрузки: {e}")
+    if rates:
+        history[today_str] = rates
+        _save_history(history)
 
     return history
 
@@ -75,16 +101,13 @@ def get_rates_with_delta() -> dict:
     today_rates = history.get(today, {})
     yesterday_rates = history.get(yesterday, {})
 
-    # Fallback: use last available day if today missing
     if not today_rates and history:
         last_day = sorted(history.keys())[-1]
         today_rates = history[last_day]
 
     result = {}
-    for key in PAIRS:
-        display = DISPLAY[key]
+    for key, display in DISPLAY.items():
         rate = today_rates.get(key)
-
         if rate is None:
             result[key] = {**display, "rate": None, "delta": None, "arrow": "—", "pct": "—", "delta_str": "—"}
             continue
@@ -104,13 +127,6 @@ def get_rates_with_delta() -> dict:
                 "delta_str": f"{sign}{delta:.2f}",
             }
         else:
-            result[key] = {
-                **display,
-                "rate": rate,
-                "delta": None,
-                "arrow": "—",
-                "pct": "—",
-                "delta_str": "—",
-            }
+            result[key] = {**display, "rate": rate, "delta": None, "arrow": "—", "pct": "—", "delta_str": "—"}
 
     return result
