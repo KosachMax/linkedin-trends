@@ -88,11 +88,11 @@ def _build_tech_callout(data: dict, today: str) -> str:
     clusters = data.get("clusters", [])
     if not clusters:
         return f"> [!tip] 🚀 Tech Trends — {today}\n> *Данные обновляются...*\n> [[tech/{today}|Читать →]]"
-    lines = [f"> [!tip] 🚀 Tech Trends — {today}"]
+    lines = [f"> [!tip] 🚀 Tech Trends — {today}", ">"]
     for c in clusters[:3]:
         eng = c.get("total_engagement", 0)
-        lines.append(f"> **#{c['rank']} · {c['topic']}** — engagement {eng:,}")
-    lines.append(f"> [[tech/{today}|Читать полный отчёт →]]")
+        lines.append(f"> - **#{c['rank']} · {c['topic']}** — engagement {eng:,}")
+    lines += [">", f"> [[tech/{today}|Читать полный отчёт →]]"]
     return "\n".join(lines)
 
 
@@ -100,12 +100,12 @@ def _build_news_callout(data: dict, today: str) -> str:
     clusters = data.get("clusters", [])
     if not clusters:
         return f"> [!danger] 🌍 World News — {today}\n> *Данные обновляются...*\n> [[news/{today}|Читать →]]"
-    lines = [f"> [!danger] 🌍 World News — {today}"]
+    lines = [f"> [!danger] 🌍 World News — {today}", ">"]
     for c in clusters[:3]:
         sig = c.get("significance", 0)
         marker = "🔴" if sig >= 8 else "🟠" if sig >= 5 else "🟢"
-        lines.append(f"> {marker} {c['topic']} — {sig}/10")
-    lines.append(f"> [[news/{today}|Читать полный отчёт →]]")
+        lines.append(f"> - {marker} **{c['topic']}** — {sig}/10")
+    lines += [">", f"> [[news/{today}|Читать полный отчёт →]]"]
     return "\n".join(lines)
 
 

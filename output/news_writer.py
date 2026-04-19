@@ -108,21 +108,21 @@ def render(data: dict, item_count: int, rates_delta=None) -> str:
 
         callout = "[!danger]" if sig >= 8 else "[!warning]" if sig >= 5 else "[!note]"
 
+        meta_parts = [f"#{rank} · {sig}/10"]
+        if geos:
+            meta_parts.append(" · ".join(geos))
+        if figures:
+            meta_parts.append(", ".join(figures))
+        meta_line = " · ".join(meta_parts)
+
         lines += [
             f"## {topic}",
             "",
-            f"> {callout} #{rank} Significance: {sig}/10",
-            f"> {summary}",
+            f"> {callout} {meta_line}",
+            "",
+            summary,
+            "",
         ]
-
-        if geos or figures:
-            lines.append(">")
-            if geos:
-                lines.append(f"> **Регионы:** {' · '.join(geos)}")
-            if figures:
-                lines.append(f"> **Фигуранты:** {', '.join(figures)}")
-
-        lines.append("")
 
         # Source links OUTSIDE callout (improvement 2)
         if articles:
