@@ -1,6 +1,6 @@
 # LinkedIn Trends
 
-Daily digest of tech trends and world news, auto-published to GitHub Pages.
+Daily digest of tech trends and world news, auto-published to GitHub Pages via Quartz v4.
 
 Two pipelines run every day at 09:00 Moscow time:
 - **Tech** — top posts from Reddit, Hacker News, Dev.to clustered by topic
@@ -34,12 +34,19 @@ python main.py --mode news   # news only
 
 3. **Settings → Pages**
    - Source: **Deploy from a branch**
-   - Branch: `main` / folder: `/docs`
+   - Branch: `gh-pages` / folder: `/ (root)`
    - Save
 
 4. **Actions → Daily Trends → Run workflow** — first manual run
 
 5. Site will be at: `https://<username>.github.io/<repo-name>/`
+
+### Site features (Quartz v4)
+- Interactive graph view of all reports
+- Full-text search
+- Backlinks between reports
+- Dark theme (Obsidian-style)
+- Table of contents on each page
 
 ## How it works
 
@@ -48,16 +55,19 @@ main.py --mode all
   ├── Tech pipeline
   │   ├── collect: Reddit + HN + Dev.to
   │   ├── analyze: Gemini 2.5 Flash Lite (clusters by topic)
-  │   └── save: docs/tech/YYYY-MM-DD.{md,html}
+  │   └── save: quartz/content/tech/YYYY-MM-DD.md
   │
   ├── News pipeline
   │   ├── collect: RSS feeds + The Guardian
   │   ├── fetch: USD/RUB + EUR/RUB from Yahoo Finance
   │   ├── analyze: Gemini 2.5 Flash Lite (clusters by significance)
-  │   └── save: docs/news/YYYY-MM-DD.{md,html}
+  │   └── save: quartz/content/news/YYYY-MM-DD.md
   │
-  └── generate: docs/index.html
+  └── generate: quartz/content/index.md
+
+npx quartz build → quartz/public/
+peaceiris/actions-gh-pages → gh-pages branch
 ```
 
-`OUTPUT_MODE=github` (set by Actions) routes output to `/docs`.  
+`OUTPUT_MODE=github` (set by Actions) routes output to `quartz/content/`.  
 `OUTPUT_MODE=local` (default) routes output to `OBSIDIAN_VAULT_PATH`.

@@ -1,10 +1,9 @@
 """
-Obsidian writer — генерирует .md файл (и .html в github mode).
+Obsidian writer — генерирует .md файл в Obsidian/Quartz формате.
 """
 from datetime import date
 from pathlib import Path
 import config
-from output.html_writer import prepare_for_mkdocs
 
 
 def render(data: dict, all_posts: list) -> str:
@@ -20,6 +19,14 @@ def render(data: dict, all_posts: list) -> str:
     sources_line = " · ".join(f"{k}: {v}" for k, v in sorted(source_counts.items()))
 
     lines = [
+        "---",
+        f'title: "Tech Trends — {today}"',
+        f"date: {today}",
+        "tags:",
+        "  - tech",
+        "  - trends",
+        "---",
+        "",
         f"# 🔥 LinkedIn Trends — {today}",
         "",
         f"> [!note] Дайджест дня",
@@ -38,7 +45,7 @@ def render(data: dict, all_posts: list) -> str:
         tags = " ".join(c.get("tags", []))
         top_posts = c.get("top_posts", [])
 
-        callout = "[!danger]" if rank <= 3 else "[!idea]"
+        callout = "[!danger]" if rank <= 3 else "[!tip]"
 
         lines += [
             f"> {callout} #{rank} {topic}",
@@ -62,7 +69,7 @@ def render(data: dict, all_posts: list) -> str:
 
         lines.append("")
 
-    lines += [f"> [!done] Источники"]
+    lines += [f"> [!success] Источники"]
     for k, v in sorted(source_counts.items()):
         lines.append(f"> - **{k}**: {v} постов")
 
@@ -79,7 +86,7 @@ def save(data: dict, all_posts: list, vault_path: str) -> Path:
         output_dir = Path(config.DOCS_PATH) / "tech"
         output_dir.mkdir(parents=True, exist_ok=True)
         md_path = output_dir / f"{today}.md"
-        md_path.write_text(prepare_for_mkdocs(md_content), encoding="utf-8")
+        md_path.write_text(md_content, encoding="utf-8")
         return md_path
     else:
         output_dir = Path(vault_path)

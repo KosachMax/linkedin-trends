@@ -1,7 +1,7 @@
 import os
 
 OUTPUT_MODE = os.getenv("OUTPUT_MODE", "local")  # "local" or "github"
-DOCS_PATH = "docs"
+DOCS_PATH = "quartz/content"
 
 TOPICS = [
     "python",

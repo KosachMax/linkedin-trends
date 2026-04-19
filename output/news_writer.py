@@ -1,11 +1,10 @@
 """
-News writer — генерирует world-news .md (и .html в github mode).
+News writer — генерирует world-news .md в Obsidian/Quartz формате.
 """
 import requests
 from datetime import date
 from pathlib import Path
 import config
-from output.html_writer import prepare_for_mkdocs
 
 GEO_FLAGS = {
     "USA": "🇺🇸", "US": "🇺🇸", "United States": "🇺🇸", "America": "🇺🇸",
@@ -62,6 +61,15 @@ def render(data: dict, item_count: int) -> str:
     eur = rates.get("EUR", "н/д")
 
     lines = [
+        "---",
+        f'title: "World News — {today}"',
+        f"date: {today}",
+        "tags:",
+        "  - news",
+        "  - politics",
+        "  - economics",
+        "---",
+        "",
         f"# 🌍 World News — {today}",
         "",
         f"> [!note] Дайджест мировых новостей",
@@ -140,7 +148,7 @@ def save(data: dict, items: list, vault_path: str) -> Path:
         output_dir = Path(config.DOCS_PATH) / "news"
         output_dir.mkdir(parents=True, exist_ok=True)
         md_path = output_dir / f"{today}.md"
-        md_path.write_text(prepare_for_mkdocs(md_content), encoding="utf-8")
+        md_path.write_text(md_content, encoding="utf-8")
         return md_path
     else:
         output_dir = Path(vault_path)

@@ -7,15 +7,10 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout
@@ -38,14 +33,20 @@ jobs:
           OUTPUT_MODE: github
         run: python main.py --mode all
 
-      - name: Build site
-        run: mkdocs build
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          path: site/
+          node-version: 20
+
+      - name: Install Quartz dependencies
+        run: cd quartz && npm ci
+
+      - name: Build Quartz
+        run: cd quartz && npx quartz build
 
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: quartz/public
+          publish_branch: gh-pages
