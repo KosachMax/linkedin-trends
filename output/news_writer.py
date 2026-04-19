@@ -74,8 +74,6 @@ def render(data: dict, item_count: int, rates_delta=None) -> str:
         "  - economics",
         "---",
         "",
-        f"# 🌍 World News — {today}",
-        "",
         f"> [!note] Дайджест мировых новостей",
         f"> Проанализировано **{item_count} новостей** из международных источников",
         f"> Кластеров тем: **{len(clusters)}**",

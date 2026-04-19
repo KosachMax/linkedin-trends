@@ -27,8 +27,6 @@ def render(data: dict, all_posts: list) -> str:
         "  - trends",
         "---",
         "",
-        f"# 🔥 LinkedIn Trends — {today}",
-        "",
         f"> [!note] Дайджест дня",
         f"> Проанализировано **{total} постов** из {len(source_counts)} источников",
         f"> {sources_line}",
