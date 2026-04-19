@@ -87,6 +87,10 @@ def save(data: dict, all_posts: list, vault_path: str) -> Path:
         output_dir.mkdir(parents=True, exist_ok=True)
         md_path = output_dir / f"{today}.md"
         md_path.write_text(md_content, encoding="utf-8")
+
+        from output.index_writer import generate_index
+        generate_index(config.DOCS_PATH, tech_data=data)
+
         return md_path
     else:
         output_dir = Path(vault_path)

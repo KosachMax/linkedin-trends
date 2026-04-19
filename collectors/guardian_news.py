@@ -5,6 +5,7 @@ Guardian collector — The Guardian API (free tier).
 import os
 import requests
 from collectors.rss_news import NewsItem
+from config import NEWS_PER_SOURCE
 
 BASE_URL = "https://content.guardianapis.com/search"
 
@@ -15,7 +16,7 @@ def collect() -> list[NewsItem]:
         "api-key": api_key,
         "section": "world,politics,business,environment,us-news,uk-news",
         "order-by": "newest",
-        "page-size": 30,
+        "page-size": NEWS_PER_SOURCE,
         "show-fields": "trailText",
     }
 
@@ -35,6 +36,7 @@ def collect() -> list[NewsItem]:
             url=r.get("webUrl", ""),
             summary=r.get("fields", {}).get("trailText", "")[:400].strip(),
             published=r.get("webPublicationDate", ""),
+            language="en",
         ))
 
     print(f"  [guardian] → {len(items)} новостей")

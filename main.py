@@ -20,7 +20,6 @@ from analyzer.llm_analyzer import analyze as analyze_tech
 from analyzer.news_analyzer import analyze as analyze_news
 from output.obsidian_writer import save as save_tech
 from output.news_writer import save as save_news
-from output.html_writer import write_index
 from config import SOURCES
 
 
@@ -93,7 +92,7 @@ def run_tech(vault_path: str):
 
         if not all_posts:
             print("❌ Нет постов для анализа.")
-            return
+            return None
 
         print("\n🧠 Анализ через Gemini API...")
         result = analyze_tech(all_posts)
@@ -108,11 +107,14 @@ def run_tech(vault_path: str):
         for c in clusters[:3]:
             print(f"  {c['rank']}. {c['topic']} (engagement: {c.get('total_engagement', 0):,})")
 
+        return result
+
     except Exception as e:
         print(f"❌ Tech pipeline failed: {e}")
+        return None
 
 
-def run_news(vault_path: str):
+def run_news(vault_path: str, rates_delta: dict = None):
     print(f"\n{'='*50}")
     print(f"🌍 News Pipeline — {date.today()}")
     print(f"{'='*50}")
@@ -123,13 +125,13 @@ def run_news(vault_path: str):
 
         if not all_items:
             print("❌ Нет новостей для анализа.")
-            return
+            return None
 
         print("\n🧠 Анализ через Gemini API...")
         result = analyze_news(all_items)
 
         print(f"\n💾 Сохранение...")
-        filepath = save_news(result, all_items, vault_path)
+        filepath = save_news(result, all_items, vault_path, rates_delta=rates_delta)
         print(f"✅ Файл создан: {filepath}")
 
         clusters = result.get("clusters", [])
@@ -137,8 +139,11 @@ def run_news(vault_path: str):
         for c in clusters[:3]:
             print(f"  {c['rank']}. {c['topic']} (significance: {c.get('significance', '?')}/10)")
 
+        return result
+
     except Exception as e:
         print(f"❌ News pipeline failed: {e}")
+        return None
 
 
 def main():
@@ -153,16 +158,23 @@ def main():
 
     vault_path = os.environ.get("OBSIDIAN_VAULT_PATH", "./output/vault")
 
+    # Fetch currency rates before news pipeline (github mode only)
+    rates_delta = None
+    if config.OUTPUT_MODE == "github" and args.mode in ("news", "all"):
+        try:
+            from collectors.currency import fetch_and_save_rates, get_rates_with_delta
+            print("\n💱 Загрузка курсов валют...")
+            fetch_and_save_rates()
+            rates_delta = get_rates_with_delta()
+            print(f"✅ Курсы загружены")
+        except Exception as e:
+            print(f"⚠️  Курсы валют недоступны: {e}")
+
     if args.mode in ("tech", "all"):
         run_tech(vault_path)
 
     if args.mode in ("news", "all"):
-        run_news(vault_path)
-
-    if config.OUTPUT_MODE == "github":
-        print("\n🌐 Генерация index.html...")
-        index_path = write_index(config.DOCS_PATH)
-        print(f"✅ index.html: {index_path}")
+        run_news(vault_path, rates_delta=rates_delta)
 
 
 if __name__ == "__main__":

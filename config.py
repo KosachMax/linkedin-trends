@@ -51,7 +51,28 @@ RSS_FEEDS = {
     "BBC World": "http://feeds.bbci.co.uk/news/world/rss.xml",
     "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml",
     "RBC": "https://rssexport.rbc.ru/rbcnews/news/30/full.rss",
+    "Le Figaro": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+    "Bild": "https://www.bild.de/rssfeeds/rss3-20745882,feed=alles.bild.html",
+    "Der Spiegel": "https://www.spiegel.de/schlagzeilen/index.rss",
+    "Le Monde": "https://www.lemonde.fr/rss/une.xml",
+    "Euronews": "https://feeds.feedburner.com/euronews/en/home/",
+    "Politico Europe": "https://www.politico.eu/feed/",
 }
+
+RSS_FEED_LANGUAGE = {
+    "Reuters World": "en",
+    "BBC World": "en",
+    "Al Jazeera": "en",
+    "RBC": "ru",
+    "Le Figaro": "fr",
+    "Bild": "de",
+    "Der Spiegel": "de",
+    "Le Monde": "fr",
+    "Euronews": "en",
+    "Politico Europe": "en",
+}
+
 NEWS_CATEGORIES = ["politics", "war", "economics", "world"]
 NEWS_TOP_COUNT = 30
-NEWS_MAX_FOR_ANALYSIS = 50  # лимит новостей отправляемых в LLM
+NEWS_MAX_FOR_ANALYSIS = 60
+NEWS_PER_SOURCE = 5  # top N posts from each individual source

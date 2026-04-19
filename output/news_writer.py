@@ -1,7 +1,6 @@
 """
 News writer — генерирует world-news .md в Obsidian/Quartz формате.
 """
-import requests
 from datetime import date
 from pathlib import Path
 import config
@@ -25,29 +24,38 @@ GEO_FLAGS = {
 }
 
 
-def fetch_rates() -> dict[str, str]:
-    headers = {"User-Agent": "Mozilla/5.0"}
-    rates = {}
-    for code, pair in [("USD", "USDRUB=X"), ("EUR", "EURRUB=X")]:
-        try:
-            resp = requests.get(
-                f"https://query1.finance.yahoo.com/v8/finance/chart/{pair}?interval=1d&range=1d",
-                headers=headers,
-                timeout=10,
-            )
-            resp.raise_for_status()
-            price = resp.json()["chart"]["result"][0]["meta"]["regularMarketPrice"]
-            rates[code] = f"{price:.2f}"
-        except Exception as e:
-            print(f"  [yahoo] Ошибка курса {code}: {e}")
-    return rates
-
-
 def geo_with_flag(geo: str) -> str:
     return f"{GEO_FLAGS.get(geo, '🌐')} {geo}"
 
 
-def render(data: dict, item_count: int) -> str:
+def _render_currency_block(rates_delta: dict, today: str) -> list[str]:
+    if not rates_delta:
+        return []
+
+    lines = [
+        f"> [!abstract] 💱 Курсы валют на {today}",
+        ">",
+        "> | Валюта | Курс | Изменение | |",
+        "> |--------|------|-----------|--|",
+    ]
+
+    for key in ["USDRUB", "EURRUB", "CNYRUB", "GBPRUB", "EURUSD"]:
+        r = rates_delta.get(key)
+        if not r or r.get("rate") is None:
+            continue
+        label = r["label"]
+        suffix = r["suffix"]
+        rate_str = f"**{r['rate']:.2f} {suffix}**"
+        delta_str = r.get("delta_str", "—")
+        arrow = r.get("arrow", "—")
+        pct = r.get("pct", "—")
+        lines.append(f"> | {label} | {rate_str} | {delta_str} {suffix} | {arrow} {pct} |")
+
+    lines += [">", "> *Источник: Yahoo Finance*"]
+    return lines
+
+
+def render(data: dict, item_count: int, rates_delta: dict = None) -> str:
     today = date.today().strftime("%Y-%m-%d")
     clusters = data.get("clusters", [])
 
@@ -55,10 +63,6 @@ def render(data: dict, item_count: int) -> str:
     for c in clusters:
         for f in c.get("key_figures", []):
             all_figures[f] = all_figures.get(f, 0) + 1
-
-    rates = fetch_rates()
-    usd = rates.get("USD", "н/д")
-    eur = rates.get("EUR", "н/д")
 
     lines = [
         "---",
@@ -75,12 +79,15 @@ def render(data: dict, item_count: int) -> str:
         f"> [!note] Дайджест мировых новостей",
         f"> Проанализировано **{item_count} новостей** из международных источников",
         f"> Кластеров тем: **{len(clusters)}**",
-        f">",
-        f"> 💵 **USD/RUB:** {usd} ₽  ·  💶 **EUR/RUB:** {eur} ₽  _(Yahoo Finance)_",
-        "",
-        "## Содержание",
         "",
     ]
+
+    # Enhanced currency block
+    currency_lines = _render_currency_block(rates_delta or {}, today)
+    if currency_lines:
+        lines += currency_lines + [""]
+
+    lines += ["## Содержание", ""]
 
     for c in clusters:
         sig = c["significance"]
@@ -115,19 +122,25 @@ def render(data: dict, item_count: int) -> str:
             if figures:
                 lines.append(f"> **Фигуранты:** {', '.join(figures)}")
 
+        lines.append("")
+
+        # Source links OUTSIDE callout (improvement 2)
         if articles:
-            lines.append(">")
-            lines.append("> **Источники:**")
+            lines.append("**Источники:**")
             for a in articles[:3]:
                 title = a.get("title", "")
                 url = a.get("url", "")
-                source = a.get("source", "")
-                lines.append(f"> - [{title}]({url}) `{source}`" if url else f"> - {title} `{source}`")
+                domain = a.get("source_domain", "") or a.get("source", "")
+                if url:
+                    lines.append(f"- [{title}]({url}) — `{domain}`")
+                else:
+                    lines.append(f"- {title} — `{domain}`")
+            lines.append("")
 
         if tags:
-            lines += ["", tags]
+            lines += [tags, ""]
 
-        lines += ["", "---", ""]
+        lines += ["---", ""]
 
     if all_figures:
         lines += ["## Ключевые фигуры", ""]
@@ -140,15 +153,19 @@ def render(data: dict, item_count: int) -> str:
     return "\n".join(lines)
 
 
-def save(data: dict, items: list, vault_path: str) -> Path:
+def save(data: dict, items: list, vault_path: str, rates_delta: dict = None) -> Path:
     today = date.today().strftime("%Y-%m-%d")
-    md_content = render(data, len(items))
+    md_content = render(data, len(items), rates_delta=rates_delta)
 
     if config.OUTPUT_MODE == "github":
         output_dir = Path(config.DOCS_PATH) / "news"
         output_dir.mkdir(parents=True, exist_ok=True)
         md_path = output_dir / f"{today}.md"
         md_path.write_text(md_content, encoding="utf-8")
+
+        from output.index_writer import generate_index
+        generate_index(config.DOCS_PATH, news_data=data)
+
         return md_path
     else:
         output_dir = Path(vault_path)
