@@ -30,8 +30,27 @@ jobs:
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GUARDIAN_API_KEY: ${{ secrets.GUARDIAN_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OUTPUT_MODE: github
         run: python main.py --mode all
+
+      - name: Verify pipeline output
+        run: |
+          echo "--- quartz/content/tech ---"
+          ls -la quartz/content/tech/ || true
+          echo "--- quartz/content/news ---"
+          ls -la quartz/content/news/ || true
+          echo "--- data ---"
+          ls -la data/ || true
+          TODAY=$(date -u +%Y-%m-%d)
+          if [ ! -f "quartz/content/tech/${TODAY}.md" ]; then
+            echo "::error::tech/${TODAY}.md missing — tech pipeline failed silently"
+            exit 1
+          fi
+          if [ ! -f "quartz/content/news/${TODAY}.md" ]; then
+            echo "::error::news/${TODAY}.md missing — news pipeline failed silently"
+            exit 1
+          fi
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
