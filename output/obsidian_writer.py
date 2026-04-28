@@ -33,6 +33,17 @@ def render(data: dict, all_posts: list) -> str:
         "",
     ]
 
+    top5 = sorted(all_posts, key=lambda p: p.score + p.comments * 2, reverse=True)[:5]
+    if top5:
+        lines.append("> [!important] 🔥 Топ-5 виральных постов")
+        for i, p in enumerate(top5, 1):
+            engagement = p.score + p.comments * 2
+            lines.append(
+                f"> {i}. [{p.title}]({p.url}) — `{p.source}` · "
+                f"engagement {engagement:,} · ↑{p.score:,} · 💬 {p.comments:,}"
+            )
+        lines.append("")
+
     for c in clusters:
         rank = c["rank"]
         topic = c["topic"]
@@ -58,7 +69,7 @@ def render(data: dict, all_posts: list) -> str:
         if top_posts:
             lines.append(">")
             lines.append("> **Топ материалы:**")
-            for p in top_posts[:3]:
+            for p in top_posts[:5]:
                 lines.append(f"> - [{p['title']}]({p['url']}) `{p['source']}` ↑{p['score']}")
 
         if tags:

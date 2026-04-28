@@ -9,6 +9,16 @@ _DATA_DIR = Path("data")
 _TECH_CACHE = _DATA_DIR / "tech_latest.json"
 _NEWS_CACHE = _DATA_DIR / "news_latest.json"
 
+PLATFORM_ICON = {
+    "reddit":        "🟠 Reddit",
+    "hackernews":    "🟡 HN",
+    "dev.to":        "🟣 Dev.to",
+    "github":        "⚫ GitHub",
+    "lobsters":      "🔴 Lobsters",
+    "mastodon":      "🐘 Mastodon",
+    "stackoverflow": "🔵 SO",
+}
+
 
 def generate_index(docs_path: str, tech_data: dict = None, news_data: dict = None) -> None:
     content_dir = Path(docs_path)
@@ -36,11 +46,11 @@ def generate_index(docs_path: str, tech_data: dict = None, news_data: dict = Non
 
     tech_block = _build_tech_callout(tech_cache, today)
     news_block = _build_news_callout(news_cache, today)
-    currency_line = _build_currency_line()
+    currency_block = _build_currency_callout()
     archive_rows = _build_archive_rows(all_dates[:30], tech_dates, news_dates)
     all_rows = _build_archive_rows(all_dates, tech_dates, news_dates)
 
-    currency_section = f"\n{currency_line}\n" if currency_line else ""
+    currency_section = f"\n{currency_block}\n" if currency_block else ""
 
     index_content = f"""---
 title: Daily Trends
@@ -94,9 +104,33 @@ def _build_tech_callout(data: dict, today: str) -> str:
     lines = [f"> [!tip] 🚀 Tech Trends — {today}", ">"]
     for c in clusters[:3]:
         eng = c.get("total_engagement", 0)
-        lines.append(f"> - **#{c['rank']} · {c['topic']}** — engagement {eng:,}")
+        platforms = _platforms_for_cluster(c.get("top_posts", []))
+        suffix = (" · " + " · ".join(platforms)) if platforms else ""
+        lines.append(f"> - **#{c['rank']} · {c['topic']}** — engagement {eng:,}{suffix}")
     lines += [">", f"> [[tech/{today}|Читать полный отчёт →]]"]
     return "\n".join(lines)
+
+
+def _platforms_for_cluster(top_posts: list) -> list:
+    """Top-1..2 платформ кластера. Вторую включаем только если её доля ≥ 30%."""
+    if not top_posts:
+        return []
+    counts: dict[str, int] = {}
+    for p in top_posts:
+        src = (p.get("source") or "").split("/")[0].lower()
+        if not src:
+            continue
+        counts[src] = counts.get(src, 0) + 1
+    if not counts:
+        return []
+    ranked = sorted(counts.items(), key=lambda kv: kv[1], reverse=True)
+    total = sum(counts.values())
+    result = []
+    if ranked:
+        result.append(PLATFORM_ICON.get(ranked[0][0], ranked[0][0]))
+    if len(ranked) > 1 and ranked[1][1] / total >= 0.3:
+        result.append(PLATFORM_ICON.get(ranked[1][0], ranked[1][0]))
+    return result
 
 
 def _build_news_callout(data: dict, today: str) -> str:
@@ -112,12 +146,12 @@ def _build_news_callout(data: dict, today: str) -> str:
     return "\n".join(lines)
 
 
-def _build_currency_line() -> str:
+def _build_currency_callout() -> str:
     try:
         from collectors.currency import get_rates_with_delta
         rates = get_rates_with_delta()
-        parts = []
-        for key in ["USDRUB", "EURRUB", "CNYRUB"]:
+        items = []
+        for key in ["USDRUB", "EURRUB"]:
             r = rates.get(key)
             if not r or r.get("rate") is None:
                 continue
@@ -128,10 +162,12 @@ def _build_currency_line() -> str:
             delta_str = r.get("delta_str", "—")
             pct = r.get("pct", "—")
             if arrow != "—" and delta_str != "—":
-                parts.append(f"{label}: {rate:.2f} {suffix} {arrow} {delta_str} ({pct})")
+                items.append(f"> - **{label}:** {rate:.2f} {suffix} {arrow} {delta_str} ({pct})")
             else:
-                parts.append(f"{label}: {rate:.2f} {suffix}")
-        return f"💱 {' · '.join(parts)}" if parts else ""
+                items.append(f"> - **{label}:** {rate:.2f} {suffix}")
+        if not items:
+            return ""
+        return "> [!info] 💱 Курсы валют\n" + "\n".join(items)
     except Exception:
         return ""
 

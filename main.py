@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 import config
 from collectors import reddit, hackernews, devto
+from collectors import github_trending, lobsters, mastodon, stackoverflow
 from collectors import rss_news, guardian_news
 from analyzer.llm_analyzer import analyze as analyze_tech
 from analyzer.news_analyzer import analyze as analyze_news
@@ -41,6 +42,30 @@ def collect_tech() -> list:
     if SOURCES["devto"]["enabled"]:
         print("\n📥 Dev.to...")
         posts = devto.collect()
+        print(f"  Итого: {len(posts)} постов")
+        all_posts.extend(posts)
+
+    if SOURCES.get("github", {}).get("enabled"):
+        print("\n📥 GitHub Trending...")
+        posts = github_trending.collect()
+        print(f"  Итого: {len(posts)} постов")
+        all_posts.extend(posts)
+
+    if SOURCES.get("lobsters", {}).get("enabled"):
+        print("\n📥 Lobste.rs...")
+        posts = lobsters.collect()
+        print(f"  Итого: {len(posts)} постов")
+        all_posts.extend(posts)
+
+    if SOURCES.get("mastodon", {}).get("enabled"):
+        print("\n📥 Mastodon trending...")
+        posts = mastodon.collect()
+        print(f"  Итого: {len(posts)} постов")
+        all_posts.extend(posts)
+
+    if SOURCES.get("stackoverflow", {}).get("enabled"):
+        print("\n📥 Stack Overflow hot...")
+        posts = stackoverflow.collect()
         print(f"  Итого: {len(posts)} постов")
         all_posts.extend(posts)
 

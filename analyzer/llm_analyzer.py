@@ -19,7 +19,7 @@ def build_prompt(posts: list) -> str:
 
     posts_block = "\n".join(lines)
 
-    return f"""Ты — аналитик контента для LinkedIn. Тебе дан список топовых постов из Reddit, Hacker News и Dev.to за сегодня по темам: Python, AI/ML, backend, software development.
+    return f"""Ты — аналитик контента для LinkedIn. Тебе дан список топовых постов из Reddit, Hacker News, Dev.to, GitHub Trending, Lobste.rs, Mastodon и Stack Overflow за сегодня по темам: Python, AI/ML, backend, software development, open source.
 
 Твоя задача — кластеризировать эти посты по смысловым темам и выдать топ-{CLUSTER_COUNT} тем, которые БОЛЬШЕ ВСЕГО резонируют с аудиторией технических специалистов.
 
@@ -27,10 +27,16 @@ def build_prompt(posts: list) -> str:
 {posts_block}
 
 ИНСТРУКЦИИ:
-1. Найди повторяющиеся смысловые паттерны и сгруппируй посты по темам
-2. Для каждой темы посчитай суммарный engagement (score + comments*2)
-3. Отсортируй темы по суммарному engagement (от большего к меньшему)
-4. Для каждой темы придумай цепляющий заголовок для LinkedIn-поста
+1. Найди повторяющиеся смысловые паттерны и сгруппируй посты по темам.
+2. Для каждой темы посчитай суммарный engagement (score + comments*2).
+3. Отсортируй темы по суммарному engagement (от большего к меньшему).
+4. Для каждой темы придумай цепляющий заголовок для LinkedIn-поста.
+5. В `top_posts` каждой темы клади до 5 самых виральных постов этой темы (если в кластере меньше 5 постов — клади сколько есть).
+
+КРИТИЧЕСКИ ВАЖНО:
+- Верни РОВНО {CLUSTER_COUNT} кластеров — ни больше, ни меньше.
+- Если близких тем не хватает — раскрывай разные грани одной (например: "AI/инфраструктура", "AI/безопасность", "AI/продуктовое применение", "Локальные LLM", "AI-tooling для разработчиков"). Темы должны быть различимы и не дублировать друг друга.
+- В поле `source` каждого top_post клади ТОЧНО ту строку, что была в скобках `[...]` исходного поста (например: `reddit/r/Python`, `hackernews`, `dev.to/t/ai`, `github`, `lobsters`, `mastodon/hachyderm`, `stackoverflow`).
 
 Отвечай ТОЛЬКО в формате JSON, без markdown-блоков, без пояснений:
 {{
@@ -46,10 +52,14 @@ def build_prompt(posts: list) -> str:
       "post_count": <int>,
       "top_posts": [
         {{"title": "...", "url": "...", "source": "...", "score": <int>}},
+        {{"title": "...", "url": "...", "source": "...", "score": <int>}},
+        {{"title": "...", "url": "...", "source": "...", "score": <int>}},
+        {{"title": "...", "url": "...", "source": "...", "score": <int>}},
         {{"title": "...", "url": "...", "source": "...", "score": <int>}}
       ],
       "tags": ["#tag1", "#tag2", "#tag3"]
     }}
+    // ... всего {CLUSTER_COUNT} кластеров
   ]
 }}"""
 
@@ -64,7 +74,7 @@ def analyze(posts: list) -> dict:
 
     message = client.chat.completions.create(
         model=MODEL,
-        max_tokens=8192,
+        max_tokens=16384,
         messages=[{"role": "user", "content": build_prompt(posts)}],
     )
 

@@ -41,10 +41,33 @@ SOURCES = {
         "post_limit": 20,
         "min_reactions": 10,
     },
+    "github": {
+        "enabled": True,
+        "post_limit": 20,
+        "min_stars": 50,
+        "since_days": 1,
+    },
+    "lobsters": {
+        "enabled": True,
+        "post_limit": 25,
+        "min_score": 10,
+    },
+    "mastodon": {
+        "enabled": True,
+        "instance": "hachyderm.io",
+        "post_limit": 40,
+        "min_score": 5,
+    },
+    "stackoverflow": {
+        "enabled": True,
+        "tags": ["python", "machine-learning", "artificial-intelligence", "pytorch", "tensorflow"],
+        "post_limit": 30,
+        "min_score": 3,
+    },
 }
 
-CLUSTER_COUNT = 10          # сколько тем выдать в итоге
-MAX_POSTS_FOR_ANALYSIS = 80 # лимит постов отправляемых в LLM (экономия токенов)
+CLUSTER_COUNT = 10           # сколько тем выдать в итоге
+MAX_POSTS_FOR_ANALYSIS = 150 # лимит постов отправляемых в LLM (экономия токенов)
 
 RSS_FEEDS = {
     "Reuters World": "https://feeds.reuters.com/reuters/worldNews",
