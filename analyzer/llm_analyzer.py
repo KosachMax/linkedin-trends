@@ -4,6 +4,8 @@ Analyzer — отправляет посты в Google Gemini API и получ�
 import json
 import os
 import re
+import time
+
 from openai import OpenAI
 from config import CLUSTER_COUNT, MAX_POSTS_FOR_ANALYSIS
 
@@ -74,13 +76,23 @@ def analyze(posts: list) -> dict:
 
     print(f"  [llm] Отправляю {min(len(posts), MAX_POSTS_FOR_ANALYSIS)} постов на анализ...")
 
-    message = client.chat.completions.create(
-        model=MODEL,
-        max_tokens=16384,
-        messages=[{"role": "user", "content": build_prompt(posts)}],
-    )
+    last_err = None
+    for attempt in range(3):
+        try:
+            message = client.chat.completions.create(
+                model=MODEL,
+                max_tokens=16384,
+                messages=[{"role": "user", "content": build_prompt(posts)}],
+            )
+            break
+        except Exception as e:
+            last_err = e
+            print(f"  [llm] attempt {attempt + 1} failed: {e}")
+            time.sleep(5 * (attempt + 1))
+    else:
+        raise last_err
 
-    raw = message.choices[0].message.content.strip()
+    raw = (message.choices[0].message.content or "").strip()
 
     # Очищаем на случай если модель всё же добавила ```json
     if raw.startswith("```"):
@@ -97,5 +109,7 @@ def analyze(posts: list) -> dict:
         return json.loads(raw)
     except json.JSONDecodeError as e:
         print(f"  [llm] JSON parse error at line {e.lineno} col {e.colno}: {e.msg}")
-        print(f"  [llm] context: ...{raw[max(0, e.pos-80):e.pos+80]}...")
+        print(f"  [llm] raw response head: {raw[:500]}")
+        print(f"  [llm] raw response tail: {raw[-500:]}")
+        print(f"  [llm] context around error: ...{raw[max(0, e.pos-100):e.pos+100]}...")
         raise

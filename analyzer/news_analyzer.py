@@ -3,6 +3,9 @@ News Analyzer — отправляет новости в Google Gemini API и п
 """
 import json
 import os
+import re
+import time
+
 from openai import OpenAI
 from config import NEWS_TOP_COUNT, NEWS_MAX_FOR_ANALYSIS
 
@@ -71,17 +74,36 @@ def analyze(items: list) -> dict:
 
     print(f"  [news-llm] Отправляю {min(len(items), NEWS_MAX_FOR_ANALYSIS)} новостей на анализ...")
 
-    message = client.chat.completions.create(
-        model=MODEL,
-        max_tokens=8192,
-        messages=[{"role": "user", "content": build_prompt(items)}],
-    )
+    last_err = None
+    for attempt in range(3):
+        try:
+            message = client.chat.completions.create(
+                model=MODEL,
+                max_tokens=8192,
+                messages=[{"role": "user", "content": build_prompt(items)}],
+            )
+            break
+        except Exception as e:
+            last_err = e
+            print(f"  [news-llm] attempt {attempt + 1} failed: {e}")
+            time.sleep(5 * (attempt + 1))
+    else:
+        raise last_err
 
-    raw = message.choices[0].message.content.strip()
+    raw = (message.choices[0].message.content or "").strip()
 
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
             raw = raw[4:]
 
-    return json.loads(raw)
+    raw = re.sub(r"^\s*//.*$", "", raw, flags=re.MULTILINE)
+    raw = re.sub(r",(\s*[\]\}])", r"\1", raw)
+
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError as e:
+        print(f"  [news-llm] JSON parse error at line {e.lineno} col {e.colno}: {e.msg}")
+        print(f"  [news-llm] raw response head: {raw[:500]}")
+        print(f"  [news-llm] raw response tail: {raw[-500:]}")
+        raise
