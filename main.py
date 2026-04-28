@@ -135,7 +135,9 @@ def run_tech(vault_path: str):
         return result
 
     except Exception as e:
+        import traceback
         print(f"❌ Tech pipeline failed: {e}")
+        traceback.print_exc()
         return None
 
 

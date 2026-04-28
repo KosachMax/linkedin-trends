@@ -3,6 +3,7 @@ Analyzer — отправляет посты в Google Gemini API и получ�
 """
 import json
 import os
+import re
 from openai import OpenAI
 from config import CLUSTER_COUNT, MAX_POSTS_FOR_ANALYSIS
 
@@ -59,9 +60,10 @@ def build_prompt(posts: list) -> str:
       ],
       "tags": ["#tag1", "#tag2", "#tag3"]
     }}
-    // ... всего {CLUSTER_COUNT} кластеров
   ]
-}}"""
+}}
+
+Массив `clusters` должен содержать ровно {CLUSTER_COUNT} объектов такого вида."""
 
 
 def analyze(posts: list) -> dict:
@@ -86,4 +88,14 @@ def analyze(posts: list) -> dict:
         if raw.startswith("json"):
             raw = raw[4:]
 
-    return json.loads(raw)
+    # Удаляем JSON-несовместимые `// ...` комментарии (на случай если модель их вставила)
+    raw = re.sub(r"^\s*//.*$", "", raw, flags=re.MULTILINE)
+    # И trailing commas перед ]/}
+    raw = re.sub(r",(\s*[\]\}])", r"\1", raw)
+
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError as e:
+        print(f"  [llm] JSON parse error at line {e.lineno} col {e.colno}: {e.msg}")
+        print(f"  [llm] context: ...{raw[max(0, e.pos-80):e.pos+80]}...")
+        raise
