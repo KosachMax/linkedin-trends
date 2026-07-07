@@ -133,9 +133,6 @@ def render(data: dict, item_count: int, rates_delta=None) -> str:
                     lines.append(f"- {title} — `{domain}`")
             lines.append("")
 
-        if tags:
-            lines += [tags, ""]
-
         lines += ["---", ""]
 
     if all_figures:
@@ -144,7 +141,7 @@ def render(data: dict, item_count: int, rates_delta=None) -> str:
             lines.append(f"- **{name}** — упомянут в {count} {'теме' if count == 1 else 'темах'}")
         lines.append("")
 
-    lines += ["#news #politics #economics #world", "", f"*Сгенерировано автоматически · {today}*"]
+    lines += [f"*Сгенерировано автоматически · {today}*"]
 
     return "\n".join(lines)
 
