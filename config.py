@@ -64,6 +64,20 @@ SOURCES = {
         "post_limit": 30,
         "min_score": 3,
     },
+    "medium": {
+        "enabled": True,
+        "tags": ["python", "machine-learning", "artificial-intelligence", "software-engineering", "llm", "data-science"],
+        "post_limit": 8,
+    },
+    "arxiv": {
+        "enabled": True,
+        "categories": ["cs.AI", "cs.LG", "cs.CL"],
+        "post_limit": 10,
+    },
+    "indiehackers": {
+        "enabled": True,
+        "post_limit": 20,
+    },
 }
 
 CLUSTER_COUNT = 10           # сколько тем выдать в итоге
