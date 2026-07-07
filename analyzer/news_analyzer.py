@@ -79,7 +79,7 @@ def analyze(items: list) -> dict:
         try:
             message = client.chat.completions.create(
                 model=MODEL,
-                max_tokens=8192,
+                max_tokens=16384,
                 messages=[{"role": "user", "content": build_prompt(items)}],
             )
             break
