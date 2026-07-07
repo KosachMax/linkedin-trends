@@ -25,68 +25,58 @@ from output.news_writer import save as save_news
 from config import SOURCES
 
 
+def _safe_collect(name: str, fn) -> list:
+    try:
+        posts = fn()
+        print(f"  Итого: {len(posts)} постов")
+        return posts
+    except Exception as e:
+        print(f"  ⚠️  {name} упал: {e}")
+        return []
+
+
 def collect_tech() -> list:
     all_posts = []
 
     if SOURCES["reddit"]["enabled"]:
         print("\n📥 Reddit...")
-        posts = reddit.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("reddit", reddit.collect))
 
     if SOURCES["hackernews"]["enabled"]:
         print("\n📥 Hacker News...")
-        posts = hackernews.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("hackernews", hackernews.collect))
 
     if SOURCES["devto"]["enabled"]:
         print("\n📥 Dev.to...")
-        posts = devto.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("devto", devto.collect))
 
     if SOURCES.get("github", {}).get("enabled"):
         print("\n📥 GitHub Trending...")
-        posts = github_trending.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("github", github_trending.collect))
 
     if SOURCES.get("lobsters", {}).get("enabled"):
         print("\n📥 Lobste.rs...")
-        posts = lobsters.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("lobsters", lobsters.collect))
 
     if SOURCES.get("mastodon", {}).get("enabled"):
         print("\n📥 Mastodon trending...")
-        posts = mastodon.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("mastodon", mastodon.collect))
 
     if SOURCES.get("stackoverflow", {}).get("enabled"):
         print("\n📥 Stack Overflow hot...")
-        posts = stackoverflow.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("stackoverflow", stackoverflow.collect))
 
     if SOURCES.get("medium", {}).get("enabled"):
         print("\n📥 Medium...")
-        posts = medium.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("medium", medium.collect))
 
     if SOURCES.get("arxiv", {}).get("enabled"):
         print("\n📥 ArXiv...")
-        posts = arxiv.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("arxiv", arxiv.collect))
 
     if SOURCES.get("indiehackers", {}).get("enabled"):
         print("\n📥 Indie Hackers...")
-        posts = indiehackers.collect()
-        print(f"  Итого: {len(posts)} постов")
-        all_posts.extend(posts)
+        all_posts.extend(_safe_collect("indiehackers", indiehackers.collect))
 
     return all_posts
 
