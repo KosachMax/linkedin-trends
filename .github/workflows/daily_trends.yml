@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '30 5 * * *'   # UTC 05:30 = Moscow 08:30
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
