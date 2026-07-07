@@ -2,6 +2,7 @@
 Hacker News collector — Algolia Search API (публичный, без ключей).
 """
 import time
+import urllib.parse
 import requests
 from dataclasses import dataclass
 from typing import Optional
@@ -27,15 +28,12 @@ def collect(cfg: Optional[dict] = None) -> list[Post]:
 
     for topic in TOPICS:
         day_ago = int(time.time()) - 24 * 3600
-        params = {
-            "query": topic,
-            "tags": "story",
-            "numericFilters": f"points>={cfg['min_score']},created_at_i>{day_ago}",
-            "hitsPerPage": cfg["post_limit"],
-        }
+        # Build URL manually: Algolia rejects URL-encoded operators (%3E%3D) in numericFilters
+        base_params = urllib.parse.urlencode({"query": topic, "tags": "story", "hitsPerPage": cfg["post_limit"]})
+        url = f"{ALGOLIA_URL}?{base_params}&numericFilters=points>={cfg['min_score']},created_at_i>{day_ago}"
 
         try:
-            resp = requests.get(ALGOLIA_URL, params=params, timeout=10)
+            resp = requests.get(url, timeout=10)
             resp.raise_for_status()
             hits = resp.json().get("hits", [])
         except Exception as e:

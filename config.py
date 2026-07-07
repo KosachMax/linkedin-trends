@@ -96,6 +96,6 @@ RSS_FEED_LANGUAGE = {
 }
 
 NEWS_CATEGORIES = ["politics", "war", "economics", "world"]
-NEWS_TOP_COUNT = 30
+NEWS_TOP_COUNT = 10
 NEWS_MAX_FOR_ANALYSIS = 60
 NEWS_PER_SOURCE = 5  # top N posts from each individual source
