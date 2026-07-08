@@ -94,15 +94,25 @@ def analyze(posts: list) -> dict:
 
     raw = (message.choices[0].message.content or "").strip()
 
-    # Очищаем на случай если модель всё же добавила ```json
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
+    # Strip ```json ... ``` fences
+    if "```" in raw:
+        parts = raw.split("```")
+        for part in parts:
+            part = part.strip()
+            if part.startswith("json"):
+                part = part[4:]
+            if part.strip().startswith("{"):
+                raw = part.strip()
+                break
 
-    # Удаляем JSON-несовместимые `// ...` комментарии (на случай если модель их вставила)
+    # Extract the outermost JSON object, discarding any preamble/postamble text
+    start = raw.find("{")
+    end = raw.rfind("}")
+    if start != -1 and end != -1 and end > start:
+        raw = raw[start:end + 1]
+
+    # Remove JSON-incompatible // comments and trailing commas
     raw = re.sub(r"^\s*//.*$", "", raw, flags=re.MULTILINE)
-    # И trailing commas перед ]/}
     raw = re.sub(r",(\s*[\]\}])", r"\1", raw)
 
     try:

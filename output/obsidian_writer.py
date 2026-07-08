@@ -45,14 +45,14 @@ def render(data: dict, all_posts: list) -> str:
         lines.append("")
 
     for c in clusters:
-        rank = c["rank"]
-        topic = c["topic"]
-        desc = c["description"]
-        hook = c["linkedin_hook"]
-        engagement = c["total_engagement"]
-        post_count = c["post_count"]
-        tags = " ".join(c.get("tags", []))
-        top_posts = c.get("top_posts", [])
+        rank = int(c.get("rank") or 0)
+        topic = c.get("topic") or "—"
+        desc = c.get("description") or ""
+        hook = c.get("linkedin_hook") or ""
+        engagement = int(c.get("total_engagement") or 0)
+        post_count = int(c.get("post_count") or 0)
+        tags = " ".join(c.get("tags") or [])
+        top_posts = c.get("top_posts") or []
 
         callout = "[!danger]" if rank <= 3 else "[!tip]"
 
@@ -70,7 +70,11 @@ def render(data: dict, all_posts: list) -> str:
             lines.append(">")
             lines.append("> **Топ материалы:**")
             for p in top_posts[:5]:
-                lines.append(f"> - [{p['title']}]({p['url']}) `{p['source']}` ↑{p['score']}")
+                t = p.get("title") or "—"
+                u = p.get("url") or ""
+                s = p.get("source") or ""
+                sc = int(p.get("score") or 0)
+                lines.append(f"> - [{t}]({u}) `{s}` ↑{sc}")
 
         if tags:
             lines.append(">")

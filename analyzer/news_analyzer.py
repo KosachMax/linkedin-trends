@@ -92,10 +92,22 @@ def analyze(items: list) -> dict:
 
     raw = (message.choices[0].message.content or "").strip()
 
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
+    # Strip ```json ... ``` fences
+    if "```" in raw:
+        parts = raw.split("```")
+        for part in parts:
+            part = part.strip()
+            if part.startswith("json"):
+                part = part[4:]
+            if part.strip().startswith("{"):
+                raw = part.strip()
+                break
+
+    # Extract the outermost JSON object, discarding any preamble/postamble text
+    start = raw.find("{")
+    end = raw.rfind("}")
+    if start != -1 and end != -1 and end > start:
+        raw = raw[start:end + 1]
 
     raw = re.sub(r"^\s*//.*$", "", raw, flags=re.MULTILINE)
     raw = re.sub(r",(\s*[\]\}])", r"\1", raw)
