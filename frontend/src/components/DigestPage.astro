@@ -38,7 +38,7 @@ const categories = [...new Set(digest.events.map((event) => event.category))];
     {categories.map((category) => <button class="category-filter" data-category-filter={category}>{categoryLabels[category] || category}</button>)}
   </div>
   <section class="event-feed">
-    {digest.events.map((event) => <EventCard event={event} articles={digest.articles} digestId={digest.digest_id} date={digest.date} />)}
+    {digest.events.map((event) => <EventCard event={event} articles={digest.articles} />)}
   </section>
   <nav class="date-pagination" aria-label="Навигация по выпускам">
     {older ? <a href={`${base}digest/${digest.digest_id}/${older}/`}>← {older}</a> : <span></span>}

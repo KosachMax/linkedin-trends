@@ -1,10 +1,9 @@
 ---
 import type { Article, DigestEvent } from "../lib/types";
-interface Props { event: DigestEvent; articles: Article[]; digestId: string; date: string }
-const { event, articles, digestId, date } = Astro.props;
+interface Props { event: DigestEvent; articles: Article[] }
+const { event, articles } = Astro.props;
 const sources = event.article_ids.map((id) => articles.find((article) => article.id === id)).filter(Boolean) as Article[];
 const tone = event.importance >= 9 ? "critical" : event.importance >= 7 ? "high" : event.importance >= 4 ? "medium" : "low";
-const base = import.meta.env.BASE_URL;
 const statusLabels: Record<string, string> = { new: "Новое", updated: "Обновлено", disputed: "Есть расхождения", completed: "Завершено" };
 const categoryLabels: Record<string, string> = { world: "Мир", politics: "Политика", economics: "Экономика", economy: "Экономика", conflict: "Конфликты", diplomacy: "Дипломатия", energy: "Энергетика", ai: "ИИ", research: "Исследования", python: "Python", backend: "Разработка", club: "Клуб", transfers: "Трансферы", matches: "Матчи", injuries: "Травмы", russia: "Россия" };
 const icon = tone === "critical" ? "🔥" : tone === "high" ? "🌍" : tone === "medium" ? "⚙️" : "•";
@@ -31,7 +30,6 @@ const importanceLabel = event.importance.toFixed(1).replace(".", ",");
     </summary>
     <div class="event-details">
       <div class="detail-reading-column">
-        <section class="detail-callout"><h3>Кратко</h3><p>{event.brief}</p></section>
         <section class="detail-callout"><h3>Расширенный контекст</h3><p>{event.context}</p><p>{event.why_it_matters}</p></section>
         <details class="detail-toggle">
           <summary>История события <span>⌄</span></summary>
@@ -50,7 +48,6 @@ const importanceLabel = event.importance.toFixed(1).replace(".", ",");
           {sources.map((source) => <a href={source.canonical_url} target="_blank" rel="noreferrer"><span>{source.source_name}</span>{source.title}</a>)}
         </div>
         </section>
-        <a class="permalink" href={`${base}events/${digestId}/${date}/${event.slug}/`}>Открыть страницу события →</a>
       </div>
     </div>
   </details>
