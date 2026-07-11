@@ -7,8 +7,6 @@ import re
 from datetime import UTC, datetime
 from pathlib import Path
 
-_REAL_ARTICLE_ID = re.compile(r"^[0-9a-f]{20}$")
-
 from trends.ai.gemini import GeminiProvider
 from trends.ai.service import EventSynthesisService
 from trends.collectors.runner import collect_sources
@@ -29,6 +27,8 @@ from trends.pipeline.normalize import normalize_articles
 from trends.pipeline.rank import cluster_score
 from trends.pipeline.select import select_for_digest
 from trends.storage.daily_store import DailyStore
+
+_REAL_ARTICLE_ID = re.compile(r"^[0-9a-f]{20}$")
 
 
 def _event_id(digest_id: str, title: str) -> str:
