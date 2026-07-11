@@ -1,0 +1,10 @@
+---
+import DigestPage from "../../../components/DigestPage.astro";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import { listDays, listDigests, loadDigest } from "../../../lib/data";
+export function getStaticPaths() { return listDays().map(({ id, date }) => ({ params: { digest: id, date } })); }
+const digests = listDigests();
+const digest = loadDigest(Astro.params.digest!, Astro.params.date!);
+---
+<BaseLayout title={`${digest.digest_id} — ${digest.date}`}><DigestPage digest={digest} digests={digests} /></BaseLayout>
+

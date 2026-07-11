@@ -1,0 +1,23 @@
+id: world
+title: Мир
+enabled: true
+languages: [en, ru, fr, de]
+topic:
+  include_any: [world, politics, economics, diplomacy, conflict, energy, russia]
+  exclude_any: []
+  entities: {}
+categories: [politics, conflict, economics, diplomacy, world]
+sources:
+  include_tags: [world]
+  min_independent_sources: 2
+  allow_single_source_for: [official_statement]
+ranking:
+  recency: 0.25
+  source_diversity: 0.30
+  topic_relevance: 0.20
+  impact: 0.20
+  engagement: 0.05
+output:
+  max_events: 10
+  daily_picture_min_chars: 500
+

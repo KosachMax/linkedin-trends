@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "digest_id": "world",
+  "date": "2026-07-11",
+  "generated_at": "2026-07-11T12:00:00Z",
+  "daily_picture": {
+    "title": "Картина дня",
+    "body": "В выпуске «Мир» собрано 3 ключевых событий из 4 источников. Основные темы сопоставлены между независимыми публикациями, а важность выражена единым редакционным рейтингом. Материалы собраны из тестовых источников и предназначены для проверки интерфейса."
+  },
+  "currencies": [
+    {
+      "pair": "USD/RUB",
+      "value": 88.12,
+      "change_pct": -0.21
+    },
+    {
+      "pair": "EUR/RUB",
+      "value": 96.18,
+      "change_pct": -0.21
+    },
+    {
+      "pair": "CNY/RUB",
+      "value": 12.16,
+      "change_pct": 0.08
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "reuters",
+      "source_name": "Reuters",
+      "state": "available",
+      "fetched": 1,
+      "accepted": 1,
+      "represented_events": 1,
+      "latency_ms": null,
+      "error_code": null,
+      "history": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "state": "available",
+      "fetched": 1,
+      "accepted": 1,
+      "represented_events": 1,
+      "latency_ms": null,
+      "error_code": null,
+      "history": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
+      "state": "available",
+      "fetched": 1,
+      "accepted": 1,
+      "represented_events": 1,
+      "latency_ms": null,
+      "error_code": null,
+      "history": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "state": "available",
+      "fetched": 1,
+      "accepted": 1,
+      "represented_events": 1,
+      "latency_ms": null,
+      "error_code": null,
+      "history": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "reuters-energy-001",
+      "source_id": "reuters",
+      "source_name": "Reuters",
+      "canonical_url": "https://example.com/reuters/europe-energy-agreement",
+      "title": "European states agree on a shared winter energy reserve",
+      "normalized_title": "european states agree on a shared winter energy reserve",
+      "excerpt": "Twelve European governments approved a shared reserve mechanism intended to reduce sudden energy shortages during peak winter demand.",
+      "published_at": "2026-07-11T05:15:00Z",
+      "collected_at": "2026-07-11T12:00:00Z",
+      "language": "en",
+      "topic_hints": [
+        "world",
+        "economics",
+        "energy"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "bbc-energy-002",
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "canonical_url": "https://example.com/bbc/news/europe-energy-reserve",
+      "title": "European countries launch joint energy reserve for winter",
+      "normalized_title": "european countries launch joint energy reserve for winter",
+      "excerpt": "The new agreement creates common gas and electricity reserves, although member states have not yet published detailed contribution targets.",
+      "published_at": "2026-07-11T05:42:00Z",
+      "collected_at": "2026-07-11T12:00:00Z",
+      "language": "en",
+      "topic_hints": [
+        "world",
+        "economics",
+        "energy"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "aljazeera-diplomacy-006",
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
+      "canonical_url": "https://example.com/aljazeera/diplomacy/coastal-ceasefire-talks",
+      "title": "Regional delegations begin talks on a coastal ceasefire",
+      "normalized_title": "regional delegations begin talks on a coastal ceasefire",
+      "excerpt": "Negotiators opened a three-day meeting focused on civilian shipping routes, humanitarian access and a monitored pause in hostilities.",
+      "published_at": "2026-07-11T07:32:00Z",
+      "collected_at": "2026-07-11T12:00:00Z",
+      "language": "en",
+      "topic_hints": [
+        "world",
+        "diplomacy",
+        "conflict"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "rbc-rates-007",
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "canonical_url": "https://example.com/rbc/economics/central-bank-rate-signal",
+      "title": "Центральный банк уточнил условия для снижения ключевой ставки",
+      "normalized_title": "центральный банк уточнил условия для снижения ключевой ставки",
+      "excerpt": "Регулятор отметил замедление инфляции, но связал дальнейшее снижение ставки с устойчивостью потребительских цен и кредитования.",
+      "published_at": "2026-07-11T08:00:00Z",
+      "collected_at": "2026-07-11T12:00:00Z",
+      "language": "ru",
+      "topic_hints": [
+        "world",
+        "economics",
+        "russia"
+      ],
+      "entities": [],
+      "engagement": null
+    }
+  ],
+  "events": [
+    {
+      "id": "world-reuters-energy-001",
+      "slug": "european-states-agree-on-a-shared-winter-energy-reserve",
+      "title": "European states agree on a shared winter energy reserve",
+      "brief": "Twelve European governments approved a shared reserve mechanism intended to reduce sudden energy shortages during peak winter demand. Событие продолжает развиваться; детали будут уточняться по мере появления подтверждений.",
+      "context": "Контекст события формируется из доступных публикаций. Twelve European governments approved a shared reserve mechanism intended to reduce sudden energy shortages during peak winter demand. Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "why_it_matters": "Это событие вошло в выпуск благодаря соответствию теме и редакционным критериям. European states agree on a shared winter energy reserve Материалы собраны из тестовых источников и предназначены для проверки интерфейса. Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "importance": 9,
+      "status": "new",
+      "category": "energy",
+      "article_ids": [
+        "reuters-energy-001",
+        "bbc-energy-002"
+      ],
+      "facts": [
+        {
+          "text": "Twelve European governments approved a shared reserve mechanism intended to reduce sudden energy shortages during peak winter demand.",
+          "article_ids": [
+            "reuters-energy-001",
+            "bbc-energy-002"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T05:15:00Z",
+      "updated_at": "2026-07-11T12:00:00Z"
+    },
+    {
+      "id": "world-aljazeera-diplomacy-006",
+      "slug": "regional-delegations-begin-talks-on-a-coastal-ceasefire",
+      "title": "Regional delegations begin talks on a coastal ceasefire",
+      "brief": "Negotiators opened a three-day meeting focused on civilian shipping routes, humanitarian access and a monitored pause in hostilities. Событие продолжает развиваться; детали будут уточняться по мере появления подтверждений.",
+      "context": "Контекст события формируется из доступных публикаций. Negotiators opened a three-day meeting focused on civilian shipping routes, humanitarian access and a monitored pause in hostilities. Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "why_it_matters": "Это событие вошло в выпуск благодаря соответствию теме и редакционным критериям. Regional delegations begin talks on a coastal ceasefire Материалы собраны из тестовых источников и предназначены для проверки интерфейса. Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "importance": 8,
+      "status": "new",
+      "category": "conflict",
+      "article_ids": [
+        "aljazeera-diplomacy-006"
+      ],
+      "facts": [
+        {
+          "text": "Negotiators opened a three-day meeting focused on civilian shipping routes, humanitarian access and a monitored pause in hostilities.",
+          "article_ids": [
+            "aljazeera-diplomacy-006"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T07:32:00Z",
+      "updated_at": "2026-07-11T12:00:00Z"
+    },
+    {
+      "id": "world-rbc-rates-007",
+      "slug": "центральный-банк-уточнил-условия-для-снижения-ключевой-ставки",
+      "title": "Центральный банк уточнил условия для снижения ключевой ставки",
+      "brief": "Регулятор отметил замедление инфляции, но связал дальнейшее снижение ставки с устойчивостью потребительских цен и кредитования. Событие продолжает развиваться; детали будут уточняться по мере появления подтверждений. Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "context": "Контекст события формируется из доступных публикаций. Регулятор отметил замедление инфляции, но связал дальнейшее снижение ставки с устойчивостью потребительских цен и кредитования. Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "why_it_matters": "Это событие вошло в выпуск благодаря соответствию теме и редакционным критериям. Центральный банк уточнил условия для снижения ключевой ставки Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "importance": 7,
+      "status": "new",
+      "category": "russia",
+      "article_ids": [
+        "rbc-rates-007"
+      ],
+      "facts": [
+        {
+          "text": "Регулятор отметил замедление инфляции, но связал дальнейшее снижение ставки с устойчивостью потребительских цен и кредитования.",
+          "article_ids": [
+            "rbc-rates-007"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T08:00:00Z",
+      "updated_at": "2026-07-11T12:00:00Z"
+    }
+  ]
+}

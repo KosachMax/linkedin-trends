@@ -1,0 +1,42 @@
+---
+import type { Article, DigestEvent } from "../lib/types";
+interface Props { event: DigestEvent; articles: Article[]; digestId: string; date: string }
+const { event, articles, digestId, date } = Astro.props;
+const sources = event.article_ids.map((id) => articles.find((article) => article.id === id)).filter(Boolean) as Article[];
+const tone = event.importance >= 9 ? "critical" : event.importance >= 7 ? "high" : event.importance >= 4 ? "medium" : "low";
+const base = import.meta.env.BASE_URL;
+---
+<article class={`event-card ${tone}`}>
+  <details>
+    <summary class="event-summary">
+      <div class="event-meta">
+        <span class="category">{event.category}</span>
+        <span class="importance"><i></i>{event.importance}/10</span>
+        {event.status !== "new" && <span class="status">{event.status}</span>}
+      </div>
+      <h2>{event.title}</h2>
+      <p>{event.brief}</p>
+      <div class="event-footer">
+        <span>{sources.map((source) => source.source_name).join(" · ")}</span>
+        <span class="expand-label"><b>Подробнее</b><i>⌄</i></span>
+      </div>
+    </summary>
+    <div class="event-details">
+      <section><h3>Контекст</h3><p>{event.context}</p></section>
+      <section><h3>Почему это важно</h3><p>{event.why_it_matters}</p></section>
+      <section>
+        <h3>Что известно</h3>
+        <ul>{event.facts.map((fact) => <li>{fact.text}</li>)}</ul>
+      </section>
+      {event.updates.length > 0 && <section><h3>История события</h3>{event.updates.map((update) => <p>{update.summary}</p>)}</section>}
+      <section>
+        <h3>Источники</h3>
+        <div class="article-links">
+          {sources.map((source) => <a href={source.canonical_url} target="_blank" rel="noreferrer"><span>{source.source_name}</span>{source.title}</a>)}
+        </div>
+      </section>
+      <a class="permalink" href={`${base}events/${digestId}/${date}/${event.slug}/`}>Открыть страницу события →</a>
+    </div>
+  </details>
+</article>
+

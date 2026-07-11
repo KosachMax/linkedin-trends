@@ -1,0 +1,23 @@
+id: tech
+title: Технологии
+enabled: true
+languages: [en, ru]
+topic:
+  include_any: [tech, ai, python, backend, databases, open-source, climate]
+  exclude_any: []
+  entities: {}
+categories: [ai, development, research, open-source]
+sources:
+  include_tags: [tech]
+  min_independent_sources: 1
+  allow_single_source_for: [research, release]
+ranking:
+  recency: 0.25
+  source_diversity: 0.15
+  topic_relevance: 0.30
+  impact: 0.20
+  engagement: 0.10
+output:
+  max_events: 10
+  daily_picture_min_chars: 500
+

@@ -71,3 +71,42 @@ peaceiris/actions-gh-pages → gh-pages branch
 
 `OUTPUT_MODE=github` (set by Actions) routes output to `quartz/content/`.  
 `OUTPUT_MODE=local` (default) routes output to `OBSIDIAN_VAULT_PATH`.
+## Astro migration preview
+
+Проект находится в безопасной миграции с Quartz на статический Astro + Tailwind frontend.
+
+Новая архитектура:
+
+```text
+collectors → normalized article pool → digest profiles → AI validation → daily JSON → Astro
+```
+
+Текущий Quartz pipeline сохранен как production fallback. Workflow параллельно тестирует новый Python pipeline и собирает `astro-preview`; переключение GitHub Pages выполняется только после 5–7 успешных выпусков.
+
+## Новый стек
+
+- Python package: `src/trends`
+- Источники: `config/sources/*.yaml`
+- Выпуски: `config/digests/*.yaml`
+- Архив: `data/digests/<digest>/days/YYYY/MM/YYYY-MM-DD.json`
+- Frontend: `frontend/`
+- AI: Gemini Structured Outputs + Pydantic + semantic validation
+
+Подробная инструкция: [добавление источников и дайджестов](docs/ADDING_SOURCES_AND_DIGESTS.md).
+
+## Быстрый локальный запуск
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -e '.[dev]'
+.venv/bin/python -m trends.cli build-fixture --root .
+.venv/bin/pytest -q
+
+cd frontend
+pnpm install
+pnpm run dev
+```
+
+Откройте `http://localhost:4321`.
+
+---

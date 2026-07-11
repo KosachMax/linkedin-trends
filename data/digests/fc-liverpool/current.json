@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "digest_id": "fc-liverpool",
+  "date": "2026-07-11",
+  "generated_at": "2026-07-11T12:00:00Z",
+  "daily_picture": {
+    "title": "Картина дня",
+    "body": "В выпуске «Liverpool FC» собрано 1 ключевых событий из 2 источников. Основные темы сопоставлены между независимыми публикациями, а важность выражена единым редакционным рейтингом. Материалы собраны из тестовых источников и предназначены для проверки интерфейса."
+  },
+  "currencies": [],
+  "sources": [
+    {
+      "source_id": "liverpool-official",
+      "source_name": "Liverpool FC",
+      "state": "available",
+      "fetched": 1,
+      "accepted": 1,
+      "represented_events": 1,
+      "latency_ms": null,
+      "error_code": null,
+      "history": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport",
+      "state": "available",
+      "fetched": 1,
+      "accepted": 1,
+      "represented_events": 1,
+      "latency_ms": null,
+      "error_code": null,
+      "history": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "lfc-transfer-009",
+      "source_id": "liverpool-official",
+      "source_name": "Liverpool FC",
+      "canonical_url": "https://example.com/liverpoolfc/news/midfielder-signing",
+      "title": "Liverpool complete the signing of midfielder Mateo Silva",
+      "normalized_title": "liverpool complete the signing of midfielder mateo silva",
+      "excerpt": "The club confirmed that the midfielder signed a long-term contract after completing his medical at the training centre.",
+      "published_at": "2026-07-11T09:05:00Z",
+      "collected_at": "2026-07-11T12:00:00Z",
+      "language": "en",
+      "topic_hints": [
+        "fc-liverpool",
+        "transfers",
+        "club"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "bbc-sport-lfc-010",
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport",
+      "canonical_url": "https://example.com/bbc/sport/football/liverpool-mateo-silva",
+      "title": "Liverpool sign midfielder Mateo Silva on a long-term deal",
+      "normalized_title": "liverpool sign midfielder mateo silva on a long-term deal",
+      "excerpt": "Liverpool have announced the arrival of Mateo Silva, with the player expected to join first-team training next week.",
+      "published_at": "2026-07-11T09:21:00Z",
+      "collected_at": "2026-07-11T12:00:00Z",
+      "language": "en",
+      "topic_hints": [
+        "fc-liverpool",
+        "transfers",
+        "club"
+      ],
+      "entities": [],
+      "engagement": null
+    }
+  ],
+  "events": [
+    {
+      "id": "fc-liverpool-lfc-transfer-009",
+      "slug": "liverpool-complete-the-signing-of-midfielder-mateo-silva",
+      "title": "Liverpool complete the signing of midfielder Mateo Silva",
+      "brief": "The club confirmed that the midfielder signed a long-term contract after completing his medical at the training centre. Событие продолжает развиваться; детали будут уточняться по мере появления подтверждений. Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "context": "Контекст события формируется из доступных публикаций. The club confirmed that the midfielder signed a long-term contract after completing his medical at the training centre. Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "why_it_matters": "Это событие вошло в выпуск благодаря соответствию теме и редакционным критериям. Liverpool complete the signing of midfielder Mateo Silva Материалы собраны из тестовых источников и предназначены для проверки интерфейса. Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "importance": 9,
+      "status": "new",
+      "category": "club",
+      "article_ids": [
+        "lfc-transfer-009",
+        "bbc-sport-lfc-010"
+      ],
+      "facts": [
+        {
+          "text": "The club confirmed that the midfielder signed a long-term contract after completing his medical at the training centre.",
+          "article_ids": [
+            "lfc-transfer-009",
+            "bbc-sport-lfc-010"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T09:05:00Z",
+      "updated_at": "2026-07-11T12:00:00Z"
+    }
+  ]
+}

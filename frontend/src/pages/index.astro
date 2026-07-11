@@ -1,0 +1,7 @@
+---
+import { listDigests } from "../lib/data";
+const digests = listDigests();
+const target = digests.find((item) => item.id === "world") || digests[0];
+const targetUrl = `${import.meta.env.BASE_URL}digest/${target.id}/`;
+---
+<!doctype html><html lang="ru"><head><meta http-equiv="refresh" content={`0;url=${targetUrl}`} /><link rel="canonical" href={targetUrl} /></head><body><a href={targetUrl}>Открыть дайджест</a></body></html>

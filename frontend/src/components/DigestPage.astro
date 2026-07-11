@@ -1,0 +1,36 @@
+---
+import Header from "./Header.astro";
+import EventCard from "./EventCard.astro";
+import type { DailyDigest } from "../lib/types";
+import { listDays } from "../lib/data";
+interface Props { digest: DailyDigest; digests: Array<{ id: string; current: DailyDigest }> }
+const { digest, digests } = Astro.props;
+const dateLabel = new Intl.DateTimeFormat("ru-RU", { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${digest.date}T12:00:00Z`));
+const dates = listDays().filter((item) => item.id === digest.digest_id).map((item) => item.date).sort();
+const dateIndex = dates.indexOf(digest.date);
+const older = dateIndex > 0 ? dates[dateIndex - 1] : undefined;
+const newer = dateIndex >= 0 && dateIndex < dates.length - 1 ? dates[dateIndex + 1] : undefined;
+const base = import.meta.env.BASE_URL;
+---
+<Header digest={digest} digests={digests} />
+<main class="page-shell">
+  <div class="page-intro">
+    <div><p class="eyebrow">Ежедневный дайджест</p><h1>{digest.digest_id === "world" ? "Сегодня в мире" : digest.digest_id === "tech" ? "Сегодня в технологиях" : "Сегодня в Liverpool FC"}</h1></div>
+    <p class="date">{dateLabel} · обновлено {new Date(digest.generated_at).toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" })}</p>
+  </div>
+  <section class="daily-picture">
+    <div class="picture-icon">✦</div>
+    <div><p class="callout-label">{digest.daily_picture.title}</p><p>{digest.daily_picture.body}</p></div>
+  </section>
+  {digest.currencies.length > 0 && <section class="currency-grid" aria-label="Курсы валют">
+    {digest.currencies.map((rate) => <div class="currency-card"><span>{rate.pair}</span><strong>{rate.value.toLocaleString("ru-RU", { minimumFractionDigits: 2 })} ₽</strong><small class={rate.change_pct && rate.change_pct > 0 ? "up" : "down"}>{rate.change_pct && rate.change_pct > 0 ? "↑" : "↓"} {Math.abs(rate.change_pct || 0).toFixed(2)}%</small></div>)}
+  </section>}
+  <div class="feed-heading"><h2>{digest.events.length} событий</h2><p>По убыванию важности</p></div>
+  <section class="event-feed">
+    {digest.events.map((event) => <EventCard event={event} articles={digest.articles} digestId={digest.digest_id} date={digest.date} />)}
+  </section>
+  <nav class="date-pagination" aria-label="Навигация по выпускам">
+    {older ? <a href={`${base}digest/${digest.digest_id}/${older}/`}>← {older}</a> : <span></span>}
+    {newer ? <a href={`${base}digest/${digest.digest_id}/${newer}/`}>{newer} →</a> : <span></span>}
+  </nav>
+</main>

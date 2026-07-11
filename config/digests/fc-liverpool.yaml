@@ -1,0 +1,24 @@
+id: fc-liverpool
+title: Liverpool FC
+enabled: true
+languages: [en]
+topic:
+  include_any: [Liverpool FC, LFC, Anfield, fc-liverpool, transfers]
+  exclude_any: [Liverpool city council]
+  entities:
+    Liverpool FC: [Liverpool FC, LFC, Reds, Anfield]
+categories: [matches, transfers, injuries, club, academy]
+sources:
+  include_tags: [football, liverpool]
+  min_independent_sources: 2
+  allow_single_source_for: [official_statement, match_result]
+ranking:
+  recency: 0.25
+  source_diversity: 0.25
+  topic_relevance: 0.25
+  impact: 0.20
+  engagement: 0.05
+output:
+  max_events: 10
+  daily_picture_min_chars: 500
+
