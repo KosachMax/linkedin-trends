@@ -2,168 +2,132 @@
   "schema_version": 1,
   "digest_id": "tech",
   "date": "2026-07-11",
-  "generated_at": "2026-07-11T12:00:00Z",
+  "generated_at": "2026-07-11T16:37:26.187391Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» собрано 4 ключевых событий из 4 источников. Основные темы сопоставлены между независимыми публикациями, а важность выражена единым редакционным рейтингом. Материалы собраны из тестовых источников и предназначены для проверки интерфейса."
+    "body": "В выпуске «Технологии» отобрано 4 подтвержденных событий. Редакционный фильтр обработал 15 тематических материалов и исключил 14 неподтвержденных кластеров. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками."
   },
   "currencies": [],
   "sources": [
     {
-      "source_id": "guardian",
-      "source_name": "The Guardian",
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 208,
       "error_code": null,
       "history": [
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1
+        0
       ]
     },
     {
-      "source_id": "hackernews",
-      "source_name": "Hacker News",
-      "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "state": "degraded",
+      "fetched": 0,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 82,
       "error_code": null,
       "history": [
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1
+        0
       ]
     },
     {
-      "source_id": "devto",
-      "source_name": "DEV Community",
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport Football",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 266,
       "error_code": null,
       "history": [
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1
+        0
       ]
     },
     {
-      "source_id": "arxiv",
-      "source_name": "arXiv",
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 163,
       "error_code": null,
       "history": [
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1
+        0
+      ]
+    },
+    {
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "state": "available",
+      "fetched": 12,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1704,
+      "error_code": null,
+      "history": [
+        0
+      ]
+    },
+    {
+      "source_id": "le-monde",
+      "source_name": "Le Monde",
+      "state": "available",
+      "fetched": 18,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 112,
+      "error_code": null,
+      "history": [
+        0
+      ]
+    },
+    {
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 102,
+      "error_code": null,
+      "history": [
+        0
+      ]
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1102,
+      "error_code": null,
+      "history": [
+        0
+      ]
+    },
+    {
+      "source_id": "spiegel",
+      "source_name": "Der Spiegel",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 610,
+      "error_code": null,
+      "history": [
+        0
       ]
     }
   ],
-  "articles": [
-    {
-      "id": "guardian-ai-003",
-      "source_id": "guardian",
-      "source_name": "The Guardian",
-      "canonical_url": "https://example.com/guardian/technology/public-ai-audit-rules",
-      "title": "Public agencies introduce independent audits for AI systems",
-      "normalized_title": "public agencies introduce independent audits for ai systems",
-      "excerpt": "Government departments will publish risk reports and commission external audits before high-impact automated systems can be deployed.",
-      "published_at": "2026-07-11T06:05:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "regulation"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "hn-database-004",
-      "source_id": "hackernews",
-      "source_name": "Hacker News",
-      "canonical_url": "https://example.com/hackernews/distributed-database-release",
-      "title": "A small team releases an open distributed database",
-      "normalized_title": "a small team releases an open distributed database",
-      "excerpt": "The project focuses on predictable replication and ships with a simulator for testing network partitions on a developer laptop.",
-      "published_at": "2026-07-11T06:28:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "databases",
-        "open-source"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "devto-python-005",
-      "source_id": "devto",
-      "source_name": "DEV Community",
-      "canonical_url": "https://example.com/devto/python-task-groups-guide",
-      "title": "A practical guide to structured concurrency in Python",
-      "normalized_title": "a practical guide to structured concurrency in python",
-      "excerpt": "The tutorial compares task groups with manually managed tasks and demonstrates cancellation, timeout and cleanup patterns.",
-      "published_at": "2026-07-11T07:10:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "arxiv-climate-008",
-      "source_id": "arxiv",
-      "source_name": "arXiv",
-      "canonical_url": "https://example.com/arxiv/abs/2607.01008",
-      "title": "A compact model for forecasting local heat waves",
-      "normalized_title": "a compact model for forecasting local heat waves",
-      "excerpt": "Researchers describe a smaller forecasting model designed for municipalities with limited computing capacity and sparse sensor coverage.",
-      "published_at": "2026-07-11T08:24:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "climate"
-      ],
-      "entities": [],
-      "engagement": null
-    }
-  ],
+  "articles": [],
   "events": [
     {
       "id": "tech-guardian-ai-003",
