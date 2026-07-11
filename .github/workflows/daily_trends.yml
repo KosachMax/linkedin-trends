@@ -135,12 +135,6 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install Quartz dependencies
-        run: cd quartz && npm ci
-
-      - name: Build Quartz
-        run: cd quartz && npx quartz build
-
       - name: Enable pnpm
         run: corepack enable
 
@@ -148,22 +142,19 @@ jobs:
         working-directory: frontend
         run: pnpm install --frozen-lockfile
 
-      - name: Build live Astro preview
+      - name: Check and build Astro site
         working-directory: frontend
         env:
           ASTRO_TELEMETRY_DISABLED: '1'
           BASE_PATH: /linkedin-trends/
-        run: pnpm run build
-
-      - name: Upload live Astro preview
-        uses: actions/upload-artifact@v4
-        with:
-          name: astro-live-preview
-          path: frontend/dist
+          SITE_URL: https://kosachmax.github.io/linkedin-trends
+        run: |
+          pnpm run check
+          pnpm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: quartz/public
+          publish_dir: frontend/dist
           publish_branch: gh-pages
