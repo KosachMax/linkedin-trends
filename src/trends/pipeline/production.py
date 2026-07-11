@@ -3,8 +3,11 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 from datetime import UTC, datetime
 from pathlib import Path
+
+_REAL_ARTICLE_ID = re.compile(r"^[0-9a-f]{20}$")
 
 from trends.ai.gemini import GeminiProvider
 from trends.ai.service import EventSynthesisService
@@ -166,7 +169,13 @@ async def run_production(root: Path) -> list[Path]:
         ranked = [event for _, event in sorted(events, key=lambda item: item[0], reverse=True)]
         existing = _load_existing(root, profile.id, str(started.date()))
         if existing:
-            ranked = merge_events(existing.events, ranked)
+            # Drop events whose article IDs were fabricated by AI instead of
+            # taken from the real cluster. Real IDs are 20-char hex strings.
+            clean_existing = [
+                e for e in existing.events
+                if any(_REAL_ARTICLE_ID.match(aid) for aid in e.article_ids)
+            ]
+            ranked = merge_events(clean_existing, ranked)
 
         accepted_ids = {article_id for event in ranked for article_id in event.article_ids}
         digest_articles = [article for article in selected if article.id in accepted_ids]
