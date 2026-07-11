@@ -2,139 +2,169 @@
   "schema_version": 1,
   "digest_id": "tech",
   "date": "2026-07-11",
-  "generated_at": "2026-07-11T12:00:00Z",
+  "generated_at": "2026-07-11T20:50:11.893160Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» собрано 4 ключевых событий из 4 источников. Основные темы сопоставлены между независимыми публикациями, а важность выражена единым редакционным рейтингом. Материалы собраны из тестовых источников и предназначены для проверки интерфейса."
+    "body": "В выпуске «Технологии» отобрано 23 подтвержденных событий. Редакционный фильтр обработал 15 тематических материалов и исключил 1 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
     {
-      "source_id": "guardian",
-      "source_name": "The Guardian",
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 401,
       "error_code": null,
       "history": [
         0,
+        0
+      ]
+    },
+    {
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "state": "degraded",
+      "fetched": 0,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 355,
+      "error_code": null,
+      "history": [
         0,
-        1,
-        1,
-        1,
+        0
+      ]
+    },
+    {
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport Football",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 556,
+      "error_code": null,
+      "history": [
+        0,
+        0
+      ]
+    },
+    {
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 1,
+      "represented_events": 2,
+      "latency_ms": 414,
+      "error_code": null,
+      "history": [
         1,
         1
       ]
     },
     {
-      "source_id": "hackernews",
-      "source_name": "Hacker News",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 12,
+      "accepted": 12,
+      "represented_events": 16,
+      "latency_ms": 277,
       "error_code": null,
       "history": [
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1
+        8,
+        12
       ]
     },
     {
-      "source_id": "devto",
-      "source_name": "DEV Community",
+      "source_id": "le-monde",
+      "source_name": "Le Monde",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 18,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 954,
       "error_code": null,
       "history": [
         0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1
+        0
       ]
     },
     {
-      "source_id": "arxiv",
-      "source_name": "arXiv",
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 10,
+      "accepted": 2,
+      "represented_events": 4,
+      "latency_ms": 308,
+      "error_code": null,
+      "history": [
+        2,
+        2
+      ]
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1284,
       "error_code": null,
       "history": [
         0,
+        0
+      ]
+    },
+    {
+      "source_id": "spiegel",
+      "source_name": "Der Spiegel",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 844,
+      "error_code": null,
+      "history": [
         0,
-        1,
-        1,
-        1,
-        1,
-        1
+        0
       ]
     }
   ],
   "articles": [
     {
-      "id": "guardian-ai-003",
-      "source_id": "guardian",
-      "source_name": "The Guardian",
-      "canonical_url": "https://example.com/guardian/technology/public-ai-audit-rules",
-      "title": "Public agencies introduce independent audits for AI systems",
-      "normalized_title": "public agencies introduce independent audits for ai systems",
-      "excerpt": "Government departments will publish risk reports and commission external audits before high-impact automated systems can be deployed.",
-      "published_at": "2026-07-11T06:05:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
+      "id": "8040d679cc83b0d301ed",
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "canonical_url": "https://www.bbc.co.uk/news/articles/c2dy6e8klw0o?at_medium=RSS&at_campaign=rss",
+      "title": "Meta pulls new AI image feature after days of backlash",
+      "normalized_title": "meta pulls new ai image feature after days of backlash",
+      "excerpt": "Meta's release this week of an AI feature that let people alter Instagram content drew swift blowback.",
+      "published_at": "2026-07-11T01:45:59Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
       "language": "en",
       "topic_hints": [
-        "tech",
-        "ai",
-        "regulation"
+        "world",
+        "politics"
       ],
       "entities": [],
       "engagement": null
     },
     {
-      "id": "hn-database-004",
-      "source_id": "hackernews",
-      "source_name": "Hacker News",
-      "canonical_url": "https://example.com/hackernews/distributed-database-release",
-      "title": "A small team releases an open distributed database",
-      "normalized_title": "a small team releases an open distributed database",
-      "excerpt": "The project focuses on predictable replication and ships with a simulator for testing network partitions on a developer laptop.",
-      "published_at": "2026-07-11T06:28:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "databases",
-        "open-source"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "devto-python-005",
-      "source_id": "devto",
-      "source_name": "DEV Community",
-      "canonical_url": "https://example.com/devto/python-task-groups-guide",
-      "title": "A practical guide to structured concurrency in Python",
-      "normalized_title": "a practical guide to structured concurrency in python",
-      "excerpt": "The tutorial compares task groups with manually managed tasks and demonstrates cancellation, timeout and cleanup patterns.",
-      "published_at": "2026-07-11T07:10:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
+      "id": "4576b5d013794075aa70",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/fiercedash/how-i-cut-my-ai-api-bill-by-95-an-indie-hackers-guide-53dc",
+      "title": "How I Cut My AI API Bill by 95% — An Indie Hacker's Guide",
+      "normalized_title": "how i cut my ai api bill by 95% — an indie hacker's guide",
+      "excerpt": "Look, how I Cut My AI API Bill by 95% — An Indie Hacker's Guide honestly, I wanna start this post with a confession. For the first three months of building my SaaS, I was bleeding money on AI APIs. Like, EMBARRASSING amounts. I didnt even realize it because the bills just showed up on my card and I was too lazy to dig into the line items. Then one Tuesday I sat down with a coffee and actually read the invoice. I nearly spit it out. I was spending roughly 5-10x what I should have been. Same product, same users, just... dumb choices. So I spent the next few weeks ripping my stack apart and rebuilding it with cost in mind. Heres what I learned, and what you can steal. Pretty much every trick here is stuff I wish someone had told me BEFORE I shipped. Let me get into it. The Awful Moment I Realized I Was Getting Ripped Off So picture this. Im running a customer support chatbot for a niche SaaS. Its pulling in around 5,000 con",
+      "published_at": "2026-07-11T20:29:54Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -145,20 +175,248 @@
       "engagement": null
     },
     {
-      "id": "arxiv-climate-008",
-      "source_id": "arxiv",
-      "source_name": "arXiv",
-      "canonical_url": "https://example.com/arxiv/abs/2607.01008",
-      "title": "A compact model for forecasting local heat waves",
-      "normalized_title": "a compact model for forecasting local heat waves",
-      "excerpt": "Researchers describe a smaller forecasting model designed for municipalities with limited computing capacity and sparse sensor coverage.",
-      "published_at": "2026-07-11T08:24:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
+      "id": "26c1b511fbd13f68ac47",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/qingluan/til-zip-in-python-310-has-a-strict-mode-to-catch-length-mismatches-2026-452f",
+      "title": "TIL: zip() in Python 3.10+ Has a strict Mode to Catch Length Mismatches (2026)",
+      "normalized_title": "til: zip() in python 3.10+ has a strict mode to catch length mismatches (2026)",
+      "excerpt": "TIL: zip() in Python 3.10+ Has a strict Mode to Catch Length Mismatches Python 3.10 introduced a significant improvement to the built-in zip() function, which is often used to iterate over two or more lists in parallel. By default, zip() stops once the shortest input iterable is exhausted, potentially leading to silent truncation of data. However, with the strict=True parameter, zip() now raises a ValueError if the input iterables have different lengths. Here's an example demonstrating the difference: # Silent truncation in Python 3.9 and earlier a = [ 1 , 2 , 3 ] <span clas",
+      "published_at": "2026-07-11T20:00:06Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
       "language": "en",
       "topic_hints": [
         "tech",
-        "ai",
-        "climate"
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "d5c4c832ff1fd3af8967",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/qingluan/python-performance-tips-make-your-code-10x-faster-5fpn",
+      "title": "Python Performance Tips: Make Your Code 10x Faster",
+      "normalized_title": "python performance tips: make your code 10x faster",
+      "excerpt": "Python Performance Tips: Make Your Code 10x Faster Speed matters. Here are the most impactful Python optimizations. 1. Use Built-in Functions # Slow total = 0 for n in numbers : total += n # Fast - use built-ins total = sum ( numbers ) 2. List Comprehensions Over Loops # Slow <sp",
+      "published_at": "2026-07-11T20:00:03Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "ed37f34ee7dca7f0ad6d",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/rileykim/enterprise-vs-startup-ai-apis-a-data-driven-breakdown-2656",
+      "title": "Enterprise vs Startup AI APIs: A Data-Driven Breakdown",
+      "normalized_title": "enterprise vs startup ai apis: a data-driven breakdown",
+      "excerpt": "Honestly, enterprise vs Startup AI APIs: A Data-Driven Breakdown I've spent the last six months running inference workloads for both a Series A startup and a Fortune 500 procurement team, and the difference in how they approach AI API consumption is statistically night and day. After collecting usage logs, latency samples, and invoice data across both contexts, I want to share what the numbers actually say — because most \"enterprise vs startup\" guides I've read treat them as the same problem with different budgets. They aren't. The TL;DR up front: if your monthly inference bill is under $500, you almost certainly don't want to negotiate directly with model providers. If it's over $5,000, you almost certainly need dedicated capacity and an SLA. The interesting zone is the $500–$5,000 middle, which is where most growing companies live and where routing decisions get genuinely tricky. Let me show you the data. The Sample: What I Actually Mea",
+      "published_at": "2026-07-11T19:48:03Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "fb7111aeaaa73ed7ac8c",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/youssef_sheeba_f1e77d2193/i-built-file-organizer-a-simple-windows-folder-automation-tool-3jef",
+      "title": "🚀 I Built File Organizer – A Custom Windows File Organization Tool",
+      "normalized_title": "🚀 i built file organizer – a custom windows file organization tool",
+      "excerpt": "Hi everyone! I recently built File Organizer, a lightweight Windows application designed to make file organization easier. Instead of forcing a fixed folder structure, the application lets you customize everything. Features 📂 Choose where folders will be created. ✏️ Create and name folders however you like. 📁 Automatically move files into the correct folders based on their extensions. ⚡ Lightweight and easy to use. 🐍 Built with Python. Download SourceForge: https://sourceforge.net/projects/file-organizer-codesniper/ itch.io: https://codesniper221.itch.io/file-organizer I'm still improving the project, so feedback and feature ideas are always welcome!",
+      "published_at": "2026-07-11T19:29:05Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "4f26de450b10cde04f79",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/liveavabot/why-iphone-videos-fail-as-telegram-avatars-and-how-i-fixed-it-22do",
+      "title": "Why iPhone Videos Fail as Telegram Avatars and How I Fixed It",
+      "normalized_title": "why iphone videos fail as telegram avatars and how i fixed it",
+      "excerpt": "Last month a friend tried to set a video from her iPhone as her Telegram profile video. Telegram accepted the upload, spun for a second, then quietly did nothing. No error message. The video just never appeared. The cause is boring: iPhones have recorded HEVC (H.265) by default since iOS 11, and Telegram's video avatar pipeline only accepts H.264. Telegram never tells you this. It fails silently, and you're left assuming your video is somehow broken. I spent an evening figuring out the exact requirements, wrote an ffmpeg wrapper around them, and ended up shipping the whole thing as a Telegram bot. This is the build log. What Telegram Actually Requires The docs describe video avatars only vaguely, so most of this came from testing uploads until they stuck: Container: MP4 Video codec: H.264, pixel format yuv420p (8-bit, this matters) Aspect: square, 800x800 works well since avatars render inside a circle",
+      "published_at": "2026-07-11T19:04:02Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "f94752a30da7fa692cf4",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/shiva_sai_007/day-160-diving-into-c-power-concepts-building-tic-tac-toe-135m",
+      "title": "🚀 Day 1/60: Diving Into C++ Power Concepts & Building Tic-Tac-Toe!",
+      "normalized_title": "🚀 day 1/60: diving into c++ power concepts & building tic-tac-toe!",
+      "excerpt": "🚀 Day 1/60: Diving Into C++ Power Concepts & Building Tic-Tac-Toe! 📊 Quick Count & Yesterday's Recap Challenge Progress: Day 1 of 60 Yesterday's Recap: N/A — Today marks the official launch of the challenge! 👋 Who I Am I’ve always been driven by a fascination for math and a burning curiosity about how massive, large-scale tech and AI systems actually work under the hood. Right now, I'm a hands-on Python developer diving deep into the fundamentals: mastering Data Structures & Algorithms (DSA), exploring the core concepts of AI/ML, and building a rock-solid foundation for a career in the AI industry. I’m a big believer in planning and structured thinking, and I’m using this challenge to refine my architectural workflow while learning in the open. My goal? To transform from a curious student into a high-caliber developer who can archi",
+      "published_at": "2026-07-11T18:18:00Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "4450694465db8151bd3a",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/loyaldash/i-cut-ai-costs-by-975-my-startup-vs-enterprise-api-breakdown-6p8",
+      "title": "I Cut AI Costs by 97.5%: My Startup vs Enterprise API Breakdown",
+      "normalized_title": "i cut ai costs by 97.5%: my startup vs enterprise api breakdown",
+      "excerpt": "Look, i Cut AI Costs by 97.5%: My Startup vs Enterprise API Breakdown I want to be upfront about something: I track every dollar I spend on AI APIs. Like, literally every dollar. I've got spreadsheets. I've got dashboards. I've got alerts that ping me when my daily spend crosses certain thresholds. So when I started digging into what startups actually pay versus what enterprises actually pay for the same AI models, I nearly spit out my coffee. Here's the thing — the difference is obscene. We're talking about 97.5% in some cases. That's not a typo. That's not marketing fluff. That's the math. Let me walk you through everything I've learned, including the exact numbers, the gotchas nobody talks about, and yes, some Python code you can copy-paste today. Why I Started Caring About This About six months ago, I was helping a friend launch an MVP. Simple chatbot thing. Maybe 100 users, mostly internal testing. They were about to wire u",
+      "published_at": "2026-07-11T18:10:00Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "3852be0640d014573a67",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/yuvasrisrinivas/just-launched-my-new-python-full-stack-portfolio-let-me-know-what-you-think-11o0",
+      "title": "Just launched my new Python Full-Stack Portfolio! Let me know what you think!\")",
+      "normalized_title": "just launched my new python full-stack portfolio! let me know what you think!\")",
+      "excerpt": "he Hook: Hey DEV Community! I’m US Srinivas. I recently graduated in Electronics and Communication Engineering (ECE), but my real passion has always been software development. Over the last few months, I've been diving deep into the world of full-stack engineering, sharpening my skills in Python, MySQL databases, and modern frontend design. Today, I finally put the finishing touches on my personal portfolio website! I built it to showcase my projects, clean code, and my journey into the software field. I'd love for you to check out the live site and the source code below!",
+      "published_at": "2026-07-11T17:52:03Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "fc16a28248f7343aca95",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/zabi_ullah_5351519d5f6f39/python-complete-masterclass-2026-the-ultimate-beginner-to-professional-guide-fmc",
+      "title": "Python Complete Masterclass (2026): The Ultimate Beginner to Professional Guide",
+      "normalized_title": "python complete masterclass (2026): the ultimate beginner to professional guide",
+      "excerpt": "I built the ultimate Python roadmap for 2026. This isn't another \"Hello World\" tutorial. This masterclass covers the philosophy behind Python, its modern features, full installation guide for all OS, the entire ecosystem (pip / uv / conda, testing with pytest, web with Django / Flask / FastAPI), performance tips for GIL and memory, and real career opportunities. Perfect for beginners who want clarity and pros who want a quick, solid refresher. Full article on ZabiTech Community: ( https://zabitechcommunity.netlify.app/post/python-complete-masterclass-2026-the-ultimate-beginner-to-professional-guide.html ) Let's discuss in comments: What is your favorite Python feature in 3.13?",
+      "published_at": "2026-07-11T17:44:42Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "80b15dcc3b56d5c53ba0",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/rarenode/i-crunched-the-numbers-on-10-ai-coding-models-heres-the-winner-27i4",
+      "title": "I Crunched the Numbers on 10 AI Coding Models — Here's the Winner",
+      "normalized_title": "i crunched the numbers on 10 ai coding models — here's the winner",
+      "excerpt": "Check this out: i Crunched the Numbers on 10 AI Coding Models — Here's the Winner I want to talk about something that's been bugging me for months. I've been burning through API credits like crazy testing different AI coding models for my side projects, and I finally sat down to figure out which ones actually give me the most bang for my buck. Here's the thing — most \"best AI models\" lists I've read are written by people who clearly don't care about the bill at the end of the month. So I decided to do my own testing. What I'm about to share is the result of running ten different AI coding models through the exact same gauntlet of programming tasks. Every prompt, every test, every score — same across the board. And since I'm a cost optimizer at heart, I'm going to focus heavily on what each model costs you per million output tokens and whether that price tag is actually worth it. Let me be clear upfront: the cheapest model isn't always the winner, but the most",
+      "published_at": "2026-07-11T17:27:56Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "0fa7994198cf8b658509",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/nexusforg/i-built-a-cli-toolkit-11gk",
+      "title": "I built a CLI toolkit",
+      "normalized_title": "i built a cli toolkit",
+      "excerpt": "I'm a 12-year-old developer learning multiple programming languages. Instead of doing boring tutorials, I decided to build the same CLI tools in different languages and compare them. Created DevToolkit with two tools so far: JSON Formatter - pretty-prints JSON files CodePulse - tracks coding activity in real-time with ASCII visualizations Each tool is implemented in Python, Rust, Go, and JavaScript, so you can compare: Performance (Rust uses ~8MB memory vs Python's ~45MB) Code style and patterns Developer experience GitHub: https://github.com/nexus-forg/devtoolkit Looking for feedback! What other CLI tools should I add? If you found this interesting, please: ⭐ Star the repo on GitHub: <a href=\"https://github.com/nexus-forg/devtoolkit\" rel=\"noopener",
+      "published_at": "2026-07-11T17:24:54Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "1fa87d8070415aa7e6e3",
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "canonical_url": "https://www.politico.com/news/2026/07/11/trump-administration-commerce-ai-program-00993532",
+      "title": "Launch of Trump AI promotion program underwhelms",
+      "normalized_title": "launch of trump ai promotion program underwhelms",
+      "excerpt": "The administration is struggling to balance its desire to dominate AI globally with its ad-hoc security restrictions.",
+      "published_at": "2026-07-11T15:25:20Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "world",
+        "politics",
+        "europe"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "480494473367ce976f57",
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "canonical_url": "https://www.politico.com/news/2026/07/10/wall-streets-new-obsession-reading-washington-00992403",
+      "title": "Wall Street’s new obsession: reading Washington",
+      "normalized_title": "wall street’s new obsession: reading washington",
+      "excerpt": "From Intel to AI, investors are trying to stay ahead of a president whose announcements can move markets overnight.",
+      "published_at": "2026-07-11T10:08:05Z",
+      "collected_at": "2026-07-11T20:50:11.902301Z",
+      "language": "en",
+      "topic_hints": [
+        "world",
+        "politics",
+        "europe"
       ],
       "entities": [],
       "engagement": null
@@ -166,104 +424,339 @@
   ],
   "events": [
     {
-      "id": "tech-guardian-ai-003",
-      "slug": "государственные-ai-системы-будут-проходить-независимый-аудит",
-      "title": "Государственные AI-системы будут проходить независимый аудит",
-      "brief": "Государственные ведомства вводят внешнюю проверку автоматизированных систем с высоким уровнем риска. До запуска они должны публиковать оценку возможного вреда и подтверждать, что решения модели можно проверить. Событие продолжает развиваться; детали будут уточняться по мере появления подтверждений.",
-      "context": "Новые правила касаются систем, влияющих на доступ к государственным услугам и другим значимым решениям. Независимые эксперты должны оценивать качество данных, воспроизводимость результатов и механизмы обжалования.  Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
-      "why_it_matters": "Обязательный аудит повышает прозрачность государственного AI и формирует практику, которая позднее может стать стандартом для регулируемых отраслей и корпоративных систем. Государственные AI-системы будут проходить независимый аудит",
-      "importance": 9,
-      "status": "new",
-      "category": "regulation",
-      "article_ids": [
-        "guardian-ai-003"
-      ],
-      "facts": [
-        {
-          "text": "Государственные ведомства вводят внешнюю проверку автоматизированных систем с высоким уровнем риска. До запуска они должны публиковать оценку возможного вреда и подтверждать, что решения модели можно проверить.",
-          "article_ids": [
-            "guardian-ai-003"
-          ]
-        }
-      ],
-      "updates": [],
-      "first_seen_at": "2026-07-11T06:05:00Z",
-      "updated_at": "2026-07-11T12:00:00Z"
-    },
-    {
-      "id": "tech-hn-database-004",
-      "slug": "новая-открытая-база-данных-упрощает-тестирование-сбоев-сети",
-      "title": "Новая открытая база данных упрощает тестирование сбоев сети",
-      "brief": "Небольшая команда выпустила распределенную базу данных с предсказуемой репликацией и встроенным симулятором сетевых разделений. Сложные сценарии отказа можно воспроизводить на обычном ноутбуке разработчика. Событие продолжает развиваться; детали будут уточняться по мере появления подтверждений.",
-      "context": "Проект делает упор на наблюдаемое поведение реплик и повторяемые тесты, а не только на максимальную производительность. Симулятор помогает заранее проверить потерю связи, задержки и восстановление узлов.  Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
-      "why_it_matters": "Доступное тестирование отказов снижает порог для разработки надежных распределенных приложений и позволяет небольшим командам находить ошибки до выхода системы в production. Новая открытая база данных упрощает тестирование сбоев сети",
-      "importance": 8,
-      "status": "new",
-      "category": "open-source",
-      "article_ids": [
-        "hn-database-004"
-      ],
-      "facts": [
-        {
-          "text": "Небольшая команда выпустила распределенную базу данных с предсказуемой репликацией и встроенным симулятором сетевых разделений. Сложные сценарии отказа можно воспроизводить на обычном ноутбуке разработчика.",
-          "article_ids": [
-            "hn-database-004"
-          ]
-        }
-      ],
-      "updates": [],
-      "first_seen_at": "2026-07-11T06:28:00Z",
-      "updated_at": "2026-07-11T12:00:00Z"
-    },
-    {
-      "id": "tech-devto-python-005",
-      "slug": "структурированная-конкурентность-упрощает-управление-задачами-python",
-      "title": "Структурированная конкурентность упрощает управление задачами Python",
-      "brief": "Практическое руководство показывает, как группы задач помогают согласованно запускать, отменять и очищать асинхронные операции Python. Подход сравнивается с ручным управлением отдельными задачами. Событие продолжает развиваться; детали будут уточняться по мере появления подтверждений.",
-      "context": "При ручном создании фоновых задач разработчик должен самостоятельно отслеживать исключения и корректно завершать дочерние операции. Структурированная конкурентность связывает их жизненный цикл с родительским блоком.  Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
-      "why_it_matters": "Предсказуемая отмена и обработка ошибок уменьшают количество зависших задач и упрощают поддержку асинхронных backend-сервисов. Структурированная конкурентность упрощает управление задачами Python Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
+      "id": "tech-4a4043663b32fcf0",
+      "slug": "инвесторы-уолл-стрит-внимательно-следят-за-вашингтоном",
+      "title": "Инвесторы Уолл-стрит внимательно следят за Вашингтоном",
+      "brief": "Инвесторы на Уолл-стрит проявляют повышенный интерес к политическим решениям Вашингтона, особенно в сферах, таких как производство полупроводников (Intel) и искусственный интеллект (AI). Они стремятся предвидеть действия президента США, которые могут мгновенно повлиять на рынки. Это наблюдение подчеркивает растущую взаимосвязь между политическими объявлениями и финансовыми рынками, где инвесторы пытаются использовать эту информацию для получения преимущества.",
+      "context": "В последние годы наблюдается тенденция, когда финансовые рынки становятся все более чувствительными к политическим событиям и заявлениям. Инвесторы, особенно в секторах с высокой волатильностью, таких как технологии, пытаются анализировать политический ландшафт, чтобы прогнозировать будущие рыночные движения. Это включает в себя отслеживание заявлений президента, законодательных инициатив и регуляторных изменений, которые могут существенно повлиять на стоимость акций и общую экономическую ситуацию.",
+      "why_it_matters": "Способность предвидеть политические решения и их влияние на рынки может принести значительную финансовую выгоду инвесторам. Это также может привести к повышенной волатильности на рынках, поскольку внезапные объявления могут вызвать резкие колебания цен. Для компаний, таких как Intel, политические решения могут повлиять на их производственные цепочки, доступ к рынкам и конкурентоспособность, что, в свою очередь, сказывается на их акциях.",
       "importance": 7,
       "status": "new",
-      "category": "backend",
+      "category": "Экономика и Политика",
       "article_ids": [
-        "devto-python-005"
+        "480494473367ce976f57"
       ],
       "facts": [
         {
-          "text": "Практическое руководство показывает, как группы задач помогают согласованно запускать, отменять и очищать асинхронные операции Python. Подход сравнивается с ручным управлением отдельными задачами.",
+          "text": "Инвесторы на Уолл-стрит внимательно следят за политическими решениями Вашингтона, чтобы предвидеть их влияние на рынки.",
           "article_ids": [
-            "devto-python-005"
+            "480494473367ce976f57"
+          ]
+        },
+        {
+          "text": "Объявления президента США могут мгновенно повлиять на рынки, особенно в таких сферах, как производство полупроводников (Intel) и искусственный интеллект (AI).",
+          "article_ids": [
+            "480494473367ce976f57"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-11T07:10:00Z",
-      "updated_at": "2026-07-11T12:00:00Z"
+      "first_seen_at": "2026-07-11T10:08:05Z",
+      "updated_at": "2026-07-11T20:50:11.893160Z"
     },
     {
-      "id": "tech-arxiv-climate-008",
-      "slug": "компактная-модель-прогнозирует-локальные-волны-жары",
-      "title": "Компактная модель прогнозирует локальные волны жары",
-      "brief": "Исследователи представили компактную модель прогноза экстремальной жары для муниципалитетов с ограниченными вычислительными ресурсами и неполным покрытием датчиками. Событие продолжает развиваться; детали будут уточняться по мере появления подтверждений.",
-      "context": "Вместо крупной универсальной системы модель оптимизирована для локальных наблюдений и ограниченного набора входных данных. Авторы проверяют, насколько устойчиво она работает при пропусках измерений.  Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
-      "why_it_matters": "Доступный локальный прогноз помогает городам заранее планировать работу служб, предупреждать жителей и защищать уязвимые группы населения без дорогой инфраструктуры. Компактная модель прогнозирует локальные волны жары Материалы собраны из тестовых источников и предназначены для проверки интерфейса.",
-      "importance": 6,
+      "id": "tech-77be9aa82c51928e",
+      "slug": "сша-испытывают-трудности-с-глобальным-доминированием-в-сфере-ии-из-за-ограничени",
+      "title": "США испытывают трудности с глобальным доминированием в сфере ИИ из-за ограничений безопасности",
+      "brief": "Администрация США сталкивается с проблемами при попытке обеспечить глобальное лидерство в области искусственного интеллекта, одновременно вводя спонтанные ограничения безопасности. Эта двойственная политика затрудняет достижение поставленных целей и вызывает вопросы о стратегии страны в быстро развивающейся сфере ИИ. Неопределенность в регулировании и отсутствие четкого плана могут подорвать позиции США на международной арене.",
+      "context": "Соединенные Штаты стремятся занять лидирующие позиции в мире в области разработки и применения искусственного интеллекта. Однако, наряду с этим стремлением, вводятся различные ограничения, которые носят скорее реактивный, чем стратегический характер. Это создает противоречивую среду, в которой инновации могут быть замедлены, а конкуренты могут получить преимущество.",
+      "why_it_matters": "Неспособность эффективно управлять развитием ИИ и одновременно обеспечивать безопасность может привести к упущению стратегических возможностей и снижению конкурентоспособности США. Это также может повлиять на глобальную стабильность и этические нормы, связанные с использованием ИИ, если страна не сможет установить четкие стандарты и правила.",
+      "importance": 7,
       "status": "new",
-      "category": "climate",
+      "category": "Технологии",
       "article_ids": [
-        "arxiv-climate-008"
+        "1fa87d8070415aa7e6e3"
       ],
       "facts": [
         {
-          "text": "Исследователи представили компактную модель прогноза экстремальной жары для муниципалитетов с ограниченными вычислительными ресурсами и неполным покрытием датчиками.",
+          "text": "Администрация США пытается сбалансировать желание доминировать в сфере ИИ на глобальном уровне с введением спонтанных ограничений безопасности.",
           "article_ids": [
-            "arxiv-climate-008"
+            "1fa87d8070415aa7e6e3"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-11T08:24:00Z",
-      "updated_at": "2026-07-11T12:00:00Z"
+      "first_seen_at": "2026-07-11T15:25:20Z",
+      "updated_at": "2026-07-11T20:50:11.893160Z"
+    },
+    {
+      "id": "tech-8cb5c31641431262",
+      "slug": "сравнение-10-ии-моделей-для-написания-кода-анализ-стоимости-и-эффективности",
+      "title": "Сравнение 10 ИИ-моделей для написания кода: анализ стоимости и эффективности",
+      "brief": "Автор провел тестирование десяти различных ИИ-моделей для написания кода, оценивая их эффективность и стоимость. Основное внимание уделялось соотношению цены и качества выходных данных, а не только самой низкой цене. Исследование охватило одинаковые задачи для всех моделей, чтобы обеспечить объективность сравнения. Результаты анализа призваны помочь разработчикам выбрать наиболее выгодные ИИ-инструменты, учитывая реальные затраты на API.",
+      "context": "В последние месяцы автор активно использовал API различных ИИ-моделей для помощи в своих проектах, что привело к значительным расходам. Это побудило его провести систематическое тестирование и сравнение десяти ведущих ИИ-моделей для написания кода. В отличие от многих существующих рейтингов, где часто игнорируются финансовые аспекты, данное исследование фокусируется на стоимости за миллион выходных токенов и оправданности этой цены. Все тесты проводились с использованием идентичных запросов и критериев оценки для обеспечения максимальной объективности.",
+      "why_it_matters": "Выбор ИИ-модели для написания кода напрямую влияет на бюджет разработчика или компании. Понимание реальной стоимости и эффективности различных моделей позволяет оптимизировать расходы на разработку, избегая переплат за неэффективные решения. Это исследование предоставляет практические данные для принятия обоснованных решений при выборе ИИ-инструментов, что особенно важно в условиях растущего использования ИИ в программировании.",
+      "importance": 7,
+      "status": "completed",
+      "category": "Технологии",
+      "article_ids": [
+        "80b15dcc3b56d5c53ba0"
+      ],
+      "facts": [
+        {
+          "text": "Автор протестировал десять различных ИИ-моделей для написания кода, оценивая их эффективность и стоимость.",
+          "article_ids": [
+            "80b15dcc3b56d5c53ba0"
+          ]
+        },
+        {
+          "text": "Исследование фокусируется на соотношении цены и качества выходных данных, а не только на самой низкой цене модели.",
+          "article_ids": [
+            "80b15dcc3b56d5c53ba0"
+          ]
+        },
+        {
+          "text": "Все модели проходили одинаковые тесты и задачи для обеспечения объективности сравнения.",
+          "article_ids": [
+            "80b15dcc3b56d5c53ba0"
+          ]
+        },
+        {
+          "text": "Автор отмечает, что многие существующие списки лучших ИИ-моделей игнорируют финансовые затраты.",
+          "article_ids": [
+            "80b15dcc3b56d5c53ba0"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T17:27:56Z",
+      "updated_at": "2026-07-11T20:50:11.893160Z"
+    },
+    {
+      "id": "tech-0d95607b5923dccc",
+      "slug": "различия-в-использовании-ai-api-стартапами-и-крупными-корпорациями",
+      "title": "Различия в использовании AI API стартапами и крупными корпорациями",
+      "brief": "Анализ данных за последние шесть месяцев показал существенные различия в потреблении AI API стартапами и крупными корпорациями. Стартапы с ежемесячными расходами на AI API менее $500, как правило, не нуждаются в прямых переговорах с поставщиками моделей. Компании, чьи расходы превышают $5000 в месяц, напротив, требуют выделенных мощностей и соглашений об уровне обслуживания (SLA). Наиболее сложная зона принятия решений находится в диапазоне от $500 до $5000, где находятся растущие компании и где выбор маршрутизации API становится критически важным. Разница в стоимости использования AI API может достигать 97.5%, что подчеркивает важность оптимизации расходов.",
+      "context": "Сравнение подходов к потреблению AI API стартапами и крупными корпорациями основано на данных, собранных за последние шесть месяцев. Исследование включало анализ рабочих нагрузок по обработке данных, выборки задержек и данных о счетах. Отмечается, что большинство руководств по сравнению \"предприятие против стартапа\" рассматривают эти проблемы как одинаковые, отличающиеся лишь бюджетом, тогда как на самом деле подходы и потребности кардинально различаются. Особое внимание уделяется ценовой политике и условиям обслуживания для различных категорий пользователей.",
+      "why_it_matters": "Понимание различий в потреблении и стоимости AI API между стартапами и крупными предприятиями имеет решающее значение для оптимизации расходов и выбора правильной стратегии использования. Для стартапов с небольшими бюджетами прямые переговоры с поставщиками могут быть неэффективны, в то время как для крупных компаний необходимы выделенные ресурсы и SLA для обеспечения стабильности и производительности. Игнорирование этих различий может привести к неоправданным затратам и упущенным возможностям для роста.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "ed37f34ee7dca7f0ad6d",
+        "4450694465db8151bd3a"
+      ],
+      "facts": [
+        {
+          "text": "Различия в потреблении AI API стартапами и крупными корпорациями статистически значительны.",
+          "article_ids": [
+            "ed37f34ee7dca7f0ad6d"
+          ]
+        },
+        {
+          "text": "Стартапам с ежемесячными расходами на AI API менее $500 не рекомендуется вести прямые переговоры с поставщиками моделей.",
+          "article_ids": [
+            "ed37f34ee7dca7f0ad6d"
+          ]
+        },
+        {
+          "text": "Крупным компаниям с ежемесячными расходами на AI API более $5000 необходимы выделенные мощности и соглашения об уровне обслуживания (SLA).",
+          "article_ids": [
+            "ed37f34ee7dca7f0ad6d"
+          ]
+        },
+        {
+          "text": "Наиболее сложная зона принятия решений по маршрутизации API находится в диапазоне расходов от $500 до $5000 в месяц.",
+          "article_ids": [
+            "ed37f34ee7dca7f0ad6d"
+          ]
+        },
+        {
+          "text": "Разница в стоимости использования AI API между стартапами и крупными предприятиями может достигать 97.5%.",
+          "article_ids": [
+            "4450694465db8151bd3a"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T18:10:00Z",
+      "updated_at": "2026-07-11T20:50:11.893160Z"
+    },
+    {
+      "id": "tech-78bb53e8e14722cf",
+      "slug": "оптимизация-производительности-python-ускорение-кода-в-10-раз",
+      "title": "Оптимизация производительности Python: ускорение кода в 10 раз",
+      "brief": "В статье представлены ключевые методы оптимизации производительности кода на языке Python, позволяющие ускорить его выполнение до 10 раз. Особое внимание уделяется использованию встроенных функций, таких как `sum()`, вместо ручных циклов для суммирования элементов списка. Также рассматривается применение списковых включений (list comprehensions) как более эффективной альтернативы традиционным циклам `for` для создания списков. Эти приемы направлены на повышение скорости выполнения программ за счет более эффективного использования ресурсов.",
+      "context": "В мире разработки программного обеспечения скорость выполнения кода является критически важным фактором, особенно при работе с большими объемами данных или в высоконагруженных системах. Язык Python, известный своей гибкостью и простотой использования, иногда может уступать в производительности другим языкам. Поэтому разработчики постоянно ищут способы оптимизации Python-кода. Данная статья фокусируется на практических советах, которые могут значительно улучшить скорость выполнения скриптов на Python, делая их более эффективными и отзывчивыми.",
+      "why_it_matters": "Повышение производительности кода на Python имеет прямое влияние на эффективность разработки и эксплуатации программного обеспечения. Ускорение выполнения задач позволяет сократить время обработки данных, снизить затраты на вычислительные ресурсы (например, облачные серверы), а также улучшить пользовательский опыт за счет более быстрой реакции приложений. Внедрение таких оптимизаций, как использование встроенных функций и списковых включений, является доступным и действенным способом достижения этих целей без существенного усложнения кода.",
+      "importance": 7,
+      "status": "new",
+      "category": "Программирование",
+      "article_ids": [
+        "d5c4c832ff1fd3af8967"
+      ],
+      "facts": [
+        {
+          "text": "Использование встроенных функций, таких как `sum()`, значительно быстрее, чем ручное суммирование элементов списка в цикле.",
+          "article_ids": [
+            "d5c4c832ff1fd3af8967"
+          ]
+        },
+        {
+          "text": "Списковые включения (list comprehensions) являются более производительной альтернативой традиционным циклам `for` при создании списков.",
+          "article_ids": [
+            "d5c4c832ff1fd3af8967"
+          ]
+        },
+        {
+          "text": "Применение данных оптимизаций может ускорить выполнение Python-кода до 10 раз.",
+          "article_ids": [
+            "d5c4c832ff1fd3af8967"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T20:00:03Z",
+      "updated_at": "2026-07-11T20:50:11.893160Z"
+    },
+    {
+      "id": "tech-5a19d316617831fc",
+      "slug": "python-3-10-функция-zip-получила-строгий-режим-для-обнаружения-несоответствий-дл",
+      "title": "Python 3.10: Функция zip() получила строгий режим для обнаружения несоответствий длин",
+      "brief": "В Python 3.10 была добавлена значительная усовершенствование встроенной функции zip(), которая часто используется для параллельной итерации по двум или более спискам. По умолчанию zip() останавливается, как только самый короткий входной итерируемый объект исчерпан, что потенциально может привести к незаметному усечению данных. Однако с параметром strict=True функция zip() теперь вызывает исключение ValueError, если входные итерируемые объекты имеют разную длину. Это изменение предотвращает скрытые ошибки, связанные с несовпадением размеров списков при их объединении.",
+      "context": "Функция zip() в Python является удобным инструментом для объединения элементов из нескольких итерируемых объектов (например, списков) в кортежи. До версии Python 3.10 поведение zip() заключалось в том, что она прекращала работу, как только заканчивался самый короткий из переданных ей списков. Это могло привести к тому, что данные из более длинных списков просто игнорировались без какого-либо предупреждения, что затрудняло поиск ошибок. Разработчики часто сталкивались с ситуациями, когда из-за этой особенности программы давали неверные результаты или вели себя непредсказуемо.",
+      "why_it_matters": "Введение строгого режима в функции zip() с параметром strict=True в Python 3.10 является важным шагом для повышения надежности и предсказуемости кода. Теперь разработчики могут явно указать, что все входные последовательности должны иметь одинаковую длину, и в случае несоответствия получить ошибку. Это помогает предотвратить скрытые ошибки, связанные с усечением данных, и упрощает отладку, делая процесс разработки более эффективным и безопасным. Программисты могут быть уверены, что все элементы будут обработаны, или же получат немедленное уведомление о проблеме.",
+      "importance": 7,
+      "status": "new",
+      "category": "Программирование",
+      "article_ids": [
+        "26c1b511fbd13f68ac47"
+      ],
+      "facts": [
+        {
+          "text": "В Python 3.10 функция zip() получила параметр strict=True, который вызывает ошибку ValueError при несовпадении длин входных итерируемых объектов.",
+          "article_ids": [
+            "26c1b511fbd13f68ac47"
+          ]
+        },
+        {
+          "text": "По умолчанию функция zip() останавливается, когда самый короткий входной итерируемый объект исчерпан, что может привести к незаметному усечению данных.",
+          "article_ids": [
+            "26c1b511fbd13f68ac47"
+          ]
+        },
+        {
+          "text": "Строгий режим в zip() помогает предотвратить скрытые ошибки, связанные с усечением данных из-за разной длины списков.",
+          "article_ids": [
+            "26c1b511fbd13f68ac47"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T20:00:06Z",
+      "updated_at": "2026-07-11T20:50:11.893160Z"
+    },
+    {
+      "id": "tech-cb129f5f682a282f",
+      "slug": "разработчик-сократил-расходы-на-ии-api-на-95",
+      "title": "Разработчик сократил расходы на ИИ-API на 95%",
+      "brief": "Инди-разработчик поделился опытом значительного снижения затрат на использование ИИ-API. В течение первых трех месяцев разработки своего SaaS-продукта он тратил на эти сервисы в 5-10 раз больше, чем следовало, не обращая внимания на детализацию счетов. Осознав проблему, он перестроил свою технологическую архитектуру с учетом оптимизации расходов, что позволило добиться 95% экономии. Эти методы могут быть полезны другим разработчикам, стремящимся контролировать затраты на ИИ.",
+      "context": "Разработчик, занимающийся созданием SaaS-продукта, столкнулся с непредвиденно высокими расходами на использование ИИ-API. Первоначально он не уделял должного внимания детализации счетов, что привело к значительным переплатам в течение первых трех месяцев разработки. Осознав масштаб проблемы, он предпринял шаги по оптимизации своей технологической базы, чтобы сократить затраты.",
+      "why_it_matters": "Неконтролируемые расходы на ИИ-API могут существенно увеличить бюджет стартапа или индивидуального разработчика, ставя под угрозу финансовую устойчивость проекта. Оптимизация этих затрат, как показывает пример, может привести к существенной экономии, позволяя перераспределить ресурсы на другие важные аспекты развития продукта или бизнеса.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "4576b5d013794075aa70"
+      ],
+      "facts": [
+        {
+          "text": "Разработчик обнаружил, что тратил на ИИ-API в 5-10 раз больше, чем необходимо, в первые три месяца разработки своего SaaS-продукта.",
+          "article_ids": [
+            "4576b5d013794075aa70"
+          ]
+        },
+        {
+          "text": "После осознания проблемы разработчик перестроил свою технологическую архитектуру с целью снижения расходов на ИИ-API.",
+          "article_ids": [
+            "4576b5d013794075aa70"
+          ]
+        },
+        {
+          "text": "В результате оптимизации расходов на ИИ-API удалось добиться экономии в 95%.",
+          "article_ids": [
+            "4576b5d013794075aa70"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T20:29:54Z",
+      "updated_at": "2026-07-11T20:50:11.893160Z"
+    },
+    {
+      "id": "tech-d2d86ad06df036c5",
+      "slug": "meta-pulls-new-ai-image-feature-after-days-of-backlash",
+      "title": "Meta pulls new AI image feature after days of backlash",
+      "brief": "Meta's release this week of an AI feature that let people alter Instagram content drew swift blowback. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками.",
+      "context": "Meta's release this week of an AI feature that let people alter Instagram content drew swift blowback. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками.",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками.",
+      "importance": 6,
+      "status": "new",
+      "category": "politics",
+      "article_ids": [
+        "8040d679cc83b0d301ed"
+      ],
+      "facts": [
+        {
+          "text": "Meta's release this week of an AI feature that let people alter Instagram content drew swift blowback.",
+          "article_ids": [
+            "8040d679cc83b0d301ed"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T01:45:59Z",
+      "updated_at": "2026-07-11T20:15:50.693712Z"
+    },
+    {
+      "id": "tech-6e877f31f505d4e9",
+      "slug": "wall-street-s-new-obsession-reading-washington",
+      "title": "Wall Street’s new obsession: reading Washington",
+      "brief": "From Intel to AI, investors are trying to stay ahead of a president whose announcements can move markets overnight. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками.",
+      "context": "From Intel to AI, investors are trying to stay ahead of a president whose announcements can move markets overnight. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками.",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками.",
+      "importance": 6,
+      "status": "new",
+      "category": "europe",
+      "article_ids": [
+        "480494473367ce976f57"
+      ],
+      "facts": [
+        {
+          "text": "From Intel to AI, investors are trying to stay ahead of a president whose announcements can move markets overnight.",
+          "article_ids": [
+            "480494473367ce976f57"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T10:08:05Z",
+      "updated_at": "2026-07-11T20:15:50.693712Z"
+    },
+    {
+      "id": "tech-51c3d1a5e920d98e",
+      "slug": "launch-of-trump-ai-promotion-program-underwhelms",
+      "title": "Launch of Trump AI promotion program underwhelms",
+      "brief": "The administration is struggling to balance its desire to dominate AI globally with its ad-hoc security restrictions. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками.",
+      "context": "The administration is struggling to balance its desire to dominate AI globally with its ad-hoc security restrictions. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками.",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками.",
+      "importance": 6,
+      "status": "new",
+      "category": "europe",
+      "article_ids": [
+        "1fa87d8070415aa7e6e3"
+      ],
+      "facts": [
+        {
+          "text": "The administration is struggling to balance its desire to dominate AI globally with its ad-hoc security restrictions.",
+          "article_ids": [
+            "1fa87d8070415aa7e6e3"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T15:25:20Z",
+      "updated_at": "2026-07-11T20:15:50.693712Z"
     }
   ]
 }
