@@ -43,7 +43,6 @@ const base = import.meta.env.BASE_URL;
         {digests.map(({ id }) => <option value={id} selected={id === digest.digest_id}>{id === "world" ? "Мир" : id === "tech" ? "Технологии" : "Liverpool FC"}</option>)}
       </select>
     </label>
-    <button class="icon-button search-button" aria-label="Поиск">⌕</button>
     <button class="icon-button" data-theme-toggle aria-label="Переключить тему">◐</button>
   </nav>
 </header>
