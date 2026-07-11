@@ -109,6 +109,16 @@ async def run_production(root: Path) -> list[Path]:
                 quarantine.append({"reason": "insufficient_sources", "article_ids": [item.id for item in cluster]})
                 continue
             primary = cluster[0]
+            real_ids = {item.id for item in cluster}
+            title = primary.title
+            brief = _fallback_text(primary.excerpt or primary.title, 220)
+            context = _fallback_text(primary.excerpt or primary.title, 220)
+            why = _fallback_text(f"Событие затрагивает тему «{profile.title}».", 170)
+            category = primary.topic_hints[-1] if primary.topic_hints else "news"
+            importance = min(10, 5 + independent_sources)
+            article_ids = [item.id for item in cluster]
+            facts = [Fact(text=primary.excerpt or primary.title, article_ids=[primary.id])]
+            status = EventStatus.NEW
             try:
                 if ai:
                     synthesis = await ai.synthesize(cluster, minimum_sources=minimum)
@@ -118,22 +128,20 @@ async def run_production(root: Path) -> list[Path]:
                     why = synthesis.why_it_matters
                     category = synthesis.category
                     importance = synthesis.impact
-                    facts = [Fact(text=fact.text, article_ids=fact.article_ids) for fact in synthesis.facts]
-                    article_ids = synthesis.article_ids
+                    # Only accept AI article_ids that reference real cluster articles.
+                    valid_ai_ids = [aid for aid in synthesis.article_ids if aid in real_ids]
+                    article_ids = valid_ai_ids if valid_ai_ids else article_ids
+                    facts = [
+                        Fact(
+                            text=fact.text,
+                            article_ids=[aid for aid in fact.article_ids if aid in real_ids] or article_ids,
+                        )
+                        for fact in synthesis.facts
+                    ]
                     try:
                         status = EventStatus(synthesis.status)
                     except ValueError:
                         status = EventStatus.NEW
-                else:
-                    title = primary.title
-                    brief = _fallback_text(primary.excerpt or primary.title, 220)
-                    context = _fallback_text(primary.excerpt or primary.title, 220)
-                    why = _fallback_text(f"Событие затрагивает тему «{profile.title}».", 170)
-                    category = primary.topic_hints[-1] if primary.topic_hints else "news"
-                    importance = min(10, 5 + independent_sources)
-                    article_ids = [item.id for item in cluster]
-                    facts = [Fact(text=primary.excerpt or primary.title, article_ids=[primary.id])]
-                    status = EventStatus.NEW
             except Exception as error:
                 quarantine.append({"reason": type(error).__name__, "article_ids": [item.id for item in cluster]})
                 continue
