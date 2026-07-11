@@ -99,7 +99,7 @@ jobs:
             echo "No changes"
           else
             git commit -m "data: update daily digests [skip ci]"
-            git push
+            git pull --rebase && git push
           fi
 
       - name: Verify pipeline output
