@@ -37,13 +37,6 @@ const base = import.meta.env.BASE_URL;
       </div>
     </details>
     <div class="nav-spacer nav-spacer-right"></div>
-    <div class="feed-links" aria-label="Выбрать дайджест">
-      {digests.map(({ id }) => (
-        <a class:list={["feed-link", { active: id === digest.digest_id }]} href={`${base}digest/${id}/`}>
-          {id === "world" ? "Мир" : id === "tech" ? "Технологии" : "Liverpool FC"}
-        </a>
-      ))}
-    </div>
     <label class="digest-select-label">
       <span class="sr-only">Выбрать дайджест</span>
       <select class="digest-select" data-digest-select>
@@ -53,6 +46,13 @@ const base = import.meta.env.BASE_URL;
     <button class="icon-button" data-theme-toggle aria-label="Переключить тему">◐</button>
   </nav>
 </header>
+<nav class="feed-strip" aria-label="Выбрать дайджест">
+  {digests.map(({ id }) => (
+    <a class:list={["feed-pill", { active: id === digest.digest_id }]} href={`${base}digest/${id}/`}>
+      {id === "world" ? "Мир" : id === "tech" ? "Технологии" : "Liverpool FC"}
+    </a>
+  ))}
+</nav>
 <script is:inline define:vars={{ base }}>
   document.querySelector("[data-digest-select]")?.addEventListener("change", (event) => {
     const select = event.currentTarget;

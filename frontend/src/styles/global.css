@@ -34,10 +34,11 @@ button, select { font: inherit; }
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
 
 .topbar { background: color-mix(in srgb, var(--page) 94%, transparent); backdrop-filter: blur(16px); }
-.feed-links { display: none; gap: 2px; }
-.feed-link { flex-shrink: 0; padding: 8px 11px; font-size: 15px; font-weight: 600; color: var(--muted); border-radius: 9px; white-space: nowrap; transition: color .14s ease, background .14s ease; }
-.feed-link.active { color: var(--text); background: var(--surface-hover); }
-.feed-link:hover { color: var(--text); background: var(--surface-hover); }
+.feed-strip { display: none; overflow-x: auto; scrollbar-width: none; background: var(--page); border-bottom: 1px solid var(--border); padding: 0 12px; gap: 2px; }
+.feed-strip::-webkit-scrollbar { display: none; }
+.feed-pill { flex-shrink: 0; padding: 10px 14px; font-size: 15px; font-weight: 600; color: var(--muted); border-bottom: 2px solid transparent; white-space: nowrap; transition: color .14s ease; }
+.feed-pill.active { color: var(--text); border-bottom-color: var(--blue); }
+.feed-pill:hover { color: var(--text); }
 .nav-shell { max-width: 1130px; height: 88px; margin: auto; padding: 0 12px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border); }
 .brand { display: flex; align-items: center; gap: 12px; min-width: 220px; font-size: 20px; }
 .brand span { display: grid; place-items: center; width: 43px; height: 43px; color: #fff; background: #080808; border-radius: 11px; font-size: 20px; }
@@ -131,7 +132,7 @@ details[open] > summary .expand-label i { transform: rotate(180deg); }
 .date-pagination a { color: var(--muted); font-size: 14px; font-weight: 600; }
 
 @media (max-width: 820px) {
-  .feed-links { display: flex; }
+  .feed-strip { display: flex; }
   .brand { min-width: auto; }.brand b { display: none; }.nav-spacer-right, .digest-select-label, .search-button { display: none; }
   .nav-shell { height: 70px; overflow-x: auto; }.nav-pill, .source-menu summary { font-size: 15px; }.health-bar { width: 42px; }
   .page-shell { padding-top: 30px; }.digest-meta { flex-wrap: wrap; }
