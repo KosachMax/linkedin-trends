@@ -17,7 +17,10 @@ import httpx
 
 _TRANSLATE_URL = "https://translation.googleapis.com/language/translate/v2"
 _CYRILLIC = re.compile(r"[А-Яа-яЁё]")
-_MIN_CYRILLIC_RATIO = 0.15  # text is "Russian enough" if ≥15% chars are Cyrillic
+# Characters that appear in Ukrainian/Belarusian Cyrillic but never in Russian:
+# і/І (U+0456/0406), ї/Ї (U+0457/0407), є/Є (U+0454/0404), ґ/Ґ (U+0491/0490), ў/Ў (U+045E/040E)
+_NON_RUSSIAN_CYR = re.compile(r"[іІїЇєЄґҐўЎ]")
+_MIN_CYRILLIC_RATIO = 0.15
 
 
 def _needs_translation(text: str) -> bool:
@@ -27,7 +30,9 @@ def _needs_translation(text: str) -> bool:
     if not letters:
         return False
     cyrillic = sum(1 for c in letters if _CYRILLIC.match(c))
-    return cyrillic / len(letters) < _MIN_CYRILLIC_RATIO
+    if cyrillic / len(letters) < _MIN_CYRILLIC_RATIO:
+        return True  # Latin-heavy: English, French, etc.
+    return bool(_NON_RUSSIAN_CYR.search(text))  # Ukrainian or Belarusian Cyrillic
 
 
 async def translate_to_russian(texts: list[str], api_key: str) -> list[str]:
