@@ -4,13 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A dual-pipeline daily digest generator. Two pipelines run on a cron schedule:
-- **Tech** — collects posts from Reddit/HN/Dev.to/GitHub Trending/Lobsters/Mastodon/StackOverflow, clusters by topic via Gemini LLM
-- **News** — collects world news from RSS + The Guardian, clusters by significance via Gemini LLM
+A dual-pipeline daily digest generator that publishes to a static site (Quartz v4 → GitHub Pages).
 
-Output: Markdown files published to GitHub Pages via Quartz v4.
+- **Tech pipeline** — collects posts from 10 developer sources, clusters by topic via Gemini LLM → `quartz/content/tech/YYYY-MM-DD.md`
+- **News pipeline** — collects world news from RSS feeds + The Guardian, clusters by significance via Gemini LLM → `quartz/content/news/YYYY-MM-DD.md`
 
-## Running the pipelines
+Live site: **https://kosachmax.github.io/linkedin-trends**
+
+## Running
 
 ```bash
 pip install -r requirements.txt
@@ -21,100 +22,104 @@ python main.py --mode tech  # tech only
 python main.py --mode news  # news only
 ```
 
-Required env: `GOOGLE_API_KEY` (Google AI Studio, free). Optional: `OBSIDIAN_VAULT_PATH`, `GUARDIAN_API_KEY`, `DEVTO_API_KEY`.
-
-## Output modes
-
-`OUTPUT_MODE` (env var) controls where files are written:
-- `local` (default) — writes to `OBSIDIAN_VAULT_PATH/YYYY-MM-DD-*.md`
-- `github` (set by Actions) — writes to `quartz/content/tech/` and `quartz/content/news/`
-
-In `github` mode, `obsidian_writer.save()` and `news_writer.save()` also call `index_writer.generate_index()` which regenerates `quartz/content/index.md` and `archive.md`.
+Required env: `GOOGLE_API_KEY` (Google AI Studio, free tier sufficient).  
+Optional: `OBSIDIAN_VAULT_PATH`, `GUARDIAN_API_KEY`, `DEVTO_API_KEY`, `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`.
 
 ## Architecture
 
 ```
-collectors/          → raw data (Post / NewsItem dataclasses)
-  reddit.py          → Reddit public JSON API, filters by min_score
-  hackernews.py      → Algolia Search API, 24h window
-  devto.py           → Dev.to REST API
-  github_trending.py → GitHub Search API (repos created today, sorted by stars)
-  lobsters.py        → Lobste.rs JSON API
-  mastodon.py        → Mastodon trending API (hachyderm.io)
-  stackoverflow.py   → Stack Exchange API hot questions
-  rss_news.py        → feedparser, NEWS_PER_SOURCE items per feed
-  guardian_news.py   → Guardian API (requires GUARDIAN_API_KEY)
-  currency.py        → CBR (Central Bank Russia) XML API for RUB rates
+main.py                   → orchestrates both pipelines; _safe_collect() wraps each
+                            collector so one broken source never crashes the pipeline
+collectors/               → each returns list[Post] or list[NewsItem]
+  reddit.py               → PRAW OAuth if REDDIT_CLIENT_ID set, else public JSON API
+  hackernews.py           → Algolia /search_by_date; local filtering by score+age
+  devto.py                → Dev.to REST API (optional DEVTO_API_KEY)
+  github_trending.py      → GitHub Search API (repos created today, sorted by stars)
+  lobsters.py             → Lobste.rs JSON API
+  mastodon.py             → Mastodon trending (hachyderm.io)
+  stackoverflow.py        → Stack Exchange API hot questions
+  medium.py               → RSS feeds per tag (feedparser)
+  arxiv.py                → Atom API (cs.AI, cs.LG, cs.CL)
+  indiehackers.py         → RSS (currently returns 0 — feed is broken)
+  rss_news.py             → feedparser, NEWS_PER_SOURCE items per feed
+  guardian_news.py        → Guardian API (requires GUARDIAN_API_KEY)
+  currency.py             → CBR (Central Bank Russia) XML API; 30-day rolling
+                            history in data/currency_history.json
 
 analyzer/
-  llm_analyzer.py    → Gemini 2.5 Flash Lite → {clusters} for tech (CLUSTER_COUNT clusters)
-  news_analyzer.py   → Gemini 2.5 Flash Lite → {clusters} with significance 1-10
+  llm_analyzer.py         → Gemini → CLUSTER_COUNT tech topic clusters
+  news_analyzer.py        → Gemini → NEWS_TOP_COUNT news clusters with significance 1-10
 
 output/
-  obsidian_writer.py → renders tech markdown
-  news_writer.py     → renders news markdown + currency line
-  index_writer.py    → generates homepage + archive, caches top-3 to data/*.json
+  obsidian_writer.py      → renders tech .md in Obsidian/Quartz callout syntax
+  news_writer.py          → renders news .md with currency block
+  index_writer.py         → regenerates index.md + archive.md; caches top-3 clusters
+                            to data/tech_latest.json and data/news_latest.json
 ```
+
+## LLM
 
 Both analyzers use the **OpenAI SDK pointed at Google's Gemini endpoint**:
 ```python
 client = OpenAI(api_key=os.environ["GOOGLE_API_KEY"],
                 base_url="https://generativelanguage.googleapis.com/v1beta/openai/")
+# model = "gemini-2.5-flash-lite", max_tokens = 16384
 ```
 
-The LLM returns raw JSON (no markdown fences). Both analyzers strip ```` ```json ```` fences, trailing commas, and `//` comments before `json.loads()`.
+The LLM returns raw JSON. Both analyzers:
+1. Extract the outermost `{…}` by `find`/`rfind` to discard any preamble/postamble text the model adds
+2. Strip ` ```json ` fences, `// comments`, and trailing commas before `json.loads()`
+3. Retry the API call up to 3× with exponential backoff on API exceptions
 
-## Markdown format
+`obsidian_writer.render()` accesses all LLM-provided cluster fields via `.get()` with defaults and casts numeric fields to `int()` to guard against the model returning `null`.
 
-Pages are written in Obsidian/Quartz callout syntax:
-- `> [!danger]` / `> [!warning]` / `> [!note]` for cluster severity
-- `> [!tip]` / `> [!success]` for structural blocks
-- Currency rates render as: `💱 USD/RUB: 77.97 ↑ +0.50 (0.64%)`
+## Output modes
 
-The `quartz/content/` directory is the only custom part of the Quartz installation. Everything else under `quartz/` is boilerplate.
+`OUTPUT_MODE` env var:
+- `local` (default) — writes to `OBSIDIAN_VAULT_PATH/YYYY-MM-DD-*.md`
+- `github` (set by Actions) — writes to `quartz/content/tech/` and `quartz/content/news/`; calls `generate_index()` after each pipeline
+
+In `github` mode, if the tech pipeline fails entirely, `_write_stub_tech()` writes a placeholder `.md` so the CI file-existence check doesn't exit 1.
+
+## config.py key knobs
+
+| Variable | Default | Effect |
+|---|---|---|
+| `CLUSTER_COUNT` | 10 | tech clusters per run |
+| `MAX_POSTS_FOR_ANALYSIS` | 150 | posts sent to LLM (token budget) |
+| `NEWS_TOP_COUNT` | 10 | news clusters per run; keep ≤15 |
+| `NEWS_MAX_FOR_ANALYSIS` | 60 | news items sent to LLM |
+| `NEWS_PER_SOURCE` | 5 | items fetched per RSS feed |
+| `SOURCES` | dict | enable/disable each collector + per-source thresholds |
+| `RSS_FEEDS` / `RSS_FEED_LANGUAGE` | dicts | news RSS sources and their language codes |
 
 ## Deployment
 
 GitHub Actions (`.github/workflows/daily_trends.yml`):
-- Schedule: 05:30 UTC (08:30 Moscow) daily + `workflow_dispatch`
-- Secrets needed: `GOOGLE_API_KEY`, `GUARDIAN_API_KEY` (optional)
-- Steps: `python main.py --mode all` → `npx quartz build` → deploy `quartz/public/` to `gh-pages` via `peaceiris/actions-gh-pages`
-- The "Verify pipeline output" step fails the workflow if `quartz/content/tech/YYYY-MM-DD.md` or `quartz/content/news/YYYY-MM-DD.md` is missing.
+- **Triggers:** cron `05:30 UTC` daily + `workflow_dispatch` + every push to `main`
+- **Secrets needed:** `GOOGLE_API_KEY` (required), `GUARDIAN_API_KEY` (optional)
+- **Steps:** `python main.py --mode all` → verify both `.md` files exist → `npx quartz build` → deploy `quartz/public/` to `gh-pages` via `peaceiris/actions-gh-pages`
 
-GitHub Pages setup: Settings → Pages → Source: **Deploy from a branch** → `gh-pages` / root.
+`quartz/content/` is the only custom part of the Quartz installation; everything else under `quartz/` is boilerplate.
 
-## Data persistence
+## Known source limitations in CI
 
-`data/` is not gitignored. It stores:
-- `currency_history.json` — 30-day rolling window of exchange rates (written by `fetch_and_save_rates()`, read by `get_rates_with_delta()` for day-over-day comparison)
+| Source | Issue |
+|---|---|
+| Reddit | GitHub Actions IPs blocked (403). Needs `REDDIT_CLIENT_ID` + `REDDIT_CLIENT_SECRET` secrets for PRAW OAuth. Without them returns 0 posts. |
+| Guardian | Returns 401 if `GUARDIAN_API_KEY` secret is not set. |
+| GitHub Trending | Unauthenticated rate limit is 60 req/hr; `GITHUB_TOKEN` is passed via env automatically. |
+| Indie Hackers | RSS feed always returns 0 posts (broken endpoint). |
+
+## data/ directory
+
+Not gitignored. Stores persistent state across runs:
+- `currency_history.json` — 30-day rolling window of exchange rates
 - `tech_latest.json`, `news_latest.json` — top-3 cluster cache for the index page
 
-## Known source limitations in GitHub Actions
+## Adding a new collector
 
-| Source | Issue | Status |
-|--------|-------|--------|
-| Reddit | GitHub Actions IPs are blocked (403). Needs OAuth via PRAW. | Returns 0 posts, pipeline continues |
-| HN (Algolia) | Algolia rejects URL-encoded operators (`%3E%3D`) — URL built manually to pass `>=` literally | Fixed |
-| Guardian | Requires `GUARDIAN_API_KEY` secret in repo Settings → Secrets | 401 if secret missing |
-| GitHub Trending | Unauthenticated rate limit is 60 req/hr; `GITHUB_TOKEN` is passed via env | Works with token |
-
-When adding a new collector, make sure it handles exceptions silently (print + return `[]`) so one broken source never crashes the whole pipeline.
-
-## config.py key knobs
-
-- `CLUSTER_COUNT` — tech clusters per day (default 10)
-- `NEWS_TOP_COUNT` — news clusters per day (default 10); keep ≤15 to stay under `max_tokens`
-- `MAX_POSTS_FOR_ANALYSIS` / `NEWS_MAX_FOR_ANALYSIS` — items sent to LLM (token budget)
-- `RSS_FEEDS` — dict of `"Name": "url"`; `RSS_FEED_LANGUAGE` maps name → ISO language code
-- `NEWS_PER_SOURCE` — items fetched per RSS feed
-- `SOURCES` — enable/disable each collector and set per-source thresholds
-
-## LLM token budget
-
-Both analyzers use `max_tokens=16384`. The news pipeline is more token-hungry than tech because each cluster carries `summary`, `geographies`, `key_figures`, `top_articles` with URLs, and `tags`. Keep `NEWS_TOP_COUNT ≤ 15`; going higher risks truncated JSON and a parse error that crashes the news pipeline.
-
-## Adding a new news source
-
-1. Create `collectors/my_source.py` with a `collect() -> list[NewsItem]` function
-2. Import and call it in `main.py → collect_news()`
-3. Optionally add it to `config.py` if it needs per-source config
+1. Create `collectors/my_source.py` returning `list[Post]` (tech) or `list[NewsItem]` (news), with all exceptions caught internally (print + return `[]`)
+2. For tech: call via `_safe_collect("name", my_source.collect)` in `collect_tech()` in `main.py`
+3. For news: import and call directly in `collect_news()` in `main.py`
+4. Add config entry to `SOURCES` in `config.py` if it needs per-source thresholds
