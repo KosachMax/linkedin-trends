@@ -88,8 +88,9 @@ async def run_production(root: Path) -> list[Path]:
     raw_articles, source_runs = await collect_sources(load_sources(root / "config/sources"))
     articles = exact_dedupe(normalize_articles(raw_articles))
     profiles = [profile for profile in load_digests(root / "config/digests") if profile.enabled]
-    provider = GeminiProvider(os.environ["GOOGLE_API_KEY"]) if os.getenv("GOOGLE_API_KEY") else None
-    ai = EventSynthesisService(provider) if provider else None
+    google_api_key = os.getenv("GOOGLE_API_KEY")
+    provider = GeminiProvider(google_api_key) if google_api_key else None
+    ai = EventSynthesisService(provider, translation_api_key=google_api_key) if provider else None
     store = DailyStore(root / "data/digests")
     written: list[Path] = []
     run_report: dict[str, object] = {
