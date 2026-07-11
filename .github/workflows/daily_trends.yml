@@ -114,21 +114,18 @@ jobs:
 
       - name: Verify pipeline output
         run: |
-          echo "--- quartz/content/tech ---"
-          ls -la quartz/content/tech/ || true
-          echo "--- quartz/content/news ---"
-          ls -la quartz/content/news/ || true
-          echo "--- data ---"
-          ls -la data/ || true
           TODAY=$(date -u +%Y-%m-%d)
-          if [ ! -f "quartz/content/tech/${TODAY}.md" ]; then
-            echo "::error::tech/${TODAY}.md missing — tech pipeline failed silently"
-            exit 1
-          fi
-          if [ ! -f "quartz/content/news/${TODAY}.md" ]; then
-            echo "::error::news/${TODAY}.md missing — news pipeline failed silently"
-            exit 1
-          fi
+          echo "--- data/digests ---"
+          ls -la data/digests/
+          for feed in world tech fc-liverpool; do
+            file="data/digests/${feed}/current.json"
+            if [ ! -f "$file" ]; then
+              echo "::error::${file} missing — new pipeline failed"
+              exit 1
+            fi
+            count=$(python3 -c "import json; d=json.load(open('${file}')); print(len(d['events']))")
+            echo "${feed}: ${count} events"
+          done
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
