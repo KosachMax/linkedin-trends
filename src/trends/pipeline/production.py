@@ -39,7 +39,7 @@ def _event_id(digest_id: str, title: str) -> str:
 def _fallback_text(value: str, minimum: int) -> str:
     suffix = " Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками."
     result = value.strip()
-    while len(result) < minimum:
+    if len(result) < minimum:
         result = f"{result}{suffix}"
     return result
 
@@ -194,10 +194,10 @@ async def run_production(root: Path) -> list[Path]:
                 "history": [*previous_history.get(run.source_id, []), accepted][-7:],
             }))
 
-        body = _fallback_text(
+        body = (
             f"В выпуске «{profile.title}» отобрано {len(ranked)} подтвержденных событий. "
-            f"Редакционный фильтр обработал {len(selected)} тематических материалов и исключил {len(quarantine)} неподтвержденных кластеров.",
-            profile.output.daily_picture_min_chars,
+            f"Редакционный фильтр обработал {len(selected)} тематических материалов "
+            f"и исключил {len(quarantine)} неподтвержденных кластеров."
         )
         digest = DailyDigest(
             digest_id=profile.id,
