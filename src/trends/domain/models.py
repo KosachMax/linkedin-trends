@@ -91,7 +91,7 @@ class CurrencyRate(Model):
 
 class DailyPicture(Model):
     title: str = "Картина дня"
-    body: str = Field(min_length=200)
+    body: str
 
 
 class DailyDigest(Model):
