@@ -2,10 +2,10 @@
   "schema_version": 1,
   "digest_id": "tech",
   "date": "2026-07-11",
-  "generated_at": "2026-07-11T21:06:19.638778Z",
+  "generated_at": "2026-07-11T21:13:50.607211Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» отобрано 18 подтвержденных событий. Редакционный фильтр обработал 15 тематических материалов и исключил 0 неподтвержденных кластеров."
+    "body": "В выпуске «Технологии» отобрано 20 подтвержденных событий. Редакционный фильтр обработал 15 тематических материалов и исключил 0 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
@@ -16,7 +16,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 258,
+      "latency_ms": 393,
       "error_code": null,
       "history": [
         0,
@@ -30,7 +30,7 @@
       "fetched": 0,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 269,
+      "latency_ms": 344,
       "error_code": null,
       "history": [
         0,
@@ -44,7 +44,7 @@
       "fetched": 30,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 210,
+      "latency_ms": 310,
       "error_code": null,
       "history": [
         0,
@@ -58,7 +58,7 @@
       "fetched": 20,
       "accepted": 1,
       "represented_events": 1,
-      "latency_ms": 243,
+      "latency_ms": 380,
       "error_code": null,
       "history": [
         1,
@@ -71,8 +71,8 @@
       "state": "available",
       "fetched": 12,
       "accepted": 12,
-      "represented_events": 13,
-      "latency_ms": 176,
+      "represented_events": 14,
+      "latency_ms": 257,
       "error_code": null,
       "history": [
         11,
@@ -86,7 +86,7 @@
       "fetched": 18,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 231,
+      "latency_ms": 285,
       "error_code": null,
       "history": [
         0,
@@ -99,8 +99,8 @@
       "state": "available",
       "fetched": 10,
       "accepted": 2,
-      "represented_events": 4,
-      "latency_ms": 364,
+      "represented_events": 5,
+      "latency_ms": 477,
       "error_code": null,
       "history": [
         2,
@@ -114,7 +114,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 977,
+      "latency_ms": 1186,
       "error_code": null,
       "history": [
         0,
@@ -128,7 +128,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 489,
+      "latency_ms": 550,
       "error_code": null,
       "history": [
         0,
@@ -146,11 +146,30 @@
       "normalized_title": "meta pulls new ai image feature after days of backlash",
       "excerpt": "Meta's release this week of an AI feature that let people alter Instagram content drew swift blowback.",
       "published_at": "2026-07-11T01:45:59Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "world",
         "politics"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "3929d471b1f671382b8e",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/magopredator/dock-confidence-calibrated-prmsd-2a-for-docking-poses-ece-0080-1414-tests-5ghj",
+      "title": "dock-confidence: calibrated P(RMSD < 2A) for docking poses (ECE 0.080, 14/14 tests)",
+      "normalized_title": "dock-confidence: calibrated p(rmsd < 2a) for docking poses (ece 0.080, 14/14 tests)",
+      "excerpt": "dock-confidence: calibrated P(RMSD < 2Å) for docking poses A post-hoc calibration layer over any docking engine (DiffDock, AutoDock, Smina). It estimates a calibrated probability that a pose is near-native and computes Expected Calibration Error (ECE) to filter decoys — no retraining required. The problem (EN) Molecular docking is run at scale across pharma and biotech. Yet empirical scoring functions remain the main bottleneck in docking: \"they routinely fail to rank near-native poses above decoys\" ( AgenticPosesRanker, arXiv:2605.03707 ). Roughly half of all eligible PDBbind systems show a scoring-function failure — the crystallographically correct pose is not the top-scored one. Generative docking (DiffDock, FlowDock) produces poses, and DiffDock even emits a confidence score. But",
+      "published_at": "2026-07-11T21:04:31Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
       ],
       "entities": [],
       "engagement": null
@@ -164,7 +183,7 @@
       "normalized_title": "how i cut my ai api bill by 95% — an indie hacker's guide",
       "excerpt": "Look, how I Cut My AI API Bill by 95% — An Indie Hacker's Guide honestly, I wanna start this post with a confession. For the first three months of building my SaaS, I was bleeding money on AI APIs. Like, EMBARRASSING amounts. I didnt even realize it because the bills just showed up on my card and I was too lazy to dig into the line items. Then one Tuesday I sat down with a coffee and actually read the invoice. I nearly spit it out. I was spending roughly 5-10x what I should have been. Same product, same users, just... dumb choices. So I spent the next few weeks ripping my stack apart and rebuilding it with cost in mind. Heres what I learned, and what you can steal. Pretty much every trick here is stuff I wish someone had told me BEFORE I shipped. Let me get into it. The Awful Moment I Realized I Was Getting Ripped Off So picture this. Im running a customer support chatbot for a niche SaaS. Its pulling in around 5,000 con",
       "published_at": "2026-07-11T20:29:54Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -183,7 +202,7 @@
       "normalized_title": "til: zip() in python 3.10+ has a strict mode to catch length mismatches (2026)",
       "excerpt": "TIL: zip() in Python 3.10+ Has a strict Mode to Catch Length Mismatches Python 3.10 introduced a significant improvement to the built-in zip() function, which is often used to iterate over two or more lists in parallel. By default, zip() stops once the shortest input iterable is exhausted, potentially leading to silent truncation of data. However, with the strict=True parameter, zip() now raises a ValueError if the input iterables have different lengths. Here's an example demonstrating the difference: # Silent truncation in Python 3.9 and earlier a = [ 1 , 2 , 3 ] <span clas",
       "published_at": "2026-07-11T20:00:06Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -202,7 +221,7 @@
       "normalized_title": "python performance tips: make your code 10x faster",
       "excerpt": "Python Performance Tips: Make Your Code 10x Faster Speed matters. Here are the most impactful Python optimizations. 1. Use Built-in Functions # Slow total = 0 for n in numbers : total += n # Fast - use built-ins total = sum ( numbers ) 2. List Comprehensions Over Loops # Slow <sp",
       "published_at": "2026-07-11T20:00:03Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -221,7 +240,7 @@
       "normalized_title": "enterprise vs startup ai apis: a data-driven breakdown",
       "excerpt": "Honestly, enterprise vs Startup AI APIs: A Data-Driven Breakdown I've spent the last six months running inference workloads for both a Series A startup and a Fortune 500 procurement team, and the difference in how they approach AI API consumption is statistically night and day. After collecting usage logs, latency samples, and invoice data across both contexts, I want to share what the numbers actually say — because most \"enterprise vs startup\" guides I've read treat them as the same problem with different budgets. They aren't. The TL;DR up front: if your monthly inference bill is under $500, you almost certainly don't want to negotiate directly with model providers. If it's over $5,000, you almost certainly need dedicated capacity and an SLA. The interesting zone is the $500–$5,000 middle, which is where most growing companies live and where routing decisions get genuinely tricky. Let me show you the data. The Sample: What I Actually Mea",
       "published_at": "2026-07-11T19:48:03Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -240,7 +259,7 @@
       "normalized_title": "🚀 i built file organizer – a custom windows file organization tool",
       "excerpt": "Hi everyone! I recently built File Organizer, a lightweight Windows application designed to make file organization easier. Instead of forcing a fixed folder structure, the application lets you customize everything. Features 📂 Choose where folders will be created. ✏️ Create and name folders however you like. 📁 Automatically move files into the correct folders based on their extensions. ⚡ Lightweight and easy to use. 🐍 Built with Python. Download SourceForge: https://sourceforge.net/projects/file-organizer-codesniper/ itch.io: https://codesniper221.itch.io/file-organizer I'm still improving the project, so feedback and feature ideas are always welcome!",
       "published_at": "2026-07-11T19:29:05Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -259,7 +278,7 @@
       "normalized_title": "why iphone videos fail as telegram avatars and how i fixed it",
       "excerpt": "Last month a friend tried to set a video from her iPhone as her Telegram profile video. Telegram accepted the upload, spun for a second, then quietly did nothing. No error message. The video just never appeared. The cause is boring: iPhones have recorded HEVC (H.265) by default since iOS 11, and Telegram's video avatar pipeline only accepts H.264. Telegram never tells you this. It fails silently, and you're left assuming your video is somehow broken. I spent an evening figuring out the exact requirements, wrote an ffmpeg wrapper around them, and ended up shipping the whole thing as a Telegram bot. This is the build log. What Telegram Actually Requires The docs describe video avatars only vaguely, so most of this came from testing uploads until they stuck: Container: MP4 Video codec: H.264, pixel format yuv420p (8-bit, this matters) Aspect: square, 800x800 works well since avatars render inside a circle",
       "published_at": "2026-07-11T19:04:02Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -278,7 +297,7 @@
       "normalized_title": "🚀 day 1/60: diving into c++ power concepts & building tic-tac-toe!",
       "excerpt": "🚀 Day 1/60: Diving Into C++ Power Concepts & Building Tic-Tac-Toe! 📊 Quick Count & Yesterday's Recap Challenge Progress: Day 1 of 60 Yesterday's Recap: N/A — Today marks the official launch of the challenge! 👋 Who I Am I’ve always been driven by a fascination for math and a burning curiosity about how massive, large-scale tech and AI systems actually work under the hood. Right now, I'm a hands-on Python developer diving deep into the fundamentals: mastering Data Structures & Algorithms (DSA), exploring the core concepts of AI/ML, and building a rock-solid foundation for a career in the AI industry. I’m a big believer in planning and structured thinking, and I’m using this challenge to refine my architectural workflow while learning in the open. My goal? To transform from a curious student into a high-caliber developer who can archi",
       "published_at": "2026-07-11T18:18:00Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -297,7 +316,7 @@
       "normalized_title": "i cut ai costs by 97.5%: my startup vs enterprise api breakdown",
       "excerpt": "Look, i Cut AI Costs by 97.5%: My Startup vs Enterprise API Breakdown I want to be upfront about something: I track every dollar I spend on AI APIs. Like, literally every dollar. I've got spreadsheets. I've got dashboards. I've got alerts that ping me when my daily spend crosses certain thresholds. So when I started digging into what startups actually pay versus what enterprises actually pay for the same AI models, I nearly spit out my coffee. Here's the thing — the difference is obscene. We're talking about 97.5% in some cases. That's not a typo. That's not marketing fluff. That's the math. Let me walk you through everything I've learned, including the exact numbers, the gotchas nobody talks about, and yes, some Python code you can copy-paste today. Why I Started Caring About This About six months ago, I was helping a friend launch an MVP. Simple chatbot thing. Maybe 100 users, mostly internal testing. They were about to wire u",
       "published_at": "2026-07-11T18:10:00Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -316,7 +335,7 @@
       "normalized_title": "just launched my new python full-stack portfolio! let me know what you think!\")",
       "excerpt": "he Hook: Hey DEV Community! I’m US Srinivas. I recently graduated in Electronics and Communication Engineering (ECE), but my real passion has always been software development. Over the last few months, I've been diving deep into the world of full-stack engineering, sharpening my skills in Python, MySQL databases, and modern frontend design. Today, I finally put the finishing touches on my personal portfolio website! I built it to showcase my projects, clean code, and my journey into the software field. I'd love for you to check out the live site and the source code below!",
       "published_at": "2026-07-11T17:52:03Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -335,7 +354,7 @@
       "normalized_title": "python complete masterclass (2026): the ultimate beginner to professional guide",
       "excerpt": "I built the ultimate Python roadmap for 2026. This isn't another \"Hello World\" tutorial. This masterclass covers the philosophy behind Python, its modern features, full installation guide for all OS, the entire ecosystem (pip / uv / conda, testing with pytest, web with Django / Flask / FastAPI), performance tips for GIL and memory, and real career opportunities. Perfect for beginners who want clarity and pros who want a quick, solid refresher. Full article on ZabiTech Community: ( https://zabitechcommunity.netlify.app/post/python-complete-masterclass-2026-the-ultimate-beginner-to-professional-guide.html ) Let's discuss in comments: What is your favorite Python feature in 3.13?",
       "published_at": "2026-07-11T17:44:42Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -354,26 +373,7 @@
       "normalized_title": "i crunched the numbers on 10 ai coding models — here's the winner",
       "excerpt": "Check this out: i Crunched the Numbers on 10 AI Coding Models — Here's the Winner I want to talk about something that's been bugging me for months. I've been burning through API credits like crazy testing different AI coding models for my side projects, and I finally sat down to figure out which ones actually give me the most bang for my buck. Here's the thing — most \"best AI models\" lists I've read are written by people who clearly don't care about the bill at the end of the month. So I decided to do my own testing. What I'm about to share is the result of running ten different AI coding models through the exact same gauntlet of programming tasks. Every prompt, every test, every score — same across the board. And since I'm a cost optimizer at heart, I'm going to focus heavily on what each model costs you per million output tokens and whether that price tag is actually worth it. Let me be clear upfront: the cheapest model isn't always the winner, but the most",
       "published_at": "2026-07-11T17:27:56Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "0fa7994198cf8b658509",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/nexusforg/i-built-a-cli-toolkit-11gk",
-      "title": "I built a CLI toolkit",
-      "normalized_title": "i built a cli toolkit",
-      "excerpt": "I'm a 12-year-old developer learning multiple programming languages. Instead of doing boring tutorials, I decided to build the same CLI tools in different languages and compare them. Created DevToolkit with two tools so far: JSON Formatter - pretty-prints JSON files CodePulse - tracks coding activity in real-time with ASCII visualizations Each tool is implemented in Python, Rust, Go, and JavaScript, so you can compare: Performance (Rust uses ~8MB memory vs Python's ~45MB) Code style and patterns Developer experience GitHub: https://github.com/nexus-forg/devtoolkit Looking for feedback! What other CLI tools should I add? If you found this interesting, please: ⭐ Star the repo on GitHub: <a href=\"https://github.com/nexus-forg/devtoolkit\" rel=\"noopener",
-      "published_at": "2026-07-11T17:24:54Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -392,7 +392,7 @@
       "normalized_title": "launch of trump ai promotion program underwhelms",
       "excerpt": "The administration is struggling to balance its desire to dominate AI globally with its ad-hoc security restrictions.",
       "published_at": "2026-07-11T15:25:20Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "world",
@@ -411,7 +411,7 @@
       "normalized_title": "wall street’s new obsession: reading washington",
       "excerpt": "From Intel to AI, investors are trying to stay ahead of a president whose announcements can move markets overnight.",
       "published_at": "2026-07-11T10:08:05Z",
-      "collected_at": "2026-07-11T21:06:19.647721Z",
+      "collected_at": "2026-07-11T21:13:50.614911Z",
       "language": "en",
       "topic_hints": [
         "world",
@@ -424,41 +424,146 @@
   ],
   "events": [
     {
-      "id": "tech-cb129f5f682a282f",
-      "slug": "разработчик-сократил-расходы-на-ии-api-на-95",
-      "title": "Разработчик сократил расходы на ИИ-API на 95%",
-      "brief": "Инди-разработчик поделился своим опытом значительного сокращения расходов на использование ИИ-API. В течение первых трех месяцев разработки своего SaaS-продукта он тратил на эти сервисы в 5-10 раз больше, чем следовало, не замечая этого из-за автоматических списаний с карты. Осознав проблему, он перестроил свою систему с учетом экономии, что позволило ему снизить затраты на 95%. Он обещает поделиться всеми хитростями, которые помогут избежать подобных ошибок.",
-      "context": "Разработчик, создающий SaaS-продукт, столкнулся с неожиданно высокими расходами на использование ИИ-API. Первоначально он не обращал внимания на счета, так как платежи списывались автоматически. Однако, изучив детализацию расходов, он обнаружил, что тратит значительно больше, чем необходимо, на те же самые услуги. Это побудило его к пересмотру архитектуры и оптимизации использования ИИ-сервисов.",
-      "why_it_matters": "Оптимизация расходов на ИИ-API является критически важной для стартапов и инди-разработчиков, где каждый доллар на счету. Неэффективное использование этих сервисов может привести к неоправданно высоким затратам, замедлению роста бизнеса и даже к его провалу. Понимание и применение стратегий экономии позволяет сохранить финансовые ресурсы для дальнейшего развития продукта и масштабирования.",
+      "id": "tech-1b5ae4d89c0232a2",
+      "slug": "мастер-класс-по-python-2026-полное-руководство-от-новичка-до-профессионала",
+      "title": "Мастер-класс по Python 2026: Полное руководство от новичка до профессионала",
+      "brief": "Представлен полный план изучения Python на 2026 год, охватывающий не только основы, но и современные возможности языка, установку на все ОС, экосистему (pip, uv, conda), тестирование (pytest), веб-разработку (Django, Flask, FastAPI), оптимизацию производительности (GIL, память) и карьерные перспективы. Материал предназначен как для начинающих, так и для опытных разработчиков, желающих освежить знания.",
+      "context": "В статье представлен подробный план изучения языка программирования Python, ориентированный на 2026 год. Автор описывает свой подход к созданию этого плана, подчеркивая, что это не простое введение в \"Hello World\", а комплексное руководство. Освещаются фундаментальные аспекты Python, его новейшие функции, детальные инструкции по установке для различных операционных систем, а также обзор всей экосистемы, включая менеджеры пакетов (pip, uv, conda), инструменты для тестирования (pytest) и популярные фреймворки для веб-разработки (Django, Flask, FastAPI). Особое внимание уделяется методам повышения производительности, связанным с Global Interpreter Lock (GIL) и управлением памятью. В заключение рассматриваются реальные карьерные возможности для специалистов по Python.",
+      "why_it_matters": "Данный мастер-класс предоставляет структурированный и всеобъемлющий путь обучения Python, что критически важно для начинающих разработчиков, стремящихся освоить востребованный язык. Для опытных специалистов это возможность быстро освежить знания и ознакомиться с последними тенденциями в экосистеме Python, включая новые версии и инструменты. Актуальность материала на 2026 год гарантирует, что информация будет соответствовать современным требованиям индустрии и поможет в построении успешной карьеры в области разработки программного обеспечения.",
+      "importance": 8,
+      "status": "new",
+      "category": "Программирование",
+      "article_ids": [
+        "fc16a28248f7343aca95"
+      ],
+      "facts": [
+        {
+          "text": "Представлен полный план изучения Python на 2026 год, охватывающий основы, современные возможности, установку, экосистему, тестирование, веб-разработку, оптимизацию производительности и карьерные перспективы.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        },
+        {
+          "text": "Мастер-класс предназначен как для начинающих, так и для опытных разработчиков.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        },
+        {
+          "text": "В статье рассматриваются такие инструменты, как pip, uv, conda, pytest, Django, Flask и FastAPI.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        },
+        {
+          "text": "Особое внимание уделяется оптимизации производительности Python, включая GIL и управление памятью.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T17:44:42Z",
+      "updated_at": "2026-07-11T21:13:50.607211Z"
+    },
+    {
+      "id": "tech-8e747021a42d7ac6",
+      "slug": "мастер-класс-по-python-2026-полное-руководство-для-начинающих-и-профессионалов",
+      "title": "Мастер-класс по Python 2026: Полное руководство для начинающих и профессионалов",
+      "brief": "Представлен полный план изучения Python на 2026 год, охватывающий основы, современные возможности, установку на все ОС, экосистему (pip, uv, conda), тестирование (pytest), веб-разработку (Django, Flask, FastAPI), оптимизацию производительности (GIL, память) и карьерные перспективы. Материал предназначен как для новичков, стремящихся к ясности, так и для опытных разработчиков, нуждающихся в быстром и основательном обновлении знаний. Обсуждаются особенности Python 3.13.",
+      "context": "В статье представлен детальный план обучения Python, ориентированный на 2026 год. Автор разработал комплексный подход, который выходит за рамки базовых уроков. Он включает в себя глубокое погружение в философию языка, изучение его новейших функций, подробное руководство по установке для различных операционных систем, а также обзор всей экосистемы, включая менеджеры пакетов (pip, uv, conda), инструменты для тестирования (pytest) и популярные фреймворки для веб-разработки (Django, Flask, FastAPI). Особое внимание уделяется методам повышения производительности, связанным с Global Interpreter Lock (GIL) и управлением памятью. Статья также затрагивает реальные карьерные возможности для специалистов по Python.",
+      "why_it_matters": "Данный материал является ценным ресурсом для всех, кто изучает или планирует изучать Python. Он предоставляет структурированный путь от начального уровня до профессионального мастерства, охватывая все ключевые аспекты языка и его экосистемы. Актуальность на 2026 год гарантирует, что информация соответствует современным тенденциям и требованиям рынка труда. Это позволяет как новичкам получить четкое представление о процессе обучения, так и опытным разработчикам освежить свои знания и узнать о последних нововведениях.",
+      "importance": 8,
+      "status": "new",
+      "category": "Программирование",
+      "article_ids": [
+        "fc16a28248f7343aca95"
+      ],
+      "facts": [
+        {
+          "text": "Разработан полный план изучения Python на 2026 год, включающий основы, современные возможности, установку, экосистему, тестирование, веб-разработку и карьерные перспективы.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        },
+        {
+          "text": "Мастер-класс охватывает философию Python, его современные функции, полное руководство по установке для всех операционных систем.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        },
+        {
+          "text": "В статье рассматривается экосистема Python, включая pip, uv, conda, тестирование с помощью pytest, а также веб-фреймворки Django, Flask и FastAPI.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        },
+        {
+          "text": "Представлены советы по повышению производительности Python, касающиеся GIL и управления памятью.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        },
+        {
+          "text": "Материал предназначен для начинающих, желающих получить ясность, и для профессионалов, нуждающихся в быстром обновлении знаний.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        },
+        {
+          "text": "Обсуждаются реальные карьерные возможности для специалистов по Python.",
+          "article_ids": [
+            "fc16a28248f7343aca95"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T17:44:42Z",
+      "updated_at": "2026-07-11T20:57:58.865170Z"
+    },
+    {
+      "id": "tech-0d95607b5923dccc",
+      "slug": "различия-в-использовании-ai-api-стартапами-и-крупными-корпорациями",
+      "title": "Различия в использовании AI API стартапами и крупными корпорациями",
+      "brief": "Анализ данных за последние шесть месяцев показал существенные различия в потреблении AI API стартапами и крупными корпорациями. Стартапы с ежемесячными расходами на AI API менее 500 долларов, как правило, не нуждаются в прямых переговорах с поставщиками моделей. Компании, чьи расходы превышают 5000 долларов в месяц, напротив, требуют выделенных мощностей и соглашений об уровне обслуживания (SLA). Наиболее сложная зона принятия решений находится в диапазоне от 500 до 5000 долларов, где большинство растущих компаний сталкиваются с дилеммами маршрутизации запросов. Разница в стоимости использования AI API может достигать 97,5% в зависимости от подхода к потреблению.",
+      "context": "Сравнение подходов к использованию AI API стартапами и крупными корпорациями выявило значительные различия, основанные на данных о рабочих нагрузках, задержках и счетах. Исследование охватывает опыт работы как с быстрорастущим стартапом, так и с командой закупок крупной корпорации из списка Fortune 500. Большинство существующих руководств по сравнению \"предприятие против стартапа\" рассматривают эти проблемы как идентичные, отличающиеся лишь бюджетом, однако фактические данные свидетельствуют об обратном. Особое внимание уделяется ценовым категориям и необходимости переговоров с поставщиками моделей.",
+      "why_it_matters": "Понимание этих различий критически важно для оптимизации затрат на AI API. Для стартапов с небольшими расходами прямое взаимодействие с поставщиками может быть неэффективным. Крупные компании, напротив, должны обеспечивать стабильность и производительность через SLA. Компании, находящиеся в среднем ценовом сегменте, сталкиваются с наиболее сложными решениями по управлению API, что напрямую влияет на их бюджет и операционную эффективность. Экономия до 97,5% возможна при правильном подходе к выбору и использованию AI API.",
       "importance": 8,
       "status": "updated",
       "category": "Технологии",
       "article_ids": [
-        "4576b5d013794075aa70"
+        "ed37f34ee7dca7f0ad6d",
+        "4450694465db8151bd3a"
       ],
       "facts": [
         {
-          "text": "Разработчик сократил свои расходы на ИИ-API на 95%.",
+          "text": "Стартапы с ежемесячными расходами на AI API менее 500 долларов, как правило, не нуждаются в прямых переговорах с поставщиками моделей.",
           "article_ids": [
-            "4576b5d013794075aa70"
+            "ed37f34ee7dca7f0ad6d"
           ]
         },
         {
-          "text": "В первые три месяца разработки SaaS-продукта расходы на ИИ-API были в 5-10 раз выше ожидаемых.",
+          "text": "Компании, чьи расходы на AI API превышают 5000 долларов в месяц, почти наверняка нуждаются в выделенных мощностях и соглашении об уровне обслуживания (SLA).",
           "article_ids": [
-            "4576b5d013794075aa70"
+            "ed37f34ee7dca7f0ad6d"
           ]
         },
         {
-          "text": "Разработчик не сразу заметил высокие расходы из-за автоматических списаний с банковской карты.",
+          "text": "Наиболее сложная зона принятия решений по маршрутизации AI API находится в диапазоне от 500 до 5000 долларов в месяц, где обитает большинство растущих компаний.",
           "article_ids": [
-            "4576b5d013794075aa70"
+            "ed37f34ee7dca7f0ad6d"
           ]
         },
         {
-          "text": "Для снижения затрат разработчик перестроил свою систему с учетом экономии.",
+          "text": "Разница в стоимости использования AI API между стартапами и крупными корпорациями может достигать 97,5%.",
           "article_ids": [
-            "4576b5d013794075aa70"
+            "4450694465db8151bd3a"
+          ]
+        },
+        {
+          "text": "Автор отслеживает каждый доллар, потраченный на AI API, используя электронные таблицы, панели мониторинга и оповещения о превышении пороговых значений ежедневных расходов.",
+          "article_ids": [
+            "4450694465db8151bd3a"
           ]
         }
       ],
@@ -467,58 +572,95 @@
           "at": "2026-07-11T20:57:58.865170Z",
           "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
           "article_ids": [
-            "4576b5d013794075aa70"
+            "ed37f34ee7dca7f0ad6d",
+            "4450694465db8151bd3a"
           ]
         },
         {
-          "at": "2026-07-11T21:06:19.638778Z",
+          "at": "2026-07-11T21:13:50.607211Z",
           "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
           "article_ids": [
-            "4576b5d013794075aa70"
+            "ed37f34ee7dca7f0ad6d",
+            "4450694465db8151bd3a"
           ]
         }
       ],
-      "first_seen_at": "2026-07-11T20:29:54Z",
-      "updated_at": "2026-07-11T21:06:19.638778Z"
+      "first_seen_at": "2026-07-11T18:10:00Z",
+      "updated_at": "2026-07-11T21:13:50.607211Z"
     },
     {
-      "id": "tech-4a4043663b32fcf0",
-      "slug": "инвесторы-уолл-стрит-внимательно-следят-за-вашингтоном",
-      "title": "Инвесторы Уолл-стрит внимательно следят за Вашингтоном",
-      "brief": "Инвесторы на Уолл-стрит проявляют повышенный интерес к политическим решениям Вашингтона, особенно в сферах, таких как производство микросхем и искусственный интеллект. Они стремятся предвидеть действия президента США, которые могут мгновенно повлиять на рынки. Это наблюдение подчеркивает растущую взаимосвязь между политическими объявлениями и финансовыми рынками, где инвесторы ищут способы минимизировать риски и максимизировать прибыль, анализируя политический ландшафт.",
-      "context": "В последние годы наблюдается тенденция, когда финансовые рынки становятся все более чувствительными к политическим событиям и заявлениям. Инвесторы, особенно в секторах с высокой волатильностью, таких как технологии (включая производство микросхем и развитие искусственного интеллекта), пытаются предугадать, как политические решения, принимаемые в Вашингтоне, могут повлиять на их инвестиции. Это требует от них глубокого анализа политической риторики и действий администрации президента.",
-      "why_it_matters": "Способность инвесторов предвидеть и реагировать на политические изменения может существенно повлиять на их финансовые результаты. Решения, принятые президентом, могут привести к значительным колебаниям на фондовом рынке, влияя на стоимость акций компаний и целые отрасли. Понимание этой динамики позволяет инвесторам принимать более обоснованные решения, управлять рисками и использовать возникающие возможности, что в конечном итоге способствует стабильности и росту финансовых рынков.",
+      "id": "tech-97c8b66844890152",
+      "slug": "новый-инструмент-dock-confidence-повышает-точность-предсказания-молекулярных-док",
+      "title": "Новый инструмент dock-confidence повышает точность предсказания молекулярных докингов",
+      "brief": "Разработан новый слой калибровки dock-confidence, который может быть применен к любому докинговому движку, включая DiffDock, AutoDock и Smina. Этот инструмент оценивает вероятность того, что предложенная молекулярная структура (поза) близка к нативной, и использует метрику Expected Calibration Error (ECE) для отсеивания некорректных вариантов. Важно отметить, что для работы dock-confidence не требуется переобучение существующих моделей. Это решение призвано преодолеть ограничения традиционных докинговых методов, которые часто не могут ранжировать нативные позы выше некорректных, что является серьезной проблемой в фармацевтических и биотехнологических исследованиях.",
+      "context": "Молекулярный докинг является ключевым процессом в фармацевтической и биотехнологической отраслях, используемым для предсказания взаимодействия между молекулами. Однако существующие методы оценки (scoring functions) часто не справляются с задачей ранжирования корректных молекулярных структур (поз) выше некорректных. По оценкам, примерно в половине случаев для систем PDBbind, правильная с кристаллографической точки зрения поза не получает наивысшей оценки. Генеративные методы докинга, такие как DiffDock, уже предлагают решения для генерации поз и даже выдают оценку уверенности, но dock-confidence предлагает дополнительный уровень калибровки и фильтрации.",
+      "why_it_matters": "Точность молекулярного докинга критически важна для ускорения процесса открытия и разработки новых лекарств. Неспособность точно предсказать, как молекула будет взаимодействовать с целевым белком, может привести к пустой трате времени и ресурсов на разработку неэффективных или небезопасных соединений. Dock-confidence, повышая надежность оценки предложенных поз, может значительно сократить количество ложноположительных результатов, ускорить идентификацию перспективных кандидатов в лекарства и, в конечном итоге, снизить стоимость разработки новых терапевтических средств.",
+      "importance": 8,
+      "status": "new",
+      "category": "Наука и технологии",
+      "article_ids": [
+        "3929d471b1f671382b8e"
+      ],
+      "facts": [
+        {
+          "text": "Dock-confidence — это слой калибровки, который может быть применен поверх любого докингового движка, включая DiffDock, AutoDock и Smina.",
+          "article_ids": [
+            "3929d471b1f671382b8e"
+          ]
+        },
+        {
+          "text": "Инструмент оценивает вероятность того, что предложенная молекулярная структура (поза) близка к нативной, и использует метрику Expected Calibration Error (ECE) для фильтрации некорректных вариантов.",
+          "article_ids": [
+            "3929d471b1f671382b8e"
+          ]
+        },
+        {
+          "text": "Для работы dock-confidence не требуется переобучение существующих моделей.",
+          "article_ids": [
+            "3929d471b1f671382b8e"
+          ]
+        },
+        {
+          "text": "Традиционные методы оценки в молекулярном докинге часто не могут ранжировать нативные позы выше некорректных, что является проблемой в фармацевтических и биотехнологических исследованиях.",
+          "article_ids": [
+            "3929d471b1f671382b8e"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T21:04:31Z",
+      "updated_at": "2026-07-11T21:13:50.607211Z"
+    },
+    {
+      "id": "tech-620f1cd6d7fc8bfa",
+      "slug": "инвесторы-уолл-стрит-внимательно-следят-за-вашингтоном-из-за-заявлений-президент",
+      "title": "Инвесторы Уолл-стрит внимательно следят за Вашингтоном из-за заявлений президента",
+      "brief": "Инвесторы на Уолл-стрит проявляют повышенный интерес к политическим решениям Вашингтона, особенно к заявлениям президента США, которые могут мгновенно повлиять на рынки. Это касается как технологического сектора, так и сферы искусственного интеллекта. Предпринимаются попытки предугадать действия президента, чтобы опередить рыночные колебания, вызванные его внезапными объявлениями. Такая стратегия стала новой манией для финансового мира, стремящегося минимизировать риски и максимизировать прибыль в условиях высокой неопределенности.",
+      "context": "В последние годы наблюдается тенденция, когда финансовые рынки, особенно на Уолл-стрит, становятся все более чувствительными к политическим событиям и заявлениям американских властей. Инвесторы и аналитики активно изучают политический ландшафт Вашингтона, пытаясь понять, как будущие решения и законодательные инициативы могут повлиять на различные сектора экономики. Особое внимание уделяется технологическим компаниям и разработкам в области искусственного интеллекта, поскольку эти сферы часто становятся объектом государственных регуляций и инвестиционных программ.",
+      "why_it_matters": "Способность президента США влиять на рынки своими заявлениями подчеркивает тесную связь между политикой и экономикой. Это требует от инвесторов не только глубокого понимания финансовых рынков, но и пристального мониторинга политической ситуации. Неожиданные объявления могут привести к значительным колебаниям акций, изменению стоимости активов и перераспределению капитала, что, в свою очередь, влияет на общую экономическую стабильность и рост.",
       "importance": 7,
-      "status": "updated",
+      "status": "new",
       "category": "Экономика и Политика",
       "article_ids": [
         "480494473367ce976f57"
       ],
       "facts": [
         {
-          "text": "Инвесторы на Уолл-стрит внимательно следят за политическими событиями в Вашингтоне, чтобы предвидеть их влияние на рынки.",
+          "text": "Инвесторы на Уолл-стрит внимательно следят за Вашингтоном, пытаясь предугадать заявления президента, которые могут повлиять на рынки.",
           "article_ids": [
             "480494473367ce976f57"
           ]
         },
         {
-          "text": "Объявления президента США могут мгновенно повлиять на рынки, особенно в таких областях, как производство микросхем и искусственный интеллект.",
+          "text": "Заявления президента США могут мгновенно повлиять на рынки, особенно в таких областях, как технологии и искусственный интеллект.",
           "article_ids": [
             "480494473367ce976f57"
           ]
         }
       ],
-      "updates": [
-        {
-          "at": "2026-07-11T21:06:19.638778Z",
-          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
-          "article_ids": [
-            "480494473367ce976f57"
-          ]
-        }
-      ],
+      "updates": [],
       "first_seen_at": "2026-07-11T10:08:05Z",
-      "updated_at": "2026-07-11T21:06:19.638778Z"
+      "updated_at": "2026-07-11T21:13:50.607211Z"
     },
     {
       "id": "tech-02507b2eebdda92a",
@@ -550,6 +692,68 @@
       "updates": [],
       "first_seen_at": "2026-07-11T10:08:05Z",
       "updated_at": "2026-07-11T20:57:58.865170Z"
+    },
+    {
+      "id": "tech-4a4043663b32fcf0",
+      "slug": "инвесторы-уолл-стрит-внимательно-следят-за-вашингтоном",
+      "title": "Инвесторы Уолл-стрит внимательно следят за Вашингтоном",
+      "brief": "Инвесторы на Уолл-стрит проявляют повышенный интерес к политическим решениям Вашингтона, особенно в сферах, таких как производство полупроводников (Intel) и искусственный интеллект (AI). Они стремятся предвидеть действия президента США, которые могут мгновенно повлиять на рынки. Это наблюдение подчеркивает растущую взаимосвязь между политическими объявлениями и финансовыми рынками, где инвесторы пытаются использовать эту информацию для получения преимущества.",
+      "context": "В последние годы наблюдается тенденция, когда финансовые рынки становятся все более чувствительными к политическим событиям и заявлениям. Инвесторы, особенно в секторах с высокой волатильностью, таких как технологии, пытаются анализировать политический ландшафт, чтобы прогнозировать будущие рыночные движения. Это включает в себя отслеживание заявлений президента, законодательных инициатив и регуляторных изменений, которые могут существенно повлиять на стоимость акций и общую экономическую ситуацию.",
+      "why_it_matters": "Способность предвидеть политические решения и их влияние на рынки может принести значительную финансовую выгоду инвесторам. Это также может привести к повышенной волатильности на рынках, поскольку внезапные объявления могут вызвать резкие колебания цен. Для компаний, таких как Intel, политические решения могут повлиять на их производственные цепочки, доступ к рынкам и конкурентоспособность, что, в свою очередь, сказывается на их акциях.",
+      "importance": 7,
+      "status": "new",
+      "category": "Экономика и Политика",
+      "article_ids": [
+        "480494473367ce976f57"
+      ],
+      "facts": [
+        {
+          "text": "Инвесторы на Уолл-стрит внимательно следят за политическими решениями Вашингтона, чтобы предвидеть их влияние на рынки.",
+          "article_ids": [
+            "480494473367ce976f57"
+          ]
+        },
+        {
+          "text": "Объявления президента США могут мгновенно повлиять на рынки, особенно в таких сферах, как производство полупроводников (Intel) и искусственный интеллект (AI).",
+          "article_ids": [
+            "480494473367ce976f57"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T10:08:05Z",
+      "updated_at": "2026-07-11T20:50:11.893160Z"
+    },
+    {
+      "id": "tech-a879a51e0703790d",
+      "slug": "сша-испытывают-трудности-с-глобальным-доминированием-в-сфере-ии-из-за-ограничени",
+      "title": "США испытывают трудности с глобальным доминированием в сфере ИИ из-за ограничений",
+      "brief": "Администрация США сталкивается с проблемами в реализации своей стратегии глобального доминирования в области искусственного интеллекта. Несмотря на стремление занять лидирующие позиции, страна вводит непоследовательные ограничения в сфере безопасности, что подрывает ее усилия. Программа продвижения ИИ, запущенная администрацией Трампа, не оправдала ожиданий, что свидетельствует о наличии внутренних противоречий в подходе к развитию и регулированию этой передовой технологии. Это создает неопределенность и может замедлить прогресс США в гонке за лидерство в сфере ИИ.",
+      "context": "Администрация президента США испытывает сложности с достижением своих амбициозных целей по глобальному доминированию в сфере искусственного интеллекта. С одной стороны, существует явное желание занять лидирующие позиции в этой стратегически важной области, с другой — наблюдается непоследовательность в применении мер безопасности. Эти внутренние противоречия проявляются в виде «ад-хок» ограничений, которые не только не способствуют достижению поставленных целей, но и создают препятствия. Недавний запуск программы продвижения ИИ, инициированной администрацией Трампа, не принес ожидаемых результатов, что подчеркивает глубину проблемы и указывает на необходимость пересмотра текущей стратегии.",
+      "why_it_matters": "Неспособность США эффективно управлять развитием и внедрением искусственного интеллекта может иметь далеко идущие последствия. Это ставит под угрозу не только экономическое и технологическое лидерство страны, но и ее национальную безопасность. В условиях глобальной конкуренции, где другие страны активно инвестируют в ИИ, отставание США может привести к потере стратегических преимуществ. Кроме того, непоследовательная политика в области регулирования ИИ может создать прецедент, который повлияет на международные стандарты и нормы, касающиеся этой технологии, потенциально ослабляя глобальную стабильность и безопасность.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "1fa87d8070415aa7e6e3"
+      ],
+      "facts": [
+        {
+          "text": "Администрация США стремится к глобальному доминированию в сфере искусственного интеллекта, но сталкивается с трудностями из-за непоследовательных ограничений в области безопасности.",
+          "article_ids": [
+            "1fa87d8070415aa7e6e3"
+          ]
+        },
+        {
+          "text": "Программа продвижения искусственного интеллекта, запущенная администрацией Трампа, не оправдала возложенных на нее ожиданий.",
+          "article_ids": [
+            "1fa87d8070415aa7e6e3"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-11T15:25:20Z",
+      "updated_at": "2026-07-11T21:13:50.607211Z"
     },
     {
       "id": "tech-77be9aa82c51928e",
@@ -594,9 +798,9 @@
       "id": "tech-8cb5c31641431262",
       "slug": "сравнение-10-ии-моделей-для-написания-кода-анализ-стоимости-и-эффективности",
       "title": "Сравнение 10 ИИ-моделей для написания кода: анализ стоимости и эффективности",
-      "brief": "Автор провел тестирование десяти различных ИИ-моделей для написания кода, оценивая их эффективность и стоимость. Основное внимание уделялось соотношению цены и качества выходных данных, а не только самой низкой цене. Исследование охватило одинаковые задачи для всех моделей, с фиксацией всех промптов, тестов и результатов. Цель — определить, какие модели предлагают наилучшее соотношение \"цена-качество\" для разработчиков, которые активно используют API и следят за расходами.",
-      "context": "В последние месяцы автор активно тестировал различные ИИ-модели для написания кода, расходуя значительные средства на API-кредиты для своих личных проектов. Столкнувшись с тем, что многие существующие рейтинги \"лучших ИИ-моделей\" игнорируют финансовую составляющую, автор решил провести собственное независимое исследование. Результаты основаны на строгом сравнении десяти моделей, каждая из которых прошла одни и те же программные задачи. Все параметры тестирования, включая промпты и оценки, были унифицированы для обеспечения объективности.",
-      "why_it_matters": "Данное исследование имеет большое значение для разработчиков, которые стремятся оптимизировать свои расходы на использование ИИ-инструментов. Понимание реальной стоимости и эффективности различных моделей позволяет принимать обоснованные решения при выборе инструментов для программирования. Это помогает избежать неоправданных трат и выбрать наиболее выгодные решения, которые не только качественны, но и экономически целесообразны, что особенно важно при интенсивном использовании API.",
+      "brief": "Автор провел тестирование десяти различных ИИ-моделей для написания кода, оценивая их эффективность и стоимость. Основное внимание уделялось соотношению цены и качества выходных данных, а не только самой низкой стоимости модели. Исследование охватило одинаковые задачи для всех моделей, с фиксированными параметрами для каждого теста. Цель — определить, какие модели предлагают наилучшее соотношение \"цена-качество\" для разработчиков, которые активно используют API и следят за расходами.",
+      "context": "В последние месяцы автор активно тестировал различные ИИ-модели для написания кода, расходуя значительные средства на API-кредиты для своих личных проектов. Столкнувшись с тем, что многие обзоры \"лучших ИИ-моделей\" игнорируют финансовую сторону вопроса, автор решил провести собственное независимое исследование. Были выбраны десять моделей, которые прошли одинаковый набор программных задач. Все тесты и оценки проводились в идентичных условиях для обеспечения объективности сравнения.",
+      "why_it_matters": "Результаты этого исследования помогут разработчикам принимать обоснованные решения при выборе ИИ-инструментов для кодирования, ориентируясь не только на производительность, но и на экономическую целесообразность. Понимание реальной стоимости и эффективности различных моделей позволит оптимизировать бюджеты проектов и повысить продуктивность, избегая неоправданных расходов на API.",
       "importance": 7,
       "status": "updated",
       "category": "Технологии",
@@ -605,25 +809,19 @@
       ],
       "facts": [
         {
-          "text": "Автор провел тестирование десяти различных ИИ-моделей для написания кода, оценивая их эффективность и стоимость.",
+          "text": "Автор протестировал десять различных ИИ-моделей для написания кода, оценивая их эффективность и стоимость.",
           "article_ids": [
             "80b15dcc3b56d5c53ba0"
           ]
         },
         {
-          "text": "Основное внимание в исследовании уделялось соотношению цены и качества выходных данных, а также стоимости за миллион выходных токенов.",
+          "text": "Основным критерием оценки стало соотношение цены и качества выходных данных, а не только низкая стоимость модели.",
           "article_ids": [
             "80b15dcc3b56d5c53ba0"
           ]
         },
         {
-          "text": "Все тестируемые модели проходили одни и те же программные задачи, с унифицированными промптами и методами оценки.",
-          "article_ids": [
-            "80b15dcc3b56d5c53ba0"
-          ]
-        },
-        {
-          "text": "Автор отмечает, что многие существующие рейтинги ИИ-моделей игнорируют финансовую составляющую.",
+          "text": "Все модели проходили одинаковый набор программных задач для обеспечения объективности сравнения.",
           "article_ids": [
             "80b15dcc3b56d5c53ba0"
           ]
@@ -631,7 +829,7 @@
       ],
       "updates": [
         {
-          "at": "2026-07-11T21:06:19.638778Z",
+          "at": "2026-07-11T21:13:50.607211Z",
           "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
           "article_ids": [
             "80b15dcc3b56d5c53ba0"
@@ -639,251 +837,7 @@
         }
       ],
       "first_seen_at": "2026-07-11T17:27:56Z",
-      "updated_at": "2026-07-11T21:06:19.638778Z"
-    },
-    {
-      "id": "tech-9d10693b540c9d98",
-      "slug": "сравнение-моделей-ии-для-написания-кода-анализ-затрат-и-эффективности",
-      "title": "Сравнение моделей ИИ для написания кода: анализ затрат и эффективности",
-      "brief": "Автор провел тестирование десяти различных моделей искусственного интеллекта, предназначенных для помощи в написании кода. Основное внимание уделялось соотношению цены и качества получаемых результатов, а также стоимости использования каждой модели в пересчете на миллион выходных токенов. Цель исследования — определить наиболее выгодные модели для разработчиков, которые часто используют API таких сервисов в своих проектах. В отличие от многих существующих рейтингов, где не учитывается финансовая сторона, данный анализ фокусируется на реальных затратах и их оправданности, подчеркивая, что самая дешевая модель не всегда является лучшей, но цена имеет решающее значение.",
-      "context": "В последние месяцы автор активно тестировал различные модели ИИ для написания кода, расходуя значительные средства на API. Это побудило его провести систематическое сравнение десяти моделей, используя одинаковые задачи и критерии оценки. Особое внимание уделялось экономической эффективности, так как многие существующие обзоры не учитывают стоимость использования, что важно для разработчиков, работающих с ограниченным бюджетом или стремящихся оптимизировать расходы.",
-      "why_it_matters": "Результаты этого анализа помогут разработчикам принимать обоснованные решения при выборе инструментов для написания кода на основе ИИ. Понимание реальной стоимости и эффективности различных моделей позволит оптимизировать бюджеты проектов, избежать неоправданных расходов и выбрать наиболее подходящие решения для конкретных задач. Это особенно важно в условиях растущего использования ИИ в разработке программного обеспечения, где финансовые аспекты играют значительную роль.",
-      "importance": 7,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "80b15dcc3b56d5c53ba0"
-      ],
-      "facts": [
-        {
-          "text": "Автор провел тестирование десяти различных моделей ИИ для написания кода, сравнивая их по одинаковым критериям.",
-          "article_ids": [
-            "80b15dcc3b56d5c53ba0"
-          ]
-        },
-        {
-          "text": "Основное внимание в анализе уделяется стоимости использования моделей ИИ, в частности, цене за миллион выходных токенов.",
-          "article_ids": [
-            "80b15dcc3b56d5c53ba0"
-          ]
-        },
-        {
-          "text": "Автор отмечает, что многие существующие обзоры моделей ИИ не учитывают финансовую сторону вопроса, что побудило его провести собственное исследование.",
-          "article_ids": [
-            "80b15dcc3b56d5c53ba0"
-          ]
-        },
-        {
-          "text": "Исследование фокусируется на соотношении цены и эффективности, а не только на самой низкой цене.",
-          "article_ids": [
-            "80b15dcc3b56d5c53ba0"
-          ]
-        }
-      ],
-      "updates": [],
-      "first_seen_at": "2026-07-11T17:27:56Z",
-      "updated_at": "2026-07-11T20:57:58.865170Z"
-    },
-    {
-      "id": "tech-8e747021a42d7ac6",
-      "slug": "мастер-класс-по-python-2026-полное-руководство-для-начинающих-и-профессионалов",
-      "title": "Мастер-класс по Python 2026: Полное руководство для начинающих и профессионалов",
-      "brief": "Представлен полный план изучения Python на 2026 год, охватывающий основы, современные возможности, установку для всех ОС, экосистему (pip, uv, conda), тестирование (pytest), веб-разработку (Django, Flask, FastAPI), оптимизацию производительности (GIL, память) и карьерные перспективы. Материал предназначен как для новичков, стремящихся к ясности, так и для опытных разработчиков, нуждающихся в быстром и основательном обновлении знаний. Обсуждаются особенности Python 3.13.",
-      "context": "В статье представлен подробный план изучения языка программирования Python, ориентированный на 2026 год. Автор описывает свой подход к созданию этого плана, который выходит за рамки стандартных вводных уроков. План включает в себя как фундаментальные концепции, так и актуальные аспекты языка, такие как его философия, новейшие функции, процесс установки на различных операционных системах, а также обзор ключевых инструментов и библиотек в экосистеме Python.",
-      "why_it_matters": "Данный мастер-класс призван предоставить структурированный и всеобъемлющий путь обучения Python, что особенно важно в условиях быстрого развития технологий. Он помогает как начинающим разработчикам обрести уверенность и четкое понимание языка, так и опытным специалистам освежить свои знания и быть в курсе последних тенденций, что напрямую влияет на их профессиональный рост и карьерные возможности в IT-индустрии.",
-      "importance": 7,
-      "status": "updated",
-      "category": "Технологии",
-      "article_ids": [
-        "fc16a28248f7343aca95"
-      ],
-      "facts": [
-        {
-          "text": "Представлен полный план изучения Python на 2026 год, включающий основы, современные возможности, установку, экосистему, тестирование, веб-разработку и карьерные перспективы.",
-          "article_ids": [
-            "fc16a28248f7343aca95"
-          ]
-        },
-        {
-          "text": "Мастер-класс охватывает такие инструменты экосистемы Python, как pip, uv и conda, а также тестирование с помощью pytest и веб-фреймворки Django, Flask и FastAPI.",
-          "article_ids": [
-            "fc16a28248f7343aca95"
-          ]
-        },
-        {
-          "text": "В статье обсуждаются советы по оптимизации производительности Python, включая работу с GIL и управление памятью.",
-          "article_ids": [
-            "fc16a28248f7343aca95"
-          ]
-        },
-        {
-          "text": "Материал предназначен для начинающих, желающих получить ясное представление о языке, и для профессионалов, нуждающихся в быстром обновлении знаний.",
-          "article_ids": [
-            "fc16a28248f7343aca95"
-          ]
-        }
-      ],
-      "updates": [
-        {
-          "at": "2026-07-11T21:06:19.638778Z",
-          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
-          "article_ids": [
-            "fc16a28248f7343aca95"
-          ]
-        }
-      ],
-      "first_seen_at": "2026-07-11T17:44:42Z",
-      "updated_at": "2026-07-11T21:06:19.638778Z"
-    },
-    {
-      "id": "tech-0d95607b5923dccc",
-      "slug": "различия-в-использовании-ai-api-стартапами-и-крупными-корпорациями",
-      "title": "Различия в использовании AI API стартапами и крупными корпорациями",
-      "brief": "Анализ данных за последние шесть месяцев показал существенные различия в потреблении AI API стартапами и крупными корпорациями. Стартапы с ежемесячными расходами на AI API менее 500 долларов, как правило, не нуждаются в прямых переговорах с поставщиками моделей. Компании, чьи расходы превышают 5000 долларов в месяц, напротив, требуют выделенных мощностей и соглашений об уровне обслуживания (SLA). Зона между 500 и 5000 долларов является наиболее сложной для принятия решений о маршрутизации запросов, особенно для растущих компаний. Разница в стоимости использования одних и тех же AI-моделей может достигать 97,5%, что подчеркивает важность оптимизации расходов.",
-      "context": "Сравнение подходов к использованию AI API стартапами и крупными корпорациями основано на сборе данных об использовании, задержках и счетах за последние шесть месяцев. Исследование охватывает как стартапы на ранней стадии развития (Series A), так и команды по закупкам в компаниях из списка Fortune 500. Основное внимание уделяется анализу фактических цифр и практических аспектов, а не общим рекомендациям, которые часто игнорируют специфику каждой категории.",
-      "why_it_matters": "Понимание различий в потреблении и стоимости AI API критически важно для компаний любого размера. Стартапы могут избежать неоправданных расходов, фокусируясь на оптимизации использования и избегая сложных переговоров на ранних этапах. Крупные корпорации должны обеспечивать надежность и производительность через выделенные мощности и SLA. Для компаний, находящихся в середине этого спектра, правильный выбор стратегии использования API может существенно повлиять на бюджет и эффективность.",
-      "importance": 7,
-      "status": "updated",
-      "category": "Технологии",
-      "article_ids": [
-        "ed37f34ee7dca7f0ad6d",
-        "4450694465db8151bd3a"
-      ],
-      "facts": [
-        {
-          "text": "Разница в подходах к потреблению AI API стартапами и крупными корпорациями является статистически значительной.",
-          "article_ids": [
-            "ed37f34ee7dca7f0ad6d"
-          ]
-        },
-        {
-          "text": "Компании с ежемесячными расходами на AI API менее 500 долларов обычно не нуждаются в прямых переговорах с поставщиками моделей.",
-          "article_ids": [
-            "ed37f34ee7dca7f0ad6d"
-          ]
-        },
-        {
-          "text": "Компании с ежемесячными расходами на AI API более 5000 долларов, как правило, нуждаются в выделенных мощностях и соглашениях об уровне обслуживания (SLA).",
-          "article_ids": [
-            "ed37f34ee7dca7f0ad6d"
-          ]
-        },
-        {
-          "text": "Стоимость использования одних и тех же AI-моделей для стартапов и корпораций может различаться до 97,5%.",
-          "article_ids": [
-            "4450694465db8151bd3a"
-          ]
-        },
-        {
-          "text": "Область расходов на AI API от 500 до 5000 долларов в месяц представляет собой наиболее сложную зону для принятия решений о маршрутизации запросов, особенно для растущих компаний.",
-          "article_ids": [
-            "ed37f34ee7dca7f0ad6d"
-          ]
-        }
-      ],
-      "updates": [
-        {
-          "at": "2026-07-11T20:57:58.865170Z",
-          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
-          "article_ids": [
-            "ed37f34ee7dca7f0ad6d",
-            "4450694465db8151bd3a"
-          ]
-        },
-        {
-          "at": "2026-07-11T21:06:19.638778Z",
-          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
-          "article_ids": [
-            "ed37f34ee7dca7f0ad6d",
-            "4450694465db8151bd3a"
-          ]
-        }
-      ],
-      "first_seen_at": "2026-07-11T18:10:00Z",
-      "updated_at": "2026-07-11T21:06:19.638778Z"
-    },
-    {
-      "id": "tech-78bb53e8e14722cf",
-      "slug": "оптимизация-производительности-python-ускорение-кода-в-10-раз",
-      "title": "Оптимизация производительности Python: ускорение кода в 10 раз",
-      "brief": "В статье представлены ключевые методы оптимизации производительности кода на языке Python, позволяющие ускорить его выполнение до 10 раз. Особое внимание уделяется использованию встроенных функций, таких как `sum()`, вместо ручных циклов для суммирования элементов списка. Также рассматривается применение списковых включений (list comprehensions) как более эффективной альтернативы традиционным циклам `for` при работе со списками. Эти приемы направлены на повышение скорости выполнения программ за счет более эффективного использования ресурсов.",
-      "context": "В современной разработке программного обеспечения производительность кода играет критически важную роль, особенно при работе с большими объемами данных или в приложениях, требующих высокой скорости отклика. Язык Python, известный своей простотой и гибкостью, иногда может уступать в скорости выполнения по сравнению с другими языками программирования. Поэтому знание и применение техник оптимизации производительности становится необходимым навыком для разработчиков, стремящихся создавать эффективные и быстрые приложения на Python. Данная статья фокусируется на практических советах, которые могут быть немедленно применены для улучшения скорости выполнения Python-скриптов.",
-      "why_it_matters": "Ускорение выполнения кода на Python напрямую влияет на эффективность использования вычислительных ресурсов, сокращение времени обработки данных и улучшение пользовательского опыта. Применение оптимизированных функций и конструкций языка позволяет не только повысить скорость работы приложений, но и снизить затраты на инфраструктуру, так как для выполнения тех же задач потребуется меньше процессорного времени и памяти. Это особенно важно для веб-сервисов, аналитических платформ и систем машинного обучения, где задержки могут иметь существенные последствия.",
-      "importance": 7,
-      "status": "updated",
-      "category": "Технологии",
-      "article_ids": [
-        "d5c4c832ff1fd3af8967"
-      ],
-      "facts": [
-        {
-          "text": "Использование встроенных функций, таких как `sum()`, значительно ускоряет операции суммирования элементов списка по сравнению с ручными циклами.",
-          "article_ids": [
-            "d5c4c832ff1fd3af8967"
-          ]
-        },
-        {
-          "text": "Списковые включения (list comprehensions) являются более производительной альтернативой традиционным циклам `for` при создании списков в Python.",
-          "article_ids": [
-            "d5c4c832ff1fd3af8967"
-          ]
-        },
-        {
-          "text": "Применение данных техник оптимизации может ускорить выполнение кода на Python до 10 раз.",
-          "article_ids": [
-            "d5c4c832ff1fd3af8967"
-          ]
-        }
-      ],
-      "updates": [
-        {
-          "at": "2026-07-11T20:57:58.865170Z",
-          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
-          "article_ids": [
-            "d5c4c832ff1fd3af8967"
-          ]
-        },
-        {
-          "at": "2026-07-11T21:06:19.638778Z",
-          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
-          "article_ids": [
-            "d5c4c832ff1fd3af8967"
-          ]
-        }
-      ],
-      "first_seen_at": "2026-07-11T20:00:03Z",
-      "updated_at": "2026-07-11T21:06:19.638778Z"
-    },
-    {
-      "id": "tech-76b45b32f17a481e",
-      "slug": "python-3-10-функция-zip-получила-строгий-режим-для-проверки-несоответствия-длин",
-      "title": "Python 3.10: Функция zip() получила строгий режим для проверки несоответствия длин",
-      "brief": "В Python 3.10 была добавлена новая функция в встроенную функцию zip(), которая позволяет избежать молчаливого усечения данных при итерации по нескольким спискам. Ранее zip() останавливалась, как только самый короткий итерируемый объект исчерпывался, что могло привести к потере данных без уведомления. Теперь, с параметром strict=True, zip() будет вызывать исключение ValueError, если входные итерируемые объекты имеют разную длину. Это улучшение помогает разработчикам избегать потенциальных ошибок, связанных с несоответствием размеров данных при параллельной обработке.",
-      "context": "Функция zip() в Python традиционно используется для объединения элементов из нескольких итерируемых объектов (например, списков) в кортежи. По умолчанию поведение zip() заключается в том, чтобы прекратить работу, как только закончится самый короткий из предоставленных итерируемых объектов. Это может быть удобно в некоторых случаях, но часто приводит к незаметной потере данных, если длины входных данных различаются. Разработчики, полагающиеся на zip() для синхронной обработки данных из нескольких источников, могли столкнуться с трудностями при отладке ошибок, вызванных этим поведением.",
-      "why_it_matters": "Введение строгого режима в функцию zip() в Python 3.10 является важным улучшением для обеспечения целостности данных и повышения надежности кода. Разработчики теперь имеют явный механизм для обнаружения и обработки ситуаций, когда входные данные имеют разную длину, что предотвращает скрытые ошибки и упрощает отладку. Это особенно полезно в сценариях, где точное соответствие данных критически важно, например, при работе с параллельными наборами данных или при выполнении сложных вычислений, зависящих от согласованности входных параметров.",
-      "importance": 7,
-      "status": "new",
-      "category": "Программирование",
-      "article_ids": [
-        "26c1b511fbd13f68ac47"
-      ],
-      "facts": [
-        {
-          "text": "В Python 3.10 функция zip() получила параметр strict=True, который вызывает ValueError при несоответствии длин входных итерируемых объектов.",
-          "article_ids": [
-            "26c1b511fbd13f68ac47"
-          ]
-        },
-        {
-          "text": "До Python 3.10 функция zip() по умолчанию прекращала работу, как только исчерпывался самый короткий входной итерируемый объект, что могло приводить к усечению данных без уведомления.",
-          "article_ids": [
-            "26c1b511fbd13f68ac47"
-          ]
-        }
-      ],
-      "updates": [],
-      "first_seen_at": "2026-07-11T20:00:06Z",
-      "updated_at": "2026-07-11T21:06:19.638778Z"
+      "updated_at": "2026-07-11T21:13:50.607211Z"
     }
   ]
 }
