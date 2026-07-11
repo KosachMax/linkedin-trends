@@ -23,6 +23,13 @@ const categories = [...new Set(digest.events.map((event) => event.category))];
 <Header digest={digest} digests={digests} />
 <main class="page-shell">
   <div class="page-intro">
+    <nav class="feed-tabs" aria-label="Выбрать дайджест">
+      {digests.map(({ id }) => (
+        <a class:list={["feed-tab", { active: id === digest.digest_id }]} href={`${base}digest/${id}/`}>
+          {id === "world" ? "🌍 Мир" : id === "tech" ? "💻 Технологии" : "⚽ Liverpool FC"}
+        </a>
+      ))}
+    </nav>
     <h1>Главное за {dateLabel.replace(/\s*г\.$/, "")}</h1>
     <p class="digest-meta">Обновлено {updatedAt}<span>{digest.articles.length} материалов</span><span>{digest.events.length} событий</span></p>
   </div>
