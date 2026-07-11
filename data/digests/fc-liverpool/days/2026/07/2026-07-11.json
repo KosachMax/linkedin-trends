@@ -2,133 +2,92 @@
   "schema_version": 1,
   "digest_id": "fc-liverpool",
   "date": "2026-07-11",
-  "generated_at": "2026-07-11T19:48:44.506710Z",
+  "generated_at": "2026-07-11T12:00:00Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Liverpool FC» отобрано 1 подтвержденных событий. Редакционный фильтр обработал 0 тематических материалов и исключил 0 неподтвержденных кластеров. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками."
+    "body": "В выпуске «Liverpool FC» собрано 1 ключевых событий из 2 источников. Основные темы сопоставлены между независимыми публикациями, а важность выражена единым редакционным рейтингом. Материалы собраны из тестовых источников и предназначены для проверки интерфейса."
   },
   "currencies": [],
   "sources": [
     {
-      "source_id": "aljazeera",
-      "source_name": "Al Jazeera",
+      "source_id": "liverpool-official",
+      "source_name": "Liverpool FC",
       "state": "available",
-      "fetched": 20,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 343,
+      "fetched": 1,
+      "accepted": 1,
+      "represented_events": 1,
+      "latency_ms": null,
       "error_code": null,
       "history": [
-        0
-      ]
-    },
-    {
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "state": "degraded",
-      "fetched": 0,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 80,
-      "error_code": null,
-      "history": [
-        0
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
       ]
     },
     {
       "source_id": "bbc-sport",
-      "source_name": "BBC Sport Football",
+      "source_name": "BBC Sport",
       "state": "available",
-      "fetched": 30,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 270,
+      "fetched": 1,
+      "accepted": 1,
+      "represented_events": 1,
+      "latency_ms": null,
       "error_code": null,
       "history": [
+        0,
+        0,
         1,
-        0
-      ]
-    },
-    {
-      "source_id": "bbc-world",
-      "source_name": "BBC World",
-      "state": "available",
-      "fetched": 20,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 360,
-      "error_code": null,
-      "history": [
-        0
-      ]
-    },
-    {
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "state": "available",
-      "fetched": 12,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 165,
-      "error_code": null,
-      "history": [
-        0
-      ]
-    },
-    {
-      "source_id": "le-monde",
-      "source_name": "Le Monde",
-      "state": "available",
-      "fetched": 18,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 98,
-      "error_code": null,
-      "history": [
-        0
-      ]
-    },
-    {
-      "source_id": "politico-europe",
-      "source_name": "Politico Europe",
-      "state": "available",
-      "fetched": 10,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 78,
-      "error_code": null,
-      "history": [
-        0
-      ]
-    },
-    {
-      "source_id": "rbc",
-      "source_name": "RBC",
-      "state": "available",
-      "fetched": 20,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 1124,
-      "error_code": null,
-      "history": [
-        0
-      ]
-    },
-    {
-      "source_id": "spiegel",
-      "source_name": "Der Spiegel",
-      "state": "available",
-      "fetched": 20,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 414,
-      "error_code": null,
-      "history": [
-        0
+        1,
+        1,
+        1,
+        1
       ]
     }
   ],
-  "articles": [],
+  "articles": [
+    {
+      "id": "lfc-transfer-009",
+      "source_id": "liverpool-official",
+      "source_name": "Liverpool FC",
+      "canonical_url": "https://example.com/liverpoolfc/news/midfielder-signing",
+      "title": "Liverpool complete the signing of midfielder Mateo Silva",
+      "normalized_title": "liverpool complete the signing of midfielder mateo silva",
+      "excerpt": "The club confirmed that the midfielder signed a long-term contract after completing his medical at the training centre.",
+      "published_at": "2026-07-11T09:05:00Z",
+      "collected_at": "2026-07-11T12:00:00Z",
+      "language": "en",
+      "topic_hints": [
+        "fc-liverpool",
+        "transfers",
+        "club"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "bbc-sport-lfc-010",
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport",
+      "canonical_url": "https://example.com/bbc/sport/football/liverpool-mateo-silva",
+      "title": "Liverpool sign midfielder Mateo Silva on a long-term deal",
+      "normalized_title": "liverpool sign midfielder mateo silva on a long-term deal",
+      "excerpt": "Liverpool have announced the arrival of Mateo Silva, with the player expected to join first-team training next week.",
+      "published_at": "2026-07-11T09:21:00Z",
+      "collected_at": "2026-07-11T12:00:00Z",
+      "language": "en",
+      "topic_hints": [
+        "fc-liverpool",
+        "transfers",
+        "club"
+      ],
+      "entities": [],
+      "engagement": null
+    }
+  ],
   "events": [
     {
       "id": "fc-liverpool-lfc-transfer-009",
