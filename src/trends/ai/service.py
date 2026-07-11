@@ -1,4 +1,5 @@
 import json
+import sys
 from pathlib import Path
 
 from trends.domain.models import Article
@@ -19,7 +20,11 @@ class EventSynthesisService:
 
     async def synthesize(self, articles: list[Article], minimum_sources: int) -> EventSynthesis:
         prompt = self._prompt(articles)
-        result = await self.provider.generate(prompt, EventSynthesis)
+        try:
+            result = await self.provider.generate(prompt, EventSynthesis)
+        except Exception as exc:
+            print(f"[AI] generate failed: {type(exc).__name__}: {exc}", file=sys.stderr)
+            raise
         errors = validate_synthesis(result, articles, minimum_sources)
         if not errors:
             return result
@@ -48,4 +53,3 @@ class EventSynthesisService:
             for article in articles
         ]
         return f"{policy}\n\nINPUT:\n{json.dumps(input_payload, ensure_ascii=False)}"
-

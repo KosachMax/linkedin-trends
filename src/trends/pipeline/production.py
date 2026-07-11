@@ -146,7 +146,11 @@ async def run_production(root: Path) -> list[Path]:
                     except ValueError:
                         status = EventStatus.NEW
             except Exception as error:
-                quarantine.append({"reason": type(error).__name__, "article_ids": [item.id for item in cluster]})
+                quarantine.append({
+                    "reason": type(error).__name__,
+                    "error": str(error)[:300],
+                    "article_ids": [item.id for item in cluster],
+                })
                 continue
 
             event = DigestEvent(
