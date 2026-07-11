@@ -11,21 +11,32 @@ const dateIndex = dates.indexOf(digest.date);
 const older = dateIndex > 0 ? dates[dateIndex - 1] : undefined;
 const newer = dateIndex >= 0 && dateIndex < dates.length - 1 ? dates[dateIndex + 1] : undefined;
 const base = import.meta.env.BASE_URL;
+const updatedAt = new Date(digest.generated_at).toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" });
+const categoryLabels: Record<string, string> = {
+  world: "Мир", politics: "Политика", economics: "Экономика", economy: "Экономика",
+  conflict: "Конфликты", diplomacy: "Дипломатия", energy: "Энергетика", ai: "ИИ",
+  research: "Исследования", python: "Python", backend: "Разработка", club: "Клуб",
+  transfers: "Трансферы", matches: "Матчи", injuries: "Травмы", russia: "Россия"
+};
+const categories = [...new Set(digest.events.map((event) => event.category))];
 ---
 <Header digest={digest} digests={digests} />
 <main class="page-shell">
   <div class="page-intro">
-    <div><p class="eyebrow">Ежедневный дайджест</p><h1>{digest.digest_id === "world" ? "Сегодня в мире" : digest.digest_id === "tech" ? "Сегодня в технологиях" : "Сегодня в Liverpool FC"}</h1></div>
-    <p class="date">{dateLabel} · обновлено {new Date(digest.generated_at).toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" })}</p>
+    <h1>Главное за {dateLabel.replace(/\s*г\.$/, "")}</h1>
+    <p class="digest-meta">Обновлено {updatedAt}<span>{digest.articles.length} материалов</span><span>{digest.events.length} событий</span></p>
   </div>
+  {digest.currencies.length > 0 && <section class="currency-grid" aria-label="Курсы валют">
+    {digest.currencies.map((rate) => <div class="currency-card"><span>{rate.pair === "USD/RUB" ? "🇺🇸" : rate.pair === "EUR/RUB" ? "🇪🇺" : "🇨🇳"} {rate.pair}</span><div><strong>{rate.value.toLocaleString("ru-RU", { minimumFractionDigits: 2 })} ₽</strong><small class={rate.change_pct && rate.change_pct > 0 ? "up" : "down"}>{rate.change_pct && rate.change_pct > 0 ? "↑" : "↓"} {Math.abs(rate.change_pct || 0).toFixed(2)}%</small></div></div>)}
+  </section>}
   <section class="daily-picture">
-    <div class="picture-icon">✦</div>
+    <div class="picture-icon">📌</div>
     <div><p class="callout-label">{digest.daily_picture.title}</p><p>{digest.daily_picture.body}</p></div>
   </section>
-  {digest.currencies.length > 0 && <section class="currency-grid" aria-label="Курсы валют">
-    {digest.currencies.map((rate) => <div class="currency-card"><span>{rate.pair}</span><strong>{rate.value.toLocaleString("ru-RU", { minimumFractionDigits: 2 })} ₽</strong><small class={rate.change_pct && rate.change_pct > 0 ? "up" : "down"}>{rate.change_pct && rate.change_pct > 0 ? "↑" : "↓"} {Math.abs(rate.change_pct || 0).toFixed(2)}%</small></div>)}
-  </section>}
-  <div class="feed-heading"><h2>{digest.events.length} событий</h2><p>По убыванию важности</p></div>
+  <div class="category-filters" role="group" aria-label="Фильтр категорий">
+    <button class="category-filter active" data-category-filter="all">Все</button>
+    {categories.map((category) => <button class="category-filter" data-category-filter={category}>{categoryLabels[category] || category}</button>)}
+  </div>
   <section class="event-feed">
     {digest.events.map((event) => <EventCard event={event} articles={digest.articles} digestId={digest.digest_id} date={digest.date} />)}
   </section>
@@ -34,3 +45,12 @@ const base = import.meta.env.BASE_URL;
     {newer ? <a href={`${base}digest/${digest.digest_id}/${newer}/`}>{newer} →</a> : <span></span>}
   </nav>
 </main>
+<script>
+  const filterButtons = document.querySelectorAll<HTMLButtonElement>("[data-category-filter]");
+  const cards = document.querySelectorAll<HTMLElement>("[data-event-category]");
+  filterButtons.forEach((button) => button.addEventListener("click", () => {
+    const category = button.dataset.categoryFilter;
+    filterButtons.forEach((item) => item.classList.toggle("active", item === button));
+    cards.forEach((card) => { card.hidden = category !== "all" && card.dataset.eventCategory !== category; });
+  }));
+</script>

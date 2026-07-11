@@ -1,3 +1,5 @@
+import re
+
 from trends.ai.schemas import EventSynthesis
 from trends.domain.models import Article
 
@@ -16,5 +18,17 @@ def validate_synthesis(event: EventSynthesis, articles: list[Article], minimum_s
         fact_unknown = set(fact.article_ids) - by_id.keys()
         if fact_unknown:
             errors.append(f"fact {index} references unknown articles: {sorted(fact_unknown)}")
+    russian_fields = {
+        "title": event.title,
+        "brief": event.brief,
+        "context": event.context,
+        "why_it_matters": event.why_it_matters,
+        "category": event.category,
+    }
+    for field, value in russian_fields.items():
+        if not re.search(r"[А-Яа-яЁё]", value):
+            errors.append(f"{field} must be written in Russian")
+    for index, fact in enumerate(event.facts):
+        if not re.search(r"[А-Яа-яЁё]", fact.text):
+            errors.append(f"fact {index} must be written in Russian")
     return errors
-

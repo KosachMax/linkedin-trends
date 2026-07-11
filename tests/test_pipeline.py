@@ -94,15 +94,15 @@ class RepairingProvider:
         self.calls += 1
         article_id = "invented-id" if self.calls == 1 else self.valid_article_id
         return schema(
-            title="Structured event",
-            brief="B" * 220,
-            context="C" * 220,
-            why_it_matters="W" * 170,
-            category="world",
+            title="Структурированное событие",
+            brief="Краткая проверенная сводка события на русском языке. " * 6,
+            context="Расширенный контекст события на русском языке. " * 7,
+            why_it_matters="Объяснение важности события и его возможных последствий. " * 4,
+            category="мир",
             impact=7,
             status="new",
             article_ids=[article_id],
-            facts=[AIFact(text="Supported fact", article_ids=[article_id])],
+            facts=[AIFact(text="Подтвержденный источником факт", article_ids=[article_id])],
         )
 
 

@@ -10,6 +10,8 @@ const base = import.meta.env.BASE_URL;
 ---
 <header class="topbar">
   <nav class="nav-shell" aria-label="Основная навигация">
+    <a class="brand" href={`${base}digest/world/`} aria-label="Daily Trends — главная"><span>DT</span><b>Daily Trends</b></a>
+    <div class="nav-spacer"></div>
     <a class="nav-pill active" href={`${base}digest/${digest.digest_id}/`}>Сегодня</a>
     <a class="nav-pill" href={`${base}digest/${digest.digest_id}/${digest.date}/`}>Архив</a>
     <details class="source-menu">
@@ -34,13 +36,14 @@ const base = import.meta.env.BASE_URL;
         </div>
       </div>
     </details>
-    <div class="nav-spacer"></div>
+    <div class="nav-spacer nav-spacer-right"></div>
     <label class="digest-select-label">
       <span class="sr-only">Выбрать дайджест</span>
       <select class="digest-select" data-digest-select>
         {digests.map(({ id }) => <option value={id} selected={id === digest.digest_id}>{id === "world" ? "Мир" : id === "tech" ? "Технологии" : "Liverpool FC"}</option>)}
       </select>
     </label>
+    <button class="icon-button search-button" aria-label="Поиск">⌕</button>
     <button class="icon-button" data-theme-toggle aria-label="Переключить тему">◐</button>
   </nav>
 </header>
