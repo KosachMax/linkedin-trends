@@ -2,184 +2,151 @@
   "schema_version": 1,
   "digest_id": "world",
   "date": "2026-07-11",
-  "generated_at": "2026-07-11T12:00:00Z",
+  "generated_at": "2026-07-11T19:48:44.506710Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Мир» собрано 3 ключевых событий из 4 источников. Основные темы сопоставлены между независимыми публикациями, а важность выражена единым редакционным рейтингом. Материалы собраны из тестовых источников и предназначены для проверки интерфейса."
+    "body": "В выпуске «Мир» отобрано 3 подтвержденных событий. Редакционный фильтр обработал 125 тематических материалов и исключил 119 неподтвержденных кластеров. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения независимыми источниками."
   },
   "currencies": [
     {
       "pair": "USD/RUB",
-      "value": 88.12,
-      "change_pct": -0.21
+      "value": 76.6647,
+      "change_pct": 0.8
     },
     {
       "pair": "EUR/RUB",
-      "value": 96.18,
-      "change_pct": -0.21
+      "value": 87.6661,
+      "change_pct": -2.19
     },
     {
       "pair": "CNY/RUB",
-      "value": 12.16,
-      "change_pct": 0.08
+      "value": 11.3037,
+      "change_pct": 1.42
     }
   ],
   "sources": [
     {
-      "source_id": "reuters",
-      "source_name": "Reuters",
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 343,
       "error_code": null,
       "history": [
-        0,
-        0,
         1,
-        1,
-        1,
-        1,
-        1
+        0
+      ]
+    },
+    {
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "state": "degraded",
+      "fetched": 0,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 80,
+      "error_code": null,
+      "history": [
+        0
+      ]
+    },
+    {
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport Football",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 270,
+      "error_code": null,
+      "history": [
+        0
       ]
     },
     {
       "source_id": "bbc-world",
       "source_name": "BBC World",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 360,
       "error_code": null,
       "history": [
-        0,
-        0,
         1,
-        1,
-        1,
-        1,
-        1
+        0
       ]
     },
     {
-      "source_id": "aljazeera",
-      "source_name": "Al Jazeera",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 12,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 165,
       "error_code": null,
       "history": [
-        0,
-        0,
-        1,
-        1,
-        1,
-        1,
-        1
+        0
+      ]
+    },
+    {
+      "source_id": "le-monde",
+      "source_name": "Le Monde",
+      "state": "available",
+      "fetched": 18,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 98,
+      "error_code": null,
+      "history": [
+        0
+      ]
+    },
+    {
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 78,
+      "error_code": null,
+      "history": [
+        0
       ]
     },
     {
       "source_id": "rbc",
       "source_name": "RBC",
       "state": "available",
-      "fetched": 1,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": null,
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1124,
       "error_code": null,
       "history": [
-        0,
-        0,
         1,
-        1,
-        1,
-        1,
-        1
+        0
+      ]
+    },
+    {
+      "source_id": "spiegel",
+      "source_name": "Der Spiegel",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 414,
+      "error_code": null,
+      "history": [
+        0
       ]
     }
   ],
-  "articles": [
-    {
-      "id": "reuters-energy-001",
-      "source_id": "reuters",
-      "source_name": "Reuters",
-      "canonical_url": "https://example.com/reuters/europe-energy-agreement",
-      "title": "European states agree on a shared winter energy reserve",
-      "normalized_title": "european states agree on a shared winter energy reserve",
-      "excerpt": "Twelve European governments approved a shared reserve mechanism intended to reduce sudden energy shortages during peak winter demand.",
-      "published_at": "2026-07-11T05:15:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
-      "language": "en",
-      "topic_hints": [
-        "world",
-        "economics",
-        "energy"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "bbc-energy-002",
-      "source_id": "bbc-world",
-      "source_name": "BBC World",
-      "canonical_url": "https://example.com/bbc/news/europe-energy-reserve",
-      "title": "European countries launch joint energy reserve for winter",
-      "normalized_title": "european countries launch joint energy reserve for winter",
-      "excerpt": "The new agreement creates common gas and electricity reserves, although member states have not yet published detailed contribution targets.",
-      "published_at": "2026-07-11T05:42:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
-      "language": "en",
-      "topic_hints": [
-        "world",
-        "economics",
-        "energy"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "aljazeera-diplomacy-006",
-      "source_id": "aljazeera",
-      "source_name": "Al Jazeera",
-      "canonical_url": "https://example.com/aljazeera/diplomacy/coastal-ceasefire-talks",
-      "title": "Regional delegations begin talks on a coastal ceasefire",
-      "normalized_title": "regional delegations begin talks on a coastal ceasefire",
-      "excerpt": "Negotiators opened a three-day meeting focused on civilian shipping routes, humanitarian access and a monitored pause in hostilities.",
-      "published_at": "2026-07-11T07:32:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
-      "language": "en",
-      "topic_hints": [
-        "world",
-        "diplomacy",
-        "conflict"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "rbc-rates-007",
-      "source_id": "rbc",
-      "source_name": "RBC",
-      "canonical_url": "https://example.com/rbc/economics/central-bank-rate-signal",
-      "title": "Центральный банк уточнил условия для снижения ключевой ставки",
-      "normalized_title": "центральный банк уточнил условия для снижения ключевой ставки",
-      "excerpt": "Регулятор отметил замедление инфляции, но связал дальнейшее снижение ставки с устойчивостью потребительских цен и кредитования.",
-      "published_at": "2026-07-11T08:00:00Z",
-      "collected_at": "2026-07-11T12:00:00Z",
-      "language": "ru",
-      "topic_hints": [
-        "world",
-        "economics",
-        "russia"
-      ],
-      "entities": [],
-      "engagement": null
-    }
-  ],
+  "articles": [],
   "events": [
     {
       "id": "world-reuters-energy-001",
