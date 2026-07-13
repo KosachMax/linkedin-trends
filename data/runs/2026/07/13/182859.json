@@ -1,0 +1,652 @@
+{
+  "started_at": "2026-07-13T18:28:59.319833+00:00",
+  "raw_articles": 168,
+  "normalized_articles": 165,
+  "sources": [
+    {
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 339,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 458,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport Football",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 530,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 353,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "state": "available",
+      "fetched": 12,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 282,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "le-monde",
+      "source_name": "Le Monde",
+      "state": "available",
+      "fetched": 16,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 289,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 115,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1139,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "spiegel",
+      "source_name": "Der Spiegel",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 543,
+      "error_code": null,
+      "history": []
+    }
+  ],
+  "digests": {
+    "fc-liverpool": {
+      "selected": 0,
+      "published": 0,
+      "quarantined": []
+    },
+    "tech": {
+      "selected": 32,
+      "published": 10,
+      "quarantined": [
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "2981dac97b0b92ce951f"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "4c0e257c5ea3ecafebfd"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "4ddc182409a2f9657b14",
+            "0b2fddd4897d23648885"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "151841fafe8bfe69d011"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "94b5e7b067b82f4ec6cb"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "7f96f48e2e6cc1050d9e"
+          ]
+        },
+        {
+          "reason": "ValidationError",
+          "error": "1 validation error for EventSynthesis\nbrief\n  String should have at most 800 characters [type=string_too_long, input_value='Исследовател...ротком окне.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long",
+          "article_ids": [
+            "51866ee6119c65e38276"
+          ]
+        },
+        {
+          "reason": "ValidationError",
+          "error": "1 validation error for EventSynthesis\nbrief\n  String should have at most 800 characters [type=string_too_long, input_value='Представлен A...образований.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long",
+          "article_ids": [
+            "af6ff46c5bfacc4666a1"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "019cf00a35aff45a338a"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "c6489ed8de3347094c3e"
+          ]
+        },
+        {
+          "reason": "ValidationError",
+          "error": "1 validation error for EventSynthesis\nbrief\n  String should have at most 800 characters [type=string_too_long, input_value='Разработчики...ерации кода.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long",
+          "article_ids": [
+            "e5734065d612da3ddd18"
+          ]
+        },
+        {
+          "reason": "ValidationError",
+          "error": "1 validation error for EventSynthesis\nbrief\n  String should have at most 800 characters [type=string_too_long, input_value='Исследовател...перспективе.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long",
+          "article_ids": [
+            "00f3867df093e5d0c922"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "5e3f6d298e75220b0c10"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "134c17b753162521a788"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "c100c4de49eb794c32e9"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "9d99cebfb5f16c5308a0"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "83939a3d168f0f3ff778"
+          ]
+        },
+        {
+          "reason": "ValidationError",
+          "error": "1 validation error for EventSynthesis\nbrief\n  String should have at most 800 characters [type=string_too_long, input_value='Исследование...ко на исходе.', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long",
+          "article_ids": [
+            "4ea4d0116fc6c2550cb9"
+          ]
+        }
+      ]
+    },
+    "world": {
+      "selected": 126,
+      "published": 10,
+      "quarantined": [
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "428786a7f9612e92f4a0"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "964ccb89203699dd527a"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "ad9490ed32c84d44e630"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "f092753020c36207de21"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "987fa5ccb78754591d51"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "2490e1001709b59fe0e6"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "9741bb46b8df40a19827"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "029c47694ceaf609d528"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "0332f42620805e596e0e"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "1ec5f3096735afa59a5f"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "e03cb6343e84acfcf769"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "b4f04b6d552aec852845"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "663b6640e2657a699d22"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "85bb38f72d3cc5e0ed99"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "87d789f38dbcbe843c3a"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "491aba4dfb0fb1242425"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "8fdcd09e8bb391f400b6"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "e82b71994eca3438939c"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "e284ef7bed7ca8203882"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "dd37c7354aae951976fc"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "109723a7a36d4ac6a387"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "217774dddd05b0766ad0"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "c9c85fc0c9bcfc5108d1"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "943a57f7b4d629339234"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "52ca5197c5592628f29d"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "9a6faa2ff5058e6552df"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "f114b1582b8c48ce7406"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "93b05ea5807ca9adc918"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "827fbcdf3319a6866fc7"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "178e67f8634e646acaa9"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "9b5fd584af7834a1ea7a"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "b83085ef00b78aa373fd"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "da2296d3e115e1e89026"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "6323947b1aa3758b3d26"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "a0414be37cb18ce032d6"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "6bf0c2394d88c9351cf3"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "7c282308e653a74932d4"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "637cf6b98c4c637cb966"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "7af3b8621200b9b71955"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "131d0232fc46687243d9"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "d14cdb169685ca59b598"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "f36ddcefc7dadd290f04"
+          ]
+        },
+        {
+          "reason": "ValidationError",
+          "error": "1 validation error for EventSynthesis\nbrief\n  String should have at most 800 characters [type=string_too_long, input_value='Представлен G...S (92%) и ReAct (64%).', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_too_long",
+          "article_ids": [
+            "dcaf8ae6d4a6e1c563ec"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "07ca6e65bcf564fed37f"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "00f3867df093e5d0c922"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "134c17b753162521a788"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "83939a3d168f0f3ff778"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "f02f0c0a5e6461faa5d2"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "cd0b6c339ef7c6889495"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "66088c142a609b497ed7"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "7dabf6823c0b0b8736ae"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "bb1c75aa6338e4e294c4"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "8d5726536f8a721e5a4c"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "774e35662815af6421f5"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "eded091621517755d629"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "6c39e065a5cc9949816f"
+          ]
+        },
+        {
+          "reason": "ServerError",
+          "error": "503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "article_ids": [
+            "80af280f2251a17c69e8",
+            "d4568b2c7836286ae7ff"
+          ]
+        }
+      ]
+    }
+  }
+}
