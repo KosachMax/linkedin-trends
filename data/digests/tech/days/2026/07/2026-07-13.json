@@ -2,10 +2,10 @@
   "schema_version": 1,
   "digest_id": "tech",
   "date": "2026-07-13",
-  "generated_at": "2026-07-13T08:34:44.462005Z",
+  "generated_at": "2026-07-13T18:28:59.319833Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» отобрано 4 подтвержденных событий. Редакционный фильтр обработал 34 тематических материалов и исключил 30 неподтвержденных кластеров."
+    "body": "В выпуске «Технологии» отобрано 13 подтвержденных событий. Редакционный фильтр обработал 32 тематических материалов и исключил 18 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
@@ -16,9 +16,10 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 435,
+      "latency_ms": 339,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0
@@ -29,14 +30,15 @@
       "source_name": "arXiv AI",
       "state": "available",
       "fetched": 20,
-      "accepted": 3,
-      "represented_events": 3,
-      "latency_ms": 636,
+      "accepted": 8,
+      "represented_events": 9,
+      "latency_ms": 458,
       "error_code": null,
       "history": [
         0,
         0,
-        3
+        3,
+        8
       ]
     },
     {
@@ -46,9 +48,10 @@
       "fetched": 30,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 669,
+      "latency_ms": 530,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0
@@ -61,10 +64,11 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 456,
+      "latency_ms": 353,
       "error_code": null,
       "history": [
         1,
+        0,
         0,
         0
       ]
@@ -74,14 +78,15 @@
       "source_name": "DEV Community Python",
       "state": "available",
       "fetched": 12,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": 289,
+      "accepted": 7,
+      "represented_events": 3,
+      "latency_ms": 282,
       "error_code": null,
       "history": [
         12,
         9,
-        1
+        1,
+        7
       ]
     },
     {
@@ -91,9 +96,10 @@
       "fetched": 16,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 415,
+      "latency_ms": 289,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0
@@ -106,10 +112,11 @@
       "fetched": 10,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 356,
+      "latency_ms": 115,
       "error_code": null,
       "history": [
         2,
+        0,
         0,
         0
       ]
@@ -121,9 +128,10 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1702,
+      "latency_ms": 1139,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0
@@ -136,9 +144,10 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 823,
+      "latency_ms": 543,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0
@@ -146,6 +155,44 @@
     }
   ],
   "articles": [
+    {
+      "id": "bcabc9a4fa94aa0236dc",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.08774",
+      "title": "CogniConsole: Externalizing Inference-Time Control as a Formal Abstraction for Reliable LLM Interactions",
+      "normalized_title": "cogniconsole: externalizing inference-time control as a formal abstraction for reliable llm interactions",
+      "excerpt": "arXiv:2607.08774v1 Announce Type: new Abstract: Reliability in large language model (LLM) systems is typically framed as a function of model capability. We challenge this by demonstrating that reliability is significantly influenced by \\emph{inference-time control} -- the computational layer governing task framing and context selection. We introduce \\emph{CogniConsole}, an architectural instantiation that externalizes this control into a structured interface combining programmatic coordination with bounded prompt-based reasoning. Through \\emph{controllability-oriented probes} ($N=489$) in a multi-step interactive environment, we show that increasing structural scaffolding -- from unstructured to fully scaffolded -- \\textbf{systematically reduces output variance and failure rates under a fixed model architecture}. Our results indicate that many observed failure modes, such as context drift and inconsistent constraint adherence, arise from under-specified control rather than insufficien",
+      "published_at": "2026-07-13T04:00:00Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "dcaf8ae6d4a6e1c563ec",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.08894",
+      "title": "GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning",
+      "normalized_title": "gats: graph-augmented tree search with layered world models for efficient agent planning",
+      "excerpt": "arXiv:2607.08894v1 Announce Type: new Abstract: Large Language Model (LLM) agents have shown promise in multi-step planning tasks, but existing approaches like LATS (Language Agent Tree Search) and ReAct rely heavily on LLM inference during planning, leading to high computational costs and stochastic behavior. We present \\textbf{GATS} (Graph-Augmented Tree Search), a planning framework that combines systematic UCB1-based tree search with a layered world model to eliminate LLM calls during inference while achieving superior planning performance. Our three-layer world model integrates: (L1) exact symbolic action matching, (L2) statistics learned from execution logs, and (L3) LLM-based prediction for unknown actions. On synthetic planning tasks with branching paths and dead-ends, GATS achieves \\textbf{100\\% success rate} compared to 92 % for LATS and 64\\% for ReAct. On a comprehensive stress test spanning 12 challenging scenarios -- including coding workflows, web navigation, and long-ho",
+      "published_at": "2026-07-13T04:00:00Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
     {
       "id": "7f96f48e2e6cc1050d9e",
       "source_id": "arxiv-ai",
@@ -155,7 +202,64 @@
       "normalized_title": "long-horizon-terminal-bench: testing the limits of agents on long-horizon terminal tasks with dense reward-based grading",
       "excerpt": "arXiv:2607.08964v1 Announce Type: new Abstract: AI agents have become capable of autonomously completing short, well-specified tasks. However, existing terminal benchmarks largely focus on simple problems that finish within minutes and are evaluated only by their final outcome. This setup overlooks intermediate progress and partial solutions, yielding sparse reward signals and an incomplete picture of agent capability. We introduce Long-Horizon-Terminal-Bench, a terminal benchmark of 46 long-horizon tasks spanning nine categories, including experiment reproduction, software engineering, multimodal analysis, interactive games, and scientific computing. Each task follows a Terminal-Bench-style setup with a reference solution or simulation engine, but is further decomposed into fine-grained graded subtasks. This design enables dense intermediate rewards and partial credit, allowing evaluation to capture not only whether an agent reaches the final goal, but also how far it progresses on o",
       "published_at": "2026-07-13T04:00:00Z",
-      "collected_at": "2026-07-13T08:34:44.470839Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "76f9f212b258f7dc0479",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09099",
+      "title": "L-MAD: A Systematic Evaluation of Multi-Agent Debate Structures in Legal Reasoning",
+      "normalized_title": "l-mad: a systematic evaluation of multi-agent debate structures in legal reasoning",
+      "excerpt": "arXiv:2607.09099v1 Announce Type: new Abstract: While multi-agent debate (MAD) frameworks have shown significant potential in general reasoning, their effectiveness in highly structured, knowledge-heavy legal domains remains under-explored. In this work, we introduce the Legal Multi-Agent Debate (L-MAD) framework to systematically evaluate different debate structures and aggregation methods within Legal Textual Entailment. By assigning distinct expert personas to multiple agents, L-MAD improves upon strong single-agent baselines by up to 8\\%. Furthermore, analyzing how debate scales reveals a clear trade-off: increasing the agent population reduces inconsistency and improves accuracy, whereas extending discussion rounds induces a detrimental \\textit{over-deliberation drift} where agents reinforce each other's mistakes. Ultimately, our findings outline the practical boundaries and safety margins of deploying collaborative multi-agent systems in high-stakes legal reasoning environments.",
+      "published_at": "2026-07-13T04:00:00Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "07ca6e65bcf564fed37f",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09142",
+      "title": "MedRealMM: A Real-World Multimodal Benchmark for Chinese Online Medical Consultation",
+      "normalized_title": "medrealmm: a real-world multimodal benchmark for chinese online medical consultation",
+      "excerpt": "arXiv:2607.09142v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly deployed in online medical consultation, yet existing benchmarks remain poorly aligned with real clinical practice. Many rely on synthetic conversations or patient simulators, omit patient-uploaded medical images, or evaluate open-ended clinical responses using multiple-choice or lexical-overlap metrics that poorly reflect clinical quality. We introduce \\textbf{MedRealMM}, a large-scale benchmark for multimodal online medical consultation built from de-identified patient-doctor interactions collected from a nationwide Chinese internet hospital. MedRealMM uses a Multimodal Clinical Challenge Point (MCCP) extraction framework to identify clinically demanding moments in authentic consultation trajectories and converts each into a standardized next-response generation task while preserving the preceding text-image context. Each instance is paired with a case-specific rubric refined by physicians",
+      "published_at": "2026-07-13T04:00:00Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "793d5986543324736edc",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09153",
+      "title": "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling",
+      "normalized_title": "kv-prm: efficient process reward modeling via kv-cache transfer for multi-agent test-time scaling",
+      "excerpt": "arXiv:2607.09153v1 Announce Type: new Abstract: Process Reward Models (PRMs) have been proven to be highly effective in guiding test-time scaling (TTS) methods, which significantly boost the capabilities of LLM-based multi-agent systems. However, existing PRMs are text-based: they re-encode the entire trajectory text from scratch. In long multi-agent rollouts, the scoring cost, growing quadratically with respect to sequence length L, creates a severe computational bottleneck, severely limiting PRMs' application in long-context scenarios. To resolve this, we introduce KV-PRM, a highly efficient process reward model that eliminates the heavy text re-encoding by directly reading the KV cache produced naturally during the LLM's generation phase. By processing a single \"verify token\" against the pre-existing KV cache, KV-PRM reduces the scoring cost from O(L^2) to O(L). We formally prove that the KV cache contains strictly greater information capacity than text, and is more efficient for d",
+      "published_at": "2026-07-13T04:00:00Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -174,7 +278,7 @@
       "normalized_title": "scoped verification for reliable long-horizon agentic context evolution under distribution shift",
       "excerpt": "arXiv:2607.09175v1 Announce Type: new Abstract: Deployed LLM agents rely on agentic context, the model-external textual control content assembled by an operational harness. In this work, the mutable component of that context is a persistent system-level instruction that is updated from operational experience while the model, tools, and harness remain fixed. Over long evolution horizons, flat-text maintenance makes verification increasingly difficult as accumulated instructions grow and interact. We propose Graph-Regularized Agentic Context Evolution (GRACE), which maintains the persistent instruction component as a typed semantic graph and validates proposed updates within the local typed neighborhoods of modified nodes. Accepted graph updates are reconstructed as incremental edits to the textual instruction checkpoint used at deployment. We evaluate GRACE within a fixed telecom agent harness derived from $\\tau^2$-bench under a controlled distribution-shift protocol. Across five indep",
       "published_at": "2026-07-13T04:00:00Z",
-      "collected_at": "2026-07-13T08:34:44.470839Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -193,7 +297,7 @@
       "normalized_title": "communication-efficient digital-twin coordination for heterogeneous llm embodied agents over computing power networks",
       "excerpt": "arXiv:2607.09330v1 Announce Type: new Abstract: Embodied agent teams powered by heterogeneous large language models (LLMs) are being widely deployed in physical artificial intelligence such as smart factories, warehouses, and service robotics. To enable collaboration among such an agent team, efficient coordination mechanisms that operate reliably under limited network resources are required. However, existing heterogeneous LLM-agent coordination frameworks that rely on multi-round natural-language-based conversations introduce three coupled challenges. First, inter-agent dialogue incurs communication overhead that grows rapidly with team size. Second, the quality of coordination is constrained by the heterogeneous capabilities of the agent team's LLMs. Third, agents may suffer from action delays due to iterative negotiation. To address these challenges, we propose LDT-Coord, a networked coordination framework built upon a lightweight digital twin (DT). Specifically, each agent indepe",
       "published_at": "2026-07-13T04:00:00Z",
-      "collected_at": "2026-07-13T08:34:44.470839Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -204,15 +308,129 @@
       "engagement": null
     },
     {
-      "id": "a8eb2f31be32f211ccd2",
+      "id": "075c341135cbc4cd28da",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/y0oshi/i-built-a-complete-llm-training-pipeline-in-pure-pytorch-2gh7",
-      "title": "I Built a Complete LLM Training Pipeline in Pure PyTorch",
-      "normalized_title": "i built a complete llm training pipeline in pure pytorch",
-      "excerpt": "If you’ve spent any time working with LLMs recently, you’ve probably noticed that we are increasingly reliant on massive, high-level frameworks like transformers , trl , and peft . They are fantastic for getting a model fine-tuned by Friday afternoon, but they come with a cost: they hide almost all of the actual math and mechanics behind layers of abstraction. I wanted to actually understand what was happening under the hood. How do",
-      "published_at": "2026-07-13T08:02:42Z",
-      "collected_at": "2026-07-13T08:34:44.470839Z",
+      "canonical_url": "https://dev.to/qingluan/build-a-password-manager-with-python-3lea",
+      "title": "Build a Password Manager with Python",
+      "normalized_title": "build a password manager with python",
+      "excerpt": "Build a Password Manager with Python Imagine typing your master key once and instantly unlocking passwords for every site you visit, all stored in a file that looks like gibberish to anyone who tries to peek. That’s the power of building your own password manager in Python: you get total control over your data, learn critical security concepts, and end up with a tool you can actually use today. Security experts constantly warn against saving passwords in plain text, yet many developers still rely on browser storage or insecure notes. By building a custom manager, you enforce encryption by default and create a CLI tool that fits your workflow perfectly. Let’s dive into creating a secure, command-line password manager that encrypts your credentials using the industry-standard cryptography library. Why Build Your Own Password Manager? Before we write code, it’s worth understanding the security mindset behind this proj",
+      "published_at": "2026-07-13T18:03:37Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "9741bb46b8df40a19827",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/michalis_solomou_ef4e3025/find-b2b-leads-the-moment-a-company-raises-funding-free-api-python-cb5",
+      "title": "Find B2B Leads the Moment a Company Raises Funding (Free API + Python)",
+      "normalized_title": "find b2b leads the moment a company raises funding (free api + python)",
+      "excerpt": "Freshly-funded companies are one of the best B2B sales signals that exists. They just got a pile of cash, they have a mandate to grow fast, and they haven't been pitched by every vendor under the sun yet — because most of the sales world doesn't find out until TechCrunch writes about it, weeks later. Turns out you don't have to wait for TechCrunch. In the US, private funding rounds get filed with the SEC as a Form D — a public record — often days to weeks before any press release goes out. The catch: it's raw regulatory data. No score, no company enrichment, no way to tell a real Series A from a hedge fund's internal paperwork. I built a small API that does that cleanup for you — Funding Signals — and in this post I'll walk through how to pull today's freshly-funded companies into a Python script",
+      "published_at": "2026-07-13T17:56:24Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "ad6f6b72a14331a61f0a",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/l0gi0ver/how-to-scrape-sec-edgar-form-d-free-no-code-guide-2026-2l10",
+      "title": "How to Scrape SEC EDGAR Form D — Free No-Code Guide (2026)",
+      "normalized_title": "how to scrape sec edgar form d — free no-code guide (2026)",
+      "excerpt": "If you need to pull SEC EDGAR Form D data at scale and there's no clean official API, this guide shows how to export it to JSON, CSV or Excel in a couple of minutes — with no scraping code to maintain. We'll use the SEC EDGAR Form D Scraper — Funding Leads , a hosted scraper on the Apify platform. You only need a free Apify token — no SEC EDGAR Form D login, no proxies, no reverse-engineering. What data you get Each run returns structured records with fields like: companyName totalOfferingAmount totalAmountSold numberOfInvestors industryGroup state dateOfFirstSale filingDate executives cik entityType</code",
+      "published_at": "2026-07-13T17:40:55Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "d85698ea58ba64d1d0c3",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/l0gi0ver/how-to-scrape-broken-link-free-no-code-guide-2026-4l13",
+      "title": "How to Scrape Broken Link — Free No-Code Guide (2026)",
+      "normalized_title": "how to scrape broken link — free no-code guide (2026)",
+      "excerpt": "If you need to pull Broken Link data at scale and there's no clean official API, this guide shows how to export it to JSON, CSV or Excel in a couple of minutes — with no scraping code to maintain. We'll use the Broken Link Checker - Find Dead 404 Links , a hosted scraper on the Apify platform. You only need a free Apify token — no Broken Link login, no proxies, no reverse-engineering. What data you get Each run returns structured records with fields like: sourceUrl linkUrl anchorText linkType statusCode ok error checkedAt Results are paginated automatically — you can pull thousands of rows per run and export them as JSON, CSV, Excel, JSONL or XML",
+      "published_at": "2026-07-13T17:40:23Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "df82bdabbb64b2176100",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/l0gi0ver/how-to-scrape-twitch-free-no-code-guide-2026-3j6",
+      "title": "How to Scrape Twitch — Free No-Code Guide (2026)",
+      "normalized_title": "how to scrape twitch — free no-code guide (2026)",
+      "excerpt": "If you need to pull Twitch data at scale and there's no clean official API, this guide shows how to export it to JSON, CSV or Excel in a couple of minutes — with no scraping code to maintain. We'll use the Twitch Scraper — Streams, Games, Channels & Clips API , a hosted scraper on the Apify platform. You only need a free Apify token — no Twitch login, no proxies, no reverse-engineering. What data you get Each run returns structured records with fields like: _mode login displayName name gameName viewersCount viewCount followers twitchUrl scrapedAt title startedAt tags</",
+      "published_at": "2026-07-13T17:39:52Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "1222022f90b4272133b0",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/qingluan/how-to-build-a-web-crawler-with-scrapy-m5l",
+      "title": "How to Build a Web Crawler with Scrapy",
+      "normalized_title": "how to build a web crawler with scrapy",
+      "excerpt": "How to Build a Web Crawler with Scrapy How to Build a Web Crawler with Scrapy: A Step-by-Step Guide Imagine you need to track product prices across 50 different e-commerce sites every hour, or you want to aggregate news articles from hundreds of blogs to build a trending topics dashboard. Doing this manually is impossible, and writing custom scripts with requests and BeautifulSoup for every new site quickly becomes a maintenance nightmare. You need a tool that scales, handles complexity, and follows a strict architecture. Enter Scrapy , the industry-standard Python framework for building high-performance web crawlers. Scrapy isn't just a library; it’s an open-source, collaborative framework designed for extracting data from websites. It handles everything from request scheduling to data parsing, allowing you to build robust crawlers that can navigate thousands of pages without breaking a sweat.",
+      "published_at": "2026-07-13T17:03:29Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "4265c8f5eb2da875345f",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/marop2/build-a-real-time-server-dashboard-with-python-websockets-1jag",
+      "title": "Build a Real-Time Server Dashboard with Python & WebSockets",
+      "normalized_title": "build a real-time server dashboard with python & websockets",
+      "excerpt": "Build a Real-Time Server Dashboard with Python & WebSockets A Step-by-Step Guide to Monitoring Your VPS Like a Pro If you're managing a VPS, homelab, or even a Raspberry Pi, you've probably found yourself SSH-ing in just to run htop or glances . What if you could see all your server metrics in a beautiful web dashboard that updates in real-time? In this tutorial, I'll show you how to build a lightweight server monitoring dashboard using Python (with psutil and aiohttp ) and vanilla JavaScript with Chart.js — no React, no Vue, no bloated frameworks. What We're Building A dark-themed dashboard that shows: CPU usage with real-time sparkline charts RAM consumption with percentage and absolute values Network throug",
+      "published_at": "2026-07-13T16:56:07Z",
+      "collected_at": "2026-07-13T18:28:59.327524Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -225,41 +443,262 @@
   ],
   "events": [
     {
-      "id": "tech-794e2b64ad186c95",
-      "slug": "разработчик-создал-пайплайн-обучения-llm-на-чистом-pytorch",
-      "title": "Разработчик создал пайплайн обучения LLM на чистом PyTorch",
-      "brief": "Разработчик представил полный пайплайн для обучения больших языковых моделей (LLM), реализованный исключительно на фреймворке PyTorch. Целью проекта было глубже понять математические и механические аспекты работы LLM, которые часто скрыты в высокоуровневых библиотеках, таких как transformers, trl и peft. Этот подход позволяет получить более детальное представление о процессах, происходящих внутри моделей, в отличие от использования готовых решений, ориентированных на быструю донастройку моделей.",
-      "context": "В последнее время наблюдается тенденция к использованию крупных, высокоуровневых фреймворков для работы с большими языковыми моделями (LLM). Такие библиотеки, как transformers, trl и peft, значительно упрощают процесс донастройки моделей, однако они также скрывают большую часть математических и механических деталей. Разработчик решил создать альтернативное решение, чтобы разобраться в фундаментальных принципах работы LLM.",
-      "why_it_matters": "Создание и публикация такого пайплайна на чистом PyTorch имеет значение для сообщества разработчиков, стремящихся к глубокому пониманию LLM. Это позволяет изучать и модифицировать процесс обучения на более низком уровне, что может привести к разработке новых, более эффективных методов обучения и архитектур моделей. Кроме того, это способствует демистификации сложных технологий и делает их более доступными для исследователей и инженеров.",
-      "importance": 4,
+      "id": "tech-6813741065614f72",
+      "slug": "gats-новый-фреймворк-для-планирования-ии-агентов-с-улучшенной-эффективностью",
+      "title": "GATS: Новый фреймворк для планирования ИИ-агентов с улучшенной эффективностью",
+      "brief": "Представлен GATS (Graph-Augmented Tree Search) — новый фреймворк для планирования ИИ-агентов, который значительно снижает вычислительные затраты и повышает эффективность по сравнению с существующими методами, такими как LATS и ReAct. GATS использует трехслойную модель мира, объединяющую точное сопоставление символических действий, статистику из логов выполнения и предсказания на основе LLM для неизвестных действий. Это позволяет исключить вызовы LLM во время планирования, что приводит к более быстрой и надежной работе агентов. В синтетических задачах планирования GATS продемонстрировал 100% успешность, превзойдя LATS (92%) и ReAct (64%).",
+      "context": "Современные ИИ-агенты, основанные на больших языковых моделях (LLM), показывают многообещающие результаты в задачах многошагового планирования. Однако существующие подходы, такие как LATS (Language Agent Tree Search) и ReAct, в значительной степени полагаются на LLM-инференс во время процесса планирования. Это приводит к высоким вычислительным затратам и стохастическому поведению, что ограничивает их практическое применение. Для решения этих проблем был разработан GATS (Graph-Augmented Tree Search), который сочетает систематический древовидный поиск на основе UCB1 с многослойной моделью мира, чтобы минимизировать или полностью исключить вызовы LLM во время инференса, сохраняя при этом высокую производительность планирования.",
+      "why_it_matters": "Разработка GATS имеет важное значение для повышения эффективности и надежности ИИ-агентов в сложных задачах планирования. Снижение зависимости от дорогостоящих LLM-вызовов во время выполнения делает агентов более доступными и масштабируемыми для реальных приложений, таких как кодирование, навигация в интернете и другие комплексные рабочие процессы. Достижение 100% успешности в ряде тестов демонстрирует потенциал GATS для решения задач, где точность и предсказуемость имеют решающее значение.",
+      "importance": 8,
       "status": "new",
-      "category": "Технологии",
+      "category": "Искусственный интеллект",
       "article_ids": [
-        "a8eb2f31be32f211ccd2"
+        "dcaf8ae6d4a6e1c563ec"
       ],
       "facts": [
         {
-          "text": "Разработчик создал полный пайплайн для обучения больших языковых моделей (LLM), используя только PyTorch.",
+          "text": "Новый фреймворк GATS (Graph-Augmented Tree Search) использует древовидный поиск и многослойную модель мира для эффективного планирования ИИ-агентов.",
           "article_ids": [
-            "a8eb2f31be32f211ccd2"
+            "dcaf8ae6d4a6e1c563ec"
           ]
         },
         {
-          "text": "Целью разработки было понять математические и механические аспекты работы LLM, которые скрыты в высокоуровневых фреймворках.",
+          "text": "GATS стремится исключить вызовы LLM во время инференса, в отличие от LATS и ReAct, что снижает вычислительные затраты.",
           "article_ids": [
-            "a8eb2f31be32f211ccd2"
+            "dcaf8ae6d4a6e1c563ec"
           ]
         },
         {
-          "text": "Высокоуровневые фреймворки, такие как transformers, trl и peft, упрощают донастройку моделей, но скрывают детали реализации.",
+          "text": "Трехслойная модель мира GATS включает точное сопоставление действий, статистику из логов и предсказания LLM для неизвестных действий.",
           "article_ids": [
-            "a8eb2f31be32f211ccd2"
+            "dcaf8ae6d4a6e1c563ec"
+          ]
+        },
+        {
+          "text": "В синтетических задачах планирования GATS достиг 100% успешности, превосходя LATS (92%) и ReAct (64%).",
+          "article_ids": [
+            "dcaf8ae6d4a6e1c563ec"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-13T08:02:42Z",
-      "updated_at": "2026-07-13T08:34:44.462005Z"
+      "first_seen_at": "2026-07-13T04:00:00Z",
+      "updated_at": "2026-07-13T18:28:59.319833Z"
+    },
+    {
+      "id": "tech-8b6881f41dc148d6",
+      "slug": "kv-prm-новый-метод-повышения-эффективности-мультиагентных-систем",
+      "title": "KV-PRM: Новый метод повышения эффективности мультиагентных систем",
+      "brief": "Разработана новая модель вознаграждения процесса (PRM) под названием KV-PRM, которая значительно повышает эффективность масштабирования в тестовом режиме (TTS) для мультиагентных систем на основе больших языковых моделей (LLM). Традиционные PRM, основанные на тексте, сталкиваются с вычислительными ограничениями из-за квадратичного роста стоимости оценки с длиной последовательности. KV-PRM решает эту проблему, используя KV-кэш, уже существующий в процессе генерации LLM, вместо повторного кодирования всего текста траектории. Это снижает стоимость оценки с O(L^2) до O(L), делая модель применимой в сценариях с длинным контекстом. Исследование также формально доказывает, что KV-кэш содержит больше информации и более эффективен для данной задачи, чем текстовое представление.",
+      "context": "Мультиагентные системы на основе больших языковых моделей (LLM) демонстрируют значительный потенциал, однако их возможности часто ограничиваются необходимостью масштабирования в тестовом режиме (TTS). Методы TTS используют модели вознаграждения процесса (PRM) для повышения производительности. Существующие PRM работают с текстовыми данными, что приводит к значительным вычислительным затратам при обработке длинных траекторий из-за квадратичной зависимости стоимости от длины последовательности (O(L^2)). Это ограничивает их применение в сценариях, требующих обработки больших объемов данных или длительных взаимодействий.",
+      "why_it_matters": "Внедрение KV-PRM устраняет серьезное вычислительное узкое место в мультиагентных системах, позволяя эффективно использовать LLM в сценариях с длинным контекстом. Снижение вычислительной сложности с O(L^2) до O(L) открывает новые возможности для применения передовых LLM-технологий в более широком спектре задач, где ранее ограничения по производительности делали их использование нецелесообразным. Это может привести к созданию более мощных и интеллектуальных автономных систем.",
+      "importance": 8,
+      "status": "new",
+      "category": "Искусственный интеллект",
+      "article_ids": [
+        "793d5986543324736edc"
+      ],
+      "facts": [
+        {
+          "text": "KV-PRM — это новая модель вознаграждения процесса (PRM), разработанная для повышения эффективности мультиагентных систем LLM.",
+          "article_ids": [
+            "793d5986543324736edc"
+          ]
+        },
+        {
+          "text": "Существующие текстовые PRM имеют вычислительную сложность O(L^2) из-за необходимости повторного кодирования траектории, что ограничивает их применение в длинных контекстах.",
+          "article_ids": [
+            "793d5986543324736edc"
+          ]
+        },
+        {
+          "text": "KV-PRM снижает вычислительную сложность до O(L), используя существующий KV-кэш вместо повторного кодирования текста.",
+          "article_ids": [
+            "793d5986543324736edc"
+          ]
+        },
+        {
+          "text": "Исследование доказывает, что KV-кэш содержит больше информации и более эффективен для задачи оценки, чем текстовое представление.",
+          "article_ids": [
+            "793d5986543324736edc"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-13T04:00:00Z",
+      "updated_at": "2026-07-13T18:28:59.319833Z"
+    },
+    {
+      "id": "tech-5b2674558838ca2c",
+      "slug": "cogniconsole-новый-подход-к-управлению-большими-языковыми-моделями-для-повышения",
+      "title": "CogniConsole: Новый подход к управлению большими языковыми моделями для повышения их надежности",
+      "brief": "Исследователи представили CogniConsole — архитектурное решение, которое выносит управление процессом вывода больших языковых моделей (LLM) во внешнюю структурированную среду. Этот подход, основанный на комбинации программной координации и ограниченного рассуждения на основе подсказок, позволяет управлять кадрированием задач и выбором контекста. Эксперименты с 489 зондами, ориентированными на управляемость, в интерактивной среде показали, что увеличение структурной поддержки систематически снижает вариативность выходных данных и частоту сбоев при фиксированной архитектуре модели. Это указывает на то, что многие наблюдаемые сбои, такие как дрейф контекста и непоследовательное соблюдение ограничений, вызваны недостаточной спецификацией управления, а не недостаточной мощностью самой модели.",
+      "context": "Надежность систем больших языковых моделей (LLM) традиционно рассматривается как функция возможностей самой модели. Однако новое исследование бросает вызов этому представлению, утверждая, что на надежность в значительной степени влияет «управление во время вывода» — вычислительный уровень, который регулирует кадрирование задач и выбор контекста. Для решения этой проблемы была разработана CogniConsole, архитектурная реализация, которая отделяет это управление во внешнюю структурированную среду. Эта среда объединяет программную координацию с рассуждениями, основанными на подсказках, в определенных границах.",
+      "why_it_matters": "Результаты исследования показывают, что многие распространенные проблемы с LLM, такие как потеря контекста или неспособность последовательно следовать инструкциям, могут быть связаны не с ограничениями самой модели, а с недостаточным контролем над процессом вывода. CogniConsole предлагает практическое решение, позволяющее повысить надежность и предсказуемость LLM, что критически важно для их широкого внедрения в различных приложениях, требующих высокой степени точности и последовательности.",
+      "importance": 7,
+      "status": "new",
+      "category": "Искусственный интеллект",
+      "article_ids": [
+        "bcabc9a4fa94aa0236dc"
+      ],
+      "facts": [
+        {
+          "text": "Надежность больших языковых моделей (LLM) в значительной степени зависит от управления процессом вывода, включая кадрирование задач и выбор контекста.",
+          "article_ids": [
+            "bcabc9a4fa94aa0236dc"
+          ]
+        },
+        {
+          "text": "CogniConsole — это архитектурное решение, которое выносит управление процессом вывода LLM во внешнюю структурированную среду, сочетая программную координацию с рассуждениями на основе подсказок.",
+          "article_ids": [
+            "bcabc9a4fa94aa0236dc"
+          ]
+        },
+        {
+          "text": "Увеличение структурной поддержки в управлении выводом LLM систематически снижает вариативность выходных данных и частоту сбоев.",
+          "article_ids": [
+            "bcabc9a4fa94aa0236dc"
+          ]
+        },
+        {
+          "text": "Многие сбои LLM, такие как дрейф контекста и непоследовательное соблюдение ограничений, могут быть вызваны недостаточной спецификацией управления, а не недостаточной мощностью модели.",
+          "article_ids": [
+            "bcabc9a4fa94aa0236dc"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-13T04:00:00Z",
+      "updated_at": "2026-07-13T18:28:59.319833Z"
+    },
+    {
+      "id": "tech-1fbba9df3157c25b",
+      "slug": "новая-система-l-mad-улучшает-юридическое-аргументирование-с-помощью-дебатов-межд",
+      "title": "Новая система L-MAD улучшает юридическое аргументирование с помощью дебатов между ИИ-агентами",
+      "brief": "Исследователи представили фреймворк L-MAD (Legal Multi-Agent Debate), предназначенный для оценки эффективности различных структур дебатов и методов агрегации информации в области юридического анализа текстов. Система использует ИИ-агентов с ролями экспертов, что позволило повысить точность по сравнению с сильными одноагентными моделями на 8%. Анализ масштабирования показал, что увеличение числа агентов снижает несогласованность и повышает точность, однако чрезмерное количество раундов обсуждения приводит к эффекту \"дрейфа из-за избыточных размышлений\", когда агенты закрепляют ошибки друг друга. Результаты исследования определяют практические границы и пределы безопасности для применения многоагентных систем в критически важных юридических задачах.",
+      "context": "Системы многоагентных дебатов (MAD) продемонстрировали значительный потенциал в области общего рассуждения. Однако их эффективность в строго структурированных и насыщенных знаниями юридических доменах оставалась недостаточно изученной. Для решения этой проблемы была разработана система L-MAD, которая позволяет систематически оценивать различные структуры дебатов и методы агрегации информации в контексте юридического анализа текстов (Legal Textual Entailment).",
+      "why_it_matters": "Разработанный фреймворк L-MAD позволяет определить практические границы и пределы безопасности для развертывания совместных многоагентных систем в высокорисковых средах юридического анализа. Это имеет решающее значение для обеспечения надежности и точности ИИ в правоприменительной практике, где ошибки могут иметь серьезные последствия.",
+      "importance": 7,
+      "status": "new",
+      "category": "Искусственный интеллект",
+      "article_ids": [
+        "76f9f212b258f7dc0479"
+      ],
+      "facts": [
+        {
+          "text": "Представлен фреймворк L-MAD (Legal Multi-Agent Debate) для оценки структур дебатов и методов агрегации в юридическом анализе текстов.",
+          "article_ids": [
+            "76f9f212b258f7dc0479"
+          ]
+        },
+        {
+          "text": "Использование ИИ-агентов с ролями экспертов в системе L-MAD улучшило результаты по сравнению с одноагентными моделями на 8%.",
+          "article_ids": [
+            "76f9f212b258f7dc0479"
+          ]
+        },
+        {
+          "text": "Увеличение числа агентов в системе L-MAD снижает несогласованность и повышает точность.",
+          "article_ids": [
+            "76f9f212b258f7dc0479"
+          ]
+        },
+        {
+          "text": "Чрезмерное количество раундов обсуждения в L-MAD приводит к \"дрейфу из-за избыточных размышлений\", когда агенты закрепляют ошибки друг друга.",
+          "article_ids": [
+            "76f9f212b258f7dc0479"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-13T04:00:00Z",
+      "updated_at": "2026-07-13T18:28:59.319833Z"
+    },
+    {
+      "id": "tech-07e0b57b74f0321a",
+      "slug": "создан-новый-бенчмарк-medrealmm-для-оценки-ии-в-онлайн-медицине",
+      "title": "Создан новый бенчмарк MedRealMM для оценки ИИ в онлайн-медицине",
+      "brief": "Представлен MedRealMM — крупномасштабный бенчмарк для мультимодальных онлайн-медицинских консультаций, разработанный для решения проблем существующих аналогов, которые часто используют синтетические данные или игнорируют загруженные пациентами медицинские изображения. MedRealMM основан на реальных, деидентифицированных взаимодействиях пациентов и врачей из китайской интернет-больницы. Он использует фреймворк извлечения мультимодальных клинических проблемных точек (MCCP) для выявления сложных моментов в консультациях и преобразования их в стандартизированные задачи генерации ответов, сохраняя при этом текстово-визуальный контекст. Каждый пример сопровождается рубрикой, разработанной врачами, для оценки качества ответов.",
+      "context": "Существующие бенчмарки для оценки больших языковых моделей (LLM) в области онлайн-медицинских консультаций часто не соответствуют реальной клинической практике. Они могут полагаться на симуляторы пациентов или синтетические диалоги, не учитывать медицинские изображения, загруженные пациентами, или использовать метрики, плохо отражающие клиническое качество ответов. Для решения этих проблем был разработан MedRealMM, который использует аутентичные данные и фокусируется на клинически значимых аспектах взаимодействия.",
+      "why_it_matters": "MedRealMM призван улучшить оценку ИИ в медицинских консультациях, приблизив ее к реальным условиям. Это позволит более точно определять эффективность и безопасность LLM в клинической практике, способствуя разработке более надежных и полезных медицинских ИИ-систем. Точная оценка качества ответов и учет мультимодальной информации (текст и изображения) критически важны для доверия к ИИ в здравоохранении.",
+      "importance": 7,
+      "status": "completed",
+      "category": "Искусственный интеллект",
+      "article_ids": [
+        "07ca6e65bcf564fed37f"
+      ],
+      "facts": [
+        {
+          "text": "Представлен новый бенчмарк MedRealMM для оценки больших языковых моделей (LLM) в онлайн-медицинских консультациях.",
+          "article_ids": [
+            "07ca6e65bcf564fed37f"
+          ]
+        },
+        {
+          "text": "MedRealMM основан на реальных, деидентифицированных данных взаимодействий пациентов и врачей из китайской интернет-больницы.",
+          "article_ids": [
+            "07ca6e65bcf564fed37f"
+          ]
+        },
+        {
+          "text": "Бенчмарк использует фреймворк извлечения мультимодальных клинических проблемных точек (MCCP) для идентификации сложных моментов в консультациях.",
+          "article_ids": [
+            "07ca6e65bcf564fed37f"
+          ]
+        },
+        {
+          "text": "MedRealMM учитывает как текстовый, так и визуальный контекст (медицинские изображения), загруженные пациентами.",
+          "article_ids": [
+            "07ca6e65bcf564fed37f"
+          ]
+        },
+        {
+          "text": "Каждый пример в MedRealMM сопровождается рубрикой, разработанной врачами, для оценки качества ответов.",
+          "article_ids": [
+            "07ca6e65bcf564fed37f"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-13T04:00:00Z",
+      "updated_at": "2026-07-13T18:28:59.319833Z"
+    },
+    {
+      "id": "tech-348bc337eff44342",
+      "slug": "новый-метод-верификации-контекста-для-llm-агентов",
+      "title": "Новый метод верификации контекста для LLM-агентов",
+      "brief": "Исследователи представили Graph-Regularized Agentic Context Evolution (GRACE) — новый подход к управлению и верификации контекста для LLM-агентов. GRACE поддерживает компонент инструкций как семантический граф, проверяя предлагаемые изменения в локальных окрестностях узлов. Это позволяет более надежно управлять контекстом агентов в течение длительного времени, особенно при изменении условий работы. Метод был протестирован на примере телекоммуникационного агента в условиях распределенного сдвига.",
+      "context": "LLM-агенты используют внешний текстовый контекст, который формируется операционной системой. Этот контекст может изменяться в процессе работы агента. Традиционные методы управления контекстом в виде плоского текста становятся сложными для верификации по мере накопления инструкций и их взаимодействия. Это особенно актуально для долгосрочных эволюционных сценариев.",
+      "why_it_matters": "Надежная верификация контекста критически важна для стабильной работы LLM-агентов, особенно в долгосрочной перспективе и при изменении внешних условий. GRACE предлагает решение для поддержания целостности и корректности инструкций, что повышает надежность и предсказуемость поведения агентов в реальных приложениях, таких как телекоммуникационные системы.",
+      "importance": 7,
+      "status": "new",
+      "category": "Искусственный интеллект",
+      "article_ids": [
+        "76969abbe89ee9a8952e"
+      ],
+      "facts": [
+        {
+          "text": "Предложен новый метод Graph-Regularized Agentic Context Evolution (GRACE) для управления контекстом LLM-агентов.",
+          "article_ids": [
+            "76969abbe89ee9a8952e"
+          ]
+        },
+        {
+          "text": "GRACE поддерживает контекст в виде семантического графа, проверяя изменения в локальных окрестностях узлов.",
+          "article_ids": [
+            "76969abbe89ee9a8952e"
+          ]
+        },
+        {
+          "text": "Метод был протестирован на телекоммуникационном агенте в условиях распределенного сдвига.",
+          "article_ids": [
+            "76969abbe89ee9a8952e"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-13T04:00:00Z",
+      "updated_at": "2026-07-13T18:28:59.319833Z"
     },
     {
       "id": "tech-17206ca2d45a1d33",
@@ -371,6 +810,63 @@
       "updates": [],
       "first_seen_at": "2026-07-13T04:00:00Z",
       "updated_at": "2026-07-13T08:34:44.462005Z"
+    },
+    {
+      "id": "tech-8591cf2eeb23b940",
+      "slug": "python-проекты-для-разработчиков-менеджер-паролей-веб-краулер-и-дашборд-сервера",
+      "title": "Python-проекты для разработчиков: менеджер паролей, веб-краулер и дашборд сервера",
+      "brief": "В подборке статей на Dev.to представлены три проекта на Python, которые помогут разработчикам улучшить свои навыки и создать полезные инструменты. Первый проект — создание менеджера паролей, который обеспечивает полный контроль над данными пользователя и использует шифрование для защиты учетных записей. Второй проект посвящен разработке веб-краулера с использованием фреймворка Scrapy, предназначенного для эффективного извлечения данных с веб-сайтов. Третий проект предлагает построить интерактивный дашборд для мониторинга сервера в реальном времени с помощью Python и WebSockets, визуализируя такие метрики, как загрузка ЦПУ и использование ОЗУ.",
+      "context": "Современные разработчики часто сталкиваются с необходимостью автоматизации задач и повышения безопасности данных. В ответ на эти потребности сообщество Python активно развивает инструменты и библиотеки для создания специализированных приложений. Статьи на платформе Dev.to освещают актуальные направления разработки, предлагая практические руководства по созданию сложных систем. В данном случае, три статьи демонстрируют возможности Python для решения задач в области безопасности данных (менеджер паролей), сбора информации из сети (веб-краулер) и мониторинга системных ресурсов (дашборд сервера).",
+      "why_it_matters": "Эти проекты демонстрируют универсальность Python и его применимость в различных областях разработки, от кибербезопасности до анализа данных и системного администрирования. Создание собственного менеджера паролей учит основам криптографии и защите конфиденциальной информации. Разработка веб-краулера с Scrapy позволяет автоматизировать сбор данных для анализа трендов или мониторинга цен. Построение дашборда сервера в реальном времени дает возможность эффективно контролировать производительность и состояние инфраструктуры. Освоение этих навыков повышает ценность разработчика на рынке труда и способствует созданию более надежных и функциональных приложений.",
+      "importance": 7,
+      "status": "new",
+      "category": "Программирование",
+      "article_ids": [
+        "075c341135cbc4cd28da",
+        "1222022f90b4272133b0",
+        "4265c8f5eb2da875345f"
+      ],
+      "facts": [
+        {
+          "text": "Создание собственного менеджера паролей на Python позволяет получить полный контроль над данными и применять шифрование для защиты учетных записей.",
+          "article_ids": [
+            "075c341135cbc4cd28da"
+          ]
+        },
+        {
+          "text": "Фреймворк Scrapy является стандартным решением в индустрии для создания высокопроизводительных веб-краулеров, способных извлекать данные с веб-сайтов.",
+          "article_ids": [
+            "1222022f90b4272133b0"
+          ]
+        },
+        {
+          "text": "С помощью Python и WebSockets можно построить интерактивный дашборд для мониторинга сервера в реальном времени, отображая метрики использования ЦПУ и ОЗУ.",
+          "article_ids": [
+            "4265c8f5eb2da875345f"
+          ]
+        },
+        {
+          "text": "Разработка менеджера паролей на Python учит критическим концепциям безопасности и позволяет создать инструмент, который полностью соответствует рабочему процессу пользователя.",
+          "article_ids": [
+            "075c341135cbc4cd28da"
+          ]
+        },
+        {
+          "text": "Scrapy обрабатывает планирование запросов и парсинг данных, позволяя создавать надежные краулеры, которые могут обрабатывать тысячи страниц.",
+          "article_ids": [
+            "1222022f90b4272133b0"
+          ]
+        },
+        {
+          "text": "Для создания дашборда сервера можно использовать библиотеки psutil и aiohttp в Python в сочетании с Chart.js для визуализации данных.",
+          "article_ids": [
+            "4265c8f5eb2da875345f"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-13T16:56:07Z",
+      "updated_at": "2026-07-13T18:28:59.319833Z"
     }
   ]
 }
