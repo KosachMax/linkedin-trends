@@ -33,16 +33,16 @@ class EventSynthesisService:
             print(f"[AI] generate failed: {type(exc).__name__}: {exc}", file=sys.stderr)
             raise
         errors = validate_synthesis(result, articles, minimum_sources)
-        if not errors:
-            return result
-
-        repair = (
-            f"{prompt}\n\nVALIDATION ERRORS:\n- "
-            + "\n- ".join(errors)
-            + "\nИсправь только перечисленные ошибки и снова верни объект по той же schema."
-        )
-        result = await self.provider.generate(repair, EventSynthesis)
-        errors = validate_synthesis(result, articles, minimum_sources)
+        for _ in range(2):
+            if not errors:
+                return result
+            repair = (
+                f"{prompt}\n\nVALIDATION ERRORS:\n- "
+                + "\n- ".join(errors)
+                + "\nИсправь только перечисленные ошибки и снова верни объект по той же schema."
+            )
+            result = await self.provider.generate(repair, EventSynthesis)
+            errors = validate_synthesis(result, articles, minimum_sources)
         if errors:
             raise InvalidSynthesisError("; ".join(errors))
         return result

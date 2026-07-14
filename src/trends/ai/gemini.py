@@ -16,8 +16,8 @@ class GeminiProvider:
         self.embedding_model = embedding_model
 
     @retry(
-        stop=stop_after_attempt(3),
-        wait=wait_exponential(multiplier=1, min=1, max=8),
+        stop=stop_after_attempt(5),
+        wait=wait_exponential(multiplier=1, min=1, max=16),
         reraise=True,
     )
     async def generate(self, prompt: str, schema: type[BaseModel]) -> BaseModel:
@@ -39,8 +39,8 @@ class GeminiProvider:
         return embeddings
 
     @retry(
-        stop=stop_after_attempt(3),
-        wait=wait_exponential(multiplier=1, min=1, max=8),
+        stop=stop_after_attempt(5),
+        wait=wait_exponential(multiplier=1, min=1, max=16),
         reraise=True,
     )
     async def _embed_batch(self, texts: list[str]) -> list[list[float]]:

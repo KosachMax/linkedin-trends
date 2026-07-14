@@ -5,6 +5,8 @@ import math
 from datetime import datetime, timedelta
 from pathlib import Path
 
+from rapidfuzz.fuzz import token_set_ratio
+
 from trends.ai.dedupe_service import DedupeService
 from trends.ai.gemini import GeminiProvider
 from trends.ai.schemas import EventRelationDecision
@@ -35,6 +37,85 @@ def _error(stage: str, error: Exception) -> str:
     return f"{stage}:{type(error).__name__}:{detail}" if detail else (
         f"{stage}:{type(error).__name__}"
     )
+
+
+def _obvious_title_duplicate_groups(
+    events: list[DigestEvent],
+    lookback_hours: int,
+) -> list[list[str]]:
+    """Find near-identical generated cards as a deterministic audit safety net."""
+    parent = list(range(len(events)))
+
+    def find(index: int) -> int:
+        while parent[index] != index:
+            parent[index] = parent[parent[index]]
+            index = parent[index]
+        return index
+
+    def union(left: int, right: int) -> None:
+        left_root, right_root = find(left), find(right)
+        if left_root != right_root:
+            parent[right_root] = left_root
+
+    for left_index, left in enumerate(events):
+        for right_index in range(left_index + 1, len(events)):
+            right = events[right_index]
+            age_hours = abs(
+                (left.first_seen_at - right.first_seen_at).total_seconds()
+            ) / 3600
+            if age_hours > lookback_hours:
+                continue
+            if token_set_ratio(left.title, right.title) < 90:
+                continue
+            if left.identity and right.identity:
+                if left.identity.event_type != right.identity.event_type:
+                    continue
+                left_entities = {
+                    item.casefold() for item in left.identity.primary_entities
+                }
+                right_entities = {
+                    item.casefold() for item in right.identity.primary_entities
+                }
+                if left_entities and right_entities and not (
+                    left_entities & right_entities
+                ):
+                    continue
+            union(left_index, right_index)
+
+    grouped: dict[int, list[str]] = {}
+    for index, event in enumerate(events):
+        grouped.setdefault(find(index), []).append(event.id)
+    return [event_ids for event_ids in grouped.values() if len(event_ids) > 1]
+
+
+def _combine_group_ids(groups: list[list[str]]) -> list[list[str]]:
+    """Union overlapping AI and deterministic duplicate groups."""
+    parent: dict[str, str] = {}
+
+    def find(event_id: str) -> str:
+        parent.setdefault(event_id, event_id)
+        while parent[event_id] != event_id:
+            parent[event_id] = parent[parent[event_id]]
+            event_id = parent[event_id]
+        return event_id
+
+    def union(left: str, right: str) -> None:
+        left_root, right_root = find(left), find(right)
+        if left_root != right_root:
+            parent[right_root] = left_root
+
+    for group in groups:
+        if not group:
+            continue
+        for event_id in group:
+            find(event_id)
+        for event_id in group[1:]:
+            union(group[0], event_id)
+
+    components: dict[str, list[str]] = {}
+    for event_id in parent:
+        components.setdefault(find(event_id), []).append(event_id)
+    return [event_ids for event_ids in components.values() if len(event_ids) > 1]
 
 
 def _digest_path(root: Path, digest_id: str, day: str) -> Path:
@@ -269,19 +350,22 @@ async def audit_feed(
         return events
 
     window_size = min(len(events), profile.output.max_events * 2)
+    local_groups = _obvious_title_duplicate_groups(
+        events[:window_size], profile.dedupe.lookback_hours
+    )
+    metrics["local_title_duplicate_groups"] = len(local_groups)
+    ai_groups: list[list[str]] = []
     try:
         audit = await dedupe_ai.audit_feed(events[:window_size])
+        ai_groups = [
+            group.event_ids
+            for group in audit.duplicate_groups
+            if group.confidence >= profile.dedupe.final_audit_confidence
+        ]
     except Exception as error:
         metrics["degraded"] = True
         metrics.setdefault("errors", []).append(_error("feed_audit", error))
-        assert_unique_article_ownership(events)
-        return events
-
-    groups = [
-        group
-        for group in audit.duplicate_groups
-        if group.confidence >= profile.dedupe.final_audit_confidence
-    ]
+    groups = _combine_group_ids([*ai_groups, *local_groups])
     if not groups:
         assert_unique_article_ownership(events)
         return events
@@ -290,7 +374,7 @@ async def audit_feed(
     replacements: dict[str, DigestEvent] = {}
     member_to_keeper: dict[str, str] = {}
     for group in groups:
-        grouped_events = [by_id[event_id] for event_id in group.event_ids]
+        grouped_events = [by_id[event_id] for event_id in group]
         replacement = await _resynthesize_duplicate_group(
             grouped_events,
             article_catalog,
@@ -299,12 +383,12 @@ async def audit_feed(
             metrics,
         )
         keeper = min(
-            group.event_ids,
+            group,
             key=lambda event_id: (by_id[event_id].first_seen_at, event_id),
         )
         replacement.id = keeper
         replacements[keeper] = replacement
-        for event_id in group.event_ids:
+        for event_id in group:
             member_to_keeper[event_id] = keeper
 
     result = []
@@ -317,7 +401,7 @@ async def audit_feed(
             result.append(replacements[keeper])
             emitted.add(keeper)
     metrics["final_audit_merges"] = sum(
-        len(group.event_ids) - 1 for group in groups
+        len(group) - 1 for group in groups
     )
     result, overlap_merges = collapse_article_overlaps(result)
     metrics["article_overlap_merges"] = int(
