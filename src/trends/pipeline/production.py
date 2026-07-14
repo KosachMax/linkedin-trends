@@ -123,10 +123,7 @@ async def run_production(root: Path) -> list[Path]:
     google_api_key = os.getenv("GOOGLE_API_KEY")
     provider = GeminiProvider(google_api_key) if google_api_key else None
     ai = (
-        EventSynthesisService(
-            provider,
-            translation_api_key=google_api_key,
-        )
+        EventSynthesisService(provider)
         if provider
         else None
     )

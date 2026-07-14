@@ -15,7 +15,11 @@ class GeminiProvider:
         self.model = model
         self.embedding_model = embedding_model
 
-    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=8))
+    @retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=1, max=8),
+        reraise=True,
+    )
     async def generate(self, prompt: str, schema: type[BaseModel]) -> BaseModel:
         response = await self.client.aio.models.generate_content(
             model=self.model,
@@ -34,7 +38,11 @@ class GeminiProvider:
             embeddings.extend(await self._embed_batch(texts[start : start + 50]))
         return embeddings
 
-    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=1, max=8))
+    @retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=1, max=8),
+        reraise=True,
+    )
     async def _embed_batch(self, texts: list[str]) -> list[list[float]]:
         contents = [
             types.Content(role="user", parts=[types.Part(text=text)])
