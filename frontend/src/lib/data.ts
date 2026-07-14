@@ -23,7 +23,9 @@ export function loadDigest(id: string, date?: string): DailyDigest {
     ? path.join(DATA_ROOT, id, "days", date.slice(0, 4), date.slice(5, 7), `${date}.json`)
     : path.join(DATA_ROOT, id, "current.json");
   const digest = readJson<DailyDigest>(file);
-  if (digest.schema_version !== 1) throw new Error(`Unsupported digest schema ${digest.schema_version}`);
+  if (![1, 2].includes(digest.schema_version)) {
+    throw new Error(`Unsupported digest schema ${digest.schema_version}`);
+  }
   return digest;
 }
 

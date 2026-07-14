@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 
 from trends.domain.models import DailyDigest
+from trends.storage.validation import validate_digest_integrity
 
 
 class DailyStore:
@@ -10,11 +11,35 @@ class DailyStore:
         self.root = root
 
     def write(self, digest: DailyDigest) -> Path:
+        validate_digest_integrity(digest)
         digest_root = self.root / digest.digest_id
         daily_path = digest_root / "days" / digest.date.strftime("%Y/%m") / f"{digest.date}.json"
         payload = digest.model_dump(mode="json", by_alias=True)
         self._atomic_json(daily_path, payload)
         self._atomic_json(digest_root / "current.json", payload)
+        self._rebuild_index(digest_root)
+        self._rebuild_source_history(digest_root)
+        return daily_path
+
+    def rewrite_archive(self, digest: DailyDigest) -> Path:
+        """Replace one validated archived snapshot without changing today's feed."""
+        validate_digest_integrity(digest)
+        digest_root = self.root / digest.digest_id
+        daily_path = (
+            digest_root
+            / "days"
+            / digest.date.strftime("%Y/%m")
+            / f"{digest.date}.json"
+        )
+        payload = digest.model_dump(mode="json", by_alias=True)
+        self._atomic_json(daily_path, payload)
+
+        current_path = digest_root / "current.json"
+        if current_path.exists():
+            current = json.loads(current_path.read_text(encoding="utf-8"))
+            if current.get("date") == digest.date.isoformat():
+                self._atomic_json(current_path, payload)
+
         self._rebuild_index(digest_root)
         self._rebuild_source_history(digest_root)
         return daily_path

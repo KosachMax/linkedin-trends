@@ -33,6 +33,12 @@ export interface DigestEvent {
   article_ids: string[];
   facts: Array<{ text: string; article_ids: string[] }>;
   updates: Array<{ at: string; summary: string; article_ids: string[] }>;
+  identity?: {
+    event_type: string;
+    primary_entities: string[];
+    geographies: string[];
+    occurred_at: string | null;
+  } | null;
   first_seen_at: string;
   updated_at: string;
 }
@@ -48,4 +54,3 @@ export interface DailyDigest {
   articles: Article[];
   events: DigestEvent[];
 }
-

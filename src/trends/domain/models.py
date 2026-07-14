@@ -54,6 +54,13 @@ class EventUpdate(Model):
     article_ids: list[str] = Field(default_factory=list)
 
 
+class EventIdentity(Model):
+    event_type: str = "news_event"
+    primary_entities: list[str] = Field(default_factory=list)
+    geographies: list[str] = Field(default_factory=list)
+    occurred_at: datetime | None = None
+
+
 class DigestEvent(Model):
     id: str
     slug: str
@@ -67,6 +74,7 @@ class DigestEvent(Model):
     article_ids: list[str] = Field(min_length=1)
     facts: list[Fact] = Field(default_factory=list)
     updates: list[EventUpdate] = Field(default_factory=list)
+    identity: EventIdentity | None = None
     first_seen_at: datetime
     updated_at: datetime
 
@@ -95,7 +103,7 @@ class DailyPicture(Model):
 
 
 class DailyDigest(Model):
-    schema_version: int = 1
+    schema_version: int = 2
     digest_id: str
     date: date
     generated_at: datetime
@@ -153,6 +161,15 @@ class DigestOutput(Model):
     daily_picture_min_chars: int = Field(default=500, ge=200)
 
 
+class DedupeConfig(Model):
+    lookback_hours: int = Field(default=72, ge=1, le=336)
+    candidate_similarity: float = Field(default=0.72, ge=0, le=1)
+    max_neighbors: int = Field(default=8, ge=1, le=50)
+    max_bundle_size: int = Field(default=20, ge=2, le=100)
+    event_match_confidence: float = Field(default=0.90, ge=0, le=1)
+    final_audit_confidence: float = Field(default=0.95, ge=0, le=1)
+
+
 class DigestProfile(Model):
     id: str
     title: str
@@ -161,6 +178,6 @@ class DigestProfile(Model):
     topic: TopicConfig
     categories: list[str]
     sources: DigestSourceRules = Field(default_factory=DigestSourceRules)
+    dedupe: DedupeConfig = Field(default_factory=DedupeConfig)
     ranking: dict[str, float] = Field(default_factory=dict)
     output: DigestOutput = Field(default_factory=DigestOutput)
-

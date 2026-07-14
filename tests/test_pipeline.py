@@ -46,6 +46,30 @@ def test_url_normalization_removes_tracking_and_exact_duplicates():
     assert len(exact_dedupe(articles)) == 1
 
 
+def test_url_normalization_supports_source_specific_tracking_parameters():
+    now = datetime.now(UTC)
+    base = dict(source_id="demo", source_name="Demo", title="Same article", collected_at=now)
+    articles = normalize_articles([
+        RawArticle(
+            **base,
+            url="https://example.com/story?campaign=daily",
+            metadata={"ignored_query_params": ["campaign"]},
+        ),
+        RawArticle(**base, url="https://example.com/story"),
+    ])
+    assert len(exact_dedupe(articles)) == 1
+
+
+def test_url_normalization_sorts_query_parameters():
+    now = datetime.now(UTC)
+    base = dict(source_id="demo", source_name="Demo", title="Same article", collected_at=now)
+    articles = normalize_articles([
+        RawArticle(**base, url="https://example.com/story?a=1&b=2"),
+        RawArticle(**base, url="https://example.com/story?b=2&a=1"),
+    ])
+    assert len(exact_dedupe(articles)) == 1
+
+
 def test_ai_validation_rejects_unknown_article_reference():
     article = fixture_articles()[0]
     synthesis = EventSynthesis(
@@ -62,6 +86,45 @@ def test_ai_validation_rejects_unknown_article_reference():
     errors = validate_synthesis(synthesis, [article], minimum_sources=1)
     assert any("unknown article ids" in error for error in errors)
     assert any("fact 0" in error for error in errors)
+
+
+def test_ai_validation_rejects_mostly_english_editorial_text():
+    article = fixture_articles()[0]
+    mixed = "Я " + "This entire editorial paragraph remains in English. " * 6
+    synthesis = EventSynthesis(
+        title="Я English headline",
+        brief=mixed,
+        context=mixed,
+        why_it_matters=mixed,
+        category="Я tech",
+        impact=8,
+        status="new",
+        article_ids=[article.id],
+        facts=[AIFact(text=mixed, article_ids=[article.id])],
+    )
+    errors = validate_synthesis(synthesis, [article], minimum_sources=1)
+    assert any("predominantly" in error for error in errors)
+
+
+def test_ai_validation_requires_complete_unique_event_provenance():
+    first, second = fixture_articles()[:2]
+    synthesis = EventSynthesis(
+        title="Проверенное событие",
+        brief="Подробная проверенная сводка события на русском языке. " * 6,
+        context="Расширенный контекст события на русском языке. " * 7,
+        why_it_matters="Объяснение важности события и его последствий. " * 4,
+        category="мир",
+        impact=7,
+        status="new",
+        article_ids=[first.id, first.id],
+        facts=[AIFact(text="Подтвержденный факт", article_ids=[second.id])],
+    )
+
+    errors = validate_synthesis(synthesis, [first, second], minimum_sources=1)
+
+    assert "event article_ids must not contain duplicates" in errors
+    assert any("every input article id" in error for error in errors)
+    assert any("outside the event" in error for error in errors)
 
 
 def test_fixture_builder_writes_current_and_archive(tmp_path):
@@ -116,10 +179,13 @@ def test_ai_service_repairs_once():
     assert provider.calls == 2
 
 
-def test_intraday_merge_only_marks_material_changes():
-    tmp_root = ROOT
-    build_fixture_digests(tmp_root)
-    digest = json.loads((ROOT / "data/digests/world/current.json").read_text(encoding="utf-8"))
+def test_intraday_merge_only_marks_material_changes(tmp_path):
+    (tmp_path / "tests").symlink_to(ROOT / "tests", target_is_directory=True)
+    (tmp_path / "config").symlink_to(ROOT / "config", target_is_directory=True)
+    build_fixture_digests(tmp_path)
+    digest = json.loads(
+        (tmp_path / "data/digests/world/current.json").read_text(encoding="utf-8")
+    )
     from trends.domain.models import DailyDigest, Fact
 
     parsed = DailyDigest.model_validate(digest)
@@ -129,6 +195,7 @@ def test_intraday_merge_only_marks_material_changes():
     unchanged = merge_events([old], [source_only])[0]
     assert unchanged.status == old.status
     assert unchanged.updates == []
+    assert unchanged.title == old.title
 
     material = deepcopy(old)
     material.facts.append(Fact(text="A newly confirmed fact", article_ids=[old.article_ids[0]]))
@@ -171,6 +238,82 @@ def test_production_runner_builds_digests_without_ai(tmp_path, monkeypatch):
     written = asyncio.run(production.run_production(tmp_path))
     assert {path.parents[3].name for path in written} == {"world", "tech", "fc-liverpool"}
     world = json.loads((tmp_path / "data/digests/world/current.json").read_text(encoding="utf-8"))
-    assert len(world["events"]) >= 1
-    assert len(world["events"][0]["article_ids"]) >= 1
-    assert list((tmp_path / "data/runs").glob("*/*/*/*.json"))
+    assert world["schema_version"] == 2
+    assert world["events"]
+    known_article_ids = {article["id"] for article in world["articles"]}
+    published_article_ids = [
+        article_id
+        for event in world["events"]
+        for article_id in event["article_ids"]
+    ]
+    assert set(published_article_ids) <= known_article_ids
+    assert len(published_article_ids) == len(set(published_article_ids))
+    reports = list((tmp_path / "data/runs").glob("*/*/*/*.json"))
+    assert reports
+    report = json.loads(reports[0].read_text(encoding="utf-8"))
+    assert "exact_url_duplicates" in report["dedupe"]
+    world_metrics = report["digests"]["world"]["dedupe"]
+    assert world_metrics["thresholds"]["lookback_hours"] == 72
+    assert world_metrics["dedupe_degraded"] is True
+
+
+def test_production_synthesizes_only_twice_the_visible_event_limit(
+    tmp_path, monkeypatch
+):
+    import asyncio
+    from trends.pipeline import production
+
+    (tmp_path / "config").symlink_to(ROOT / "config", target_is_directory=True)
+    collected_at = datetime(2026, 7, 14, 12, tzinfo=UTC)
+    raw = [
+        RawArticle(
+            id=f"tech-{index}",
+            source_id=f"source-{index}",
+            source_name=f"Source {index}",
+            url=f"https://example.com/tech/{index}",
+            title=f"Tech release number {index}",
+            excerpt=f"A distinct technology report numbered {index}.",
+            collected_at=collected_at,
+            published_at=collected_at,
+            topic_hints=["tech"],
+        )
+        for index in range(25)
+    ]
+    runs = [
+        SourceRun(
+            source_id=item.source_id,
+            source_name=item.source_name,
+            state=SourceState.AVAILABLE,
+            fetched=1,
+        )
+        for item in raw
+    ]
+
+    async def fake_collect_sources(_configs):
+        return raw, runs
+
+    async def singleton_partition(selected, _profile, _provider, _dedupe_ai, _metrics):
+        return [[article] for article in selected]
+
+    real_build_event = production.build_event
+    synthesis_calls = 0
+
+    async def counted_build_event(profile, cluster, started, _ai, **kwargs):
+        nonlocal synthesis_calls
+        synthesis_calls += 1
+        return await real_build_event(profile, cluster, started, None, **kwargs)
+
+    monkeypatch.setattr(production, "collect_sources", fake_collect_sources)
+    monkeypatch.setattr(production, "partition_articles", singleton_partition)
+    monkeypatch.setattr(production, "build_event", counted_build_event)
+    monkeypatch.delenv("GOOGLE_API_KEY", raising=False)
+
+    asyncio.run(production.run_production(tmp_path))
+
+    report_path = next((tmp_path / "data/runs").glob("*/*/*/*.json"))
+    report = json.loads(report_path.read_text(encoding="utf-8"))
+    metrics = report["digests"]["tech"]["dedupe"]
+    assert synthesis_calls == 20
+    assert metrics["candidate_clusters"] == 25
+    assert metrics["synthesized_clusters"] == 20
+    assert metrics["skipped_low_rank_clusters"] == 5
