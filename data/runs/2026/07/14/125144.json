@@ -1,0 +1,232 @@
+{
+  "started_at": "2026-07-14T12:51:44.326152+00:00",
+  "raw_articles": 168,
+  "normalized_articles": 168,
+  "dedupe": {
+    "input_articles": 168,
+    "exact_url_duplicates": 0,
+    "same_source_near_duplicates": 0,
+    "output_articles": 168
+  },
+  "sources": [
+    {
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 778,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 407,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport Football",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 674,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 73,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "state": "available",
+      "fetched": 12,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 643,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "le-monde",
+      "source_name": "Le Monde",
+      "state": "available",
+      "fetched": 16,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 44,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 727,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1594,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "spiegel",
+      "source_name": "Der Spiegel",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1056,
+      "error_code": null,
+      "history": []
+    }
+  ],
+  "digests": {
+    "fc-liverpool": {
+      "selected": 1,
+      "published": 0,
+      "quarantined": [
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "9fb73dedbfd88cbebeb5"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": false,
+        "errors": [],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 0,
+        "candidate_bundles": 0,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 0,
+        "reused_event_ids": 0,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 1,
+        "candidate_clusters": 1,
+        "synthesized_clusters": 1,
+        "skipped_low_rank_clusters": 0,
+        "orphaned_events": 0,
+        "dedupe_degraded": false
+      }
+    },
+    "tech": {
+      "selected": 32,
+      "published": 10,
+      "quarantined": [],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "partition:InvalidDedupeResponse:related/different relations must be in separate groups; related/different relations must be in separate groups; related/different relations must be in separate groups; related/diff",
+          "synthesis:InvalidSynthesisError:fact 3 must be predominantly written in Russian",
+          "synthesis:ValidationError:1 validation error for EventSynthesis brief String should have at most 800 characters [type=string_too_long, input_value='Исследовател...м не более 1%.', input_type=str] For further information visit https://errors.pydan",
+          "synthesis:ServerError:503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "synthesis:ValidationError:1 validation error for EventSynthesis brief String should have at most 800 characters [type=string_too_long, input_value='Исследовател...диагностике.', input_type=str] For further information visit https://errors.pydanti",
+          "synthesis:InvalidSynthesisError:fact 1 must be predominantly written in Russian"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 115,
+        "candidate_bundles": 5,
+        "ai_partitions": 4,
+        "ai_splits": 5,
+        "fallback_events": 5,
+        "reused_event_ids": 7,
+        "article_overlap_merges": 5,
+        "final_audit_merges": 0,
+        "largest_bundle": 15,
+        "candidate_clusters": 31,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 11,
+        "event_candidate_pairs": 18,
+        "orphaned_events": 0,
+        "dedupe_degraded": true
+      }
+    },
+    "world": {
+      "selected": 125,
+      "published": 10,
+      "quarantined": [],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "feed_audit:InvalidDedupeResponse:duplicate group contains an unknown event ID; duplicate group contains an unknown event ID; duplicate group contains an unknown event ID; duplicate group contains an unknown event "
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 186,
+        "candidate_bundles": 18,
+        "ai_partitions": 18,
+        "ai_splits": 11,
+        "fallback_events": 0,
+        "reused_event_ids": 9,
+        "article_overlap_merges": 7,
+        "final_audit_merges": 0,
+        "largest_bundle": 12,
+        "candidate_clusters": 95,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 75,
+        "event_candidate_pairs": 16,
+        "orphaned_events": 0,
+        "dedupe_degraded": true
+      }
+    }
+  }
+}
