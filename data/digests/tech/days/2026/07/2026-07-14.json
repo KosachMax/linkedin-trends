@@ -2,10 +2,10 @@
   "schema_version": 1,
   "digest_id": "tech",
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T07:26:46.766089Z",
+  "generated_at": "2026-07-14T12:07:10.460604Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» отобрано 8 подтвержденных событий. Редакционный фильтр обработал 33 тематических материалов и исключил 24 неподтвержденных кластеров."
+    "body": "В выпуске «Технологии» отобрано 24 подтвержденных событий. Редакционный фильтр обработал 33 тематических материалов и исключил 13 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
@@ -16,12 +16,13 @@
       "fetched": 20,
       "accepted": 1,
       "represented_events": 1,
-      "latency_ms": 387,
+      "latency_ms": 106,
       "error_code": null,
       "history": [
         0,
         0,
         0,
+        1,
         1
       ]
     },
@@ -30,15 +31,16 @@
       "source_name": "arXiv AI",
       "state": "available",
       "fetched": 20,
-      "accepted": 4,
-      "represented_events": 4,
-      "latency_ms": 669,
+      "accepted": 12,
+      "represented_events": 12,
+      "latency_ms": 648,
       "error_code": null,
       "history": [
         0,
         0,
         8,
-        4
+        4,
+        12
       ]
     },
     {
@@ -48,9 +50,10 @@
       "fetched": 30,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 697,
+      "latency_ms": 384,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0,
@@ -64,10 +67,11 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 405,
+      "latency_ms": 665,
       "error_code": null,
       "history": [
         1,
+        0,
         0,
         0,
         0
@@ -78,15 +82,16 @@
       "source_name": "DEV Community Python",
       "state": "available",
       "fetched": 12,
-      "accepted": 3,
-      "represented_events": 3,
-      "latency_ms": 303,
+      "accepted": 7,
+      "represented_events": 7,
+      "latency_ms": 280,
       "error_code": null,
       "history": [
         12,
         9,
         7,
-        3
+        3,
+        7
       ]
     },
     {
@@ -96,9 +101,10 @@
       "fetched": 16,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 127,
+      "latency_ms": 61,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0,
@@ -112,10 +118,11 @@
       "fetched": 10,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 355,
+      "latency_ms": 334,
       "error_code": null,
       "history": [
         2,
+        0,
         0,
         0,
         0
@@ -128,9 +135,10 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1381,
+      "latency_ms": 1557,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0,
@@ -144,9 +152,10 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 838,
+      "latency_ms": 853,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0,
@@ -156,15 +165,15 @@
   ],
   "articles": [
     {
-      "id": "ecd4eea1a7366029dcfc",
+      "id": "9cacd0ca676cbe16f8ba",
       "source_id": "aljazeera",
       "source_name": "Al Jazeera",
-      "canonical_url": "https://www.aljazeera.com/economy/2026/7/13/hundreds-of-experts-warn-the-world-must-prepare-now-for-ais-impact?traffic_source=rss",
-      "title": "Hundreds of experts warn the world must prepare now for AI’s impact",
-      "normalized_title": "hundreds of experts warn the world must prepare now for ai’s impact",
-      "excerpt": "More than 200 economists and AI researchers call on leaders to immediately prepare for sweeping economic disruption.",
-      "published_at": "2026-07-13T23:54:32Z",
-      "collected_at": "2026-07-14T07:26:46.773404Z",
+      "canonical_url": "https://www.aljazeera.com/news/2026/7/14/who-will-win-the-2026-fifa-world-cup-heres-what-ai-predicts?traffic_source=rss",
+      "title": "Who will win the 2026 FIFA World Cup? Here’s what AI predicts",
+      "normalized_title": "who will win the 2026 fifa world cup? here’s what ai predicts",
+      "excerpt": "Al Jazeera put nine leading AI models to the test to predict the 2026 FIFA Men's World Cup champion.",
+      "published_at": "2026-07-14T07:59:07Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
       "language": "en",
       "topic_hints": [
         "world",
@@ -183,7 +192,45 @@
       "normalized_title": "format sensitivity index: token-controlled prompt wrapper robustness and schema compliance in llm benchmarking",
       "excerpt": "arXiv:2607.09665v1 Announce Type: new Abstract: Prompt wrappers often differ only in formatting, yet they can change model scores enough to flip leaderboard conclusions. We study this variance under a token-controlled protocol and introduce two complementary metrics: the Format Sensitivity Index (FSI), the accuracy range induced by wrapper choice, and the Parseability Sensitivity Index (PSI), the corresponding range in answer parseability. Across 140,000 OpenRouter generations spanning 7 QA tasks, 5 wrapper families, and 4 instruct models from 7B to 72B parameters, we find that mean FSI varies by over 30x across models and is largely explained by compliance failures. A fixed-effects regression shows that parseability remains a strong predictor of accuracy even after controlling for task, model, and wrapper. We argue that reporting accuracy without wrapper variance and compliance is statistically fragile, and we give practical recommendations for both benchmarking and structured-output",
       "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T07:26:46.773404Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "9668e15cb06b7ffeb207",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09678",
+      "title": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
+      "normalized_title": "faithful, not corrective: message-format effects in multi-hop agent relays are tier-dependent",
+      "excerpt": "arXiv:2607.09678v1 Announce Type: new Abstract: When LLM agents hand off information to one another, does the message format matter? Two literatures disagree: format-optimization work reports that structured messages cut cost without hurting accuracy, while format-restriction work finds that imposing structure degrades generation -- and neither measures what happens when a message traverses multiple hops, where copy fidelity, not one-shot generation, dominates. We introduce a controlled relay testbed: briefs of twelve programmatically generated atomic facts are re-encoded hop-by-hop in five formats (free NL, precision-instructed NL, JSON, triples, key-value) over six hops, scored by a fixed strong grader against programmatic ground truth, across two relay-capability tiers, a cognitive-load condition, and a paired-fork error injection. We find that message-format effects are tier-dependent. (i) Under faithful-relay instructions a strong relay is nearly lossless -- the documented \"telep",
+      "published_at": "2026-07-14T04:00:00Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "08e25924db87eb2b1ff4",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09689",
+      "title": "Boltzmann MapReduce: A Partition-Function Reduce for Forkable Sandboxes",
+      "normalized_title": "boltzmann mapreduce: a partition-function reduce for forkable sandboxes",
+      "excerpt": "arXiv:2607.09689v1 Announce Type: new Abstract: To leading order under local asymptotic normality (LAN), the confidence density a worker emits over a chunk of size $n$ is a Gibbs--Boltzmann measure $\\exp\\{-\\beta E(\\theta)\\}$ whose inverse temperature is the sample size, $\\beta=n$. Three consequences are exact in the Gaussian/linear case and first-order otherwise: disjoint chunks carry independent Boltzmann factors, so the MapReduce \\emph{reduce}, read literally, is a partition function $Z=\\int\\prod_k h_k\\,d\\theta$ whose mode is precision-weighted (inverse-variance) pooling; frequentist consistency is the zero-temperature limit $T=1/n\\to0$",
+      "published_at": "2026-07-14T04:00:00Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -202,7 +249,7 @@
       "normalized_title": "interpreting latent cot reasoning as dynamical systems",
       "excerpt": "arXiv:2607.09698v1 Announce Type: new Abstract: Recent latent reasoning methods, such as CODI and COCONUT, face a fundamental interpretability problem: they maintain multiple superimposed candidate traces in the hidden space at each step, unlike explicit- CoT, which follows a single transparent reasoning trace. Existing mechanistic methods show compression, shortcuts, and superposition without explaining how reasoning evolves across latent steps. To address this gap, we model latent token sequences as trajectories in representation space and apply dynamical systems analysis to characterize the evolution of reasoning. Using quantitative measures, such as step-to-step change, direction consistency, and Lyapunov sensitivity, alongside qualitative projections, such as UMAP and DMD/PHATE, we show that latent CoT exhibits structured, non-random dynamics with two distinct stability classes. CODI behaves as a stable attractor, while COCONUT behaves as an unstable expanding system, and SIM-CoT",
       "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T07:26:46.773404Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -221,7 +268,83 @@
       "normalized_title": "ges-tsp: graph edge sparsification for tsp",
       "excerpt": "arXiv:2607.09708v1 Announce Type: new Abstract: Solving large-scale instances of the Traveling Salesman Problem (TSP) exactly is computationally expensive. Researchers often employ graph sparsification methods to improve computational efficiency. Traditional sparsification methods typically rely on fixed heuristics and fail to fully exploit instance-specific structural information. In this paper, we propose Graph Edge Sparsification (GES), a learning-based sparsification approach for Euclidean TSP. By incorporating geometric structural information and combinatorial optimization technology, our proposed method adaptively generates a sparsification graph for different instances, significantly reducing the graph size and accelerating the solving process. Experimental results demonstrate that our sparsification method can prune up to 95% of edges on the MATILDA dataset, while keeping the solution gap within 1% of the optimal value. Moreover, our approach exhibits strong generalization cap",
       "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T07:26:46.773404Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "e1a3d3b7a29880172934",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09713",
+      "title": "Closed-Loop Control with Rule-Aligned Small Language Models and Multi-Agent Self-Correction",
+      "normalized_title": "closed-loop control with rule-aligned small language models and multi-agent self-correction",
+      "excerpt": "arXiv:2607.09713v1 Announce Type: new Abstract: A key step toward autonomous industrial operation is the ability to create and reconfigure control policies from natural-language requirement specifications, with minimal or no manual redesign. In this setting, policy generation by AI agents can be a credible path when paired with a plant-aware validator (e.g., a digital twin) that can check generated candidate actions before execution. However, practical deployment is constrained by inference latency and compute footprint: large cloud-based models are often too slow, opaque, or data-sensitive for edge closed-loop use. This work investigates whether a compact Small Language Model (SLM) can be retrained for control reasoning and embedded in a validator-guided correction loop. We use a Qwen2.5-1.5B model aligned via Group Relative Policy Optimization (GRPO), combined with (i) an action agent, (ii) a symbolic/digital-twin-style validation layer, and (iii) a reprompting agent that iterativel",
+      "published_at": "2026-07-14T04:00:00Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "a52dafded9a98a529fd0",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09729",
+      "title": "AGM-like Paraconsistent Partial Meet Abductive Expansion Operation",
+      "normalized_title": "agm-like paraconsistent partial meet abductive expansion operation",
+      "excerpt": "arXiv:2607.09729v1 Announce Type: new Abstract: In his 1996 doctoral thesis, Maurice Pagnucco created the first AGM-like abductive expansion operation. Taking his operation as a basis, as well as a taxonomy -- inspired by Atocha Aliseda -- responsible for highlighting and formalizing the main components of abductive reasoning, the main aim of this paper is to present a new paraconsistent AGM-like abductive expansion operation -- capable of assimilating contradictory explanatory hypotheses without trivialization and the consequent absurd epistemic state -- with its postulates and its transitively relational partial meet construction. To a large extent, the formal development presented in this paper was only made possible by the recent creation of the paraconsistent logic RCbr, an LFI (Logics of Formal Inconsistencies) that establishes properties especially relevant to belief revision contexts, in particular, the ability to be self-extensional -- i.e., to satisfy the replacement propert",
+      "published_at": "2026-07-14T04:00:00Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "4236eaed7d3954e18bb9",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09740",
+      "title": "A Dynamic Scene Interaction Reasoning Framework for Scene-level Lane-Change Intention and Trajectory Prediction of Multiple Interacting Vehicles",
+      "normalized_title": "a dynamic scene interaction reasoning framework for scene-level lane-change intention and trajectory prediction of multiple interacting vehicles",
+      "excerpt": "arXiv:2607.09740v1 Announce Type: new Abstract: Safe motion planning in advanced driver-assistance systems and autonomous vehicles requires an accurate understanding of how the surrounding traffic scene is likely to evolve. However, many existing lane-change prediction methods remain centered on a single target vehicle, while multi-agent forecasting approaches often describe scene evolution only through future positions and provide limited explicit information about the maneuver associated with each vehicle. This study proposes a dynamic scene graph attention framework that predicts the lane-change intention and future trajectory of every relevant vehicle within a local traffic scene. The scene is represented as a time-varying interaction graph in which vehicles are modeled as nodes and their spatial and kinematic relationships are encoded through explicit edge features. Temporal graph-attention message passing captures evolving inter-vehicle dependencies and pre-maneuver cues, while",
+      "published_at": "2026-07-14T04:00:00Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "cfad5f73ee4b05e7100b",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09744",
+      "title": "A Theory of Least Autonomy in AI",
+      "normalized_title": "a theory of least autonomy in ai",
+      "excerpt": "arXiv:2607.09744v1 Announce Type: new Abstract: Least privilege, the principle that an identity should hold only the permissions strictly required for its task, has been a foundational primitive of access control for decades. We argue that this principle is insufficient for agentic AI systems, which do not merely hold permissions but can combine, approve, and amplify them across workflows and system boundaries. We propose least autonomy as an appropriate generalization and develop a formal theory. First, we define a compositional blast radius d(a,b) that measures structural separation between actions in an enterprise hierarchy, combining an ultrametric tree with lattice-valued confidentiality, integrity, and control-context labels. Second, we define a directed agent influence graph G(theta). An arc from U to V requires a directed shared-resource write-to-read meeting or a conservative undirected agent-to-agent (A2A) communication meeting, and a meeting-conditioned influence potentia",
+      "published_at": "2026-07-14T04:00:00Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -240,7 +363,7 @@
       "normalized_title": "replicating belief, not bits: epistemic state replication for agentic systems",
       "excerpt": "arXiv:2607.09748v1 Announce Type: new Abstract: In distributed systems, the classical State Machine Replication (SMR) model assumes that correct replicas execute deterministic transitions to yield identical bitwise states. However, the rise of agentic distributed systems -- where autonomous, stochastic, and model-driven agents orchestrate infrastructure -- presents scenarios where deterministic, bitwise replication is insufficient. Replicas operating with generative models may exhibit divergent reasoning paths, summaries, and token boundaries, yet reach semantically equivalent and correct operational decisions. Forcing bitwise agreement across these stochastic participants degrades execution flexibility, induces context amnesia, and limits performance. We argue that in such settings replicas should agree on belief, not bits. We propose Epistemic State Replication (ESR), a belief-replication layer for agentic distributed systems that shifts the replication boundary from data visibili",
       "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T07:26:46.773404Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -251,15 +374,53 @@
       "engagement": null
     },
     {
-      "id": "0b17def7a433afed2966",
+      "id": "9c97c846ca6af80711cb",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09751",
+      "title": "Task-Conditioned Synthetic Data Generation for Improving Machine Learning Performance in Agricultural Prediction Tasks",
+      "normalized_title": "task-conditioned synthetic data generation for improving machine learning performance in agricultural prediction tasks",
+      "excerpt": "arXiv:2607.09751v1 Announce Type: new Abstract: Machine Learning (ML) algorithms have been widely used to estimate agricultural variables across diverse contexts. However, because the quantity and quality of training data strongly influence performance of ML algorithms, their use can be constrained by limited or incomplete reference data. Synthetic Data Generation (SDG) offers a practical approach to address this issue by producing artificial but realistic samples that preserve key characteristics of the original data. Building on teacher-student knowledge transfer and in-context learning for tabular data, this study proposes a Task-Conditioned SDG (TCSDG) algorithm that pairs a Bayesian Network generator with a transformer-based tabular foundation model (TabICL). The proposed algorithm was evaluated on two agricultural prediction tasks: crop yield prediction and crop type classification. Six benchmark SDG algorithms were also utilized to compare their performance with that of TCSDG.",
+      "published_at": "2026-07-14T04:00:00Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "ec8df54e275a3e17dea9",
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "canonical_url": "https://arxiv.org/abs/2607.09762",
+      "title": "BatteryLake: Agentic, Physics-Grounded Curation of Heterogeneous Battery Aging Data and Benchmarking",
+      "normalized_title": "batterylake: agentic, physics-grounded curation of heterogeneous battery aging data and benchmarking",
+      "excerpt": "arXiv:2607.09762v1 Announce Type: new Abstract: Public battery aging datasets are a critical asset for advanced health management, but their practical use is often limited by inconsistent formats, unclear schemas, and metadata scattered across repositories and publications. Current curation remains largely manual and hard to reproduce, while general-purpose data integration tools miss the domain-specific semantics of electrochemical time-series data. We present BatteryLake, a governed data lakehouse that turns raw public battery data into benchmark-ready assets through an agentic, physics-grounded curation framework, with three contributions. First, LLM agents extract metadata and synthesize dataset-specific converters, grounding every output in verbatim evidence and abstaining when none supports a value. Second, a human-in-the-loop mechanism frames verification as selective prediction and gates admitted data through 26 schema, statistical, and physical-plausibility rules. Third, we r",
+      "published_at": "2026-07-14T04:00:00Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "ai",
+        "research"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "efcb277cd57b61a61cb9",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/talor/dify-talordata-serp-api-give-your-ai-apps-real-time-web-search-5f9j",
-      "title": "Dify + TalorData SERP API: Give Your AI Apps Real-Time Web Search 🚀",
-      "normalized_title": "dify + talordata serp api: give your ai apps real-time web search 🚀",
-      "excerpt": "LLMs are powerful, but they have one fundamental limitation: knowledge cutoff. Ask ChatGPT about today‘s news, and it will politely tell you it can’t help with that. If you‘re building AI applications with Dify — whether it’s a customer support bot, a research assistant, or a competitive intelligence tool — you need a way to pull fresh, real-time data into your workflows. Here‘s how to do it in under 30 minutes using the TalorData SERP API. Why This Matters Dify makes it incredibly easy to build LLM applications, but even the most powerful models don’t know what‘s happening right now. By adding real-time search, you can build: Research assistants that find recent papers and news SEO monitoring tools that track keyword rankings Brand monitoring bots that track mentions and sentiment Competitor intelligence agents that analyze market signals Local business discovery tools that use",
-      "published_at": "2026-07-14T07:11:59Z",
-      "collected_at": "2026-07-14T07:26:46.773404Z",
+      "canonical_url": "https://dev.to/qingluan/how-to-use-llms-for-code-review-automation-39de",
+      "title": "How to Use LLMs for Code Review Automation",
+      "normalized_title": "how to use llms for code review automation",
+      "excerpt": "How to Use LLMs for Code Review Automation How to Use LLMs for Code Review Automation (And Actually Trust the Results) You’ve just spent three hours writing a feature, and you’re ready to merge. But then you see the dreaded “Waiting for reviewer” status on your pull request. Your team is busy, the feedback loop is slow, and you’re wondering if that clever abstraction you wrote is actually a hidden anti-pattern. Enter Large Language Models (LLMs): the tireless, instant-first-pass reviewer that doesn’t need coffee breaks. But there’s a catch. If you just dump your code into an LLM and ask “Is this good?”, you’ll get vague, unreliable advice. Research shows that LLMs can be unreliable in a fully automated code review environment without the right context and hybrid workflows [6]. The secret isn’t replacing humans; it’s augmenting them with a system that catches low-hanging fruit so your human reviewers can focus on archit",
+      "published_at": "2026-07-14T11:52:17Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -270,15 +431,15 @@
       "engagement": null
     },
     {
-      "id": "348c3b24fec760b670fa",
+      "id": "69e7f3bc6567ad4efd45",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/qingluan/project-based-learning-curated-list-of-project-based-tutorials-5217",
-      "title": "project-based-learning: Curated list of project-based tutorials",
-      "normalized_title": "project-based-learning: curated list of project-based tutorials",
-      "excerpt": "project-based-learning: Curated list of project-based tutorials ⭐ Stars: 273,226 | 🔗 GitHub: practical-tutorials/project-based-learning Published on July 14, 2026 · Tags: beginner-project , cpp , golang , javascript , project , python What is it? project-based-learning is Curated list of project-based tutorials. It is one of the most-starred Python projects on GitHub with 273,226 stars , which speaks to its quality and community adoption. How to Install # Option 1: pip (recommended) pip install project-based-learning",
-      "published_at": "2026-07-14T07:01:36Z",
-      "collected_at": "2026-07-14T07:26:46.773404Z",
+      "canonical_url": "https://dev.to/qingluan/build-a-kubernetes-pod-autoscaler-with-python-58le",
+      "title": "Build a Kubernetes Pod Autoscaler with Python",
+      "normalized_title": "build a kubernetes pod autoscaler with python",
+      "excerpt": "Build a Kubernetes Pod Autoscaler with Python Imagine your Python app is suddenly hit with a traffic spike that doubles in seconds. Your server slows, users complain, and you’re manually scaling pods in a panic. That’s the nightmare every DevOps engineer fears. But what if you could build your own Kubernetes Pod Autoscaler in Python—custom, lightweight, and tailored to your app’s unique metrics? No more waiting for generic HPA rules. You get full control, real-time responsiveness, and the ability to scale based on your business logic, not just CPU. Let’s build one today. Why Build a Custom Autoscaler in Python? Kubernetes comes with the built-in Horizontal Pod Autoscaler (HPA) , which scales based on CPU or memory usage [3][4]. But HPA has limitations: it can’t scale based on custom metrics like queue length, request latency, or external API response times. For those cases, you need a <",
+      "published_at": "2026-07-14T11:51:56Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -289,15 +450,91 @@
       "engagement": null
     },
     {
-      "id": "cbb8011af2f7c1bbb4d1",
+      "id": "b2c7e2723c81d156a57a",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/qingluan/python-crypto-dashboard-track-btc-62721-and-eth-live-2ppk",
-      "title": "Python Crypto Dashboard: Track BTC ($62,721) and ETH Live",
-      "normalized_title": "python crypto dashboard: track btc ($62,721) and eth live",
-      "excerpt": "Python Crypto Dashboard: Track BTC and ETH Prices in Real-Time Current BTC: $62,721 (-0.2%) 📉 Current ETH: $1,787 (+0.2%) Build a real-time crypto price tracker in Python! Setup pip install httpx Complete Dashboard import httpx import asyncio from datetime import datetime SYMBOLS = [ \" BTCUSDT \" , \" <spa",
-      "published_at": "2026-07-14T06:00:07Z",
-      "collected_at": "2026-07-14T07:26:46.773404Z",
+      "canonical_url": "https://dev.to/timevolt/typescript-tips-to-write-safer-cleaner-code-mastering-the-force-530m",
+      "title": "TypeScript tips to write safer, cleaner code: Mastering the Force",
+      "normalized_title": "typescript tips to write safer, cleaner code: mastering the force",
+      "excerpt": "The Quest Begins (The “Why”) I still remember the first time I opened a pull request that looked innocent enough—just a few UI tweaks—but the CI pipeline exploded with a cascade of Property 'foo' does not exist on type 'never' errors. I spent two hours staring at the same line, convinced I’d missed a semicolon, when in reality the problem was that TypeScript had widened my string literal to string and lost the exact value I needed. That moment felt like trying to defeat a final boss with a wooden sword. I knew there had to be a sharper blade hidden in the language’s arsenal—something most tutorials gloss over, but that can turn a frustrating bug hunt into a satisfying “I‑got‑this” victory. So I embarked on a quest to uncover those hidden gems, and I’m excited to share the three surprises that leveled up my TypeScript game. The Revelation (The Insight) 1. as const – Locking Li",
+      "published_at": "2026-07-14T11:45:43Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "f19b289bdff77555fe4a",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/devhamzamughal/i-built-aiba-an-open-source-autonomous-web-agent-that-runs-50-parallel-sub-agents-using-visual-2698",
+      "title": "I built AIBA: An open-source autonomous web agent that runs 50+ parallel sub-agents using visual reasoning",
+      "normalized_title": "i built aiba: an open-source autonomous web agent that runs 50+ parallel sub-agents using visual reasoning",
+      "excerpt": "<img alt=\" \" height=\"1000\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fm9dimqzaoz42f8urb3",
+      "published_at": "2026-07-14T11:43:16Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "2702f8a632c6b4b55149",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/qingluan/build-a-real-time-notification-system-with-server-sent-events-59ge",
+      "title": "Build a Real-Time Notification System with Server-Sent Events",
+      "normalized_title": "build a real-time notification system with server-sent events",
+      "excerpt": "Build a Real-Time Notification System with Server-Sent Events Build a Real-Time Notification System with Server-Sent Events Your users are waiting for that \"new message\" alert, but your current polling strategy is burning database CPU and draining battery life. Every few seconds, your frontend fires an HTTP request asking, \"Is there anything new?\" and the server replies, \"Nope.\" Do this a thousand times a minute, and you’ve built a performance nightmare. The solution isn’t always WebSockets, which introduce complex connection management and bi-directional state. For the specific case of pushing notifications from server to client, there’s a simpler, standardized, and often more efficient tool: Server-Sent Events (SSE) . SSE allows the server to push updates to the client over a single, long-lived HTTP connection. It’s unidirectional (server → client), lightweight, and works natively in browsers via the Eve",
+      "published_at": "2026-07-14T11:16:18Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "67241baf763956950f18",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/qingluan/python-string-methods-youre-probably-not-using-1naj",
+      "title": "Python String Methods You're Probably Not Using",
+      "normalized_title": "python string methods you're probably not using",
+      "excerpt": "Python String Methods You're Probably Not Using You’ve been using upper() , lower() , and split() for years, but Python’s string methods hide a suite of powerful, underused tools that can clean data, validate input, and format output with far less code than you think. Most developers stop at the basics, missing methods that solve real problems like padding IDs, detecting numeric Unicode characters, or splitting text by lines without regex. Let’s dive into five obscure but practical string methods you can use today to write cleaner, more efficient Python. str.partition() : Split Once, Get Three Parts When you need to split a string at the first occurrence of a separator and keep the before, separator, and after parts together, partition() is your friend. Unlike split() , which returns a list of all segments, <code",
+      "published_at": "2026-07-14T11:15:55Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "f91f764968c40dc402b9",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/qingluan/how-to-build-a-profitable-ai-chatbot-for-businesses-1id8",
+      "title": "How to Build a Profitable AI Chatbot for Businesses",
+      "normalized_title": "how to build a profitable ai chatbot for businesses",
+      "excerpt": "How to Build a Profitable AI Chatbot for Businesses How to Build a Profitable AI Chatbot for Businesses Imagine a sales rep who never sleeps, answers 100 customer queries per minute, and books appointments while you sleep. That’s not a sci-fi dream—it’s an AI chatbot, and businesses are paying real money for it right now. The secret isn’t just building a bot; it’s building one that solves a specific business problem and then selling it as a recurring revenue service. If you’re a developer, freelancer, or tech-savvy entrepreneur, you can launch this business today with minimal upfront cost. Choose a Niche Before You Write Code The biggest mistake beginners make is building a “general” chatbot. Generic bots don’t sell. Profitable chatbots solve specific pain points for specific industries. Pick a High-Value Niche Focus on businesses where customer inquiries are fr",
+      "published_at": "2026-07-14T11:03:57Z",
+      "collected_at": "2026-07-14T12:07:10.468252Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -309,6 +546,31 @@
     }
   ],
   "events": [
+    {
+      "id": "tech-21a70d87c2c3760e",
+      "slug": "эксперты-призывают-к-немедленной-подготовке-к-последствиям-ии",
+      "title": "Эксперты призывают к немедленной подготовке к последствиям ИИ",
+      "brief": "Более 200 экономистов и исследователей в области искусственного интеллекта (ИИ) обратились к мировым лидерам с призывом срочно подготовиться к грядущим масштабным экономическим потрясениям, вызванным развитием ИИ. Они подчеркивают, что игнорирование потенциальных рисков может привести к необратимым последствиям для мировой экономики и общества в целом. Эксперты настаивают на необходимости разработки глобальных стратегий и мер регулирования уже сейчас, чтобы смягчить негативное влияние и использовать возможности ИИ во благо человечества.",
+      "context": "Развитие технологий искусственного интеллекта (ИИ) достигло критической точки, вызывая обеспокоенность у ведущих специалистов в области экономики и исследований ИИ. По мере того как ИИ становится все более мощным и интегрированным в различные сферы жизни, возникает реальная угроза значительных экономических и социальных сдвигов. Отчеты и предупреждения от авторитетных организаций и экспертов указывают на потенциальные риски, связанные с автоматизацией рабочих мест, усилением неравенства и изменением структуры мировой экономики. Эти опасения подкрепляются быстрыми темпами развития ИИ и его растущим влиянием на производительность, занятость и распределение богатства.",
+      "why_it_matters": "Игнорирование потенциального воздействия ИИ на экономику может привести к серьезным социальным и экономическим последствиям, включая массовую безработицу, рост неравенства и дестабилизацию рынков. Своевременная подготовка и разработка соответствующих мер регулирования позволят смягчить эти риски, обеспечить плавный переход к новой экономической реальности и использовать возможности ИИ для устойчивого развития и повышения благосостояния общества.",
+      "importance": 8,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "ecd4eea1a7366029dcfc"
+      ],
+      "facts": [
+        {
+          "text": "Более 200 экономистов и исследователей в области ИИ призвали мировых лидеров к немедленной подготовке к масштабным экономическим потрясениям, связанным с ИИ.",
+          "article_ids": [
+            "ecd4eea1a7366029dcfc"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-13T23:54:32Z",
+      "updated_at": "2026-07-14T07:26:46.766089Z"
+    },
     {
       "id": "tech-625dcf80fde22b7e",
       "slug": "проект-project-based-learning-на-github-набрал-более-273-тысяч-звезд",
@@ -353,94 +615,14 @@
       "updated_at": "2026-07-14T07:26:46.766089Z"
     },
     {
-      "id": "tech-2e5769963755126b",
-      "slug": "dify-и-talordata-serp-api-поиск-в-реальном-времени-для-ии-приложений",
-      "title": "Dify и TalorData SERP API: Поиск в реальном времени для ИИ-приложений",
-      "brief": "LLM-модели обладают мощным потенциалом, но имеют фундаментальное ограничение — дату среза знаний. Для создания ИИ-приложений на базе Dify, будь то бот поддержки клиентов, исследовательский ассистент или инструмент анализа конкурентов, необходимо интегрировать свежие данные в реальном времени. TalorData SERP API позволяет решить эту задачу менее чем за 30 минут. Интеграция поиска в реальном времени расширяет возможности ИИ-приложений, позволяя создавать исследовательских ассистентов для поиска актуальных публикаций и новостей, инструменты мониторинга SEO для отслеживания позиций по ключевым словам, ботов для мониторинга упоминаний бренда и анализа настроений, агентов для анализа рыночных сигналов и инструменты для поиска локального бизнеса.",
-      "context": "Большие языковые модели (LLM), такие как ChatGPT, имеют ограничение, связанное с датой среза их знаний. Это означает, что они не могут предоставить информацию о событиях, произошедших после этой даты, например, о сегодняшних новостях. Для разработчиков, использующих платформу Dify для создания ИИ-приложений, таких как боты поддержки клиентов, исследовательские ассистенты или инструменты анализа конкурентов, возникает потребность в интеграции актуальных данных в реальном времени. TalorData SERP API предлагает решение для этой проблемы, позволяя получать свежие данные для рабочих процессов ИИ.",
-      "why_it_matters": "Интеграция реального поиска в LLM-приложения, созданные с помощью Dify, значительно расширяет их функциональность. Это позволяет создавать более совершенные инструменты, такие как исследовательские ассистенты, способные находить последние научные статьи и новости; инструменты мониторинга SEO, отслеживающие изменения в рейтингах по ключевым словам; боты для мониторинга бренда, анализирующие упоминания и настроения; агенты для анализа конкурентов, изучающие рыночные сигналы; а также инструменты для поиска локального бизнеса, использующие актуальную информацию.",
-      "importance": 7,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "0b17def7a433afed2966"
-      ],
-      "facts": [
-        {
-          "text": "LLM-модели имеют ограничение, связанное с датой среза знаний, и не могут предоставлять информацию о событиях, произошедших после этой даты.",
-          "article_ids": [
-            "0b17def7a433afed2966"
-          ]
-        },
-        {
-          "text": "TalorData SERP API позволяет интегрировать свежие данные в реальном времени в ИИ-приложения, созданные на платформе Dify.",
-          "article_ids": [
-            "0b17def7a433afed2966"
-          ]
-        },
-        {
-          "text": "Интеграция реального поиска в ИИ-приложения позволяет создавать инструменты для мониторинга SEO, анализа конкурентов и поиска локального бизнеса.",
-          "article_ids": [
-            "0b17def7a433afed2966"
-          ]
-        }
-      ],
-      "updates": [],
-      "first_seen_at": "2026-07-14T07:11:59Z",
-      "updated_at": "2026-07-14T07:26:46.766089Z"
-    },
-    {
-      "id": "tech-a77efc09454d482e",
-      "slug": "python-дашборд-для-отслеживания-криптовалют-btc-и-eth",
-      "title": "Python-дашборд для отслеживания криптовалют BTC и ETH",
-      "brief": "Разработан дашборд на Python, позволяющий в реальном времени отслеживать текущие цены на биткоин (BTC) и эфириум (ETH). Текущая цена BTC составляет $62,721 с изменением -0.2%, а ETH — $1,787 с изменением +0.2%. Для создания дашборда требуется установка библиотеки httpx. Проект демонстрирует возможность интеграции с API для получения актуальных данных о криптовалютном рынке.",
-      "context": "В сфере финансовых технологий растет интерес к инструментам для мониторинга криптовалютных рынков. Разработка пользовательских дашбордов с использованием языков программирования, таких как Python, позволяет трейдерам и инвесторам получать доступ к оперативной информации. Данный проект представляет собой пример такого инструмента, который может быть расширен для включения других криптовалют и аналитических функций.",
-      "why_it_matters": "Возможность отслеживать цены на основные криптовалюты, такие как Bitcoin и Ethereum, в реальном времени является критически важной для участников рынка. Такие инструменты помогают принимать своевременные инвестиционные решения, анализировать рыночные тенденции и управлять рисками. Разработка подобных решений на Python делает их доступными и настраиваемыми для широкого круга пользователей.",
-      "importance": 3,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "cbb8011af2f7c1bbb4d1"
-      ],
-      "facts": [
-        {
-          "text": "Создан дашборд на Python для отслеживания цен на биткоин (BTC) и эфириум (ETH) в реальном времени.",
-          "article_ids": [
-            "cbb8011af2f7c1bbb4d1"
-          ]
-        },
-        {
-          "text": "Текущая цена биткоина (BTC) составляет $62,721, показав изменение в -0.2%.",
-          "article_ids": [
-            "cbb8011af2f7c1bbb4d1"
-          ]
-        },
-        {
-          "text": "Текущая цена эфириума (ETH) составляет $1,787, показав изменение в +0.2%.",
-          "article_ids": [
-            "cbb8011af2f7c1bbb4d1"
-          ]
-        },
-        {
-          "text": "Для установки необходимых зависимостей для дашборда используется команда 'pip install httpx'.",
-          "article_ids": [
-            "cbb8011af2f7c1bbb4d1"
-          ]
-        }
-      ],
-      "updates": [],
-      "first_seen_at": "2026-07-14T06:00:07Z",
-      "updated_at": "2026-07-14T07:26:46.766089Z"
-    },
-    {
       "id": "tech-f4bf25a44642b52f",
       "slug": "индекс-чувствительности-к-формату-как-оформление-промптов-влияет-на-результаты-l",
       "title": "Индекс чувствительности к формату: как оформление промптов влияет на результаты LLM",
-      "brief": "Исследователи представили Индекс чувствительности к формату (FSI) и Индекс чувствительности к разбору (PSI) для оценки влияния оформления промптов на результаты больших языковых моделей (LLM). Было проанализировано 140 000 генераций от моделей OpenRouter на 7 задачах QA, с использованием 5 семейств обёрток промптов и 4 моделей LLM (от 7B до 72B параметров). Результаты показали, что средний FSI варьируется более чем в 30 раз между моделями и в значительной степени объясняется ошибками соответствия. Точность разбора остаётся сильным предиктором точности ответов даже при учёте других факторов. Авторы утверждают, что отчётность точности без учёта вариативности обёрток и соответствия является статистически хрупкой.",
-      "context": "В области тестирования больших языковых моделей (LLM) часто возникает проблема, когда незначительные изменения в форматировании промптов могут существенно влиять на итоговые метрики производительности, что приводит к искажению выводов при сравнении моделей. Для решения этой проблемы было проведено исследование, в рамках которого был разработан протокол с контролем токенов для изучения этой вариативности. В результате были предложены два новых показателя: Индекс чувствительности к формату (FSI) и Индекс чувствительности к разбору (PSI). FSI измеряет диапазон точности, вызванный выбором оформления промпта, а PSI — соответствующий диапазон в возможности разбора ответа. Исследование охватило обширный набор данных, включающий 140 000 генераций от моделей OpenRouter, 7 различных задач по ответам на вопросы, 5 семейств обёрток промптов и 4 модели LLM с разным количеством параметров (от 7 миллиардов до 72 миллиардов).",
-      "why_it_matters": "Результаты исследования подчеркивают статистическую хрупкость метрик производительности LLM, если они не учитывают вариативность, вызванную оформлением промптов. Недооценка влияния формата может привести к неверным выводам о реальных возможностях моделей и неправильному выбору для конкретных задач. Предложенные индексы FSI и PSI предоставляют практические инструменты для более точной и надёжной оценки LLM, что критически важно для разработчиков, исследователей и пользователей, стремящихся к объективному сравнению и применению этих технологий.",
+      "brief": "Исследователи представили Индекс чувствительности к формату (FSI) и Индекс чувствительности к разбору (PSI) для оценки влияния оформления промптов на результаты больших языковых моделей (LLM). Было проанализировано 140 000 генераций от моделей OpenRouter, охватывающих 7 задач QA, 5 семейств обёрток промптов и 4 модели LLM с параметрами от 7B до 72B. Результаты показали, что средний FSI варьируется более чем в 30 раз между моделями и в значительной степени объясняется ошибками соответствия. Разбор ответов остаётся сильным предиктором точности даже после учёта задачи, модели и обёртки. Авторы утверждают, что отчётность о точности без учёта вариативности обёрток и соответствия является статистически хрупкой.",
+      "context": "В области тестирования больших языковых моделей (LLM) часто возникает проблема, когда незначительные изменения в форматировании промптов могут существенно влиять на итоговые оценки моделей, что приводит к искажению выводов при сравнении их производительности. Это явление получило название «чувствительность к формату». Для количественной оценки этой проблемы исследователи разработали протокол с контролем токенов и ввели два новых показателя: Индекс чувствительности к формату (FSI) и Индекс чувствительности к разбору (PSI). FSI измеряет диапазон точности, вызванный выбором обёртки промпта, а PSI — соответствующий диапазон в возможности разбора ответа. Эти метрики позволяют более объективно оценивать надёжность и воспроизводимость результатов тестирования LLM.",
+      "why_it_matters": "Недооценка влияния форматирования промптов на результаты LLM может привести к ошибочным выводам о производительности моделей, что особенно критично при составлении рейтингов и выборе моделей для конкретных задач. Разработанные метрики FSI и PSI позволяют исследователям и разработчикам более точно оценивать устойчивость моделей к вариациям в оформлении входных данных, выявлять проблемы с разбором ответов и принимать обоснованные решения при бенчмаркинге. Это способствует повышению статистической надёжности результатов тестирования LLM и улучшению их практического применения.",
       "importance": 7,
-      "status": "new",
+      "status": "updated",
       "category": "Технологии",
       "article_ids": [
         "9ec74172348fcaec8b4c"
@@ -453,187 +635,350 @@
           ]
         },
         {
-          "text": "Было проанализировано 140 000 генераций от моделей OpenRouter на 7 задачах QA, с использованием 5 семейств обёрток промптов и 4 моделей LLM (от 7B до 72B параметров).",
+          "text": "Было проанализировано 140 000 генераций от моделей OpenRouter, охватывающих 7 задач QA, 5 семейств обёрток промптов и 4 модели LLM с параметрами от 7B до 72B.",
           "article_ids": [
             "9ec74172348fcaec8b4c"
           ]
         },
         {
-          "text": "Средний Индекс чувствительности к формату (FSI) варьируется более чем в 30 раз между моделями и в значительной степени объясняется ошибками соответствия.",
+          "text": "Средний FSI варьируется более чем в 30 раз между моделями и в значительной степени объясняется ошибками соответствия.",
           "article_ids": [
             "9ec74172348fcaec8b4c"
           ]
         },
         {
-          "text": "Точность разбора остаётся сильным предиктором точности ответов даже при учёте задачи, модели и оформления промпта.",
+          "text": "Разбор ответов остаётся сильным предиктором точности даже после учёта задачи, модели и обёртки.",
           "article_ids": [
             "9ec74172348fcaec8b4c"
           ]
         },
         {
-          "text": "Авторы исследования утверждают, что отчётность точности без учёта вариативности оформления промптов и ошибок соответствия является статистически хрупкой.",
+          "text": "Отчётность о точности без учёта вариативности обёрток и соответствия является статистически хрупкой.",
           "article_ids": [
             "9ec74172348fcaec8b4c"
           ]
         }
       ],
-      "updates": [],
+      "updates": [
+        {
+          "at": "2026-07-14T12:07:10.460604Z",
+          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
+          "article_ids": [
+            "9ec74172348fcaec8b4c"
+          ]
+        }
+      ],
       "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T07:26:46.766089Z"
+      "updated_at": "2026-07-14T12:07:10.460604Z"
     },
     {
-      "id": "tech-a967eea44f815e7e",
-      "slug": "анализ-скрытых-рассуждений-в-моделях-ии-как-динамических-систем",
-      "title": "Анализ скрытых рассуждений в моделях ИИ как динамических систем",
-      "brief": "Исследователи применили методы анализа динамических систем для изучения скрытых рассуждений в моделях искусственного интеллекта, таких как CODI и COCONUT. В отличие от явных цепочек рассуждений (CoT), которые следуют одному прозрачному пути, эти модели поддерживают несколько наложенных друг на друга кандидатов в скрытом пространстве на каждом шаге. Анализ траекторий скрытых токенов показал, что скрытые CoT демонстрируют структурированную, неслучайную динамику с двумя классами стабильности: CODI ведет себя как стабильный аттрактор, а COCONUT — как нестабильная расширяющаяся система. Эти результаты помогают понять, как развиваются рассуждения в скрытых шагах, преодолевая проблему интерпретируемости.",
-      "context": "Современные методы скрытых рассуждений в моделях ИИ, такие как CODI и COCONUT, сталкиваются с фундаментальной проблемой интерпретируемости. Они поддерживают множество наложенных друг на друга кандидатных траекторий в скрытом пространстве на каждом шаге, в отличие от явных цепочек рассуждений (CoT), которые следуют одной прозрачной траектории. Существующие механистические методы демонстрируют сжатие, сокращения и наложение, но не объясняют, как рассуждения развиваются на скрытых шагах. Чтобы устранить этот пробел, исследователи смоделировали последовательности скрытых токенов как траектории в пространстве представлений и применили анализ динамических систем для характеристики эволюции рассуждений.",
-      "why_it_matters": "Понимание того, как модели ИИ генерируют рассуждения, особенно в скрытых пространствах, имеет решающее значение для повышения их надежности, прозрачности и безопасности. Применение анализа динамических систем к скрытым рассуждениям позволяет количественно охарактеризовать их поведение, выявить потенциальные проблемы (например, нестабильность или нежелательные сокращения) и разработать более интерпретируемые и надежные модели ИИ. Это может привести к созданию более безопасных и предсказуемых систем ИИ в будущем.",
+      "id": "tech-9ffd3e7dafce9f85",
+      "slug": "формат-сообщений-влияет-на-передачу-информации-между-ии-агентами-в-зависимости-о",
+      "title": "Формат сообщений влияет на передачу информации между ИИ-агентами в зависимости от их возможностей",
+      "brief": "Исследование, опубликованное на arXiv, изучает, как формат сообщений влияет на передачу информации между многоступенчатыми ретрансляторами ИИ-агентов. В отличие от предыдущих работ, которые фокусировались на оптимизации формата для снижения затрат или на негативном влиянии ограничений на генерацию, данное исследование анализирует случаи, когда точность копирования информации имеет первостепенное значение. Была создана тестовая среда, в которой краткие сведения из двенадцати атомарных фактов передавались через шесть этапов с использованием пяти различных форматов: свободный естественный язык, естественный язык с инструкциями по точности, JSON, тройки и пары ключ-значение. Результаты показали, что влияние формата сообщения зависит от уровня возможностей ретранслирующего агента.",
+      "context": "Взаимодействие между ИИ-агентами, особенно при передаче информации по цепочке (многоступенчатые реле), является важной областью исследований. Существующие работы дают противоречивые результаты относительно влияния формата сообщений. Одни исследования утверждают, что структурированные сообщения снижают затраты без потери точности, тогда как другие указывают на то, что навязывание структуры ухудшает генерацию. Однако ни одно из исследований не рассматривало, что происходит при передаче информации через несколько этапов, где ключевым фактором становится точность копирования, а не однократная генерация.",
+      "why_it_matters": "Понимание того, как формат сообщений влияет на передачу информации между ИИ-агентами, имеет решающее значение для разработки более эффективных и надежных систем искусственного интеллекта. Это исследование проливает свет на то, как различные форматы могут влиять на точность и эффективность передачи данных в зависимости от сложности агентов, что может привести к улучшению архитектур ИИ для задач, требующих точной передачи информации, таких как совместное решение проблем или распределенные вычисления.",
       "importance": 7,
       "status": "new",
       "category": "Искусственный интеллект",
       "article_ids": [
-        "74070a21e12667f85e25"
+        "9668e15cb06b7ffeb207"
       ],
       "facts": [
         {
-          "text": "Методы скрытых рассуждений, такие как CODI и COCONUT, поддерживают несколько наложенных друг на друга кандидатных траекторий в скрытом пространстве на каждом шаге, что затрудняет их интерпретацию по сравнению с явными цепочками рассуждений.",
+          "text": "Исследование изучает влияние формата сообщений на передачу информации между ИИ-агентами, проходящими через несколько этапов ретрансляции.",
           "article_ids": [
-            "74070a21e12667f85e25"
+            "9668e15cb06b7ffeb207"
           ]
         },
         {
-          "text": "Исследователи смоделировали последовательности скрытых токенов как траектории в пространстве представлений и применили анализ динамических систем для изучения эволюции рассуждений.",
+          "text": "В работе используется тестовая среда, где краткие сведения из двенадцати атомарных фактов передаются через шесть этапов с использованием пяти различных форматов: свободный естественный язык, естественный язык с инструкциями по точности, JSON, тройки и пары ключ-значение.",
           "article_ids": [
-            "74070a21e12667f85e25"
+            "9668e15cb06b7ffeb207"
           ]
         },
         {
-          "text": "Анализ показал, что скрытые цепочки рассуждений демонстрируют структурированную, неслучайную динамику с двумя классами стабильности.",
+          "text": "Результаты исследования показывают, что влияние формата сообщения зависит от уровня возможностей ретранслирующего агента.",
           "article_ids": [
-            "74070a21e12667f85e25"
+            "9668e15cb06b7ffeb207"
           ]
         },
         {
-          "text": "Модель CODI ведет себя как стабильный аттрактор, в то время как COCONUT демонстрирует поведение нестабильной расширяющейся системы.",
+          "text": "В условиях точной ретрансляции сильный ретранслятор действует почти без потерь.",
           "article_ids": [
-            "74070a21e12667f85e25"
+            "9668e15cb06b7ffeb207"
           ]
         }
       ],
       "updates": [],
       "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T07:26:46.766089Z"
+      "updated_at": "2026-07-14T12:07:10.460604Z"
+    },
+    {
+      "id": "tech-a3bb9542f0c74801",
+      "slug": "новый-метод-обработки-данных-boltzmann-mapreduce",
+      "title": "Новый метод обработки данных Boltzmann MapReduce",
+      "brief": "Исследователи представили новый метод обработки данных под названием Boltzmann MapReduce, который использует концепцию плотности доверия для распределенной обработки информации. Метод основан на мере Больцмана-Гиббса, где обратная температура пропорциональна размеру обрабатываемого фрагмента данных. Этот подход позволяет независимо обрабатывать разрозненные фрагменты данных, а операция \"reduce\" интерпретируется как вычисление статистической суммы. Точность метода повышается в пределе нулевой температуры, что соответствует увеличению размера выборки.",
+      "context": "В области распределенной обработки данных и статистического анализа возникла необходимость в более эффективных методах. Традиционные подходы могут сталкиваться с ограничениями при работе с большими объемами информации и необходимостью обеспечения согласованности результатов. Представленный метод Boltzmann MapReduce предлагает новый взгляд на решение этих задач, используя принципы статистической физики для организации процесса обработки данных.",
+      "why_it_matters": "Разработка метода Boltzmann MapReduce имеет потенциал для значительного улучшения производительности и точности в задачах, требующих обработки больших наборов данных. Его применение может привести к более надежным и быстрым результатам в таких областях, как машинное обучение, анализ больших данных и научные вычисления, где точность и скорость обработки критически важны.",
+      "importance": 7,
+      "status": "new",
+      "category": "Наука и технологии",
+      "article_ids": [
+        "08e25924db87eb2b1ff4"
+      ],
+      "facts": [
+        {
+          "text": "Представлен новый метод обработки данных Boltzmann MapReduce, основанный на мере Больцмана-Гиббса.",
+          "article_ids": [
+            "08e25924db87eb2b1ff4"
+          ]
+        },
+        {
+          "text": "В методе Boltzmann MapReduce обратная температура пропорциональна размеру обрабатываемого фрагмента данных (β=n).",
+          "article_ids": [
+            "08e25924db87eb2b1ff4"
+          ]
+        },
+        {
+          "text": "Разрозненные фрагменты данных несут независимые множители Больцмана, что позволяет использовать операцию \"reduce\" как статистическую сумму.",
+          "article_ids": [
+            "08e25924db87eb2b1ff4"
+          ]
+        },
+        {
+          "text": "Частотная согласованность достигается в пределе нулевой температуры (T=1/n→0).",
+          "article_ids": [
+            "08e25924db87eb2b1ff4"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-14T04:00:00Z",
+      "updated_at": "2026-07-14T12:07:10.460604Z"
     },
     {
       "id": "tech-736183fb45533a05",
       "slug": "разработан-новый-метод-разреживания-графов-для-решения-задачи-коммивояжера",
       "title": "Разработан новый метод разреживания графов для решения задачи коммивояжера",
-      "brief": "Исследователи представили метод разреживания графов на основе машинного обучения, названный Graph Edge Sparsification (GES), для решения задачи коммивояжера (TSP) в евклидовом пространстве. Традиционные методы часто используют фиксированные эвристики и не учитывают специфику конкретного экземпляра задачи. GES, напротив, использует геометрическую структурную информацию и технологии комбинаторной оптимизации для адаптивного создания разреженного графа, что значительно уменьшает его размер и ускоряет процесс решения. Метод показал способность сокращать до 95% ребер на наборе данных MATILDA, сохраняя при этом разрыв с оптимальным решением менее 1%. Отмечается также сильная обобщающая способность подхода.",
-      "context": "Задача коммивояжера (TSP) является классической NP-трудной проблемой в комбинаторной оптимизации, которая заключается в поиске кратчайшего маршрута, проходящего через заданный набор городов ровно по одному разу и возвращающегося в исходный город. Решение больших экземпляров этой задачи требует значительных вычислительных ресурсов. Для повышения эффективности исследователи часто прибегают к методам разреживания графов, которые упрощают структуру графа, удаляя избыточные ребра. Однако существующие методы обычно основаны на фиксированных эвристиках и не всегда эффективно используют структурную информацию, присущую конкретному экземпляру задачи.",
-      "why_it_matters": "Предложенный метод GES может существенно ускорить решение больших и сложных экземпляров задачи коммивояжера, что имеет важное значение для логистики, планирования маршрутов, производства микросхем и других областей, где TSP или его вариации применяются на практике. Снижение вычислительной сложности позволяет находить более точные или близкие к оптимальным решения за меньшее время, что напрямую влияет на экономическую эффективность и оперативность принятия решений.",
+      "brief": "Исследователи представили новый подход к решению задачи коммивояжера (TSP), известной своей вычислительной сложностью для больших масштабов. Метод, названный Graph Edge Sparsification (GES), использует машинное обучение для адаптивного разреживания графов, учитывая специфику каждого конкретного случая. В отличие от традиционных эвристик, GES интегрирует геометрическую информацию и методы комбинаторной оптимизации для создания разреженного графа. Это позволяет значительно уменьшить размер графа и ускорить процесс поиска оптимального решения. Эксперименты показали, что метод способен отсекать до 95% ребер на наборе данных MATILDA, сохраняя при этом отклонение от оптимального решения менее чем на 1%. Метод также демонстрирует высокую обобщающую способность.",
+      "context": "Задача коммивояжера (TSP) является классической NP-трудной проблемой в области комбинаторной оптимизации. Она заключается в поиске кратчайшего возможного маршрута, проходящего через заданный набор городов ровно по одному разу и возвращающегося в исходный город. Точное решение больших экземпляров TSP требует огромных вычислительных ресурсов. Для повышения эффективности часто применяются методы разреживания графов, которые упрощают структуру графа, удаляя избыточные ребра. Однако традиционные методы разреживания основаны на фиксированных эвристиках и не всегда эффективно используют структурную информацию, присущую конкретной задаче.",
+      "why_it_matters": "Предложенный метод GES может существенно ускорить решение задачи коммивояжера, что имеет важное значение для логистики, планирования маршрутов, производства микросхем и других областей, где TSP или его вариации играют ключевую роль. Снижение вычислительной нагрузки позволит решать более крупные и сложные задачи, оптимизировать процессы и сокращать издержки. Способность метода сохранять высокую точность при значительном сокращении объема данных делает его перспективным инструментом для практического применения.",
       "importance": 7,
-      "status": "new",
+      "status": "updated",
       "category": "Наука и технологии",
       "article_ids": [
         "fd437b300c95e733dab4"
       ],
       "facts": [
         {
-          "text": "Предложен новый метод разреживания графов на основе машинного обучения для решения задачи коммивояжера (TSP) в евклидовом пространстве, названный Graph Edge Sparsification (GES).",
+          "text": "Предложен новый метод разреживания графов под названием Graph Edge Sparsification (GES) для решения задачи коммивояжера (TSP).",
           "article_ids": [
             "fd437b300c95e733dab4"
           ]
         },
         {
-          "text": "Метод GES использует геометрическую структурную информацию и комбинаторную оптимизацию для адаптивного создания разреженного графа, уменьшая его размер и ускоряя решение.",
+          "text": "Метод GES использует машинное обучение и учитывает геометрическую информацию и комбинаторную оптимизацию для адаптивного разреживания графов.",
           "article_ids": [
             "fd437b300c95e733dab4"
           ]
         },
         {
-          "text": "Экспериментальные результаты показали, что метод GES может сократить до 95% ребер на наборе данных MATILDA, сохраняя при этом разрыв с оптимальным решением менее 1%.",
+          "text": "Эксперименты показали, что GES может сократить до 95% ребер на наборе данных MATILDA, сохраняя при этом отклонение от оптимального решения менее чем на 1%.",
           "article_ids": [
             "fd437b300c95e733dab4"
           ]
         },
         {
-          "text": "Подход GES демонстрирует сильную обобщающую способность.",
+          "text": "Традиционные методы разреживания графов часто полагаются на фиксированные эвристики и не полностью используют структурную информацию конкретной задачи.",
           "article_ids": [
             "fd437b300c95e733dab4"
           ]
         }
       ],
-      "updates": [],
+      "updates": [
+        {
+          "at": "2026-07-14T12:07:10.460604Z",
+          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
+          "article_ids": [
+            "fd437b300c95e733dab4"
+          ]
+        }
+      ],
       "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T07:26:46.766089Z"
+      "updated_at": "2026-07-14T12:07:10.460604Z"
     },
     {
-      "id": "tech-bcdafeb1a4608b3c",
-      "slug": "новый-подход-к-репликации-состояний-в-агентных-системах",
-      "title": "Новый подход к репликации состояний в агентных системах",
-      "brief": "Представлена новая модель репликации состояний для агентных распределенных систем, названная Epistemic State Replication (ESR). В отличие от классической модели State Machine Replication (SMR), которая требует идентичности состояний на битовом уровне, ESR фокусируется на достижении семантической эквивалентности решений. Это особенно важно для систем, где автономные агенты используют стохастические и модельно-ориентированные подходы, что может приводить к расхождениям в путях рассуждений, но при этом к достижению корректных операционных результатов. ESR предлагает сместить границу репликации с данных на эпистемическое состояние, что повышает гибкость и производительность таких систем.",
-      "context": "Классическая модель репликации состояний (SMR) в распределенных системах предполагает, что все реплики выполняют детерминированные переходы, приводящие к идентичным состояниям на уровне битов. Однако с развитием агентных распределенных систем, где действуют автономные, стохастические и модельно-ориентированные агенты, возникает потребность в более гибком подходе. В таких системах агенты могут использовать генеративные модели, что приводит к различным путям рассуждений, суммаризации и границам токенов. Несмотря на эти различия, они могут приходить к семантически эквивалентным и корректным операционным решениям. Принуждение к битовой идентичности в таких условиях ограничивает гибкость, вызывает потерю контекста и снижает производительность.",
-      "why_it_matters": "Предлагаемая модель ESR позволяет репликам достигать согласия на уровне убеждений, а не битов. Это критически важно для агентных систем, где стохастичность и модельная ориентация являются неотъемлемой частью работы. Такой подход снимает ограничения классической SMR, повышает гибкость выполнения, предотвращает потерю контекста и улучшает общую производительность системы. ESR является слоем репликации убеждений для агентных распределенных систем, смещая фокус с данных на семантическую эквивалентность.",
+      "id": "tech-c2b68e1b33b57807",
+      "slug": "разработана-система-управления-на-основе-малых-языковых-моделей-для-промышленных",
+      "title": "Разработана система управления на основе малых языковых моделей для промышленных задач",
+      "brief": "Исследователи представили новый подход к созданию и перенастройке управляющих политик для промышленных систем с использованием малых языковых моделей (SLM). Система позволяет генерировать управляющие команды на основе спецификаций на естественном языке, минимизируя ручное вмешательство. Ключевым элементом является валидатор, основанный на цифровом двойнике, который проверяет сгенерированные действия перед их выполнением. Такой подход решает проблемы задержки и вычислительной нагрузки, связанные с использованием больших облачных моделей, делая SLM пригодными для использования на периферийных устройствах в режиме реального времени. Модель Qwen2.5-1.5B была дообучена с использованием метода GRPO и интегрирована в петлю коррекции, управляемую валидатором.",
+      "context": "Создание и перенастройка управляющих политик для промышленных систем на основе спецификаций на естественном языке является важным шагом к автономной работе. Традиционные подходы с использованием больших языковых моделей сталкиваются с ограничениями по скорости, вычислительным ресурсам и чувствительности к данным, что затрудняет их применение в системах с замкнутым циклом управления на периферийных устройствах. Данное исследование направлено на преодоление этих ограничений путем использования компактных малых языковых моделей (SLM).",
+      "why_it_matters": "Разработанная система открывает возможности для более гибкого и эффективного управления промышленными процессами. Использование SLM снижает требования к вычислительным ресурсам и позволяет применять передовые методы ИИ в реальном времени на периферийных устройствах, что критически важно для промышленных приложений, где задержки недопустимы. Это может привести к повышению производительности, снижению затрат на разработку и упрощению интеграции новых функций в существующие системы.",
       "importance": 7,
       "status": "new",
       "category": "Технологии",
       "article_ids": [
-        "2cbd92e980653a7d796a"
+        "e1a3d3b7a29880172934"
       ],
       "facts": [
         {
-          "text": "Предложена новая модель репликации состояний Epistemic State Replication (ESR) для агентных распределенных систем.",
+          "text": "Исследование предлагает использовать малые языковые модели (SLM) для генерации и перенастройки управляющих политик в промышленных системах на основе спецификаций на естественном языке.",
           "article_ids": [
-            "2cbd92e980653a7d796a"
+            "e1a3d3b7a29880172934"
           ]
         },
         {
-          "text": "ESR фокусируется на достижении семантической эквивалентности решений, а не на битовой идентичности состояний, как в классической модели State Machine Replication (SMR).",
+          "text": "Система включает валидатор, основанный на цифровом двойнике, для проверки сгенерированных действий перед их выполнением, что повышает надежность управления.",
           "article_ids": [
-            "2cbd92e980653a7d796a"
+            "e1a3d3b7a29880172934"
           ]
         },
         {
-          "text": "Модель ESR особенно актуальна для систем с автономными, стохастическими и модельно-ориентированными агентами, где возможны расхождения в путях рассуждений при сохранении корректности решений.",
+          "text": "Использование SLM решает проблемы задержки и вычислительной нагрузки, связанные с большими облачными моделями, делая их пригодными для периферийных вычислений в системах с замкнутым циклом управления.",
           "article_ids": [
-            "2cbd92e980653a7d796a"
+            "e1a3d3b7a29880172934"
           ]
         },
         {
-          "text": "Принуждение к битовой идентичности в агентных системах может снижать гибкость, приводить к потере контекста и ухудшать производительность.",
+          "text": "В исследовании применялась модель Qwen2.5-1.5B, дообученная с помощью метода Group Relative Policy Optimization (GRPO) и интегрированная в петлю коррекции.",
           "article_ids": [
-            "2cbd92e980653a7d796a"
+            "e1a3d3b7a29880172934"
           ]
         }
       ],
       "updates": [],
       "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T07:26:46.766089Z"
+      "updated_at": "2026-07-14T12:07:10.460604Z"
     },
     {
-      "id": "tech-21a70d87c2c3760e",
-      "slug": "эксперты-призывают-к-немедленной-подготовке-к-последствиям-ии",
-      "title": "Эксперты призывают к немедленной подготовке к последствиям ИИ",
-      "brief": "Более 200 экономистов и исследователей в области искусственного интеллекта (ИИ) обратились к мировым лидерам с призывом срочно подготовиться к грядущим масштабным экономическим потрясениям, вызванным развитием ИИ. Они подчеркивают, что игнорирование потенциальных рисков может привести к необратимым последствиям для мировой экономики и общества в целом. Эксперты настаивают на необходимости разработки глобальных стратегий и мер регулирования уже сейчас, чтобы смягчить негативное влияние и использовать возможности ИИ во благо человечества.",
-      "context": "Развитие технологий искусственного интеллекта (ИИ) достигло критической точки, вызывая обеспокоенность у ведущих специалистов в области экономики и исследований ИИ. По мере того как ИИ становится все более мощным и интегрированным в различные сферы жизни, возникает реальная угроза значительных экономических и социальных сдвигов. Отчеты и предупреждения от авторитетных организаций и экспертов указывают на потенциальные риски, связанные с автоматизацией рабочих мест, усилением неравенства и изменением структуры мировой экономики. Эти опасения подкрепляются быстрыми темпами развития ИИ и его растущим влиянием на производительность, занятость и распределение богатства.",
-      "why_it_matters": "Игнорирование потенциального воздействия ИИ на экономику может привести к серьезным социальным и экономическим последствиям, включая массовую безработицу, рост неравенства и дестабилизацию рынков. Своевременная подготовка и разработка соответствующих мер регулирования позволят смягчить эти риски, обеспечить плавный переход к новой экономической реальности и использовать возможности ИИ для устойчивого развития и повышения благосостояния общества.",
-      "importance": 8,
+      "id": "tech-ddce72e9f99a7518",
+      "slug": "разработана-новая-модель-для-предсказания-намерений-и-траекторий-движения-автомо",
+      "title": "Разработана новая модель для предсказания намерений и траекторий движения автомобилей",
+      "brief": "Исследователи представили динамическую основу для анализа взаимодействий в дорожной сцене, которая позволяет прогнозировать намерения сменить полосу движения и будущие траектории для каждого автомобиля в локальной зоне. Существующие методы часто фокусируются на одном целевом автомобиле или предоставляют лишь общую информацию о будущих позициях, не детализируя маневры. Новая модель использует графовую нейронную сеть с механизмами внимания, представляя дорожную сцену как изменяющийся во времени граф взаимодействий. Трансляция сообщений через временные графы позволяет улавливать развивающиеся зависимости между автомобилями и пред-маневровые сигналы, что способствует более точному прогнозированию.",
+      "context": "Безопасное планирование движения в системах помощи водителю и автономных транспортных средствах требует точного понимания того, как будет развиваться окружающая дорожная обстановка. Многие существующие методы предсказания смены полосы движения сосредоточены на одном целевом автомобиле. Подходы к прогнозированию поведения нескольких агентов часто описывают эволюцию сцены только через будущие позиции, предоставляя ограниченную явную информацию о маневре, связанном с каждым автомобилем. Данное исследование предлагает решение этой проблемы.",
+      "why_it_matters": "Точное предсказание намерений и траекторий движения других транспортных средств является критически важным для обеспечения безопасности и эффективности систем помощи водителю и полностью автономных автомобилей. Понимание того, как другие участники дорожного движения планируют свои маневры, позволяет системам заблаговременно реагировать, избегая потенциальных столкновений и оптимизируя транспортные потоки. Эта новая модель обещает повысить надежность таких систем.",
+      "importance": 7,
       "status": "new",
       "category": "Технологии",
       "article_ids": [
-        "ecd4eea1a7366029dcfc"
+        "4236eaed7d3954e18bb9"
       ],
       "facts": [
         {
-          "text": "Более 200 экономистов и исследователей в области ИИ призвали мировых лидеров к немедленной подготовке к масштабным экономическим потрясениям, связанным с ИИ.",
+          "text": "Предложена динамическая графовая модель с механизмами внимания для предсказания намерений смены полосы движения и траекторий каждого автомобиля в локальной дорожной сцене.",
           "article_ids": [
-            "ecd4eea1a7366029dcfc"
+            "4236eaed7d3954e18bb9"
+          ]
+        },
+        {
+          "text": "Дорожная сцена представляется как изменяющийся во времени граф взаимодействий, где автомобили являются узлами, а их пространственные и кинематические отношения кодируются через явные признаки ребер.",
+          "article_ids": [
+            "4236eaed7d3954e18bb9"
+          ]
+        },
+        {
+          "text": "Механизм временного графового внимания используется для улавливания развивающихся зависимостей между автомобилями и пред-маневровых сигналов.",
+          "article_ids": [
+            "4236eaed7d3954e18bb9"
+          ]
+        },
+        {
+          "text": "Существующие методы предсказания смены полосы движения часто фокусируются на одном автомобиле или предоставляют ограниченную информацию о маневрах других участников.",
+          "article_ids": [
+            "4236eaed7d3954e18bb9"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-13T23:54:32Z",
-      "updated_at": "2026-07-14T07:26:46.766089Z"
+      "first_seen_at": "2026-07-14T04:00:00Z",
+      "updated_at": "2026-07-14T12:07:10.460604Z"
+    },
+    {
+      "id": "tech-28dce2c84445bd82",
+      "slug": "предложена-новая-теория-наименьшей-автономии-для-ии",
+      "title": "Предложена новая теория наименьшей автономии для ИИ",
+      "brief": "Исследователи представили новую теорию наименьшей автономии (least autonomy) как обобщение принципа наименьших привилегий (least privilege) для агентных систем искусственного интеллекта. Принцип наименьших привилегий, существующий десятилетиями, предполагает, что субъект должен обладать только теми разрешениями, которые необходимы для выполнения его задачи. Однако, по мнению авторов, этот принцип недостаточен для современных ИИ-систем, которые способны не только использовать разрешения, но и комбинировать, утверждать и расширять их в рамках рабочих процессов и межсистемных взаимодействий. Новая теория формализует понятие наименьшей автономии, учитывая способность ИИ к самостоятельным действиям и их потенциальное влияние.",
+      "context": "Принцип наименьших привилегий является фундаментальным для контроля доступа в компьютерных системах на протяжении многих лет. Он ограничивает возможности субъекта только теми действиями, которые необходимы для выполнения его непосредственной функции. Однако с развитием агентных систем ИИ, способных к более сложным и автономным действиям, возникает потребность в более совершенных механизмах контроля. Эти системы могут не только использовать предоставленные им права, но и объединять их, принимать решения об их применении и распространять их влияние на другие процессы и системы, что выходит за рамки традиционного понимания наименьших привилегий.",
+      "why_it_matters": "Разработка теории наименьшей автономии имеет решающее значение для обеспечения безопасности и управляемости все более сложных и автономных систем ИИ. Понимание и формализация того, как ИИ-агенты могут комбинировать и усиливать свои возможности, позволяет создавать более надежные механизмы контроля и предотвращать нежелательное или вредоносное поведение. Это особенно важно в контексте интеграции ИИ в критически важные инфраструктуры и бизнес-процессы, где потенциальные риски, связанные с неконтролируемой автономией, могут быть очень высокими.",
+      "importance": 7,
+      "status": "new",
+      "category": "Искусственный интеллект",
+      "article_ids": [
+        "cfad5f73ee4b05e7100b"
+      ],
+      "facts": [
+        {
+          "text": "Принцип наименьших привилегий, существующий десятилетиями, недостаточен для агентных систем ИИ, которые могут комбинировать и усиливать разрешения.",
+          "article_ids": [
+            "cfad5f73ee4b05e7100b"
+          ]
+        },
+        {
+          "text": "Предложена новая теория наименьшей автономии как обобщение принципа наименьших привилегий для ИИ-систем.",
+          "article_ids": [
+            "cfad5f73ee4b05e7100b"
+          ]
+        },
+        {
+          "text": "Теория включает формальное определение композиционного радиуса поражения (blast radius) и направленного графа влияния агентов.",
+          "article_ids": [
+            "cfad5f73ee4b05e7100b"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-14T04:00:00Z",
+      "updated_at": "2026-07-14T12:07:10.460604Z"
+    },
+    {
+      "id": "tech-ff0d240105cdb0da",
+      "slug": "создание-синтетических-данных-для-улучшения-машинного-обучения-в-сельском-хозяйс",
+      "title": "Создание синтетических данных для улучшения машинного обучения в сельском хозяйстве",
+      "brief": "Исследователи разработали новый алгоритм Task-Conditioned Synthetic Data Generation (TCSDG) для решения проблемы нехватки и низкого качества данных при использовании алгоритмов машинного обучения (ML) в сельском хозяйстве. Алгоритм использует генератор на основе байесовских сетей и трансформерную модель TabICL для создания реалистичных синтетических данных. TCSDG был протестирован на задачах прогнозирования урожайности и классификации типов культур, показав свою эффективность по сравнению с шестью другими алгоритмами генерации синтетических данных.",
+      "context": "Алгоритмы машинного обучения широко применяются для оценки сельскохозяйственных показателей, однако их эффективность напрямую зависит от количества и качества обучающих данных. Ограниченные или неполные эталонные данные могут существенно снижать производительность ML-моделей. Синтетическая генерация данных (SDG) является практическим решением этой проблемы, позволяя создавать искусственные, но реалистичные образцы данных, сохраняющие ключевые характеристики исходных данных.",
+      "why_it_matters": "Разработанный алгоритм TCSDG позволяет преодолеть ограничения, связанные с доступностью данных, и повысить точность прогнозов в сельском хозяйстве. Это может привести к более эффективному планированию ресурсов, оптимизации урожайности и улучшению продовольственной безопасности. Повышение производительности ML-моделей благодаря синтетическим данным открывает новые возможности для инноваций в агропромышленном комплексе.",
+      "importance": 7,
+      "status": "completed",
+      "category": "Наука и технологии",
+      "article_ids": [
+        "9c97c846ca6af80711cb"
+      ],
+      "facts": [
+        {
+          "text": "Алгоритмы машинного обучения (ML) часто используются для оценки сельскохозяйственных переменных, но их производительность зависит от количества и качества обучающих данных.",
+          "article_ids": [
+            "9c97c846ca6af80711cb"
+          ]
+        },
+        {
+          "text": "Синтетическая генерация данных (SDG) предлагает решение проблемы ограниченных или неполных данных путем создания искусственных, но реалистичных образцов.",
+          "article_ids": [
+            "9c97c846ca6af80711cb"
+          ]
+        },
+        {
+          "text": "Предложен новый алгоритм Task-Conditioned SDG (TCSDG), который сочетает генератор на основе байесовских сетей с трансформерной моделью TabICL для генерации синтетических данных.",
+          "article_ids": [
+            "9c97c846ca6af80711cb"
+          ]
+        },
+        {
+          "text": "Алгоритм TCSDG был протестирован на задачах прогнозирования урожайности и классификации типов культур в сельском хозяйстве.",
+          "article_ids": [
+            "9c97c846ca6af80711cb"
+          ]
+        },
+        {
+          "text": "Производительность TCSDG сравнивалась с шестью другими эталонными алгоритмами SDG.",
+          "article_ids": [
+            "9c97c846ca6af80711cb"
+          ]
+        }
+      ],
+      "updates": [],
+      "first_seen_at": "2026-07-14T04:00:00Z",
+      "updated_at": "2026-07-14T12:07:10.460604Z"
     }
   ]
 }
