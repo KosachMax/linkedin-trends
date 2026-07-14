@@ -9,12 +9,14 @@ from types import SimpleNamespace
 from trends.ai.dedupe_service import DedupeService
 from trends.ai.gemini import GeminiProvider
 from trends.ai.schemas import (
+    AIEventIdentity,
     ArticlePartition,
     ArticlePartitionGroup,
     ArticleRelationDecision,
     EventRelationBatch,
     EventRelationDecision,
     FeedAuditGroup,
+    EventSynthesis,
 )
 from trends.config import load_digests
 from trends.domain.enums import EventStatus
@@ -96,6 +98,18 @@ def world_profile():
     return {
         item.id: item for item in load_digests(ROOT / "config/digests")
     }["world"]
+
+
+def test_gemini_response_schemas_do_not_emit_unsupported_additional_properties():
+    schemas = [
+        AIEventIdentity,
+        EventSynthesis,
+        ArticlePartition,
+        EventRelationBatch,
+    ]
+    for schema in schemas:
+        serialized = json.dumps(schema.model_json_schema())
+        assert "additionalProperties" not in serialized
 
 
 def test_same_source_near_copies_collapse_but_cross_source_copy_remains():
