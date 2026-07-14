@@ -2,10 +2,10 @@
   "schema_version": 2,
   "digest_id": "tech",
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T13:04:03.595194Z",
+  "generated_at": "2026-07-14T17:58:44.918214Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» отобрано 10 подтвержденных событий. Редакционный фильтр обработал 32 материалов, объединил 4 повторных карточек и исключил 9 неподтвержденных кластеров."
+    "body": "В выпуске «Технологии» отобрано 10 подтвержденных событий. Редакционный фильтр обработал 32 материалов, объединил 4 повторных карточек и исключил 3 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
@@ -16,7 +16,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 681,
+      "latency_ms": 196,
       "error_code": null,
       "history": [
         0,
@@ -31,16 +31,16 @@
       "source_name": "arXiv AI",
       "state": "available",
       "fetched": 20,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": 1065,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 436,
       "error_code": null,
       "history": [
         0,
         0,
         8,
-        0,
-        1
+        1,
+        0
       ]
     },
     {
@@ -50,7 +50,7 @@
       "fetched": 30,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 155,
+      "latency_ms": 60,
       "error_code": null,
       "history": [
         0,
@@ -67,7 +67,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 551,
+      "latency_ms": 171,
       "error_code": null,
       "history": [
         1,
@@ -82,16 +82,16 @@
       "source_name": "DEV Community Python",
       "state": "available",
       "fetched": 12,
-      "accepted": 12,
-      "represented_events": 9,
-      "latency_ms": 541,
+      "accepted": 9,
+      "represented_events": 10,
+      "latency_ms": 161,
       "error_code": null,
       "history": [
         12,
         9,
         7,
-        11,
-        12
+        12,
+        9
       ]
     },
     {
@@ -101,7 +101,7 @@
       "fetched": 16,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 129,
+      "latency_ms": 186,
       "error_code": null,
       "history": [
         0,
@@ -118,7 +118,7 @@
       "fetched": 10,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 605,
+      "latency_ms": 225,
       "error_code": null,
       "history": [
         2,
@@ -135,7 +135,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1674,
+      "latency_ms": 1675,
       "error_code": null,
       "history": [
         0,
@@ -152,7 +152,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1080,
+      "latency_ms": 810,
       "error_code": null,
       "history": [
         0,
@@ -165,20 +165,172 @@
   ],
   "articles": [
     {
-      "id": "fd437b300c95e733dab4",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09708",
-      "title": "GES-TSP: Graph Edge Sparsification for TSP",
-      "normalized_title": "ges-tsp: graph edge sparsification for tsp",
-      "excerpt": "arXiv:2607.09708v1 Announce Type: new Abstract: Solving large-scale instances of the Traveling Salesman Problem (TSP) exactly is computationally expensive. Researchers often employ graph sparsification methods to improve computational efficiency. Traditional sparsification methods typically rely on fixed heuristics and fail to fully exploit instance-specific structural information. In this paper, we propose Graph Edge Sparsification (GES), a learning-based sparsification approach for Euclidean TSP. By incorporating geometric structural information and combinatorial optimization technology, our proposed method adaptively generates a sparsification graph for different instances, significantly reducing the graph size and accelerating the solving process. Experimental results demonstrate that our sparsification method can prune up to 95% of edges on the MATILDA dataset, while keeping the solution gap within 1% of the optimal value. Moreover, our approach exhibits strong generalization cap",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T13:04:03.602827Z",
+      "id": "b2425669ed7a5ae9f833",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/pulsebitapi/your-pipeline-is-252h-behind-catching-blockchain-sentiment-leads-with-pulsebit-3agd",
+      "title": "Your Pipeline Is 25.2h Behind: Catching Blockchain Sentiment Leads with Pulsebit",
+      "normalized_title": "your pipeline is 25.2h behind: catching blockchain sentiment leads with pulsebit",
+      "excerpt": "Your Pipeline Is 25.2h Behind: Catching Blockchain Sentiment Leads with Pulsebit We recently uncovered a significant anomaly in our sentiment analysis: a 24-hour momentum spike of -0.200. This drop in momentum signals a critical shift in sentiment toward blockchain discussions. But what's more intriguing is that English-language press articles are leading this narrative, with a dominant cluster story titled \"BYDFi Participates in Peru Blockchain Conference 2026, Engaging the LATAM Web3 Community\" emerging at a 25.2-hour mark, indicating that your models might be missing vital signals if they don’t account for multilingual origins or entity dominance. <img alt=\"English coverage led by 25.2 hours. Da at T+25.2h",
+      "published_at": "2026-07-14T17:54:06Z",
+      "collected_at": "2026-07-14T17:58:44.924105Z",
       "language": "en",
       "topic_hints": [
         "tech",
-        "ai",
-        "research"
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "04561a14f379f405b908",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/pulsebitapi/your-pipeline-is-254h-behind-catching-machine-learning-sentiment-leads-with-pulsebit-4k9a",
+      "title": "Your Pipeline Is 25.4h Behind: Catching Machine Learning Sentiment Leads with Pulsebit",
+      "normalized_title": "your pipeline is 25.4h behind: catching machine learning sentiment leads with pulsebit",
+      "excerpt": "Your Pipeline Is 25.4h Behind: Catching Machine Learning Sentiment Leads with Pulsebit We just stumbled upon a sentiment spike of +0.53 and a momentum of +0.00, revealing that the leading language in our data is English, clocking in at 25.4 hours ahead of any other input. This anomaly indicates that there’s a significant delay in how we’re processing sentiment around machine learning. If you haven’t accounted for multilingual origins or the dominance of English entities in your models, your pipeline is lagging behind. <img alt=\"English coverage led by 25.4 hours. Da at T+25.4h. Confidenc\" height=\"423\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/h",
+      "published_at": "2026-07-14T17:42:06Z",
+      "collected_at": "2026-07-14T17:58:44.924105Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "46889f47eec05dd2cd81",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/pulsebitapi/your-pipeline-is-256h-behind-catching-software-sentiment-leads-with-pulsebit-54j9",
+      "title": "Your Pipeline Is 25.6h Behind: Catching Software Sentiment Leads with Pulsebit",
+      "normalized_title": "your pipeline is 25.6h behind: catching software sentiment leads with pulsebit",
+      "excerpt": "Your Pipeline Is 25.6h Behind: Catching Software Sentiment Leads with Pulsebit We just uncovered a striking anomaly: a 24h momentum spike of -0.263 in the software sector. This isn’t just a number; it reflects a significant shift in sentiment that you might have missed. At the same time, the leading news narrative revolves around \"Atlassian Faces Legal Setback Over Worker Dismissal,\" encapsulated in three articles. The dominant language? English, with a 25.6h lead time. If your pipeline isn’t designed to catch such nuances, you could be trailing behind critical developments. If your model doesn't account for multilingual sources or the impact of dominant entities like Atlassian, you could be missing out on sentiment shifts by over 25 hours. This specific incident highlights a structural gap: while your pipeline may efficiently process data, it might not adapt to sudden shifts in narrative framing or language dominance. With a leading entity like Atlassian",
+      "published_at": "2026-07-14T17:28:56Z",
+      "collected_at": "2026-07-14T17:58:44.924105Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "cbcc4654f0b3107899b7",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/gentlenode/why-i-stopped-paying-enterprise-ai-prices-a-freelancers-math-48d6",
+      "title": "Why I Stopped Paying Enterprise AI Prices: A Freelancer's Math",
+      "normalized_title": "why i stopped paying enterprise ai prices: a freelancer's math",
+      "excerpt": "I gotta say, three months ago I almost killed a client project because of an AI bill. Yeah, you read that right. A side-hustle SaaS tool I'd been running for a content agency quietly racked up $1,800 in GPT-4o charges in a single billing cycle. I'd underpriced the work, the user count jumped, and I ended up eating the cost for two weeks while I scrambled to fix the routing logic. That pain forced me to actually do the math I'd been avoiding. And what I found completely changed how I approach every AI project I take on now. Here's the deal: most \"AI API guides\" out there sound like they were written by VCs or enterprise architects. They're useless for someone like me — a freelancer juggling 3-4 client gigs at a time, building side projects on weekends, and watching every dollar like it owes me money. So I'm writing the one I wish existed a year ago. The Real Cost Difference (97.5% Isn't a Typo) Let me hit you with the numbers first becau",
+      "published_at": "2026-07-14T17:28:48Z",
+      "collected_at": "2026-07-14T17:58:44.924105Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "66a2474909573f750345",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/toshiusklay/transcribe-audio-to-text-like-a-developer-from-file-to-final-text-38cd",
+      "title": "Transcribe Audio to Text Like a Developer: From File to Final Text",
+      "normalized_title": "transcribe audio to text like a developer: from file to final text",
+      "excerpt": "You've got a two-hour architecture review sitting in your Downloads folder. Last month, mine was a 94-minute mess where three engineers talked over each other to debug a stuck Kafka consumer. I needed that in text. Not because I enjoy typing, but because text is searchable, diff-able, and way easier to share than a raw MP3. Manual transcription burns hours you don't have. Automated tools get you 90% there, but the last 10% is what separates a usable transcript from word salad. For developers, text wins over audio every time. You can't grep a WAV file. You can't copy a function name from a podcast without listening to fifteen minutes of chatter. Once audio is text, you can index it, run diffs, feed it to an LLM, or generate subtitles. A single recording turns into searchable meeting notes, blog drafts, or captioned tutorials. It also makes content accessible to screen readers and non-native speakers. Before you upload anything, pick your approach. There are three real",
+      "published_at": "2026-07-14T17:24:49Z",
+      "collected_at": "2026-07-14T17:58:44.924105Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "50d0aef612699f28577a",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/alterlab/how-to-scrape-crunchbase-data-complete-guide-for-2026-1kgf",
+      "title": "How to Scrape Crunchbase Data: Complete Guide for 2026",
+      "normalized_title": "how to scrape crunchbase data: complete guide for 2026",
+      "excerpt": "How to Scrape Crunchbase Data: Complete Guide for 2026 This guide covers extracting publicly accessible data. Always review a site's robots.txt and Terms of Service before scraping. TL;DR To scrape Crunchbase with Python, use AlterLab’s API to render JavaScript pages, extract company fields via CSS selectors or JSON paths, and respect rate limits. The quickest path is a single alterlab.Client.scrape() call that returns clean HTML or structured output. Why collect finance data from Crunchbase? Crunchbase aggregates funding rounds, acquisitions, and leadership changes for private and public companies. Three practical uses include: Market research : Track emerging competitors by monitoring new funding announcements in your sector. Investment screening : Build watchlists of startups that match your criteria like‑stage and geography filters.</l",
+      "published_at": "2026-07-14T17:24:36Z",
+      "collected_at": "2026-07-14T17:58:44.924105Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "77db6a31cdf5e5c57f01",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/alterlab/how-to-scrape-yahoo-finance-data-complete-guide-for-2026-2ell",
+      "title": "How to Scrape Yahoo Finance Data: Complete Guide for 2026",
+      "normalized_title": "how to scrape yahoo finance data: complete guide for 2026",
+      "excerpt": "How to Scrape Yahoo Finance Data: Complete Guide for 2026 This guide covers extracting publicly accessible data. Always review a site's robots.txt and Terms of Service before scraping. TL;DR To scrape Yahoo Finance data in Python: use AlterLab's API with formats=['json'] and smart_render=true for JavaScript-heavy pages like stock quotes. Example: client.scrape(\"https://finance.yahoo.com/quote/AAPL\", formats=['json'], smart_rendering=True) . Handle rate limiting with exponential backoff and respect Yahoo's crawl-delay in robots.txt. Why collect finance data from Yahoo Finance? Yahoo Finance provides real-time stock quotes, historical prices, earnings calendars, and analyst ratings—all publicly accessible. Three practical use cases: Market research : Track sector performance by scraping multiple tickers' price-to-earnings ratios <st",
+      "published_at": "2026-07-14T17:24:35Z",
+      "collected_at": "2026-07-14T17:58:44.924105Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "38dc96b0a37dcb31b0ac",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/toshiusklay/how-to-transcribe-audio-to-text-a-practical-workflow-for-developers-54hc",
+      "title": "How to Transcribe Audio to Text: A Practical Workflow for Developers",
+      "normalized_title": "how to transcribe audio to text: a practical workflow for developers",
+      "excerpt": "You've got a 45-minute meeting recording sitting on your desktop. Maybe it's a podcast raw file, or an interview you did for a project. You need it in text, now. Searchable. Timestamped. Clean enough to paste into docs or shove into an LLM context window. Typing it out by hand sucks. It takes about four times the audio length, and your fingers will hate you. I spent a rainy Tuesday afternoon doing exactly that once. Never again. Transcription is the bridge between spoken content and text you can actually use. Once audio is structured text, you can grep it, diff it, subtitle it, or feed it to automation. This is the workflow I use now: prep the file, run speech-to-text, clean the output, and export to formats developers actually need. Why audio to text still matters Video gets all the hype, but audio is where the actual work lives. Standups, conference talks, voice memos, screencasts. Text makes all of that scannable. It improves accessibil",
+      "published_at": "2026-07-14T17:24:24Z",
+      "collected_at": "2026-07-14T17:58:44.924105Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "963380fa792463cccd8f",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/pulsebitapi/your-pipeline-is-258h-behind-catching-mobile-sentiment-leads-with-pulsebit-1dk5",
+      "title": "Your Pipeline Is 25.8h Behind: Catching Mobile Sentiment Leads with Pulsebit",
+      "normalized_title": "your pipeline is 25.8h behind: catching mobile sentiment leads with pulsebit",
+      "excerpt": "Your Pipeline Is 25.8h Behind: Catching Mobile Sentiment Leads with Pulsebit On July 10, 2026, we discovered a striking anomaly in the sentiment surrounding mobile technology, with a sentiment score of -0.60 and a momentum of +0.00. The leading language here is Spanish, demonstrating a unique perspective that our usual English-centric models might overlook. With a 25.8-hour lag, it’s clear that the sentiment in the Spanish press regarding stolen mobile phones is not just a minor blip; it’s an urgent signal we can’t afford to miss. Every time your model fails to account for multilingual origins or entity dominance, it risks leaving critical insights behind. In this case, your pipeline has missed out on a staggering 25.8 hours of sentiment data. The leading language, Spanish, is driving this sentiment shift, and if your system is not configured to handle multiple languages, you could be several hours late to react to significant trends. <a class=\"ar",
+      "published_at": "2026-07-14T17:15:40Z",
+      "collected_at": "2026-07-14T17:58:44.924105Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
       ],
       "entities": [],
       "engagement": null
@@ -249,44 +401,6 @@
       "normalized_title": "pydantic for data engineering: schema validation in etl & pipeline contracts",
       "excerpt": "pydantic is the Python library every data engineer eventually reaches for when a Kafka payload with a missing field silently corrupts a downstream aggregate, when a CSV row with a malformed date reaches the warehouse and skews the reporting table for a whole quarter, or when an internal API service ships a schema change that its downstream consumer parses as garbage instead of failing loudly at the wire. Every DE eventually validates a runtime payload; knowing when to enforce a schema at the ingress boundary versus letting the pipeline crash-fast on the downstream operation, when to reach for a full BaseModel versus a lightweight @dataclass , and when to bypass validation via model_construct in a hot loop is what separates a senior operator from a mid-level one. Pydantic v2 rewrote the internals in Rust ( pydantic-core ), delivering a 5-50× speedup over v1 across parse-and-validate operations, and made ty",
       "published_at": "2026-07-14T13:01:15Z",
-      "collected_at": "2026-07-14T13:04:03.602827Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "b485012a600980995e0a",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/storvus/mutable-and-immutable-objects-in-python-1gkn",
-      "title": "Mutable and Immutable Objects in Python",
-      "normalized_title": "mutable and immutable objects in python",
-      "excerpt": "We assume you already know how to write simple Python programs and understand basic syntax (if, for, functions, lists). Here, we're not discussing how to use the language, but why it works the way it does. In the previous article, we discovered something interesting. Lists can be modified: numbers = [ 1 , 2 ] numbers . append ( 3 ) print ( numbers ) The output is: <pre class=\"highlight python",
-      "published_at": "2026-07-14T13:01:10Z",
-      "collected_at": "2026-07-14T13:04:03.602827Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "854f484a8897bad50da6",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/qingluan/python-sqlite3-complete-guide-with-real-examples-82p",
-      "title": "Python SQLite3: Complete Guide with Real Examples",
-      "normalized_title": "python sqlite3: complete guide with real examples",
-      "excerpt": "Python SQLite3: Complete Guide with Real Examples SQLite3 is Python's built-in relational database — zero installation, zero configuration, works everywhere. It's perfect for local apps, prototypes, small-to-medium datasets, and CLI tools. Installation No installation needed. sqlite3 is part of Python's standard library: import sqlite3 Create a Database and Table import sqlite3 from pathlib import Path DB_PATH = Path ( \"",
-      "published_at": "2026-07-14T13:00:08Z",
       "collected_at": "2026-07-14T13:04:03.602827Z",
       "language": "en",
       "topic_hints": [
@@ -391,28 +505,236 @@
       ],
       "entities": [],
       "engagement": null
-    },
-    {
-      "id": "39d63cbf55083bb156b5",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/tarofortune/building-a-nationwide-flood-risk-map-for-korea-with-srtm-dem-openstreetmap-4434",
-      "title": "Building a nationwide flood-risk map for Korea with SRTM DEM + OpenStreetMap",
-      "normalized_title": "building a nationwide flood-risk map for korea with srtm dem + openstreetmap",
-      "excerpt": "I build ZipScope , a Korean web app that scores the living environment around 38,000+ residential complexes (apartments, officetels, and row/multi-family housing) nationwide. It is deliberately not a real-estate listing site — no prices to chase, no agents. Just analysis: seven living-quality dimensions, commute isochrones, winter sunlight, water-view lines of sight, and the piece I want to walk through here — an estimated flood-risk layer built entirely from open data. Among free Korean services, flood, sunlight, and view analysis are close to unique. But \"estimated\" is the operative word, and I will be blunt about where the estimate breaks down. If you are doing anything similar with terrain data, the tradeoffs below are the interesting part. Wh",
-      "published_at": "2026-07-14T12:38:50Z",
-      "collected_at": "2026-07-14T13:04:03.602827Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
     }
   ],
   "events": [
+    {
+      "id": "tech-71a54debcfa03487",
+      "slug": "аналитические-системы-отстают-на-25-часов-из-за-игнорирования-многоязычных-данны",
+      "title": "Аналитические системы отстают на 25 часов из-за игнорирования многоязычных данных",
+      "brief": "Аналитические системы, ориентированные на английский язык, демонстрируют отставание до 25 часов в обработке данных о настроениях в различных секторах, включая блокчейн, машинное обучение, программное обеспечение и мобильные технологии. Это отставание вызвано неспособностью учитывать многоязычные источники и доминирующие сущности, что приводит к упущению важных сигналов и тенденций. Например, в сфере блокчейна лидирующая англоязычная статья о конференции BYDFi в Перу появилась с задержкой в 25,2 часа. Аналогичные задержки наблюдаются в анализе настроений по машинному обучению (25,4 часа), программному обеспечению (25,6 часа) и мобильным технологиям (25,8 часа), где испанский язык стал ведущим источником информации о краже мобильных телефонов.",
+      "context": "В ходе анализа данных о настроениях в различных технологических секторах были выявлены значительные аномалии, связанные с отставанием аналитических систем. Эти системы, по-видимому, в первую очередь ориентированы на англоязычные источники, что приводит к задержкам в обработке информации до 25 часов. В сфере блокчейна лидирующая англоязычная новость о конференции BYDFi в Перу, посвященной Web3 в Латинской Америке, появилась с отставанием в 25,2 часа. В области машинного обучения задержка составила 25,4 часа. Анализ настроений в секторе программного обеспечения показал отставание в 25,6 часа, где лидирующей темой стала новость об увольнении работников компанией Atlassian. Наиболее выраженное отставание, 25,8 часа, было зафиксировано в анализе настроений, связанных с мобильными технологиями, где ведущим языком оказался испанский, освещающий проблему кражи мобильных телефонов. Эти случаи подчеркивают структурный недостаток в моделях, которые не учитывают многоязычные источники или доминирование определенных сущностей, что приводит к упущению критически важных сигналов.",
+      "why_it_matters": "Игнорирование многоязычных источников и доминирующих сущностей в аналитических системах приводит к существенным задержкам в обработке данных о настроениях, достигающим более 25 часов. Это отставание означает, что компании и исследователи могут упускать важные рыночные сигналы, тенденции и потенциальные кризисы, что негативно сказывается на принятии своевременных и обоснованных решений. Например, задержка в анализе настроений по блокчейну может привести к упущению возможностей на развивающихся рынках, а в случае с мобильными технологиями — к несвоевременной реакции на проблемы безопасности. Неспособность адаптироваться к языковому разнообразию и влиянию ключевых игроков на рынке снижает конкурентоспособность и эффективность аналитических инструментов.",
+      "importance": 8,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "b2425669ed7a5ae9f833",
+        "04561a14f379f405b908",
+        "46889f47eec05dd2cd81",
+        "963380fa792463cccd8f"
+      ],
+      "facts": [
+        {
+          "text": "Аналитические системы демонстрируют отставание до 25,8 часов в обработке данных о настроениях из-за игнорирования многоязычных источников и доминирующих сущностей.",
+          "article_ids": [
+            "b2425669ed7a5ae9f833",
+            "04561a14f379f405b908",
+            "46889f47eec05dd2cd81",
+            "963380fa792463cccd8f"
+          ]
+        },
+        {
+          "text": "В сфере блокчейна лидирующая англоязычная новость о конференции BYDFi в Перу появилась с задержкой в 25,2 часа.",
+          "article_ids": [
+            "b2425669ed7a5ae9f833"
+          ]
+        },
+        {
+          "text": "Анализ настроений в секторе машинного обучения показал отставание в 25,4 часа.",
+          "article_ids": [
+            "04561a14f379f405b908"
+          ]
+        },
+        {
+          "text": "В секторе программного обеспечения лидирующая новость об увольнении работников компанией Atlassian появилась с задержкой в 25,6 часа.",
+          "article_ids": [
+            "46889f47eec05dd2cd81"
+          ]
+        },
+        {
+          "text": "В анализе настроений по мобильным технологиям лидирующим языком оказался испанский, освещающий проблему кражи мобильных телефонов, с задержкой в 25,8 часа.",
+          "article_ids": [
+            "963380fa792463cccd8f"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "sentiment_analysis_lag",
+        "primary_entities": [
+          "Pulsebit",
+          "BYDFi",
+          "Atlassian"
+        ],
+        "geographies": [
+          "Peru",
+          "LATAM"
+        ],
+        "occurred_at": "2026-07-14T17:54:06Z"
+      },
+      "first_seen_at": "2026-07-14T17:15:40Z",
+      "updated_at": "2026-07-14T17:58:44.918214Z"
+    },
+    {
+      "id": "tech-55753e8d71e234cb",
+      "slug": "фрилансер-столкнулся-с-неожиданно-высокими-счетами-за-использование-gpt-4o",
+      "title": "Фрилансер столкнулся с неожиданно высокими счетами за использование GPT-4o",
+      "brief": "Разработчик-фрилансер был вынужден приостановить клиентский проект из-за счета на 1800 долларов за использование GPT-4o. Инструмент SaaS, который он использовал для контент-агентства, внезапно увеличил расходы в одном биллинговом цикле. Это побудило его пересмотреть ценообразование и подход к AI-проектам, особенно для фрилансеров, которые должны внимательно следить за расходами.",
+      "context": "Разработчик-фрилансер столкнулся с серьезной финансовой проблемой, когда его SaaS-инструмент, используемый для контент-агентства, неожиданно сгенерировал счет на 1800 долларов за использование GPT-4o всего за один биллинговый цикл. Это произошло из-за того, что он изначально недооценил стоимость услуг, а затем количество пользователей резко возросло. В течение двух недель он был вынужден покрывать эти расходы самостоятельно, пока искал решение для исправления логики маршрутизации. Этот инцидент заставил его провести детальный расчет затрат, который кардинально изменил его подход к AI-проектам.",
+      "why_it_matters": "Этот случай подчеркивает важность точного расчета затрат и ценообразования в AI-проектах, особенно для фрилансеров и небольших команд, которые работают с ограниченным бюджетом. Неожиданно высокие счета могут поставить под угрозу рентабельность проектов и даже привести к их приостановке. Разработчик отмечает, что существующие руководства по AI API часто ориентированы на крупные компании и не учитывают нужды фрилансеров, что создает потребность в более доступной и практичной информации для этой категории пользователей.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "cbcc4654f0b3107899b7"
+      ],
+      "facts": [
+        {
+          "text": "SaaS-инструмент, используемый фрилансером для контент-агентства, выставил счет на 1800 долларов за использование GPT-4o в одном биллинговом цикле.",
+          "article_ids": [
+            "cbcc4654f0b3107899b7"
+          ]
+        },
+        {
+          "text": "Высокий счет был вызван недооценкой стоимости услуг и резким увеличением числа пользователей.",
+          "article_ids": [
+            "cbcc4654f0b3107899b7"
+          ]
+        },
+        {
+          "text": "Инцидент заставил фрилансера пересмотреть свой подход к ценообразованию и управлению расходами в AI-проектах.",
+          "article_ids": [
+            "cbcc4654f0b3107899b7"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "unexpected_cost_overrun",
+        "primary_entities": [
+          "GPT-4o"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-14T17:28:48Z"
+      },
+      "first_seen_at": "2026-07-14T17:28:48Z",
+      "updated_at": "2026-07-14T17:58:44.918214Z"
+    },
+    {
+      "id": "tech-3d108829c53e4474",
+      "slug": "разработчики-преобразуют-аудиозаписи-в-текст-для-поиска-и-анализа",
+      "title": "Разработчики преобразуют аудиозаписи в текст для поиска и анализа",
+      "brief": "Разработчики все чаще преобразуют аудиозаписи, такие как записи встреч, подкасты и интервью, в текстовый формат. Это позволяет осуществлять поиск, сравнение версий и легкое распространение информации, что невозможно при работе с аудиофайлами. Ручное транскрибирование занимает много времени, поэтому автоматизированные инструменты становятся все более востребованными. Преобразование аудио в текст открывает возможности для индексации, анализа с помощью больших языковых моделей (LLM), создания субтитров и улучшения доступности контента для людей с нарушениями слуха и неносителей языка. Текстовый формат делает аудиоконтент пригодным для использования в документации, статьях и обучающих материалах.",
+      "context": "В современной разработке программного обеспечения, где эффективность и доступ к информации играют ключевую роль, преобразование аудиоданных в текстовый формат становится все более актуальным. Разработчики сталкиваются с необходимостью обрабатывать большие объемы аудиоинформации, включая записи архитектурных обсуждений, совещаний, подкастов и интервью. Ручное транскрибирование является трудоемким процессом, занимающим значительно больше времени, чем длительность самой аудиозаписи. Это побуждает к поиску и использованию автоматизированных решений, которые могут значительно ускорить процесс и повысить его эффективность. Текстовый формат аудиоданных открывает новые возможности для работы с информацией: его можно индексировать, сравнивать с другими версиями текста, использовать для обучения больших языковых моделей, генерировать субтитры и делать контент доступным для более широкой аудитории, включая людей, использующих программы чтения с экрана, и тех, для кого язык оригинала не является родным. Таким образом, аудиозаписи трансформируются в ценные текстовые ресурсы, пригодные для различных целей, от создания заметок до разработки обучающих материалов.",
+      "why_it_matters": "Преобразование аудио в текст имеет решающее значение для разработчиков, поскольку оно превращает неструктурированные аудиоданные в легкодоступный и анализируемый текстовый формат. Это позволяет индексировать содержимое записей, выполнять поиск по ключевым словам, сравнивать различные версии транскриптов и использовать их в качестве входных данных для больших языковых моделей (LLM) для автоматизации задач, таких как генерация отчетов или резюме. Кроме того, текстовые транскрипты значительно улучшают доступность контента, делая его понятным для людей с нарушениями слуха и для тех, кто не является носителем языка. Это также упрощает создание субтитров для видеоматериалов и превращает разрозненные аудиофайлы в ценные, легко распространяемые и редактируемые ресурсы, такие как заметки к совещаниям, черновики статей или обучающие руководства, что в конечном итоге повышает продуктивность и эффективность работы.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "66a2474909573f750345",
+        "38dc96b0a37dcb31b0ac"
+      ],
+      "facts": [
+        {
+          "text": "Ручное транскрибирование аудиозаписей занимает значительно больше времени, чем длительность самого аудио, и является неэффективным для разработчиков.",
+          "article_ids": [
+            "66a2474909573f750345",
+            "38dc96b0a37dcb31b0ac"
+          ]
+        },
+        {
+          "text": "Текстовый формат аудиоданных позволяет осуществлять поиск, сравнение версий, индексацию и использование в больших языковых моделях (LLM).",
+          "article_ids": [
+            "66a2474909573f750345",
+            "38dc96b0a37dcb31b0ac"
+          ]
+        },
+        {
+          "text": "Автоматизированные инструменты для преобразования аудио в текст помогают разработчикам получать текстовые версии записей встреч, подкастов и интервью.",
+          "article_ids": [
+            "66a2474909573f750345",
+            "38dc96b0a37dcb31b0ac"
+          ]
+        },
+        {
+          "text": "Преобразование аудио в текст улучшает доступность контента для людей с нарушениями слуха и неносителей языка, а также облегчает создание субтитров.",
+          "article_ids": [
+            "66a2474909573f750345",
+            "38dc96b0a37dcb31b0ac"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "audio_to_text_transcription",
+        "primary_entities": [
+          "разработчики"
+        ],
+        "geographies": [],
+        "occurred_at": null
+      },
+      "first_seen_at": "2026-07-14T17:24:24Z",
+      "updated_at": "2026-07-14T17:58:44.918214Z"
+    },
+    {
+      "id": "tech-1223cba344000e42",
+      "slug": "руководства-по-парсингу-финансовых-данных-в-2026-году",
+      "title": "Руководства по парсингу финансовых данных в 2026 году",
+      "brief": "В 2026 году появились подробные руководства по извлечению общедоступных финансовых данных с платформ Crunchbase и Yahoo Finance с использованием Python. Эти руководства подчеркивают важность соблюдения файлов robots.txt и условий обслуживания сайтов перед началом сбора данных. Для эффективного парсинга предлагается использовать API AlterLab, который способен обрабатывать страницы с JavaScript, извлекать нужные поля с помощью CSS-селекторов или JSON-путей и управлять ограничениями скорости запросов. Приводятся примеры использования данных для анализа рынка и отбора инвестиционных целей.",
+      "context": "В 2026 году были опубликованы два руководства, посвященные парсингу финансовых данных: одно для Crunchbase, другое для Yahoo Finance. Оба руководства, размещенные на платформе dev.to, ориентированы на разработчиков, использующих Python. В них подробно описывается процесс извлечения общедоступной информации о компаниях, раундах финансирования, слияниях, поглощениях, изменениях в руководстве, а также биржевых котировках, исторических ценах, календарях отчетности и рейтингах аналитиков. Особое внимание уделяется необходимости соблюдения правил сайтов (robots.txt, Условия обслуживания) и использованию специализированных инструментов, таких как API AlterLab, для работы с динамическим контентом и оптимизации запросов. Приводятся практические примеры применения собранных данных для анализа рынка и скрининга инвестиционных возможностей.",
+      "why_it_matters": "Возможность автоматизированного сбора и анализа финансовых данных с платформ вроде Crunchbase и Yahoo Finance имеет решающее значение для инвесторов, аналитиков и исследователей рынка. Эти руководства предоставляют инструменты и методологии для получения актуальной информации о стартапах, их финансировании, рыночных тенденциях и динамике фондового рынка. Эффективный парсинг позволяет оперативно выявлять перспективные инвестиционные возможности, отслеживать конкурентов и принимать обоснованные решения на основе данных, что в конечном итоге способствует более глубокому пониманию финансовой экосистемы и повышению эффективности инвестиционной деятельности.",
+      "importance": 7,
+      "status": "new",
+      "category": "Финансы",
+      "article_ids": [
+        "50d0aef612699f28577a",
+        "77db6a31cdf5e5c57f01"
+      ],
+      "facts": [
+        {
+          "text": "В 2026 году появились руководства по парсингу данных с платформ Crunchbase и Yahoo Finance с использованием Python.",
+          "article_ids": [
+            "50d0aef612699f28577a",
+            "77db6a31cdf5e5c57f01"
+          ]
+        },
+        {
+          "text": "Для парсинга рекомендуется использовать API AlterLab, который может обрабатывать страницы с JavaScript и извлекать данные.",
+          "article_ids": [
+            "50d0aef612699f28577a",
+            "77db6a31cdf5e5c57f01"
+          ]
+        },
+        {
+          "text": "Собранные данные могут использоваться для анализа рынка, отслеживания конкурентов и скрининга инвестиционных возможностей.",
+          "article_ids": [
+            "50d0aef612699f28577a",
+            "77db6a31cdf5e5c57f01"
+          ]
+        },
+        {
+          "text": "При парсинге необходимо соблюдать файлы robots.txt и условия обслуживания сайтов.",
+          "article_ids": [
+            "50d0aef612699f28577a",
+            "77db6a31cdf5e5c57f01"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "data_scraping_guide_release",
+        "primary_entities": [
+          "Crunchbase",
+          "Yahoo Finance",
+          "AlterLab"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-14T17:24:36Z"
+      },
+      "first_seen_at": "2026-07-14T17:24:35Z",
+      "updated_at": "2026-07-14T17:58:44.918214Z"
+    },
     {
       "id": "tech-1a0896d6b3cbdcaa",
       "slug": "разработчик-создал-ии-генератор-портретов-домашних-животных-снизив-затраты-на-ap",
@@ -737,215 +1059,6 @@
         "occurred_at": "2026-07-14T12:39:54Z"
       },
       "first_seen_at": "2026-07-14T12:39:54Z",
-      "updated_at": "2026-07-14T13:04:03.595194Z"
-    },
-    {
-      "id": "tech-f4839dea945b7a9b",
-      "slug": "создание-карты-рисков-наводнений-в-корее-с-использованием-открытых-данных",
-      "title": "Создание карты рисков наводнений в Корее с использованием открытых данных",
-      "brief": "Разработчик создал веб-приложение ZipScope, которое анализирует около 38 000 жилых комплексов по всей Южной Корее. Приложение оценивает семь аспектов качества жизни, включая время в пути, зимнее солнце, вид из окна и, что особенно важно, прогнозируемый уровень риска наводнений. Этот слой риска наводнений построен исключительно на основе общедоступных данных, включая данные о рельефе SRTM DEM и OpenStreetMap. Разработчик подчеркивает, что оценка риска является приблизительной и указывает на ограничения используемых данных.",
-      "context": "Веб-приложение ZipScope, разработанное в Южной Корее, предназначено для анализа жилой среды вокруг более чем 38 000 жилых комплексов, включая квартиры, офистели и таунхаусы. Приложение фокусируется на предоставлении аналитической информации, а не на продаже недвижимости. Оно оценивает семь ключевых параметров качества жизни: время в пути до различных точек, доступность зимнего солнечного света, наличие видов на воду и, что является центральным элементом данного описания, прогнозируемый уровень риска наводнений. Этот слой риска наводнений был создан с использованием исключительно открытых данных, в частности, данных о рельефе SRTM DEM и информации из OpenStreetMap. Разработчик отмечает, что анализ затопления и другие подобные функции являются относительно уникальными среди бесплатных корейских сервисов, но подчеркивает, что оценка риска является приблизительной и имеет свои ограничения, которые он готов обсудить.",
-      "why_it_matters": "Создание подробной карты рисков наводнений с использованием открытых данных имеет большое значение для повышения осведомленности населения и органов власти о потенциальных угрозах. ZipScope демонстрирует, как общедоступные геопространственные данные могут быть использованы для создания ценных инструментов анализа, помогающих оценить уязвимость жилых районов к стихийным бедствиям. Это может способствовать более обоснованному городскому планированию, разработке мер по снижению рисков и информированию жителей о потенциальных опасностях, связанных с проживанием в зонах повышенного риска наводнений. Точность и доступность таких карт напрямую влияют на безопасность и устойчивость сообществ.",
-      "importance": 7,
-      "status": "updated",
-      "category": "Технологии",
-      "article_ids": [
-        "39d63cbf55083bb156b5"
-      ],
-      "facts": [
-        {
-          "text": "Веб-приложение ZipScope оценивает качество жилой среды в более чем 38 000 жилых комплексах по всей Корее.",
-          "article_ids": [
-            "39d63cbf55083bb156b5"
-          ]
-        },
-        {
-          "text": "Приложение ZipScope включает анализ риска наводнений, построенный полностью на основе открытых данных, таких как SRTM DEM и OpenStreetMap.",
-          "article_ids": [
-            "39d63cbf55083bb156b5"
-          ]
-        },
-        {
-          "text": "ZipScope анализирует семь измерений качества жизни, включая изохроны времени в пути, зимнее солнечное освещение и линии обзора с видом на воду.",
-          "article_ids": [
-            "39d63cbf55083bb156b5"
-          ]
-        },
-        {
-          "text": "Веб-приложение ZipScope анализирует около 38 000 жилых комплексов в Южной Корее, оценивая различные аспекты качества жизни, включая риск наводнений.",
-          "article_ids": [
-            "39d63cbf55083bb156b5"
-          ]
-        },
-        {
-          "text": "Слой риска наводнений в ZipScope построен с использованием открытых данных, таких как SRTM DEM и OpenStreetMap.",
-          "article_ids": [
-            "39d63cbf55083bb156b5"
-          ]
-        },
-        {
-          "text": "Разработчик подчеркивает, что оценка риска наводнений является приблизительной и имеет свои ограничения.",
-          "article_ids": [
-            "39d63cbf55083bb156b5"
-          ]
-        }
-      ],
-      "updates": [
-        {
-          "at": "2026-07-14T13:04:03.595194Z",
-          "summary": "Веб-приложение ZipScope анализирует около 38 000 жилых комплексов в Южной Корее, оценивая различные аспекты качества жизни, включая риск наводнений. Слой риска наводнений в ZipScope построен с использованием открытых данных, таких как SRTM DEM и OpenStreetMap.",
-          "article_ids": [
-            "39d63cbf55083bb156b5"
-          ]
-        }
-      ],
-      "identity": {
-        "event_type": "data_analysis_tool_development",
-        "primary_entities": [
-          "ZipScope"
-        ],
-        "geographies": [
-          "South Korea"
-        ],
-        "occurred_at": "2026-07-14T12:38:50Z"
-      },
-      "first_seen_at": "2026-07-14T12:38:50Z",
-      "updated_at": "2026-07-14T13:04:03.595194Z"
-    },
-    {
-      "id": "tech-2e4835a330d35dac",
-      "slug": "изменяемые-и-неизменяемые-объекты-в-python",
-      "title": "Изменяемые и неизменяемые объекты в Python",
-      "brief": "В статье рассматриваются концепции изменяемых и неизменяемых объектов в языке программирования Python. Предполагается, что читатель уже знаком с основами синтаксиса Python, такими как условные операторы, циклы, функции и списки. Основное внимание уделяется не тому, как использовать язык, а тому, как он работает изнутри. В качестве примера демонстрируется модификация списка: создание списка чисел, добавление в него нового элемента и вывод результата.",
-      "context": "Данный материал является продолжением предыдущей статьи, где было обнаружено, что списки в Python являются изменяемыми объектами. В статье приводится пример кода, демонстрирующий эту особенность: создается список `numbers`, затем в него добавляется число 3 с помощью метода `append()`, после чего выводится измененный список. Это иллюстрирует поведение изменяемых типов данных в Python.",
-      "why_it_matters": "Понимание различий между изменяемыми и неизменяемыми объектами является фундаментальным для эффективного программирования на Python. Это знание помогает избежать распространенных ошибок, связанных с непреднамеренным изменением данных, и позволяет писать более предсказуемый и надежный код. Осознание того, как Python обрабатывает объекты, способствует более глубокому пониманию работы языка и оптимизации производительности приложений.",
-      "importance": 5,
-      "status": "new",
-      "category": "Программирование",
-      "article_ids": [
-        "b485012a600980995e0a"
-      ],
-      "facts": [
-        {
-          "text": "Списки в Python являются изменяемыми объектами, что позволяет модифицировать их после создания.",
-          "article_ids": [
-            "b485012a600980995e0a"
-          ]
-        },
-        {
-          "text": "Пример модификации списка включает создание списка чисел, добавление нового элемента и вывод результата.",
-          "article_ids": [
-            "b485012a600980995e0a"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "programming_concept_explanation",
-        "primary_entities": [
-          "Python"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-14T13:01:10Z"
-      },
-      "first_seen_at": "2026-07-14T13:01:10Z",
-      "updated_at": "2026-07-14T13:04:03.595194Z"
-    },
-    {
-      "id": "tech-fac01dea2ef0679c",
-      "slug": "python-sqlite3-встроенная-база-данных-для-разработчиков",
-      "title": "Python SQLite3: Встроенная база данных для разработчиков",
-      "brief": "Python SQLite3 представляет собой встроенную реляционную базу данных, которая не требует установки или дополнительной конфигурации и работает на любой платформе. Она идеально подходит для локальных приложений, прототипов, небольших и средних наборов данных, а также для инструментов командной строки. Модуль sqlite3 является частью стандартной библиотеки Python, что делает его легкодоступным для разработчиков.",
-      "context": "Модуль sqlite3 является частью стандартной библиотеки Python, что означает отсутствие необходимости в дополнительной установке или настройке для его использования. Это делает его универсальным решением для различных задач разработки, от создания локальных хранилищ данных до прототипирования новых приложений. Простота интеграции и кроссплатформенность обеспечивают удобство при работе с данными.",
-      "why_it_matters": "Использование SQLite3 в Python позволяет разработчикам быстро и эффективно создавать приложения, которым требуется локальное хранение данных, без усложнения процесса установки и настройки баз данных. Это особенно ценно для небольших проектов, прототипов и инструментов, где важна скорость разработки и простота развертывания. Возможность работы с базой данных прямо из стандартной библиотеки Python значительно упрощает рабочий процесс.",
-      "importance": 3,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "854f484a8897bad50da6"
-      ],
-      "facts": [
-        {
-          "text": "SQLite3 является встроенной реляционной базой данных в Python, не требующей установки или конфигурации.",
-          "article_ids": [
-            "854f484a8897bad50da6"
-          ]
-        },
-        {
-          "text": "Модуль sqlite3 входит в стандартную библиотеку Python.",
-          "article_ids": [
-            "854f484a8897bad50da6"
-          ]
-        },
-        {
-          "text": "SQLite3 подходит для локальных приложений, прототипов, небольших и средних наборов данных, а также для инструментов командной строки.",
-          "article_ids": [
-            "854f484a8897bad50da6"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "technology_release",
-        "primary_entities": [
-          "Python",
-          "SQLite3"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-14T13:00:08Z"
-      },
-      "first_seen_at": "2026-07-14T13:00:08Z",
-      "updated_at": "2026-07-14T13:04:03.595194Z"
-    },
-    {
-      "id": "tech-2387a8ca0e03646e",
-      "slug": "новый-метод-разреживания-графов-ускоряет-решение-задачи-коммивояжера",
-      "title": "Новый метод разреживания графов ускоряет решение задачи коммивояжера",
-      "brief": "Исследователи представили метод разреживания графов на основе машинного обучения, названный GES-TSP, который значительно ускоряет решение задачи коммивояжера (TSP) для крупномасштабных экземпляров. Традиционные методы часто полагаются на фиксированные эвристики и не используют в полной мере информацию о структуре конкретного экземпляра. GES-TSP, напротив, использует геометрическую информацию и технологии комбинаторной оптимизации для адаптивной генерации разреженного графа, специфичного для каждого экземпляра. Это позволяет сократить размер графа и ускорить процесс решения. Метод продемонстрировал способность удалять до 95% ребер на наборе данных MATILDA, сохраняя при этом разрыв в решении не более 1% от оптимального значения, и показал сильную обобщающую способность.",
-      "context": "Задача коммивояжера (TSP) является классической NP-трудной проблемой в области комбинаторной оптимизации, которая заключается в поиске кратчайшего маршрута, проходящего через заданный набор городов ровно по одному разу и возвращающегося в исходный город. Решение крупномасштабных экземпляров этой задачи требует значительных вычислительных ресурсов. Для повышения вычислительной эффективности часто применяются методы разреживания графов, которые уменьшают количество ребер в графе, сохраняя при этом важную структурную информацию. Однако традиционные методы разреживания графов обычно используют фиксированные эвристики и не могут в полной мере использовать специфическую для экземпляра структурную информацию. В ответ на эти ограничения было предложено новое решение — Graph Edge Sparsification (GES), основанный на обучении подход к разреживанию графов для евклидовой задачи коммивояжера.",
-      "why_it_matters": "Представленный метод GES-TSP имеет потенциал значительно ускорить решение сложных задач коммивояжера, что критически важно для логистики, планирования маршрутов и других областей, где требуется оптимизация путей. Способность метода сокращать количество ребер до 95% при сохранении высокой точности решения открывает новые возможности для обработки больших и сложных наборов данных, которые ранее были недоступны для точного решения. Улучшенная вычислительная эффективность и сильная обобщающая способность делают этот подход перспективным для практического применения в реальных сценариях, где скорость и точность имеют первостепенное значение.",
-      "importance": 8,
-      "status": "new",
-      "category": "Наука и технологии",
-      "article_ids": [
-        "fd437b300c95e733dab4"
-      ],
-      "facts": [
-        {
-          "text": "Предложен новый метод разреживания графов на основе машинного обучения, названный Graph Edge Sparsification (GES), для решения задачи коммивояжера (TSP).",
-          "article_ids": [
-            "fd437b300c95e733dab4"
-          ]
-        },
-        {
-          "text": "Метод GES-TSP использует геометрическую структурную информацию и технологии комбинаторной оптимизации для адаптивного создания разреженного графа для различных экземпляров TSP.",
-          "article_ids": [
-            "fd437b300c95e733dab4"
-          ]
-        },
-        {
-          "text": "Экспериментальные результаты показали, что метод GES-TSP может сократить до 95% ребер на наборе данных MATILDA, сохраняя при этом разрыв в решении не более 1% от оптимального значения.",
-          "article_ids": [
-            "fd437b300c95e733dab4"
-          ]
-        },
-        {
-          "text": "Предложенный подход демонстрирует сильную обобщающую способность.",
-          "article_ids": [
-            "fd437b300c95e733dab4"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "research_publication",
-        "primary_entities": [
-          "GES-TSP"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-14T04:00:00Z"
-      },
-      "first_seen_at": "2026-07-14T04:00:00Z",
       "updated_at": "2026-07-14T13:04:03.595194Z"
     }
   ]
