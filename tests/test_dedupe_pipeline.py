@@ -326,7 +326,7 @@ class RepairingRelationProvider:
         )
 
 
-def test_partition_repairs_relation_that_contradicts_its_groups():
+def test_partition_treats_explanatory_relations_as_advisory():
     articles = [
         make_article("one", "a", "One", "First article"),
         make_article("two", "b", "Two", "Second article"),
@@ -335,8 +335,8 @@ def test_partition_repairs_relation_that_contradicts_its_groups():
 
     result = asyncio.run(DedupeService(provider).partition_articles(articles))
 
-    assert result.relations[0].relation == "different"
-    assert provider.calls == 2
+    assert [group.article_ids for group in result.groups] == [["one"], ["two"]]
+    assert provider.calls == 1
 
 
 class AlwaysIncompleteProvider:
@@ -543,6 +543,33 @@ class AuditProvider:
         )
 
 
+class AliasAuditProvider:
+    async def generate(self, _prompt, schema):
+        return schema(
+            duplicate_groups=[
+                FeedAuditGroup(
+                    event_ids=["E001", "E002"],
+                    relation="same_event",
+                    confidence=0.99,
+                )
+            ]
+        )
+
+
+def test_feed_audit_maps_short_ai_aliases_back_to_stable_event_ids():
+    events = [
+        make_event("long-hashed-first-id", "Первая карточка", NOW, "one"),
+        make_event("long-hashed-second-id", "Вторая карточка", NOW, "two"),
+    ]
+
+    result = asyncio.run(DedupeService(AliasAuditProvider()).audit_feed(events))
+
+    assert result.duplicate_groups[0].event_ids == [
+        "long-hashed-first-id",
+        "long-hashed-second-id",
+    ]
+
+
 def test_final_audit_merges_duplicate_cards_without_losing_provenance():
     events = [
         make_event("first", "Англия победила Норвегию", NOW, "article-one"),
@@ -612,6 +639,46 @@ def test_final_audit_keeps_merged_card_when_resynthesis_fails():
         error.startswith("audit_resynthesis:RuntimeError")
         for error in metrics["errors"]
     )
+
+
+class FailingAuditProvider:
+    async def generate(self, _prompt, _schema):
+        raise RuntimeError("audit unavailable")
+
+
+def test_final_audit_locally_merges_near_identical_titles_when_ai_fails():
+    events = [
+        make_event(
+            "first",
+            "Франция и Испания встретятся в полуфинале чемпионата мира 2026",
+            NOW,
+            "article-one",
+        ),
+        make_event(
+            "second",
+            "Франция и Испания сыграют в полуфинале чемпионата мира по футболу 2026",
+            NOW,
+            "article-two",
+        ),
+    ]
+    metrics = {}
+
+    result = asyncio.run(
+        audit_feed(
+            events,
+            {},
+            world_profile(),
+            NOW,
+            None,
+            DedupeService(FailingAuditProvider()),
+            metrics,
+        )
+    )
+
+    assert len(result) == 1
+    assert result[0].article_ids == ["article-one", "article-two"]
+    assert metrics["local_title_duplicate_groups"] == 1
+    assert metrics["degraded"] is True
 
 
 def test_archive_repair_merges_confirmed_groups_and_updates_current(tmp_path):

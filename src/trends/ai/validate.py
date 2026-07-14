@@ -4,12 +4,15 @@ from trends.ai.schemas import EventSynthesis
 from trends.domain.models import Article
 
 
-def _is_russian_editorial(value: str) -> bool:
+def is_russian_editorial(value: str) -> bool:
     cyrillic = len(re.findall(r"[А-Яа-яЁё]", value))
     latin = len(re.findall(r"[A-Za-z]", value))
     if cyrillic < 2:
         return False
-    return latin <= max(24, int(cyrillic * 0.6))
+    # Product names, model identifiers and organisations can legitimately make
+    # technical copy Latin-heavy. A complete English sentence still fails
+    # because it contains no meaningful Cyrillic editorial text.
+    return latin <= max(48, int(cyrillic * 0.9))
 
 
 def validate_synthesis(event: EventSynthesis, articles: list[Article], minimum_sources: int) -> list[str]:
@@ -28,6 +31,10 @@ def validate_synthesis(event: EventSynthesis, articles: list[Article], minimum_s
     source_count = len({by_id[item].source_id for item in referenced if item in by_id})
     if source_count < minimum_sources:
         errors.append(f"requires {minimum_sources} independent sources, got {source_count}")
+    if not 200 <= len(event.brief) <= 800:
+        errors.append(
+            f"brief must contain 200-800 characters, got {len(event.brief)}"
+        )
     for index, fact in enumerate(event.facts):
         fact_unknown = set(fact.article_ids) - referenced
         if fact_unknown:
@@ -43,9 +50,9 @@ def validate_synthesis(event: EventSynthesis, articles: list[Article], minimum_s
         "category": event.category,
     }
     for field, value in russian_fields.items():
-        if not _is_russian_editorial(value):
+        if not is_russian_editorial(value):
             errors.append(f"{field} must be predominantly written in Russian")
     for index, fact in enumerate(event.facts):
-        if not _is_russian_editorial(fact.text):
+        if not is_russian_editorial(fact.text):
             errors.append(f"fact {index} must be predominantly written in Russian")
     return errors

@@ -66,14 +66,11 @@ class DedupeService:
                     group_by_article.get(relation.left_article_id)
                     == group_by_article.get(relation.right_article_id)
                 )
-                if relation.relation in {"same_event", "update_of"} and not same_group:
-                    errors.append(
-                        "same_event/update_of relations must stay in one group"
-                    )
-                if relation.relation in {"related", "different"} and same_group:
-                    errors.append(
-                        "related/different relations must be in separate groups"
-                    )
+                # Group assignment is the primary answer. Relations are
+                # explanatory/advisory and Gemini can occasionally contradict
+                # its otherwise complete partition. Rejecting the full answer
+                # here loses a valid grouping and creates duplicate cards.
+                _ = same_group
             return errors
 
         return await self._generate_with_repair(prompt, ArticlePartition, validate)
@@ -110,11 +107,25 @@ class DedupeService:
         return await self._generate_with_repair(prompt, EventRelationBatch, validate)
 
     async def audit_feed(self, events: list[DigestEvent]) -> FeedAudit:
+        aliases = {
+            event.id: f"E{index:03d}"
+            for index, event in enumerate(events, start=1)
+        }
+        aliases_to_ids = {alias: event_id for event_id, alias in aliases.items()}
         prompt = self._prompt(
             "feed_audit_v1.md",
-            [self._event_payload(event) for event in events],
+            [
+                {
+                    **self._event_payload(event),
+                    "event_id": aliases[event.id],
+                }
+                for event in events
+            ],
         )
-        known = {event.id for event in events}
+        # Real IDs remain accepted for deterministic test providers and older
+        # compatible providers, while production prompts use short aliases that
+        # Gemini copies much more reliably than hash-based IDs.
+        known = {**aliases_to_ids, **{event.id: event.id for event in events}}
 
         def validate(result: FeedAudit) -> list[str]:
             used: set[str] = set()
@@ -123,14 +134,26 @@ class DedupeService:
                 ids = set(group.event_ids)
                 if len(ids) != len(group.event_ids):
                     errors.append("duplicate group contains a repeated event ID")
-                if ids - known:
+                if ids - known.keys():
                     errors.append("duplicate group contains an unknown event ID")
                 if ids & used:
                     errors.append("one event cannot occur in multiple duplicate groups")
                 used.update(ids)
             return errors
 
-        return await self._generate_with_repair(prompt, FeedAudit, validate)
+        result = await self._generate_with_repair(prompt, FeedAudit, validate)
+        return result.model_copy(
+            update={
+                "duplicate_groups": [
+                    group.model_copy(
+                        update={
+                            "event_ids": [known[event_id] for event_id in group.event_ids]
+                        }
+                    )
+                    for group in result.duplicate_groups
+                ]
+            }
+        )
 
     async def _generate_with_repair(
         self,

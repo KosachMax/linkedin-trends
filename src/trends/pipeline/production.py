@@ -8,6 +8,7 @@ from pathlib import Path
 from trends.ai.dedupe_service import DedupeService
 from trends.ai.gemini import GeminiProvider
 from trends.ai.service import EventSynthesisService
+from trends.ai.validate import is_russian_editorial
 from trends.collectors.runner import collect_sources
 from trends.config import load_digests, load_sources
 from trends.domain.ids import slugify
@@ -240,6 +241,29 @@ async def run_production(root: Path) -> list[Path]:
         ranked, orphaned = hydrate_events(ranked, article_catalog)
         metrics["orphaned_events"] = orphaned
         ranked = rank_events(ranked, article_catalog, profile)
+
+        localized_events: list[DigestEvent] = []
+        for event in ranked:
+            editorial_fields = [
+                event.title,
+                event.brief,
+                event.context,
+                event.why_it_matters,
+                *[fact.text for fact in event.facts],
+            ]
+            if all(is_russian_editorial(value) for value in editorial_fields):
+                localized_events.append(event)
+                continue
+            quarantine.append(
+                {
+                    "reason": "non_russian_editorial_output",
+                    "article_ids": event.article_ids,
+                }
+            )
+        metrics["non_russian_events_filtered"] = len(ranked) - len(
+            localized_events
+        )
+        ranked = localized_events
 
         visible_events = ranked[: profile.output.max_events]
         accepted_ids = {

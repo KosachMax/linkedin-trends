@@ -21,7 +21,10 @@ class AIFact(BaseModel):
 
 class EventSynthesis(BaseModel):
     title: str
-    brief: str = Field(min_length=200, max_length=800)
+    # Gemini occasionally exceeds JSON Schema string limits by a few characters.
+    # Keep the transport schema permissive so the service can request a repair
+    # instead of losing the whole event during Pydantic parsing.
+    brief: str = Field(min_length=1)
     context: str = Field(min_length=200)
     why_it_matters: str = Field(min_length=150)
     category: str
