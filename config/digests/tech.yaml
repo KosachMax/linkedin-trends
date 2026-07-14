@@ -11,6 +11,13 @@ sources:
   include_tags: [tech]
   min_independent_sources: 1
   allow_single_source_for: [research, release]
+dedupe:
+  lookback_hours: 72
+  candidate_similarity: 0.72
+  max_neighbors: 8
+  max_bundle_size: 20
+  event_match_confidence: 0.90
+  final_audit_confidence: 0.95
 ranking:
   recency: 0.25
   source_diversity: 0.15
@@ -20,4 +27,3 @@ ranking:
 output:
   max_events: 10
   daily_picture_min_chars: 500
-

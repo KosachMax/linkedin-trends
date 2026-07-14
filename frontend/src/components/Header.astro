@@ -1,7 +1,7 @@
 ---
 import type { DailyDigest } from "../lib/types";
-interface Props { digest: DailyDigest; digests: Array<{ id: string; current: DailyDigest }> }
-const { digest, digests } = Astro.props;
+interface Props { digest: DailyDigest }
+const { digest } = Astro.props;
 const health = digest.sources.length
   ? Math.round(digest.sources.reduce((sum, source) => sum + (source.state === "available" ? 1 : source.state === "degraded" ? .5 : 0), 0) / digest.sources.length * 100)
   : 0;

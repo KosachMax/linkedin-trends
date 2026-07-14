@@ -39,6 +39,11 @@ class RssCollector:
                     collected_at=context.started_at,
                     language=config.language,
                     topic_hints=config.tags,
+                    metadata={
+                        "ignored_query_params": config.options.get(
+                            "ignored_query_params", []
+                        )
+                    },
                 ))
             state = SourceState.AVAILABLE if articles else SourceState.DEGRADED
             return CollectorResult(articles=articles, state=state, latency_ms=int((perf_counter() - started) * 1000))

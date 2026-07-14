@@ -3,6 +3,7 @@ from .models import (
     DailyDigest,
     DigestEvent,
     DigestProfile,
+    EventIdentity,
     RawArticle,
     SourceConfig,
     SourceRun,
@@ -13,8 +14,8 @@ __all__ = [
     "DailyDigest",
     "DigestEvent",
     "DigestProfile",
+    "EventIdentity",
     "RawArticle",
     "SourceConfig",
     "SourceRun",
 ]
-

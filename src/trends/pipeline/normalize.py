@@ -16,7 +16,8 @@ def normalize_title(value: str) -> str:
 
 
 def normalize_article(raw: RawArticle) -> Article:
-    url = canonicalize_url(str(raw.url))
+    ignored_query_params = raw.metadata.get("ignored_query_params", [])
+    url = canonicalize_url(str(raw.url), ignored_query_params)
     published_at = raw.published_at
     if published_at and published_at.tzinfo is None:
         published_at = published_at.replace(tzinfo=UTC)

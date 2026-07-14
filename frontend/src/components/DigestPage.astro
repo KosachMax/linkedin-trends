@@ -20,7 +20,7 @@ const categoryLabels: Record<string, string> = {
 };
 const categories = [...new Set(digest.events.map((event) => event.category))];
 ---
-<Header digest={digest} digests={digests} />
+<Header digest={digest} />
 <main class="page-shell">
   <div class="page-intro">
     <nav class="feed-tabs" aria-label="Выбрать дайджест">
