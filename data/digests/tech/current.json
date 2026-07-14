@@ -1,11 +1,11 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "digest_id": "tech",
   "date": "2026-07-14",
-  "generated_at": "2026-07-14T12:07:10.460604Z",
+  "generated_at": "2026-07-14T12:43:49.679681Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» отобрано 24 подтвержденных событий. Редакционный фильтр обработал 33 тематических материалов и исключил 13 неподтвержденных кластеров."
+    "body": "В выпуске «Технологии» отобрано 10 подтвержденных событий. Редакционный фильтр обработал 32 материалов, объединил 4 повторных карточек и исключил 0 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
@@ -14,16 +14,16 @@
       "source_name": "Al Jazeera",
       "state": "available",
       "fetched": 20,
-      "accepted": 1,
-      "represented_events": 1,
-      "latency_ms": 106,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 173,
       "error_code": null,
       "history": [
         0,
         0,
         0,
         1,
-        1
+        0
       ]
     },
     {
@@ -31,16 +31,16 @@
       "source_name": "arXiv AI",
       "state": "available",
       "fetched": 20,
-      "accepted": 12,
-      "represented_events": 12,
-      "latency_ms": 648,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 941,
       "error_code": null,
       "history": [
         0,
         0,
         8,
-        4,
-        12
+        12,
+        0
       ]
     },
     {
@@ -50,7 +50,7 @@
       "fetched": 30,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 384,
+      "latency_ms": 528,
       "error_code": null,
       "history": [
         0,
@@ -67,7 +67,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 665,
+      "latency_ms": 575,
       "error_code": null,
       "history": [
         1,
@@ -82,16 +82,16 @@
       "source_name": "DEV Community Python",
       "state": "available",
       "fetched": 12,
-      "accepted": 7,
-      "represented_events": 7,
-      "latency_ms": 280,
+      "accepted": 10,
+      "represented_events": 10,
+      "latency_ms": 490,
       "error_code": null,
       "history": [
         12,
         9,
         7,
-        3,
-        7
+        7,
+        10
       ]
     },
     {
@@ -101,7 +101,7 @@
       "fetched": 16,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 61,
+      "latency_ms": 536,
       "error_code": null,
       "history": [
         0,
@@ -118,7 +118,7 @@
       "fetched": 10,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 334,
+      "latency_ms": 234,
       "error_code": null,
       "history": [
         2,
@@ -135,7 +135,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1557,
+      "latency_ms": 1722,
       "error_code": null,
       "history": [
         0,
@@ -152,7 +152,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 853,
+      "latency_ms": 1228,
       "error_code": null,
       "history": [
         0,
@@ -165,262 +165,15 @@
   ],
   "articles": [
     {
-      "id": "9cacd0ca676cbe16f8ba",
-      "source_id": "aljazeera",
-      "source_name": "Al Jazeera",
-      "canonical_url": "https://www.aljazeera.com/news/2026/7/14/who-will-win-the-2026-fifa-world-cup-heres-what-ai-predicts?traffic_source=rss",
-      "title": "Who will win the 2026 FIFA World Cup? Here’s what AI predicts",
-      "normalized_title": "who will win the 2026 fifa world cup? here’s what ai predicts",
-      "excerpt": "Al Jazeera put nine leading AI models to the test to predict the 2026 FIFA Men's World Cup champion.",
-      "published_at": "2026-07-14T07:59:07Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "world",
-        "politics",
-        "conflict"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "9ec74172348fcaec8b4c",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09665",
-      "title": "Format Sensitivity Index: Token-Controlled Prompt Wrapper Robustness and Schema Compliance in LLM Benchmarking",
-      "normalized_title": "format sensitivity index: token-controlled prompt wrapper robustness and schema compliance in llm benchmarking",
-      "excerpt": "arXiv:2607.09665v1 Announce Type: new Abstract: Prompt wrappers often differ only in formatting, yet they can change model scores enough to flip leaderboard conclusions. We study this variance under a token-controlled protocol and introduce two complementary metrics: the Format Sensitivity Index (FSI), the accuracy range induced by wrapper choice, and the Parseability Sensitivity Index (PSI), the corresponding range in answer parseability. Across 140,000 OpenRouter generations spanning 7 QA tasks, 5 wrapper families, and 4 instruct models from 7B to 72B parameters, we find that mean FSI varies by over 30x across models and is largely explained by compliance failures. A fixed-effects regression shows that parseability remains a strong predictor of accuracy even after controlling for task, model, and wrapper. We argue that reporting accuracy without wrapper variance and compliance is statistically fragile, and we give practical recommendations for both benchmarking and structured-output",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "9668e15cb06b7ffeb207",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09678",
-      "title": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
-      "normalized_title": "faithful, not corrective: message-format effects in multi-hop agent relays are tier-dependent",
-      "excerpt": "arXiv:2607.09678v1 Announce Type: new Abstract: When LLM agents hand off information to one another, does the message format matter? Two literatures disagree: format-optimization work reports that structured messages cut cost without hurting accuracy, while format-restriction work finds that imposing structure degrades generation -- and neither measures what happens when a message traverses multiple hops, where copy fidelity, not one-shot generation, dominates. We introduce a controlled relay testbed: briefs of twelve programmatically generated atomic facts are re-encoded hop-by-hop in five formats (free NL, precision-instructed NL, JSON, triples, key-value) over six hops, scored by a fixed strong grader against programmatic ground truth, across two relay-capability tiers, a cognitive-load condition, and a paired-fork error injection. We find that message-format effects are tier-dependent. (i) Under faithful-relay instructions a strong relay is nearly lossless -- the documented \"telep",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "08e25924db87eb2b1ff4",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09689",
-      "title": "Boltzmann MapReduce: A Partition-Function Reduce for Forkable Sandboxes",
-      "normalized_title": "boltzmann mapreduce: a partition-function reduce for forkable sandboxes",
-      "excerpt": "arXiv:2607.09689v1 Announce Type: new Abstract: To leading order under local asymptotic normality (LAN), the confidence density a worker emits over a chunk of size $n$ is a Gibbs--Boltzmann measure $\\exp\\{-\\beta E(\\theta)\\}$ whose inverse temperature is the sample size, $\\beta=n$. Three consequences are exact in the Gaussian/linear case and first-order otherwise: disjoint chunks carry independent Boltzmann factors, so the MapReduce \\emph{reduce}, read literally, is a partition function $Z=\\int\\prod_k h_k\\,d\\theta$ whose mode is precision-weighted (inverse-variance) pooling; frequentist consistency is the zero-temperature limit $T=1/n\\to0$",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "74070a21e12667f85e25",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09698",
-      "title": "Interpreting Latent CoT Reasoning as Dynamical Systems",
-      "normalized_title": "interpreting latent cot reasoning as dynamical systems",
-      "excerpt": "arXiv:2607.09698v1 Announce Type: new Abstract: Recent latent reasoning methods, such as CODI and COCONUT, face a fundamental interpretability problem: they maintain multiple superimposed candidate traces in the hidden space at each step, unlike explicit- CoT, which follows a single transparent reasoning trace. Existing mechanistic methods show compression, shortcuts, and superposition without explaining how reasoning evolves across latent steps. To address this gap, we model latent token sequences as trajectories in representation space and apply dynamical systems analysis to characterize the evolution of reasoning. Using quantitative measures, such as step-to-step change, direction consistency, and Lyapunov sensitivity, alongside qualitative projections, such as UMAP and DMD/PHATE, we show that latent CoT exhibits structured, non-random dynamics with two distinct stability classes. CODI behaves as a stable attractor, while COCONUT behaves as an unstable expanding system, and SIM-CoT",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "fd437b300c95e733dab4",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09708",
-      "title": "GES-TSP: Graph Edge Sparsification for TSP",
-      "normalized_title": "ges-tsp: graph edge sparsification for tsp",
-      "excerpt": "arXiv:2607.09708v1 Announce Type: new Abstract: Solving large-scale instances of the Traveling Salesman Problem (TSP) exactly is computationally expensive. Researchers often employ graph sparsification methods to improve computational efficiency. Traditional sparsification methods typically rely on fixed heuristics and fail to fully exploit instance-specific structural information. In this paper, we propose Graph Edge Sparsification (GES), a learning-based sparsification approach for Euclidean TSP. By incorporating geometric structural information and combinatorial optimization technology, our proposed method adaptively generates a sparsification graph for different instances, significantly reducing the graph size and accelerating the solving process. Experimental results demonstrate that our sparsification method can prune up to 95% of edges on the MATILDA dataset, while keeping the solution gap within 1% of the optimal value. Moreover, our approach exhibits strong generalization cap",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "e1a3d3b7a29880172934",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09713",
-      "title": "Closed-Loop Control with Rule-Aligned Small Language Models and Multi-Agent Self-Correction",
-      "normalized_title": "closed-loop control with rule-aligned small language models and multi-agent self-correction",
-      "excerpt": "arXiv:2607.09713v1 Announce Type: new Abstract: A key step toward autonomous industrial operation is the ability to create and reconfigure control policies from natural-language requirement specifications, with minimal or no manual redesign. In this setting, policy generation by AI agents can be a credible path when paired with a plant-aware validator (e.g., a digital twin) that can check generated candidate actions before execution. However, practical deployment is constrained by inference latency and compute footprint: large cloud-based models are often too slow, opaque, or data-sensitive for edge closed-loop use. This work investigates whether a compact Small Language Model (SLM) can be retrained for control reasoning and embedded in a validator-guided correction loop. We use a Qwen2.5-1.5B model aligned via Group Relative Policy Optimization (GRPO), combined with (i) an action agent, (ii) a symbolic/digital-twin-style validation layer, and (iii) a reprompting agent that iterativel",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "a52dafded9a98a529fd0",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09729",
-      "title": "AGM-like Paraconsistent Partial Meet Abductive Expansion Operation",
-      "normalized_title": "agm-like paraconsistent partial meet abductive expansion operation",
-      "excerpt": "arXiv:2607.09729v1 Announce Type: new Abstract: In his 1996 doctoral thesis, Maurice Pagnucco created the first AGM-like abductive expansion operation. Taking his operation as a basis, as well as a taxonomy -- inspired by Atocha Aliseda -- responsible for highlighting and formalizing the main components of abductive reasoning, the main aim of this paper is to present a new paraconsistent AGM-like abductive expansion operation -- capable of assimilating contradictory explanatory hypotheses without trivialization and the consequent absurd epistemic state -- with its postulates and its transitively relational partial meet construction. To a large extent, the formal development presented in this paper was only made possible by the recent creation of the paraconsistent logic RCbr, an LFI (Logics of Formal Inconsistencies) that establishes properties especially relevant to belief revision contexts, in particular, the ability to be self-extensional -- i.e., to satisfy the replacement propert",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "4236eaed7d3954e18bb9",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09740",
-      "title": "A Dynamic Scene Interaction Reasoning Framework for Scene-level Lane-Change Intention and Trajectory Prediction of Multiple Interacting Vehicles",
-      "normalized_title": "a dynamic scene interaction reasoning framework for scene-level lane-change intention and trajectory prediction of multiple interacting vehicles",
-      "excerpt": "arXiv:2607.09740v1 Announce Type: new Abstract: Safe motion planning in advanced driver-assistance systems and autonomous vehicles requires an accurate understanding of how the surrounding traffic scene is likely to evolve. However, many existing lane-change prediction methods remain centered on a single target vehicle, while multi-agent forecasting approaches often describe scene evolution only through future positions and provide limited explicit information about the maneuver associated with each vehicle. This study proposes a dynamic scene graph attention framework that predicts the lane-change intention and future trajectory of every relevant vehicle within a local traffic scene. The scene is represented as a time-varying interaction graph in which vehicles are modeled as nodes and their spatial and kinematic relationships are encoded through explicit edge features. Temporal graph-attention message passing captures evolving inter-vehicle dependencies and pre-maneuver cues, while",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "cfad5f73ee4b05e7100b",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09744",
-      "title": "A Theory of Least Autonomy in AI",
-      "normalized_title": "a theory of least autonomy in ai",
-      "excerpt": "arXiv:2607.09744v1 Announce Type: new Abstract: Least privilege, the principle that an identity should hold only the permissions strictly required for its task, has been a foundational primitive of access control for decades. We argue that this principle is insufficient for agentic AI systems, which do not merely hold permissions but can combine, approve, and amplify them across workflows and system boundaries. We propose least autonomy as an appropriate generalization and develop a formal theory. First, we define a compositional blast radius d(a,b) that measures structural separation between actions in an enterprise hierarchy, combining an ultrametric tree with lattice-valued confidentiality, integrity, and control-context labels. Second, we define a directed agent influence graph G(theta). An arc from U to V requires a directed shared-resource write-to-read meeting or a conservative undirected agent-to-agent (A2A) communication meeting, and a meeting-conditioned influence potentia",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "2cbd92e980653a7d796a",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09748",
-      "title": "Replicating Belief, Not Bits: Epistemic State Replication for Agentic Systems",
-      "normalized_title": "replicating belief, not bits: epistemic state replication for agentic systems",
-      "excerpt": "arXiv:2607.09748v1 Announce Type: new Abstract: In distributed systems, the classical State Machine Replication (SMR) model assumes that correct replicas execute deterministic transitions to yield identical bitwise states. However, the rise of agentic distributed systems -- where autonomous, stochastic, and model-driven agents orchestrate infrastructure -- presents scenarios where deterministic, bitwise replication is insufficient. Replicas operating with generative models may exhibit divergent reasoning paths, summaries, and token boundaries, yet reach semantically equivalent and correct operational decisions. Forcing bitwise agreement across these stochastic participants degrades execution flexibility, induces context amnesia, and limits performance. We argue that in such settings replicas should agree on belief, not bits. We propose Epistemic State Replication (ESR), a belief-replication layer for agentic distributed systems that shifts the replication boundary from data visibili",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "9c97c846ca6af80711cb",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09751",
-      "title": "Task-Conditioned Synthetic Data Generation for Improving Machine Learning Performance in Agricultural Prediction Tasks",
-      "normalized_title": "task-conditioned synthetic data generation for improving machine learning performance in agricultural prediction tasks",
-      "excerpt": "arXiv:2607.09751v1 Announce Type: new Abstract: Machine Learning (ML) algorithms have been widely used to estimate agricultural variables across diverse contexts. However, because the quantity and quality of training data strongly influence performance of ML algorithms, their use can be constrained by limited or incomplete reference data. Synthetic Data Generation (SDG) offers a practical approach to address this issue by producing artificial but realistic samples that preserve key characteristics of the original data. Building on teacher-student knowledge transfer and in-context learning for tabular data, this study proposes a Task-Conditioned SDG (TCSDG) algorithm that pairs a Bayesian Network generator with a transformer-based tabular foundation model (TabICL). The proposed algorithm was evaluated on two agricultural prediction tasks: crop yield prediction and crop type classification. Six benchmark SDG algorithms were also utilized to compare their performance with that of TCSDG.",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "ec8df54e275a3e17dea9",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.09762",
-      "title": "BatteryLake: Agentic, Physics-Grounded Curation of Heterogeneous Battery Aging Data and Benchmarking",
-      "normalized_title": "batterylake: agentic, physics-grounded curation of heterogeneous battery aging data and benchmarking",
-      "excerpt": "arXiv:2607.09762v1 Announce Type: new Abstract: Public battery aging datasets are a critical asset for advanced health management, but their practical use is often limited by inconsistent formats, unclear schemas, and metadata scattered across repositories and publications. Current curation remains largely manual and hard to reproduce, while general-purpose data integration tools miss the domain-specific semantics of electrochemical time-series data. We present BatteryLake, a governed data lakehouse that turns raw public battery data into benchmark-ready assets through an agentic, physics-grounded curation framework, with three contributions. First, LLM agents extract metadata and synthesize dataset-specific converters, grounding every output in verbatim evidence and abstaining when none supports a value. Second, a human-in-the-loop mechanism frames verification as selective prediction and gates admitted data through 26 schema, statistical, and physical-plausibility rules. Third, we r",
-      "published_at": "2026-07-14T04:00:00Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "efcb277cd57b61a61cb9",
+      "id": "9801c11d8d2eca224609",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/qingluan/how-to-use-llms-for-code-review-automation-39de",
-      "title": "How to Use LLMs for Code Review Automation",
-      "normalized_title": "how to use llms for code review automation",
-      "excerpt": "How to Use LLMs for Code Review Automation How to Use LLMs for Code Review Automation (And Actually Trust the Results) You’ve just spent three hours writing a feature, and you’re ready to merge. But then you see the dreaded “Waiting for reviewer” status on your pull request. Your team is busy, the feedback loop is slow, and you’re wondering if that clever abstraction you wrote is actually a hidden anti-pattern. Enter Large Language Models (LLMs): the tireless, instant-first-pass reviewer that doesn’t need coffee breaks. But there’s a catch. If you just dump your code into an LLM and ask “Is this good?”, you’ll get vague, unreliable advice. Research shows that LLMs can be unreliable in a fully automated code review environment without the right context and hybrid workflows [6]. The secret isn’t replacing humans; it’s augmenting them with a system that catches low-hanging fruit so your human reviewers can focus on archit",
-      "published_at": "2026-07-14T11:52:17Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "canonical_url": "https://dev.to/qingluan/build-a-text-summarizer-with-hugging-face-transformers-1cad",
+      "title": "Build a Text Summarizer with Hugging Face Transformers",
+      "normalized_title": "build a text summarizer with hugging face transformers",
+      "excerpt": "Build a Text Summarizer with Hugging Face Transformers Build a Text Summarizer with Hugging Face Transformers in Minutes Imagine having a 5,000-word research paper that needs to be condensed into a 200-word executive summary for your team before lunch. You could spend an hour reading, highlighting, and rewriting, or you could let a pre-trained AI model do the heavy lifting in under a second. That’s the power of text summarization, and with Hugging Face Transformers, you don’t need to be an NLP expert to build one. Summarization is a natural language processing (NLP) task where a model takes a large block of text and condenses it into a shorter, coherent version that retains the core meaning [4]. While building a custom model from scratch involves complex training loops and hyperparameter tuning, Hugging Face offers a shortcut: the pipeline API. This tool lets you initialize a state-of-the-art summarizer with just a few lin",
+      "published_at": "2026-07-14T12:33:55Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -431,15 +184,15 @@
       "engagement": null
     },
     {
-      "id": "69e7f3bc6567ad4efd45",
+      "id": "f460c929835465febe54",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/qingluan/build-a-kubernetes-pod-autoscaler-with-python-58le",
-      "title": "Build a Kubernetes Pod Autoscaler with Python",
-      "normalized_title": "build a kubernetes pod autoscaler with python",
-      "excerpt": "Build a Kubernetes Pod Autoscaler with Python Imagine your Python app is suddenly hit with a traffic spike that doubles in seconds. Your server slows, users complain, and you’re manually scaling pods in a panic. That’s the nightmare every DevOps engineer fears. But what if you could build your own Kubernetes Pod Autoscaler in Python—custom, lightweight, and tailored to your app’s unique metrics? No more waiting for generic HPA rules. You get full control, real-time responsiveness, and the ability to scale based on your business logic, not just CPU. Let’s build one today. Why Build a Custom Autoscaler in Python? Kubernetes comes with the built-in Horizontal Pod Autoscaler (HPA) , which scales based on CPU or memory usage [3][4]. But HPA has limitations: it can’t scale based on custom metrics like queue length, request latency, or external API response times. For those cases, you need a <",
-      "published_at": "2026-07-14T11:51:56Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "canonical_url": "https://dev.to/qingluan/how-to-build-a-shopify-app-with-python-4992",
+      "title": "How to Build a Shopify App with Python",
+      "normalized_title": "how to build a shopify app with python",
+      "excerpt": "How to Build a Shopify App with Python How to Build a Shopify App with Python You don’t need Node.js or React to extend Shopify’s ecosystem. While Shopify’s official tooling leans heavily toward JavaScript frameworks, you can build powerful, production-ready Shopify apps using Python and a lightweight web framework like Flask . Whether you’re automating inventory, customizing the storefront, or building a backend service for analytics, Python gives you a clean, readable path to integrate with Shopify’s API. Let’s get your first app running today. Why Python for Shopify Apps? Shopify’s documentation and sample apps often feature Node, Rails, or React, which can make Python developers feel like they’re missing out. But the reality is straightforward: Shopify’s API is HTTP-based , and any language that can make HTTP requests and handle webhooks can build a Shopify app. P",
+      "published_at": "2026-07-14T12:33:32Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -450,15 +203,15 @@
       "engagement": null
     },
     {
-      "id": "b2c7e2723c81d156a57a",
+      "id": "b7c8194988f6fbb0470a",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/timevolt/typescript-tips-to-write-safer-cleaner-code-mastering-the-force-530m",
-      "title": "TypeScript tips to write safer, cleaner code: Mastering the Force",
-      "normalized_title": "typescript tips to write safer, cleaner code: mastering the force",
-      "excerpt": "The Quest Begins (The “Why”) I still remember the first time I opened a pull request that looked innocent enough—just a few UI tweaks—but the CI pipeline exploded with a cascade of Property 'foo' does not exist on type 'never' errors. I spent two hours staring at the same line, convinced I’d missed a semicolon, when in reality the problem was that TypeScript had widened my string literal to string and lost the exact value I needed. That moment felt like trying to defeat a final boss with a wooden sword. I knew there had to be a sharper blade hidden in the language’s arsenal—something most tutorials gloss over, but that can turn a frustrating bug hunt into a satisfying “I‑got‑this” victory. So I embarked on a quest to uncover those hidden gems, and I’m excited to share the three surprises that leveled up my TypeScript game. The Revelation (The Insight) 1. as const – Locking Li",
-      "published_at": "2026-07-14T11:45:43Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "canonical_url": "https://dev.to/qingluan/build-a-real-time-currency-converter-with-python-49k2",
+      "title": "Build a Real-Time Currency Converter with Python",
+      "normalized_title": "build a real-time currency converter with python",
+      "excerpt": "Build a Real-Time Currency Converter with Python Build a Real-Time Currency Converter with Python Imagine you’re checking a product price on a global marketplace and instantly wondering, “How much is that in my local currency?” Instead of hopping to a browser tab and searching for a converter, you could have a sleek, real-time tool right in your Python script. That’s exactly what we’re building today: a real-time currency converter that fetches live exchange rates and gives you instant conversions—no manual updates, no outdated rates. This isn’t just a beginner tutorial; it’s a practical, production-ready script you can drop into your projects, embed in a CLI tool, or even wrap into a Flask app later. Let’s get coding. Why Real-Time Matters Static exchange rates (like hardcoding USD = 0.85 EUR ) are a trap. Markets shift constantly, and using outdated data can le",
+      "published_at": "2026-07-14T12:33:11Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -469,15 +222,15 @@
       "engagement": null
     },
     {
-      "id": "f19b289bdff77555fe4a",
+      "id": "315f8da1990bc6994f31",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/devhamzamughal/i-built-aiba-an-open-source-autonomous-web-agent-that-runs-50-parallel-sub-agents-using-visual-2698",
-      "title": "I built AIBA: An open-source autonomous web agent that runs 50+ parallel sub-agents using visual reasoning",
-      "normalized_title": "i built aiba: an open-source autonomous web agent that runs 50+ parallel sub-agents using visual reasoning",
-      "excerpt": "<img alt=\" \" height=\"1000\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.us-east-2.amazonaws.com%2Fuploads%2Farticles%2Fm9dimqzaoz42f8urb3",
-      "published_at": "2026-07-14T11:43:16Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "canonical_url": "https://dev.to/qingluan/python-performance-profiling-find-and-fix-bottlenecks-468o",
+      "title": "Python Performance Profiling: Find and Fix Bottlenecks",
+      "normalized_title": "python performance profiling: find and fix bottlenecks",
+      "excerpt": "Python Performance Profiling: Find and Fix Bottlenecks Python Performance Profiling: Find and Fix Bottlenecks Your Python script runs fine on your laptop, but when you deploy it to production, users are complaining about lag. You’ve added a few print() statements to guess where things are slow, but that’s just guessing—and in performance engineering, guessing is the enemy. The truth is, you can’t fix what you don’t measure . That’s where performance profiling comes in: it’s the systematic way to pinpoint exactly which lines of code are dragging your application down, so you can stop wasting time optimizing the wrong things. Why Profiling Matters (and Guessing Doesn’t) Profiling isn’t just about making code faster; it’s about making it predictably faster. Without real data, you’re flying blind. You might optimize a function that only runs 1% of the time while ignoring the one tha",
+      "published_at": "2026-07-14T12:29:39Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -488,15 +241,15 @@
       "engagement": null
     },
     {
-      "id": "2702f8a632c6b4b55149",
+      "id": "a506df63b06d04835f3d",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/qingluan/build-a-real-time-notification-system-with-server-sent-events-59ge",
-      "title": "Build a Real-Time Notification System with Server-Sent Events",
-      "normalized_title": "build a real-time notification system with server-sent events",
-      "excerpt": "Build a Real-Time Notification System with Server-Sent Events Build a Real-Time Notification System with Server-Sent Events Your users are waiting for that \"new message\" alert, but your current polling strategy is burning database CPU and draining battery life. Every few seconds, your frontend fires an HTTP request asking, \"Is there anything new?\" and the server replies, \"Nope.\" Do this a thousand times a minute, and you’ve built a performance nightmare. The solution isn’t always WebSockets, which introduce complex connection management and bi-directional state. For the specific case of pushing notifications from server to client, there’s a simpler, standardized, and often more efficient tool: Server-Sent Events (SSE) . SSE allows the server to push updates to the client over a single, long-lived HTTP connection. It’s unidirectional (server → client), lightweight, and works natively in browsers via the Eve",
-      "published_at": "2026-07-14T11:16:18Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "canonical_url": "https://dev.to/qingluan/build-an-ai-powered-resume-screener-with-python-2ka3",
+      "title": "Build an AI-Powered Resume Screener with Python",
+      "normalized_title": "build an ai-powered resume screener with python",
+      "excerpt": "Build an AI-Powered Resume Screener with Python Build an AI-Powered Resume Screener with Python Imagine a hiring manager drowning in 500 PDF resumes for a single junior developer role. They spend hours scrolling, copying, and pasting text into spreadsheets, only to realize they missed the perfect candidate buried on page 43. That’s not just inefficient; it’s a war on talent. But what if you could automate the first pass of screening, instantly ranking candidates based on how well their skills match the job description? You can, and you can build it today with Python, a few open-source libraries, and a clear strategy. This isn’t about replacing human judgment. It’s about freeing recruiters to focus on the why behind a hire, rather than the what of keyword matching. Let’s build a practical, AI-powered resume screener that extracts text, analyzes skill fit, and returns a match score—no enterprise budget required. <h",
+      "published_at": "2026-07-14T12:28:58Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -507,15 +260,15 @@
       "engagement": null
     },
     {
-      "id": "67241baf763956950f18",
+      "id": "da4590dc3bc5e1ff18af",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/qingluan/python-string-methods-youre-probably-not-using-1naj",
-      "title": "Python String Methods You're Probably Not Using",
-      "normalized_title": "python string methods you're probably not using",
-      "excerpt": "Python String Methods You're Probably Not Using You’ve been using upper() , lower() , and split() for years, but Python’s string methods hide a suite of powerful, underused tools that can clean data, validate input, and format output with far less code than you think. Most developers stop at the basics, missing methods that solve real problems like padding IDs, detecting numeric Unicode characters, or splitting text by lines without regex. Let’s dive into five obscure but practical string methods you can use today to write cleaner, more efficient Python. str.partition() : Split Once, Get Three Parts When you need to split a string at the first occurrence of a separator and keep the before, separator, and after parts together, partition() is your friend. Unlike split() , which returns a list of all segments, <code",
-      "published_at": "2026-07-14T11:15:55Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "canonical_url": "https://dev.to/proxyprivat/a-practical-guide-to-proxies-for-web-scraping-with-python-examples-1h6o",
+      "title": "A Practical Guide to Proxies for Web Scraping (with Python examples)",
+      "normalized_title": "a practical guide to proxies for web scraping (with python examples)",
+      "excerpt": "If you have written more than a couple of scrapers, you already know the pattern. The first few hundred requests fly through. Then responses slow down, you start seeing 429 Too Many Requests , a captcha wall appears, and finally the target just returns empty pages or a hard 403 . Your code did not change. Your IP did. Scraping at any real volume is less about parsing HTML and more about managing where your requests come from. This post is a practical walk-through of how proxies fit into a scraping pipeline: why a single IP fails, what proxy types actually matter, how rotation works, and how to wire it all up in Python with requests , aiohttp , and Scrapy. There is code you can copy, plus the mistakes that cost me the most time. Why one IP is never enough Every site you scrape sees the same thing: a stream of requests from one address, arriving faster and more regularly than a human ever would. Anti-b",
+      "published_at": "2026-07-14T12:26:42Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -526,15 +279,72 @@
       "engagement": null
     },
     {
-      "id": "f91f764968c40dc402b9",
+      "id": "bd354f7435b24bd99679",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/qingluan/how-to-build-a-profitable-ai-chatbot-for-businesses-1id8",
-      "title": "How to Build a Profitable AI Chatbot for Businesses",
-      "normalized_title": "how to build a profitable ai chatbot for businesses",
-      "excerpt": "How to Build a Profitable AI Chatbot for Businesses How to Build a Profitable AI Chatbot for Businesses Imagine a sales rep who never sleeps, answers 100 customer queries per minute, and books appointments while you sleep. That’s not a sci-fi dream—it’s an AI chatbot, and businesses are paying real money for it right now. The secret isn’t just building a bot; it’s building one that solves a specific business problem and then selling it as a recurring revenue service. If you’re a developer, freelancer, or tech-savvy entrepreneur, you can launch this business today with minimal upfront cost. Choose a Niche Before You Write Code The biggest mistake beginners make is building a “general” chatbot. Generic bots don’t sell. Profitable chatbots solve specific pain points for specific industries. Pick a High-Value Niche Focus on businesses where customer inquiries are fr",
-      "published_at": "2026-07-14T11:03:57Z",
-      "collected_at": "2026-07-14T12:07:10.468252Z",
+      "canonical_url": "https://dev.to/wladradchenko/hiding-the-seam-making-a-lip-synced-mouth-stop-looking-pasted-on-47nn",
+      "title": "Hiding the seam: making a lip-synced mouth stop looking pasted on",
+      "normalized_title": "hiding the seam: making a lip-synced mouth stop looking pasted on",
+      "excerpt": "Lip-sync models like Wav2Lip give you a small, correct mouth. Then you paste that mouth back onto the face and the illusion collapses. You can see the rectangle. The skin tone is off by a shade, the lighting does not match, and the jaw flickers between frames. The network did its job. The compositing gave it away. The interesting code in a lip-sync pipeline is not the model. It is everything that happens after the model, in the few dozen lines that make a generated patch belong to a real face. This is a walkthrough of that part. <img alt=\"Close portrait\" height=\"1800\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517462964-21fdcec3f25b%",
+      "published_at": "2026-07-14T12:22:00Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "ca33f31912dbe4722b60",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/truelane/i-wish-i-knew-about-these-coding-models-sooner-the-full-breakdown-3009",
+      "title": "I Wish I Knew About These Coding Models Sooner — The Full Breakdown",
+      "normalized_title": "i wish i knew about these coding models sooner — the full breakdown",
+      "excerpt": "Look, i Wish I Knew About These Coding Models Sooner — The Full Breakdown Six months ago I would have told you \"yeah, AI coding is neat\" and moved on. Then my burn rate forced me to actually pay attention. When you're running a startup with eight engineers and a quarterly compute bill that makes your CFO physically wince, you stop being precious about which model \"feels\" smartest and start asking what model ships the most production-quality code per dollar. I spent the last quarter running our own bake-off. Not a toy benchmark — real tickets, real services, real production deploys. We put ten models through five coding tasks across Python, JavaScript, TypeScript, and Go. Here's the honest data, what I'd build differently if I started over, and where the ROI math actually pencils out at scale. The Stack I Tested (And Why I'm Not Locked In) Before the numbers, let me explain my setup. I refuse vendor lock-in by default — it's the CTO equival",
+      "published_at": "2026-07-14T12:21:44Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "9834e8c76b7cbce86721",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/ruslan_manov/mathematical-animations-in-pure-python-zero-dependencies-one-file-4k4i",
+      "title": "Mathematical Animations in Pure Python — Zero Dependencies, One File",
+      "normalized_title": "mathematical animations in pure python — zero dependencies, one file",
+      "excerpt": "I wanted an ambient display for the second monitor in an open-space office: something alive enough to rest the eyes on, quiet enough not to distract, and installable nowhere — because the machine is a locked- down corporate laptop. No pygame, no numpy, no GPU, no admin rights. So the constraint became the project: real mathematics, rendered with nothing but tkinter and math . One file. If you have Python, you already have everything it needs. Repo: https://github.com/RMANOV/algorithmic-arts What's inside <img alt=\"Hopf fibration\" height=\"300",
+      "published_at": "2026-07-14T12:10:38Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "37c3a63865344629b3b1",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/qingluan/how-to-build-a-micro-saas-in-48-hours-1m92",
+      "title": "How to Build a Micro-SaaS in 48 Hours",
+      "normalized_title": "how to build a micro-saas in 48 hours",
+      "excerpt": "How to Build a Micro-SaaS in 48 Hours You don’t need a year of development or a six-figure budget to launch a profitable Micro-SaaS; you just need a sharp problem, a ruthless 48-hour sprint, and a stack that lets you ship code before the weekend ends. The secret isn’t working faster—it’s working smaller. Most indie developers fail because they try to build a platform instead of a tool. A Micro-SaaS solves one specific pain for a specific audience and charges for it immediately. If you can identify a niche itch and scratch it with a Minimum Viable Product (MVP) in two days, you’ve already beaten 90% of the competition who are still debating feature lists. Here is the exact playbook to go from zero to a live, paying Micro-SaaS in 48 hours. Pick a Niche Pain, Not a Cool Idea Stop brainstorming “AI for everything.” That’s a graveyard of failed projects. Instead, look for a problem you perso",
+      "published_at": "2026-07-14T12:05:44Z",
+      "collected_at": "2026-07-14T12:43:49.688606Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -547,438 +357,314 @@
   ],
   "events": [
     {
-      "id": "tech-21a70d87c2c3760e",
-      "slug": "эксперты-призывают-к-немедленной-подготовке-к-последствиям-ии",
-      "title": "Эксперты призывают к немедленной подготовке к последствиям ИИ",
-      "brief": "Более 200 экономистов и исследователей в области искусственного интеллекта (ИИ) обратились к мировым лидерам с призывом срочно подготовиться к грядущим масштабным экономическим потрясениям, вызванным развитием ИИ. Они подчеркивают, что игнорирование потенциальных рисков может привести к необратимым последствиям для мировой экономики и общества в целом. Эксперты настаивают на необходимости разработки глобальных стратегий и мер регулирования уже сейчас, чтобы смягчить негативное влияние и использовать возможности ИИ во благо человечества.",
-      "context": "Развитие технологий искусственного интеллекта (ИИ) достигло критической точки, вызывая обеспокоенность у ведущих специалистов в области экономики и исследований ИИ. По мере того как ИИ становится все более мощным и интегрированным в различные сферы жизни, возникает реальная угроза значительных экономических и социальных сдвигов. Отчеты и предупреждения от авторитетных организаций и экспертов указывают на потенциальные риски, связанные с автоматизацией рабочих мест, усилением неравенства и изменением структуры мировой экономики. Эти опасения подкрепляются быстрыми темпами развития ИИ и его растущим влиянием на производительность, занятость и распределение богатства.",
-      "why_it_matters": "Игнорирование потенциального воздействия ИИ на экономику может привести к серьезным социальным и экономическим последствиям, включая массовую безработицу, рост неравенства и дестабилизацию рынков. Своевременная подготовка и разработка соответствующих мер регулирования позволят смягчить эти риски, обеспечить плавный переход к новой экономической реальности и использовать возможности ИИ для устойчивого развития и повышения благосостояния общества.",
-      "importance": 8,
+      "id": "tech-e6a7848131d290b2",
+      "slug": "build-a-text-summarizer-with-hugging-face-transformers",
+      "title": "Build a Text Summarizer with Hugging Face Transformers",
+      "brief": "Build a Text Summarizer with Hugging Face Transformers Build a Text Summarizer with Hugging Face Transformers in Minutes Imagine having a 5,000-word research paper that needs to be condensed into a 200-word executive summary for your team before lunch. You could spend an hour reading, highlighting, and rewriting, or you could let a pre-trained AI model do the heavy lifting in under a second. That’s the power of text summarization, and with Hugging Face Transformers, you don’t need to be an NLP expert to build one. Summarization is a natural language processing (NLP) task where a model takes a large block of text and condenses it into a shorter, coherent version that retains the core meaning [4]. While building a custom model from scratch involves complex training loops and hyperparameter tuning, Hugging Face offers a shortcut: the pipeline API. This tool lets you initialize a state-of-the-art summarizer with just a few lin",
+      "context": "Build a Text Summarizer with Hugging Face Transformers Build a Text Summarizer with Hugging Face Transformers in Minutes Imagine having a 5,000-word research paper that needs to be condensed into a 200-word executive summary for your team before lunch. You could spend an hour reading, highlighting, and rewriting, or you could let a pre-trained AI model do the heavy lifting in under a second. That’s the power of text summarization, and with Hugging Face Transformers, you don’t need to be an NLP expert to build one. Summarization is a natural language processing (NLP) task where a model takes a large block of text and condenses it into a shorter, coherent version that retains the core meaning [4]. While building a custom model from scratch involves complex training loops and hyperparameter tuning, Hugging Face offers a shortcut: the pipeline API. This tool lets you initialize a state-of-the-art summarizer with just a few lin",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
       "status": "new",
-      "category": "Технологии",
+      "category": "backend",
       "article_ids": [
-        "ecd4eea1a7366029dcfc"
+        "9801c11d8d2eca224609"
       ],
       "facts": [
         {
-          "text": "Более 200 экономистов и исследователей в области ИИ призвали мировых лидеров к немедленной подготовке к масштабным экономическим потрясениям, связанным с ИИ.",
+          "text": "Build a Text Summarizer with Hugging Face Transformers Build a Text Summarizer with Hugging Face Transformers in Minutes Imagine having a 5,000-word research paper that needs to be condensed into a 200-word executive summary for your team before lunch. You could spend an hour reading, highlighting, and rewriting, or you could let a pre-trained AI model do the heavy lifting in under a second. That’s the power of text summarization, and with Hugging Face Transformers, you don’t need to be an NLP expert to build one. Summarization is a natural language processing (NLP) task where a model takes a large block of text and condenses it into a shorter, coherent version that retains the core meaning [4]. While building a custom model from scratch involves complex training loops and hyperparameter tuning, Hugging Face offers a shortcut: the pipeline API. This tool lets you initialize a state-of-the-art summarizer with just a few lin",
           "article_ids": [
-            "ecd4eea1a7366029dcfc"
+            "9801c11d8d2eca224609"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-13T23:54:32Z",
-      "updated_at": "2026-07-14T07:26:46.766089Z"
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:33:55Z"
+      },
+      "first_seen_at": "2026-07-14T12:33:55Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
     },
     {
-      "id": "tech-625dcf80fde22b7e",
-      "slug": "проект-project-based-learning-на-github-набрал-более-273-тысяч-звезд",
-      "title": "Проект 'project-based-learning' на GitHub набрал более 273 тысяч звезд",
-      "brief": "Репозиторий 'project-based-learning' на GitHub, представляющий собой курированный список обучающих проектов, привлек внимание разработчиков, получив более 273 тысяч звезд. Этот проект, опубликованный 14 июля 2026 года, ориентирован на практическое обучение и охватывает такие языки программирования, как Python, JavaScript, Go и C++. Высокое количество звезд свидетельствует о его популярности и востребованности в сообществе разработчиков, ищущих практические примеры для обучения.",
-      "context": "Проект 'project-based-learning' был опубликован на платформе GitHub 14 июля 2026 года. Он представляет собой тщательно подобранную коллекцию обучающих материалов, ориентированных на практическое применение знаний через создание реальных проектов. Проект охватывает широкий спектр языков программирования, включая Python, JavaScript, Go и C++, что делает его универсальным ресурсом для разработчиков разного уровня.",
-      "why_it_matters": "Огромное количество звезд, полученное проектом 'project-based-learning' (более 273 тысяч), подчеркивает его значимость и востребованность в сообществе разработчиков. Это указывает на высокую потребность в качественных, практико-ориентированных обучающих ресурсах. Популярность проекта может стимулировать дальнейшее развитие подобных инициатив и способствовать повышению уровня практических навыков у начинающих и опытных программистов.",
-      "importance": 8,
+      "id": "tech-6dedf9e8b97674f6",
+      "slug": "how-to-build-a-shopify-app-with-python",
+      "title": "How to Build a Shopify App with Python",
+      "brief": "How to Build a Shopify App with Python How to Build a Shopify App with Python You don’t need Node.js or React to extend Shopify’s ecosystem. While Shopify’s official tooling leans heavily toward JavaScript frameworks, you can build powerful, production-ready Shopify apps using Python and a lightweight web framework like Flask . Whether you’re automating inventory, customizing the storefront, or building a backend service for analytics, Python gives you a clean, readable path to integrate with Shopify’s API. Let’s get your first app running today. Why Python for Shopify Apps? Shopify’s documentation and sample apps often feature Node, Rails, or React, which can make Python developers feel like they’re missing out. But the reality is straightforward: Shopify’s API is HTTP-based , and any language that can make HTTP requests and handle webhooks can build a Shopify app. P",
+      "context": "How to Build a Shopify App with Python How to Build a Shopify App with Python You don’t need Node.js or React to extend Shopify’s ecosystem. While Shopify’s official tooling leans heavily toward JavaScript frameworks, you can build powerful, production-ready Shopify apps using Python and a lightweight web framework like Flask . Whether you’re automating inventory, customizing the storefront, or building a backend service for analytics, Python gives you a clean, readable path to integrate with Shopify’s API. Let’s get your first app running today. Why Python for Shopify Apps? Shopify’s documentation and sample apps often feature Node, Rails, or React, which can make Python developers feel like they’re missing out. But the reality is straightforward: Shopify’s API is HTTP-based , and any language that can make HTTP requests and handle webhooks can build a Shopify app. P",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
       "status": "new",
-      "category": "Образование и Разработка ПО",
+      "category": "backend",
       "article_ids": [
-        "348c3b24fec760b670fa"
+        "f460c929835465febe54"
       ],
       "facts": [
         {
-          "text": "Репозиторий 'project-based-learning' на GitHub является курированным списком обучающих проектов.",
+          "text": "How to Build a Shopify App with Python How to Build a Shopify App with Python You don’t need Node.js or React to extend Shopify’s ecosystem. While Shopify’s official tooling leans heavily toward JavaScript frameworks, you can build powerful, production-ready Shopify apps using Python and a lightweight web framework like Flask . Whether you’re automating inventory, customizing the storefront, or building a backend service for analytics, Python gives you a clean, readable path to integrate with Shopify’s API. Let’s get your first app running today. Why Python for Shopify Apps? Shopify’s documentation and sample apps often feature Node, Rails, or React, which can make Python developers feel like they’re missing out. But the reality is straightforward: Shopify’s API is HTTP-based , and any language that can make HTTP requests and handle webhooks can build a Shopify app. P",
           "article_ids": [
-            "348c3b24fec760b670fa"
-          ]
-        },
-        {
-          "text": "Проект 'project-based-learning' был опубликован 14 июля 2026 года.",
-          "article_ids": [
-            "348c3b24fec760b670fa"
-          ]
-        },
-        {
-          "text": "Проект 'project-based-learning' имеет более 273 тысяч звезд на GitHub.",
-          "article_ids": [
-            "348c3b24fec760b670fa"
-          ]
-        },
-        {
-          "text": "Проект поддерживает языки программирования, такие как Python, JavaScript, Go и C++.",
-          "article_ids": [
-            "348c3b24fec760b670fa"
+            "f460c929835465febe54"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-14T07:01:36Z",
-      "updated_at": "2026-07-14T07:26:46.766089Z"
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:33:32Z"
+      },
+      "first_seen_at": "2026-07-14T12:33:32Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
     },
     {
-      "id": "tech-f4bf25a44642b52f",
-      "slug": "индекс-чувствительности-к-формату-как-оформление-промптов-влияет-на-результаты-l",
-      "title": "Индекс чувствительности к формату: как оформление промптов влияет на результаты LLM",
-      "brief": "Исследователи представили Индекс чувствительности к формату (FSI) и Индекс чувствительности к разбору (PSI) для оценки влияния оформления промптов на результаты больших языковых моделей (LLM). Было проанализировано 140 000 генераций от моделей OpenRouter, охватывающих 7 задач QA, 5 семейств обёрток промптов и 4 модели LLM с параметрами от 7B до 72B. Результаты показали, что средний FSI варьируется более чем в 30 раз между моделями и в значительной степени объясняется ошибками соответствия. Разбор ответов остаётся сильным предиктором точности даже после учёта задачи, модели и обёртки. Авторы утверждают, что отчётность о точности без учёта вариативности обёрток и соответствия является статистически хрупкой.",
-      "context": "В области тестирования больших языковых моделей (LLM) часто возникает проблема, когда незначительные изменения в форматировании промптов могут существенно влиять на итоговые оценки моделей, что приводит к искажению выводов при сравнении их производительности. Это явление получило название «чувствительность к формату». Для количественной оценки этой проблемы исследователи разработали протокол с контролем токенов и ввели два новых показателя: Индекс чувствительности к формату (FSI) и Индекс чувствительности к разбору (PSI). FSI измеряет диапазон точности, вызванный выбором обёртки промпта, а PSI — соответствующий диапазон в возможности разбора ответа. Эти метрики позволяют более объективно оценивать надёжность и воспроизводимость результатов тестирования LLM.",
-      "why_it_matters": "Недооценка влияния форматирования промптов на результаты LLM может привести к ошибочным выводам о производительности моделей, что особенно критично при составлении рейтингов и выборе моделей для конкретных задач. Разработанные метрики FSI и PSI позволяют исследователям и разработчикам более точно оценивать устойчивость моделей к вариациям в оформлении входных данных, выявлять проблемы с разбором ответов и принимать обоснованные решения при бенчмаркинге. Это способствует повышению статистической надёжности результатов тестирования LLM и улучшению их практического применения.",
-      "importance": 7,
-      "status": "updated",
-      "category": "Технологии",
-      "article_ids": [
-        "9ec74172348fcaec8b4c"
-      ],
-      "facts": [
-        {
-          "text": "Исследователи представили Индекс чувствительности к формату (FSI) и Индекс чувствительности к разбору (PSI) для оценки влияния оформления промптов на результаты больших языковых моделей (LLM).",
-          "article_ids": [
-            "9ec74172348fcaec8b4c"
-          ]
-        },
-        {
-          "text": "Было проанализировано 140 000 генераций от моделей OpenRouter, охватывающих 7 задач QA, 5 семейств обёрток промптов и 4 модели LLM с параметрами от 7B до 72B.",
-          "article_ids": [
-            "9ec74172348fcaec8b4c"
-          ]
-        },
-        {
-          "text": "Средний FSI варьируется более чем в 30 раз между моделями и в значительной степени объясняется ошибками соответствия.",
-          "article_ids": [
-            "9ec74172348fcaec8b4c"
-          ]
-        },
-        {
-          "text": "Разбор ответов остаётся сильным предиктором точности даже после учёта задачи, модели и обёртки.",
-          "article_ids": [
-            "9ec74172348fcaec8b4c"
-          ]
-        },
-        {
-          "text": "Отчётность о точности без учёта вариативности обёрток и соответствия является статистически хрупкой.",
-          "article_ids": [
-            "9ec74172348fcaec8b4c"
-          ]
-        }
-      ],
-      "updates": [
-        {
-          "at": "2026-07-14T12:07:10.460604Z",
-          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
-          "article_ids": [
-            "9ec74172348fcaec8b4c"
-          ]
-        }
-      ],
-      "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T12:07:10.460604Z"
-    },
-    {
-      "id": "tech-9ffd3e7dafce9f85",
-      "slug": "формат-сообщений-влияет-на-передачу-информации-между-ии-агентами-в-зависимости-о",
-      "title": "Формат сообщений влияет на передачу информации между ИИ-агентами в зависимости от их возможностей",
-      "brief": "Исследование, опубликованное на arXiv, изучает, как формат сообщений влияет на передачу информации между многоступенчатыми ретрансляторами ИИ-агентов. В отличие от предыдущих работ, которые фокусировались на оптимизации формата для снижения затрат или на негативном влиянии ограничений на генерацию, данное исследование анализирует случаи, когда точность копирования информации имеет первостепенное значение. Была создана тестовая среда, в которой краткие сведения из двенадцати атомарных фактов передавались через шесть этапов с использованием пяти различных форматов: свободный естественный язык, естественный язык с инструкциями по точности, JSON, тройки и пары ключ-значение. Результаты показали, что влияние формата сообщения зависит от уровня возможностей ретранслирующего агента.",
-      "context": "Взаимодействие между ИИ-агентами, особенно при передаче информации по цепочке (многоступенчатые реле), является важной областью исследований. Существующие работы дают противоречивые результаты относительно влияния формата сообщений. Одни исследования утверждают, что структурированные сообщения снижают затраты без потери точности, тогда как другие указывают на то, что навязывание структуры ухудшает генерацию. Однако ни одно из исследований не рассматривало, что происходит при передаче информации через несколько этапов, где ключевым фактором становится точность копирования, а не однократная генерация.",
-      "why_it_matters": "Понимание того, как формат сообщений влияет на передачу информации между ИИ-агентами, имеет решающее значение для разработки более эффективных и надежных систем искусственного интеллекта. Это исследование проливает свет на то, как различные форматы могут влиять на точность и эффективность передачи данных в зависимости от сложности агентов, что может привести к улучшению архитектур ИИ для задач, требующих точной передачи информации, таких как совместное решение проблем или распределенные вычисления.",
-      "importance": 7,
+      "id": "tech-974fccb9ada8f459",
+      "slug": "build-a-real-time-currency-converter-with-python",
+      "title": "Build a Real-Time Currency Converter with Python",
+      "brief": "Build a Real-Time Currency Converter with Python Build a Real-Time Currency Converter with Python Imagine you’re checking a product price on a global marketplace and instantly wondering, “How much is that in my local currency?” Instead of hopping to a browser tab and searching for a converter, you could have a sleek, real-time tool right in your Python script. That’s exactly what we’re building today: a real-time currency converter that fetches live exchange rates and gives you instant conversions—no manual updates, no outdated rates. This isn’t just a beginner tutorial; it’s a practical, production-ready script you can drop into your projects, embed in a CLI tool, or even wrap into a Flask app later. Let’s get coding. Why Real-Time Matters Static exchange rates (like hardcoding USD = 0.85 EUR ) are a trap. Markets shift constantly, and using outdated data can le",
+      "context": "Build a Real-Time Currency Converter with Python Build a Real-Time Currency Converter with Python Imagine you’re checking a product price on a global marketplace and instantly wondering, “How much is that in my local currency?” Instead of hopping to a browser tab and searching for a converter, you could have a sleek, real-time tool right in your Python script. That’s exactly what we’re building today: a real-time currency converter that fetches live exchange rates and gives you instant conversions—no manual updates, no outdated rates. This isn’t just a beginner tutorial; it’s a practical, production-ready script you can drop into your projects, embed in a CLI tool, or even wrap into a Flask app later. Let’s get coding. Why Real-Time Matters Static exchange rates (like hardcoding USD = 0.85 EUR ) are a trap. Markets shift constantly, and using outdated data can le",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
       "status": "new",
-      "category": "Искусственный интеллект",
+      "category": "backend",
       "article_ids": [
-        "9668e15cb06b7ffeb207"
+        "b7c8194988f6fbb0470a"
       ],
       "facts": [
         {
-          "text": "Исследование изучает влияние формата сообщений на передачу информации между ИИ-агентами, проходящими через несколько этапов ретрансляции.",
+          "text": "Build a Real-Time Currency Converter with Python Build a Real-Time Currency Converter with Python Imagine you’re checking a product price on a global marketplace and instantly wondering, “How much is that in my local currency?” Instead of hopping to a browser tab and searching for a converter, you could have a sleek, real-time tool right in your Python script. That’s exactly what we’re building today: a real-time currency converter that fetches live exchange rates and gives you instant conversions—no manual updates, no outdated rates. This isn’t just a beginner tutorial; it’s a practical, production-ready script you can drop into your projects, embed in a CLI tool, or even wrap into a Flask app later. Let’s get coding. Why Real-Time Matters Static exchange rates (like hardcoding USD = 0.85 EUR ) are a trap. Markets shift constantly, and using outdated data can le",
           "article_ids": [
-            "9668e15cb06b7ffeb207"
-          ]
-        },
-        {
-          "text": "В работе используется тестовая среда, где краткие сведения из двенадцати атомарных фактов передаются через шесть этапов с использованием пяти различных форматов: свободный естественный язык, естественный язык с инструкциями по точности, JSON, тройки и пары ключ-значение.",
-          "article_ids": [
-            "9668e15cb06b7ffeb207"
-          ]
-        },
-        {
-          "text": "Результаты исследования показывают, что влияние формата сообщения зависит от уровня возможностей ретранслирующего агента.",
-          "article_ids": [
-            "9668e15cb06b7ffeb207"
-          ]
-        },
-        {
-          "text": "В условиях точной ретрансляции сильный ретранслятор действует почти без потерь.",
-          "article_ids": [
-            "9668e15cb06b7ffeb207"
+            "b7c8194988f6fbb0470a"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T12:07:10.460604Z"
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:33:11Z"
+      },
+      "first_seen_at": "2026-07-14T12:33:11Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
     },
     {
-      "id": "tech-a3bb9542f0c74801",
-      "slug": "новый-метод-обработки-данных-boltzmann-mapreduce",
-      "title": "Новый метод обработки данных Boltzmann MapReduce",
-      "brief": "Исследователи представили новый метод обработки данных под названием Boltzmann MapReduce, который использует концепцию плотности доверия для распределенной обработки информации. Метод основан на мере Больцмана-Гиббса, где обратная температура пропорциональна размеру обрабатываемого фрагмента данных. Этот подход позволяет независимо обрабатывать разрозненные фрагменты данных, а операция \"reduce\" интерпретируется как вычисление статистической суммы. Точность метода повышается в пределе нулевой температуры, что соответствует увеличению размера выборки.",
-      "context": "В области распределенной обработки данных и статистического анализа возникла необходимость в более эффективных методах. Традиционные подходы могут сталкиваться с ограничениями при работе с большими объемами информации и необходимостью обеспечения согласованности результатов. Представленный метод Boltzmann MapReduce предлагает новый взгляд на решение этих задач, используя принципы статистической физики для организации процесса обработки данных.",
-      "why_it_matters": "Разработка метода Boltzmann MapReduce имеет потенциал для значительного улучшения производительности и точности в задачах, требующих обработки больших наборов данных. Его применение может привести к более надежным и быстрым результатам в таких областях, как машинное обучение, анализ больших данных и научные вычисления, где точность и скорость обработки критически важны.",
-      "importance": 7,
+      "id": "tech-0e6d934a55717e08",
+      "slug": "python-performance-profiling-find-and-fix-bottlenecks",
+      "title": "Python Performance Profiling: Find and Fix Bottlenecks",
+      "brief": "Python Performance Profiling: Find and Fix Bottlenecks Python Performance Profiling: Find and Fix Bottlenecks Your Python script runs fine on your laptop, but when you deploy it to production, users are complaining about lag. You’ve added a few print() statements to guess where things are slow, but that’s just guessing—and in performance engineering, guessing is the enemy. The truth is, you can’t fix what you don’t measure . That’s where performance profiling comes in: it’s the systematic way to pinpoint exactly which lines of code are dragging your application down, so you can stop wasting time optimizing the wrong things. Why Profiling Matters (and Guessing Doesn’t) Profiling isn’t just about making code faster; it’s about making it predictably faster. Without real data, you’re flying blind. You might optimize a function that only runs 1% of the time while ignoring the one tha",
+      "context": "Python Performance Profiling: Find and Fix Bottlenecks Python Performance Profiling: Find and Fix Bottlenecks Your Python script runs fine on your laptop, but when you deploy it to production, users are complaining about lag. You’ve added a few print() statements to guess where things are slow, but that’s just guessing—and in performance engineering, guessing is the enemy. The truth is, you can’t fix what you don’t measure . That’s where performance profiling comes in: it’s the systematic way to pinpoint exactly which lines of code are dragging your application down, so you can stop wasting time optimizing the wrong things. Why Profiling Matters (and Guessing Doesn’t) Profiling isn’t just about making code faster; it’s about making it predictably faster. Without real data, you’re flying blind. You might optimize a function that only runs 1% of the time while ignoring the one tha",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
       "status": "new",
-      "category": "Наука и технологии",
+      "category": "backend",
       "article_ids": [
-        "08e25924db87eb2b1ff4"
+        "315f8da1990bc6994f31"
       ],
       "facts": [
         {
-          "text": "Представлен новый метод обработки данных Boltzmann MapReduce, основанный на мере Больцмана-Гиббса.",
+          "text": "Python Performance Profiling: Find and Fix Bottlenecks Python Performance Profiling: Find and Fix Bottlenecks Your Python script runs fine on your laptop, but when you deploy it to production, users are complaining about lag. You’ve added a few print() statements to guess where things are slow, but that’s just guessing—and in performance engineering, guessing is the enemy. The truth is, you can’t fix what you don’t measure . That’s where performance profiling comes in: it’s the systematic way to pinpoint exactly which lines of code are dragging your application down, so you can stop wasting time optimizing the wrong things. Why Profiling Matters (and Guessing Doesn’t) Profiling isn’t just about making code faster; it’s about making it predictably faster. Without real data, you’re flying blind. You might optimize a function that only runs 1% of the time while ignoring the one tha",
           "article_ids": [
-            "08e25924db87eb2b1ff4"
-          ]
-        },
-        {
-          "text": "В методе Boltzmann MapReduce обратная температура пропорциональна размеру обрабатываемого фрагмента данных (β=n).",
-          "article_ids": [
-            "08e25924db87eb2b1ff4"
-          ]
-        },
-        {
-          "text": "Разрозненные фрагменты данных несут независимые множители Больцмана, что позволяет использовать операцию \"reduce\" как статистическую сумму.",
-          "article_ids": [
-            "08e25924db87eb2b1ff4"
-          ]
-        },
-        {
-          "text": "Частотная согласованность достигается в пределе нулевой температуры (T=1/n→0).",
-          "article_ids": [
-            "08e25924db87eb2b1ff4"
+            "315f8da1990bc6994f31"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T12:07:10.460604Z"
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:29:39Z"
+      },
+      "first_seen_at": "2026-07-14T12:29:39Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
     },
     {
-      "id": "tech-736183fb45533a05",
-      "slug": "разработан-новый-метод-разреживания-графов-для-решения-задачи-коммивояжера",
-      "title": "Разработан новый метод разреживания графов для решения задачи коммивояжера",
-      "brief": "Исследователи представили новый подход к решению задачи коммивояжера (TSP), известной своей вычислительной сложностью для больших масштабов. Метод, названный Graph Edge Sparsification (GES), использует машинное обучение для адаптивного разреживания графов, учитывая специфику каждого конкретного случая. В отличие от традиционных эвристик, GES интегрирует геометрическую информацию и методы комбинаторной оптимизации для создания разреженного графа. Это позволяет значительно уменьшить размер графа и ускорить процесс поиска оптимального решения. Эксперименты показали, что метод способен отсекать до 95% ребер на наборе данных MATILDA, сохраняя при этом отклонение от оптимального решения менее чем на 1%. Метод также демонстрирует высокую обобщающую способность.",
-      "context": "Задача коммивояжера (TSP) является классической NP-трудной проблемой в области комбинаторной оптимизации. Она заключается в поиске кратчайшего возможного маршрута, проходящего через заданный набор городов ровно по одному разу и возвращающегося в исходный город. Точное решение больших экземпляров TSP требует огромных вычислительных ресурсов. Для повышения эффективности часто применяются методы разреживания графов, которые упрощают структуру графа, удаляя избыточные ребра. Однако традиционные методы разреживания основаны на фиксированных эвристиках и не всегда эффективно используют структурную информацию, присущую конкретной задаче.",
-      "why_it_matters": "Предложенный метод GES может существенно ускорить решение задачи коммивояжера, что имеет важное значение для логистики, планирования маршрутов, производства микросхем и других областей, где TSP или его вариации играют ключевую роль. Снижение вычислительной нагрузки позволит решать более крупные и сложные задачи, оптимизировать процессы и сокращать издержки. Способность метода сохранять высокую точность при значительном сокращении объема данных делает его перспективным инструментом для практического применения.",
-      "importance": 7,
-      "status": "updated",
-      "category": "Наука и технологии",
-      "article_ids": [
-        "fd437b300c95e733dab4"
-      ],
-      "facts": [
-        {
-          "text": "Предложен новый метод разреживания графов под названием Graph Edge Sparsification (GES) для решения задачи коммивояжера (TSP).",
-          "article_ids": [
-            "fd437b300c95e733dab4"
-          ]
-        },
-        {
-          "text": "Метод GES использует машинное обучение и учитывает геометрическую информацию и комбинаторную оптимизацию для адаптивного разреживания графов.",
-          "article_ids": [
-            "fd437b300c95e733dab4"
-          ]
-        },
-        {
-          "text": "Эксперименты показали, что GES может сократить до 95% ребер на наборе данных MATILDA, сохраняя при этом отклонение от оптимального решения менее чем на 1%.",
-          "article_ids": [
-            "fd437b300c95e733dab4"
-          ]
-        },
-        {
-          "text": "Традиционные методы разреживания графов часто полагаются на фиксированные эвристики и не полностью используют структурную информацию конкретной задачи.",
-          "article_ids": [
-            "fd437b300c95e733dab4"
-          ]
-        }
-      ],
-      "updates": [
-        {
-          "at": "2026-07-14T12:07:10.460604Z",
-          "summary": "Добавлены новые подтвержденные сведения или изменена оценка события.",
-          "article_ids": [
-            "fd437b300c95e733dab4"
-          ]
-        }
-      ],
-      "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T12:07:10.460604Z"
-    },
-    {
-      "id": "tech-c2b68e1b33b57807",
-      "slug": "разработана-система-управления-на-основе-малых-языковых-моделей-для-промышленных",
-      "title": "Разработана система управления на основе малых языковых моделей для промышленных задач",
-      "brief": "Исследователи представили новый подход к созданию и перенастройке управляющих политик для промышленных систем с использованием малых языковых моделей (SLM). Система позволяет генерировать управляющие команды на основе спецификаций на естественном языке, минимизируя ручное вмешательство. Ключевым элементом является валидатор, основанный на цифровом двойнике, который проверяет сгенерированные действия перед их выполнением. Такой подход решает проблемы задержки и вычислительной нагрузки, связанные с использованием больших облачных моделей, делая SLM пригодными для использования на периферийных устройствах в режиме реального времени. Модель Qwen2.5-1.5B была дообучена с использованием метода GRPO и интегрирована в петлю коррекции, управляемую валидатором.",
-      "context": "Создание и перенастройка управляющих политик для промышленных систем на основе спецификаций на естественном языке является важным шагом к автономной работе. Традиционные подходы с использованием больших языковых моделей сталкиваются с ограничениями по скорости, вычислительным ресурсам и чувствительности к данным, что затрудняет их применение в системах с замкнутым циклом управления на периферийных устройствах. Данное исследование направлено на преодоление этих ограничений путем использования компактных малых языковых моделей (SLM).",
-      "why_it_matters": "Разработанная система открывает возможности для более гибкого и эффективного управления промышленными процессами. Использование SLM снижает требования к вычислительным ресурсам и позволяет применять передовые методы ИИ в реальном времени на периферийных устройствах, что критически важно для промышленных приложений, где задержки недопустимы. Это может привести к повышению производительности, снижению затрат на разработку и упрощению интеграции новых функций в существующие системы.",
-      "importance": 7,
+      "id": "tech-c757dc105c88e37d",
+      "slug": "build-an-ai-powered-resume-screener-with-python",
+      "title": "Build an AI-Powered Resume Screener with Python",
+      "brief": "Build an AI-Powered Resume Screener with Python Build an AI-Powered Resume Screener with Python Imagine a hiring manager drowning in 500 PDF resumes for a single junior developer role. They spend hours scrolling, copying, and pasting text into spreadsheets, only to realize they missed the perfect candidate buried on page 43. That’s not just inefficient; it’s a war on talent. But what if you could automate the first pass of screening, instantly ranking candidates based on how well their skills match the job description? You can, and you can build it today with Python, a few open-source libraries, and a clear strategy. This isn’t about replacing human judgment. It’s about freeing recruiters to focus on the why behind a hire, rather than the what of keyword matching. Let’s build a practical, AI-powered resume screener that extracts text, analyzes skill fit, and returns a match score—no enterprise budget required. <h",
+      "context": "Build an AI-Powered Resume Screener with Python Build an AI-Powered Resume Screener with Python Imagine a hiring manager drowning in 500 PDF resumes for a single junior developer role. They spend hours scrolling, copying, and pasting text into spreadsheets, only to realize they missed the perfect candidate buried on page 43. That’s not just inefficient; it’s a war on talent. But what if you could automate the first pass of screening, instantly ranking candidates based on how well their skills match the job description? You can, and you can build it today with Python, a few open-source libraries, and a clear strategy. This isn’t about replacing human judgment. It’s about freeing recruiters to focus on the why behind a hire, rather than the what of keyword matching. Let’s build a practical, AI-powered resume screener that extracts text, analyzes skill fit, and returns a match score—no enterprise budget required. <h",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
       "status": "new",
-      "category": "Технологии",
+      "category": "backend",
       "article_ids": [
-        "e1a3d3b7a29880172934"
+        "a506df63b06d04835f3d"
       ],
       "facts": [
         {
-          "text": "Исследование предлагает использовать малые языковые модели (SLM) для генерации и перенастройки управляющих политик в промышленных системах на основе спецификаций на естественном языке.",
+          "text": "Build an AI-Powered Resume Screener with Python Build an AI-Powered Resume Screener with Python Imagine a hiring manager drowning in 500 PDF resumes for a single junior developer role. They spend hours scrolling, copying, and pasting text into spreadsheets, only to realize they missed the perfect candidate buried on page 43. That’s not just inefficient; it’s a war on talent. But what if you could automate the first pass of screening, instantly ranking candidates based on how well their skills match the job description? You can, and you can build it today with Python, a few open-source libraries, and a clear strategy. This isn’t about replacing human judgment. It’s about freeing recruiters to focus on the why behind a hire, rather than the what of keyword matching. Let’s build a practical, AI-powered resume screener that extracts text, analyzes skill fit, and returns a match score—no enterprise budget required. <h",
           "article_ids": [
-            "e1a3d3b7a29880172934"
-          ]
-        },
-        {
-          "text": "Система включает валидатор, основанный на цифровом двойнике, для проверки сгенерированных действий перед их выполнением, что повышает надежность управления.",
-          "article_ids": [
-            "e1a3d3b7a29880172934"
-          ]
-        },
-        {
-          "text": "Использование SLM решает проблемы задержки и вычислительной нагрузки, связанные с большими облачными моделями, делая их пригодными для периферийных вычислений в системах с замкнутым циклом управления.",
-          "article_ids": [
-            "e1a3d3b7a29880172934"
-          ]
-        },
-        {
-          "text": "В исследовании применялась модель Qwen2.5-1.5B, дообученная с помощью метода Group Relative Policy Optimization (GRPO) и интегрированная в петлю коррекции.",
-          "article_ids": [
-            "e1a3d3b7a29880172934"
+            "a506df63b06d04835f3d"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T12:07:10.460604Z"
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:28:58Z"
+      },
+      "first_seen_at": "2026-07-14T12:28:58Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
     },
     {
-      "id": "tech-ddce72e9f99a7518",
-      "slug": "разработана-новая-модель-для-предсказания-намерений-и-траекторий-движения-автомо",
-      "title": "Разработана новая модель для предсказания намерений и траекторий движения автомобилей",
-      "brief": "Исследователи представили динамическую основу для анализа взаимодействий в дорожной сцене, которая позволяет прогнозировать намерения сменить полосу движения и будущие траектории для каждого автомобиля в локальной зоне. Существующие методы часто фокусируются на одном целевом автомобиле или предоставляют лишь общую информацию о будущих позициях, не детализируя маневры. Новая модель использует графовую нейронную сеть с механизмами внимания, представляя дорожную сцену как изменяющийся во времени граф взаимодействий. Трансляция сообщений через временные графы позволяет улавливать развивающиеся зависимости между автомобилями и пред-маневровые сигналы, что способствует более точному прогнозированию.",
-      "context": "Безопасное планирование движения в системах помощи водителю и автономных транспортных средствах требует точного понимания того, как будет развиваться окружающая дорожная обстановка. Многие существующие методы предсказания смены полосы движения сосредоточены на одном целевом автомобиле. Подходы к прогнозированию поведения нескольких агентов часто описывают эволюцию сцены только через будущие позиции, предоставляя ограниченную явную информацию о маневре, связанном с каждым автомобилем. Данное исследование предлагает решение этой проблемы.",
-      "why_it_matters": "Точное предсказание намерений и траекторий движения других транспортных средств является критически важным для обеспечения безопасности и эффективности систем помощи водителю и полностью автономных автомобилей. Понимание того, как другие участники дорожного движения планируют свои маневры, позволяет системам заблаговременно реагировать, избегая потенциальных столкновений и оптимизируя транспортные потоки. Эта новая модель обещает повысить надежность таких систем.",
-      "importance": 7,
+      "id": "tech-93dd761855d44234",
+      "slug": "a-practical-guide-to-proxies-for-web-scraping-with-python-examples",
+      "title": "A Practical Guide to Proxies for Web Scraping (with Python examples)",
+      "brief": "If you have written more than a couple of scrapers, you already know the pattern. The first few hundred requests fly through. Then responses slow down, you start seeing 429 Too Many Requests , a captcha wall appears, and finally the target just returns empty pages or a hard 403 . Your code did not change. Your IP did. Scraping at any real volume is less about parsing HTML and more about managing where your requests come from. This post is a practical walk-through of how proxies fit into a scraping pipeline: why a single IP fails, what proxy types actually matter, how rotation works, and how to wire it all up in Python with requests , aiohttp , and Scrapy. There is code you can copy, plus the mistakes that cost me the most time. Why one IP is never enough Every site you scrape sees the same thing: a stream of requests from one address, arriving faster and more regularly than a human ever would. Anti-b",
+      "context": "If you have written more than a couple of scrapers, you already know the pattern. The first few hundred requests fly through. Then responses slow down, you start seeing 429 Too Many Requests , a captcha wall appears, and finally the target just returns empty pages or a hard 403 . Your code did not change. Your IP did. Scraping at any real volume is less about parsing HTML and more about managing where your requests come from. This post is a practical walk-through of how proxies fit into a scraping pipeline: why a single IP fails, what proxy types actually matter, how rotation works, and how to wire it all up in Python with requests , aiohttp , and Scrapy. There is code you can copy, plus the mistakes that cost me the most time. Why one IP is never enough Every site you scrape sees the same thing: a stream of requests from one address, arriving faster and more regularly than a human ever would. Anti-b",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
       "status": "new",
-      "category": "Технологии",
+      "category": "backend",
       "article_ids": [
-        "4236eaed7d3954e18bb9"
+        "da4590dc3bc5e1ff18af"
       ],
       "facts": [
         {
-          "text": "Предложена динамическая графовая модель с механизмами внимания для предсказания намерений смены полосы движения и траекторий каждого автомобиля в локальной дорожной сцене.",
+          "text": "If you have written more than a couple of scrapers, you already know the pattern. The first few hundred requests fly through. Then responses slow down, you start seeing 429 Too Many Requests , a captcha wall appears, and finally the target just returns empty pages or a hard 403 . Your code did not change. Your IP did. Scraping at any real volume is less about parsing HTML and more about managing where your requests come from. This post is a practical walk-through of how proxies fit into a scraping pipeline: why a single IP fails, what proxy types actually matter, how rotation works, and how to wire it all up in Python with requests , aiohttp , and Scrapy. There is code you can copy, plus the mistakes that cost me the most time. Why one IP is never enough Every site you scrape sees the same thing: a stream of requests from one address, arriving faster and more regularly than a human ever would. Anti-b",
           "article_ids": [
-            "4236eaed7d3954e18bb9"
-          ]
-        },
-        {
-          "text": "Дорожная сцена представляется как изменяющийся во времени граф взаимодействий, где автомобили являются узлами, а их пространственные и кинематические отношения кодируются через явные признаки ребер.",
-          "article_ids": [
-            "4236eaed7d3954e18bb9"
-          ]
-        },
-        {
-          "text": "Механизм временного графового внимания используется для улавливания развивающихся зависимостей между автомобилями и пред-маневровых сигналов.",
-          "article_ids": [
-            "4236eaed7d3954e18bb9"
-          ]
-        },
-        {
-          "text": "Существующие методы предсказания смены полосы движения часто фокусируются на одном автомобиле или предоставляют ограниченную информацию о маневрах других участников.",
-          "article_ids": [
-            "4236eaed7d3954e18bb9"
+            "da4590dc3bc5e1ff18af"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T12:07:10.460604Z"
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:26:42Z"
+      },
+      "first_seen_at": "2026-07-14T12:26:42Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
     },
     {
-      "id": "tech-28dce2c84445bd82",
-      "slug": "предложена-новая-теория-наименьшей-автономии-для-ии",
-      "title": "Предложена новая теория наименьшей автономии для ИИ",
-      "brief": "Исследователи представили новую теорию наименьшей автономии (least autonomy) как обобщение принципа наименьших привилегий (least privilege) для агентных систем искусственного интеллекта. Принцип наименьших привилегий, существующий десятилетиями, предполагает, что субъект должен обладать только теми разрешениями, которые необходимы для выполнения его задачи. Однако, по мнению авторов, этот принцип недостаточен для современных ИИ-систем, которые способны не только использовать разрешения, но и комбинировать, утверждать и расширять их в рамках рабочих процессов и межсистемных взаимодействий. Новая теория формализует понятие наименьшей автономии, учитывая способность ИИ к самостоятельным действиям и их потенциальное влияние.",
-      "context": "Принцип наименьших привилегий является фундаментальным для контроля доступа в компьютерных системах на протяжении многих лет. Он ограничивает возможности субъекта только теми действиями, которые необходимы для выполнения его непосредственной функции. Однако с развитием агентных систем ИИ, способных к более сложным и автономным действиям, возникает потребность в более совершенных механизмах контроля. Эти системы могут не только использовать предоставленные им права, но и объединять их, принимать решения об их применении и распространять их влияние на другие процессы и системы, что выходит за рамки традиционного понимания наименьших привилегий.",
-      "why_it_matters": "Разработка теории наименьшей автономии имеет решающее значение для обеспечения безопасности и управляемости все более сложных и автономных систем ИИ. Понимание и формализация того, как ИИ-агенты могут комбинировать и усиливать свои возможности, позволяет создавать более надежные механизмы контроля и предотвращать нежелательное или вредоносное поведение. Это особенно важно в контексте интеграции ИИ в критически важные инфраструктуры и бизнес-процессы, где потенциальные риски, связанные с неконтролируемой автономией, могут быть очень высокими.",
-      "importance": 7,
+      "id": "tech-5ab78317ab37cf72",
+      "slug": "hiding-the-seam-making-a-lip-synced-mouth-stop-looking-pasted-on",
+      "title": "Hiding the seam: making a lip-synced mouth stop looking pasted on",
+      "brief": "Lip-sync models like Wav2Lip give you a small, correct mouth. Then you paste that mouth back onto the face and the illusion collapses. You can see the rectangle. The skin tone is off by a shade, the lighting does not match, and the jaw flickers between frames. The network did its job. The compositing gave it away. The interesting code in a lip-sync pipeline is not the model. It is everything that happens after the model, in the few dozen lines that make a generated patch belong to a real face. This is a walkthrough of that part. <img alt=\"Close portrait\" height=\"1800\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517462964-21fdcec3f25b%",
+      "context": "Lip-sync models like Wav2Lip give you a small, correct mouth. Then you paste that mouth back onto the face and the illusion collapses. You can see the rectangle. The skin tone is off by a shade, the lighting does not match, and the jaw flickers between frames. The network did its job. The compositing gave it away. The interesting code in a lip-sync pipeline is not the model. It is everything that happens after the model, in the few dozen lines that make a generated patch belong to a real face. This is a walkthrough of that part. <img alt=\"Close portrait\" height=\"1800\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517462964-21fdcec3f25b%",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
       "status": "new",
-      "category": "Искусственный интеллект",
+      "category": "backend",
       "article_ids": [
-        "cfad5f73ee4b05e7100b"
+        "bd354f7435b24bd99679"
       ],
       "facts": [
         {
-          "text": "Принцип наименьших привилегий, существующий десятилетиями, недостаточен для агентных систем ИИ, которые могут комбинировать и усиливать разрешения.",
+          "text": "Lip-sync models like Wav2Lip give you a small, correct mouth. Then you paste that mouth back onto the face and the illusion collapses. You can see the rectangle. The skin tone is off by a shade, the lighting does not match, and the jaw flickers between frames. The network did its job. The compositing gave it away. The interesting code in a lip-sync pipeline is not the model. It is everything that happens after the model, in the few dozen lines that make a generated patch belong to a real face. This is a walkthrough of that part. <img alt=\"Close portrait\" height=\"1800\" src=\"https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fimages.unsplash.com%2Fphoto-1517462964-21fdcec3f25b%",
           "article_ids": [
-            "cfad5f73ee4b05e7100b"
-          ]
-        },
-        {
-          "text": "Предложена новая теория наименьшей автономии как обобщение принципа наименьших привилегий для ИИ-систем.",
-          "article_ids": [
-            "cfad5f73ee4b05e7100b"
-          ]
-        },
-        {
-          "text": "Теория включает формальное определение композиционного радиуса поражения (blast radius) и направленного графа влияния агентов.",
-          "article_ids": [
-            "cfad5f73ee4b05e7100b"
+            "bd354f7435b24bd99679"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T12:07:10.460604Z"
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:22:00Z"
+      },
+      "first_seen_at": "2026-07-14T12:22:00Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
     },
     {
-      "id": "tech-ff0d240105cdb0da",
-      "slug": "создание-синтетических-данных-для-улучшения-машинного-обучения-в-сельском-хозяйс",
-      "title": "Создание синтетических данных для улучшения машинного обучения в сельском хозяйстве",
-      "brief": "Исследователи разработали новый алгоритм Task-Conditioned Synthetic Data Generation (TCSDG) для решения проблемы нехватки и низкого качества данных при использовании алгоритмов машинного обучения (ML) в сельском хозяйстве. Алгоритм использует генератор на основе байесовских сетей и трансформерную модель TabICL для создания реалистичных синтетических данных. TCSDG был протестирован на задачах прогнозирования урожайности и классификации типов культур, показав свою эффективность по сравнению с шестью другими алгоритмами генерации синтетических данных.",
-      "context": "Алгоритмы машинного обучения широко применяются для оценки сельскохозяйственных показателей, однако их эффективность напрямую зависит от количества и качества обучающих данных. Ограниченные или неполные эталонные данные могут существенно снижать производительность ML-моделей. Синтетическая генерация данных (SDG) является практическим решением этой проблемы, позволяя создавать искусственные, но реалистичные образцы данных, сохраняющие ключевые характеристики исходных данных.",
-      "why_it_matters": "Разработанный алгоритм TCSDG позволяет преодолеть ограничения, связанные с доступностью данных, и повысить точность прогнозов в сельском хозяйстве. Это может привести к более эффективному планированию ресурсов, оптимизации урожайности и улучшению продовольственной безопасности. Повышение производительности ML-моделей благодаря синтетическим данным открывает новые возможности для инноваций в агропромышленном комплексе.",
-      "importance": 7,
-      "status": "completed",
-      "category": "Наука и технологии",
+      "id": "tech-27b93e095f43c718",
+      "slug": "i-wish-i-knew-about-these-coding-models-sooner-the-full-breakdown",
+      "title": "I Wish I Knew About These Coding Models Sooner — The Full Breakdown",
+      "brief": "Look, i Wish I Knew About These Coding Models Sooner — The Full Breakdown Six months ago I would have told you \"yeah, AI coding is neat\" and moved on. Then my burn rate forced me to actually pay attention. When you're running a startup with eight engineers and a quarterly compute bill that makes your CFO physically wince, you stop being precious about which model \"feels\" smartest and start asking what model ships the most production-quality code per dollar. I spent the last quarter running our own bake-off. Not a toy benchmark — real tickets, real services, real production deploys. We put ten models through five coding tasks across Python, JavaScript, TypeScript, and Go. Here's the honest data, what I'd build differently if I started over, and where the ROI math actually pencils out at scale. The Stack I Tested (And Why I'm Not Locked In) Before the numbers, let me explain my setup. I refuse vendor lock-in by default — it's the CTO equival",
+      "context": "Look, i Wish I Knew About These Coding Models Sooner — The Full Breakdown Six months ago I would have told you \"yeah, AI coding is neat\" and moved on. Then my burn rate forced me to actually pay attention. When you're running a startup with eight engineers and a quarterly compute bill that makes your CFO physically wince, you stop being precious about which model \"feels\" smartest and start asking what model ships the most production-quality code per dollar. I spent the last quarter running our own bake-off. Not a toy benchmark — real tickets, real services, real production deploys. We put ten models through five coding tasks across Python, JavaScript, TypeScript, and Go. Here's the honest data, what I'd build differently if I started over, and where the ROI math actually pencils out at scale. The Stack I Tested (And Why I'm Not Locked In) Before the numbers, let me explain my setup. I refuse vendor lock-in by default — it's the CTO equival",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
+      "status": "new",
+      "category": "backend",
       "article_ids": [
-        "9c97c846ca6af80711cb"
+        "ca33f31912dbe4722b60"
       ],
       "facts": [
         {
-          "text": "Алгоритмы машинного обучения (ML) часто используются для оценки сельскохозяйственных переменных, но их производительность зависит от количества и качества обучающих данных.",
+          "text": "Look, i Wish I Knew About These Coding Models Sooner — The Full Breakdown Six months ago I would have told you \"yeah, AI coding is neat\" and moved on. Then my burn rate forced me to actually pay attention. When you're running a startup with eight engineers and a quarterly compute bill that makes your CFO physically wince, you stop being precious about which model \"feels\" smartest and start asking what model ships the most production-quality code per dollar. I spent the last quarter running our own bake-off. Not a toy benchmark — real tickets, real services, real production deploys. We put ten models through five coding tasks across Python, JavaScript, TypeScript, and Go. Here's the honest data, what I'd build differently if I started over, and where the ROI math actually pencils out at scale. The Stack I Tested (And Why I'm Not Locked In) Before the numbers, let me explain my setup. I refuse vendor lock-in by default — it's the CTO equival",
           "article_ids": [
-            "9c97c846ca6af80711cb"
-          ]
-        },
-        {
-          "text": "Синтетическая генерация данных (SDG) предлагает решение проблемы ограниченных или неполных данных путем создания искусственных, но реалистичных образцов.",
-          "article_ids": [
-            "9c97c846ca6af80711cb"
-          ]
-        },
-        {
-          "text": "Предложен новый алгоритм Task-Conditioned SDG (TCSDG), который сочетает генератор на основе байесовских сетей с трансформерной моделью TabICL для генерации синтетических данных.",
-          "article_ids": [
-            "9c97c846ca6af80711cb"
-          ]
-        },
-        {
-          "text": "Алгоритм TCSDG был протестирован на задачах прогнозирования урожайности и классификации типов культур в сельском хозяйстве.",
-          "article_ids": [
-            "9c97c846ca6af80711cb"
-          ]
-        },
-        {
-          "text": "Производительность TCSDG сравнивалась с шестью другими эталонными алгоритмами SDG.",
-          "article_ids": [
-            "9c97c846ca6af80711cb"
+            "ca33f31912dbe4722b60"
           ]
         }
       ],
       "updates": [],
-      "first_seen_at": "2026-07-14T04:00:00Z",
-      "updated_at": "2026-07-14T12:07:10.460604Z"
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:21:44Z"
+      },
+      "first_seen_at": "2026-07-14T12:21:44Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
+    },
+    {
+      "id": "tech-8f7899282b53278a",
+      "slug": "mathematical-animations-in-pure-python-zero-dependencies-one-file",
+      "title": "Mathematical Animations in Pure Python — Zero Dependencies, One File",
+      "brief": "I wanted an ambient display for the second monitor in an open-space office: something alive enough to rest the eyes on, quiet enough not to distract, and installable nowhere — because the machine is a locked- down corporate laptop. No pygame, no numpy, no GPU, no admin rights. So the constraint became the project: real mathematics, rendered with nothing but tkinter and math . One file. If you have Python, you already have everything it needs. Repo: https://github.com/RMANOV/algorithmic-arts What's inside <img alt=\"Hopf fibration\" height=\"300",
+      "context": "I wanted an ambient display for the second monitor in an open-space office: something alive enough to rest the eyes on, quiet enough not to distract, and installable nowhere — because the machine is a locked- down corporate laptop. No pygame, no numpy, no GPU, no admin rights. So the constraint became the project: real mathematics, rendered with nothing but tkinter and math . One file. If you have Python, you already have everything it needs. Repo: https://github.com/RMANOV/algorithmic-arts What's inside <img alt=\"Hopf fibration\" height=\"300",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
+      "status": "new",
+      "category": "backend",
+      "article_ids": [
+        "9834e8c76b7cbce86721"
+      ],
+      "facts": [
+        {
+          "text": "I wanted an ambient display for the second monitor in an open-space office: something alive enough to rest the eyes on, quiet enough not to distract, and installable nowhere — because the machine is a locked- down corporate laptop. No pygame, no numpy, no GPU, no admin rights. So the constraint became the project: real mathematics, rendered with nothing but tkinter and math . One file. If you have Python, you already have everything it needs. Repo: https://github.com/RMANOV/algorithmic-arts What's inside <img alt=\"Hopf fibration\" height=\"300",
+          "article_ids": [
+            "9834e8c76b7cbce86721"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:10:38Z"
+      },
+      "first_seen_at": "2026-07-14T12:10:38Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
+    },
+    {
+      "id": "tech-c43c3f24aec1c2ba",
+      "slug": "how-to-build-a-micro-saas-in-48-hours",
+      "title": "How to Build a Micro-SaaS in 48 Hours",
+      "brief": "How to Build a Micro-SaaS in 48 Hours You don’t need a year of development or a six-figure budget to launch a profitable Micro-SaaS; you just need a sharp problem, a ruthless 48-hour sprint, and a stack that lets you ship code before the weekend ends. The secret isn’t working faster—it’s working smaller. Most indie developers fail because they try to build a platform instead of a tool. A Micro-SaaS solves one specific pain for a specific audience and charges for it immediately. If you can identify a niche itch and scratch it with a Minimum Viable Product (MVP) in two days, you’ve already beaten 90% of the competition who are still debating feature lists. Here is the exact playbook to go from zero to a live, paying Micro-SaaS in 48 hours. Pick a Niche Pain, Not a Cool Idea Stop brainstorming “AI for everything.” That’s a graveyard of failed projects. Instead, look for a problem you perso",
+      "context": "How to Build a Micro-SaaS in 48 Hours You don’t need a year of development or a six-figure budget to launch a profitable Micro-SaaS; you just need a sharp problem, a ruthless 48-hour sprint, and a stack that lets you ship code before the weekend ends. The secret isn’t working faster—it’s working smaller. Most indie developers fail because they try to build a platform instead of a tool. A Micro-SaaS solves one specific pain for a specific audience and charges for it immediately. If you can identify a niche itch and scratch it with a Minimum Viable Product (MVP) in two days, you’ve already beaten 90% of the competition who are still debating feature lists. Here is the exact playbook to go from zero to a live, paying Micro-SaaS in 48 hours. Pick a Niche Pain, Not a Cool Idea Stop brainstorming “AI for everything.” That’s a graveyard of failed projects. Instead, look for a problem you perso",
+      "why_it_matters": "Событие затрагивает тему «Технологии». Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками. Сводка создана автоматически из доступных заголовков и описаний; дополнительные сведения появятся после подтверждения источниками.",
+      "importance": 6,
+      "status": "new",
+      "category": "backend",
+      "article_ids": [
+        "37c3a63865344629b3b1"
+      ],
+      "facts": [
+        {
+          "text": "How to Build a Micro-SaaS in 48 Hours You don’t need a year of development or a six-figure budget to launch a profitable Micro-SaaS; you just need a sharp problem, a ruthless 48-hour sprint, and a stack that lets you ship code before the weekend ends. The secret isn’t working faster—it’s working smaller. Most indie developers fail because they try to build a platform instead of a tool. A Micro-SaaS solves one specific pain for a specific audience and charges for it immediately. If you can identify a niche itch and scratch it with a Minimum Viable Product (MVP) in two days, you’ve already beaten 90% of the competition who are still debating feature lists. Here is the exact playbook to go from zero to a live, paying Micro-SaaS in 48 hours. Pick a Niche Pain, Not a Cool Idea Stop brainstorming “AI for everything.” That’s a graveyard of failed projects. Instead, look for a problem you perso",
+          "article_ids": [
+            "37c3a63865344629b3b1"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "backend",
+        "primary_entities": [],
+        "geographies": [],
+        "occurred_at": "2026-07-14T12:05:44Z"
+      },
+      "first_seen_at": "2026-07-14T12:05:44Z",
+      "updated_at": "2026-07-14T12:43:49.679681Z"
     }
   ]
 }
