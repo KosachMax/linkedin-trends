@@ -2,10 +2,10 @@
   "schema_version": 2,
   "digest_id": "tech",
   "date": "2026-07-15",
-  "generated_at": "2026-07-15T07:30:15.337874Z",
+  "generated_at": "2026-07-15T12:11:26.388659Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» отобрано 10 подтвержденных событий. Редакционный фильтр обработал 32 материалов, объединил 1 повторных карточек и исключил 1 неподтвержденных кластеров."
+    "body": "В выпуске «Технологии» отобрано 10 подтвержденных событий. Редакционный фильтр обработал 33 материалов, объединил 1 повторных карточек и исключил 0 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
@@ -16,9 +16,10 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 289,
+      "latency_ms": 313,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0,
@@ -31,16 +32,17 @@
       "source_name": "arXiv AI",
       "state": "available",
       "fetched": 20,
-      "accepted": 13,
-      "represented_events": 1,
-      "latency_ms": 563,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 589,
       "error_code": null,
       "history": [
         0,
         0,
         8,
         0,
-        13
+        13,
+        0
       ]
     },
     {
@@ -50,9 +52,10 @@
       "fetched": 30,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 274,
+      "latency_ms": 77,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0,
@@ -67,10 +70,11 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 69,
+      "latency_ms": 298,
       "error_code": null,
       "history": [
         1,
+        0,
         0,
         0,
         0,
@@ -82,16 +86,17 @@
       "source_name": "DEV Community Python",
       "state": "available",
       "fetched": 12,
-      "accepted": 10,
-      "represented_events": 9,
-      "latency_ms": 242,
+      "accepted": 8,
+      "represented_events": 10,
+      "latency_ms": 219,
       "error_code": null,
       "history": [
         12,
         9,
         7,
         9,
-        10
+        10,
+        8
       ]
     },
     {
@@ -101,9 +106,10 @@
       "fetched": 16,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 303,
+      "latency_ms": 600,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0,
@@ -118,10 +124,11 @@
       "fetched": 10,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 121,
+      "latency_ms": 270,
       "error_code": null,
       "history": [
         2,
+        0,
         0,
         0,
         0,
@@ -135,9 +142,10 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1595,
+      "latency_ms": 1442,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0,
@@ -152,9 +160,10 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 890,
+      "latency_ms": 784,
       "error_code": null,
       "history": [
+        0,
         0,
         0,
         0,
@@ -165,262 +174,148 @@
   ],
   "articles": [
     {
-      "id": "63cc34eb8fadaa3d43db",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.11906",
-      "title": "In-Context Reinforcement Learning under Non-Stationarity: A Survey",
-      "normalized_title": "in-context reinforcement learning under non-stationarity: a survey",
-      "excerpt": "arXiv:2607.11906v1 Announce Type: new Abstract: The development of decision-pretrained transformers, algorithm distillation, long-context meta-RL, and retrieval-augmented agents has renewed interest in in-context reinforcement learning (ICRL): the ability of a pretrained or fine-tuned decision model to infer latent task rules and improve future behavior from interaction context, without test-time parameter updates. This line of work asks when trial-and-error evidence, rewards, transitions, demonstrations, feedback, or retrieved experience can make learning-like computation happen inside the context window. However, existing surveys of ICRL mainly organize the field around pretraining objectives, architectures, context formats, evaluation protocols, and theoretical mechanisms, while the non-stationary setting remains comparatively underexamined. In changing environments, accumulated context is not merely more evidence about a fixed task: the reward specification, transition kernel, obs",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "6f8479f8a891400f1112",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.11948",
-      "title": "Ontology-Amplified Distillation and Contextuality Auditing for Sovereign Enterprise Language Models: A Combined Proof-of-Mechanism and Negative-Results Method Study",
-      "normalized_title": "ontology-amplified distillation and contextuality auditing for sovereign enterprise language models: a combined proof-of-mechanism and negative-results method study",
-      "excerpt": "arXiv:2607.11948v1 Announce Type: new Abstract: Regulated financial institutions operating under data-residency rules need tenant-owned language models that can run inside the institution's perimeter. This paper combines two related FAOS studies into one mechanism-and-control article. First, it reports a reduced-power proof-of-mechanism study of ontology-amplified distillation: a Qwen3.6-27B student is adapted to the Foundation AgenticOS ontology through supervised fine-tuning on frontier-teacher trajectories and ontology-grounded direct preference optimization (DPO), trained locally on a single Apple M5 Max from 47 synthetic, English-language, cross-domain preference pairs. On 40 held-out Vietnamese financial-domain tasks, the distilled student grounds 36 of 40 tasks (grounded rate 0.90; mean ontology term-coverage r_onto = 0.95 on a metric floored at 0.50), equal to the GPT-5 frontier baseline, which also grounds 36 of 40. The outcome is underpowered to establish equivalence: the pa",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "0542fd935604499b20f3",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.11959",
-      "title": "Calibration-First Reward-Component Auditing for Reinforcement Learning Control in Smart Greenhouses",
-      "normalized_title": "calibration-first reward-component auditing for reinforcement learning control in smart greenhouses",
-      "excerpt": "arXiv:2607.11959v1 Announce Type: new Abstract: Greenhouse reinforcement learning can test climate-control ideas at a speed and scale that is difficult to achieve with crop experiments alone. For smart-greenhouse control, however, a single simulator return is not enough: a grower or control engineer also needs to know when the policy heats, enriches CO2, vents, manages humidity, deploys screens, or uses lamps.We propose a reproducible calibration-first reward audit framework that keeps named greenhouse-control reward components comparable across simulator training, facility-adapted rollouts, logged Autonomous Greenhouse Challenge records, and actuator-rule distillation. In GreenLight-Gym, the framework decomposes the scalar reward into conditional temperature, CO2, humidity and vapor-pressure-deficit, screen, and actuation-proxy terms; adapts GreenLight to the second Autonomous Greenhouse Challenge logged climate traces; and scores the same components on logged greenhouse data.",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "759639d75af190576eb5",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.11977",
-      "title": "Optimization Is Not All You Need",
-      "normalized_title": "optimization is not all you need",
-      "excerpt": "arXiv:2607.11977v1 Announce Type: new Abstract: In 2019, OpenAI released two million GPT-2 outputs-ungrammatical, half broken-to aid the detection of machine-generated text. The alignment that produced their more fluent successors is usually regarded as an engineering achievement; we read it instead as the newest expression of optimization culture: the conviction, older than the technology, that measurable improvement along predefined axes exhausts the question of value. Tracing that conviction through the stack-pretraining, decoding, preference tuning, benchmarking, interface-and back through its genealogy in the audit society, we arrive at the limit: an optimization procedure can measure how improbable a piece of generated text is; it cannot tell whether that unlikelihood is error or invention. A procedure that cannot make that distinction has nonetheless, within half a decade, assumed the authority to set the protocols of legitimate language. Held for centuries by academies and sch",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "65b0b5251179291c9201",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.12085",
-      "title": "Operationalising Multi-Dimensional Evaluation for Conversational Agents: A Scalable, Governed Pipeline with Selective Re-evaluation and Model Benchmarking",
-      "normalized_title": "operationalising multi-dimensional evaluation for conversational agents: a scalable, governed pipeline with selective re-evaluation and model benchmarking",
-      "excerpt": "arXiv:2607.12085v1 Announce Type: new Abstract: Evaluating retail conversational agents requires methods beyond lexical-overlap metrics to assess intent alignment, factuality, helpfulness, clarity, tone, and overall response quality. Although LLM-as-a-judge methods provide scalable alternatives to human evaluation, production deployment introduces challenges in governance, reproducibility, cost, schema consistency, traceability, and reliability. We present GenAI Evaluation, a governed, configuration-driven pipeline for large-scale evaluation of retail conversational systems. It processes production chatbot logs through normalization, sharding, asynchronous execution, and schema-constrained LLM scoring. The framework evaluates helpfulness, truthfulness, clarity, tone alignment, and translation-specific dimensions. Selective re-evaluation processes only incomplete, malformed, or schema-invalid records, while schema locking, versioned configurations, validation logs, and record-level pro",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "9a3a857685c3b639b7e7",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.12177",
-      "title": "The Emerging Paradigm of Geospatial Foundation Models: From Pre-Training to Agentic Reasoning",
-      "normalized_title": "the emerging paradigm of geospatial foundation models: from pre-training to agentic reasoning",
-      "excerpt": "arXiv:2607.12177v1 Announce Type: new Abstract: The analysis of satellite and aerial imagery has entered a new era with the advent of foundation models. This paper describes the concept of Geospatial Foundation Models (GeoFMs), which are artificial intelligence/machine learning (AI/ML) models pre-trained on massive geospatial datasets through varied methodologies. We first articulate the core paradigm shift that GeoFMs enable: a separation of duties, where large-scale model providers perform the computationally intensive pretraining, allowing domain experts to rapidly fine-tune or prompt these models for specific, mission-critical tasks. This approach democratizes access to state-of-the-art AI/ML while maintaining the security and confidentiality of the downstream task. We then explore the novel capabilities unlocked by different types of GeoFMs, distinguishing between the finetunable vision models produced by self-supervised techniques like masked auto-encoding, and the vision-langua",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "425d017dde92400fe6be",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.12188",
-      "title": "Cost-Governed RAG: Unified Per-Tenant Cost Attribution Across Retrieval and Generation in Multi-Tenant LLM Systems",
-      "normalized_title": "cost-governed rag: unified per-tenant cost attribution across retrieval and generation in multi-tenant llm systems",
-      "excerpt": "arXiv:2607.12188v1 Announce Type: new Abstract: Enterprise Retrieval-Augmented Generation (RAG) deployments face a critical governance gap: while LLM generation cost is metered per token, the retrieval layer - vector memory, similarity compute, and embedding API calls - remains an unattributed shared cost, enabling invisible cross-subsidization among tenants. We present Cost-Governed RAG, an architecture that integrates a codebook-oblivious vector index (TurboVec) with a multi-tenant LLM governance gateway, creating a unified observability stack where embedding, retrieval, and generation costs are jointly attributable per tenant. The architecture exploits TurboVec's deterministic, closed-form memory formula to enable near-exact per-tenant retrieval cost calculation - a property unavailable in graph-based indexes with non-linear memory overhead. Deployed on Snowpark Container Services within a cloud data platform's governance boundary, the system achieves 99.96% end-to-end cost attribu",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "6b45a87e5b10c6a26718",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.12200",
-      "title": "A Threshold Exceedance Framework for CBRN Uplift Evaluation in Frontier Language Models",
-      "normalized_title": "a threshold exceedance framework for cbrn uplift evaluation in frontier language models",
-      "excerpt": "arXiv:2607.12200v1 Announce Type: new Abstract: As frontier language models advance, policymakers and model developers need methods for assessing whether model access materially increases a non-expert actor's ability to plan high-consequence Chemical, Biological, Radiological, or Nuclear (CBRN) misuse relative to public tools alone. Existing CBRN evaluations differ in non-expert definitions, threat scope, baselines, scoring rubrics, and decision rules, making results difficult to compare across studies. We introduce a Threshold Exceedance Criteria (TEC) framework that decomposes an uplift study into independently executable components: determining non-expert participant eligibility, defining the CBRN threat scope for the study, and statistically estimating material uplift. We then operationalize the TEC framework in a large-scale empirical study using a design that determines two forms of uplift: generative (where a model assists plan creation from scratch) and revisionist (where a mo",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "f7b5c1bd079a77985a04",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.12217",
-      "title": "Good Benchmarks",
-      "normalized_title": "good benchmarks",
-      "excerpt": "arXiv:2607.12217v1 Announce Type: new Abstract: Good tasks are correct, solvable, verifiable, well-specified, and hard for interesting reasons. The best tasks describe a real problem an experienced practitioner would recognize, in language a practitioner would use, with tests that verify the outcome rather than the approach.",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "8bf1496f6489c07785ea",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.12227",
-      "title": "Rethinking the Evaluation of Harness Evolution for Agents",
-      "normalized_title": "rethinking the evaluation of harness evolution for agents",
-      "excerpt": "arXiv:2607.12227v1 Announce Type: new Abstract: We revisit the evaluation of automatic harness evolution for LLM agents. Existing harness evolution methods use unit test cases to search for harness configurations and then report final performance on the same public benchmark. This protocol raises two fundamental concerns. First, harness evolution is itself an iterative search procedure that repeatedly evaluates and revises candidate harnesses using task feedback. As in agentic test-time scaling, it should therefore be compared with simple task-level search baselines under matched feedback and inference budgets to determine whether its gains arise from improved harness design or from additional search alone. Second, because the search and the final evaluation share the same benchmark, the reported gains risk overfitting to that specific task set. To address these concerns, we conduct an extensive evaluation comparing harness evolution with simple test-time scaling and discovery baselin",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "1c35713dbf2e2d5bb16a",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.12257",
-      "title": "On-Device Deep Research at 4B: Exposure Bounds Faithfulness, Retrieval Bounds Coverage",
-      "normalized_title": "on-device deep research at 4b: exposure bounds faithfulness, retrieval bounds coverage",
-      "excerpt": "arXiv:2607.12257v1 Announce Type: new Abstract: On-device research agents search a corpus, read sources, and write a cited brief on a personal laptop. Whether their citations are faithful, and at what cost, is unmeasured for a deployable small model. This study fixes one 4B generator on a 24 GB laptop and asks what makes its citations faithful. It separates two quantities usually reported as one number. Cited claim faithfulness asks whether the cited source supports the claim. Trustworthy coverage asks whether the agent also cites the right sources. The study crosses how much of each source the generator sees, 400 against 1500 characters, with the quality of the sources supplied, gold papers against retrieved papers. Two levers fall out, and they act on different outcomes. Exposure sets faithfulness. More of each source lifts faithfulness from 0.45 to 0.58 on retrieved sources and from 0.37 to 0.58 on gold sources, and the two settings converge, so faithfulness is bound by exposure, n",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "32c700491386291b3063",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.12338",
-      "title": "How Many Tasks Are Enough for Agent Benchmark Decisions? A Replay Analysis of Public LLM Agent Benchmarks",
-      "normalized_title": "how many tasks are enough for agent benchmark decisions? a replay analysis of public llm agent benchmarks",
-      "excerpt": "arXiv:2607.12338v1 Announce Type: new Abstract: Agent benchmarks often compare two agents after all tasks have run, but costly evaluations make partial runs tempting. A task fraction alone does not show whether a partial run supports the same pairwise conclusion as the completed benchmark. We study this question by replaying completed public task-level records from SWE-bench, AppWorld, and tau-bench. A partial budget counts as enough only when it supports the completed benchmark's decision, covers required task groups, and leaves no more than a target fraction of comparisons unresolved. The required task fraction varies sharply. At the strict 0 percentage point threshold on a 5 percentage point budget grid, AppWorld first meets all targets at 15 percent, tau-bench at 25 percent, and SWE-bench Verified at 90 percent; SWE-bench Lite does not meet all targets by 95 percent under the primary coverage rule. Partial-evaluation reports should state how much one agent must outperform another,",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "7bc41392610d461a4182",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.12385",
-      "title": "PM-Bench: Evaluating Prospective Memory in LLM Agents",
-      "normalized_title": "pm-bench: evaluating prospective memory in llm agents",
-      "excerpt": "arXiv:2607.12385v1 Announce Type: new Abstract: A significant challenge in agentic AI is prospective memory: the ability to execute an intention at a specific future cue or state while other activities are ongoing. We introduce PM-Bench, a text-based benchmark for measuring prospective memory capabilities in modern LLM agents. Inspired by the Virtual Week paradigm from cognitive science, PM-Bench evaluates how well LLM agents maintain user intentions, execute delayed intentions, and monitor latent environment changes. Over the course of a simulated seven-day week, agents must continue an ongoing activity while deciding whether any deferred task is due. We compare eight state-of-the-art LLMs on PM-Bench under eight different agent configurations. PM-Bench proves challenging across all settings: the best method, a GPT-5.4 agent, reaches only 65.1\\% F1 score under our evaluation. Furthermore, no single strategy for improving prospective memory dominates across models. We release PM-Bench",
-      "published_at": "2026-07-15T04:00:00Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "4feab57f5cb65d6bc064",
+      "id": "3177455bc30ce4b65b0f",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/hyeong/pdf-inspectorreul-hangeul-pdfro-jigjeob-jaebwassda-habgyeog-geureonde-han-gundeseo-muneojyeossda-3822",
-      "title": "pdf-inspector를 한글 PDF로 직접 재봤다 — 합격, 그런데 한 군데서 무너졌다",
-      "normalized_title": "pdf-inspector를 한글 pdf로 직접 재봤다 — 합격, 그런데 한 군데서 무너졌다",
-      "excerpt": "이 글은 제 블로그에 처음 발행되었습니다 · Originally published at dbhyeong.github.io 지난 글에서 pdf-inspector를 소개하며 '한글 PDF로 직접 재 봐야 안다'고 썼다. 그래서 쟀다. 공공기관 문서 다섯 건으로 검증한 결과 한글 회수율은 1.00~1.05에 깨짐 0으로 합격이고, 마크다운 변환 속도는 pymupdf4llm 대비 12~117배로 벤더 주장보다 오히려 컸다. 그런데 태그드 PDF 한 건에서 분류기가 28페이지 중 21페이지를 OCR 필요로 오판하고 448자가 깨졌다. 원인까지 파고 내 지표가 나를 속인 대목도 적었다. 📖 전문(한국어) 읽기 → pdf-inspector를 한글 PDF로 직접 재봤다 — 합격, 그런데 한 군데서 무너졌다",
-      "published_at": "2026-07-15T07:16:16Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
+      "canonical_url": "https://dev.to/qingluan/python-decorators-explained-simply-3jac",
+      "title": "Python Decorators Explained Simply",
+      "normalized_title": "python decorators explained simply",
+      "excerpt": "Python Decorators Explained Simply Introduction Python Decorators Explained Simply is essential knowledge for every developer. Key Points Start with the basics Practice regularly Build real projects Share your knowledge Getting Started The best way to learn is by doing. Set up a test environment and experiment. Best Practices Follow official documentation Join community forums Contribute to open source Write about what you learn Conclusion Mastering python opens many career opportunities. Start today! Follow for more python content! More at https://青.失落.世界",
+      "published_at": "2026-07-15T12:05:38Z",
+      "collected_at": "2026-07-15T12:11:26.397318Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "e74c29dd9ed27184d0e5",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/_eb7f2a654e97a60ae9f96e/i-manually-verified-ai-memory-for-2-years-then-i-set-up-pytestdocker-and-found-30-cross-session-2hoo",
+      "title": "I Manually Verified AI Memory for 2 Years. Then I Set Up Pytest+Docker and Found 30% Cross-Session Context Loss",
+      "normalized_title": "i manually verified ai memory for 2 years. then i set up pytest+docker and found 30% cross-session context loss",
+      "excerpt": "At 1 a.m., our user group blew up: “Is your AI a goldfish? I just told it my name is Wang Jianguo, and in the next turn it asks ‘What’s your name?’” I tested it dozens of times locally using Swagger, and it remembered every time. Until I wrote a test suite with Pytest+Docker that simulates cross-session reconnects — 30% of the cases instantly turned red. That was the moment I realized: all that “manual verification” was just a mental comfort blanket. Breaking Down the Problem: Why Manual Testing Misses Cross-Session Context Loss The typical AI memory scenario goes like this: a user starts a session (Session A) and says, “My name is Wang Jianguo, and I like playing basketball.” Later that same day, they reconnect in a new session (Session B). The AI should be able to say, “Wang Jianguo, there’s an update on the basketball tournaments you follow.” If the AI instead asks, “What’s your name?”, you have a context loss. The root cause often isn’t the mo",
+      "published_at": "2026-07-15T12:03:33Z",
+      "collected_at": "2026-07-15T12:11:26.397318Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "9cf5d3ab551364df2fbd",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/qingluan/python-async-web-scraping-scrape-1000-pages-in-seconds-1k47",
+      "title": "Python Async Web Scraping: Scrape 1000 Pages in Seconds",
+      "normalized_title": "python async web scraping: scrape 1000 pages in seconds",
+      "excerpt": "Python Async Web Scraping: Scrape 1000 Pages in Seconds Synchronous scraping is slow - each request blocks until the server responds. With asyncio and httpx , you can fire off hundreds of requests concurrently and cut your scraping time from minutes to seconds. Installation pip install httpx beautifulsoup4 lxml The Core Concept Sync: fetch(1) -> wait -> fetch(2) -> wait -> fetch(3) -> wait ... Async: fetch(1), fetch(2), fetch(3) all wait at the same time -> results arrive together This is the difference between 300 seconds and 3 seconds for 1000 pages. Complete Async Scraper with Rate Limiting import <spa",
+      "published_at": "2026-07-15T12:00:04Z",
+      "collected_at": "2026-07-15T12:11:26.397318Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "0d90720f6dbde3777116",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/pydevtop/building-a-python-algorithmic-trading-platform-with-tradingview-bybit-api-and-websocket-3eb3",
+      "title": "Building a Python Algorithmic Trading Platform with TradingView, Bybit API and WebSocket",
+      "normalized_title": "building a python algorithmic trading platform with tradingview, bybit api and websocket",
+      "excerpt": "Series: Engineering an Algorithmic Trading Platform in Python Part: 1 of 18 In this series This series documents the engineering decisions behind building a production-ready algorithmic trading platform in Python. Rather than focusing on trading strategies, the articles explore software architecture, trade execution, risk management, real-time data processing, and system reliability. Introduction Most algorithmic trading projects begin with a deceptively simple idea. Connect TradingView to an exchange API, receive webhook signals, execute market orders, and let automation handle the rest. On paper, the architecture seems almost trivial. TradingView │ Webhook │ Python Script │ Exchange API </pr",
+      "published_at": "2026-07-15T11:55:36Z",
+      "collected_at": "2026-07-15T12:11:26.397318Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "c7d686a9d0ceb9f6f5a0",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/caper_dev/web-scraping-for-beginners-sell-data-as-a-service-3n35",
+      "title": "Web Scraping for Beginners: Sell Data as a Service",
+      "normalized_title": "web scraping for beginners: sell data as a service",
+      "excerpt": "Web Scraping for Beginners: Sell Data as a Service Web scraping is the process of extracting data from websites, and it's a valuable skill for any developer. In this article, we'll cover the basics of web scraping and provide a step-by-step guide on how to get started. We'll also explore the monetization angle and show you how to sell data as a service. What is Web Scraping? Web scraping is the process of automatically extracting data from websites. This can be done using programming languages like Python, JavaScript, or Ruby. Web scraping is used for a variety of purposes, including data mining, market research, and monitoring website changes. Tools and Technologies To get started with web scraping, you'll need a few tools and technologies. These include: Python : A popular programming language for web scraping Beautiful Soup : A Python library for pa",
+      "published_at": "2026-07-15T11:53:43Z",
+      "collected_at": "2026-07-15T12:11:26.397318Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "5d6485d052cf075976d5",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/suraj_kumar_96bb8767435e2/everyone-tests-their-agents-behavior-almost-nobody-tests-their-structure-thats-backwards-ml",
+      "title": "Everyone tests their agents' behavior. Almost nobody tests their structure. That's backwards.",
+      "normalized_title": "everyone tests their agents' behavior. almost nobody tests their structure. that's backwards.",
+      "excerpt": "The AI industry has poured enormous effort into testing how agents behave — evals, output scoring, LLM-as-judge, runtime observability. All valuable. But there's an earlier, cheaper layer that almost everyone skips, and it's where the most expensive failures hide: the structure of the system itself. Here's the case for structural analysis as the first layer of multi-agent reliability. Two different questions Behavioral testing answers: \"Did this run produce a good output?\" Structural analysis answers: \"Is this system even wired correctly?\" They're different layers, and they have opposite properties. Behavioral Structural Requires running the system Yes (LLM calls, real cost) No Deterministic No (s",
+      "published_at": "2026-07-15T11:45:27Z",
+      "collected_at": "2026-07-15T12:11:26.397318Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "5e992db08228d9c2891b",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/atheerium/-bonsai-27b-a-27-billion-parameter-model-on-a-phone-2o56",
+      "title": "## Bonsai 27B: A 27‑billion‑parameter model on a phone",
+      "normalized_title": "## bonsai 27b: a 27‑billion‑parameter model on a phone",
+      "excerpt": "Bonsai 27B: A 27‑billion‑parameter model on a phone Bonsai 27B is a new language model with 27 billion parameters. It can run directly on a smartphone without cloud servers. The model fits in the device’s memory and uses efficient quantization to stay fast. This makes advanced AI usable offline, preserving privacy and reducing latency. Developers can load the model with a few lines of code. from transformers import AutoModelForCausalLM , AutoTokenizer model_id = prismml / bonsai - 27 b tokenizer</spa",
+      "published_at": "2026-07-15T11:45:07Z",
+      "collected_at": "2026-07-15T12:11:26.397318Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "6cbdcb59b4cb17aa5491",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/gentleforge/i-spent-six-months-running-ai-apis-at-enterprise-scale-heres-what-i-1e3b",
+      "title": "I Spent Six Months Running AI APIs at Enterprise Scale — Here's What I...",
+      "normalized_title": "i spent six months running ai apis at enterprise scale — here's what i...",
+      "excerpt": "I Spent Six Months Running AI APIs at Enterprise Scale — Here's What I Wish I'd Known on Day One When I first started architecting LLM infrastructure for a mid-sized fintech, I thought the hard part was picking the right model. Then we hit p99 latency spikes at 3am, a regional outage took out half our inference pipeline, and our CFO asked why we were paying for three separate enterprise contracts. That's when I realized: the API layer matters more than the model choice. This isn't a comparison of GPT-4o vs Claude vs Gemini. You've read that article. This is about the layer underneath — how you route, fail over, and pay for inference when you're responsible for a 99.9% uptime SLA at 2am on a Sunday. Let me walk you through what actually moves the needle. The Real Question Isn't \"Which Model\" — It's \"Which Plumbing\" Every junior engineer I've hired walks in wanting to debate benchmark scores. Meanwhile, I'm staring at Grafana dash",
+      "published_at": "2026-07-15T11:40:40Z",
+      "collected_at": "2026-07-15T12:11:26.397318Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -507,25 +402,6 @@
       "engagement": null
     },
     {
-      "id": "4d41428759a62e1c9368",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/guardlabs_team/automating-excel-reports-with-python-and-openpyxl-a-practical-guide-29k3",
-      "title": "Automating Excel Reports with Python and openpyxl: A Practical Guide",
-      "normalized_title": "automating excel reports with python and openpyxl: a practical guide",
-      "excerpt": "Automating Excel Reports with Python and openpyxl: A Practical Guide Python's openpyxl library provides robust capabilities for programmatically creating, reading, and modifying Excel .xlsx files. This walkthrough demonstrates how to generate a basic report from structured data using openpyxl , focusing on data writing and fundamental formatting. Prerequisites and Installation Ensure Python 3 is installed on your system. The primary library required is openpyxl . Install it using pip: pip install openpyxl While not strictly required for this basic example, pandas is frequently used for more complex data manipulation prior to Excel export. If needed, install it: <pre class=\"highlight",
-      "published_at": "2026-07-15T07:00:26Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
       "id": "c53f74de4f3b752f839b",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
@@ -564,34 +440,15 @@
       "engagement": null
     },
     {
-      "id": "33b2185491271831e547",
+      "id": "ee6a15cb828760dbe79f",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/jatinkrmalik/building-cross-distro-offline-voice-dictation-for-linux-and-why-it-took-more-than-a-model-1ie8",
-      "title": "Building cross-distro offline voice dictation for Linux (and why it took more than a model)",
-      "normalized_title": "building cross-distro offline voice dictation for linux (and why it took more than a model)",
-      "excerpt": "Linux is great at a lot of things. Voice typing has not been one of them. On Windows and macOS you get system dictation that works in basically any app. On Linux you get cloud services, research scripts, and CLI tools that only make sense if you already know how speech stacks fit together. I wanted something closer to: press a shortcut, talk, text appears. Prefer offline. Free. Not tied to one distro. That is Vocalinux . GPLv3 tray app. System-wide speech-to-text on X11 and Wayland. Default engine is whisper.cpp running on your machine. You can also pick OpenAI Whisper, VOSK, or a Remote API engine that talks to your own HTTP STT server (OpenAI-compatible or whisper.cpp's server). Core path needs no account and does not send audio to a random SaaS. This is the story and the technical path, not a feature dump. The gap I kept tripping ov",
-      "published_at": "2026-07-15T06:14:56Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "58efaadb0f2797926bd1",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/sharonnyabuto/taking-conditional-logic-further-with-nested-if-statements-94d",
-      "title": "Making Decisions Within Decisions in Python",
-      "normalized_title": "making decisions within decisions in python",
-      "excerpt": "Taking Conditional Logic Further with Nested if Statements Previously, we learnt how to use if , elif , and else to make decisions in Python. Those allowed our programs to choose between different paths depending on whether a condition evaluated to True or False . Most of the real world decisions depend on more than one condition. Think about logging into your bank account to withdraw money. Entering the correct PIN is only the first step. Once you're in, the system still needs to check whether you have sufficient funds before approving the withdrawal. How do we build that kind of layered decision-making in Python? That's exactly what we'll explore in this article as we learn about nested if statements. Nested if Statements A nested if statement is simply an if statement placed i",
-      "published_at": "2026-07-15T06:11:48Z",
-      "collected_at": "2026-07-15T07:30:15.346677Z",
+      "canonical_url": "https://dev.to/qingluan/python-decorators-explained-simply-3ikl",
+      "title": "Python Decorators Explained Simply",
+      "normalized_title": "python decorators explained simply",
+      "excerpt": "Python Decorators Explained Simply Introduction Python Decorators Explained Simply is essential knowledge for every developer. Key Points Start with the basics Practice regularly Build real projects Share your knowledge Getting Started The best way to learn is by doing. Set up a test environment and experiment. Best Practices Follow official documentation Join community forums Contribute to open source Write about what you learn Conclusion Mastering python opens many career opportunities. Start today! Follow for more python content! More at https://青.失落.世界 💡 Related: **Content Creator Ultimate Bundle (Save",
+      "published_at": "2026-07-14T12:49:12Z",
+      "collected_at": "2026-07-14T13:04:03.602827Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -603,6 +460,57 @@
     }
   ],
   "events": [
+    {
+      "id": "tech-1cb35efdb9d0dd74",
+      "slug": "модель-bonsai-27b-ии-с-27-миллиардами-параметров-теперь-работает-на-смартфонах",
+      "title": "Модель Bonsai 27B: ИИ с 27 миллиардами параметров теперь работает на смартфонах",
+      "brief": "Представлена новая языковая модель Bonsai 27B, обладающая 27 миллиардами параметров. Ключевой особенностью является возможность её работы непосредственно на смартфоне, без необходимости подключения к облачным серверам. Модель оптимизирована для размещения в памяти устройства и использует эффективную квантизацию для поддержания высокой скорости выполнения. Это открывает путь к использованию продвинутых технологий искусственного интеллекта в автономном режиме, что способствует повышению конфиденциальности данных и снижению задержек при обработке запросов. Разработчики могут интегрировать модель в свои приложения с помощью нескольких строк кода.",
+      "context": "Развитие больших языковых моделей (LLM) достигло нового этапа с появлением Bonsai 27B. Эта модель, насчитывающая 27 миллиардов параметров, демонстрирует значительный прогресс в области локальной обработки данных на мобильных устройствах. В отличие от многих современных ИИ-решений, требующих мощных облачных вычислений, Bonsai 27B спроектирована для работы непосредственно на смартфоне. Это стало возможным благодаря применению передовых методов квантизации, которые позволяют модели эффективно использовать ограниченные ресурсы мобильного устройства, включая оперативную память, и сохранять высокую производительность. Такая архитектура делает передовые ИИ-технологии доступными для офлайн-использования, решая проблемы конфиденциальности и задержек, связанные с передачей данных в облако. Интеграция модели упрощена для разработчиков, которым для её запуска требуется всего несколько строк кода, что значительно снижает порог входа для создания ИИ-приложений.",
+      "why_it_matters": "Возможность запускать мощные языковые модели, такие как Bonsai 27B, непосредственно на смартфонах имеет далеко идущие последствия для индустрии. Во-первых, это значительно повышает конфиденциальность пользователей, поскольку обработка данных происходит локально, без отправки на удаленные серверы. Во-вторых, снижаются задержки, что критически важно для приложений, требующих мгновенного отклика. В-третьих, это делает передовые ИИ-технологии доступными даже в условиях отсутствия стабильного интернет-соединения, расширяя сферу их применения. Для разработчиков это означает возможность создавать более сложные и интеллектуальные мобильные приложения, которые ранее были немыслимы из-за аппаратных ограничений. Bonsai 27B прокладывает путь к будущему, где ИИ будет повсеместно интегрирован в повседневные устройства, оставаясь при этом приватным и быстрым.",
+      "importance": 8,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "5e992db08228d9c2891b"
+      ],
+      "facts": [
+        {
+          "text": "Модель Bonsai 27B содержит 27 миллиардов параметров.",
+          "article_ids": [
+            "5e992db08228d9c2891b"
+          ]
+        },
+        {
+          "text": "Bonsai 27B может работать непосредственно на смартфоне без использования облачных серверов.",
+          "article_ids": [
+            "5e992db08228d9c2891b"
+          ]
+        },
+        {
+          "text": "Модель использует эффективную квантизацию для обеспечения высокой скорости работы на мобильных устройствах.",
+          "article_ids": [
+            "5e992db08228d9c2891b"
+          ]
+        },
+        {
+          "text": "Разработчики могут загрузить модель с помощью нескольких строк кода.",
+          "article_ids": [
+            "5e992db08228d9c2891b"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "ai_model_release",
+        "primary_entities": [
+          "Bonsai 27B"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-15T11:45:07Z"
+      },
+      "first_seen_at": "2026-07-15T11:45:07Z",
+      "updated_at": "2026-07-15T12:11:26.388659Z"
+    },
     {
       "id": "tech-bcb8f6ca77bf8951",
       "slug": "локальное-seo-ключ-к-росту-малого-бизнеса-в-цифровую-эпоху",
@@ -721,6 +629,252 @@
       },
       "first_seen_at": "2026-07-15T07:00:10Z",
       "updated_at": "2026-07-15T07:30:15.337874Z"
+    },
+    {
+      "id": "tech-5f293a91b8eaa2f1",
+      "slug": "объяснение-декораторов-python",
+      "title": "Объяснение декораторов Python",
+      "brief": "Введение в декораторы Python, которые являются важным знанием для каждого разработчика. Ключевые моменты включают: начинайте с основ, практикуйтесь регулярно, создавайте реальные проекты и делитесь своими знаниями. Лучший способ научиться — это делать. Настройте тестовую среду и экспериментируйте. Рекомендуется следовать официальной документации, присоединяться к сообществам и вносить свой вклад в открытый исходный код. Написание статей о том, что вы узнали, также способствует обучению. Освоение Python открывает множество карьерных возможностей.",
+      "context": "Статья «Python Decorators Explained Simply» представляет собой руководство для разработчиков, желающих понять концепцию декораторов в языке программирования Python. В ней подчеркивается важность этого инструмента для эффективного написания кода. Материал охватывает основные принципы работы декораторов, предлагая практические советы по их освоению, такие как регулярная практика и создание собственных проектов. Также даются рекомендации по дальнейшему развитию, включая изучение официальной документации, участие в сообществах разработчиков и вклад в проекты с открытым исходным кодом. Автор статьи мотивирует читателей к активному обучению и подчеркивает, что глубокое знание Python может значительно расширить карьерные перспективы.",
+      "why_it_matters": "Понимание декораторов Python является фундаментальным для разработчиков, стремящихся писать более чистый, модульный и эффективный код. Декораторы позволяют расширять функциональность функций или методов без изменения их исходной структуры, что способствует соблюдению принципа DRY (Don't Repeat Yourself). Это особенно важно при реализации таких задач, как логирование, контроль доступа, кэширование или трассировка вызовов. Освоение декораторов повышает производительность разработчика, улучшает читаемость кода и способствует более глубокому пониманию архитектурных паттернов в Python, что в конечном итоге открывает двери к более сложным проектам и продвинутым ролям в разработке программного обеспечения.",
+      "importance": 7,
+      "status": "updated",
+      "category": "Программирование",
+      "article_ids": [
+        "ee6a15cb828760dbe79f",
+        "3177455bc30ce4b65b0f"
+      ],
+      "facts": [
+        {
+          "text": "Декораторы Python являются важным знанием для каждого разработчика.",
+          "article_ids": [
+            "ee6a15cb828760dbe79f"
+          ]
+        },
+        {
+          "text": "Для изучения декораторов рекомендуется начинать с основ, регулярно практиковаться, создавать реальные проекты и делиться знаниями.",
+          "article_ids": [
+            "ee6a15cb828760dbe79f"
+          ]
+        },
+        {
+          "text": "Лучший способ научиться — это делать: настроить тестовую среду и экспериментировать.",
+          "article_ids": [
+            "ee6a15cb828760dbe79f"
+          ]
+        },
+        {
+          "text": "Рекомендуется следовать официальной документации, присоединяться к сообществам, вносить вклад в open source и писать о полученных знаниях.",
+          "article_ids": [
+            "ee6a15cb828760dbe79f"
+          ]
+        },
+        {
+          "text": "Освоение Python открывает множество карьерных возможностей.",
+          "article_ids": [
+            "ee6a15cb828760dbe79f"
+          ]
+        },
+        {
+          "text": "Для освоения декораторов рекомендуется начинать с основ, регулярно практиковаться и создавать реальные проекты.",
+          "article_ids": [
+            "3177455bc30ce4b65b0f"
+          ]
+        },
+        {
+          "text": "Лучший способ научиться — это делать, экспериментируя в тестовой среде.",
+          "article_ids": [
+            "3177455bc30ce4b65b0f"
+          ]
+        },
+        {
+          "text": "Рекомендуется следовать официальной документации, присоединяться к сообществам и вносить вклад в открытый исходный код.",
+          "article_ids": [
+            "3177455bc30ce4b65b0f"
+          ]
+        }
+      ],
+      "updates": [
+        {
+          "at": "2026-07-15T12:11:26.388659Z",
+          "summary": "Для освоения декораторов рекомендуется начинать с основ, регулярно практиковаться и создавать реальные проекты. Лучший способ научиться — это делать, экспериментируя в тестовой среде.",
+          "article_ids": [
+            "3177455bc30ce4b65b0f"
+          ]
+        }
+      ],
+      "identity": {
+        "event_type": "educational_content",
+        "primary_entities": [
+          "Python"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-15T12:05:38Z"
+      },
+      "first_seen_at": "2026-07-14T12:49:12Z",
+      "updated_at": "2026-07-15T12:11:26.388659Z"
+    },
+    {
+      "id": "tech-b8d43dedc4b5a709",
+      "slug": "разработчики-обнаружили-30-потерю-контекста-в-ии-системах-при-переподключении-се",
+      "title": "Разработчики обнаружили 30% потерю контекста в ИИ-системах при переподключении сессий",
+      "brief": "Исследование выявило критическую проблему в работе искусственного интеллекта: до 30% случаев потери контекста при переподключении пользователей между сессиями. Разработчик столкнулся с этим, когда ИИ забывал имена пользователей и их предпочтения, несмотря на успешные локальные тесты. Проблема заключается не в моделях ИИ, а в инфраструктуре и способах управления сессиями, что требует более глубокого тестирования, чем просто проверка поведения. Это ставит под сомнение надежность существующих методов \"ручной верификации\" и подчеркивает важность структурного анализа систем.",
+      "context": "В ходе двухлетнего ручного тестирования систем искусственного интеллекта разработчик столкнулся с проблемой потери контекста. Пользователи сообщали, что ИИ забывает предоставленную информацию, например, имя пользователя или его интересы, при последующих подключениях. Первоначальные локальные тесты, проведенные через Swagger, не выявляли этой проблемы, создавая ложное чувство уверенности в надежности системы. Однако, при создании автоматизированного тестового набора с использованием Pytest и Docker, имитирующего переподключения между сессиями, было обнаружено, что в 30% случаев контекст теряется. Это указывает на фундаментальные недостатки в архитектуре управления сессиями и хранении данных, которые не обнаруживаются при стандартном тестировании поведения ИИ. Проблема усугубляется тем, что фокус индустрии смещен на тестирование выходных данных моделей, а не на структурную целостность самой системы, что приводит к дорогостоящим сбоям на этапе эксплуатации.",
+      "why_it_matters": "Потеря контекста в ИИ-системах, особенно при работе с пользователями в течение длительного времени или через несколько сессий, подрывает доверие к технологии и снижает ее эффективность. Если ИИ не может запомнить базовую информацию о пользователе, он не сможет предоставлять персонализированный и релевантный опыт. Это особенно критично для корпоративных приложений, где надежность и предсказуемость работы ИИ являются ключевыми факторами. Обнаруженная проблема указывает на необходимость пересмотра подходов к тестированию ИИ, смещая акцент с поведенческих тестов на структурный анализ инфраструктуры. Игнорирование этих фундаментальных проблем может привести к значительным финансовым потерям и репутационному ущербу для компаний, внедряющих ИИ-решения.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "e74c29dd9ed27184d0e5",
+        "5d6485d052cf075976d5",
+        "6cbdcb59b4cb17aa5491"
+      ],
+      "facts": [
+        {
+          "text": "Разработчик обнаружил, что до 30% случаев переподключения между сессиями приводят к потере контекста в ИИ-системах.",
+          "article_ids": [
+            "e74c29dd9ed27184d0e5"
+          ]
+        },
+        {
+          "text": "Проблема потери контекста не выявлялась при ручном тестировании, но была обнаружена с помощью автоматизированных тестов Pytest и Docker, имитирующих переподключения.",
+          "article_ids": [
+            "e74c29dd9ed27184d0e5"
+          ]
+        },
+        {
+          "text": "Существующие методы тестирования ИИ в основном фокусируются на проверке поведения и выходных данных, игнорируя структурную целостность системы, где могут скрываться дорогостоящие ошибки.",
+          "article_ids": [
+            "5d6485d052cf075976d5"
+          ]
+        },
+        {
+          "text": "Надежность ИИ-инфраструктуры, включая маршрутизацию, отказоустойчивость и управление API, имеет большее значение, чем выбор конкретной модели ИИ, для обеспечения высокого уровня доступности сервиса.",
+          "article_ids": [
+            "6cbdcb59b4cb17aa5491"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "ai_context_loss",
+        "primary_entities": [
+          "AI systems",
+          "developers"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-15T12:03:33Z"
+      },
+      "first_seen_at": "2026-07-15T11:40:40Z",
+      "updated_at": "2026-07-15T12:11:26.388659Z"
+    },
+    {
+      "id": "tech-79449f69b0c821da",
+      "slug": "python-ускоряет-веб-скрейпинг-от-минут-к-секундам",
+      "title": "Python ускоряет веб-скрейпинг: от минут к секундам",
+      "brief": "Новый подход к веб-скрейпингу с использованием асинхронного программирования на Python позволяет обрабатывать тысячи страниц за секунды, что значительно сокращает время по сравнению с традиционными синхронными методами. Этот метод, использующий библиотеки asyncio и httpx, открывает новые возможности для извлечения данных и их последующей монетизации, например, путем продажи данных как услуги.",
+      "context": "Традиционный синхронный веб-скрейпинг характеризуется последовательным выполнением запросов, где каждый запрос должен дождаться ответа сервера, прежде чем начнется следующий. Это приводит к значительным временным затратам, особенно при обработке больших объемов данных. Представленный асинхронный подход позволяет отправлять сотни запросов одновременно, что кардинально меняет производительность. Вместо минут, обработка тысяч страниц может занимать всего несколько секунд. Этот метод особенно актуален для задач, требующих быстрого сбора данных, таких как анализ рыночных тенденций, мониторинг изменений на веб-сайтах или подготовка данных для продажи.",
+      "why_it_matters": "Ускорение процесса веб-скрейпинга с помощью асинхронных технологий Python имеет огромное значение для разработчиков и бизнеса. Сокращение времени обработки данных с минут до секунд позволяет повысить эффективность работы, снизить затраты на вычислительные ресурсы и ускорить получение ценной информации. Это открывает новые перспективы для монетизации данных, позволяя создавать сервисы по продаже актуальной информации, собранной с веб-сайтов. Разработчики могут быстрее выполнять проекты, требующие большого объема данных, а компании — оперативнее реагировать на изменения рынка и принимать обоснованные решения.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "9cf5d3ab551364df2fbd",
+        "c7d686a9d0ceb9f6f5a0"
+      ],
+      "facts": [
+        {
+          "text": "Синхронный веб-скрейпинг медленный, так как каждый запрос блокируется до получения ответа от сервера.",
+          "article_ids": [
+            "9cf5d3ab551364df2fbd"
+          ]
+        },
+        {
+          "text": "С помощью asyncio и httpx можно отправлять сотни запросов параллельно, сокращая время скрейпинга с минут до секунд.",
+          "article_ids": [
+            "9cf5d3ab551364df2fbd"
+          ]
+        },
+        {
+          "text": "Веб-скрейпинг — это процесс автоматического извлечения данных с веб-сайтов, используемый для майнинга данных, маркетинговых исследований и мониторинга изменений.",
+          "article_ids": [
+            "c7d686a9d0ceb9f6f5a0"
+          ]
+        },
+        {
+          "text": "Python является популярным языком программирования для веб-скрейпинга, а Beautiful Soup — библиотекой для его обработки.",
+          "article_ids": [
+            "c7d686a9d0ceb9f6f5a0"
+          ]
+        },
+        {
+          "text": "Веб-скрейпинг может использоваться для продажи данных как услуги.",
+          "article_ids": [
+            "c7d686a9d0ceb9f6f5a0"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "web_scraping_optimization",
+        "primary_entities": [
+          "Python",
+          "asyncio",
+          "httpx",
+          "Beautiful Soup"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-15T11:53:43Z"
+      },
+      "first_seen_at": "2026-07-15T11:53:43Z",
+      "updated_at": "2026-07-15T12:11:26.388659Z"
+    },
+    {
+      "id": "tech-8e37ece3d3267db7",
+      "slug": "разработка-платформы-для-алгоритмической-торговли-на-python",
+      "title": "Разработка платформы для алгоритмической торговли на Python",
+      "brief": "Серия статей документирует инженерные решения, лежащие в основе создания готовой к эксплуатации платформы для алгоритмической торговли на Python. Основное внимание уделяется архитектуре программного обеспечения, исполнению сделок, управлению рисками, обработке данных в реальном времени и надежности системы, а не торговым стратегиям. Введение в проект описывает базовую архитектуру: подключение TradingView к API биржи, получение сигналов через веб-хуки, исполнение рыночных ордеров и автоматизация процессов.",
+      "context": "Данная серия статей посвящена инженерным аспектам создания платформы для алгоритмической торговли с использованием языка программирования Python. В первой части рассматривается архитектура системы, которая предполагает интеграцию с TradingView для получения торговых сигналов через веб-хуки и последующее исполнение ордеров на бирже через API. Особое внимание уделяется не самим торговым стратегиям, а вопросам построения надежной и масштабируемой системы, включая обработку данных в реальном времени и управление рисками.",
+      "why_it_matters": "Создание надежной платформы для алгоритмической торговли требует глубокого понимания не только торговых стратегий, но и сложных инженерных задач. Эта серия статей предоставляет ценные знания по архитектуре программного обеспечения, управлению рисками и обработке данных в реальном времени, что критически важно для успешной автоматизации торговли и минимизации финансовых потерь. Понимание этих аспектов позволяет разработчикам создавать более стабильные и эффективные торговые системы.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "0d90720f6dbde3777116"
+      ],
+      "facts": [
+        {
+          "text": "Серия статей документирует инженерные решения, лежащие в основе создания готовой к эксплуатации платформы для алгоритмической торговли на Python.",
+          "article_ids": [
+            "0d90720f6dbde3777116"
+          ]
+        },
+        {
+          "text": "Проект фокусируется на архитектуре программного обеспечения, исполнении сделок, управлении рисками, обработке данных в реальном времени и надежности системы, а не на торговых стратегиях.",
+          "article_ids": [
+            "0d90720f6dbde3777116"
+          ]
+        },
+        {
+          "text": "Базовая архитектура включает подключение TradingView к API биржи, получение сигналов через веб-хуки и исполнение рыночных ордеров.",
+          "article_ids": [
+            "0d90720f6dbde3777116"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "software_development",
+        "primary_entities": [
+          "Python",
+          "TradingView",
+          "Bybit API"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-15T11:55:36Z"
+      },
+      "first_seen_at": "2026-07-15T11:55:36Z",
+      "updated_at": "2026-07-15T12:11:26.388659Z"
     },
     {
       "id": "tech-87d322e7f307ee97",
@@ -884,315 +1038,6 @@
         "occurred_at": "2026-07-15T06:31:55Z"
       },
       "first_seen_at": "2026-07-15T06:31:55Z",
-      "updated_at": "2026-07-15T07:30:15.337874Z"
-    },
-    {
-      "id": "tech-e30218d7c7c4a5f3",
-      "slug": "инструмент-pdf-inspector-показал-смешанные-результаты-при-работе-с-корейскими-pd",
-      "title": "Инструмент pdf-inspector показал смешанные результаты при работе с корейскими PDF",
-      "brief": "Инструмент pdf-inspector был протестирован на пяти документах из государственных учреждений Кореи. Результаты показали 100% точность извлечения корейских символов и отсутствие ошибок при преобразовании в Markdown. Однако при работе с одним тегированным PDF-файлом, содержащим 28 страниц, инструмент ошибочно определил 21 страницу как требующую OCR, что привело к искажению 448 символов. Скорость преобразования в Markdown оказалась в 12-117 раз выше, чем у pymupdf4llm.",
-      "context": "В предыдущей статье был представлен инструмент pdf-inspector с утверждением о необходимости его проверки на корейских PDF-документах. Данное тестирование проводилось для верификации этих утверждений. Были использованы пять документов из государственных учреждений, а также один тегированный PDF-файл. Особое внимание уделялось точности извлечения корейских символов, отсутствию искажений и скорости преобразования в Markdown. Анализ ошибок позволил выявить конкретные проблемы, связанные с обработкой тегированных PDF.",
-      "why_it_matters": "Результаты тестирования pdf-inspector демонстрируют его высокую эффективность при работе с большинством корейских PDF-документов, обеспечивая точное извлечение текста и высокую скорость преобразования. Однако выявленная проблема с тегированными PDF-файлами указывает на необходимость доработки инструмента для корректной обработки таких документов. Это важно для пользователей, работающих с разнообразными форматами документов, особенно в контексте государственных учреждений, где точность и надежность обработки данных имеют первостепенное значение.",
-      "importance": 6,
-      "status": "updated",
-      "category": "Технологии",
-      "article_ids": [
-        "4feab57f5cb65d6bc064"
-      ],
-      "facts": [
-        {
-          "text": "Инструмент pdf-inspector показал 100% точность извлечения корейских символов (коэффициент 1.00-1.05) и отсутствие искажений при тестировании на пяти документах из государственных учреждений Кореи.",
-          "article_ids": [
-            "4feab57f5cb65d6bc064"
-          ]
-        },
-        {
-          "text": "Скорость преобразования в Markdown с помощью pdf-inspector была в 12-117 раз выше, чем у pymupdf4llm.",
-          "article_ids": [
-            "4feab57f5cb65d6bc064"
-          ]
-        },
-        {
-          "text": "При обработке одного тегированного PDF-файла (28 страниц) pdf-inspector ошибочно определил 21 страницу как требующую OCR, что привело к искажению 448 символов.",
-          "article_ids": [
-            "4feab57f5cb65d6bc064"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "software_testing",
-        "primary_entities": [
-          "pdf-inspector"
-        ],
-        "geographies": [
-          "Korea"
-        ],
-        "occurred_at": "2026-07-15T07:16:16Z"
-      },
-      "first_seen_at": "2026-07-15T07:16:16Z",
-      "updated_at": "2026-07-15T07:30:15.337874Z"
-    },
-    {
-      "id": "tech-b33ba59ab28ef7f6",
-      "slug": "разработано-приложение-vocalinux-для-голосового-ввода-текста-на-linux",
-      "title": "Разработано приложение Vocalinux для голосового ввода текста на Linux",
-      "brief": "Представлено новое приложение Vocalinux, предназначенное для обеспечения системного голосового ввода текста на Linux. Приложение работает как в среде X11, так и Wayland, позволяя пользователям преобразовывать речь в текст в любом приложении путем нажатия сочетания клавиш. Vocalinux поддерживает работу в офлайн-режиме, не требует учетной записи и не отправляет аудиоданные на сторонние серверы. В качестве основного движка используется whisper.cpp, но также доступны опции OpenAI Whisper, VOSK или удаленного API. Разработка направлена на устранение отставания Linux в области голосового ввода по сравнению с Windows и macOS.",
-      "context": "В то время как операционные системы Windows и macOS предлагают встроенные функции голосового ввода, работающие в большинстве приложений, Linux традиционно отставал в этой области. Пользователям приходилось полагаться на облачные сервисы, скрипты или сложные командные инструменты. Vocalinux призван изменить эту ситуацию, предоставляя простое в использовании, системное решение для преобразования речи в текст, которое работает локально на машине пользователя и не зависит от конкретного дистрибутива Linux. Приложение разработано с учетом принципов GPLv3 и ориентировано на конфиденциальность, не требуя отправки аудиоданных в облако.",
-      "why_it_matters": "Создание Vocalinux имеет большое значение для пользователей Linux, которым необходима эффективная и конфиденциальная функция голосового ввода. Это приложение устраняет существенный пробел в функциональности операционной системы, делая ее более конкурентоспособной по сравнению с другими платформами. Возможность работать в офлайн-режиме и отсутствие привязки к облачным сервисам особенно важны для пользователей, заботящихся о конфиденциальности или работающих в условиях ограниченного доступа к сети. Vocalinux открывает новые возможности для повышения продуктивности и доступности на платформе Linux.",
-      "importance": 6,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "33b2185491271831e547"
-      ],
-      "facts": [
-        {
-          "text": "Приложение Vocalinux обеспечивает системный голосовой ввод текста на Linux, работая в средах X11 и Wayland.",
-          "article_ids": [
-            "33b2185491271831e547"
-          ]
-        },
-        {
-          "text": "Vocalinux поддерживает офлайн-режим, не требует учетной записи и не отправляет аудиоданные на сторонние серверы.",
-          "article_ids": [
-            "33b2185491271831e547"
-          ]
-        },
-        {
-          "text": "В качестве основного движка Vocalinux использует whisper.cpp, но также поддерживает OpenAI Whisper, VOSK и удаленные API.",
-          "article_ids": [
-            "33b2185491271831e547"
-          ]
-        },
-        {
-          "text": "Приложение распространяется под лицензией GPLv3.",
-          "article_ids": [
-            "33b2185491271831e547"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "software_release",
-        "primary_entities": [
-          "Vocalinux"
-        ],
-        "geographies": [
-          "Linux"
-        ],
-        "occurred_at": "2026-07-15T06:14:56Z"
-      },
-      "first_seen_at": "2026-07-15T06:14:56Z",
-      "updated_at": "2026-07-15T07:30:15.337874Z"
-    },
-    {
-      "id": "tech-0364bc767ba2070b",
-      "slug": "автоматизация-отчетов-excel-с-помощью-python-и-openpyxl",
-      "title": "Автоматизация отчетов Excel с помощью Python и openpyxl",
-      "brief": "Библиотека Python openpyxl позволяет программно создавать, читать и изменять файлы Excel формата .xlsx. В данном руководстве показано, как создавать базовые отчеты из структурированных данных с использованием openpyxl, уделяя особое внимание записи данных и базовому форматированию. Для работы требуется Python 3 и установленная библиотека openpyxl, которую можно установить с помощью pip. Для более сложных задач часто используется библиотека pandas.",
-      "context": "В современном мире автоматизация рутинных задач является ключевым фактором повышения эффективности. Работа с электронными таблицами Excel, особенно создание и обновление отчетов, часто занимает значительное время. Библиотека openpyxl для языка программирования Python предоставляет мощные инструменты для взаимодействия с файлами Excel (.xlsx) на программном уровне. Это руководство демонстрирует практический подход к автоматизации создания отчетов, начиная с установки необходимых инструментов и заканчивая записью данных и применением базового форматирования. Хотя для данного примера достаточно только openpyxl, часто в связке с ней используется библиотека pandas для предварительной обработки и анализа данных перед экспортом в Excel.",
-      "why_it_matters": "Автоматизация создания отчетов Excel с помощью Python и библиотеки openpyxl позволяет значительно сократить время, затрачиваемое на рутинные задачи, уменьшить вероятность ошибок, связанных с человеческим фактором, и повысить общую производительность. Это особенно важно для специалистов, регулярно работающих с большими объемами данных и требующих регулярного формирования отчетности. Освоение этих инструментов открывает возможности для более глубокого анализа данных и принятия обоснованных решений на основе своевременно подготовленных отчетов.",
-      "importance": 5,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "4d41428759a62e1c9368"
-      ],
-      "facts": [
-        {
-          "text": "Библиотека Python openpyxl позволяет программно создавать, читать и изменять файлы Excel формата .xlsx.",
-          "article_ids": [
-            "4d41428759a62e1c9368"
-          ]
-        },
-        {
-          "text": "Для работы с openpyxl требуется установленный Python 3 и сама библиотека, которую можно установить с помощью команды 'pip install openpyxl'.",
-          "article_ids": [
-            "4d41428759a62e1c9368"
-          ]
-        },
-        {
-          "text": "Библиотека pandas часто используется вместе с openpyxl для более сложных манипуляций с данными перед экспортом в Excel.",
-          "article_ids": [
-            "4d41428759a62e1c9368"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "software_development",
-        "primary_entities": [
-          "Python",
-          "openpyxl",
-          "pandas"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-15T07:00:26Z"
-      },
-      "first_seen_at": "2026-07-15T07:00:26Z",
-      "updated_at": "2026-07-15T07:30:15.337874Z"
-    },
-    {
-      "id": "tech-d2774e4188565134",
-      "slug": "вложенные-условные-операторы-в-python-для-принятия-решений",
-      "title": "Вложенные условные операторы в Python для принятия решений",
-      "brief": "В статье рассматривается использование вложенных операторов if в языке программирования Python для реализации многоуровневых условий. Приводится пример с банковским аккаунтом, где после ввода PIN-кода система проверяет наличие достаточных средств для снятия денег. Это позволяет создавать более сложные логические структуры, чем при использовании только базовых if, elif, else.",
-      "context": "В Python, как и во многих других языках программирования, для принятия решений используются условные операторы. Базовые конструкции, такие как if, elif и else, позволяют программе выбирать различные пути выполнения в зависимости от истинности или ложности определенного условия. Однако реальные жизненные ситуации часто требуют учета нескольких условий одновременно. Например, при входе в банковский аккаунт для снятия наличных, правильный ввод PIN-кода — это лишь первый шаг. После успешной аутентификации система должна проверить, достаточно ли средств на счете, прежде чем одобрить транзакцию. Для реализации таких многоуровневых проверок в Python используются вложенные операторы if, когда один оператор if находится внутри другого.",
-      "why_it_matters": "Понимание и применение вложенных условных операторов необходимо для создания более сложных и реалистичных программных логик. Это позволяет разработчикам моделировать ситуации, где принятие решения зависит от выполнения нескольких последовательных или взаимосвязанных условий. Эффективное использование вложенных if-операторов ведет к созданию более гибкого, точного и функционального кода, способного обрабатывать разнообразные сценарии, что особенно важно при разработке приложений, требующих сложной бизнес-логики, например, в финансовых системах или системах управления.",
-      "importance": 3,
-      "status": "new",
-      "category": "Программирование",
-      "article_ids": [
-        "58efaadb0f2797926bd1"
-      ],
-      "facts": [
-        {
-          "text": "Вложенный оператор if — это оператор if, размещенный внутри другого оператора if.",
-          "article_ids": [
-            "58efaadb0f2797926bd1"
-          ]
-        },
-        {
-          "text": "Реальные жизненные решения часто зависят от более чем одного условия, как, например, при снятии денег с банковского счета, где требуется правильный PIN-код и наличие достаточных средств.",
-          "article_ids": [
-            "58efaadb0f2797926bd1"
-          ]
-        },
-        {
-          "text": "Вложенные операторы if позволяют создавать в Python логику принятия решений, учитывающую несколько условий последовательно.",
-          "article_ids": [
-            "58efaadb0f2797926bd1"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "programming_concept_explanation",
-        "primary_entities": [
-          "Python"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-15T06:11:48Z"
-      },
-      "first_seen_at": "2026-07-15T06:11:48Z",
-      "updated_at": "2026-07-15T07:30:15.337874Z"
-    },
-    {
-      "id": "tech-ade1c50ff5c5f792",
-      "slug": "новые-бенчмарки-и-модели-для-оценки-ии-агентов-и-геопространственных-данных",
-      "title": "Новые бенчмарки и модели для оценки ИИ-агентов и геопространственных данных",
-      "brief": "Исследователи представили ряд новых разработок в области оценки и создания моделей искусственного интеллекта. Среди них — бенчмарки для тестирования прогностической памяти LLM-агентов (PM-Bench), фреймворк для оценки влияния доступа к моделям на планирование рискованных действий (CBRN Uplift Evaluation), а также методы для оценки геопространственных моделей (GeoFMs). Кроме того, предложены подходы к управлению затратами в системах RAG (Cost-Governed RAG) и к оценке качества ответов разговорных агентов (GenAI Evaluation). Особое внимание уделяется вопросам надежности и интерпретируемости результатов, включая оценку верности цитирования и влияния объема обрабатываемой информации на точность.",
-      "context": "В последние годы наблюдается стремительное развитие моделей искусственного интеллекта, в частности больших языковых моделей (LLM) и их агентов. Это развитие порождает новые вызовы, связанные с их оценкой, безопасностью и эффективностью. Исследователи активно работают над созданием более совершенных инструментов и методологий для тестирования и развертывания ИИ-систем. В частности, уделяется внимание таким аспектам, как прогностическая память агентов, их способность к рассуждениям на основе геопространственных данных, а также оценка рисков, связанных с их применением. Параллельно разрабатываются подходы к оптимизации затрат и управлению ресурсами в сложных ИИ-системах, таких как Retrieval-Augmented Generation (RAG). Важной задачей остается обеспечение надежности и точности ответов, особенно в контексте использования моделей для исследований и генерации контента.",
-      "why_it_matters": "Разработка новых бенчмарков и методологий оценки является критически важной для прогресса в области искусственного интеллекта. Эти инструменты позволяют исследователям и разработчикам объективно сравнивать производительность различных моделей, выявлять их сильные и слабые стороны, а также гарантировать безопасность и надежность их применения. Создание специализированных моделей, таких как геопространственные модели, открывает новые возможности для анализа данных и решения прикладных задач. Управление затратами и обеспечение прозрачности в сложных ИИ-системах, таких как RAG, необходимо для их широкого внедрения в коммерческих и корпоративных средах. В конечном итоге, эти разработки способствуют созданию более мощных, безопасных и доступных ИИ-решений, которые могут трансформировать различные отрасли.",
-      "importance": 8,
-      "status": "new",
-      "category": "Искусственный интеллект",
-      "article_ids": [
-        "f7b5c1bd079a77985a04",
-        "9a3a857685c3b639b7e7",
-        "8bf1496f6489c07785ea",
-        "7bc41392610d461a4182",
-        "759639d75af190576eb5",
-        "6f8479f8a891400f1112",
-        "6b45a87e5b10c6a26718",
-        "65b0b5251179291c9201",
-        "63cc34eb8fadaa3d43db",
-        "425d017dde92400fe6be",
-        "32c700491386291b3063",
-        "1c35713dbf2e2d5bb16a",
-        "0542fd935604499b20f3"
-      ],
-      "facts": [
-        {
-          "text": "Представлен новый бенчмарк PM-Bench для оценки прогностической памяти LLM-агентов, который имитирует недельный цикл и проверяет способность агентов выполнять отложенные намерения.",
-          "article_ids": [
-            "7bc41392610d461a4182"
-          ]
-        },
-        {
-          "text": "Разработан фреймворк Threshold Exceedance Criteria (TEC) для оценки того, насколько доступ к передовым языковым моделям увеличивает способность неспециалиста планировать высокорискованные действия (CBRN).",
-          "article_ids": [
-            "6b45a87e5b10c6a26718"
-          ]
-        },
-        {
-          "text": "Представлены Geospatial Foundation Models (GeoFMs) — модели ИИ, предварительно обученные на больших геопространственных наборах данных, что позволяет экспертам быстро дообучать или использовать их для конкретных задач.",
-          "article_ids": [
-            "9a3a857685c3b639b7e7"
-          ]
-        },
-        {
-          "text": "Предложен подход Cost-Governed RAG для унифицированного отслеживания затрат на извлечение и генерацию в многопользовательских LLM-системах, включая стоимость работы с векторной базой данных.",
-          "article_ids": [
-            "425d017dde92400fe6be"
-          ]
-        },
-        {
-          "text": "Разработана управляемая конвейерная система GenAI Evaluation для крупномасштабной оценки разговорных систем, которая обрабатывает логи чат-ботов и оценивает их по различным критериям, включая полезность и правдивость.",
-          "article_ids": [
-            "65b0b5251179291c9201"
-          ]
-        },
-        {
-          "text": "Исследуется верность цитирования и охват источников для исследовательских агентов, работающих на устройствах, с моделью объемом 4 миллиарда параметров, показывая, что объем обрабатываемой информации влияет на верность цитирования.",
-          "article_ids": [
-            "1c35713dbf2e2d5bb16a"
-          ]
-        },
-        {
-          "text": "Предложены новые подходы к оценке LLM-агентов, включая пересмотр оценки эволюции harness-конфигураций и анализ достаточности количества задач для принятия решений в бенчмарках.",
-          "article_ids": [
-            "8bf1496f6489c07785ea",
-            "32c700491386291b3063"
-          ]
-        },
-        {
-          "text": "Исследуется концепция In-Context Reinforcement Learning (ICRL), позволяющая моделям обучаться на основе контекста взаимодействия без обновления параметров, с акцентом на нестационарные среды.",
-          "article_ids": [
-            "63cc34eb8fadaa3d43db"
-          ]
-        },
-        {
-          "text": "Представлены новые принципы для создания хороших бенчмарков: задачи должны быть корректными, решаемыми, проверяемыми, четко специфицированными и сложными по интересным причинам.",
-          "article_ids": [
-            "f7b5c1bd079a77985a04"
-          ]
-        },
-        {
-          "text": "Обсуждается проблема ограничения культуры оптимизации в ИИ, где измеримое улучшение по предопределенным осям может не отражать истинную ценность, и предлагается рассматривать это как новый этап развития.",
-          "article_ids": [
-            "759639d75af190576eb5"
-          ]
-        },
-        {
-          "text": "Представлено исследование по онтологически-усиленной дистилляции для создания локальных языковых моделей для финансовых учреждений, демонстрирующее высокую степень покрытия онтологических терминов.",
-          "article_ids": [
-            "6f8479f8a891400f1112"
-          ]
-        },
-        {
-          "text": "Предложена калибровочно-ориентированная система аудита компонентов вознаграждения для обучения с подкреплением в умных теплицах, позволяющая сравнивать компоненты вознаграждения в различных условиях.",
-          "article_ids": [
-            "0542fd935604499b20f3"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "ai_research_and_development",
-        "primary_entities": [
-          "LLM agents",
-          "Foundation Models",
-          "Geospatial Foundation Models",
-          "PM-Bench",
-          "Cost-Governed RAG",
-          "GenAI Evaluation"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-15T04:00:00Z"
-      },
-      "first_seen_at": "2026-07-15T04:00:00Z",
       "updated_at": "2026-07-15T07:30:15.337874Z"
     }
   ]
