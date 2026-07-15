@@ -1,0 +1,272 @@
+{
+  "started_at": "2026-07-15T18:02:42.713060+00:00",
+  "raw_articles": 168,
+  "normalized_articles": 168,
+  "dedupe": {
+    "input_articles": 168,
+    "exact_url_duplicates": 0,
+    "same_source_near_duplicates": 0,
+    "output_articles": 168
+  },
+  "sources": [
+    {
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 484,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 687,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport Football",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 860,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1168,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "state": "available",
+      "fetched": 12,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 470,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "le-monde",
+      "source_name": "Le Monde",
+      "state": "available",
+      "fetched": 16,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 700,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 736,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1471,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "spiegel",
+      "source_name": "Der Spiegel",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 893,
+      "error_code": null,
+      "history": []
+    }
+  ],
+  "digests": {
+    "fc-liverpool": {
+      "selected": 0,
+      "published": 0,
+      "quarantined": [],
+      "dedupe": {
+        "degraded": false,
+        "errors": [],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 0,
+        "candidate_bundles": 0,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 0,
+        "reused_event_ids": 0,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "candidate_clusters": 0,
+        "synthesized_clusters": 0,
+        "skipped_low_rank_clusters": 0,
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 0,
+        "dedupe_degraded": false
+      }
+    },
+    "tech": {
+      "selected": 32,
+      "published": 10,
+      "quarantined": [
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "3fdf698f69786e7d6759"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "e2d518cfb1ae43ef340b"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "f7b5c1bd079a77985a04",
+            "a69d4ce1fcb7d3a7f533",
+            "9a3a857685c3b639b7e7",
+            "8bf1496f6489c07785ea",
+            "7bc41392610d461a4182",
+            "759639d75af190576eb5",
+            "6f8479f8a891400f1112",
+            "6b45a87e5b10c6a26718",
+            "65b0b5251179291c9201",
+            "63cc34eb8fadaa3d43db",
+            "425d017dde92400fe6be",
+            "32c700491386291b3063",
+            "1c35713dbf2e2d5bb16a",
+            "1b6179f8e7f18f6d2040",
+            "0542fd935604499b20f3"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "acc48dab869afeef6d0a"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "a463de5cb7962c407578"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "synthesis:InvalidSynthesisError:category must be predominantly written in Russian",
+          "synthesis:ServerError:503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "synthesis:ServerError:503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "synthesis:ServerError:503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+          "synthesis:ServerError:503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 115,
+        "candidate_bundles": 5,
+        "ai_partitions": 5,
+        "ai_splits": 7,
+        "fallback_events": 5,
+        "reused_event_ids": 0,
+        "article_overlap_merges": 1,
+        "final_audit_merges": 0,
+        "largest_bundle": 15,
+        "candidate_clusters": 18,
+        "synthesized_clusters": 18,
+        "skipped_low_rank_clusters": 0,
+        "event_candidate_pairs": 29,
+        "local_title_duplicate_groups": 0,
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 5,
+        "dedupe_degraded": true
+      }
+    },
+    "world": {
+      "selected": 129,
+      "published": 10,
+      "quarantined": [],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "synthesis:ServerError:503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 224,
+        "candidate_bundles": 31,
+        "ai_partitions": 31,
+        "ai_splits": 29,
+        "fallback_events": 1,
+        "reused_event_ids": 1,
+        "article_overlap_merges": 2,
+        "final_audit_merges": 2,
+        "largest_bundle": 11,
+        "candidate_clusters": 109,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 89,
+        "event_candidate_pairs": 12,
+        "local_title_duplicate_groups": 0,
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 0,
+        "dedupe_degraded": true
+      }
+    }
+  }
+}
