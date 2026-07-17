@@ -2,10 +2,10 @@
   "schema_version": 2,
   "digest_id": "tech",
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T12:04:25.497867Z",
+  "generated_at": "2026-07-17T13:41:23.347163Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» отобрано 10 подтвержденных событий. Редакционный фильтр обработал 34 материалов, объединил 0 повторных карточек и исключил 2 неподтвержденных кластеров."
+    "body": "В выпуске «Технологии» отобрано 10 подтвержденных событий. Редакционный фильтр обработал 33 материалов, объединил 0 повторных карточек и исключил 4 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
@@ -16,7 +16,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 397,
+      "latency_ms": 223,
       "error_code": null,
       "history": [
         0,
@@ -35,7 +35,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 564,
+      "latency_ms": 395,
       "error_code": null,
       "history": [
         0,
@@ -43,7 +43,7 @@
         0,
         0,
         0,
-        17,
+        0,
         0
       ]
     },
@@ -54,7 +54,7 @@
       "fetched": 30,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 384,
+      "latency_ms": 120,
       "error_code": null,
       "history": [
         0,
@@ -73,7 +73,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 576,
+      "latency_ms": 207,
       "error_code": null,
       "history": [
         0,
@@ -90,9 +90,9 @@
       "source_name": "DEV Community Python",
       "state": "available",
       "fetched": 12,
-      "accepted": 7,
+      "accepted": 8,
       "represented_events": 10,
-      "latency_ms": 261,
+      "latency_ms": 599,
       "error_code": null,
       "history": [
         9,
@@ -100,8 +100,8 @@
         9,
         7,
         6,
-        11,
-        7
+        7,
+        8
       ]
     },
     {
@@ -111,7 +111,7 @@
       "fetched": 16,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 331,
+      "latency_ms": 191,
       "error_code": null,
       "history": [
         0,
@@ -130,7 +130,7 @@
       "fetched": 10,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 302,
+      "latency_ms": 168,
       "error_code": null,
       "history": [
         0,
@@ -149,7 +149,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1311,
+      "latency_ms": 1436,
       "error_code": null,
       "history": [
         0,
@@ -168,7 +168,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 589,
+      "latency_ms": 792,
       "error_code": null,
       "history": [
         0,
@@ -183,15 +183,148 @@
   ],
   "articles": [
     {
-      "id": "b2540364914ffdb69731",
+      "id": "eb0c5b35625be0c8f998",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/tomek_ats/building-a-free-fitness-pwa-with-python-and-flask-44ko",
-      "title": "Building a Free Fitness PWA with Python and Flask",
-      "normalized_title": "building a free fitness pwa with python and flask",
-      "excerpt": "Building a Free Fitness PWA with Python and Flask About two years ago I decided to build something that would actually solve a problem I had myself. Instead of another tutorial project, I started developing AthleteApp – a free Progressive Web App (PWA) designed for people who want to track workouts, nutrition and body progress in one place. The project is built primarily with Python and Flask . Why a PWA? I wanted users to access the application instantly without downloading anything from an app store. The application can be installed directly from the browser and works on desktop, Android and iOS. Current features Workout diary Nutrition and macro tracking Progress charts Personal records Body measurements Trainer profile AI-powered exercise analysis (beta) Challenges Building a fitness a",
-      "published_at": "2026-07-17T12:01:27Z",
-      "collected_at": "2026-07-17T12:04:25.505396Z",
+      "canonical_url": "https://dev.to/xbill/porting-gemma-4-12b-the-encoder-free-multimodal-one-to-aws-inferentia2-5f19",
+      "title": "Porting Gemma-4 12B (the encoder-free multimodal one) to AWS Inferentia2",
+      "normalized_title": "porting gemma-4 12b (the encoder-free multimodal one) to aws inferentia2",
+      "excerpt": "The middle child of the series. The 12B is the first Gemma-4 that's neither a MatFormer \"effective\" model (E2B/E4B) nor a giant (31B/26B) — but it has its own two surprises: it's packaged as a **multimodal * model with an encoder that isn't there, and its attention overflows a Neuron hardware buffer in a way the smaller models never did. This is the short, clean port that only needed three fixes on top of the E4B recipe — once I found them.* Model google/gemma-4-12B-it — dense, model_type: gemma4_unified Hardware AWS Inferentia2 — one inf2.8xlarge (1 chip / 2 cores / 32 GB HBM), TP=2 Result Greedy decode token-for-token identical to the CPU fp32 reference (SEQ_MATCH True); prefill",
+      "published_at": "2026-07-17T13:30:09Z",
+      "collected_at": "2026-07-17T13:41:23.355935Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "985d9f49a86495dc9a1d",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/xbill/my-inferentia-port-matched-its-reference-token-for-token-and-still-output-garbage-16d4",
+      "title": "My Inferentia port matched its reference token-for-token — and still output garbage",
+      "normalized_title": "my inferentia port matched its reference token-for-token — and still output garbage",
+      "excerpt": "I ported Google's biggest open Gemma-4 — the 30-billion-parameter dense model — to AWS Inferentia2. The compiled model passed my strictest check: its output was token-for-token identical to the CPU reference. It was also complete gibberish. Both facts were true at the same time, and the reason is a lesson worth more than the port. This is the sequel to porting the smaller Gemma-4 models (E2B/E4B/12B). Those were hard because of architecture — Per-Layer Embeddings, cross-layer KV-sharing, MatFormer nesting. The 31B throws all of that away and hands you a different kind of hard: scale . And a trap. Model google/gemma-4-31B-it — dense, 60 layers, model_type: gemma4 Hardware inf2.24xlarge —",
+      "published_at": "2026-07-17T13:29:49Z",
+      "collected_at": "2026-07-17T13:41:23.355935Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "c3ba7db7034375535d77",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/xbill/porting-a-128-expert-moe-gemma-4-26b-a4b-to-aws-inferentia2-where-every-rank-weighted-the-wrong-2ege",
+      "title": "Porting a 128-expert MoE (Gemma-4 26B-A4B) to AWS Inferentia2 — where every rank weighted the wrong experts",
+      "normalized_title": "porting a 128-expert moe (gemma-4 26b-a4b) to aws inferentia2 — where every rank weighted the wrong experts",
+      "excerpt": "Of the five Gemma-4 models I ported to AWS Inferentia2, the 26B-A4B was the one that was supposed to be impossible: a Mixture of Experts . It compiled on the first try — then produced nothing . The device output was empty. The CPU reference was perfect. My unit tests all passed. The bug was in a place I'd have sworn couldn't have one. This is the MoE entry in the series. The dense models (E2B/E4B/12B/31B) are hard because of architecture; the 26B is hard because it's sparse — 128 experts, top-8 routing — and none of the AWS vendor stack has ever traced an MoE for Gemma-4. Model google/gemma-4-26B-A4B-it — MoE, ~4B active / 26B total, model_type: gemma4 Hardware inf2.24xlarge — 12 NeuronC",
+      "published_at": "2026-07-17T13:29:28Z",
+      "collected_at": "2026-07-17T13:41:23.355935Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "d703c71b3c1ed3511956",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/aws-builders/five-gemma-4-models-one-accelerator-what-porting-e2b-31b-to-aws-inferentia2-taught-me-2980",
+      "title": "Five Gemma-4 models, one accelerator: what porting E2B 31B to AWS Inferentia2 taught me",
+      "normalized_title": "five gemma-4 models, one accelerator: what porting e2b 31b to aws inferentia2 taught me",
+      "excerpt": "I ported the whole Gemma-4 family — E2B, E4B, 12B, 31B, and the 26B-A4B MoE — to run on AWS Inferentia2. Each has its own write-up in this series; this is the map. What's shared, what's different, how the recipe evolved from \"trace it and pray\" to a single-rank-compile pipeline that carries a 30-billion-parameter dense model and a 128-expert MoE — and the one bug that appears, in some costume, in **every * port.* The whole family at a glance E2B E4B 12B 31B 26B-A4B Params (total / active) ~5B / 2B ~8B / 4B 12B 31B 26B / ~4B Dense or sparse dense dense dense dense MoE",
+      "published_at": "2026-07-17T13:29:07Z",
+      "collected_at": "2026-07-17T13:41:23.355935Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "054226ab0b65fb01c5af",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/sniper_daytrading/mastering-vwap-setups-for-precision-day-trading-2fl4",
+      "title": "Mastering VWAP Setups for Precision Day Trading",
+      "normalized_title": "mastering vwap setups for precision day trading",
+      "excerpt": "The Power of VWAP: More Than a Line Picture this: you're locked onto a stock that's hovering around the VWAP, and suddenly it breaks through with conviction. This is the moment you either capitalize on or watch melt away. I've relied on VWAP setups for years, and when a stock teeters around this line, I'm all in. VWAP isn't just a tool; it's a market sentiment gauge. When a stock trades above the VWAP, it suggests a bullish sentiment, while below indicates bearishness. But don't just take my word for it, check out this Investopedia article for a solid foundation on VWAP's mechanics. In my trading routine, the VWAP acts as a dynamic support and resistance level. It's the invisible hand guiding me through the chaos of intraday price action. The beauty lies in its simplicity. If a stock breaks above the VWAP on high volume, it's a signal to go long. Conversely, a break belo",
+      "published_at": "2026-07-17T13:09:43Z",
+      "collected_at": "2026-07-17T13:41:23.355935Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "f44d6bd1ce6faed4f3ad",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/yobox/regex-without-tears-a-2026-field-guide-4209",
+      "title": "Regex Without Tears: A 2026 Field Guide",
+      "normalized_title": "regex without tears: a 2026 field guide",
+      "excerpt": "Regex has a bad reputation it doesn't fully deserve. Yes, the syntax is dense. Yes, the wrong pattern can match the entire internet by accident. But once you internalize a small set of building blocks, regex becomes the highest-leverage skill in your toolkit — extraction, validation, refactoring, log parsing — all powered by the same five concepts. This guide is the friendly version. No \"elegant\" lookaround puzzles. Just the patterns that show up in real code, explained without smugness. The five concepts Literals — cat matches cat. Character classes — [abc] matches any one of a, b, c. \\d is shorthand for [0-9]. \\w is [A-Za-z0-9_]. \\s is whitespace. Quantifiers — * (zero or more), + (one or more), ? (zero or one), {3,5} (between 3 and 5). Anchors — ^ start of string, $ end, \\b word boundary. Groups — (...) captures, (?:...) doesn't. That's 90% of every regex you'll ever write. The mental model that m",
+      "published_at": "2026-07-17T12:55:14Z",
+      "collected_at": "2026-07-17T13:41:23.355935Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "af39c5f431df0c0c5f62",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/khuram_youraj_6c4b6780ae1/getting-started-with-kimi-k3-api-setup-code-examples-and-first-impressions-5fl5",
+      "title": "Getting Started with Kimi K3: API Setup, Code Examples, and First Impressions",
+      "normalized_title": "getting started with kimi k3: api setup, code examples, and first impressions",
+      "excerpt": "A practical quickstart guide for developers who want to integrate the world's largest open-source model into their projects today. Moonshot AI released Kimi K3 on July 16, 2026 — a 2.8-trillion-parameter open-source model with a 1M-token context window that outscores Claude Opus 4.8 on real-world benchmarks. The API is live now, and weights drop July 27. This guide gets you from zero to a working integration in under 15 minutes. Prerequisites Python 3.10+ An API key from Kimi's platform pip install openai (Kimi K3's API is OpenAI-compatible) Step 1: Get Your API Key Sign up at platform.kimi.ai and generate an API key. Kimi K3 pricing is straightforward: Cached input : $0.30/MTok Uncached input : $3.00/MTok <stron",
+      "published_at": "2026-07-17T12:41:05Z",
+      "collected_at": "2026-07-17T13:41:23.355935Z",
+      "language": "en",
+      "topic_hints": [
+        "tech",
+        "python",
+        "backend"
+      ],
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "3e6c91e07d180c164744",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/pydevtop/building-a-production-ready-risk-management-engine-for-algorithmic-trading-1jh8",
+      "title": "Building a Production-Ready Risk Management Engine for Algorithmic Trading",
+      "normalized_title": "building a production-ready risk management engine for algorithmic trading",
+      "excerpt": "Part: 4 of 18 About this series This series documents the engineering evolution of a production-ready algorithmic trading platform in Python. It focuses on architecture, state management, execution, real-time data processing, persistence, and the engineering decisions that transformed a simple trading bot into a production-ready platform. In Part 3: Building a Production-Ready Position Manager for Algorithmic Trading , I described the component responsible for maintaining persistent position state throughout the entire trade lifecycle. Read Part 3 here: https://dev.to/pydevtop/building-a-production-ready-position-manager-for-algorithmic-trading-55n4 The Position Manager could remember every open position. The next challenge was deciding what should happen to those positions",
+      "published_at": "2026-07-17T12:39:43Z",
+      "collected_at": "2026-07-17T13:41:23.355935Z",
       "language": "en",
       "topic_hints": [
         "tech",
@@ -248,44 +381,6 @@
       "normalized_title": "smd power inductor manufacturer | oem surface mount power inductors",
       "excerpt": "Introduction As electronic devices become more compact and energy-efficient, selecting the right SMD Power Inductor Manufacturer is essential for achieving stable power delivery and reliable circuit performance. SMD (Surface Mount Device) power inductors are widely used in DC-DC converters, voltage regulators, automotive electronics, industrial automation, and consumer devices because of their compact size, high current handling, and efficient power management. This guide explains how to evaluate an SMD power inductor manufacturer and the key factors engineers should consider during component selection. What Is an SMD Power Inductor? A Surface Mount Power Inductor i",
       "published_at": "2026-07-17T11:12:11Z",
-      "collected_at": "2026-07-17T12:04:25.505396Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "80cdd6cce2fb3580d890",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/amy13/i-built-an-ai-agent-in-one-weekend-heres-everything-i-learned-54d7",
-      "title": "I Built an AI Agent in One Weekend. Here's Everything I Learned",
-      "normalized_title": "i built an ai agent in one weekend. here's everything i learned",
-      "excerpt": "I started on a Saturday morning with nothing more than an idea and a laptop. By Sunday night, I had a working AI agent that could search the web, answer questions, and automate repetitive tasks. It wasn't perfect, but the experience taught me more about AI development than weeks of watching tutorials ever could. Why Did I Decide to Build an AI Agent in Just One Weekend? For months, I kept reading headlines about AI agents replacing repetitive work, helping developers write code, and automating business processes. At first, I assumed building one would require weeks of work and deep expertise in machine learning. The more I researched, the more I realised that wasn't entirely true. Thanks to modern AI models, APIs, and open source frameworks, creating a simple but useful AI agent has become much more accessible. You don't need to train your own model or build everything from scratch. Instead, the challenge is learning how t",
-      "published_at": "2026-07-17T10:57:59Z",
-      "collected_at": "2026-07-17T12:04:25.505396Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "b0d371439b8ccd3761bd",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/onizuka/5-free-apis-i-built-with-cursor-no-coding-skills-required-now-on-rapidapi-1idl",
-      "title": "5 Free APIs I Built with Cursor - No Coding Skills Required - Now on RapidAPI",
-      "normalized_title": "5 free apis i built with cursor - no coding skills required - now on rapidapi",
-      "excerpt": "The Problem Every developer needs data: WHOIS records, company info, email validation, IP geolocation, compliance screening. But existing APIs are either expensive, rate-limited, or require API keys to third-party services. I wanted to solve this — without knowing how to code. The Solution: 5 Free APIs Built with Cursor I used Cursor IDE (AI-powered code editor) to build 5 production-ready APIs. Cursor wrote 100% of the code — I just described what I wanted in plain English. Each API is: Free tier: 100 requests/month, no credit card Live on RapidAPI: Available to 4M+ developers instantly Open source: Full code on GitHub Zero infrastructure cost: Deployed on Render free tier The 5 APIs 1. Domain WHOIS API Get registration data for any domain via R",
-      "published_at": "2026-07-17T10:53:02Z",
       "collected_at": "2026-07-17T12:04:25.505396Z",
       "language": "en",
       "topic_hints": [
@@ -390,66 +485,272 @@
       ],
       "entities": [],
       "engagement": null
-    },
-    {
-      "id": "b742e0d0e1f9901f10e7",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/rivera123/gpt-red-is-a-research-result-this-55-line-replay-harness-is-the-part-small-teams-can-use-today-3ib6",
-      "title": "GPT-Red Is a Research Result—This 55-Line Replay Harness Is the Part Small Teams Can Use Today",
-      "normalized_title": "gpt-red is a research result—this 55-line replay harness is the part small teams can use today",
-      "excerpt": "OpenAI introduced GPT-Red on July 15, 2026 as an internal automated red-teaming model trained to discover vulnerabilities through iterative attacks. OpenAI reports using its attacks in adversarial training and says GPT-5.6 Sol produced six times fewer failures than an earlier production model on its hardest direct prompt-injection benchmark. Primary source: OpenAI, “GPT-Red: Unlocking Self-Improvement for Robustness” . That does not give a small team a downloadable red teamer or a universal safety score. The useful engineering trigger is simpler: stop keeping prompt-injection tests in chat transcripts. Make every discovered attack a replayable fixture. Define a failure your code can see My smallest contract has three fields: <span class=\"",
-      "published_at": "2026-07-17T06:55:23Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "63c02db6274c725f3c88",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/annnoraestradayi4zw/55-best-site-to-buy-snapchat-account-pva-bulk-id2",
-      "title": "55 Best Site To Buy Snapchat Account (PVA & Bulk)",
-      "normalized_title": "55 best site to buy snapchat account (pva & bulk)",
-      "excerpt": "Buy Snapchat Accounts 🌐 24/7 Customer Support Available 📞 WhatsApp: +1 (506) 541-7768 📢 Telegram Username: @usadigitalhub 📧 Email: usadigitalhubsell@gmail.com 🌍 Website: https://usadigitalhub.com/product/buy-snapchat-accounts/ If you are looking to buy Snapchat accounts, choosing a trusted provider is essential. USA Digital Hub offers Snapchat accounts designed to meet the needs of marketers, businesses, agencies, and individuals who require reliable accounts for social media activities. Whether you need accounts for marketing campaigns, brand promotion, or business expansion, purchasing from a reputable source can save time and help you get started quickly. USA Digital Hub focuses on providing quality Snapchat accounts with secure delivery and customer support. Buyers of",
-      "published_at": "2026-07-17T06:35:51Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "5b659b1bd099febb564c",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/annnoraestradayi4zw/5-easy-steps-to-buying-old-telegram-accounts-complete--409c",
-      "title": "5 Easy Steps to Buying Old Telegram Accounts Complete ...",
-      "normalized_title": "5 easy steps to buying old telegram accounts complete ...",
-      "excerpt": "How Old Telegram Accounts Improve Bulk Messaging & Outreach 🌐 24/7 Customer Support Available 📞 WhatsApp: +1 (506) 541-7768 📢 Telegram Username: @usadigitalhub 📧 Email: usadigitalhubsell@gmail.com 🌍 Website: https://usadigitalhub.com/product/buy-old-telegram-accounts/ Bulk messaging and outreach are essential strategies for marketers, freelancers, and businesses aiming to reach a wider audience efficiently. Using old Telegram accounts significantly improves these efforts compared to new accounts. Enhanced Credibility and Trust Old Telegram accounts have a trusted history, which reduces the chance of messages being ignored or flagged as spam. Recipients and groups are more likely to accept messages from aged accounts, increasing engagement rates. Reduced Risk of Restric",
-      "published_at": "2026-07-17T06:17:46Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
     }
   ],
   "events": [
+    {
+      "id": "tech-879fa61006a56f68",
+      "slug": "moonshot-ai-выпустила-модель-kimi-k3-с-окном-контекста-1-млн-токенов",
+      "title": "Moonshot AI выпустила модель Kimi K3 с окном контекста 1 млн токенов",
+      "brief": "Компания Moonshot AI представила Kimi K3, новую модель с открытым исходным кодом, обладающую 2,8 триллионами параметров и окном контекста в 1 миллион токенов. По заявлению разработчиков, она превосходит Claude Opus 4.8 по результатам реальных тестов. API модели уже доступен, а веса будут опубликованы 27 июля 2026 года. Интеграция с Kimi K3 возможна через API, совместимый с OpenAI, что позволяет разработчикам быстро внедрить модель в свои проекты.",
+      "context": "Moonshot AI выпустила свою новую модель Kimi K3 16 июля 2026 года. Эта модель является крупнейшей в мире моделью с открытым исходным кодом, насчитывая 2,8 триллиона параметров. Одно из ключевых преимуществ Kimi K3 — это её огромное окно контекста, достигающее 1 миллиона токенов. Разработчики утверждают, что по результатам реальных тестов модель превосходит Claude Opus 4.8. API для доступа к Kimi K3 уже функционирует, а сами веса модели станут доступны 27 июля 2026 года. Для интеграции с Kimi K3 требуется API-ключ с платформы kimi.ai, а также установка библиотеки openai, поскольку API модели совместимо с OpenAI.",
+      "why_it_matters": "Выпуск Kimi K3 знаменует собой значительный шаг вперед в области больших языковых моделей с открытым исходным кодом. Огромное окно контекста в 1 миллион токенов открывает новые возможности для обработки и анализа больших объемов информации, что может быть критически важно для таких задач, как анализ длинных документов, написание объемных текстов или поддержание сложных диалогов. Превосходство над существующими моделями, такими как Claude Opus 4.8, подтверждает конкурентоспособность и потенциал Kimi K3. Доступность API и скорая публикация весов модели позволят разработчикам активно использовать её в своих проектах, ускоряя инновации и создавая новые приложения, основанные на передовых технологиях искусственного интеллекта.",
+      "importance": 8,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "af39c5f431df0c0c5f62"
+      ],
+      "facts": [
+        {
+          "text": "Moonshot AI выпустила модель Kimi K3 16 июля 2026 года.",
+          "article_ids": [
+            "af39c5f431df0c0c5f62"
+          ]
+        },
+        {
+          "text": "Kimi K3 — это модель с открытым исходным кодом, имеющая 2,8 триллиона параметров и окно контекста в 1 миллион токенов.",
+          "article_ids": [
+            "af39c5f431df0c0c5f62"
+          ]
+        },
+        {
+          "text": "По заявлению разработчиков, Kimi K3 превосходит Claude Opus 4.8 по результатам реальных тестов.",
+          "article_ids": [
+            "af39c5f431df0c0c5f62"
+          ]
+        },
+        {
+          "text": "API для Kimi K3 уже доступен и совместим с OpenAI.",
+          "article_ids": [
+            "af39c5f431df0c0c5f62"
+          ]
+        },
+        {
+          "text": "Веса модели Kimi K3 будут опубликованы 27 июля 2026 года.",
+          "article_ids": [
+            "af39c5f431df0c0c5f62"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "model_release",
+        "primary_entities": [
+          "Moonshot AI",
+          "Kimi K3"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-16T00:00:00Z"
+      },
+      "first_seen_at": "2026-07-17T12:41:05Z",
+      "updated_at": "2026-07-17T13:41:23.347163Z"
+    },
+    {
+      "id": "tech-d0fd92ca98bf36e9",
+      "slug": "google-gemma-4-успешно-портирована-на-aws-inferentia2-несмотря-на-трудности",
+      "title": "Google Gemma-4 успешно портирована на AWS Inferentia2, несмотря на трудности",
+      "brief": "Разработчик успешно адаптировал всю линейку моделей Gemma-4, включая плотные и разреженные модели с разным количеством параметров, для работы на ускорителях AWS Inferentia2. Несмотря на архитектурные сложности и проблемы с масштабированием, включая ошибки в работе с вниманием и некорректную маршрутизацию экспертов в моделях MoE, удалось добиться идентичного вывода по сравнению с эталонными CPU-реализациями для некоторых моделей. Однако, одна из самых больших моделей (31B) выдавала осмысленный, но бессвязный текст, несмотря на точное совпадение выходных данных с эталоном.",
+      "context": "В рамках серии публикаций описывается процесс портирования пяти моделей семейства Google Gemma-4 на аппаратную платформу AWS Inferentia2. Семейство включает модели с разной архитектурой и количеством параметров: E2B (~5B параметров), E4B (~8B параметров), 12B (12B параметров), 31B (31B параметров) и 26B-A4B (26B параметров, разреженная модель типа Mixture of Experts с 128 экспертами). Разработчик столкнулся с различными проблемами при адаптации каждой модели. Для плотных моделей (E2B, E4B, 12B, 31B) сложности были связаны с архитектурными особенностями, такими как вложенность MatFormer и переиспользование KV-кэша между слоями. Модель 12B потребовала особого внимания из-за особенностей мультимодальности и переполнения буфера внимания на оборудовании Neuron. Для самой большой плотной модели 31B основной проблемой стало масштабирование. Разреженная модель 26B-A4B (MoE) оказалась самой сложной из-за ее разреженной природы (128 экспертов с маршрутизацией top-8) и отсутствия поддержки таких моделей в стеке AWS. Несмотря на эти трудности, удалось разработать конвейер компиляции для одной ранговой модели, который успешно обрабатывает как 30-миллиардную плотную модель, так и 128-экспертную MoE.",
+      "why_it_matters": "Успешное портирование всего семейства моделей Gemma-4 на AWS Inferentia2 демонстрирует возможности и гибкость этой аппаратной платформы для работы с современными большими языковыми моделями. Преодоление архитектурных и масштабирующих проблем, а также специфических ошибок, связанных с мультимодальностью и разреженными архитектурами, открывает путь для более широкого использования Inferentia2 в задачах машинного обучения. Особый интерес представляет тот факт, что даже при полной идентичности выходных данных с эталонной моделью, результат может быть некорректным, что подчеркивает важность не только точности вычислений, но и семантической корректности вывода моделей.",
+      "importance": 7,
+      "status": "completed",
+      "category": "Технологии",
+      "article_ids": [
+        "eb0c5b35625be0c8f998",
+        "985d9f49a86495dc9a1d",
+        "c3ba7db7034375535d77",
+        "d703c71b3c1ed3511956"
+      ],
+      "facts": [
+        {
+          "text": "Разработчик успешно портировал пять моделей семейства Google Gemma-4 (E2B, E4B, 12B, 31B, 26B-A4B) на ускорители AWS Inferentia2.",
+          "article_ids": [
+            "d703c71b3c1ed3511956"
+          ]
+        },
+        {
+          "text": "Модель Gemma-4 12B, являющаяся мультимодальной моделью с отсутствующим энкодером, потребовала три исправления для успешного портирования на AWS Inferentia2 из-за переполнения аппаратного буфера внимания.",
+          "article_ids": [
+            "eb0c5b35625be0c8f998"
+          ]
+        },
+        {
+          "text": "Самая большая плотная модель Gemma-4 31B, несмотря на точное совпадение выходных данных с эталонной CPU-реализацией, генерировала бессмысленный текст.",
+          "article_ids": [
+            "985d9f49a86495dc9a1d"
+          ]
+        },
+        {
+          "text": "Разреженная модель Gemma-4 26B-A4B (MoE) с 128 экспертами скомпилировалась с первой попытки на AWS Inferentia2, но изначально не выдавала никакого вывода.",
+          "article_ids": [
+            "c3ba7db7034375535d77"
+          ]
+        },
+        {
+          "text": "Для портирования моделей Gemma-4 на AWS Inferentia2 был разработан конвейер компиляции, который позволил успешно обрабатывать как плотные модели, так и модели Mixture of Experts.",
+          "article_ids": [
+            "d703c71b3c1ed3511956"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "model_porting",
+        "primary_entities": [
+          "Google Gemma-4",
+          "AWS Inferentia2"
+        ],
+        "geographies": [
+          "AWS"
+        ],
+        "occurred_at": "2026-07-17T13:30:09Z"
+      },
+      "first_seen_at": "2026-07-17T13:29:07Z",
+      "updated_at": "2026-07-17T13:41:23.347163Z"
+    },
+    {
+      "id": "tech-4f39762f427f9b39",
+      "slug": "vwap-ключевой-индикатор-для-внутридневной-торговли",
+      "title": "VWAP: Ключевой индикатор для внутридневной торговли",
+      "brief": "Объемно-взвешенная средняя цена (VWAP) является важным инструментом для внутридневных трейдеров, помогая определять настроения рынка и уровни поддержки/сопротивления. Прорыв выше VWAP на высоком объеме может сигнализировать о возможности для открытия длинной позиции, в то время как прорыв ниже может указывать на медвежьи настроения. VWAP служит динамическим ориентиром в волатильности внутридневных ценовых движений.",
+      "context": "VWAP (Volume Weighted Average Price) — это торговый индикатор, который представляет собой среднюю цену актива за определенный период времени, взвешенную по объему торгов. Он широко используется внутридневными трейдерами для оценки общего рыночного настроения и определения потенциальных точек входа и выхода. Когда цена актива торгуется выше VWAP, это обычно указывает на бычьи настроения, а когда ниже — на медвежьи. Прорыв цены через уровень VWAP, особенно на фоне высокого объема торгов, может служить сигналом для открытия соответствующих позиций. Индикатор VWAP помогает трейдерам ориентироваться в краткосрочных колебаниях цен, выступая в качестве динамического уровня поддержки или сопротивления.",
+      "why_it_matters": "Понимание и применение VWAP может значительно повысить эффективность внутридневной торговли. Этот индикатор предоставляет ценную информацию о рыночном сентименте и помогает трейдерам принимать обоснованные решения о покупке или продаже активов. Использование VWAP в качестве динамического уровня поддержки и сопротивления позволяет трейдерам лучше управлять рисками и выявлять выгодные торговые возможности. Прорыв цены через VWAP на высоком объеме является особенно сильным сигналом, который может привести к значительной прибыли при правильном использовании.",
+      "importance": 7,
+      "status": "new",
+      "category": "Финансы",
+      "article_ids": [
+        "054226ab0b65fb01c5af"
+      ],
+      "facts": [
+        {
+          "text": "VWAP (Volume Weighted Average Price) используется трейдерами для оценки рыночного настроения и определения уровней поддержки/сопротивления.",
+          "article_ids": [
+            "054226ab0b65fb01c5af"
+          ]
+        },
+        {
+          "text": "Торговля выше VWAP предполагает бычьи настроения, а ниже — медвежьи.",
+          "article_ids": [
+            "054226ab0b65fb01c5af"
+          ]
+        },
+        {
+          "text": "Прорыв цены выше VWAP на высоком объеме может быть сигналом для открытия длинной позиции.",
+          "article_ids": [
+            "054226ab0b65fb01c5af"
+          ]
+        },
+        {
+          "text": "VWAP действует как динамический уровень поддержки и сопротивления в интрадей торговле.",
+          "article_ids": [
+            "054226ab0b65fb01c5af"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "trading_strategy_explanation",
+        "primary_entities": [
+          "VWAP"
+        ],
+        "geographies": [],
+        "occurred_at": null
+      },
+      "first_seen_at": "2026-07-17T13:09:43Z",
+      "updated_at": "2026-07-17T13:41:23.347163Z"
+    },
+    {
+      "id": "tech-12c2bec7b4466ff9",
+      "slug": "регулярные-выражения-руководство-для-начинающих",
+      "title": "Регулярные выражения: руководство для начинающих",
+      "brief": "Статья на Dev.to представляет собой руководство по регулярным выражениям, призванное развеять их сложную репутацию. Автор утверждает, что при освоении основных концепций регулярные выражения становятся мощным инструментом для извлечения данных, валидации, рефакторинга и анализа логов. В руководстве рассматриваются пять ключевых элементов: литералы, классы символов, квантификаторы, якоря и группы, которые составляют основу большинства регулярных выражений.",
+      "context": "Статья под названием \"Regex Without Tears: A 2026 Field Guide\" опубликована на платформе Dev.to. Она направлена на то, чтобы сделать изучение регулярных выражений более доступным, опровергая их репутацию сложного инструмента. Автор подчеркивает, что понимание всего пяти основных концепций позволяет эффективно использовать регулярные выражения для решения широкого спектра задач, таких как извлечение информации, проверка данных, рефакторинг кода и анализ логов. Статья избегает сложных конструкций, фокусируясь на практическом применении.",
+      "why_it_matters": "Регулярные выражения являются фундаментальным инструментом в программировании, используемым для обработки и анализа текстовых данных. Освоение их основ, как показано в этой статье, может значительно повысить эффективность разработчиков в задачах, связанных с обработкой строк, валидацией данных и парсингом. Понимание этих концепций позволяет автоматизировать рутинные задачи и более глубоко анализировать информацию, что критически важно в современной разработке программного обеспечения.",
+      "importance": 7,
+      "status": "new",
+      "category": "Программирование",
+      "article_ids": [
+        "f44d6bd1ce6faed4f3ad"
+      ],
+      "facts": [
+        {
+          "text": "Регулярные выражения, несмотря на свою плотную синтаксическую структуру, являются высокоэффективным инструментом для извлечения данных, валидации, рефакторинга и парсинга логов.",
+          "article_ids": [
+            "f44d6bd1ce6faed4f3ad"
+          ]
+        },
+        {
+          "text": "Основой для написания большинства регулярных выражений являются пять концепций: литералы, классы символов, квантификаторы, якоря и группы.",
+          "article_ids": [
+            "f44d6bd1ce6faed4f3ad"
+          ]
+        },
+        {
+          "text": "Статья \"Regex Without Tears: A 2026 Field Guide\" предлагает дружелюбное введение в регулярные выражения, фокусируясь на практических паттернах, встречающихся в реальном коде.",
+          "article_ids": [
+            "f44d6bd1ce6faed4f3ad"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "publication",
+        "primary_entities": [
+          "Dev.to",
+          "Regex"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-17T12:55:14Z"
+      },
+      "first_seen_at": "2026-07-17T12:55:14Z",
+      "updated_at": "2026-07-17T13:41:23.347163Z"
+    },
+    {
+      "id": "tech-6e59653e9180436d",
+      "slug": "разработка-движка-управления-рисками-для-алгоритмической-торговли",
+      "title": "Разработка движка управления рисками для алгоритмической торговли",
+      "brief": "Серия статей документирует эволюцию производственной платформы для алгоритмической торговли на Python, уделяя особое внимание архитектуре, управлению состоянием, исполнению, обработке данных в реальном времени, персистентности и инженерным решениям. В предыдущей части была описана система управления позициями, способная отслеживать все открытые позиции. Следующим шагом является определение действий, которые должны выполняться с этими позициями.",
+      "context": "Данная серия статей посвящена инженерной эволюции производственной платформы для алгоритмической торговли, разработанной на языке Python. Основное внимание уделяется ключевым аспектам, таким как архитектура системы, управление состоянием, процесс исполнения торговых приказов, обработка данных в режиме реального времени, обеспечение персистентности данных и принятие инженерных решений, которые позволили трансформировать простой торговый бот в полноценную производственную платформу. В третьей части серии, озаглавленной «Создание производственного менеджера позиций для алгоритмической торговли», был подробно описан компонент, отвечающий за поддержание постоянного состояния позиций на протяжении всего жизненного цикла сделки. Этот менеджер позиций обладал способностью запоминать каждую открытую позицию. Следующей логической задачей стало определение того, какие действия должны предприниматься в отношении этих позиций.",
+      "why_it_matters": "Создание надежного движка управления рисками является критически важным для успеха в алгоритмической торговле. Он позволяет автоматизировать сложные процессы принятия решений, минимизировать потенциальные убытки и оптимизировать торговые стратегии. Понимание инженерных аспектов разработки таких систем, включая управление состоянием, обработку данных в реальном времени и персистентность, необходимо для создания масштабируемых и отказоустойчивых торговых платформ, способных функционировать в условиях высокой волатильности рынка.",
+      "importance": 7,
+      "status": "new",
+      "category": "Финансы",
+      "article_ids": [
+        "3e6c91e07d180c164744"
+      ],
+      "facts": [
+        {
+          "text": "Серия статей документирует инженерную эволюцию производственной платформы для алгоритмической торговли на Python, фокусируясь на архитектуре, управлении состоянием, исполнении, обработке данных в реальном времени, персистентности и инженерных решениях.",
+          "article_ids": [
+            "3e6c91e07d180c164744"
+          ]
+        },
+        {
+          "text": "В предыдущей части серии был описан компонент, отвечающий за поддержание постоянного состояния позиций на протяжении всего торгового цикла, который мог запоминать каждую открытую позицию.",
+          "article_ids": [
+            "3e6c91e07d180c164744"
+          ]
+        },
+        {
+          "text": "Следующим этапом разработки является определение действий, которые должны выполняться с открытыми позициями.",
+          "article_ids": [
+            "3e6c91e07d180c164744"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "algorithmic_trading_development",
+        "primary_entities": [
+          "Algorithmic Trading Platform"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-17T12:39:43Z"
+      },
+      "first_seen_at": "2026-07-17T12:39:43Z",
+      "updated_at": "2026-07-17T13:41:23.347163Z"
+    },
     {
       "id": "tech-ab53485c705dbfca",
       "slug": "python-и-rust-выбор-языка-для-науки-о-данных",
@@ -711,279 +1012,6 @@
       },
       "first_seen_at": "2026-07-17T07:01:34Z",
       "updated_at": "2026-07-17T07:34:12.876062Z"
-    },
-    {
-      "id": "tech-a0e759c5dea848d1",
-      "slug": "openai-представила-gpt-red-для-поиска-уязвимостей",
-      "title": "OpenAI представила GPT-Red для поиска уязвимостей",
-      "brief": "OpenAI 15 июля 2026 года представила GPT-Red, внутреннюю модель для автоматического поиска уязвимостей методом итеративных атак. По данным OpenAI, модель помогла улучшить защищенность GPT-5.6 Sol, сократив количество сбоев в шесть раз на сложном бенчмарке по прямому внедрению промптов. Разработчики отмечают, что GPT-Red не является общедоступным инструментом для тестирования безопасности, но предлагает инженерам подход к фиксации и воспроизведению обнаруженных атак для улучшения кода.",
-      "context": "15 июля 2026 года компания OpenAI представила GPT-Red, свою новую внутреннюю модель, разработанную для автоматического обнаружения уязвимостей. Модель использует метод итеративных атак для выявления слабых мест в системах. OpenAI заявила, что результаты работы GPT-Red были использованы в состязательном обучении, что привело к значительному улучшению производительности модели GPT-5.6 Sol. В частности, на самом сложном тесте по прямому внедрению промптов GPT-5.6 Sol показала в шесть раз меньше сбоев по сравнению с предыдущей производственной моделью. Однако, несмотря на эти достижения, GPT-Red не предоставляет командам готовый к использованию инструмент для тестирования безопасности или универсальный показатель защищенности. Вместо этого, OpenAI предлагает инженерам сосредоточиться на практическом применении: фиксировать все обнаруженные атаки как воспроизводимые примеры и определять четкие критерии сбоев, которые может распознать код.",
-      "why_it_matters": "Представление GPT-Red компанией OpenAI знаменует собой шаг вперед в области автоматизированного поиска уязвимостей. Хотя модель не является общедоступным инструментом, она демонстрирует потенциал использования ИИ для повышения кибербезопасности. Подход OpenAI к состязательному обучению и фиксации атак может послужить примером для других команд, стремящихся улучшить надежность своих систем. Практические рекомендации по созданию воспроизводимых тестов и определению четких метрик сбоев могут помочь разработчикам более эффективно выявлять и устранять уязвимости, что в конечном итоге приведет к созданию более безопасного программного обеспечения.",
-      "importance": 7,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "b742e0d0e1f9901f10e7"
-      ],
-      "facts": [
-        {
-          "text": "OpenAI представила GPT-Red 15 июля 2026 года как внутреннюю модель для автоматического поиска уязвимостей.",
-          "article_ids": [
-            "b742e0d0e1f9901f10e7"
-          ]
-        },
-        {
-          "text": "GPT-Red использует итеративные атаки для обнаружения уязвимостей.",
-          "article_ids": [
-            "b742e0d0e1f9901f10e7"
-          ]
-        },
-        {
-          "text": "OpenAI утверждает, что GPT-Red помог улучшить GPT-5.6 Sol, сократив количество сбоев в шесть раз на тесте по прямому внедрению промптов.",
-          "article_ids": [
-            "b742e0d0e1f9901f10e7"
-          ]
-        },
-        {
-          "text": "GPT-Red не является общедоступным инструментом для тестирования безопасности или универсальным показателем защищенности.",
-          "article_ids": [
-            "b742e0d0e1f9901f10e7"
-          ]
-        },
-        {
-          "text": "OpenAI рекомендует инженерам фиксировать обнаруженные атаки как воспроизводимые примеры и определять четкие критерии сбоев.",
-          "article_ids": [
-            "b742e0d0e1f9901f10e7"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "product_launch",
-        "primary_entities": [
-          "OpenAI",
-          "GPT-Red",
-          "GPT-5.6 Sol"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-15T00:00:00Z"
-      },
-      "first_seen_at": "2026-07-17T06:55:23Z",
-      "updated_at": "2026-07-17T07:34:12.876062Z"
-    },
-    {
-      "id": "tech-a581412a32622960",
-      "slug": "продажа-аккаунтов-в-социальных-сетях-новые-возможности-для-бизнеса",
-      "title": "Продажа аккаунтов в социальных сетях: новые возможности для бизнеса",
-      "brief": "Компания USA Digital Hub предлагает приобрести аккаунты в Snapchat и Telegram, предназначенные для маркетинговых кампаний, продвижения брендов и расширения бизнеса. Приобретение аккаунтов у надежного поставщика позволяет сэкономить время и быстро начать работу. Старые аккаунты Telegram улучшают массовые рассылки и охват аудитории, повышая доверие и снижая риск блокировки сообщений.",
-      "context": "В условиях растущей конкуренции в цифровом пространстве, компании и индивидуальные предприниматели ищут эффективные способы охвата целевой аудитории. Сервисы, предлагающие покупку аккаунтов в популярных социальных сетях, таких как Snapchat и Telegram, становятся востребованными инструментами. USA Digital Hub позиционирует себя как надежный поставщик, предоставляющий аккаунты, оптимизированные для маркетинговых задач. Особое внимание уделяется преимуществам использования старых аккаунтов Telegram, которые обладают большей достоверностью и снижают вероятность попадания сообщений в спам, что критически важно для успешных массовых рассылок и outreach-кампаний.",
-      "why_it_matters": "Приобретение готовых аккаунтов в социальных сетях может значительно ускорить запуск маркетинговых кампаний и расширение присутствия бренда в интернете. Использование старых аккаунтов Telegram повышает эффективность массовых рассылок за счет улучшенной репутации и снижения риска блокировки, что напрямую влияет на показатели вовлеченности и конверсии. Это позволяет бизнесу быстрее достигать своих целей по охвату и взаимодействию с потенциальными клиентами, оптимизируя затраты на продвижение.",
-      "importance": 7,
-      "status": "new",
-      "category": "Маркетинг и социальные сети",
-      "article_ids": [
-        "63c02db6274c725f3c88",
-        "5b659b1bd099febb564c"
-      ],
-      "facts": [
-        {
-          "text": "USA Digital Hub предлагает приобрести аккаунты Snapchat, предназначенные для маркетинговых кампаний, продвижения брендов и расширения бизнеса.",
-          "article_ids": [
-            "63c02db6274c725f3c88"
-          ]
-        },
-        {
-          "text": "Покупка аккаунтов у надежного поставщика, такого как USA Digital Hub, может сэкономить время и помочь быстро начать работу.",
-          "article_ids": [
-            "63c02db6274c725f3c88"
-          ]
-        },
-        {
-          "text": "Старые аккаунты Telegram улучшают массовые рассылки и охват аудитории, повышая доверие и снижая риск блокировки сообщений.",
-          "article_ids": [
-            "5b659b1bd099febb564c"
-          ]
-        },
-        {
-          "text": "Старые аккаунты Telegram имеют проверенную историю, что снижает вероятность игнорирования сообщений или их пометки как спам.",
-          "article_ids": [
-            "5b659b1bd099febb564c"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "online_service_offering",
-        "primary_entities": [
-          "USA Digital Hub"
-        ],
-        "geographies": [],
-        "occurred_at": null
-      },
-      "first_seen_at": "2026-07-17T06:17:46Z",
-      "updated_at": "2026-07-17T07:34:12.876062Z"
-    },
-    {
-      "id": "tech-60ef293a755219c3",
-      "slug": "разработчик-за-выходные-создал-ии-агента-способного-искать-в-интернете-и-автомат",
-      "title": "Разработчик за выходные создал ИИ-агента, способного искать в интернете и автоматизировать задачи",
-      "brief": "Программист за два дня собрал рабочего ИИ-агента, который может искать информацию в сети, отвечать на вопросы и автоматизировать рутинные процессы. Опыт показал, что для создания такого агента не требуется глубокая экспертиза в машинном обучении или недели работы, благодаря современным моделям ИИ, API и фреймворкам с открытым исходным кодом. Разработчик подчеркивает, что основной задачей становится освоение доступных инструментов, а не создание всего с нуля.",
-      "context": "В течение нескольких месяцев автор статьи наблюдал за заголовками новостей, посвященными ИИ-агентам, которые, как утверждалось, способны заменять рутинную работу, помогать разработчикам писать код и автоматизировать бизнес-процессы. Изначально он предполагал, что создание такого агента потребует значительных временных затрат и глубоких знаний в области машинного обучения. Однако дальнейшее исследование показало, что это не совсем так. Благодаря современным моделям искусственного интеллекта, интерфейсам прикладного программирования (API) и фреймворкам с открытым исходным кодом, создание простого, но полезного ИИ-агента стало гораздо более доступным. Нет необходимости обучать собственные модели или разрабатывать все компоненты с нуля. Основная задача сводится к изучению и эффективному использованию существующих инструментов.",
-      "why_it_matters": "Создание ИИ-агента за один уикенд демонстрирует, как современные технологии и доступные инструменты снижают порог входа в разработку сложных систем. Это подчеркивает, что для создания функционального ИИ-решения не всегда нужны недели работы и глубокая экспертиза, а скорее умение интегрировать существующие компоненты. Такой подход делает разработку ИИ более демократичной и позволяет быстрее получать рабочие прототипы, ускоряя внедрение ИИ в различные сферы.",
-      "importance": 6,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "80cdd6cce2fb3580d890"
-      ],
-      "facts": [
-        {
-          "text": "Разработчик смог создать рабочего ИИ-агента за один уикенд, который способен искать в интернете, отвечать на вопросы и автоматизировать рутинные задачи.",
-          "article_ids": [
-            "80cdd6cce2fb3580d890"
-          ]
-        },
-        {
-          "text": "Создание ИИ-агента стало возможным благодаря современным моделям ИИ, API и фреймворкам с открытым исходным кодом, что снижает необходимость обучать модели с нуля или разрабатывать все компоненты самостоятельно.",
-          "article_ids": [
-            "80cdd6cce2fb3580d890"
-          ]
-        },
-        {
-          "text": "Автор статьи изначально предполагал, что разработка ИИ-агента потребует недель работы и глубокой экспертизы в машинном обучении, но опыт показал доступность этой задачи.",
-          "article_ids": [
-            "80cdd6cce2fb3580d890"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "ai_agent_development",
-        "primary_entities": [
-          "AI Agent"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-17T10:57:59Z"
-      },
-      "first_seen_at": "2026-07-17T10:57:59Z",
-      "updated_at": "2026-07-17T12:04:25.497867Z"
-    },
-    {
-      "id": "tech-f5d7b3f1a9d147e8",
-      "slug": "разработчик-создал-5-бесплатных-api-с-помощью-ии-редактора-кода-cursor",
-      "title": "Разработчик создал 5 бесплатных API с помощью ИИ-редактора кода Cursor",
-      "brief": "Разработчик использовал ИИ-редактор кода Cursor для создания пяти бесплатных API, которые теперь доступны на платформе RapidAPI. Эти API предоставляют данные, такие как WHOIS-записи доменов, информация о компаниях, валидация электронной почты, геолокация IP-адресов и проверка соответствия нормативным требованиям. Каждое API имеет бесплатный уровень с 100 запросами в месяц без необходимости ввода данных кредитной карты. Весь код API находится в открытом доступе на GitHub, а развертывание осуществляется на бесплатном уровне Render, что исключает затраты на инфраструктуру.",
-      "context": "В условиях растущей потребности разработчиков в различных данных, таких как WHOIS-записи, информация о компаниях, валидация электронной почты, геолокация IP-адресов и проверка соответствия, часто возникают проблемы с дороговизной существующих API, их ограничениями по количеству запросов или необходимостью использования сторонних ключей. Для решения этой проблемы был использован ИИ-редактор кода Cursor. С его помощью разработчик смог создать пять готовых к использованию API, написав код исключительно на основе описаний на естественном языке, без необходимости обладать навыками программирования.",
-      "why_it_matters": "Создание бесплатных и легкодоступных API решает распространенную проблему разработчиков, связанную с высокой стоимостью и ограничениями существующих сервисов. Предоставление таких инструментов, как WHOIS API, API для информации о компаниях и геолокации IP, на бесплатной основе и с открытым исходным кодом, способствует снижению барьеров для входа в разработку, ускоряет прототипирование и позволяет более широкому кругу специалистов получать необходимые данные без финансовых затрат и сложностей с настройкой. Доступность на крупной платформе, такой как RapidAPI, обеспечивает мгновенное распространение и использование этих инструментов.",
-      "importance": 6,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "b0d371439b8ccd3761bd"
-      ],
-      "facts": [
-        {
-          "text": "Разработчик создал 5 бесплатных API с помощью ИИ-редактора кода Cursor, которые теперь доступны на RapidAPI.",
-          "article_ids": [
-            "b0d371439b8ccd3761bd"
-          ]
-        },
-        {
-          "text": "API предоставляют такие данные, как WHOIS-записи доменов, информация о компаниях, валидация электронной почты, геолокация IP-адресов и проверка соответствия.",
-          "article_ids": [
-            "b0d371439b8ccd3761bd"
-          ]
-        },
-        {
-          "text": "Каждое API имеет бесплатный уровень с 100 запросами в месяц без необходимости ввода данных кредитной карты.",
-          "article_ids": [
-            "b0d371439b8ccd3761bd"
-          ]
-        },
-        {
-          "text": "Полный код всех API опубликован на GitHub в открытом доступе.",
-          "article_ids": [
-            "b0d371439b8ccd3761bd"
-          ]
-        },
-        {
-          "text": "API развернуты на бесплатном уровне Render, что исключает затраты на инфраструктуру.",
-          "article_ids": [
-            "b0d371439b8ccd3761bd"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "api_creation",
-        "primary_entities": [
-          "Cursor IDE",
-          "RapidAPI"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-17T10:53:02Z"
-      },
-      "first_seen_at": "2026-07-17T10:53:02Z",
-      "updated_at": "2026-07-17T12:04:25.497867Z"
-    },
-    {
-      "id": "tech-b141a41fe391cbbd",
-      "slug": "разработка-фитнес-приложения-athleteapp-с-использованием-python-и-flask",
-      "title": "Разработка фитнес-приложения AthleteApp с использованием Python и Flask",
-      "brief": "Разработчик создал бесплатное прогрессивное веб-приложение (PWA) AthleteApp для отслеживания тренировок, питания и прогресса тела. Приложение построено на Python и Flask, что позволяет пользователям получать к нему мгновенный доступ через браузер без необходимости загрузки из магазина приложений. AthleteApp устанавливается прямо из браузера и работает на настольных компьютерах, Android и iOS. Текущие функции включают дневник тренировок, отслеживание питания и макронутриентов, графики прогресса, личные рекорды, измерения тела, профиль тренера и бета-версию анализа упражнений с помощью ИИ.",
-      "context": "Разработчик решил создать приложение для решения собственной проблемы, а не очередной учебный проект. Так появился AthleteApp – бесплатное прогрессивное веб-приложение (PWA), предназначенное для людей, желающих отслеживать тренировки, питание и прогресс тела в одном месте. Проект в основном построен с использованием Python и Flask. Выбор формата PWA обусловлен желанием обеспечить пользователям мгновенный доступ к приложению без необходимости загрузки из магазина приложений. Приложение может быть установлено непосредственно из браузера и функционирует на настольных компьютерах, устройствах Android и iOS.",
-      "why_it_matters": "Создание AthleteApp демонстрирует возможность разработки полнофункционального фитнес-приложения с использованием современных веб-технологий, таких как Python и Flask, в сочетании с прогрессивными веб-приложениями (PWA). Это позволяет пользователям получать доступ к приложению без установки из магазинов приложений, обеспечивая кроссплатформенность и мгновенный доступ. Приложение решает реальные потребности пользователей в отслеживании различных аспектов здоровья и фитнеса, включая тренировки, питание и физический прогресс, а также предлагает такие продвинутые функции, как анализ упражнений с помощью ИИ.",
-      "importance": 5,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "b2540364914ffdb69731"
-      ],
-      "facts": [
-        {
-          "text": "AthleteApp — это бесплатное прогрессивное веб-приложение (PWA), предназначенное для отслеживания тренировок, питания и прогресса тела.",
-          "article_ids": [
-            "b2540364914ffdb69731"
-          ]
-        },
-        {
-          "text": "Приложение построено в основном с использованием Python и Flask.",
-          "article_ids": [
-            "b2540364914ffdb69731"
-          ]
-        },
-        {
-          "text": "PWA позволяет пользователям получать мгновенный доступ без загрузки из магазина приложений и может быть установлено прямо из браузера.",
-          "article_ids": [
-            "b2540364914ffdb69731"
-          ]
-        },
-        {
-          "text": "AthleteApp работает на настольных компьютерах, Android и iOS.",
-          "article_ids": [
-            "b2540364914ffdb69731"
-          ]
-        },
-        {
-          "text": "Функции приложения включают дневник тренировок, отслеживание питания и макронутриентов, графики прогресса, личные рекорды, измерения тела, профиль тренера и бета-версию анализа упражнений с помощью ИИ.",
-          "article_ids": [
-            "b2540364914ffdb69731"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "software_development",
-        "primary_entities": [
-          "AthleteApp",
-          "Python",
-          "Flask"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-17T12:01:27Z"
-      },
-      "first_seen_at": "2026-07-17T12:01:27Z",
-      "updated_at": "2026-07-17T12:04:25.497867Z"
     }
   ]
 }
