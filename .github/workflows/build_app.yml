@@ -1,0 +1,70 @@
+name: Build & Deploy App
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'frontend/**'
+      - 'data/digests/**'
+      - '.github/workflows/build_app.yml'
+  pull_request:
+    paths:
+      - 'frontend/**'
+      - 'data/digests/**'
+      - '.github/workflows/build_app.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-deploy-app-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-app:
+    name: Check, build and deploy Astro
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Enable pnpm
+        run: corepack enable
+
+      - name: Install dependencies
+        working-directory: frontend
+        run: pnpm install --frozen-lockfile
+
+      - name: Check and build Astro
+        working-directory: frontend
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'
+          BASE_PATH: /linkedin-trends/
+          SITE_URL: https://kosachmax.github.io/linkedin-trends
+        run: |
+          pnpm run check
+          pnpm run build
+
+      - name: Upload app preview
+        uses: actions/upload-artifact@v7
+        with:
+          name: astro-app-${{ github.sha }}
+          path: frontend/dist
+          retention-days: 7
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: frontend/dist
+          publish_branch: gh-pages
