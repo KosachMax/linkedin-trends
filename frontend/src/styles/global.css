@@ -53,6 +53,9 @@ button { font: inherit; }
 .reference-brand { color: #fff; white-space: nowrap; font: 600 15px system-ui; }
 .reference-date { margin-left: 2px; color: rgba(255,255,255,.4); white-space: nowrap; font: 400 12px system-ui; letter-spacing: .02em; }
 .reference-header-actions { display: flex; align-items: center; gap: 8px; }
+.pipeline-status { height: 24px; padding: 2px 5px; display: flex; align-items: center; border-radius: 6px; background: rgba(255,255,255,.08); transition: background .15s; }
+.pipeline-status:hover { background: rgba(255,255,255,.15); }
+.pipeline-status img { width: auto; height: 20px; display: block; }
 .header-source-menu { position: relative; }
 .header-source-menu > summary { list-style: none; }
 .header-source-menu > summary::-webkit-details-marker { display: none; }
@@ -169,6 +172,8 @@ button { font: inherit; }
 @media (max-width: 640px) {
   .reference-header-inner, .reference-toolbar-inner, .reference-feed { padding-left: 18px; padding-right: 18px; }
   .reference-date { display: none; }
+  .pipeline-status { width: 24px; overflow: hidden; justify-content: flex-end; padding: 2px; }
+  .pipeline-status img { max-width: none; flex: none; }
   .header-source-label, .header-health-track { display: none; }
   .header-source-trigger { padding: 0 9px; }
   .header-source-popover { position: fixed; top: 68px; right: 12px; left: 12px; width: auto; max-height: calc(100vh - 80px); overflow-y: auto; }
