@@ -124,9 +124,17 @@ button { font: inherit; }
 .story-dot.category-world { background: #f59e0b; }
 
 .inline-story-panel { margin-top: 16px; padding: 18px 20px; display: flex; flex-direction: column; gap: 18px; border: 1px solid var(--reference-panel-border); border-radius: 11px; background: var(--reference-panel); animation: reference-down .22s ease; }
-.inline-story-panel section > h3, .drawer-sections h2 { margin: 0 0 8px; color: var(--reference-accent); text-transform: uppercase; font: 700 12px system-ui; letter-spacing: .05em; }
+.inline-story-panel section > h3, .inline-story-panel .story-detail-toggle h3, .drawer-sections h2 { margin: 0 0 8px; color: var(--reference-accent); text-transform: uppercase; font: 700 12px system-ui; letter-spacing: .05em; }
 .inline-story-panel p, .drawer-sections p { margin: 0; color: var(--reference-lead); font: 400 13px/1.72 system-ui; }
 .inline-story-panel p + p { margin-top: 10px; }
+.story-detail-toggle { overflow: hidden; border: 1px solid var(--reference-panel-border); border-radius: 9px; background: var(--reference-soft); }
+.story-detail-toggle > summary { min-height: 42px; padding: 11px 13px; display: flex; align-items: center; gap: 9px; list-style: none; cursor: pointer; user-select: none; transition: background .15s; }
+.story-detail-toggle > summary::-webkit-details-marker { display: none; }
+.story-detail-toggle > summary:hover { background: color-mix(in srgb, var(--reference-accent) 5%, transparent); }
+.story-detail-toggle > summary h2, .story-detail-toggle > summary h3 { margin: 0; }
+.story-toggle-chevron { width: 14px; flex-shrink: 0; color: var(--reference-muted); font: 500 20px/1 system-ui; transform-origin: center; transition: transform .16s ease; }
+.story-detail-toggle[open] .story-toggle-chevron { transform: rotate(90deg); }
+.story-toggle-content { padding: 2px 14px 14px 36px; animation: reference-down .16s ease; }
 .inline-source-list, .drawer-source-list { display: flex; flex-direction: column; gap: 8px; }
 .inline-source, .drawer-source { display: flex; flex-direction: column; gap: 3px; padding: 9px 12px; border: 1px solid var(--reference-border); border-radius: 8px; background: var(--reference-soft); }
 .inline-source:hover, .drawer-source:hover { border-color: var(--reference-accent); }
@@ -151,6 +159,9 @@ button { font: inherit; }
 .drawer-sections h2 { font-size: 13px; }
 .drawer-sections p { color: var(--reference-lead); font-size: 15px; line-height: 1.74; }
 .drawer-sections p + p { margin-top: 12px; }
+.drawer-sections .story-detail-toggle { background: var(--reference-soft); }
+.drawer-sections .story-detail-toggle > summary { min-height: 48px; padding: 13px 15px; }
+.drawer-sections .story-toggle-content { padding: 2px 15px 16px 38px; }
 .drawer-source-list { margin-top: 4px; gap: 10px; }
 .drawer-source { padding: 12px 14px; border-radius: 9px; }
 .drawer-source span { font-size: 14px; line-height: 1.45; }
