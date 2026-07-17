@@ -8,6 +8,23 @@ const dateLabel = new Intl.DateTimeFormat("ru-RU", {
   month: "long",
   year: "numeric",
 }).format(new Date(`${digest.date}T12:00:00Z`));
+const availableSources = digest.sources.filter((source) => source.state === "available").length;
+const degradedSources = digest.sources.filter((source) => source.state === "degraded").length;
+const unavailableSources = digest.sources.filter((source) => source.state === "unavailable").length;
+const health = digest.sources.length
+  ? Math.round(
+      digest.sources.reduce(
+        (sum, source) => sum + (source.state === "available" ? 1 : source.state === "degraded" ? 0.5 : 0),
+        0,
+      ) / digest.sources.length * 100,
+    )
+  : 0;
+const healthTone = health >= 90 ? "good" : health >= 60 ? "warn" : "bad";
+const stateLabels = { available: "Доступен", degraded: "Нестабилен", unavailable: "Недоступен" };
+const sparkHeight = (history: number[], value: number) => {
+  const maximum = Math.max(1, ...history);
+  return Math.max(3, Math.round(value / maximum * 24));
+};
 ---
 
 <header class="reference-header">
@@ -17,6 +34,66 @@ const dateLabel = new Intl.DateTimeFormat("ru-RU", {
       <span class="reference-brand">Daily Trends</span>
       <span class="reference-date">{dateLabel}</span>
     </div>
-    <button class="theme-button" data-theme-toggle title="Тема" aria-label="Переключить тему">◐</button>
+    <div class="reference-header-actions">
+      <details class="header-source-menu" data-source-monitor>
+        <summary
+          class={`header-source-trigger ${healthTone}`}
+          aria-label={`Состояние источников: ${health}%`}
+        >
+          <span class="header-health-dot" aria-hidden="true"></span>
+          <span class="header-source-label">Источники</span>
+          <strong>{health}%</strong>
+          <span class="header-health-track" aria-hidden="true"><i style={`width:${health}%`}></i></span>
+        </summary>
+        <div class="header-source-popover">
+          <div class="source-monitor-heading">
+            <div>
+              <h2>Состояние источников</h2>
+              <p>{availableSources} из {digest.sources.length} доступны · вклад в 7 выпусков</p>
+            </div>
+            <span class={`source-health-badge ${healthTone}`}>{health}%</span>
+          </div>
+
+          {(degradedSources > 0 || unavailableSources > 0) && (
+            <p class="source-monitor-alert">
+              {degradedSources > 0 && `${degradedSources} нестабильно`}
+              {degradedSources > 0 && unavailableSources > 0 && " · "}
+              {unavailableSources > 0 && `${unavailableSources} недоступно`}
+            </p>
+          )}
+
+          <div class="source-monitor-list">
+            {digest.sources.map((source) => (
+              <div class="source-monitor-row">
+                <span class={`source-state-dot ${source.state}`} aria-hidden="true"></span>
+                <span class="source-monitor-name">
+                  <strong>{source.source_name}</strong>
+                  <small>{stateLabels[source.state]}</small>
+                </span>
+                <span class="source-monitor-count">{source.represented_events} в выпуске</span>
+                <span class="source-monitor-spark" aria-label={`Вклад ${source.source_name} за 7 выпусков`}>
+                  {source.history.map((value) => (
+                    <i style={`height:${sparkHeight(source.history, value)}px`} title={`${value} материалов`}></i>
+                  ))}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </details>
+      <button class="theme-button" data-theme-toggle title="Тема" aria-label="Переключить тему">◐</button>
+    </div>
   </div>
 </header>
+
+<script>
+  const sourceMonitors = document.querySelectorAll<HTMLDetailsElement>("[data-source-monitor]");
+  document.addEventListener("click", (event) => {
+    sourceMonitors.forEach((monitor) => {
+      if (!monitor.contains(event.target as Node)) monitor.removeAttribute("open");
+    });
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") sourceMonitors.forEach((monitor) => monitor.removeAttribute("open"));
+  });
+</script>
