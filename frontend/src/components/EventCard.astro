@@ -48,21 +48,23 @@ const history = [
       <p>{event.context}</p>
       <p>{event.why_it_matters}</p>
     </section>
-    <section>
-      <h3>История события</h3>
-      <p>{history}</p>
-    </section>
-    <section>
-      <h3>Какие источники подтвердили</h3>
-      <div class="inline-source-list">
-        {sources.map((source) => (
-          <a class="inline-source" href={source.canonical_url} target="_blank" rel="noreferrer">
-            <strong>{source.source_name}</strong>
-            <span>{source.title}</span>
-          </a>
-        ))}
+    <details class="story-detail-toggle">
+      <summary><span class="story-toggle-chevron" aria-hidden="true">›</span><h3>История события</h3></summary>
+      <div class="story-toggle-content"><p>{history}</p></div>
+    </details>
+    <details class="story-detail-toggle">
+      <summary><span class="story-toggle-chevron" aria-hidden="true">›</span><h3>Какие источники подтвердили</h3></summary>
+      <div class="story-toggle-content">
+        <div class="inline-source-list">
+          {sources.map((source) => (
+            <a class="inline-source" href={source.canonical_url} target="_blank" rel="noreferrer">
+              <strong>{source.source_name}</strong>
+              <span>{source.title}</span>
+            </a>
+          ))}
+        </div>
       </div>
-    </section>
+    </details>
   </div>
 </article>
 
@@ -78,16 +80,21 @@ const history = [
   <div class="drawer-divider"></div>
   <div class="drawer-sections">
     <section><h2>Расширенный контекст</h2><p>{event.context}</p><p>{event.why_it_matters}</p></section>
-    <section><h2>История события</h2><p>{history}</p></section>
-    <section>
-      <h2>Какие источники подтвердили</h2>
-      <div class="drawer-source-list">
-        {sources.map((source) => (
-          <a class="drawer-source" href={source.canonical_url} target="_blank" rel="noreferrer">
-            <strong>{source.source_name}</strong><span>{source.title}</span>
-          </a>
-        ))}
+    <details class="story-detail-toggle">
+      <summary><span class="story-toggle-chevron" aria-hidden="true">›</span><h2>История события</h2></summary>
+      <div class="story-toggle-content"><p>{history}</p></div>
+    </details>
+    <details class="story-detail-toggle">
+      <summary><span class="story-toggle-chevron" aria-hidden="true">›</span><h2>Какие источники подтвердили</h2></summary>
+      <div class="story-toggle-content">
+        <div class="drawer-source-list">
+          {sources.map((source) => (
+            <a class="drawer-source" href={source.canonical_url} target="_blank" rel="noreferrer">
+              <strong>{source.source_name}</strong><span>{source.title}</span>
+            </a>
+          ))}
+        </div>
       </div>
-    </section>
+    </details>
   </div>
 </template>
