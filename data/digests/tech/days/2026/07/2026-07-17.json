@@ -2,10 +2,10 @@
   "schema_version": 2,
   "digest_id": "tech",
   "date": "2026-07-17",
-  "generated_at": "2026-07-17T07:34:12.876062Z",
+  "generated_at": "2026-07-17T12:04:25.497867Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Технологии» отобрано 10 подтвержденных событий. Редакционный фильтр обработал 35 материалов, объединил 0 повторных карточек и исключил 2 неподтвержденных кластеров."
+    "body": "В выпуске «Технологии» отобрано 10 подтвержденных событий. Редакционный фильтр обработал 34 материалов, объединил 0 повторных карточек и исключил 2 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
@@ -16,7 +16,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 288,
+      "latency_ms": 397,
       "error_code": null,
       "history": [
         0,
@@ -33,18 +33,18 @@
       "source_name": "arXiv AI",
       "state": "available",
       "fetched": 20,
-      "accepted": 17,
-      "represented_events": 2,
-      "latency_ms": 265,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 564,
       "error_code": null,
       "history": [
-        0,
         0,
         8,
         0,
         0,
         0,
-        17
+        17,
+        0
       ]
     },
     {
@@ -54,7 +54,7 @@
       "fetched": 30,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 870,
+      "latency_ms": 384,
       "error_code": null,
       "history": [
         0,
@@ -73,10 +73,10 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 298,
+      "latency_ms": 576,
       "error_code": null,
       "history": [
-        1,
+        0,
         0,
         0,
         0,
@@ -90,18 +90,18 @@
       "source_name": "DEV Community Python",
       "state": "available",
       "fetched": 12,
-      "accepted": 11,
-      "represented_events": 8,
-      "latency_ms": 794,
+      "accepted": 7,
+      "represented_events": 10,
+      "latency_ms": 261,
       "error_code": null,
       "history": [
-        12,
         9,
         7,
         9,
         7,
         6,
-        11
+        11,
+        7
       ]
     },
     {
@@ -111,7 +111,7 @@
       "fetched": 16,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 84,
+      "latency_ms": 331,
       "error_code": null,
       "history": [
         0,
@@ -130,10 +130,10 @@
       "fetched": 10,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 838,
+      "latency_ms": 302,
       "error_code": null,
       "history": [
-        2,
+        0,
         0,
         0,
         0,
@@ -149,7 +149,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1945,
+      "latency_ms": 1311,
       "error_code": null,
       "history": [
         0,
@@ -168,7 +168,7 @@
       "fetched": 20,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1191,
+      "latency_ms": 589,
       "error_code": null,
       "history": [
         0,
@@ -183,324 +183,134 @@
   ],
   "articles": [
     {
-      "id": "7f422c1e88b49786671e",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14093",
-      "title": "Intelligent Three Level Learning Architecture for Autonomous UAV Swarms in Search and Rescue",
-      "normalized_title": "intelligent three level learning architecture for autonomous uav swarms in search and rescue",
-      "excerpt": "arXiv:2607.14093v1 Announce Type: new Abstract: This paper presents a novel three level hierarchical learning architecture for autonomous UAV swarms performing search and rescue operations. Unlike conventional approaches that apply a single learning paradigm across all hierarchy levels, the proposed architecture integrates three qualitatively different learning mechanisms corresponding to the biological hierarchy of reflexes, skills, and reasoning such as Hebbian neuroplasticity for individual agent adaptation, multi agent reinforcement learning with graph neural networks and behavior trees for tactical coordination, and model agnostic meta learning with BDI reasoning and a digital twin for strategic decision making. The architecture is formalized through twenty two architectural contracts organized across six components such as BDI, Behavior Trees, GNN, MARL, Neuroplasticity, Meta Learning that collectively provide six classes of formal guarantees such as safety, budget correctness",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
+      "id": "b2540364914ffdb69731",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/tomek_ats/building-a-free-fitness-pwa-with-python-and-flask-44ko",
+      "title": "Building a Free Fitness PWA with Python and Flask",
+      "normalized_title": "building a free fitness pwa with python and flask",
+      "excerpt": "Building a Free Fitness PWA with Python and Flask About two years ago I decided to build something that would actually solve a problem I had myself. Instead of another tutorial project, I started developing AthleteApp – a free Progressive Web App (PWA) designed for people who want to track workouts, nutrition and body progress in one place. The project is built primarily with Python and Flask . Why a PWA? I wanted users to access the application instantly without downloading anything from an app store. The application can be installed directly from the browser and works on desktop, Android and iOS. Current features Workout diary Nutrition and macro tracking Progress charts Personal records Body measurements Trainer profile AI-powered exercise analysis (beta) Challenges Building a fitness a",
+      "published_at": "2026-07-17T12:01:27Z",
+      "collected_at": "2026-07-17T12:04:25.505396Z",
       "language": "en",
       "topic_hints": [
         "tech",
-        "ai",
-        "research"
+        "python",
+        "backend"
       ],
       "entities": [],
       "engagement": null
     },
     {
-      "id": "a822a102c3608bb2953c",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14096",
-      "title": "IMEX Interaction-Based Model Explanation",
-      "normalized_title": "imex interaction-based model explanation",
-      "excerpt": "arXiv:2607.14096v1 Announce Type: new Abstract: In predictive modeling, the ability to explain why a model produces a given target prediction has become increasingly important [5, 10]. Black-box models do not provide a transparent description of the internal mechanisms that generate the prediction, making even accurate predictions difficult to interpret and validate. In critical contexts, predictive accuracy alone is not a sufficient validation metric if the reasons underlying model decisions remain unexplained. The IMEX (Interaction-Based Model Explanation) approach represents a methodological direction within explainable predictive modeling. IMEX is designed to identify which variables contribute most to the target prediction and which interactions among variables are significant in determining the target. The method does not impose limitations on higher-order interaction analysis, allowing the investigation of feature subsets with cardinality greater than two. Beyond the identifica",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
+      "id": "4fdf2a3a965fbd8b1e58",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/marcom/python-vs-rust-for-data-science-is-there-really-a-winner-3be",
+      "title": "Python vs. Rust for Data Science: Is There Really a Winner?",
+      "normalized_title": "python vs. rust for data science: is there really a winner?",
+      "excerpt": "For years, Python has been the undisputed language of data science. Its rich ecosystem of libraries, ease of learning, and strong community support have made it the default choice for machine learning , data analysis, and AI development. But another language is steadily gaining attention Rust. Known for its exceptional performance, memory safety, and reliability, Rust is increasingly being adopted in data-intensive applications where speed and efficiency are critical. Does this mean Python is losing its place? Not quite. The reality is that Python and Rust solve different problems, and understanding their strengths can help developers choose the right tool for the right job.",
+      "published_at": "2026-07-17T11:54:41Z",
+      "collected_at": "2026-07-17T12:04:25.505396Z",
       "language": "en",
       "topic_hints": [
         "tech",
-        "ai",
-        "research"
+        "python",
+        "backend"
       ],
       "entities": [],
       "engagement": null
     },
     {
-      "id": "27b9d37604b1171dd3e5",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14126",
-      "title": "Interpretable Language Model for Closed-Loop Type 1 Diabetes Control",
-      "normalized_title": "interpretable language model for closed-loop type 1 diabetes control",
-      "excerpt": "arXiv:2607.14126v1 Announce Type: new Abstract: Type 1 Diabetes (T1D) is a chronic, life-threatening autoimmune condition characterized by the complete destruction of insulin-producing pancreatic beta cells. While Artificial Pancreas Systems (APS) powered by Reinforcement Learning (RL) have shown promise in automating insulin delivery, their ``black-box'' nature makes it hard for patients and doctors to trust them fully. This paper presents LLM-T1D, a promising approach that combines the precision of RL with the clear, human-like reasoning of Large Language Models (LLMs) to create a more transparent and reliable insulin pump controller. By training an expert RL system and distilling its knowledge into fine-tuned LLaMA 3.1 8B and Qwen3 8B models, we developed a controller that not only surpasses the RL system's performance but also explains its decisions in plain, understandable language. Tested on the FDA-approved UVA/Padova T1D simulator, the LLM controllers deliver excellent blood s",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
+      "id": "7ff9305b6dda31ac6bcb",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/sbalavignesh123/introducing-sketchlog-v125-bounded-memory-telemetry-for-observability-oi3",
+      "title": "Introducing SketchLog v1.2.5: Bounded-Memory Telemetry for Observability",
+      "normalized_title": "introducing sketchlog v1.2.5: bounded-memory telemetry for observability",
+      "excerpt": "I just released SketchLog v1.2.5. SketchLog is an open-source observability project built around a simple idea: Telemetry systems should not need unlimited raw-event storage to answer useful production questions. Modern systems generate huge volumes of metrics, logs, events, traces, and service signals. Storing everything forever is expensive, and querying raw history can become slow or operationally painful. SketchLog takes a different approach. Instead of keeping every raw event as the primary source for every question, SketchLog uses bounded-memory sketch data structures to summarize telemetry streams while still supporting practical operational analytics. What SketchLog is trying to solve In production systems, teams often need answers like: What is the current p99 latency? How many unique users or services appeared in this window? Which events are happening most often? Did this release chang",
+      "published_at": "2026-07-17T11:24:49Z",
+      "collected_at": "2026-07-17T12:04:25.505396Z",
       "language": "en",
       "topic_hints": [
         "tech",
-        "ai",
-        "research"
+        "python",
+        "backend"
       ],
       "entities": [],
       "engagement": null
     },
     {
-      "id": "6ac09fd7052e839a5cb9",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14141",
-      "title": "Human AI Construction of Bayesian Networks for Operational Decision Support -- A Virtual Survey Approach",
-      "normalized_title": "human ai construction of bayesian networks for operational decision support -- a virtual survey approach",
-      "excerpt": "arXiv:2607.14141v1 Announce Type: new Abstract: Bayesian Belief Networks (BBNs) are powerful tools for decision-making under uncertainty. However, building their structures and estimating parameters are difficult. Currently, researchers must choose between relying on expert judgement or using large datasets to learn the structure and parameters of the network. We propose a new methodology using Large Language Models to bridge the gap between expert opinion and data-driven learning. This approach uses a panel of AI agents to estimate probabilities based on specific personas and context. We then apply a trimmed-mean rule to remove noise from these responses. We develop a six step BBN framework and illustrate it to model customer intention to consult a doctor in an alternative healthcare system. The model reveals that while self efficacy appears to be a major factor, its actual causal impact is small. In contrast, subjective norms have a much stronger effect in modelling customers' inten",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
+      "id": "d6d817d6202125f68a09",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/seo_mango_ff23a49da4a741/smd-power-inductor-manufacturer-oem-surface-mount-power-inductors-33c4",
+      "title": "SMD Power Inductor Manufacturer | OEM Surface Mount Power Inductors",
+      "normalized_title": "smd power inductor manufacturer | oem surface mount power inductors",
+      "excerpt": "Introduction As electronic devices become more compact and energy-efficient, selecting the right SMD Power Inductor Manufacturer is essential for achieving stable power delivery and reliable circuit performance. SMD (Surface Mount Device) power inductors are widely used in DC-DC converters, voltage regulators, automotive electronics, industrial automation, and consumer devices because of their compact size, high current handling, and efficient power management. This guide explains how to evaluate an SMD power inductor manufacturer and the key factors engineers should consider during component selection. What Is an SMD Power Inductor? A Surface Mount Power Inductor i",
+      "published_at": "2026-07-17T11:12:11Z",
+      "collected_at": "2026-07-17T12:04:25.505396Z",
       "language": "en",
       "topic_hints": [
         "tech",
-        "ai",
-        "research"
+        "python",
+        "backend"
       ],
       "entities": [],
       "engagement": null
     },
     {
-      "id": "be170612630efe23a670",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14144",
-      "title": "Capability from Access Structure, Not Scale: Lower Bounds and Pre-Registered Tests for Hybrid Sequence Models",
-      "normalized_title": "capability from access structure, not scale: lower bounds and pre-registered tests for hybrid sequence models",
-      "excerpt": "arXiv:2607.14144v1 Announce Type: new Abstract: The Platonic Representation Hypothesis (PRH) holds that as models scale, representations of heterogeneous networks converge toward a shared model of reality. We propose its sequel and boundary, the Capability Convergence Hypothesis (CCH): under a fixed per-token inference budget, representational convergence does not entail capability convergence. Capability instead converges toward a class, the access-complete hybrid: any architecture holding both a compressive O(1)-state channel and a scalable verbatim-index channel. We anchor it on a witness task, the Newton's-apple problem in an infinite stream, and name three resource walls: a Shannon wall barring any o(Nb)-state architecture, a horizon wall barring any fixed window, and a circuit wall barring fixed-depth attention-only composition (conditional on TC0 != NC1). Under an explicit separability assumption a hybrid crosses all three by paying each wall's price, so capability is strictly",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
+      "id": "80cdd6cce2fb3580d890",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/amy13/i-built-an-ai-agent-in-one-weekend-heres-everything-i-learned-54d7",
+      "title": "I Built an AI Agent in One Weekend. Here's Everything I Learned",
+      "normalized_title": "i built an ai agent in one weekend. here's everything i learned",
+      "excerpt": "I started on a Saturday morning with nothing more than an idea and a laptop. By Sunday night, I had a working AI agent that could search the web, answer questions, and automate repetitive tasks. It wasn't perfect, but the experience taught me more about AI development than weeks of watching tutorials ever could. Why Did I Decide to Build an AI Agent in Just One Weekend? For months, I kept reading headlines about AI agents replacing repetitive work, helping developers write code, and automating business processes. At first, I assumed building one would require weeks of work and deep expertise in machine learning. The more I researched, the more I realised that wasn't entirely true. Thanks to modern AI models, APIs, and open source frameworks, creating a simple but useful AI agent has become much more accessible. You don't need to train your own model or build everything from scratch. Instead, the challenge is learning how t",
+      "published_at": "2026-07-17T10:57:59Z",
+      "collected_at": "2026-07-17T12:04:25.505396Z",
       "language": "en",
       "topic_hints": [
         "tech",
-        "ai",
-        "research"
+        "python",
+        "backend"
       ],
       "entities": [],
       "engagement": null
     },
     {
-      "id": "4edc3600a8785673310e",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14145",
-      "title": "ToolAnchor: Anchoring Counterfactual Context to Boost Agentic Tool-use Capability",
-      "normalized_title": "toolanchor: anchoring counterfactual context to boost agentic tool-use capability",
-      "excerpt": "arXiv:2607.14145v1 Announce Type: new Abstract: Tool-augmented large language model agents excel at long-horizon tasks, yet they are typically post-trained on fixed toolsets. When tasks demand new tools, these agents struggle to incorporate them effectively, and retraining from scratch is often impractical. We identify the core obstacle in such toolset expansion problem as behavioral inertia: the tendency of agents to fall back on familiar tools and established reasoning patterns despite having access to new ones. We demonstrate that injecting counterfactual anchor contexts at critical decision points can break this inertia, recovering failed trajectories by eliciting suppressed agent capabilities. To scale this insight, we propose ToolAnchor, a framework that uses teacher models to hypothesize these counterfactual contexts, verifies them via student rollouts, and internalizes the successful interventions through agentic post-training. Extensive evaluations across general AI assistant",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
+      "id": "b0d371439b8ccd3761bd",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/onizuka/5-free-apis-i-built-with-cursor-no-coding-skills-required-now-on-rapidapi-1idl",
+      "title": "5 Free APIs I Built with Cursor - No Coding Skills Required - Now on RapidAPI",
+      "normalized_title": "5 free apis i built with cursor - no coding skills required - now on rapidapi",
+      "excerpt": "The Problem Every developer needs data: WHOIS records, company info, email validation, IP geolocation, compliance screening. But existing APIs are either expensive, rate-limited, or require API keys to third-party services. I wanted to solve this — without knowing how to code. The Solution: 5 Free APIs Built with Cursor I used Cursor IDE (AI-powered code editor) to build 5 production-ready APIs. Cursor wrote 100% of the code — I just described what I wanted in plain English. Each API is: Free tier: 100 requests/month, no credit card Live on RapidAPI: Available to 4M+ developers instantly Open source: Full code on GitHub Zero infrastructure cost: Deployed on Render free tier The 5 APIs 1. Domain WHOIS API Get registration data for any domain via R",
+      "published_at": "2026-07-17T10:53:02Z",
+      "collected_at": "2026-07-17T12:04:25.505396Z",
       "language": "en",
       "topic_hints": [
         "tech",
-        "ai",
-        "research"
+        "python",
+        "backend"
       ],
       "entities": [],
       "engagement": null
     },
     {
-      "id": "f7a9fe7ccdf9b4e004a5",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14149",
-      "title": "Enhancing Small Language Models Reasoning through Knowledge Graph Grounding",
-      "normalized_title": "enhancing small language models reasoning through knowledge graph grounding",
-      "excerpt": "arXiv:2607.14149v1 Announce Type: new Abstract: Although large language models (LLMs) have set benchmarks for zero-shot reasoning, their deployment remains cost-prohibitive and environmentally taxing. Small Language Models (SLMs) offer a sustainable alternative, but prone to errors, on tasks requiring complex, multi-hop logical grounding. We investigate a neuro-symbolic agentic framework to enhance the reasoning capabilities of SLMs, specifically Gemma 3 (1B, 4B) and Llama 3.2 (3B), using the CLUTRR kinship benchmark. Our approach transforms the SLM into a minimalist agent utilizing two specialized tool calls: extract_facts for symbolic triplet extraction and get_hint for expert reasoning via a Relational Graph Convolutional Network (RGCN). We evaluate these models across two configurations, both in an Oracle scenario with ground-truth triplets and a Realistic scenario relying on self-extracted knowledge. Our results reveal that while RGCN-derived hints provide a 1.5 - 2x performance",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
+      "id": "50b159d05004ce60271c",
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "canonical_url": "https://dev.to/teolex2020/ai-agents-dont-need-a-bigger-prompt-they-need-governed-memory-1pke",
+      "title": "AI Agents Don't Need a Bigger Prompt. They Need Governed Memory",
+      "normalized_title": "ai agents don't need a bigger prompt. they need governed memory",
+      "excerpt": "Most AI agents have a memory problem disguised as a prompting problem. We keep adding conversation history to the context window, summarizing old messages, or placing documents in a vector database. These techniques are useful, but they do not answer several important questions: What should be remembered for hours, weeks, or months? What should decay when it stops being useful? Which source supports a stored claim? What happens when two memories contradict each other? Why was a particular memory returned? How do we prevent one user's memory from leaking into another user's context? I built Aura Memory to explore a different approach: memory as a governed cognitive layer that runs beside the model. The model can remain stateless. Aura owns persistence, retrieval, lifecycle, provenance, and bounded adaptation.",
+      "published_at": "2026-07-17T10:41:45Z",
+      "collected_at": "2026-07-17T12:04:25.505396Z",
       "language": "en",
       "topic_hints": [
         "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "13f7121e9d78639f69c7",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14158",
-      "title": "Orchestrating Power Grid Studies with Multi-Agent AI and MCP Servers",
-      "normalized_title": "orchestrating power grid studies with multi-agent ai and mcp servers",
-      "excerpt": "arXiv:2607.14158v1 Announce Type: new Abstract: This position paper explores how Agentic AI and Model Context Protocol (MCP) can support power-grid studies in a Transmission System Operator (TSO) context. We focus on integrating Large Language Models with numerical simulation tools, structured workflows, and human supervision. We identify key industrial requirements for agent assisted grid studies and introduce pypowsybl-mcp, an MCP-based interface exposing selected capabilities of our simulation tool, pypowsybl to AI agents. This first step provides a testbed to study how agents can setup simulations, execute analyses, retrieve results, and interact with power-system simulators through standardized tool calls. We also discuss principles for human-in-the-loop, multi-agent workflows and outline an evaluation strategy combining technical metrics and practitioner feedback. The paper positions MCP-based tool integration as a step toward more interactive, auditable, and scalable grid-study",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "6997fcc847ea8d5e3b7d",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14159",
-      "title": "MemoHarness: Agent Harnesses That Learn from Experience",
-      "normalized_title": "memoharness: agent harnesses that learn from experience",
-      "excerpt": "arXiv:2607.14159v1 Announce Type: new Abstract: An agent harness is the external control layer that turns a base LLM into an executable agent by managing context, tools, orchestration, memory, decoding, and output handling. While harness design strongly affects agent behavior, most automatic improvement methods optimize narrower artifacts such as prompts, pipelines, or workflows, and deployed agents usually reuse a single global harness for all cases. We introduce MemoHarness, an adaptive harness optimization framework that learns from its own executions. MemoHarness decomposes the harness into six editable control dimensions, stores per-case diagnoses and distilled global patterns in a dual-layer experience bank, and adapts the learned harness to each test case using retrieved experience without test-time labels, feedback, or additional search. In our evaluation across shell-agent, code-generation, and analytical-reasoning benchmarks, MemoHarness improves over the fixed harnesses we",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "cbfae89f34f6b77826ea",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14169",
-      "title": "When a Verified World Model Still Loses: Play-Adequacy vs Prediction-Accuracy in LLM-Synthesized Code World Models",
-      "normalized_title": "when a verified world model still loses: play-adequacy vs prediction-accuracy in llm-synthesized code world models",
-      "excerpt": "arXiv:2607.14169v1 Announce Type: new Abstract: Large language models can synthesize a game's rules as executable code - a Code World Model (CWM) - which a classical planner then searches over. Such models are typically accepted when they reach high transition accuracy on sampled trajectories. We argue this is the wrong notion of adequacy for planning. We show four things. (1) An LLM-synthesized CWM can pass a sampling gate at 100% transition accuracy and be $\\geq 98\\%$ state-accurate on the planner's own search distribution, yet lose systematically at play, because the $<1\\%$ it gets wrong is exactly the pivotal dynamics; the play cost of the omitted rule is $0.091$ (seed-clustered 95% CI $[0.065,0.117]$, $n=4800$). We call this the verified-vs-correct gap, and confirm it end-to-end through the synthesis pipeline. (2) The harm follows a quantitative law, $\\mathrm{danger}=\\mathrm{play\\_cost}\\times(1-\\mathrm{rarity})^N$, whose $(1-\\mathrm{rarity})^N$ gate-miss factor is proven exact",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "4bc31bd3d92dcaa5d3c1",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14178",
-      "title": "ReasFlow: Assisting Reasoning-Centric Scientific Discovery in Applied Mathematics via a Knowledge-Based Multi-Agent System",
-      "normalized_title": "reasflow: assisting reasoning-centric scientific discovery in applied mathematics via a knowledge-based multi-agent system",
-      "excerpt": "arXiv:2607.14178v1 Announce Type: new Abstract: Recent advances in Large Language Models have fueled autonomous AI agents capable of tackling complex scientific tasks, yet existing automated research systems remain predominantly focused on empirically driven domains with quantitative benchmarks, leaving theory-driven discovery, particularly in mathematically grounded disciplines requiring rigorous proofs and synthesis of domain knowledge, largely underexplored. Key challenges include the difficulty of verifying theoretical reasoning at scale, insufficient reasoning ability for autonomous frontier exploration, and a scarcity of procedural heuristics in the literature. We introduce ReasFlow, an end-to-end autonomous agent system for reasoning-centric scientific discovery that operationalizes a collaborative paradigm where the human expert acts as Principal Investigator while the agent executes rigorous derivations as a capable graduate student. ReasFlow incorporates (i) a robust interna",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "c879dbbff6dfe1246f6c",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14187",
-      "title": "RxBrain: Embodied Cognition Foundation Model with Joint Language-Visual Reasoning and Imagination",
-      "normalized_title": "rxbrain: embodied cognition foundation model with joint language-visual reasoning and imagination",
-      "excerpt": "arXiv:2607.14187v1 Announce Type: new Abstract: Embodied cognition requires agents to connect high-level task reasoning with the physical states to be achieved. We introduce Hy-Embodied-RxBrain, an embodied cognition foundation model with joint language-visual reasoning and imagination. Unlike vision-language models that emphasize scene understanding and textual decision making, or generative world models that mainly predict future visual states, RxBrain represents embodied plans in a single planning sequence where language and visual imagination play complementary roles. Language provides the abstract structure of a plan, including task decomposition, planning primitives, constraints, temporal order, and decision logic, while visual imagination grounds this structure through world state prediction and joint subgoal planning, associating each planning step with intermediate and final physical states. RxBrain adopts a unified multimodal Mixture-of-Transformers architecture that support",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "5dd49b5232e9f4fa613d",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14197",
-      "title": "How Artificial Intelligence LLM Engines Shape the Global Conflict Information Environment",
-      "normalized_title": "how artificial intelligence llm engines shape the global conflict information environment",
-      "excerpt": "arXiv:2607.14197v1 Announce Type: new Abstract: Artificial Intelligence (AI) answer engines now field a growing share of the questions that analysts, scholars, and the public ask about issues of peace and conflict. Large Language Models (LLMs) are known to hallucinate under certain conditions, but do these errors have discernible patterns when they are asked about conflicts, and if so what can that teach us about the changing global conflict information environment? To answer, we first asked a battery of questions about 28 conflicts to five leading answer engines and scored their 5,460 answers against documented evidence. We found that the thinner the retrievable record around a given conflict, the more the engines invent, misattribute, and miscount. Thin records don't just encourage hallucination, but create structural exposure to mis- and disinformation, because they are the easiest records to warp through Generative Engine Optimization (GEO) to bias engine responses. Through an ana",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "b520240c60c3f6f5fdfb",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14240",
-      "title": "Align AI to Dynamic Human-AI Workflows",
-      "normalized_title": "align ai to dynamic human-ai workflows",
-      "excerpt": "arXiv:2607.14240v1 Announce Type: new Abstract: Current alignment approaches typically focus on emulating human behavior using static representations of human preferences, failing to capture the dynamic, context-dependent nature of real-world human-AI interactions. In this paper, we argue for a shift from static and emulative to interactive and complementary alignment, where preferences emerge through interaction and alignment is defined not by satisfying preferences alone. We first formalize this gap by contrasting existing alignment with a trajectory-level view in which human and model behavior co-evolve over time. Because these interaction dynamics have not been adequately captured within existing ML formulations, we ground this perspective in insights from an interdisciplinary workshop. We draw on lessons from social-science accounts of human-human collaboration and then argue that human-AI systems amplify these dynamics, introducing new asymmetries that make reasoning about uncer",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "218e7d9d2c7d04420496",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14246",
-      "title": "The Steering Budget: Examples beat Knobs",
-      "normalized_title": "the steering budget: examples beat knobs",
-      "excerpt": "arXiv:2607.14246v1 Announce Type: new Abstract: Generative models are steered with knobs -- prompts, guidance scales, property tags. Turn one as hard as you like and, past a point, it stops moving the property you care about. We find that ceiling is not a shortcoming of the model but a budget, set by the training data before the model is trained: a property's movable range splits in two -- the part a knob can reach, and a second, significant part that only examples -- concrete instances of what you want more of -- can reach. That second part is usually much larger, but not always, and the same budget says so in advance. Reaching that second part takes a different move: instead of turning a knob, you show the model examples, composed from what it already learned rather than added to its training. A cheap audit of the training data measures the budget; we give a recipe for building the example set that reaches all of it. This buys two things a knob can't. Reach: it moves a property",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "53812f8de84e85105dea",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14256",
-      "title": "Automatic Hard Example Synthesis with Multi-Level Agentic Data Curation",
-      "normalized_title": "automatic hard example synthesis with multi-level agentic data curation",
-      "excerpt": "arXiv:2607.14256v1 Announce Type: new Abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed for nuanced content safety and moderation tasks, yet they remain vulnerable to adversarial attacks and out-of-distribution edge cases. Traditional active learning and manual annotation fail to scale against the complexity and volume of novel multimodal threats. In this paper, we propose an automated, agentic red-teaming framework that systematically synthesizes difficult examples using an iterative strategy that proposes novel hypotheses as well as mutating on past attempts. Leveraging a multi-agent architecture that consists of a high-reasoning Architect agent, an advanced image generator, and a multi-level verification committee of LLM raters, our system autonomously uncovers boundary-pushing violations and ambiguous policy edge cases without any human intervention. By employing these carefully synthesized adversarial examples as in-context demonstrations via test-time",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "6e2fc2922eec08ebd525",
-      "source_id": "arxiv-ai",
-      "source_name": "arXiv AI",
-      "canonical_url": "https://arxiv.org/abs/2607.14275",
-      "title": "AI Agents Do Not Fail Alone:The Context Fails First",
-      "normalized_title": "ai agents do not fail alone:the context fails first",
-      "excerpt": "arXiv:2607.14275v1 Announce Type: new Abstract: Context engineering has become central to building reliable AI agents, yet it remains largely unmeasured. Agents do not fail in isolation: their behavior is shaped by the instructions, tools, memory, retrieved knowledge, guardrails, and untrusted inputs accumulated in their context. When this context is weak, agents drift, hallucinate, misuse tools, ignore constraints, become vulnerable to injection, and waste tokens. This paper validates context-engineering quality as an independent leading indicator of agent reliability. We implement the measurement in ProofAgent-Harness, an open-source infrastructure for AI agent evaluation that uses multi-juror, consensus-based scoring. The harness assesses context across seven criteria: role clarity, guardrail coverage, instruction consistency, tool schema quality, grounding sufficiency, injection hardening, and token efficiency. Crucially, the context score is isolated from behavioral metrics and r",
-      "published_at": "2026-07-17T04:00:00Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "ai",
-        "research"
+        "python",
+        "backend"
       ],
       "entities": [],
       "engagement": null
@@ -601,82 +411,6 @@
       "engagement": null
     },
     {
-      "id": "163a181e77398a65a662",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/kunalontech/post-0001-langgraph-learning-journal-day-01-code-that-only-moves-forward-cant-think-5fa1",
-      "title": "Post-0001. LangGraph Learning Journal — Day 01: Code That Only Moves Forward Can't Think",
-      "normalized_title": "post-0001. langgraph learning journal — day 01: code that only moves forward can't think",
-      "excerpt": "Day 1 · by Kunal Hore ( @KunalOnTech ) Quick Jump Why I'm Learning This Publicly Today's Map 1. State 2. Nodes 3. Edges 4. Build & Run — The Full Exercise Kunal's Interview Corner Today's Takeaway Most code runs top to bottom, once, with no memory of where it's been. Real decisions don't move in a straight line — sometimes you loop back, sometimes you branch depending on what just happened. A script can't pause mid-run and reconsider. A graph can. That single difference — code that can stop, decide, and circle back instead of just executing — is the entire reason LangGraph exists. Over the next few days I'll cover all the topics to make you familiar with LangGraph. This is my first day of learning, and I'll share whatever I learn alon",
-      "published_at": "2026-07-17T06:55:21Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "760c8b2c4227e4c0a0f9",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/l0gi0ver/how-to-scrape-vivareal-free-no-code-guide-2026-108p",
-      "title": "How to Scrape VivaReal — Free No-Code Guide (2026)",
-      "normalized_title": "how to scrape vivareal — free no-code guide (2026)",
-      "excerpt": "If you need to pull VivaReal data at scale and there's no clean official API, this guide shows how to export it to JSON, CSV or Excel in a couple of minutes — with no scraping code to maintain. We'll use the VivaReal Scraper - Brazil Real Estate Imoveis , a hosted scraper on the Apify platform. You only need a free Apify token — no VivaReal login, no proxies, no reverse-engineering. What data you get Each run returns structured records with fields like: title operationType price bedrooms usableAreaM2 url id listingType propertyType unitSubTypes condoFee iptu yearlyIptu</",
-      "published_at": "2026-07-17T06:44:19Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "73dcfbb2afa5bb7f589f",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/l0gi0ver/how-to-scrape-youtube-search-free-no-code-guide-2026-33j3",
-      "title": "How to Scrape YouTube Search — Free No-Code Guide (2026)",
-      "normalized_title": "how to scrape youtube search — free no-code guide (2026)",
-      "excerpt": "If you need to pull YouTube Search data at scale and there's no clean official API, this guide shows how to export it to JSON, CSV or Excel in a couple of minutes — with no scraping code to maintain. We'll use the YouTube Search Scraper - Scrape Videos by Keyword , a hosted scraper on the Apify platform. You only need a free Apify token — no YouTube Search login, no proxies, no reverse-engineering. What data you get Each run returns structured records with fields like: resultType title channelTitle viewCount publishedTime duration url query videoId channelId playlistId viewCountText</co",
-      "published_at": "2026-07-17T06:43:46Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "167e026f4dcf16236350",
-      "source_id": "devto-python",
-      "source_name": "DEV Community Python",
-      "canonical_url": "https://dev.to/l0gi0ver/how-to-scrape-bookingcom-free-no-code-guide-2026-1eec",
-      "title": "How to Scrape Booking.com — Free No-Code Guide (2026)",
-      "normalized_title": "how to scrape booking.com — free no-code guide (2026)",
-      "excerpt": "If you need to pull Booking.com data at scale and there's no clean official API, this guide shows how to export it to JSON, CSV or Excel in a couple of minutes — with no scraping code to maintain. We'll use the Booking.com Scraper - Hotel Prices & Reviews , a hosted scraper on the Apify platform. You only need a free Apify token — no Booking.com login, no proxies, no reverse-engineering. What data you get Each run returns structured records with fields like: name starRating reviewScore reviewCount priceAmount priceCurrency roomType distanceFromCenter hotelUrl hotelId reviewScoreText <l",
-      "published_at": "2026-07-17T06:43:13Z",
-      "collected_at": "2026-07-17T07:34:12.884938Z",
-      "language": "en",
-      "topic_hints": [
-        "tech",
-        "python",
-        "backend"
-      ],
-      "entities": [],
-      "engagement": null
-    },
-    {
       "id": "63c02db6274c725f3c88",
       "source_id": "devto-python",
       "source_name": "DEV Community Python",
@@ -716,6 +450,156 @@
     }
   ],
   "events": [
+    {
+      "id": "tech-ab53485c705dbfca",
+      "slug": "python-и-rust-выбор-языка-для-науки-о-данных",
+      "title": "Python и Rust: выбор языка для науки о данных",
+      "brief": "Python остается доминирующим языком в области науки о данных благодаря обширной экосистеме библиотек, простоте изучения и поддержке сообщества. Однако Rust набирает популярность в приложениях, требующих высокой производительности, безопасности памяти и надежности, особенно в обработке больших объемов данных. Несмотря на рост популярности Rust, Python не теряет своих позиций, поскольку оба языка решают разные задачи и выбор зависит от конкретных потребностей проекта.",
+      "context": "В течение многих лет Python был неоспоримым лидером в области науки о данных, машинного обучения, анализа данных и разработки искусственного интеллекта. Его широкая экосистема библиотек, низкий порог вхождения и активное сообщество сделали его стандартным выбором. В то же время язык Rust, известный своей исключительной производительностью, безопасностью работы с памятью и надежностью, постепенно привлекает внимание. Rust все чаще применяется в приложениях, интенсивно работающих с данными, где критически важны скорость и эффективность.",
+      "why_it_matters": "Понимание сильных сторон Python и Rust позволяет разработчикам принимать обоснованные решения при выборе инструмента для конкретной задачи в области науки о данных. Хотя Python сохраняет свои позиции благодаря удобству и обширной поддержке, Rust предлагает значительные преимущества в производительности для ресурсоемких приложений, что может повлиять на будущие архитектуры систем обработки данных.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "4fdf2a3a965fbd8b1e58"
+      ],
+      "facts": [
+        {
+          "text": "Python на протяжении многих лет является основным языком для науки о данных, машинного обучения, анализа данных и разработки ИИ благодаря своей экосистеме библиотек, простоте изучения и поддержке сообщества.",
+          "article_ids": [
+            "4fdf2a3a965fbd8b1e58"
+          ]
+        },
+        {
+          "text": "Rust набирает популярность в приложениях, интенсивно работающих с данными, где важны высокая производительность, безопасность памяти и надежность.",
+          "article_ids": [
+            "4fdf2a3a965fbd8b1e58"
+          ]
+        },
+        {
+          "text": "Python и Rust решают разные задачи, и выбор между ними зависит от конкретных требований проекта.",
+          "article_ids": [
+            "4fdf2a3a965fbd8b1e58"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "technology-comparison",
+        "primary_entities": [
+          "Python",
+          "Rust"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-17T11:54:41Z"
+      },
+      "first_seen_at": "2026-07-17T11:54:41Z",
+      "updated_at": "2026-07-17T12:04:25.497867Z"
+    },
+    {
+      "id": "tech-474e3bb7bdd93903",
+      "slug": "выпущены-новые-инструменты-для-управления-данными-в-системах-наблюдения-и-ии",
+      "title": "Выпущены новые инструменты для управления данными в системах наблюдения и ИИ",
+      "brief": "Представлены два новых проекта: SketchLog v1.2.5, система для сбора телеметрии с ограниченной памятью, и Aura Memory, решение для управляемой памяти ИИ-агентов. SketchLog решает проблему дорогостоящего и медленного хранения больших объемов данных телеметрии, используя структуры данных \"эскизов\" для суммирования потоков данных и поддержки аналитики. Aura Memory предлагает альтернативу увеличению контекстного окна или векторных баз данных, фокусируясь на управлении жизненным циклом, происхождением и адаптацией воспоминаний ИИ-агентов, позволяя моделям оставаться без состояния и предотвращая утечку данных между пользователями.",
+      "context": "В сфере разработки программного обеспечения и искусственного интеллекта возникла потребность в более эффективных методах управления данными. Традиционные системы сбора телеметрии сталкиваются с проблемами хранения и обработки огромных объемов информации, что приводит к высоким затратам и снижению производительности запросов. Аналогично, ИИ-агенты испытывают трудности с управлением долговременной памятью, что часто маскируется под проблему размера контекстного окна. Для решения этих задач были разработаны новые подходы. Проект SketchLog предлагает использовать структуры данных с ограниченной памятью для суммирования телеметрических данных, что позволяет проводить оперативную аналитику без необходимости хранения всей истории событий. В то же время, Aura Memory фокусируется на создании управляемого слоя памяти для ИИ-агентов, который отвечает за сохранение, извлечение, жизненный цикл и адаптацию информации, отделяя эти функции от самой модели.",
+      "why_it_matters": "Эти разработки имеют важное значение для оптимизации работы современных вычислительных систем. SketchLog v1.2.5 позволяет компаниям сократить расходы на хранение и обработку данных телеметрии, одновременно повышая скорость и эффективность аналитики производственных систем. Это особенно актуально для систем с высокой нагрузкой, где объемы генерируемых данных могут быть колоссальными. Aura Memory предлагает решение для фундаментальной проблемы ИИ — управления памятью. Предоставляя управляемый слой памяти, Aura Memory позволяет ИИ-агентам эффективно работать с информацией на протяжении длительных периодов, запоминать важные детали, отбрасывать устаревшие данные и предотвращать конфликты или утечки информации между пользователями. Это открывает путь к созданию более надежных, безопасных и контекстно-осведомленных ИИ-систем.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "7ff9305b6dda31ac6bcb",
+        "50b159d05004ce60271c"
+      ],
+      "facts": [
+        {
+          "text": "SketchLog v1.2.5 — это проект с открытым исходным кодом для наблюдаемости, который использует структуры данных «эскизов» с ограниченной памятью для суммирования потоков телеметрии, поддерживая при этом практическую оперативную аналитику.",
+          "article_ids": [
+            "7ff9305b6dda31ac6bcb"
+          ]
+        },
+        {
+          "text": "SketchLog решает проблему дорогостоящего и медленного хранения больших объемов данных телеметрии, которые генерируются современными системами.",
+          "article_ids": [
+            "7ff9305b6dda31ac6bcb"
+          ]
+        },
+        {
+          "text": "Aura Memory — это решение, которое рассматривает память как управляемый когнитивный слой, работающий параллельно с моделью ИИ, позволяя модели оставаться без состояния.",
+          "article_ids": [
+            "50b159d05004ce60271c"
+          ]
+        },
+        {
+          "text": "Aura Memory отвечает за сохранение, извлечение, жизненный цикл и ограниченную адаптацию воспоминаний ИИ-агентов, в отличие от простого увеличения контекстного окна или использования векторных баз данных.",
+          "article_ids": [
+            "50b159d05004ce60271c"
+          ]
+        },
+        {
+          "text": "Проблемы, которые Aura Memory стремится решить, включают определение того, что следует помнить в течение длительного времени, когда воспоминания должны устаревать, какой источник подтверждает хранимое утверждение, и как предотвратить утечку памяти одного пользователя к другому.",
+          "article_ids": [
+            "50b159d05004ce60271c"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "software_release",
+        "primary_entities": [
+          "SketchLog",
+          "Aura Memory"
+        ],
+        "geographies": [],
+        "occurred_at": null
+      },
+      "first_seen_at": "2026-07-17T10:41:45Z",
+      "updated_at": "2026-07-17T12:04:25.497867Z"
+    },
+    {
+      "id": "tech-b0147f645f51e957",
+      "slug": "производители-smd-индукторов-выбор-компонентов-для-электроники",
+      "title": "Производители SMD-индукторов: выбор компонентов для электроники",
+      "brief": "В условиях миниатюризации и повышения энергоэффективности электронных устройств выбор правильного производителя SMD-индукторов (Surface Mount Device) становится критически важным для обеспечения стабильной подачи питания и надежной работы схем. Эти компоненты широко применяются в DC-DC преобразователях, регуляторах напряжения, автомобильной электронике, промышленной автоматизации и потребительских устройствах благодаря их компактным размерам, высокой пропускной способности по току и эффективному управлению питанием. Данное руководство поможет инженерам оценить производителя SMD-индукторов и определить ключевые факторы при выборе компонентов.",
+      "context": "С развитием электронных устройств, стремящихся к уменьшению размеров и увеличению энергоэффективности, выбор подходящих SMD-индукторов (Surface Mount Device) приобретает первостепенное значение. Эти компоненты необходимы для обеспечения стабильной подачи питания и надежной работы электронных схем. SMD-индукторы находят широкое применение в различных областях, включая DC-DC преобразователи, регуляторы напряжения, автомобильную электронику, системы промышленной автоматизации и потребительские устройства. Их популярность обусловлена компактными размерами, способностью обрабатывать высокие токи и эффективным управлением питанием. Данное руководство призвано помочь инженерам в оценке производителей SMD-индукторов и определить ключевые критерии при выборе необходимых компонентов.",
+      "why_it_matters": "Правильный выбор SMD-индуктора и его производителя напрямую влияет на производительность, надежность и долговечность электронных устройств. Некачественные или неподходящие компоненты могут привести к сбоям в работе, перегреву, снижению эффективности преобразования энергии и даже к полному отказу устройства. В условиях постоянного стремления к миниатюризации и повышению энергоэффективности, инженерам необходимо тщательно подходить к выбору компонентов, учитывая их характеристики, соответствие требованиям конкретного применения и репутацию производителя. Это руководство предоставляет основу для принятия обоснованных решений при выборе SMD-индукторов, что в конечном итоге способствует созданию более совершенных и надежных электронных продуктов.",
+      "importance": 7,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "d6d817d6202125f68a09"
+      ],
+      "facts": [
+        {
+          "text": "SMD-индукторы широко используются в DC-DC преобразователях, регуляторах напряжения, автомобильной электронике, промышленной автоматизации и потребительских устройствах.",
+          "article_ids": [
+            "d6d817d6202125f68a09"
+          ]
+        },
+        {
+          "text": "Ключевыми преимуществами SMD-индукторов являются их компактный размер, высокая пропускная способность по току и эффективное управление питанием.",
+          "article_ids": [
+            "d6d817d6202125f68a09"
+          ]
+        },
+        {
+          "text": "Выбор правильного производителя SMD-индукторов важен для обеспечения стабильной подачи питания и надежной работы электронных схем.",
+          "article_ids": [
+            "d6d817d6202125f68a09"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "component_selection_guide",
+        "primary_entities": [
+          "SMD Power Inductor Manufacturer"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-17T11:12:11Z"
+      },
+      "first_seen_at": "2026-07-17T11:12:11Z",
+      "updated_at": "2026-07-17T12:04:25.497867Z"
+    },
     {
       "id": "tech-1f8fbec2feb63722",
       "slug": "обзор-лучших-платформ-автоматизации-маркетинга-на-2026-год",
@@ -940,400 +824,166 @@
       "updated_at": "2026-07-17T07:34:12.876062Z"
     },
     {
-      "id": "tech-1fc69b9dcc87a590",
-      "slug": "руководство-по-скрапингу-данных-с-vivareal-без-кода",
-      "title": "Руководство по скрапингу данных с VivaReal без кода",
-      "brief": "Представлено руководство по извлечению данных с платформы VivaReal без необходимости написания кода. Инструмент VivaReal Scraper, доступный на платформе Apify, позволяет экспортировать данные в форматы JSON, CSV или Excel за считанные минуты. Для использования требуется только бесплатный токен Apify, без необходимости входа в VivaReal, прокси или реверс-инжиниринга. Получаемые структурированные данные включают название, тип операции, цену, количество спален, площадь, URL, идентификатор, тип объявления, тип недвижимости, тип подразделения, а также информацию о кондоминиуме и ежегодном налоге.",
-      "context": "В условиях отсутствия удобного официального API для получения данных с VivaReal, разработано руководство, демонстрирующее процесс скрапинга данных в больших объемах. Основной инструмент, VivaReal Scraper, является хостинговым скрапером на платформе Apify. Процесс не требует от пользователя написания и поддержки кода для скрапинга. Для начала работы достаточно иметь бесплатный токен Apify. Пользователям не нужно предоставлять учетные данные VivaReal, настраивать прокси-серверы или заниматься реверс-инжинирингом.",
-      "why_it_matters": "Данное руководство предоставляет решение для пользователей, которым необходимо массово собирать данные с платформы VivaReal, особенно в случаях, когда официальный API недоступен или неэффективен. Возможность экспорта данных в популярные форматы, такие как JSON, CSV и Excel, упрощает дальнейшую обработку и анализ информации. Отсутствие необходимости в написании кода и сложной настройке делает этот метод доступным для широкого круга пользователей, включая тех, кто не обладает навыками программирования. Это способствует более эффективному использованию данных для анализа рынка недвижимости, маркетинговых исследований и других целей.",
+      "id": "tech-60ef293a755219c3",
+      "slug": "разработчик-за-выходные-создал-ии-агента-способного-искать-в-интернете-и-автомат",
+      "title": "Разработчик за выходные создал ИИ-агента, способного искать в интернете и автоматизировать задачи",
+      "brief": "Программист за два дня собрал рабочего ИИ-агента, который может искать информацию в сети, отвечать на вопросы и автоматизировать рутинные процессы. Опыт показал, что для создания такого агента не требуется глубокая экспертиза в машинном обучении или недели работы, благодаря современным моделям ИИ, API и фреймворкам с открытым исходным кодом. Разработчик подчеркивает, что основной задачей становится освоение доступных инструментов, а не создание всего с нуля.",
+      "context": "В течение нескольких месяцев автор статьи наблюдал за заголовками новостей, посвященными ИИ-агентам, которые, как утверждалось, способны заменять рутинную работу, помогать разработчикам писать код и автоматизировать бизнес-процессы. Изначально он предполагал, что создание такого агента потребует значительных временных затрат и глубоких знаний в области машинного обучения. Однако дальнейшее исследование показало, что это не совсем так. Благодаря современным моделям искусственного интеллекта, интерфейсам прикладного программирования (API) и фреймворкам с открытым исходным кодом, создание простого, но полезного ИИ-агента стало гораздо более доступным. Нет необходимости обучать собственные модели или разрабатывать все компоненты с нуля. Основная задача сводится к изучению и эффективному использованию существующих инструментов.",
+      "why_it_matters": "Создание ИИ-агента за один уикенд демонстрирует, как современные технологии и доступные инструменты снижают порог входа в разработку сложных систем. Это подчеркивает, что для создания функционального ИИ-решения не всегда нужны недели работы и глубокая экспертиза, а скорее умение интегрировать существующие компоненты. Такой подход делает разработку ИИ более демократичной и позволяет быстрее получать рабочие прототипы, ускоряя внедрение ИИ в различные сферы.",
+      "importance": 6,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "80cdd6cce2fb3580d890"
+      ],
+      "facts": [
+        {
+          "text": "Разработчик смог создать рабочего ИИ-агента за один уикенд, который способен искать в интернете, отвечать на вопросы и автоматизировать рутинные задачи.",
+          "article_ids": [
+            "80cdd6cce2fb3580d890"
+          ]
+        },
+        {
+          "text": "Создание ИИ-агента стало возможным благодаря современным моделям ИИ, API и фреймворкам с открытым исходным кодом, что снижает необходимость обучать модели с нуля или разрабатывать все компоненты самостоятельно.",
+          "article_ids": [
+            "80cdd6cce2fb3580d890"
+          ]
+        },
+        {
+          "text": "Автор статьи изначально предполагал, что разработка ИИ-агента потребует недель работы и глубокой экспертизы в машинном обучении, но опыт показал доступность этой задачи.",
+          "article_ids": [
+            "80cdd6cce2fb3580d890"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "ai_agent_development",
+        "primary_entities": [
+          "AI Agent"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-17T10:57:59Z"
+      },
+      "first_seen_at": "2026-07-17T10:57:59Z",
+      "updated_at": "2026-07-17T12:04:25.497867Z"
+    },
+    {
+      "id": "tech-f5d7b3f1a9d147e8",
+      "slug": "разработчик-создал-5-бесплатных-api-с-помощью-ии-редактора-кода-cursor",
+      "title": "Разработчик создал 5 бесплатных API с помощью ИИ-редактора кода Cursor",
+      "brief": "Разработчик использовал ИИ-редактор кода Cursor для создания пяти бесплатных API, которые теперь доступны на платформе RapidAPI. Эти API предоставляют данные, такие как WHOIS-записи доменов, информация о компаниях, валидация электронной почты, геолокация IP-адресов и проверка соответствия нормативным требованиям. Каждое API имеет бесплатный уровень с 100 запросами в месяц без необходимости ввода данных кредитной карты. Весь код API находится в открытом доступе на GitHub, а развертывание осуществляется на бесплатном уровне Render, что исключает затраты на инфраструктуру.",
+      "context": "В условиях растущей потребности разработчиков в различных данных, таких как WHOIS-записи, информация о компаниях, валидация электронной почты, геолокация IP-адресов и проверка соответствия, часто возникают проблемы с дороговизной существующих API, их ограничениями по количеству запросов или необходимостью использования сторонних ключей. Для решения этой проблемы был использован ИИ-редактор кода Cursor. С его помощью разработчик смог создать пять готовых к использованию API, написав код исключительно на основе описаний на естественном языке, без необходимости обладать навыками программирования.",
+      "why_it_matters": "Создание бесплатных и легкодоступных API решает распространенную проблему разработчиков, связанную с высокой стоимостью и ограничениями существующих сервисов. Предоставление таких инструментов, как WHOIS API, API для информации о компаниях и геолокации IP, на бесплатной основе и с открытым исходным кодом, способствует снижению барьеров для входа в разработку, ускоряет прототипирование и позволяет более широкому кругу специалистов получать необходимые данные без финансовых затрат и сложностей с настройкой. Доступность на крупной платформе, такой как RapidAPI, обеспечивает мгновенное распространение и использование этих инструментов.",
+      "importance": 6,
+      "status": "new",
+      "category": "Технологии",
+      "article_ids": [
+        "b0d371439b8ccd3761bd"
+      ],
+      "facts": [
+        {
+          "text": "Разработчик создал 5 бесплатных API с помощью ИИ-редактора кода Cursor, которые теперь доступны на RapidAPI.",
+          "article_ids": [
+            "b0d371439b8ccd3761bd"
+          ]
+        },
+        {
+          "text": "API предоставляют такие данные, как WHOIS-записи доменов, информация о компаниях, валидация электронной почты, геолокация IP-адресов и проверка соответствия.",
+          "article_ids": [
+            "b0d371439b8ccd3761bd"
+          ]
+        },
+        {
+          "text": "Каждое API имеет бесплатный уровень с 100 запросами в месяц без необходимости ввода данных кредитной карты.",
+          "article_ids": [
+            "b0d371439b8ccd3761bd"
+          ]
+        },
+        {
+          "text": "Полный код всех API опубликован на GitHub в открытом доступе.",
+          "article_ids": [
+            "b0d371439b8ccd3761bd"
+          ]
+        },
+        {
+          "text": "API развернуты на бесплатном уровне Render, что исключает затраты на инфраструктуру.",
+          "article_ids": [
+            "b0d371439b8ccd3761bd"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "api_creation",
+        "primary_entities": [
+          "Cursor IDE",
+          "RapidAPI"
+        ],
+        "geographies": [],
+        "occurred_at": "2026-07-17T10:53:02Z"
+      },
+      "first_seen_at": "2026-07-17T10:53:02Z",
+      "updated_at": "2026-07-17T12:04:25.497867Z"
+    },
+    {
+      "id": "tech-b141a41fe391cbbd",
+      "slug": "разработка-фитнес-приложения-athleteapp-с-использованием-python-и-flask",
+      "title": "Разработка фитнес-приложения AthleteApp с использованием Python и Flask",
+      "brief": "Разработчик создал бесплатное прогрессивное веб-приложение (PWA) AthleteApp для отслеживания тренировок, питания и прогресса тела. Приложение построено на Python и Flask, что позволяет пользователям получать к нему мгновенный доступ через браузер без необходимости загрузки из магазина приложений. AthleteApp устанавливается прямо из браузера и работает на настольных компьютерах, Android и iOS. Текущие функции включают дневник тренировок, отслеживание питания и макронутриентов, графики прогресса, личные рекорды, измерения тела, профиль тренера и бета-версию анализа упражнений с помощью ИИ.",
+      "context": "Разработчик решил создать приложение для решения собственной проблемы, а не очередной учебный проект. Так появился AthleteApp – бесплатное прогрессивное веб-приложение (PWA), предназначенное для людей, желающих отслеживать тренировки, питание и прогресс тела в одном месте. Проект в основном построен с использованием Python и Flask. Выбор формата PWA обусловлен желанием обеспечить пользователям мгновенный доступ к приложению без необходимости загрузки из магазина приложений. Приложение может быть установлено непосредственно из браузера и функционирует на настольных компьютерах, устройствах Android и iOS.",
+      "why_it_matters": "Создание AthleteApp демонстрирует возможность разработки полнофункционального фитнес-приложения с использованием современных веб-технологий, таких как Python и Flask, в сочетании с прогрессивными веб-приложениями (PWA). Это позволяет пользователям получать доступ к приложению без установки из магазинов приложений, обеспечивая кроссплатформенность и мгновенный доступ. Приложение решает реальные потребности пользователей в отслеживании различных аспектов здоровья и фитнеса, включая тренировки, питание и физический прогресс, а также предлагает такие продвинутые функции, как анализ упражнений с помощью ИИ.",
       "importance": 5,
       "status": "new",
       "category": "Технологии",
       "article_ids": [
-        "760c8b2c4227e4c0a0f9"
+        "b2540364914ffdb69731"
       ],
       "facts": [
         {
-          "text": "Руководство описывает, как извлекать данные с VivaReal без написания кода, используя инструмент VivaReal Scraper на платформе Apify.",
+          "text": "AthleteApp — это бесплатное прогрессивное веб-приложение (PWA), предназначенное для отслеживания тренировок, питания и прогресса тела.",
           "article_ids": [
-            "760c8b2c4227e4c0a0f9"
+            "b2540364914ffdb69731"
           ]
         },
         {
-          "text": "Инструмент позволяет экспортировать данные в форматы JSON, CSV или Excel за несколько минут.",
+          "text": "Приложение построено в основном с использованием Python и Flask.",
           "article_ids": [
-            "760c8b2c4227e4c0a0f9"
+            "b2540364914ffdb69731"
           ]
         },
         {
-          "text": "Для использования VivaReal Scraper требуется только бесплатный токен Apify, без необходимости входа в VivaReal, использования прокси или реверс-инжиниринга.",
+          "text": "PWA позволяет пользователям получать мгновенный доступ без загрузки из магазина приложений и может быть установлено прямо из браузера.",
           "article_ids": [
-            "760c8b2c4227e4c0a0f9"
+            "b2540364914ffdb69731"
           ]
         },
         {
-          "text": "Извлекаемые данные включают название, тип операции, цену, количество спален, площадь, URL, идентификатор, тип объявления и тип недвижимости.",
+          "text": "AthleteApp работает на настольных компьютерах, Android и iOS.",
           "article_ids": [
-            "760c8b2c4227e4c0a0f9"
+            "b2540364914ffdb69731"
+          ]
+        },
+        {
+          "text": "Функции приложения включают дневник тренировок, отслеживание питания и макронутриентов, графики прогресса, личные рекорды, измерения тела, профиль тренера и бета-версию анализа упражнений с помощью ИИ.",
+          "article_ids": [
+            "b2540364914ffdb69731"
           ]
         }
       ],
       "updates": [],
       "identity": {
-        "event_type": "data_scraping_guide",
+        "event_type": "software_development",
         "primary_entities": [
-          "VivaReal",
-          "Apify"
-        ],
-        "geographies": [
-          "Brazil"
-        ],
-        "occurred_at": "2026-07-17T06:44:19Z"
-      },
-      "first_seen_at": "2026-07-17T06:44:19Z",
-      "updated_at": "2026-07-17T07:34:12.876062Z"
-    },
-    {
-      "id": "tech-d9e4ffd716a60603",
-      "slug": "руководство-по-скрейпингу-поиска-youtube-без-кода",
-      "title": "Руководство по скрейпингу поиска YouTube без кода",
-      "brief": "В руководстве, опубликованном 17 июля 2026 года, представлен метод извлечения данных из поиска YouTube в больших объемах без необходимости написания кода. Используется инструмент YouTube Search Scraper, доступный на платформе Apify. Для работы требуется только бесплатный токен Apify, без входа в аккаунт YouTube, прокси или реверс-инжиниринга. Результаты включают структурированные записи с полями: тип результата, название, название канала, количество просмотров, дата публикации, длительность, URL, поисковый запрос, ID видео, ID канала, ID плейлиста и текстовое представление количества просмотров.",
-      "context": "В условиях отсутствия официального API для получения данных поиска YouTube в больших объемах, появилось руководство, демонстрирующее, как экспортировать эти данные в форматы JSON, CSV или Excel за несколько минут. Для этого используется готовый скрейпер YouTube Search Scraper, размещенный на платформе Apify. Процесс не требует написания и поддержки собственного кода для скрейпинга. Пользователю необходим только бесплатный токен Apify, что исключает необходимость входа в аккаунт YouTube, использования прокси-серверов или применения методов реверс-инжиниринга.",
-      "why_it_matters": "Данное руководство решает проблему доступа к данным поиска YouTube в масштабе, когда официальные API недоступны или недостаточны. Оно предоставляет пользователям, включая маркетологов, аналитиков и разработчиков, простой и эффективный способ получения структурированных данных для анализа трендов, конкурентов или контента. Отсутствие необходимости в написании кода и использовании платных сервисов делает этот метод доступным для широкого круга пользователей, позволяя им быстро получать ценную информацию для принятия решений.",
-      "importance": 5,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "73dcfbb2afa5bb7f589f"
-      ],
-      "facts": [
-        {
-          "text": "Руководство по скрейпингу поиска YouTube без кода было опубликовано 17 июля 2026 года.",
-          "article_ids": [
-            "73dcfbb2afa5bb7f589f"
-          ]
-        },
-        {
-          "text": "Для извлечения данных поиска YouTube используется инструмент YouTube Search Scraper с платформы Apify.",
-          "article_ids": [
-            "73dcfbb2afa5bb7f589f"
-          ]
-        },
-        {
-          "text": "Для работы с YouTube Search Scraper требуется бесплатный токен Apify, без необходимости входа в аккаунт YouTube, использования прокси или реверс-инжиниринга.",
-          "article_ids": [
-            "73dcfbb2afa5bb7f589f"
-          ]
-        },
-        {
-          "text": "Результаты скрейпинга включают структурированные записи с полями: тип результата, название, название канала, количество просмотров, дата публикации, длительность, URL, поисковый запрос, ID видео, ID канала, ID плейлиста и текстовое представление количества просмотров.",
-          "article_ids": [
-            "73dcfbb2afa5bb7f589f"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "data_scraping_guide_release",
-        "primary_entities": [
-          "YouTube",
-          "Apify"
+          "AthleteApp",
+          "Python",
+          "Flask"
         ],
         "geographies": [],
-        "occurred_at": "2026-07-17T06:43:46Z"
+        "occurred_at": "2026-07-17T12:01:27Z"
       },
-      "first_seen_at": "2026-07-17T06:43:46Z",
-      "updated_at": "2026-07-17T07:34:12.876062Z"
-    },
-    {
-      "id": "tech-92aaa5104ed868f3",
-      "slug": "руководство-по-сбору-данных-с-booking-com-без-кода",
-      "title": "Руководство по сбору данных с Booking.com без кода",
-      "brief": "В руководстве, опубликованном 17 июля 2026 года, представлен метод извлечения данных с сайта Booking.com без необходимости написания кода. Используется сервис Booking.com Scraper - Hotel Prices & Reviews на платформе Apify, требующий только токен Apify. Метод позволяет экспортировать данные в форматах JSON, CSV или Excel за несколько минут. Извлекаемые данные включают название отеля, рейтинг, количество отзывов, цену, валюту, тип номера, расстояние до центра, URL отеля, ID отеля и текстовую оценку.",
-      "context": "В условиях отсутствия официального API для получения данных с Booking.com в больших объемах, появилось руководство, демонстрирующее альтернативный способ. Этот метод, основанный на использовании готового инструмента на платформе Apify, позволяет пользователям получать структурированные данные об отелях, включая их цены и отзывы. Процесс не требует от пользователя навыков программирования или обслуживания кода, а также обходит необходимость использования прокси-серверов или реверс-инжиниринга.",
-      "why_it_matters": "Данное руководство представляет ценность для исследователей, аналитиков рынка и разработчиков, которым необходим доступ к данным о гостиничном бизнесе, представленным на Booking.com. Возможность быстрого и простого извлечения информации в различных форматах (JSON, CSV, Excel) без технических знаний в области веб-скрейпинга значительно упрощает сбор и анализ данных. Это может способствовать более глубокому пониманию рыночных тенденций, ценообразования и потребительских предпочтений в индустрии гостеприимства.",
-      "importance": 5,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "167e026f4dcf16236350"
-      ],
-      "facts": [
-        {
-          "text": "Руководство по сбору данных с Booking.com без написания кода было опубликовано 17 июля 2026 года.",
-          "article_ids": [
-            "167e026f4dcf16236350"
-          ]
-        },
-        {
-          "text": "Для извлечения данных используется сервис Booking.com Scraper - Hotel Prices & Reviews на платформе Apify.",
-          "article_ids": [
-            "167e026f4dcf16236350"
-          ]
-        },
-        {
-          "text": "Метод позволяет экспортировать данные в форматах JSON, CSV или Excel.",
-          "article_ids": [
-            "167e026f4dcf16236350"
-          ]
-        },
-        {
-          "text": "Для использования сервиса требуется только бесплатный токен Apify, без необходимости входа в Booking.com или использования прокси.",
-          "article_ids": [
-            "167e026f4dcf16236350"
-          ]
-        },
-        {
-          "text": "Извлекаемые данные включают название отеля, рейтинг, количество отзывов, цену, валюту, тип номера, расстояние до центра, URL отеля, ID отеля и текстовую оценку.",
-          "article_ids": [
-            "167e026f4dcf16236350"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "data_extraction_guide",
-        "primary_entities": [
-          "Booking.com",
-          "Apify"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-17T06:43:13Z"
-      },
-      "first_seen_at": "2026-07-17T06:43:13Z",
-      "updated_at": "2026-07-17T07:34:12.876062Z"
-    },
-    {
-      "id": "tech-d89f357776c441af",
-      "slug": "разработчик-начинает-публичный-дневник-обучения-langgraph",
-      "title": "Разработчик начинает публичный дневник обучения LangGraph",
-      "brief": "Кунал Хор (Kunal Hore) начал публичный дневник обучения фреймворку LangGraph, который позволяет создавать графовые приложения с возможностью возврата к предыдущим состояниям. В первом посте он объясняет основную идею LangGraph: создание кода, который может принимать решения и изменять ход выполнения, в отличие от традиционных скриптов, работающих линейно. Хор планирует делиться своими знаниями по мере изучения фреймворка в течение следующих нескольких дней, охватывая такие темы, как состояния, узлы и рёбра графа.",
-      "context": "Кунал Хор (Kunal Hore), известный под ником @KunalOnTech, инициировал публичный проект по изучению LangGraph, опубликовав первый пост в своем дневнике обучения. LangGraph — это фреймворк, предназначенный для создания приложений, основанных на графовой структуре, с ключевой особенностью — способностью кода «двигаться вперед», то есть принимать решения, возвращаться к предыдущим состояниям и ветвиться в зависимости от контекста. Это отличает его от стандартных скриптов, которые выполняются последовательно от начала до конца без возможности переосмысления. Хор намерен подробно осветить основные компоненты LangGraph, включая состояния, узлы и рёбра, а также продемонстрировать процесс сборки и запуска приложений на его основе. Этот дневник является его первым шагом в освоении технологии, и он обещает делиться всеми полученными знаниями.",
-      "why_it_matters": "LangGraph представляет собой значительный шаг в развитии инструментов для создания сложных приложений, особенно в области искусственного интеллекта и обработки естественного языка, где требуется способность к рассуждению и адаптивному поведению. Возможность создавать код, который может «думать» и пересматривать свои действия, открывает новые горизонты для разработки более интеллектуальных и гибких систем. Публичный дневник обучения Кунала Хора делает этот процесс более доступным для сообщества, предоставляя практические примеры и пошаговые объяснения. Это может ускорить принятие LangGraph разработчиками и способствовать появлению новых инновационных решений на его основе.",
-      "importance": 3,
-      "status": "new",
-      "category": "Технологии",
-      "article_ids": [
-        "163a181e77398a65a662"
-      ],
-      "facts": [
-        {
-          "text": "Кунал Хор начал публичный дневник обучения фреймворку LangGraph.",
-          "article_ids": [
-            "163a181e77398a65a662"
-          ]
-        },
-        {
-          "text": "LangGraph позволяет создавать код, который может принимать решения и возвращаться к предыдущим состояниям, в отличие от линейно выполняемых скриптов.",
-          "article_ids": [
-            "163a181e77398a65a662"
-          ]
-        },
-        {
-          "text": "В первом посте дневника Хор планирует охватить темы состояний, узлов и рёбер графа.",
-          "article_ids": [
-            "163a181e77398a65a662"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "learning_journal_start",
-        "primary_entities": [
-          "Kunal Hore",
-          "LangGraph"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-17T06:55:21Z"
-      },
-      "first_seen_at": "2026-07-17T06:55:21Z",
-      "updated_at": "2026-07-17T07:34:12.876062Z"
-    },
-    {
-      "id": "tech-315b7da232d580fe",
-      "slug": "исследователи-предлагают-новые-подходы-к-повышению-надежности-и-объяснимости-ии-",
-      "title": "Исследователи предлагают новые подходы к повышению надежности и объяснимости ИИ-агентов",
-      "brief": "Исследователи из различных областей искусственного интеллекта представили ряд новых работ, направленных на решение ключевых проблем, связанных с надежностью, объяснимостью и эффективностью ИИ-агентов. Обсуждаются методы улучшения качества контекста для агентов, методы синтеза данных для выявления уязвимостей, а также подходы к созданию более прозрачных моделей для критически важных приложений, таких как управление диабетом. Особое внимание уделяется переходу от статических моделей к интерактивным и комплементарным системам взаимодействия человека и ИИ, а также разработке новых архитектур для сложных задач, включая научные открытия и управление энергетическими сетями.",
-      "context": "В последние годы наблюдается стремительный прогресс в разработке ИИ-агентов, способных выполнять сложные задачи. Однако их надежность, предсказуемость и способность объяснять свои решения остаются серьезными вызовами. Новые исследования, представленные на arXiv, затрагивают эти проблемы с разных сторон. Одно из направлений — улучшение качества контекста, который используется для управления поведением агентов, поскольку слабый контекст может приводить к ошибкам и галлюцинациям [6e2fc2922eec08ebd525]. Другие исследователи предлагают методы автоматического синтеза сложных примеров (hard examples) для выявления уязвимостей и улучшения безопасности мультимодальных моделей [53812f8de84e85105dea]. Также разрабатываются подходы к созданию объяснимых моделей, например, для управления диабетом, где прозрачность решений критически важна для доверия пациентов и врачей [27b9d37604b1171dd3e5]. Кроме того, изучаются возможности использования ИИ для научных открытий, в частности, в области прикладной математики, где требуется строгая верификация рассуждений [4bc31bd3d92dcaa5d3c1], и для управления сложными системами, такими как энергетические сети [13f7121e9d78639f69c7]. Особое внимание уделяется интерактивному подходу к выравниванию ИИ с динамическими рабочими процессами человека, где предпочтения возникают в процессе взаимодействия, а не основываются на статичных моделях [b520240c60c3f6f5fdfb]. Исследуются также новые архитектуры для автономных роев БПЛА, интегрирующие различные механизмы обучения для координации и принятия стратегических решений [7f422c1e88b49786671e].",
-      "why_it_matters": "Повышение надежности и объяснимости ИИ-агентов имеет решающее значение для их безопасного и эффективного внедрения в критически важные области, такие как медицина, энергетика и научные исследования. Прозрачность моделей позволяет пользователям и разработчикам лучше понимать, как принимаются решения, выявлять и исправлять ошибки, а также повышать доверие к системе. Разработка методов для автоматического выявления уязвимостей и синтеза сложных примеров помогает создавать более устойчивые к атакам и непредвиденным ситуациям системы. Интерактивные подходы к взаимодействию человека и ИИ способствуют более естественному и продуктивному сотрудничеству. В конечном итоге, эти исследования направлены на создание более мощных, надежных и понятных ИИ-систем, способных решать сложные задачи и приносить пользу обществу.",
-      "importance": 8,
-      "status": "new",
-      "category": "Искусственный интеллект",
-      "article_ids": [
-        "cbfae89f34f6b77826ea",
-        "c879dbbff6dfe1246f6c",
-        "be170612630efe23a670",
-        "b520240c60c3f6f5fdfb",
-        "a822a102c3608bb2953c",
-        "7f422c1e88b49786671e",
-        "6e2fc2922eec08ebd525",
-        "6ac09fd7052e839a5cb9",
-        "6997fcc847ea8d5e3b7d",
-        "5dd49b5232e9f4fa613d",
-        "53812f8de84e85105dea",
-        "4edc3600a8785673310e",
-        "4bc31bd3d92dcaa5d3c1",
-        "27b9d37604b1171dd3e5",
-        "218e7d9d2c7d04420496",
-        "13f7121e9d78639f69c7"
-      ],
-      "facts": [
-        {
-          "text": "Слабый контекст, включающий инструкции, инструменты и память, является основной причиной сбоев ИИ-агентов, приводя к дрейфу, галлюцинациям и уязвимости к атакам.",
-          "article_ids": [
-            "6e2fc2922eec08ebd525"
-          ]
-        },
-        {
-          "text": "Предложен новый подход к выравниванию ИИ, основанный на интерактивном и комплементарном взаимодействии, где предпочтения возникают в процессе совместной работы человека и ИИ, а не на основе статических моделей.",
-          "article_ids": [
-            "b520240c60c3f6f5fdfb"
-          ]
-        },
-        {
-          "text": "Разработана методология с использованием больших языковых моделей для построения Байесовских сетей, которая объединяет экспертное мнение и обучение на данных, применяя правило усеченного среднего для снижения шума.",
-          "article_ids": [
-            "6ac09fd7052e839a5cb9"
-          ]
-        },
-        {
-          "text": "Представлена новая архитектура для автономных роев БПЛА, использующая три уровня обучения: нейропластичность Хебба для адаптации отдельных агентов, многоагентное обучение с подкреплением для тактической координации и мета-обучение для стратегического принятия решений.",
-          "article_ids": [
-            "7f422c1e88b49786671e"
-          ]
-        },
-        {
-          "text": "Предложен фреймворк ToolAnchor для улучшения использования инструментов ИИ-агентами путем введения контрфактических контекстов, которые помогают преодолеть поведенческую инерцию и активировать подавленные возможности.",
-          "article_ids": [
-            "4edc3600a8785673310e"
-          ]
-        },
-        {
-          "text": "Исследователи утверждают, что модели мира, синтезированные большими языковыми моделями (CWM), могут демонстрировать высокую точность предсказаний, но при этом систематически проигрывать в играх из-за ошибок в критически важных динамиках.",
-          "article_ids": [
-            "cbfae89f34f6b77826ea"
-          ]
-        },
-        {
-          "text": "Предложен подход IMEX (Interaction-Based Model Explanation) для объяснения предсказаний моделей, который выявляет наиболее значимые переменные и взаимодействия между ними, не накладывая ограничений на анализ взаимодействий высших порядков.",
-          "article_ids": [
-            "a822a102c3608bb2953c"
-          ]
-        },
-        {
-          "text": "Разработана система ReasFlow, использующая многоагентный подход для поддержки научных открытий в прикладной математике, где ИИ-агент действует как ассистент исследователя, выполняя строгие выводы и синтезируя знания.",
-          "article_ids": [
-            "4bc31bd3d92dcaa5d3c1"
-          ]
-        },
-        {
-          "text": "Представлена система LLM-T1D, объединяющая обучение с подкреплением и большие языковые модели для создания прозрачного контроллера подачи инсулина при диабете 1 типа, который превосходит по производительности системы на основе только RL и объясняет свои решения.",
-          "article_ids": [
-            "27b9d37604b1171dd3e5"
-          ]
-        },
-        {
-          "text": "Исследование показало, что чем меньше доступной информации о конфликте, тем чаще ИИ-движки генерируют недостоверные данные, искажают информацию и допускают ошибки в подсчетах, что создает уязвимость к дезинформации.",
-          "article_ids": [
-            "5dd49b5232e9f4fa613d"
-          ]
-        },
-        {
-          "text": "Предложен фреймворк MemoHarness для адаптивной оптимизации harness'ов ИИ-агентов, который учится на собственном опыте, используя двухслойный банк данных для хранения диагнозов и паттернов, и адаптирует harness к каждому случаю.",
-          "article_ids": [
-            "6997fcc847ea8d5e3b7d"
-          ]
-        },
-        {
-          "text": "Разработана автоматизированная система на основе агентов для синтеза сложных примеров (hard examples) с целью выявления уязвимостей и пограничных случаев в мультимодальных моделях, не требующая вмешательства человека.",
-          "article_ids": [
-            "53812f8de84e85105dea"
-          ]
-        },
-        {
-          "text": "Предложены новые подходы к управлению генеративными моделями, где примеры (concrete instances) могут достигать свойств, недоступных для управления с помощью стандартных 'ручек' (knobs), таких как промпты или веса.",
-          "article_ids": [
-            "218e7d9d2c7d04420496"
-          ]
-        },
-        {
-          "text": "Представлена архитектура Hy-Embodied-RxBrain, модель воплощенного познания с совместным языково-визуальным рассуждением и воображением, которая представляет воплощенные планы в виде единой последовательности планирования, где язык и визуальное воображение играют взаимодополняющие роли.",
-          "article_ids": [
-            "c879dbbff6dfe1246f6c"
-          ]
-        },
-        {
-          "text": "Предложена гипотеза о сходимости возможностей (Capability Convergence Hypothesis), согласно которой при фиксированном бюджете на обработку токена, возможности сходятся к классу гибридных моделей, обладающих каналом сжатого состояния O(1) и масштабируемым каналом индексации verbatim.",
-          "article_ids": [
-            "be170612630efe23a670"
-          ]
-        },
-        {
-          "text": "Предлагается использовать Agentic AI и протокол Model Context Protocol (MCP) для поддержки исследований энергосистем, интегрируя большие языковые модели с инструментами моделирования, рабочими процессами и человеческим надзором.",
-          "article_ids": [
-            "13f7121e9d78639f69c7"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "ai_research_advancement",
-        "primary_entities": [
-          "AI agents",
-          "Large Language Models"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-17T04:00:00Z"
-      },
-      "first_seen_at": "2026-07-17T04:00:00Z",
-      "updated_at": "2026-07-17T07:34:12.876062Z"
-    },
-    {
-      "id": "tech-f214d4af2f3ca91f",
-      "slug": "улучшение-рассуждений-малых-языковых-моделей-с-помощью-графов-знаний",
-      "title": "Улучшение рассуждений малых языковых моделей с помощью графов знаний",
-      "brief": "Исследователи представили нейросимволический агентный фреймворк для повышения способностей к рассуждению у малых языковых моделей (SLM), таких как Gemma 3 и Llama 3.2. Подход использует два специализированных вызова инструментов: extract_facts для извлечения символических триплетов и get_hint для экспертных рассуждений с помощью Relational Graph Convolutional Network (RGCN). Эксперименты на бенчмарке CLUTRR показали, что подсказки, полученные от RGCN, улучшают производительность моделей в 1,5–2 раза, особенно в сценариях с извлечением знаний.",
-      "context": "В связи с высокой стоимостью и экологической нагрузкой больших языковых моделей (LLM), малые языковые модели (SLM) рассматриваются как более устойчивая альтернатива. Однако SLM часто допускают ошибки в задачах, требующих сложного многошагового логического обоснования. Данное исследование фокусируется на решении этой проблемы путем интеграции нейросимволических методов. Разработанный фреймворк трансформирует SLM в минималистичного агента, который может использовать внешние инструменты для получения и обработки информации. В частности, модель извлекает факты из текста и обращается к графовой нейронной сети (RGCN) для получения экспертных подсказок, что позволяет улучшить качество рассуждений.",
-      "why_it_matters": "Представленный подход позволяет значительно повысить эффективность малых языковых моделей, делая их более конкурентоспособными в задачах, требующих сложных рассуждений. Это открывает путь к более широкому и экономически целесообразному применению ИИ в различных областях, снижая зависимость от ресурсоемких больших моделей. Улучшение способностей к логическому обоснованию у SLM может привести к созданию более надежных и точных систем искусственного интеллекта, пригодных для решения сложных задач.",
-      "importance": 7,
-      "status": "new",
-      "category": "Искусственный интеллект",
-      "article_ids": [
-        "f7a9fe7ccdf9b4e004a5"
-      ],
-      "facts": [
-        {
-          "text": "Разработан нейросимволический агентный фреймворк для улучшения рассуждений малых языковых моделей (SLM), таких как Gemma 3 (1B, 4B) и Llama 3.2 (3B).",
-          "article_ids": [
-            "f7a9fe7ccdf9b4e004a5"
-          ]
-        },
-        {
-          "text": "Фреймворк использует два специализированных вызова инструментов: extract_facts для извлечения символических триплетов и get_hint для получения экспертных рассуждений с помощью Relational Graph Convolutional Network (RGCN).",
-          "article_ids": [
-            "f7a9fe7ccdf9b4e004a5"
-          ]
-        },
-        {
-          "text": "Эксперименты на бенчмарке CLUTRR показали, что подсказки, полученные от RGCN, улучшают производительность моделей в 1,5–2 раза.",
-          "article_ids": [
-            "f7a9fe7ccdf9b4e004a5"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "research_publication",
-        "primary_entities": [
-          "Gemma 3",
-          "Llama 3.2",
-          "RGCN"
-        ],
-        "geographies": [],
-        "occurred_at": "2026-07-17T04:00:00Z"
-      },
-      "first_seen_at": "2026-07-17T04:00:00Z",
-      "updated_at": "2026-07-17T07:34:12.876062Z"
+      "first_seen_at": "2026-07-17T12:01:27Z",
+      "updated_at": "2026-07-17T12:04:25.497867Z"
     }
   ]
 }
