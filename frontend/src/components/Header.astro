@@ -35,6 +35,22 @@ const sparkHeight = (history: number[], value: number) => {
       <span class="reference-date">{dateLabel}</span>
     </div>
     <div class="reference-header-actions">
+      <a
+        class="pipeline-status"
+        href="https://github.com/KosachMax/linkedin-trends/actions/workflows/aggregate_news.yml"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Открыть статус агрегации новостей в GitHub Actions"
+        title="Статус агрегации новостей"
+      >
+        <img
+          src="https://github.com/KosachMax/linkedin-trends/actions/workflows/aggregate_news.yml/badge.svg?branch=main"
+          alt="Aggregate News"
+          width="112"
+          height="20"
+          loading="eager"
+        />
+      </a>
       <details class="header-source-menu" data-source-monitor>
         <summary
           class={`header-source-trigger ${healthTone}`}
