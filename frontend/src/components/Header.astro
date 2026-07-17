@@ -1,41 +1,22 @@
 ---
 import type { DailyDigest } from "../lib/types";
+
 interface Props { digest: DailyDigest }
 const { digest } = Astro.props;
-const health = digest.sources.length
-  ? Math.round(digest.sources.reduce((sum, source) => sum + (source.state === "available" ? 1 : source.state === "degraded" ? .5 : 0), 0) / digest.sources.length * 100)
-  : 0;
-const healthTone = health >= 90 ? "good" : health >= 60 ? "warn" : "bad";
-const base = import.meta.env.BASE_URL;
+const dateLabel = new Intl.DateTimeFormat("ru-RU", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+}).format(new Date(`${digest.date}T12:00:00Z`));
 ---
-<header class="topbar">
-  <nav class="nav-shell" aria-label="Основная навигация">
-    <a class="brand" href={`${base}digest/world/`} aria-label="Daily Trends — главная"><span>DT</span><b>Daily Trends</b></a>
-    <div class="nav-spacer"></div>
-    <a class="nav-pill active" href={`${base}digest/${digest.digest_id}/`}>Сегодня</a>
-    <a class="nav-pill" href={`${base}digest/${digest.digest_id}/${digest.date}/`}>Архив</a>
-    <details class="source-menu">
-      <summary class="source-trigger">
-        Источники {health}%
-        <span class={`health-bar ${healthTone}`}><i style={`width:${health}%`}></i></span>
-      </summary>
-      <div class="source-popover">
-        <h2>Состояние источников</h2>
-        <p>{digest.sources.filter((source) => source.state === "available").length} из {digest.sources.length} · вклад в 7 выпусков</p>
-        <div class="source-list">
-          {digest.sources.map((source) => (
-            <div class="source-row">
-              <span class={`state-dot ${source.state}`}></span>
-              <span class="source-name">{source.source_name}</span>
-              <span>{source.accepted} / {source.represented_events}</span>
-              <span class="sparkline" aria-label={`Вклад ${source.source_name} за 7 выпусков`}>
-                {source.history.map((value) => <i style={`height:${Math.max(3, value * 5)}px`}></i>)}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </details>
-    <button class="icon-button" data-theme-toggle aria-label="Переключить тему">◐</button>
-  </nav>
+
+<header class="reference-header">
+  <div class="reference-header-inner">
+    <div class="reference-branding">
+      <a class="reference-mark" href={`${import.meta.env.BASE_URL}digest/world/`} aria-label="Daily Trends — главная">DT</a>
+      <span class="reference-brand">Daily Trends</span>
+      <span class="reference-date">{dateLabel}</span>
+    </div>
+    <button class="theme-button" data-theme-toggle title="Тема" aria-label="Переключить тему">◐</button>
+  </div>
 </header>

@@ -3,61 +3,110 @@ import Header from "./Header.astro";
 import EventCard from "./EventCard.astro";
 import type { DailyDigest } from "../lib/types";
 import { listDays } from "../lib/data";
+
 interface Props { digest: DailyDigest; digests: Array<{ id: string; current: DailyDigest }> }
-const { digest, digests } = Astro.props;
-const dateLabel = new Intl.DateTimeFormat("ru-RU", { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${digest.date}T12:00:00Z`));
+const { digest } = Astro.props;
 const dates = listDays().filter((item) => item.id === digest.digest_id).map((item) => item.date).sort();
 const dateIndex = dates.indexOf(digest.date);
 const older = dateIndex > 0 ? dates[dateIndex - 1] : undefined;
 const newer = dateIndex >= 0 && dateIndex < dates.length - 1 ? dates[dateIndex + 1] : undefined;
 const base = import.meta.env.BASE_URL;
-const updatedAt = new Date(digest.generated_at).toLocaleTimeString("ru-RU", { hour: "2-digit", minute: "2-digit" });
+const categories = [...new Set(digest.events.map((event) => event.category))];
 const categoryLabels: Record<string, string> = {
   world: "Мир", politics: "Политика", economics: "Экономика", economy: "Экономика",
   conflict: "Конфликты", diplomacy: "Дипломатия", energy: "Энергетика", ai: "ИИ",
   research: "Исследования", python: "Python", backend: "Разработка", club: "Клуб",
-  transfers: "Трансферы", matches: "Матчи", injuries: "Травмы", russia: "Россия"
+  transfers: "Трансферы", matches: "Матчи", injuries: "Травмы", russia: "Россия",
 };
-const categories = [...new Set(digest.events.map((event) => event.category))];
 ---
+
 <Header digest={digest} />
-<main class="page-shell">
-  <div class="page-intro">
-    <nav class="feed-tabs" aria-label="Выбрать дайджест">
-      {digests.map(({ id }) => (
-        <a class:list={["feed-tab", { active: id === digest.digest_id }]} href={`${base}digest/${id}/`}>
-          {id === "world" ? "🌍 Мир" : id === "tech" ? "💻 Технологии" : "⚽ Liverpool FC"}
-        </a>
-      ))}
-    </nav>
-    <h1>Главное за {dateLabel.replace(/\s*г\.$/, "")}</h1>
-    <p class="digest-meta">Обновлено {updatedAt}<span>{digest.articles.length} материалов</span><span>{digest.events.length} событий</span></p>
+
+<div class="reference-toolbar">
+  <div class="reference-toolbar-inner">
+    <span class="toolbar-label">Темы</span>
+    <div class="topic-chips">
+      <button class="topic-chip active" type="button" data-category-filter="all">Все</button>
+      {categories.map((category) => <button class="topic-chip" type="button" data-category-filter={category}>{categoryLabels[category] || category}</button>)}
+    </div>
+    <span class="toolbar-count" data-visible-count>{digest.events.length} материалов</span>
   </div>
-  {digest.currencies.length > 0 && <section class="currency-grid" aria-label="Курсы валют">
-    {digest.currencies.map((rate) => <div class="currency-card"><span>{rate.pair === "USD/RUB" ? "🇺🇸" : rate.pair === "EUR/RUB" ? "🇪🇺" : "🇨🇳"} {rate.pair}</span><div><strong>{rate.value.toLocaleString("ru-RU", { minimumFractionDigits: 2 })} ₽</strong><small class={rate.change_pct && rate.change_pct > 0 ? "up" : "down"}>{rate.change_pct && rate.change_pct > 0 ? "↑" : "↓"} {Math.abs(rate.change_pct || 0).toFixed(2)}%</small></div></div>)}
-  </section>}
-  <section class="daily-picture">
-    <div class="picture-icon">📌</div>
-    <div><p class="callout-label">{digest.daily_picture.title}</p><p>{digest.daily_picture.body}</p></div>
-  </section>
-  <div class="category-filters" role="group" aria-label="Фильтр категорий">
-    <button class="category-filter active" data-category-filter="all">Все</button>
-    {categories.map((category) => <button class="category-filter" data-category-filter={category}>{categoryLabels[category] || category}</button>)}
-  </div>
-  <section class="event-feed">
-    {digest.events.map((event) => <EventCard event={event} articles={digest.articles} />)}
-  </section>
-  <nav class="date-pagination" aria-label="Навигация по выпускам">
+</div>
+
+<main class="reference-feed">
+  {digest.events.map((event) => <EventCard event={event} articles={digest.articles} />)}
+  <nav class="reference-pagination" aria-label="Навигация по выпускам">
     {older ? <a href={`${base}digest/${digest.digest_id}/${older}/`}>← {older}</a> : <span></span>}
     {newer ? <a href={`${base}digest/${digest.digest_id}/${newer}/`}>{newer} →</a> : <span></span>}
   </nav>
 </main>
+
+<div class="drawer-scrim" data-drawer-close hidden></div>
+<aside class="article-drawer" data-article-drawer hidden aria-label="Подробности статьи">
+  <div class="drawer-bar">
+    <button class="drawer-back" type="button" data-drawer-close>← Назад к ленте</button>
+    <div class="drawer-actions">
+      <button class="drawer-action" type="button" data-save-event>Сохранить</button>
+      <button class="drawer-action" type="button" data-share-event>Поделиться</button>
+    </div>
+  </div>
+  <div class="drawer-body" data-drawer-body></div>
+</aside>
+
 <script>
   const filterButtons = document.querySelectorAll<HTMLButtonElement>("[data-category-filter]");
-  const cards = document.querySelectorAll<HTMLElement>("[data-event-category]");
+  const stories = document.querySelectorAll<HTMLElement>("[data-event-category]");
+  const visibleCount = document.querySelector<HTMLElement>("[data-visible-count]");
   filterButtons.forEach((button) => button.addEventListener("click", () => {
     const category = button.dataset.categoryFilter;
     filterButtons.forEach((item) => item.classList.toggle("active", item === button));
-    cards.forEach((card) => { card.hidden = category !== "all" && card.dataset.eventCategory !== category; });
+    let visible = 0;
+    stories.forEach((story) => {
+      const show = category === "all" || story.dataset.eventCategory === category;
+      story.hidden = !show;
+      if (show) visible += 1;
+    });
+    if (visibleCount) visibleCount.textContent = `${visible} материалов`;
   }));
+
+  document.querySelectorAll<HTMLButtonElement>("[data-expand-event]").forEach((button) => button.addEventListener("click", () => {
+    const eventId = button.dataset.expandEvent;
+    const panel = eventId ? document.querySelector<HTMLElement>(`[data-inline-event="${CSS.escape(eventId)}"]`) : null;
+    if (!panel) return;
+    panel.hidden = !panel.hidden;
+    button.textContent = panel.hidden ? "Контекст и источники ↓" : "Свернуть ↑";
+  }));
+
+  const drawer = document.querySelector<HTMLElement>("[data-article-drawer]");
+  const scrim = document.querySelector<HTMLElement>("[data-drawer-close]");
+  const drawerBody = document.querySelector<HTMLElement>("[data-drawer-body]");
+  const closeDrawer = () => {
+    if (!drawer || !scrim) return;
+    drawer.hidden = true;
+    scrim.hidden = true;
+    document.body.classList.remove("drawer-open");
+  };
+  document.querySelectorAll<HTMLElement>("[data-open-event]").forEach((trigger) => trigger.addEventListener("click", () => {
+    const eventId = trigger.dataset.openEvent;
+    const template = eventId ? document.querySelector<HTMLTemplateElement>(`[data-drawer-template="${CSS.escape(eventId)}"]`) : null;
+    if (!drawer || !scrim || !drawerBody || !template) return;
+    drawerBody.innerHTML = template.innerHTML;
+    drawer.hidden = false;
+    scrim.hidden = false;
+    document.body.classList.add("drawer-open");
+    drawer.querySelector<HTMLElement>("h1")?.focus?.();
+  }));
+  document.querySelectorAll<HTMLElement>("[data-drawer-close]").forEach((item) => item.addEventListener("click", closeDrawer));
+  document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeDrawer(); });
+
+  const saveButton = document.querySelector<HTMLButtonElement>("[data-save-event]");
+  saveButton?.addEventListener("click", () => {
+    saveButton.textContent = saveButton.textContent === "Сохранено" ? "Сохранить" : "Сохранено";
+  });
+  const shareButton = document.querySelector<HTMLButtonElement>("[data-share-event]");
+  shareButton?.addEventListener("click", async () => {
+    const shareData = { title: document.title, url: window.location.href };
+    if (navigator.share) await navigator.share(shareData).catch(() => undefined);
+    else await navigator.clipboard?.writeText(window.location.href);
+  });
 </script>
