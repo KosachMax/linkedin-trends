@@ -128,12 +128,12 @@ button { font: inherit; }
 .inline-story-panel p, .drawer-sections p { margin: 0; color: var(--reference-lead); font: 400 13px/1.72 system-ui; }
 .inline-story-panel p + p { margin-top: 10px; }
 .story-detail-toggle { overflow: hidden; border: 1px solid var(--reference-panel-border); border-radius: 9px; background: var(--reference-soft); }
-.story-detail-toggle > summary { min-height: 42px; padding: 11px 13px; display: flex; align-items: center; gap: 9px; list-style: none; cursor: pointer; user-select: none; transition: background .15s; }
+.story-detail-toggle > summary { position: relative; min-height: 42px; padding: 11px 13px; display: flex; align-items: center; justify-content: center; list-style: none; text-align: center; cursor: pointer; user-select: none; transition: background .15s; }
 .story-detail-toggle > summary::-webkit-details-marker { display: none; }
 .story-detail-toggle > summary:hover { background: color-mix(in srgb, var(--reference-accent) 5%, transparent); }
-.story-detail-toggle > summary h2, .story-detail-toggle > summary h3 { margin: 0; }
-.story-toggle-chevron { width: 14px; flex-shrink: 0; color: var(--reference-muted); font: 500 20px/1 system-ui; transform-origin: center; transition: transform .16s ease; }
-.story-detail-toggle[open] .story-toggle-chevron { transform: rotate(90deg); }
+.story-detail-toggle > summary h2, .story-detail-toggle > summary h3 { width: 100%; margin: 0; padding: 0 28px; text-align: center; line-height: 1.35; }
+.story-toggle-chevron { position: absolute; top: 50%; left: 14px; width: 14px; color: var(--reference-muted); font: 500 20px/1 system-ui; transform: translateY(-50%); transform-origin: center; transition: transform .16s ease; }
+.story-detail-toggle[open] .story-toggle-chevron { transform: translateY(-50%) rotate(90deg); }
 .story-toggle-content { padding: 2px 14px 14px 36px; animation: reference-down .16s ease; }
 .inline-source-list, .drawer-source-list { display: flex; flex-direction: column; gap: 8px; }
 .inline-source, .drawer-source { display: flex; flex-direction: column; gap: 3px; padding: 9px 12px; border: 1px solid var(--reference-border); border-radius: 8px; background: var(--reference-soft); }
