@@ -5,6 +5,7 @@ import httpx
 from trends.domain.models import SourceConfig
 
 from .base import Collector
+from .hackernews import HackerNewsCollector
 from .rss import RssCollector
 
 CollectorFactory = Callable[[httpx.AsyncClient], Collector]
@@ -26,4 +27,4 @@ class CollectorRegistry:
 
 default_registry = CollectorRegistry()
 default_registry.register("rss", RssCollector)
-
+default_registry.register("hackernews", HackerNewsCollector)
