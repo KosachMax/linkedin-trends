@@ -57,6 +57,7 @@ button { font: inherit; }
 .pipeline-status:hover { background: rgba(255,255,255,.15); }
 .pipeline-status img { width: auto; height: 20px; display: block; }
 .header-source-menu { position: relative; }
+.header-source-menu:not([open]) .header-source-popover { display: none; }
 .header-source-menu > summary { list-style: none; }
 .header-source-menu > summary::-webkit-details-marker { display: none; }
 .header-source-trigger { height: 34px; padding: 0 10px; display: flex; align-items: center; gap: 7px; border-radius: 8px; background: rgba(255,255,255,.08); color: rgba(255,255,255,.72); cursor: pointer; font: 500 12px system-ui; transition: background .15s, color .15s; }
