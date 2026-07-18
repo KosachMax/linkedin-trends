@@ -3,14 +3,15 @@ title: Liverpool FC
 enabled: true
 languages: [en]
 topic:
-  include_any: [Liverpool FC, LFC, Anfield, fc-liverpool, transfers]
+  include_any: [Liverpool FC, LFC, Anfield, fc-liverpool, Liverpool transfer, Liverpool signing, Liverpool injury]
   exclude_any: [Liverpool city council]
   entities:
     Liverpool FC: [Liverpool FC, LFC, Reds, Anfield]
 categories: [matches, transfers, injuries, club, academy]
 sources:
-  include_tags: [football, liverpool]
+  include_tags: [football, liverpool, fc-liverpool]
   min_independent_sources: 2
+  min_perspectives: 1
   allow_single_source_for: [official_statement, match_result]
 dedupe:
   lookback_hours: 72

@@ -93,14 +93,20 @@ button { font: inherit; }
 .theme-button:hover { background: rgba(255,255,255,.18); }
 
 .reference-toolbar { position: sticky; top: 60px; z-index: 19; border-bottom: 1px solid var(--reference-border); background: var(--reference-toolbar); }
-.reference-toolbar-inner { width: min(760px, 100%); min-height: 62px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; gap: 10px; overflow-x: auto; }
+.reference-toolbar-inner { width: min(760px, 100%); min-height: 62px; margin: 0 auto; padding: 10px 24px; display: flex; flex-direction: column; gap: 7px; overflow: hidden; }
+.toolbar-row { min-width: 0; display: flex; align-items: center; gap: 10px; }
+.toolbar-scroll { min-width: 0; overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; }
+.toolbar-scroll::-webkit-scrollbar { display: none; }
 .toolbar-label { flex-shrink: 0; margin-right: 2px; color: var(--reference-muted); text-transform: uppercase; font: 600 11px system-ui; letter-spacing: .08em; }
-.topic-chips { display: flex; gap: 8px; }
+.digest-chips, .topic-chips { width: max-content; display: flex; gap: 8px; }
+.digest-chip { flex-shrink: 0; padding: 7px 10px; border-radius: 8px; color: var(--reference-muted); font: 600 12px system-ui; }
+.digest-chip:hover { background: var(--reference-chip); color: var(--reference-title); }
+.digest-chip.active { background: color-mix(in srgb, var(--reference-accent) 12%, var(--reference-chip)); color: var(--reference-accent); }
 .topic-chip { flex-shrink: 0; padding: 7px 14px; border: 1px solid transparent; border-radius: 8px; background: var(--reference-chip); color: var(--reference-chip-ink); cursor: pointer; font: 500 13px system-ui; transition: all .15s; }
 .topic-chip:hover { filter: brightness(.96); }
 .topic-chip.active { background: #16181d; color: #fff; font-weight: 600; }
 [data-theme="dark"] .topic-chip.active { background: var(--reference-accent); color: var(--reference-accent-ink); }
-.toolbar-count { flex-shrink: 0; margin-left: auto; color: var(--reference-muted); white-space: nowrap; font: 400 12px system-ui; }
+.toolbar-count { flex-shrink: 0; margin-left: auto; padding-left: 4px; color: var(--reference-muted); white-space: nowrap; font: 400 12px system-ui; }
 
 .reference-feed { width: min(760px, 100%); margin: 0 auto; padding: 8px 24px 80px; }
 .reference-story { padding: 22px 0; border-bottom: 1px solid var(--reference-border); animation: reference-down .22s ease; }
@@ -109,6 +115,14 @@ button { font: inherit; }
 .story-category { text-transform: uppercase; font: 600 11px system-ui; letter-spacing: .07em; }
 .story-separator { color: var(--reference-muted); }
 .story-status { color: var(--reference-muted); }
+.story-verification { padding: 3px 7px; border-radius: 999px; background: var(--reference-soft); color: var(--reference-muted); white-space: nowrap; font: 600 10px/1.2 system-ui; }
+.story-verification.verification-single_source, .story-verification.verification-same_perspective { background: color-mix(in srgb, #e5a536 13%, var(--reference-soft)); color: #9b6812; }
+.story-verification.verification-cross_perspective { background: color-mix(in srgb, #4a7cf7 11%, var(--reference-soft)); color: #416bd0; }
+.story-verification.verification-independent_confirmation { background: color-mix(in srgb, var(--reference-accent) 11%, var(--reference-soft)); color: var(--reference-accent); }
+.story-verification.verification-conflicting_accounts { background: color-mix(in srgb, #df5b57 12%, var(--reference-soft)); color: #b13e3a; }
+[data-theme="dark"] .story-verification.verification-single_source, [data-theme="dark"] .story-verification.verification-same_perspective { color: #eab34d; }
+[data-theme="dark"] .story-verification.verification-cross_perspective { color: #7ea0ff; }
+[data-theme="dark"] .story-verification.verification-conflicting_accounts { color: #ed7772; }
 .story-score { display: flex; align-items: center; gap: 7px; margin-left: auto; padding: 2px 9px; border-radius: 6px; background: var(--reference-soft); color: var(--reference-muted); font: 600 12px system-ui; letter-spacing: .02em; }
 .story-score i { width: 7px; height: 7px; display: block; border-radius: 50%; background: var(--reference-accent); }
 .story-title { width: 100%; padding: 0; border: 0; background: none; color: var(--reference-title); text-align: left; cursor: pointer; font: 600 20px/1.34 Georgia, "Times New Roman", serif; letter-spacing: -.01em; text-wrap: pretty; }
@@ -143,6 +157,9 @@ button { font: inherit; }
 .inline-source:hover, .drawer-source:hover { border-color: var(--reference-accent); }
 .inline-source strong, .drawer-source strong { color: var(--reference-muted); text-transform: uppercase; font: 700 10px system-ui; letter-spacing: .07em; }
 .inline-source span, .drawer-source span { color: var(--reference-title); font: 400 12px/1.42 system-ui; }
+.inline-source .source-heading, .drawer-source .source-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.source-heading em { padding: 2px 6px; border-radius: 999px; background: color-mix(in srgb, var(--reference-accent) 9%, var(--reference-soft)); color: var(--reference-muted); font: 500 9px/1.4 system-ui; font-style: normal; }
+.inline-source small, .drawer-source small { color: var(--reference-muted); font: 400 10px/1.45 system-ui; }
 
 .reference-pagination { display: flex; justify-content: space-between; margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--reference-border); color: var(--reference-muted); font: 600 13px system-ui; }
 .reference-pagination a:hover { color: var(--reference-accent); }
@@ -168,6 +185,8 @@ button { font: inherit; }
 .drawer-source-list { margin-top: 4px; gap: 10px; }
 .drawer-source { padding: 12px 14px; border-radius: 9px; }
 .drawer-source span { font-size: 14px; line-height: 1.45; }
+.drawer-source .source-heading { font-size: inherit; }
+.drawer-source small { font-size: 11px; }
 
 @media (max-width: 640px) {
   .reference-header-inner, .reference-toolbar-inner, .reference-feed { padding-left: 18px; padding-right: 18px; }
@@ -182,6 +201,7 @@ button { font: inherit; }
   .source-monitor-spark { gap: 2px; }
   .source-monitor-spark i { width: 5px; }
   .reference-toolbar-inner { min-height: 58px; }
+  .toolbar-count { font-size: 11px; }
   .story-title { font-size: 19px; }
   .story-actions { gap: 10px 14px; }
   .drawer-body { padding: 24px 20px 48px; }

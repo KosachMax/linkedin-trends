@@ -12,11 +12,20 @@ const statusLabels: Record<string, string> = {
   disputed: "Есть расхождения",
   completed: "Завершено",
 };
+const verificationLabels: Record<string, string> = {
+  single_source: "Заявление одного источника",
+  same_perspective: "Несколько источников одной стороны",
+  cross_perspective: "Сообщают разные стороны",
+  independent_confirmation: "Есть независимое подтверждение",
+  conflicting_accounts: "Источники расходятся",
+};
 const categoryLabels: Record<string, string> = {
   world: "Мир", politics: "Политика", economics: "Экономика", economy: "Экономика",
   conflict: "Конфликты", diplomacy: "Дипломатия", energy: "Энергетика", ai: "ИИ",
   research: "Исследования", python: "Python", backend: "Разработка", club: "Клуб",
   transfers: "Трансферы", matches: "Матчи", injuries: "Травмы", russia: "Россия",
+  frontline: "Фронт", strikes: "Удары", weapons: "Вооружения", humanitarian: "Гуманитарное",
+  prisoners: "Пленные", occupation: "Оккупация",
 };
 const categoryClass = event.category.toLowerCase().replace(/[^a-zа-яё0-9]+/gi, "-");
 const firstSource = sources[0];
@@ -25,6 +34,36 @@ const history = [
   `Событие впервые появилось ${new Date(event.first_seen_at).toLocaleString("ru-RU")}.`,
   ...event.updates.map((update) => `${new Date(update.at).toLocaleString("ru-RU")}: ${update.summary}`),
 ].join(" ");
+const perspectiveLabels: Record<string, string> = {
+  international: "международный",
+  ukrainian: "украинский",
+  russian: "российский",
+  club: "клубный",
+  community: "сообщество",
+  technical: "технический",
+};
+const ownershipLabels: Record<string, string> = {
+  independent: "независимый",
+  state: "государственный",
+  public: "общественный",
+  official: "официальный",
+  commercial: "коммерческий",
+  community: "сообщество",
+};
+const sourceLabel = (source: Article) => [
+  source.source_perspective && perspectiveLabels[source.source_perspective],
+  source.source_ownership && ownershipLabels[source.source_ownership],
+].filter(Boolean).join(" · ");
+const verificationLabel = event.verification_status
+  ? verificationLabels[event.verification_status]
+  : undefined;
+const sourceSectionTitle = event.verification_status === "single_source"
+  || event.verification_status === "same_perspective"
+  || event.verification_status === "cross_perspective"
+  ? "Какие источники сообщили"
+  : event.verification_status === "conflicting_accounts"
+    ? "Какие источники дают разные версии"
+    : "Какие источники подтвердили";
 ---
 
 <article class="reference-story" data-event-category={event.category} data-event-id={event.id}>
@@ -33,6 +72,7 @@ const history = [
     <span class={`story-category category-${categoryClass}`}>{categoryLabels[event.category] || event.category}</span>
     <span class="story-separator">·</span>
     <span class="story-status">{statusLabels[event.status] || event.status}</span>
+    {verificationLabel && <span class={`story-verification verification-${event.verification_status}`}>{verificationLabel}</span>}
     <span class="story-score"><i></i>{event.importance.toFixed(1).replace(".", ",")}</span>
   </div>
   <button class="story-title" type="button" data-open-event={event.id}>{event.title}</button>
@@ -53,13 +93,17 @@ const history = [
       <div class="story-toggle-content"><p>{history}</p></div>
     </details>
     <details class="story-detail-toggle">
-      <summary><span class="story-toggle-chevron" aria-hidden="true">›</span><h3>Какие источники подтвердили</h3></summary>
+      <summary><span class="story-toggle-chevron" aria-hidden="true">›</span><h3>{sourceSectionTitle}</h3></summary>
       <div class="story-toggle-content">
         <div class="inline-source-list">
           {sources.map((source) => (
             <a class="inline-source" href={source.canonical_url} target="_blank" rel="noreferrer">
-              <strong>{source.source_name}</strong>
+              <span class="source-heading">
+                <strong>{source.source_name}</strong>
+                {sourceLabel(source) && <em>{sourceLabel(source)}</em>}
+              </span>
               <span>{source.title}</span>
+              {source.source_disclosure && <small>{source.source_disclosure}</small>}
             </a>
           ))}
         </div>
@@ -74,6 +118,7 @@ const history = [
     <span class={`story-category category-${categoryClass}`}>{categoryLabels[event.category] || event.category}</span>
     <span class="story-separator">·</span>
     <span>{statusLabels[event.status] || event.status} · {time}</span>
+    {verificationLabel && <span class={`story-verification verification-${event.verification_status}`}>{verificationLabel}</span>}
   </div>
   <h1>{event.title}</h1>
   <p class="drawer-lead">{event.brief}</p>
@@ -85,12 +130,17 @@ const history = [
       <div class="story-toggle-content"><p>{history}</p></div>
     </details>
     <details class="story-detail-toggle">
-      <summary><span class="story-toggle-chevron" aria-hidden="true">›</span><h2>Какие источники подтвердили</h2></summary>
+      <summary><span class="story-toggle-chevron" aria-hidden="true">›</span><h2>{sourceSectionTitle}</h2></summary>
       <div class="story-toggle-content">
         <div class="drawer-source-list">
           {sources.map((source) => (
             <a class="drawer-source" href={source.canonical_url} target="_blank" rel="noreferrer">
-              <strong>{source.source_name}</strong><span>{source.title}</span>
+              <span class="source-heading">
+                <strong>{source.source_name}</strong>
+                {sourceLabel(source) && <em>{sourceLabel(source)}</em>}
+              </span>
+              <span>{source.title}</span>
+              {source.source_disclosure && <small>{source.source_disclosure}</small>}
             </a>
           ))}
         </div>

@@ -5,7 +5,7 @@ import type { DailyDigest } from "../lib/types";
 import { listDays } from "../lib/data";
 
 interface Props { digest: DailyDigest; digests: Array<{ id: string; current: DailyDigest }> }
-const { digest } = Astro.props;
+const { digest, digests } = Astro.props;
 const dates = listDays().filter((item) => item.id === digest.digest_id).map((item) => item.date).sort();
 const dateIndex = dates.indexOf(digest.date);
 const older = dateIndex > 0 ? dates[dateIndex - 1] : undefined;
@@ -17,6 +17,14 @@ const categoryLabels: Record<string, string> = {
   conflict: "Конфликты", diplomacy: "Дипломатия", energy: "Энергетика", ai: "ИИ",
   research: "Исследования", python: "Python", backend: "Разработка", club: "Клуб",
   transfers: "Трансферы", matches: "Матчи", injuries: "Травмы", russia: "Россия",
+  frontline: "Фронт", strikes: "Удары", weapons: "Вооружения", humanitarian: "Гуманитарное",
+  prisoners: "Пленные", occupation: "Оккупация",
+};
+const digestLabels: Record<string, string> = {
+  world: "Мир",
+  tech: "Технологии",
+  "fc-liverpool": "Liverpool",
+  "ukraine-war": "Фронт",
 };
 ---
 
@@ -24,12 +32,28 @@ const categoryLabels: Record<string, string> = {
 
 <div class="reference-toolbar">
   <div class="reference-toolbar-inner">
-    <span class="toolbar-label">Темы</span>
-    <div class="topic-chips">
-      <button class="topic-chip active" type="button" data-category-filter="all">Все</button>
-      {categories.map((category) => <button class="topic-chip" type="button" data-category-filter={category}>{categoryLabels[category] || category}</button>)}
+    <div class="toolbar-row toolbar-feeds-row">
+      <span class="toolbar-label">Ленты</span>
+      <div class="toolbar-scroll">
+        <nav class="digest-chips" aria-label="Ленты новостей">
+          {digests.map(({ id }) => (
+            <a class={`digest-chip ${id === digest.digest_id ? "active" : ""}`} href={`${base}digest/${id}/`}>
+              {digestLabels[id] || id}
+            </a>
+          ))}
+        </nav>
+      </div>
     </div>
-    <span class="toolbar-count" data-visible-count>{digest.events.length} материалов</span>
+    <div class="toolbar-row toolbar-topics-row">
+      <span class="toolbar-label">Темы</span>
+      <div class="toolbar-scroll">
+        <div class="topic-chips">
+          <button class="topic-chip active" type="button" data-category-filter="all">Все</button>
+          {categories.map((category) => <button class="topic-chip" type="button" data-category-filter={category}>{categoryLabels[category] || category}</button>)}
+        </div>
+      </div>
+      <span class="toolbar-count" data-visible-count>{digest.events.length} материалов</span>
+    </div>
   </div>
 </div>
 

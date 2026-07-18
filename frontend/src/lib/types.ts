@@ -8,6 +8,10 @@ export interface Article {
   title: string;
   excerpt: string | null;
   published_at: string | null;
+  source_perspective?: "international" | "ukrainian" | "russian" | "club" | "community" | "technical" | "unspecified";
+  source_ownership?: "independent" | "state" | "public" | "official" | "commercial" | "community" | "unspecified";
+  source_disclosure?: string | null;
+  source_trust_tier?: "primary" | "major" | "community";
 }
 
 export interface SourceRun {
@@ -29,6 +33,7 @@ export interface DigestEvent {
   why_it_matters: string;
   importance: number;
   status: "new" | "updated" | "disputed" | "completed";
+  verification_status?: "standard" | "single_source" | "same_perspective" | "cross_perspective" | "independent_confirmation" | "conflicting_accounts";
   category: string;
   article_ids: string[];
   facts: Array<{ text: string; article_ids: string[] }>;

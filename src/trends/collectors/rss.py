@@ -29,24 +29,30 @@ class RssCollector:
                     continue
                 published = entry.get("published_parsed")
                 published_at = datetime(*published[:6], tzinfo=UTC) if published else None
-                articles.append(RawArticle(
-                    source_id=config.id,
-                    source_name=config.title,
-                    url=url,
-                    title=title,
-                    excerpt=(entry.get("summary") or entry.get("description") or "")[:1000],
-                    published_at=published_at,
-                    collected_at=context.started_at,
-                    language=config.language,
-                    topic_hints=config.tags,
-                    metadata={
-                        "ignored_query_params": config.options.get(
-                            "ignored_query_params", []
-                        )
-                    },
-                ))
+                articles.append(
+                    RawArticle(
+                        source_id=config.id,
+                        source_name=config.title,
+                        url=url,
+                        title=title,
+                        excerpt=(entry.get("summary") or entry.get("description") or "")[:1000],
+                        published_at=published_at,
+                        collected_at=context.started_at,
+                        language=config.language,
+                        topic_hints=config.tags,
+                        source_perspective=config.perspective,
+                        source_ownership=config.ownership,
+                        source_disclosure=config.editorial_note,
+                        source_trust_tier=config.trust_tier,
+                        metadata={
+                            "ignored_query_params": config.options.get("ignored_query_params", [])
+                        },
+                    )
+                )
             state = SourceState.AVAILABLE if articles else SourceState.DEGRADED
-            return CollectorResult(articles=articles, state=state, latency_ms=int((perf_counter() - started) * 1000))
+            return CollectorResult(
+                articles=articles, state=state, latency_ms=int((perf_counter() - started) * 1000)
+            )
         except (httpx.HTTPError, ValueError) as error:
             return CollectorResult(
                 state=SourceState.UNAVAILABLE,
