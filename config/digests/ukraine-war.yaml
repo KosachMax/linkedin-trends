@@ -1,0 +1,105 @@
+id: ukraine-war
+title: "Россия — Украина: фронт"
+enabled: true
+languages: [en, ru, uk]
+topic:
+  include_any:
+    - Ukraine war
+    - Russian invasion
+    - Ukrainian forces
+    - Russian forces
+    - front line
+    - frontline
+    - Donetsk
+    - Luhansk
+    - Zaporizhzhia
+    - Kherson
+    - Kharkiv
+    - Crimea
+    - missile strike
+    - drone attack
+    - air strike
+    - ceasefire
+    - prisoner exchange
+    - occupied territory
+    - война в Украине
+    - война
+    - войну
+    - войне
+    - войны
+    - Украина
+    - Украине
+    - Украиной
+    - ВСУ
+    - ВС РФ
+    - СВО
+    - спецоперация
+    - Минобороны России
+    - Минобороны РФ
+    - российские войска
+    - украинские войска
+    - линия фронта
+    - Донецк
+    - Луганск
+    - Запорожье
+    - Херсон
+    - Харьков
+    - Одесса
+    - Одессе
+    - Донбасс
+    - Крым
+    - ракетный удар
+    - атака дронов
+    - воздушный удар
+    - перемирие
+    - обмен пленными
+    - оккупированная территория
+    - війна в Україні
+    - війна
+    - війну
+    - війні
+    - ЗСУ
+    - Сили оборони
+    - Генштаб
+    - російські війська
+    - українські війська
+    - лінія фронту
+    - Донецьк
+    - Луганськ
+    - Запоріжжя
+    - Харків
+    - Одеса
+    - Одесі
+    - Донбас
+    - ракетний удар
+    - атака дронів
+    - повітряний удар
+    - перемир'я
+    - обмін полоненими
+    - окупована територія
+  exclude_any: [football, tennis, Eurovision, entertainment]
+  entities:
+    Ukraine: [Ukraine, Україна, Украина]
+    Russia: [Russia, Росія, Россия]
+categories: [frontline, strikes, weapons, diplomacy, humanitarian, prisoners, occupation]
+sources:
+  include_tags: [ukrainian-source, ukrainian-state-source, russian-state-source, russian-independent-source, international-ukraine-reporting]
+  min_independent_sources: 1
+  min_perspectives: 2
+  allow_single_source_for: []
+dedupe:
+  lookback_hours: 72
+  candidate_similarity: 0.72
+  max_neighbors: 8
+  max_bundle_size: 20
+  event_match_confidence: 0.90
+  final_audit_confidence: 0.95
+ranking:
+  recency: 0.25
+  source_diversity: 0.35
+  topic_relevance: 0.20
+  impact: 0.20
+  engagement: 0.00
+output:
+  max_events: 12
+  daily_picture_min_chars: 700

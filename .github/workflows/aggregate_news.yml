@@ -70,7 +70,7 @@ jobs:
 
       - name: Verify pipeline output
         run: |
-          for feed in world tech fc-liverpool; do
+          for feed in world tech fc-liverpool ukraine-war; do
             file="data/digests/${feed}/current.json"
             if [ ! -f "$file" ]; then
               echo "::error::${file} missing"

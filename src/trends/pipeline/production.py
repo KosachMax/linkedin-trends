@@ -11,6 +11,7 @@ from trends.ai.service import EventSynthesisService
 from trends.ai.validate import is_russian_editorial
 from trends.collectors.runner import collect_sources
 from trends.config import load_digests, load_sources
+from trends.domain.enums import EventStatus
 from trends.domain.ids import slugify
 from trends.domain.models import (
     Article,
@@ -39,22 +40,50 @@ def _rule_key(value: str) -> str:
     return slugify(value).replace("-", "_")
 
 
-def _minimum_sources_for_event(
-    profile: DigestProfile, event: DigestEvent
-) -> int:
-    allowed = {
-        _rule_key(value) for value in profile.sources.allow_single_source_for
-    }
+def _minimum_sources_for_event(profile: DigestProfile, event: DigestEvent) -> int:
+    allowed = {_rule_key(value) for value in profile.sources.allow_single_source_for}
     event_types = {_rule_key(event.category)}
     if event.identity:
         event_types.add(_rule_key(event.identity.event_type))
     return 1 if allowed & event_types else profile.sources.min_independent_sources
 
 
+def _verification_status(
+    profile: DigestProfile,
+    event: DigestEvent,
+    articles: list[Article],
+) -> str:
+    if profile.sources.min_perspectives <= 1:
+        return "standard"
+    if event.status == EventStatus.DISPUTED:
+        return "conflicting_accounts"
+
+    source_ids = {article.source_id for article in articles}
+    perspectives = {
+        article.source_perspective
+        for article in articles
+        if article.source_perspective != "unspecified"
+    }
+    if len(source_ids) <= 1:
+        return "single_source"
+    if len(perspectives) < profile.sources.min_perspectives:
+        return "same_perspective"
+    has_independent_confirmation = any(
+        article.source_perspective == "international"
+        and article.source_ownership not in {"state", "official", "unspecified"}
+        for article in articles
+    )
+    if has_independent_confirmation:
+        return "independent_confirmation"
+    return "cross_perspective"
+
+
 def _error(stage: str, error: Exception) -> str:
     detail = " ".join(str(error).split())[:220]
-    return f"{stage}:{type(error).__name__}:{detail}" if detail else (
-        f"{stage}:{type(error).__name__}"
+    return (
+        f"{stage}:{type(error).__name__}:{detail}"
+        if detail
+        else (f"{stage}:{type(error).__name__}")
     )
 
 
@@ -89,16 +118,12 @@ def _source_history(root: Path, digest_id: str) -> dict[str, list[int]]:
         return {}
     payload = json.loads(path.read_text(encoding="utf-8"))
     return {
-        source["source_id"]: [
-            release["accepted"] for release in source.get("releases", [])
-        ][-6:]
+        source["source_id"]: [release["accepted"] for release in source.get("releases", [])][-6:]
         for source in payload.get("sources", [])
     }
 
 
-def _rank_clusters(
-    clusters: list[list[Article]], profile: DigestProfile
-) -> list[list[Article]]:
+def _rank_clusters(clusters: list[list[Article]], profile: DigestProfile) -> list[list[Article]]:
     return sorted(
         clusters,
         key=lambda cluster: cluster_score(
@@ -113,21 +138,14 @@ def _rank_clusters(
 async def run_production(root: Path) -> list[Path]:
     started = datetime.now(UTC)
     source_configs = load_sources(root / "config/sources")
+    source_config_by_id = {config.id: config for config in source_configs}
     raw_articles, source_runs = await collect_sources(source_configs)
     normalized = normalize_articles(raw_articles)
     articles, local_dedupe = dedupe_articles(normalized)
-    profiles = [
-        profile
-        for profile in load_digests(root / "config/digests")
-        if profile.enabled
-    ]
+    profiles = [profile for profile in load_digests(root / "config/digests") if profile.enabled]
     google_api_key = os.getenv("GOOGLE_API_KEY")
     provider = GeminiProvider(google_api_key) if google_api_key else None
-    ai = (
-        EventSynthesisService(provider)
-        if provider
-        else None
-    )
+    ai = EventSynthesisService(provider) if provider else None
     dedupe_ai = DedupeService(provider) if provider else None
     store = DailyStore(root / "data/digests")
     written: list[Path] = []
@@ -142,13 +160,11 @@ async def run_production(root: Path) -> list[Path]:
 
     for profile in profiles:
         selected = select_for_digest(articles, profile)
-        today, recent_events, archived_articles, catalog_errors = (
-            load_recent_catalog(
-                root,
-                profile.id,
-                started,
-                profile.dedupe.lookback_hours,
-            )
+        today, recent_events, archived_articles, catalog_errors = load_recent_catalog(
+            root,
+            profile.id,
+            started,
+            profile.dedupe.lookback_hours,
         )
         article_catalog = {
             **archived_articles,
@@ -181,9 +197,7 @@ async def run_production(root: Path) -> list[Path]:
         candidate_clusters = clusters[:synthesis_limit]
         metrics["candidate_clusters"] = len(clusters)
         metrics["synthesized_clusters"] = len(candidate_clusters)
-        metrics["skipped_low_rank_clusters"] = max(
-            0, len(clusters) - len(candidate_clusters)
-        )
+        metrics["skipped_low_rank_clusters"] = max(0, len(clusters) - len(candidate_clusters))
 
         events: list[DigestEvent] = []
         quarantine: list[dict[str, object]] = []
@@ -199,12 +213,8 @@ async def run_production(root: Path) -> list[Path]:
                 )
             except Exception as error:
                 metrics["degraded"] = True
-                metrics["fallback_events"] = int(
-                    metrics["fallback_events"]
-                ) + 1
-                metrics.setdefault("errors", []).append(
-                    _error("synthesis", error)
-                )
+                metrics["fallback_events"] = int(metrics["fallback_events"]) + 1
+                metrics.setdefault("errors", []).append(_error("synthesis", error))
                 event = await build_event(profile, cluster, started, None)
 
             minimum_sources = _minimum_sources_for_event(profile, event)
@@ -238,6 +248,27 @@ async def run_production(root: Path) -> list[Path]:
             dedupe_ai,
             metrics,
         )
+        verification_counts: dict[str, int] = {}
+        annotated_events: list[DigestEvent] = []
+        for event in ranked:
+            event_articles = [
+                article_catalog[article_id]
+                for article_id in event.article_ids
+                if article_id in article_catalog
+            ]
+            verification_status = _verification_status(
+                profile,
+                event,
+                event_articles,
+            )
+            verification_counts[verification_status] = (
+                verification_counts.get(verification_status, 0) + 1
+            )
+            annotated_events.append(
+                event.model_copy(update={"verification_status": verification_status})
+            )
+        metrics["verification_statuses"] = verification_counts
+        ranked = annotated_events
         ranked, orphaned = hydrate_events(ranked, article_catalog)
         metrics["orphaned_events"] = orphaned
         ranked = rank_events(ranked, article_catalog, profile)
@@ -260,21 +291,13 @@ async def run_production(root: Path) -> list[Path]:
                     "article_ids": event.article_ids,
                 }
             )
-        metrics["non_russian_events_filtered"] = len(ranked) - len(
-            localized_events
-        )
+        metrics["non_russian_events_filtered"] = len(ranked) - len(localized_events)
         ranked = localized_events
 
         visible_events = ranked[: profile.output.max_events]
-        accepted_ids = {
-            article_id
-            for event in visible_events
-            for article_id in event.article_ids
-        }
+        accepted_ids = {article_id for event in visible_events for article_id in event.article_ids}
         current_ids = {article.id for article in selected}
-        current_order = [
-            article.id for article in selected if article.id in accepted_ids
-        ]
+        current_order = [article.id for article in selected if article.id in accepted_ids]
         archived_order = [
             article.id
             for article in sorted(
@@ -288,38 +311,35 @@ async def run_production(root: Path) -> list[Path]:
             if article.id in accepted_ids and article.id not in current_ids
         ]
         digest_articles = [
-            article_catalog[article_id]
-            for article_id in [*current_order, *archived_order]
+            article_catalog[article_id] for article_id in [*current_order, *archived_order]
         ]
 
         by_source_events: dict[str, int] = {}
         for event in visible_events:
             represented = {
-                article.source_id
-                for article in digest_articles
-                if article.id in event.article_ids
+                article.source_id for article in digest_articles if article.id in event.article_ids
             }
             for source_id in represented:
-                by_source_events[source_id] = (
-                    by_source_events.get(source_id, 0) + 1
-                )
+                by_source_events[source_id] = by_source_events.get(source_id, 0) + 1
         digest_sources = []
         previous_history = _source_history(root, profile.id)
         current_accepted_ids = accepted_ids & current_ids
+        allowed_source_tags = {item.casefold() for item in profile.sources.include_tags}
         for run in source_runs:
+            config = source_config_by_id.get(run.source_id)
+            config_tags = {item.casefold() for item in config.tags} if config else set()
+            if allowed_source_tags and not allowed_source_tags.intersection(config_tags):
+                continue
             accepted = sum(
                 1
                 for article in selected
-                if article.source_id == run.source_id
-                and article.id in current_accepted_ids
+                if article.source_id == run.source_id and article.id in current_accepted_ids
             )
             digest_sources.append(
                 run.model_copy(
                     update={
                         "accepted": accepted,
-                        "represented_events": by_source_events.get(
-                            run.source_id, 0
-                        ),
+                        "represented_events": by_source_events.get(run.source_id, 0),
                         "history": [
                             *previous_history.get(run.source_id, []),
                             accepted,
@@ -356,10 +376,7 @@ async def run_production(root: Path) -> list[Path]:
         }
 
     report_path = (
-        root
-        / "data/runs"
-        / started.strftime("%Y/%m/%d")
-        / f"{started.strftime('%H%M%S')}.json"
+        root / "data/runs" / started.strftime("%Y/%m/%d") / f"{started.strftime('%H%M%S')}.json"
     )
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(

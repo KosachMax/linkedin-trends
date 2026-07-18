@@ -23,6 +23,14 @@ class RawArticle(Model):
     collected_at: datetime
     language: str = "en"
     topic_hints: list[str] = Field(default_factory=list)
+    source_perspective: Literal[
+        "international", "ukrainian", "russian", "club", "community", "technical", "unspecified"
+    ] = "unspecified"
+    source_ownership: Literal[
+        "independent", "state", "public", "official", "commercial", "community", "unspecified"
+    ] = "unspecified"
+    source_disclosure: str | None = None
+    source_trust_tier: Literal["primary", "major", "community"] = "major"
     engagement: int | None = Field(default=None, ge=0)
     metadata: dict[str, Any] = Field(default_factory=dict)
 
@@ -39,6 +47,14 @@ class Article(Model):
     collected_at: datetime
     language: str
     topic_hints: list[str] = Field(default_factory=list)
+    source_perspective: Literal[
+        "international", "ukrainian", "russian", "club", "community", "technical", "unspecified"
+    ] = "unspecified"
+    source_ownership: Literal[
+        "independent", "state", "public", "official", "commercial", "community", "unspecified"
+    ] = "unspecified"
+    source_disclosure: str | None = None
+    source_trust_tier: Literal["primary", "major", "community"] = "major"
     entities: list[str] = Field(default_factory=list)
     engagement: int | None = None
 
@@ -70,6 +86,14 @@ class DigestEvent(Model):
     why_it_matters: str
     importance: int = Field(ge=1, le=10)
     status: EventStatus = EventStatus.NEW
+    verification_status: Literal[
+        "standard",
+        "single_source",
+        "same_perspective",
+        "cross_perspective",
+        "independent_confirmation",
+        "conflicting_accounts",
+    ] = "standard"
     category: str
     article_ids: list[str] = Field(min_length=1)
     facts: list[Fact] = Field(default_factory=list)
@@ -134,6 +158,13 @@ class SourceConfig(Model):
     language: str = "en"
     tags: list[str] = Field(default_factory=list)
     trust_tier: Literal["primary", "major", "community"] = "major"
+    perspective: Literal[
+        "international", "ukrainian", "russian", "club", "community", "technical", "unspecified"
+    ] = "unspecified"
+    ownership: Literal[
+        "independent", "state", "public", "official", "commercial", "community", "unspecified"
+    ] = "unspecified"
+    editorial_note: str | None = None
     timeout_seconds: int = Field(default=15, ge=1, le=60)
     options: dict[str, Any] = Field(default_factory=dict)
 
@@ -153,6 +184,7 @@ class TopicConfig(Model):
 class DigestSourceRules(Model):
     include_tags: list[str] = Field(default_factory=list)
     min_independent_sources: int = Field(default=2, ge=1)
+    min_perspectives: int = Field(default=1, ge=1, le=3)
     allow_single_source_for: list[str] = Field(default_factory=list)
 
 

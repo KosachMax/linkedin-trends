@@ -61,6 +61,11 @@ class EventSynthesisService:
             {
                 "article_id": article.id,
                 "source_id": article.source_id,
+                "source_name": article.source_name,
+                "source_perspective": article.source_perspective,
+                "source_ownership": article.source_ownership,
+                "source_disclosure": article.source_disclosure,
+                "source_trust_tier": article.source_trust_tier,
                 "title": titles[i],
                 "excerpt": excerpts[i] or None,
                 "published_at": article.published_at.isoformat() if article.published_at else None,

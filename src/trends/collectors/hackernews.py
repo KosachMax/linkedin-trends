@@ -92,31 +92,36 @@ class HackerNewsCollector:
 
             searchable = f"{title} {item.get('text') or ''}".casefold()
             if keywords and not any(
-                re.search(rf"(?<!\w){re.escape(keyword)}(?!\w)", searchable)
-                for keyword in keywords
+                re.search(rf"(?<!\w){re.escape(keyword)}(?!\w)", searchable) for keyword in keywords
             ):
                 continue
 
-            articles.append(RawArticle(
-                source_id=config.id,
-                source_name=config.title,
-                url=url,
-                title=title,
-                excerpt=str(item.get("text") or "")[:1000] or None,
-                published_at=published_at,
-                collected_at=context.started_at,
-                language=config.language,
-                topic_hints=config.tags,
-                engagement=score + comments,
-                metadata={
-                    "hackernews_id": str(item.get("id") or ""),
-                    "score": score,
-                    "comments": comments,
-                    "discussion_url": (
-                        f"https://news.ycombinator.com/item?id={item.get('id')}"
-                    ),
-                },
-            ))
+            articles.append(
+                RawArticle(
+                    source_id=config.id,
+                    source_name=config.title,
+                    url=url,
+                    title=title,
+                    excerpt=str(item.get("text") or "")[:1000] or None,
+                    published_at=published_at,
+                    collected_at=context.started_at,
+                    language=config.language,
+                    topic_hints=config.tags,
+                    source_perspective=config.perspective,
+                    source_ownership=config.ownership,
+                    source_disclosure=config.editorial_note,
+                    source_trust_tier=config.trust_tier,
+                    engagement=score + comments,
+                    metadata={
+                        "hackernews_id": str(item.get("id") or ""),
+                        "score": score,
+                        "comments": comments,
+                        "discussion_url": (
+                            f"https://news.ycombinator.com/item?id={item.get('id')}"
+                        ),
+                    },
+                )
+            )
             if len(articles) >= limit:
                 break
 

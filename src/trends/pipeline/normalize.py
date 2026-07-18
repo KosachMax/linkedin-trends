@@ -33,6 +33,10 @@ def normalize_article(raw: RawArticle) -> Article:
         collected_at=raw.collected_at,
         language=raw.language,
         topic_hints=[item.casefold() for item in raw.topic_hints],
+        source_perspective=raw.source_perspective,
+        source_ownership=raw.source_ownership,
+        source_disclosure=raw.source_disclosure,
+        source_trust_tier=raw.source_trust_tier,
         engagement=raw.engagement,
     )
 
