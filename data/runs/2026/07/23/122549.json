@@ -1,0 +1,869 @@
+{
+  "started_at": "2026-07-23T12:25:49.673087+00:00",
+  "raw_articles": 753,
+  "normalized_articles": 753,
+  "dedupe": {
+    "input_articles": 753,
+    "exact_url_duplicates": 2,
+    "same_source_near_duplicates": 4,
+    "output_articles": 747
+  },
+  "sources": [
+    {
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 192,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1034,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "astral-uv-releases",
+      "source_name": "Astral uv Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1240,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-liverpool",
+      "source_name": "BBC Sport Liverpool",
+      "state": "available",
+      "fetched": 4,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 612,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport Football",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 468,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1087,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "celery-releases",
+      "source_name": "Celery Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 888,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "state": "available",
+      "fetched": 12,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 396,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "django-weblog",
+      "source_name": "Django Weblog",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 176,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "docker-blog",
+      "source_name": "Docker Blog",
+      "state": "unavailable",
+      "fetched": 0,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 408,
+      "error_code": "HTTPStatusError",
+      "history": []
+    },
+    {
+      "source_id": "dw-world",
+      "source_name": "Deutsche Welle",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1148,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "euronews-world",
+      "source_name": "Euronews",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 504,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "fastapi-releases",
+      "source_name": "FastAPI Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 794,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "france24-ukraine",
+      "source_name": "France 24 Ukraine",
+      "state": "available",
+      "fetched": 24,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 489,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "france24-world",
+      "source_name": "France 24",
+      "state": "available",
+      "fetched": 24,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 512,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "guardian-liverpool",
+      "source_name": "The Guardian Liverpool",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 541,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "guardian-ukraine",
+      "source_name": "The Guardian Ukraine",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 712,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "guardian-world",
+      "source_name": "The Guardian World",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 607,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "hackernews-backend",
+      "source_name": "Hacker News Backend",
+      "state": "available",
+      "fetched": 2,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 2256,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "infoq-development",
+      "source_name": "InfoQ Development",
+      "state": "available",
+      "fetched": 15,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1612,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "kyiv-independent",
+      "source_name": "The Kyiv Independent",
+      "state": "available",
+      "fetched": 15,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 720,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "le-monde",
+      "source_name": "Le Monde",
+      "state": "available",
+      "fetched": 16,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 472,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "liverpool-echo",
+      "source_name": "Liverpool Echo",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1397,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "lobsters-backend",
+      "source_name": "Lobsters Backend",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 2393,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "mediazona",
+      "source_name": "Медиазона",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 678,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "meduza",
+      "source_name": "Meduza",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 621,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "npr-world",
+      "source_name": "NPR World",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1182,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "planet-python",
+      "source_name": "Planet Python",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1272,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1391,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "postgresql-news",
+      "source_name": "PostgreSQL News",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1640,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "psycopg-releases",
+      "source_name": "Psycopg Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1308,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "pydantic-releases",
+      "source_name": "Pydantic Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1093,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "python-insider",
+      "source_name": "Python Insider",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1004,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 2186,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "rferl-ukraine-war",
+      "source_name": "RFE/RL · Russia Invades Ukraine",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1014,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "spiegel",
+      "source_name": "Der Spiegel",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1537,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "sqlalchemy-releases",
+      "source_name": "SQLAlchemy Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1520,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "tass",
+      "source_name": "ТАСС",
+      "state": "available",
+      "fetched": 40,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1679,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "thisisanfield",
+      "source_name": "This Is Anfield",
+      "state": "available",
+      "fetched": 16,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1321,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "ukrainska-pravda",
+      "source_name": "Ukrainska Pravda",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1426,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 2043,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "un-news",
+      "source_name": "UN News",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1038,
+      "error_code": null,
+      "history": []
+    }
+  ],
+  "digests": {
+    "fc-liverpool": {
+      "selected": 60,
+      "published": 3,
+      "quarantined": [
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "a36524b1b405b00eac45"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "7f0e8a2e2f69a8997d47"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "2888b05fa3dcb00261f2"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "d81580675c87ba0681e4"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "a8c8f447355555c8325a"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "42bfcd4d35a19facb540"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "a901e5d5b83c2ef7b9e7",
+            "28bbea641ce9e3bdf25f",
+            "ddf12adbe2f984e8e0e7"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "962145b8266cd4e85ce6"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "a8d9ebd634c52ed316bb",
+            "03403542aa02a114b00f"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "149c632469154621d2a8"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "03b9b767bdfdcebbdc37"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "af3f1b18310ad3903394",
+            "b570684974d9e7280ee3",
+            "59c35dc11d63bb33eee2",
+            "239485b65abb7bdbc1b3",
+            "271e4db267a0fb484ee2",
+            "a526a95e85517b42684c",
+            "2ec071cff7437c2230b7",
+            "552e57fac93f9637df96",
+            "42bfcd4d35a19facb540",
+            "aa3e7f4d7625aa40b823",
+            "5911e54a2c976d1dbe6b",
+            "75503053b499b20672c7",
+            "0890d7a57c981e8e0c25",
+            "3c7894e09ff4db4d44c0",
+            "e34691df2d63de146bb0",
+            "114e42be09baa91ebe80",
+            "afd7cf7d353a23452c13",
+            "91e3b042cf302675d23c",
+            "adcaabff5f3db567fb3d",
+            "525917ee698c72928445",
+            "369a14e4a5ef6de5e579",
+            "a2b4fb287afdd6fe62ed",
+            "6773e8f720815857dac0",
+            "9509f881c84546247023",
+            "efde534f4719c4c11f27",
+            "8b117361715653a6267b",
+            "1e1dec8fb75652562f37",
+            "bb3f4a1490859ed7e8bf",
+            "4c386aae5f52535eb195",
+            "b47e8d5f9c83a0f230d5",
+            "b5fd5e1382162c2fcf70",
+            "e21c98c83c2ff26bb984",
+            "7d0db62926196b024397",
+            "543b70cfbdc762e72745",
+            "dfc8cf4a323ed0ad3905",
+            "17c898223032b3e23a62",
+            "eb2026ada85c5a44691c",
+            "1a7babce22cb0d8e80ad",
+            "5cea4917b7176f1071ea",
+            "27d541f4f90d184e0c0b",
+            "d08e8def0dfe48e8085b",
+            "539633539d4407caa86a",
+            "79d1a5b219c200e94bfc",
+            "be77c7cfbddbb0440ec5",
+            "e896ac83e3343346cc9b",
+            "08838f8203d5edfe75bf",
+            "aa40e5d84461666b8987",
+            "fb0d8a89646acdd1931c",
+            "3af010675b7992c74adc",
+            "1f1954ebf4d152674ecf",
+            "ad56c0255c63c94c87f0",
+            "a47c6cb54cf04856205b",
+            "1eb53ff5a316823815b6",
+            "49a00c4223f7411801f0",
+            "3233aaf2d0b7ce092d3a",
+            "67c05afce9f4ecaf95d5",
+            "1b938907c4252509615b",
+            "5d3ca9583c755a917923",
+            "bec2b490967d649cef81",
+            "2846f5dd16c9b323dd06",
+            "139f0ae6a43121e4ab8c",
+            "49ada56a728e4d18a4c5",
+            "dae00a044244ba068337",
+            "03eab64872d1fdcfd6d3",
+            "33b242ba83e58ed2f9c8",
+            "3da13feff6fd33641558",
+            "34b854a98536dbf2a2d4",
+            "c40c857d09c8826ca946",
+            "c5072eca7b0c3a274880",
+            "2e95ad3c8d1c81b5ab01",
+            "2e9d24ec4e099be12321",
+            "ebc7c6fbf634c85007f8",
+            "d3683853bd4f14e56362",
+            "16dcadaee871ce412aa6",
+            "bfaf788196bcfaf2f9d9",
+            "d63b31c1017b62f9da1f",
+            "183d30691385ab2cef5c",
+            "173589997ffe6c81145f",
+            "ccab3c041ed631c2e07e",
+            "be525264d53850f11443",
+            "3225ef4bb5e19280eeee",
+            "3f56f0dd290d3583505d",
+            "f627cd6b948bf0095e47",
+            "110870cbc247ff08be4f",
+            "0aaf5bb7331b44cf4feb",
+            "e538712f1a8b4a87b7ea",
+            "1ad1f74782d22c365f2d",
+            "92fe18a1a6137e0fbf71",
+            "54b444eb2681ac606c7a",
+            "6b8987df3859cf590d38",
+            "36432f10070a20cd24fe",
+            "593ff604634eb5cfd74d",
+            "8ee8fbe1eccfc1809c24",
+            "b7727ee55223cc39bbbd",
+            "be5861b8835126697d89",
+            "55cb94ed496887c4c8f9",
+            "3bc45093cc5f20162591",
+            "45c89a98f39c8e7f0336",
+            "d81580675c87ba0681e4",
+            "f750b737d66b98e483a0",
+            "2a4f042a03e86645fede",
+            "d9199a08175f2ae071f6",
+            "a5c48f3dedc22ed5c72e",
+            "37ee08cab8be3697e429",
+            "f455d2c03bdfdb1133b3",
+            "9691e070db520355e149",
+            "b67960ce5fe298d024d7",
+            "5bf1606e196d00cf2af6",
+            "a77e7201b4725a7c600b",
+            "993fe23db5162c486424",
+            "e3b3c9ebc0a174966378",
+            "9788057c6aa880dd5e32",
+            "dbbe733635a8ff1d1c70",
+            "7f0e8a2e2f69a8997d47",
+            "5dc562c41299f21c30a6",
+            "c9f93fc1aa4849772b9f",
+            "858c0bdf568df358795b",
+            "9de50bf6242506010f35",
+            "f2c4c217c2367bbb60de",
+            "41223a8eeff9dbb93e5d",
+            "d60661b8f9ef66d94658",
+            "057e978d2496b85d2ddf"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "synthesis:InvalidSynthesisError:event must include every input article id: ['2a4f042a03e86645fede', '36432f10070a20cd24fe', '45c89a98f39c8e7f0336', '54b444eb2681ac606c7a', '993fe23db5162c486424']",
+          "synthesis:InvalidSynthesisError:event must include every input article id: ['03403542aa02a114b00f']",
+          "feed_audit:InvalidDedupeResponse:one event cannot occur in multiple duplicate groups"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 275,
+        "candidate_bundles": 8,
+        "ai_partitions": 8,
+        "ai_splits": 7,
+        "fallback_events": 2,
+        "reused_event_ids": 5,
+        "article_overlap_merges": 6,
+        "final_audit_merges": 0,
+        "largest_bundle": 10,
+        "candidate_clusters": 21,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 1,
+        "event_candidate_pairs": 8,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "standard": 4
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 1,
+        "dedupe_degraded": true
+      }
+    },
+    "tech": {
+      "selected": 194,
+      "published": 10,
+      "quarantined": [
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "d566d2bc751c51cdf9ed",
+            "d53b0744eb3e897d700e",
+            "caced407122944f55cb2",
+            "b7311eb2fe087ec1cb6a",
+            "b4ceacc13b16b4088a90",
+            "a7620a977a981de1a84e",
+            "80cb0bd7f47fb2537ec9",
+            "76001daea060f14cd15e",
+            "2ff199b0fece23c74160",
+            "11a891f5f4190d359328",
+            "05dc0eb6aaab0c66ad19",
+            "01431a332abc65585de9"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "synthesis:InvalidSynthesisError:category must be predominantly written in Russian"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 591,
+        "candidate_bundles": 37,
+        "ai_partitions": 37,
+        "ai_splits": 39,
+        "fallback_events": 1,
+        "reused_event_ids": 9,
+        "article_overlap_merges": 1,
+        "final_audit_merges": 0,
+        "largest_bundle": 15,
+        "candidate_clusters": 113,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 93,
+        "event_candidate_pairs": 20,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "standard": 22
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 1,
+        "dedupe_degraded": true
+      }
+    },
+    "ukraine-war": {
+      "selected": 54,
+      "published": 12,
+      "quarantined": [],
+      "dedupe": {
+        "degraded": false,
+        "errors": [],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 223,
+        "candidate_bundles": 11,
+        "ai_partitions": 11,
+        "ai_splits": 18,
+        "fallback_events": 0,
+        "reused_event_ids": 8,
+        "article_overlap_merges": 9,
+        "final_audit_merges": 0,
+        "largest_bundle": 9,
+        "candidate_clusters": 33,
+        "synthesized_clusters": 24,
+        "skipped_low_rank_clusters": 9,
+        "event_candidate_pairs": 33,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "independent_confirmation": 3,
+          "conflicting_accounts": 1,
+          "same_perspective": 5,
+          "cross_perspective": 1,
+          "single_source": 15
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 0,
+        "dedupe_degraded": false
+      }
+    },
+    "world": {
+      "selected": 235,
+      "published": 10,
+      "quarantined": [],
+      "dedupe": {
+        "degraded": false,
+        "errors": [],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": "gemini-embedding-2",
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 530,
+        "candidate_bundles": 44,
+        "ai_partitions": 44,
+        "ai_splits": 28,
+        "fallback_events": 0,
+        "reused_event_ids": 9,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 10,
+        "candidate_clusters": 160,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 140,
+        "event_candidate_pairs": 12,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "standard": 23
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 0,
+        "dedupe_degraded": false
+      }
+    }
+  }
+}
