@@ -9,7 +9,6 @@ from rapidfuzz.fuzz import token_set_ratio
 
 from trends.domain.models import Article
 
-
 TOKEN_RE = re.compile(r"[\w'-]+", flags=re.UNICODE)
 
 

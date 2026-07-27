@@ -211,7 +211,7 @@ async def run_production(root: Path) -> list[Path]:
                     ai,
                     minimum_sources=1,
                 )
-            except Exception as error:
+            except Exception as error:  # noqa: BLE001
                 metrics["degraded"] = True
                 metrics["fallback_events"] = int(metrics["fallback_events"]) + 1
                 metrics.setdefault("errors", []).append(_error("synthesis", error))

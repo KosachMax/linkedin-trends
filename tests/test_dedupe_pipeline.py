@@ -15,8 +15,8 @@ from trends.ai.schemas import (
     ArticleRelationDecision,
     EventRelationBatch,
     EventRelationDecision,
-    FeedAuditGroup,
     EventSynthesis,
+    FeedAuditGroup,
 )
 from trends.config import load_digests
 from trends.domain.enums import EventStatus
@@ -37,7 +37,6 @@ from trends.pipeline.normalize import normalize_articles
 from trends.pipeline.semantic import build_candidate_bundles, similarity_matrix
 from trends.storage.archive_repair import repair_archive
 from trends.storage.daily_store import DailyStore
-
 
 ROOT = Path(__file__).parents[1]
 NOW = datetime(2026, 7, 12, 12, tzinfo=UTC)

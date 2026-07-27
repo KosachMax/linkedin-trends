@@ -2,7 +2,6 @@ import hashlib
 import re
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
-
 TRACKING_PARAMETERS = {
     "at_campaign",
     "at_medium",

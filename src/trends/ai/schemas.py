@@ -3,7 +3,6 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
-
 EventRelation = Literal["same_event", "update_of", "related", "different"]
 
 

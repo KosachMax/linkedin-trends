@@ -7,25 +7,23 @@ from trends.ai.schemas import AIFact, EventSynthesis
 from trends.ai.service import EventSynthesisService
 from trends.ai.validate import validate_synthesis
 from trends.config import load_digests, load_sources
-from trends.domain.models import RawArticle
 from trends.domain.enums import EventStatus, SourceState
-from trends.domain.models import SourceRun
-from trends.pipeline.dedupe import exact_dedupe
-from trends.pipeline.fixture_builder import build_fixture_digests
-from trends.pipeline.event_builder import build_event
+from trends.domain.models import RawArticle, SourceRun
 from trends.pipeline.cluster import cluster_articles
+from trends.pipeline.dedupe import exact_dedupe
+from trends.pipeline.event_builder import build_event
+from trends.pipeline.fixture_builder import build_fixture_digests
 from trends.pipeline.merge import merge_events
 from trends.pipeline.normalize import normalize_articles
-from trends.pipeline.select import select_for_digest
 from trends.pipeline.production import _verification_status
-
+from trends.pipeline.select import select_for_digest
 
 ROOT = Path(__file__).parents[1]
 
 
 def fixture_articles():
     payload = json.loads((ROOT / "tests/fixtures/articles.json").read_text(encoding="utf-8"))
-    collected_at = datetime.fromisoformat(payload["generated_at"].replace("Z", "+00:00"))
+    collected_at = datetime.fromisoformat(payload["generated_at"])
     return normalize_articles(
         [RawArticle(**item, collected_at=collected_at) for item in payload["articles"]]
     )
@@ -42,7 +40,7 @@ def test_digest_profiles_match_expected_fixture_membership():
 
 def test_url_normalization_removes_tracking_and_exact_duplicates():
     now = datetime.now(UTC)
-    base = dict(source_id="demo", source_name="Demo", title="Same article", collected_at=now)
+    base = {"source_id": "demo", "source_name": "Demo", "title": "Same article", "collected_at": now}
     articles = normalize_articles(
         [
             RawArticle(**base, url="https://Example.com/story/?utm_source=test#top"),
@@ -54,7 +52,7 @@ def test_url_normalization_removes_tracking_and_exact_duplicates():
 
 def test_url_normalization_supports_source_specific_tracking_parameters():
     now = datetime.now(UTC)
-    base = dict(source_id="demo", source_name="Demo", title="Same article", collected_at=now)
+    base = {"source_id": "demo", "source_name": "Demo", "title": "Same article", "collected_at": now}
     articles = normalize_articles(
         [
             RawArticle(
@@ -70,7 +68,7 @@ def test_url_normalization_supports_source_specific_tracking_parameters():
 
 def test_url_normalization_sorts_query_parameters():
     now = datetime.now(UTC)
-    base = dict(source_id="demo", source_name="Demo", title="Same article", collected_at=now)
+    base = {"source_id": "demo", "source_name": "Demo", "title": "Same article", "collected_at": now}
     articles = normalize_articles(
         [
             RawArticle(**base, url="https://example.com/story?a=1&b=2"),
@@ -319,11 +317,12 @@ def test_similar_cross_source_titles_form_one_cluster():
 
 def test_production_runner_builds_digests_without_ai(tmp_path, monkeypatch):
     import asyncio
+
     from trends.pipeline import production
 
     (tmp_path / "config").symlink_to(ROOT / "config", target_is_directory=True)
     payload = json.loads((ROOT / "tests/fixtures/articles.json").read_text(encoding="utf-8"))
-    collected_at = datetime.fromisoformat(payload["generated_at"].replace("Z", "+00:00"))
+    collected_at = datetime.fromisoformat(payload["generated_at"])
     raw = [RawArticle(**item, collected_at=collected_at) for item in payload["articles"]]
     runs = [
         SourceRun(
@@ -367,6 +366,7 @@ def test_production_runner_builds_digests_without_ai(tmp_path, monkeypatch):
 
 def test_production_synthesizes_only_twice_the_visible_event_limit(tmp_path, monkeypatch):
     import asyncio
+
     from trends.pipeline import production
 
     (tmp_path / "config").symlink_to(ROOT / "config", target_is_directory=True)

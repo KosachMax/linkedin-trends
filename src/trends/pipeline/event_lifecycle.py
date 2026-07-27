@@ -243,7 +243,7 @@ async def merge_with_recent(
                     pairs[start : start + 20]
                 )
                 decisions.extend(batch.decisions)
-        except Exception as error:
+        except Exception as error:  # noqa: BLE001
             metrics["degraded"] = True
             metrics.setdefault("errors", []).append(_error("event_match", error))
 
@@ -324,7 +324,7 @@ async def _resynthesize_duplicate_group(
             first_seen_at=combined.first_seen_at,
             updated_at=started,
         )
-    except Exception as error:
+    except Exception as error:  # noqa: BLE001
         metrics["degraded"] = True
         metrics.setdefault("errors", []).append(
             _error("audit_resynthesis", error)
@@ -362,7 +362,7 @@ async def audit_feed(
             for group in audit.duplicate_groups
             if group.confidence >= profile.dedupe.final_audit_confidence
         ]
-    except Exception as error:
+    except Exception as error:  # noqa: BLE001
         metrics["degraded"] = True
         metrics.setdefault("errors", []).append(_error("feed_audit", error))
     groups = _combine_group_ids([*ai_groups, *local_groups])

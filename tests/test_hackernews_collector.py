@@ -9,7 +9,6 @@ from trends.collectors.registry import default_registry
 from trends.domain.enums import SourceState
 from trends.domain.models import SourceConfig
 
-
 NOW = datetime(2026, 7, 17, 12, tzinfo=UTC)
 
 

@@ -83,7 +83,7 @@ async def partition_articles(
         if dimensions == {0} or len(dimensions) != 1:
             raise ValueError("embedding vectors must have one non-zero dimension")
         matrix = similarity_matrix(vectors)
-    except Exception as error:
+    except Exception as error:  # noqa: BLE001
         matrix = lexical_similarity_matrix(articles)
         metrics["degraded"] = True
         metrics.setdefault("errors", []).append(_error("embeddings", error))
@@ -113,7 +113,7 @@ async def partition_articles(
                 [by_id[article_id] for article_id in group.article_ids]
                 for group in partition.groups
             ]
-        except Exception as error:
+        except Exception as error:  # noqa: BLE001
             metrics["degraded"] = True
             metrics.setdefault("errors", []).append(_error("partition", error))
             return cluster_articles(

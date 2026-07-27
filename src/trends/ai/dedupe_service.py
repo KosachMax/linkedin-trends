@@ -1,8 +1,9 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Callable
 from pathlib import Path
-from typing import Callable, TypeVar
+from typing import TypeVar
 
 from pydantic import BaseModel
 
@@ -10,7 +11,6 @@ from trends.domain.models import Article, DigestEvent
 
 from .base import AIProvider
 from .schemas import ArticlePartition, EventRelationBatch, FeedAudit
-
 
 T = TypeVar("T", bound=BaseModel)
 
