@@ -21,7 +21,6 @@ from trends.pipeline.normalize import normalize_articles
 from trends.pipeline.select import select_for_digest
 from trends.storage.daily_store import DailyStore
 
-
 EDITORIAL_FIXTURES = {
     "reuters-energy-001": {
         "title": "Страны Европы создадут общий энергорезерв на зиму",
@@ -83,7 +82,7 @@ def _long_text(text: str, suffix: str) -> str:
 
 def build_fixture_digests(root: Path) -> list[Path]:
     fixture = json.loads((root / "tests/fixtures/articles.json").read_text(encoding="utf-8"))
-    collected_at = datetime.fromisoformat(fixture["generated_at"].replace("Z", "+00:00"))
+    collected_at = datetime.fromisoformat(fixture["generated_at"])
     raw = [
         RawArticle(
             **item,
@@ -104,7 +103,7 @@ def build_fixture_digests(root: Path) -> list[Path]:
         selected = select_for_digest(articles, profile)
         by_id = {article.id: article for article in selected}
         event_article_groups: list[list[str]] = []
-        for first, ids in groups.items():
+        for ids in groups.values():
             present = [article_id for article_id in ids if article_id in by_id]
             if present:
                 event_article_groups.append(present)

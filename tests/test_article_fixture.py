@@ -12,7 +12,6 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
-
 FIXTURE_PATH = Path(__file__).parent / "fixtures" / "articles.json"
 REQUIRED_FIELDS = {
     "id",

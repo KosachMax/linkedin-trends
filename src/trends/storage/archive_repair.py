@@ -47,9 +47,7 @@ def _merge_explicit_groups(
         )
 
     return [
-        replacements[index]
-        if index in replacements
-        else event
+        replacements.get(index, event)
         for index, event in enumerate(digest.events)
         if event.id not in used or index in replacements
     ]

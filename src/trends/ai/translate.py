@@ -51,7 +51,7 @@ async def translate_to_russian(texts: list[str], api_key: str) -> list[str]:
             )
             response.raise_for_status()
             translated = [item["translatedText"] for item in response.json()["data"]["translations"]]
-    except Exception as exc:
+    except Exception as exc:  # noqa: BLE001
         print(f"[translate] failed: {type(exc).__name__}: {exc}", file=sys.stderr)
         return texts
 

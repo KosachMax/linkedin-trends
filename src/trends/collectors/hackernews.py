@@ -11,7 +11,6 @@ from trends.domain.models import RawArticle, SourceConfig
 
 from .base import CollectContext, CollectorResult
 
-
 DEFAULT_API_URL = "https://hacker-news.firebaseio.com/v0"
 
 
@@ -41,8 +40,8 @@ class HackerNewsCollector:
             response.raise_for_status()
             story_ids = response.json()
             if not isinstance(story_ids, list):
-                raise ValueError("Hacker News topstories response must be a list")
-        except (httpx.HTTPError, ValueError) as error:
+                raise TypeError("Hacker News topstories response must be a list")
+        except (httpx.HTTPError, TypeError, ValueError) as error:
             return CollectorResult(
                 state=SourceState.UNAVAILABLE,
                 latency_ms=int((perf_counter() - started) * 1000),
@@ -60,7 +59,7 @@ class HackerNewsCollector:
                 item_response.raise_for_status()
                 payload = item_response.json()
                 if not isinstance(payload, dict):
-                    raise ValueError("Hacker News item response must be an object")
+                    raise TypeError("Hacker News item response must be an object")
                 return payload
 
         results = await asyncio.gather(
