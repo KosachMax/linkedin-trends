@@ -1,0 +1,1286 @@
+{
+  "started_at": "2026-08-23T05:54:56.240545+00:00",
+  "raw_articles": 730,
+  "normalized_articles": 730,
+  "dedupe": {
+    "input_articles": 730,
+    "exact_url_duplicates": 0,
+    "same_source_near_duplicates": 5,
+    "output_articles": 725
+  },
+  "sources": [
+    {
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 298,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "state": "degraded",
+      "fetched": 0,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 288,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "astral-uv-releases",
+      "source_name": "Astral uv Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 775,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-liverpool",
+      "source_name": "BBC Sport Liverpool",
+      "state": "available",
+      "fetched": 4,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 297,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport Football",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 485,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 819,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "celery-releases",
+      "source_name": "Celery Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 875,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "state": "available",
+      "fetched": 12,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 263,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "django-weblog",
+      "source_name": "Django Weblog",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 286,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "docker-blog",
+      "source_name": "Docker Blog",
+      "state": "unavailable",
+      "fetched": 0,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 326,
+      "error_code": "HTTPStatusError",
+      "history": []
+    },
+    {
+      "source_id": "dw-world",
+      "source_name": "Deutsche Welle",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1099,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "euronews-world",
+      "source_name": "Euronews",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 343,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "fastapi-releases",
+      "source_name": "FastAPI Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 693,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "france24-ukraine",
+      "source_name": "France 24 Ukraine",
+      "state": "available",
+      "fetched": 24,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1135,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "france24-world",
+      "source_name": "France 24",
+      "state": "available",
+      "fetched": 23,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 410,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "guardian-liverpool",
+      "source_name": "The Guardian Liverpool",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 465,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "guardian-ukraine",
+      "source_name": "The Guardian Ukraine",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 649,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "guardian-world",
+      "source_name": "The Guardian World",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 400,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "hackernews-backend",
+      "source_name": "Hacker News Backend",
+      "state": "available",
+      "fetched": 1,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1477,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "infoq-development",
+      "source_name": "InfoQ Development",
+      "state": "available",
+      "fetched": 15,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 701,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "kyiv-independent",
+      "source_name": "The Kyiv Independent",
+      "state": "available",
+      "fetched": 15,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 615,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "le-monde",
+      "source_name": "Le Monde",
+      "state": "available",
+      "fetched": 16,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 504,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "liverpool-echo",
+      "source_name": "Liverpool Echo",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 566,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "lobsters-backend",
+      "source_name": "Lobsters Backend",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 810,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "mediazona",
+      "source_name": "Медиазона",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 709,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "meduza",
+      "source_name": "Meduza",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 608,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "npr-world",
+      "source_name": "NPR World",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 542,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "planet-python",
+      "source_name": "Planet Python",
+      "state": "available",
+      "fetched": 24,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 966,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 893,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "postgresql-news",
+      "source_name": "PostgreSQL News",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1790,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "psycopg-releases",
+      "source_name": "Psycopg Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 791,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "pydantic-releases",
+      "source_name": "Pydantic Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 800,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "python-insider",
+      "source_name": "Python Insider",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 553,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1625,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "rferl-ukraine-war",
+      "source_name": "RFE/RL · Russia Invades Ukraine",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1154,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "spiegel",
+      "source_name": "Der Spiegel",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1193,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "sqlalchemy-releases",
+      "source_name": "SQLAlchemy Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1035,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "tass",
+      "source_name": "ТАСС",
+      "state": "available",
+      "fetched": 40,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1766,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "thisisanfield",
+      "source_name": "This Is Anfield",
+      "state": "available",
+      "fetched": 16,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 681,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "ukrainska-pravda",
+      "source_name": "Ukrainska Pravda",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1059,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1773,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "un-news",
+      "source_name": "UN News",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1108,
+      "error_code": null,
+      "history": []
+    }
+  ],
+  "digests": {
+    "fc-liverpool": {
+      "selected": 60,
+      "published": 0,
+      "quarantined": [
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "760c284516eda9c7b203"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "109775244af042a1e307"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "bf5449026360e1069cd0"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "df3488ed3ddcd54aee07"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "2adf3f95c972e6e1ea0b"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "3a836fad50b458ae3113"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "8e5fa383d12ecbaeda62"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "7253c48ffc80fd3cfc9d"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "ef534a7b38c939435738"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "0fd628c66358ebfc87be"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "80a633498b531d7b6d6d"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "61271d52f0545695da19"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "1e22a4ce033a87ecad18"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "5c6e5f1e47c6ba99042c"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "afc1b042460ed3272bb6"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "af04c74e6638c40c9acb"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "438e54cdafc40a306365"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "72a55ae616a2ce5094fe"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "4c517c64eb4bf4561b8f"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "9f9d58fa82d6c4ec0874",
+            "8c434fe537438860b46f",
+            "0df1b9fbfd09f6018c7c",
+            "24bc8e0ad2fdd03bcb78",
+            "26ac9cf9b064e2e1d9d6"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "embeddings:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": null,
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 124,
+        "candidate_bundles": 1,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 20,
+        "reused_event_ids": 0,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 5,
+        "candidate_clusters": 56,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 36,
+        "verification_statuses": {
+          "standard": 1
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 1,
+        "dedupe_degraded": true
+      }
+    },
+    "tech": {
+      "selected": 170,
+      "published": 0,
+      "quarantined": [
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "fe512d7f24578af44f5a",
+            "d923d5bee682b95137a5"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "fb21598f103b7eb68c59",
+            "dc71cf4506e9ecf63c65",
+            "6313393520797f59e164",
+            "15b9a0566e54e02b6d43"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "faa994a53de4ef698884",
+            "a1e7d1694b05d473c257"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "fa5475958f55f12ed26a",
+            "f8fde9668eae387606c3"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "ee76dbde761514a817fd",
+            "cd6af40cccdabcff6e12",
+            "a9d0275059758867b03f",
+            "4a9e9d328fa3a484577a"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "ec4242b28551a4f75c6e",
+            "b61554c6d43913007b4e",
+            "a1d4347400d27bc06b4e",
+            "961ca14145174a464024",
+            "7e822593b20255da9321",
+            "27b379ff2efebfb8e6c8",
+            "0fc5429cab4f1a7d0239"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "ec322d3f9d5e261d459e",
+            "96a042cc93e6c913ad58",
+            "05dc0eb6aaab0c66ad19",
+            "01431a332abc65585de9"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "e3cffb7c585e23bdae9a",
+            "aeb2811c1406ed9a74df",
+            "2fe8c6345b117b2db80c"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "cd28b27967ff169584e2",
+            "c15d8429ccf8a4aaad56",
+            "939a3b39b52e6a0ed1f0",
+            "7ba8775e88c51b12d932",
+            "718be40819a0a5131953"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "cb8114ed77a55ea9891c",
+            "a332ebe803ff43d7ea9a",
+            "81d729de1a5e12181958",
+            "7a889611f5011715b261",
+            "4b909aad6562b9f4deae",
+            "23e23abbcb7c350d1d76",
+            "082179b04a5a3552f593"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c9186fcb71c14e34f6f0",
+            "8efda70519efd36ca590",
+            "691601b33b49ca57dcfd"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "b8bd899daf6e49891307",
+            "9d8c0e90141c2c80a6b1",
+            "953a9cfee753c1d52837",
+            "7de5347ff6080398d32f",
+            "628354091947c0847c49",
+            "563c32c6ab5defaf4956",
+            "496eb7ed9962c466ec7d",
+            "3281ad06097ecc9cc32a"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "b4dee4012bd3289697d3",
+            "6b30e06ef76e26d52403",
+            "5c1eeaad9308388a8c25"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "939d0617328e32c5b2e2",
+            "89668743c79a9bb35f9a"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "5371dc3d7f8d402ce721",
+            "30b6221d9ba1f0e9f6a5"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "3cf955c4fd0ae2a453ea"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "2d5d8a794396b52516b0"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "7d588aba6c6e0b8051e4"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "316909fdfa808a8614ab"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "25ac736b0797b5778c64"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "embeddings:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "feed_audit:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": null,
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 158,
+        "candidate_bundles": 20,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 20,
+        "reused_event_ids": 0,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 8,
+        "candidate_clusters": 122,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 102,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "standard": 20
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 20,
+        "dedupe_degraded": true
+      }
+    },
+    "ukraine-war": {
+      "selected": 52,
+      "published": 9,
+      "quarantined": [
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "a5c14d87a951087760ee"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "e3abead50c65d25d88b9"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "f1df1c827fa1d5dabf80"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "f966e03d9f31e46f1cc0"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "58fab4a94c4024165705"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "a14447edeca16f46fa62"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "2cf21b989c34daec1c15"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "59c1ecf6f627a1b55113"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "433fc092169e5338bbf5"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "fceb2d0ddd8d9308c6d8",
+            "6675f056962b6985f4b4"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "a1d9c6d75721ddfef85f"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "3e552c9ab3ff39d9ce45"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "26d1212c536df3da04f5"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "0f8c53b55dfe11adb5ec"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "809209f83d2243b0fe61"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "embeddings:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "event_match:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "feed_audit:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": null,
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 2,
+        "candidate_bundles": 2,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 24,
+        "reused_event_ids": 2,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 2,
+        "candidate_clusters": 50,
+        "synthesized_clusters": 24,
+        "skipped_low_rank_clusters": 26,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "single_source": 24
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 15,
+        "dedupe_degraded": true
+      }
+    },
+    "world": {
+      "selected": 236,
+      "published": 0,
+      "quarantined": [
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "eff379c7beedd502187b",
+            "2df7f46fe575e6a0c8c5",
+            "eceb763004a86eec65ff"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "cea2492b55911417f1c9",
+            "cf1e15fd40459089ebb2"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c9892dcd14abea877d90",
+            "576b8ea75a1dd5efc0ed"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "b5c20d48a435eb15687b",
+            "90287235ea07fe439366"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "1204a56be975845a0b3c",
+            "46aba2978332a7eb591c"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "b868e9fd9b3c9ffeef1b",
+            "c4eec23e3630b30a0db2"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "9822197feba5a19ecea3",
+            "0914d48d61b5cbb20e97"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "ea70f5cec07b138e9532"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "df8abee84a2ee29a592a"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "dce1f75f6173494d6974"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "d94122b6a8dc9a86ef15"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c77dc3f8c021a7537cdb"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c5008ef2f087ddb9e926"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c419af4bad4fece829c2"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c27ca9e8f902ed75043b"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c1bee1f34975e564157f"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "ae5d5db0b5b6a8ab3c8f"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "acd5045fa92917606ded"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "aa0c7a485649045371d6"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "99f1d59e7604d39af5f9"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "embeddings:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "partition:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "synthesis:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai",
+          "feed_audit:ClientError:429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your pro"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": null,
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 15,
+        "candidate_bundles": 10,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 20,
+        "reused_event_ids": 0,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 3,
+        "candidate_clusters": 224,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 204,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "standard": 20
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 20,
+        "dedupe_degraded": true
+      }
+    }
+  }
+}
