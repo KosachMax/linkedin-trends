@@ -2,10 +2,10 @@
   "schema_version": 2,
   "digest_id": "ukraine-war",
   "date": "2026-09-01",
-  "generated_at": "2026-09-01T15:25:47.953578Z",
+  "generated_at": "2026-09-01T19:46:10.986763Z",
   "daily_picture": {
     "title": "Картина дня",
-    "body": "В выпуске «Россия — Украина: фронт» отобрано 12 подтвержденных событий. Редакционный фильтр обработал 53 материалов, объединил 4 повторных карточек и исключил 0 неподтвержденных кластеров."
+    "body": "В выпуске «Россия — Украина: фронт» отобрано 12 подтвержденных событий. Редакционный фильтр обработал 47 материалов, объединил 2 повторных карточек и исключил 0 неподтвержденных кластеров."
   },
   "currencies": [],
   "sources": [
@@ -15,8 +15,46 @@
       "state": "available",
       "fetched": 24,
       "accepted": 4,
-      "represented_events": 1,
-      "latency_ms": 1343,
+      "represented_events": 2,
+      "latency_ms": 1191,
+      "error_code": null,
+      "history": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4
+      ]
+    },
+    {
+      "source_id": "guardian-ukraine",
+      "source_name": "The Guardian Ukraine",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 5,
+      "represented_events": 2,
+      "latency_ms": 629,
+      "error_code": null,
+      "history": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        5
+      ]
+    },
+    {
+      "source_id": "kyiv-independent",
+      "source_name": "The Kyiv Independent",
+      "state": "available",
+      "fetched": 15,
+      "accepted": 4,
+      "represented_events": 4,
+      "latency_ms": 780,
       "error_code": null,
       "history": [
         0,
@@ -29,51 +67,13 @@
       ]
     },
     {
-      "source_id": "guardian-ukraine",
-      "source_name": "The Guardian Ukraine",
-      "state": "available",
-      "fetched": 20,
-      "accepted": 2,
-      "represented_events": 2,
-      "latency_ms": 406,
-      "error_code": null,
-      "history": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        2
-      ]
-    },
-    {
-      "source_id": "kyiv-independent",
-      "source_name": "The Kyiv Independent",
-      "state": "available",
-      "fetched": 15,
-      "accepted": 3,
-      "represented_events": 3,
-      "latency_ms": 986,
-      "error_code": null,
-      "history": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        2,
-        3
-      ]
-    },
-    {
       "source_id": "mediazona",
       "source_name": "Медиазона",
       "state": "available",
       "fetched": 30,
       "accepted": 0,
       "represented_events": 0,
-      "latency_ms": 1013,
+      "latency_ms": 791,
       "error_code": null,
       "history": [
         1,
@@ -92,7 +92,7 @@
       "fetched": 30,
       "accepted": 2,
       "represented_events": 3,
-      "latency_ms": 700,
+      "latency_ms": 730,
       "error_code": null,
       "history": [
         4,
@@ -100,7 +100,7 @@
         2,
         2,
         6,
-        4,
+        2,
         2
       ]
     },
@@ -109,9 +109,9 @@
       "source_name": "RFE/RL · Russia Invades Ukraine",
       "state": "available",
       "fetched": 20,
-      "accepted": 0,
-      "represented_events": 0,
-      "latency_ms": 1430,
+      "accepted": 2,
+      "represented_events": 2,
+      "latency_ms": 742,
       "error_code": null,
       "history": [
         0,
@@ -120,7 +120,7 @@
         0,
         0,
         0,
-        0
+        2
       ]
     },
     {
@@ -128,9 +128,9 @@
       "source_name": "ТАСС",
       "state": "available",
       "fetched": 40,
-      "accepted": 4,
+      "accepted": 3,
       "represented_events": 3,
-      "latency_ms": 1978,
+      "latency_ms": 2143,
       "error_code": null,
       "history": [
         3,
@@ -138,8 +138,8 @@
         8,
         1,
         0,
-        2,
-        4
+        4,
+        3
       ]
     },
     {
@@ -147,9 +147,28 @@
       "source_name": "Ukrainska Pravda",
       "state": "available",
       "fetched": 20,
-      "accepted": 5,
+      "accepted": 4,
       "represented_events": 9,
-      "latency_ms": 1402,
+      "latency_ms": 1586,
+      "error_code": null,
+      "history": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        4
+      ]
+    },
+    {
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 5,
+      "represented_events": 6,
+      "latency_ms": 2090,
       "error_code": null,
       "history": [
         0,
@@ -160,28 +179,30 @@
         7,
         5
       ]
-    },
-    {
-      "source_id": "ukrinform",
-      "source_name": "Ukrinform",
-      "state": "available",
-      "fetched": 30,
-      "accepted": 7,
-      "represented_events": 6,
-      "latency_ms": 1875,
-      "error_code": null,
-      "history": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        4,
-        7
-      ]
     }
   ],
   "articles": [
+    {
+      "id": "c3edabc02790d88900f2",
+      "source_id": "france24-ukraine",
+      "source_name": "France 24 Ukraine",
+      "canonical_url": "https://www.france24.com/en/europe/20260901-germany-blames-russia-for-leipzig-airport-drone-attack-orders-russian-consulate-closed",
+      "title": "Germany blames Russia for Leipzig airport drone attack, orders Russian consulate closed",
+      "normalized_title": "germany blames russia for leipzig airport drone attack, orders russian consulate closed",
+      "excerpt": "Germany's government on Tuesday blamed Russia for an attempted attack at Leipzig/Halle Airport on 4 August using an explosive-laden drone, and announced that it would shut down a Russian consulate among other measures against Moscow. French ​President Emmanuel Macron ​said he supported the ​adoption ‌of ⁠new European sanctions ‌against Russia after the attempted drone attack.",
+      "published_at": "2026-09-01T17:00:58Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "international-ukraine-reporting"
+      ],
+      "source_perspective": "international",
+      "source_ownership": "public",
+      "source_disclosure": "Французский международный общественный вещатель.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
     {
       "id": "00a713e80a88b5fe42a3",
       "source_id": "france24-ukraine",
@@ -191,7 +212,7 @@
       "normalized_title": "'massive' russian missile, drone attacks on kyiv",
       "excerpt": "Russian air attacks killed 12 people and injured several more in Kyiv early on Tuesday, authorities said, in the sixth consecutive day of strikes on the Ukrainian capital. Russia, which began its full-scale invasion of its smaller neighbour in 2022, has escalated its air attacks in recent months, as gains made on the ground have slowed.",
       "published_at": "2026-09-01T10:50:03Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "en",
       "topic_hints": [
         "international-ukraine-reporting"
@@ -212,28 +233,7 @@
       "normalized_title": "russia fired over 2,800 drones at ukraine in august amid war tactic change",
       "excerpt": "Over the course of the month of August, Russia launched more than 2,800 jet-propelled drones at Ukraine, a type of drone that is harder to shoot down. That has come with a massive uptick in the number of drones used, considerind those now found on the frontline are quite a new model: Ukrainian authorities say they are pressed into service almost immediately after leaving the factory. FRANCE 24's Oliver Farry looks at those new drones, and how Russia is using them to try and change the course of the war.",
       "published_at": "2026-09-01T09:49:22Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
-      "language": "en",
-      "topic_hints": [
-        "international-ukraine-reporting"
-      ],
-      "source_perspective": "international",
-      "source_ownership": "public",
-      "source_disclosure": "Французский международный общественный вещатель.",
-      "source_trust_tier": "major",
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "3fd3ecb90211b2369f4d",
-      "source_id": "france24-ukraine",
-      "source_name": "France 24 Ukraine",
-      "canonical_url": "https://www.france24.com/en/europe/20260901-live-deadly-russian-air-attack-hits-railway-depot-in-kyiv",
-      "title": "Live: Deadly Russian air attack hits energy and rail infrastructure in Kyiv",
-      "normalized_title": "live: deadly russian air attack hits energy and rail infrastructure in kyiv",
-      "excerpt": "Russian ballistic missile strikes apparently targeting energy and railway infrastructure rained down on Kyiv and surrounding areas in the early hours of Tuesday, Ukrainian authorities said, killing at least 12 people. It's the sixth consecutive day of Russian strikes on Ukraine's capital. Follow our liveblog for all the latest updates.",
-      "published_at": "2026-09-01T06:04:26Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "en",
       "topic_hints": [
         "international-ukraine-reporting"
@@ -254,7 +254,7 @@
       "normalized_title": "russian missile and drone attack on kyiv kills at least eight",
       "excerpt": "A massive Russian missile and drone attack on Kyiv and its surrounding region killed at least eight people and wounded more than a dozen overnight, Ukrainian officials said Tuesday, as children prepared to return to school amid heightened fears of further strikes.",
       "published_at": "2026-09-01T02:26:54Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "en",
       "topic_hints": [
         "international-ukraine-reporting"
@@ -275,7 +275,7 @@
       "normalized_title": "russia kills at least 12 on sixth night of drone attacks on kyiv",
       "excerpt": "Zelenskyy says Moscow is capitalising on shortage of US-made Patriot interceptors to lower morale in capital Europe live – latest updates At least 12 people have been killed in and around Kyiv overnight as Ukraine’s capital endured a sixth consecutive night of Russian drone and missile attacks aimed at shattering infrastructure and lowering the morale of the city. Eight of the dead were reported killed in Kyiv, including seven at a railway depot on the city’s left bank, and four were killed in Boryspil, to the east of the city, in a wave of strikes at about 2.30am after hours of air alerts. <a href=\"https://www.theguardian.com/world/2026/sep/01/russia-kills-sixth-night-drone-attacks-ukraine-k",
       "published_at": "2026-09-01T15:06:27Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "en",
       "topic_hints": [
         "international-ukraine-reporting"
@@ -296,7 +296,7 @@
       "normalized_title": "ukraine war briefing: pressure stays on russian economy until war is over, says bessent",
       "excerpt": "US treasury secretary speaks with Russian counterpart who is controversially attending G20 talks; India’s Modi says war must end. What we know on day 1,651 Continue reading...",
       "published_at": "2026-09-01T01:03:22Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "en",
       "topic_hints": [
         "international-ukraine-reporting"
@@ -304,6 +304,111 @@
       "source_perspective": "international",
       "source_ownership": "commercial",
       "source_disclosure": "Независимое международное издание; новости отделять от мнений и колонок.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "0c2e1afec61c3bd162a1",
+      "source_id": "guardian-ukraine",
+      "source_name": "The Guardian Ukraine",
+      "canonical_url": "https://www.theguardian.com/world/2026/aug/31/ukraine-war-briefing-russia-planning-massive-strikes-on-power-plants-days-after-its-deadliest-attack-of-the-year",
+      "title": "Ukraine war briefing: Russia planning ‘massive strikes’ on power plants days after its deadliest attack of the year",
+      "normalized_title": "ukraine war briefing: russia planning ‘massive strikes’ on power plants days after its deadliest attack of the year",
+      "excerpt": "Russia’s defence ministry preparing attacks on Ukraine’s energy infrastructure as death toll from warehouse strike rises to 38. What we know on day 1,650 Russia’s defence ministry says it is gearing up for large-scale attacks on Ukraine’s energy infrastructure in a tit-for-tat response to strikes by Kyiv. “Russian forces have begun preparations for massive strikes against facilities in Ukraine’s energy sector in response to the ongoing attacks by the Kyiv regime on civilian infrastructure and on Russia’s oil and energy complex,” it said on Telegram on Sunday. Last winter, Moscow repeatedly hit Ukrainian power plants, devastating the country’s energy sector and plunging millions of people into cold and darkness in sub-zero temperatures. In comes as the death toll from a Russian strike on a warehouse west of Kyiv rose to 38 , <st",
+      "published_at": "2026-08-31T02:21:29Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "international-ukraine-reporting"
+      ],
+      "source_perspective": "international",
+      "source_ownership": "commercial",
+      "source_disclosure": "Независимое международное издание; новости отделять от мнений и колонок.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "18489402176c1e13e851",
+      "source_id": "guardian-ukraine",
+      "source_name": "The Guardian Ukraine",
+      "canonical_url": "https://www.theguardian.com/world/2026/aug/30/ukraine-war-briefing-nuclear-plant-lost-power",
+      "title": "Ukraine war briefing: Nuclear plant has lost power and running on generators, UN watchdog says",
+      "normalized_title": "ukraine war briefing: nuclear plant has lost power and running on generators, un watchdog says",
+      "excerpt": "Russian-occupied Zaporizhzhia plant has 10-day diesel supply on site; Kyiv investigates deadly attack on warehouse. What we know on day 1,649 The Zaporizhzhia nuclear power plant in Ukraine has been without off-site power for more than a week and is now relying on emergency diesel generators, the UN’s nuclear watchdog says. The plant, which needs power to keep its six non-operating reactors cool, has only a 10-day diesel supply on site, the International Atomic Energy Agency (IAEA) said on Saturday. “The availability of diesel fuel is of paramount importance whenever a nuclear power plant loses off-site power, ” said agency director general Rafael Grossi. “The current situation once again shows why reliable external power and secure supply routes are indispensable for nuclear safety and security.” The plant had been supplied with diesel on Thursday and Friday from another off-site location, the IAEA added. Zaporizhzhia lost its regu",
+      "published_at": "2026-08-30T01:07:09Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "international-ukraine-reporting"
+      ],
+      "source_perspective": "international",
+      "source_ownership": "commercial",
+      "source_disclosure": "Независимое международное издание; новости отделять от мнений и колонок.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "4d558cd8e093fb9806fa",
+      "source_id": "guardian-ukraine",
+      "source_name": "The Guardian Ukraine",
+      "canonical_url": "https://www.theguardian.com/world/2026/aug/29/ukraine-war-briefing-long-range-strikes-on-russia-tripled",
+      "title": "Ukraine war briefing: Zelenskyy orders military to triple daily long-range strikes on Russia",
+      "normalized_title": "ukraine war briefing: zelenskyy orders military to triple daily long-range strikes on russia",
+      "excerpt": "Kyiv to ramp up attacks; Russian gasoline production drops after drone strikes; Fedorov joins Italy’s defence ministry. What we know on day 1,648 ⁠Volodymyr Zelenskyy said ⁠​he has ⁠ordered his military to increase its ⁠long-range ​drone ‌strikes ‌against Russia to ‌1,000 per day , up from about 300 currently. “There ‌needs to be more: ​there is a concrete goal, ⁠and we will fulfil ​this ​task,” the Ukrainian president ​declared ​on Friday in ‌his ​evening address. Russia’s ⁠gasoline production fell ​to about 70% of domestic consumption levels by the end of August after a series of drone attacks forced major refineries to suspend operations, according to two ⁠industry sources who spoke to Reuters. After a brief respite at the end of July, when some local authorities ​began easing or lifting restrictions on fuel sales, shortages ‌returned to Russian regions in ‌August. Over the past week, drones ‌struck and halted operations at several maj",
+      "published_at": "2026-08-29T01:26:28Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "international-ukraine-reporting"
+      ],
+      "source_perspective": "international",
+      "source_ownership": "commercial",
+      "source_disclosure": "Независимое международное издание; новости отделять от мнений и колонок.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "ccca8d34e8d5e569b0f6",
+      "source_id": "kyiv-independent",
+      "source_name": "The Kyiv Independent",
+      "canonical_url": "https://kyivindependent.com/ukraine-war-latest-russia-kills-at-least-12-in-kyiv-and-suburbs-including-6-rail-workers",
+      "title": "Ukraine war latest: Russian strike kills at least 12 in Kyiv and suburbs, including 6 rail workers",
+      "normalized_title": "ukraine war latest: russian strike kills at least 12 in kyiv and suburbs, including 6 rail workers",
+      "excerpt": "Key developments on Sept. 1: 12 killed in Kyiv and suburbs, including 6 rail workers, as Russian barrage enters 6th day Estonia, Romania report drone incursions amid Russian and Ukrainian aerial attacks Ukraine's PM announces major audit of Defense Ministry needs Ukraine confirms drone strike on Russia’",
+      "published_at": "2026-09-01T17:59:59Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "independent",
+      "source_disclosure": "Независимое украинское англоязычное издание; сообщения военных и властей атрибутировать.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "0f7a473453d27f1b74b0",
+      "source_id": "kyiv-independent",
+      "source_name": "The Kyiv Independent",
+      "canonical_url": "https://kyivindependent.com/germany-officially-blames-russia-for-drone-attack-attempt-at-leipzig-airport",
+      "title": "Germany officially blames Russia for drone attack attempt at Leipzig airport",
+      "normalized_title": "germany officially blames russia for drone attack attempt at leipzig airport",
+      "excerpt": "\"We have clear indications from our intelligence services and partner agencies, as well as from investigations in Germany and in our European partner countries, of Russian involvement,\" German Interior Minister Alexander Dobrindt said.",
+      "published_at": "2026-09-01T15:52:59Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "independent",
+      "source_disclosure": "Независимое украинское англоязычное издание; сообщения военных и властей атрибутировать.",
       "source_trust_tier": "major",
       "entities": [],
       "engagement": null
@@ -317,7 +422,7 @@
       "normalized_title": "donbas, drones, and drapatyi's new team – next ki insights monthly briefing",
       "excerpt": "This autumn will be critical for Ukraine. Front line pressures, Russian aerial bombardment, and rapid turnover at the top of AFU are combining to create a confused and uncertain picture for military analysts. Russian forces appear closer than ever before to seizing the remaining settlements of the Donbas, a final",
       "published_at": "2026-09-01T15:16:42Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "en",
       "topic_hints": [
         "ukrainian-source"
@@ -338,28 +443,7 @@
       "normalized_title": "ukraine confirms drone strike on russia’s ust-luga port",
       "excerpt": "A Ukrainian drone attack damaged the Russian Baltic Sea port of Ust-Luga in Leningrad Oblast early on Sept. 1, regional Governor Alexander Drozdenko said.",
       "published_at": "2026-09-01T02:55:06Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
-      "language": "en",
-      "topic_hints": [
-        "ukrainian-source"
-      ],
-      "source_perspective": "ukrainian",
-      "source_ownership": "independent",
-      "source_disclosure": "Независимое украинское англоязычное издание; сообщения военных и властей атрибутировать.",
-      "source_trust_tier": "major",
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "0a8309ce208aa9e94704",
-      "source_id": "kyiv-independent",
-      "source_name": "The Kyiv Independent",
-      "canonical_url": "https://kyivindependent.com/ukraine-war-latest-kyiv-under-near-constant-air-raid-alerts-for-5th-day-as-russia-steps-up-jet-powered-drone-attacks",
-      "title": "Ukraine war latest: Kyiv under near-constant air raid alerts for 5th day as Russia steps up jet-powered drone attacks",
-      "normalized_title": "ukraine war latest: kyiv under near-constant air raid alerts for 5th day as russia steps up jet-powered drone attacks",
-      "excerpt": "Key developments on Aug. 31: Kyiv endures 5th day of near-constant air raid alerts as Russian jet-powered drones continue to swarm city Exclusive: Musk opposes allowing Ukraine to use Starlink for strikes on Russia, despite recent media reports, sources say Ukrainian forces reportedly target Wildberries warehouse in Yekaterinburg, over 1,",
-      "published_at": "2026-08-31T17:48:11Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "en",
       "topic_hints": [
         "ukrainian-source"
@@ -380,7 +464,7 @@
       "normalized_title": "война. 1651-й день. россия изменила тактику ударов по киеву: атаки вместо ночных стали практически круглосуточными. все чаще используются реактивные дроны, которые сложнее сбивать",
       "excerpt": "«Медуза» с 24 февраля 2022 года в прямом эфире рассказывает о российско-украинской войне. Мы ежедневно публикуем ваши письма, потому что уверены: о войне нужно продолжать говорить. Поделитесь с нами мыслями о войне. Какие чувства вы испытываете? Как война влияет на вашу жизнь и ваше отношение к миру? Если у вас есть история, связанная с войной, — расскажите ее. Форма для обратной связи — в конце этой статьи. Обзор предыдущего дня можно прочитать тут.",
       "published_at": "2026-09-01T12:50:07Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "ru",
       "topic_hints": [
         "russian-independent-source"
@@ -401,7 +485,7 @@
       "normalized_title": "глава минфина сша сказал силуанову, что россия не получит экономических послаблений, пока не закончит войну с украиной",
       "excerpt": "Министр финансов США Скотт Бессент во время встречи с главой Минфина РФ Антоном Силуановым заявил, что никаких «экономических послаблений» в отношении Москвы не будет, пока не закончится российско-украинская война. Об этом рассказали источники Politico и Reuters.",
       "published_at": "2026-09-01T06:30:55Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "ru",
       "topic_hints": [
         "russian-independent-source"
@@ -414,15 +498,57 @@
       "engagement": null
     },
     {
-      "id": "13efa5e553f08b52e607",
+      "id": "a553d0dbaebe822c41d4",
+      "source_id": "rferl-ukraine-war",
+      "source_name": "RFE/RL · Russia Invades Ukraine",
+      "canonical_url": "https://www.rferl.org/a/ukraine-russia-strike-boryspil-war/33844937.html",
+      "title": "Russian Strikes Pound Kyiv Region As Ukrainian Children Head Back To School",
+      "normalized_title": "russian strikes pound kyiv region as ukrainian children head back to school",
+      "excerpt": "Russian air strikes pounded the Kyiv region, killing and injuring local residents as children across Ukraine headed to school for their first day of classes on September 1.",
+      "published_at": "2026-09-01T17:49:08Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "international-ukraine-reporting"
+      ],
+      "source_perspective": "international",
+      "source_ownership": "public",
+      "source_disclosure": "Финансируется Конгрессом США через USAGM; редакционно отделено, но источник финансирования следует учитывать.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "14034f99c36a1365dddb",
+      "source_id": "rferl-ukraine-war",
+      "source_name": "RFE/RL · Russia Invades Ukraine",
+      "canonical_url": "https://www.rferl.org/a/russia-ukraine-refineries-fuel-shortage-kazakhstan/33843970.html",
+      "title": "Ukraine's Refinery Attacks Force Russia To Turn Abroad To Process Its Oil",
+      "normalized_title": "ukraine's refinery attacks force russia to turn abroad to process its oil",
+      "excerpt": "With Ukrainian drone attacks knocking out major Russian refineries, Moscow is looking abroad to fill its fuel shortfall. Russia has struck a deal to use the small private Kondensat refinery in Kazakhstan.",
+      "published_at": "2026-09-01T12:16:57Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "international-ukraine-reporting"
+      ],
+      "source_perspective": "international",
+      "source_ownership": "public",
+      "source_disclosure": "Финансируется Конгрессом США через USAGM; редакционно отделено, но источник финансирования следует учитывать.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "15dbe189452e25b7cc93",
       "source_id": "tass",
       "source_name": "ТАСС",
-      "canonical_url": "https://tass.ru/armiya-i-opk/28066567",
-      "title": "Марочко: военные ВСУ в Славянске и Краматорске остались без еды и снарядов",
-      "normalized_title": "марочко: военные всу в славянске и краматорске остались без еды и снарядов",
-      "excerpt": "Это все пагубно сказывается на морально-психологическом состоянии украинских боевиков, отметил военный эксперт",
-      "published_at": "2026-09-01T15:08:09Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "canonical_url": "https://tass.ru/proisshestviya/28067279",
+      "title": "В Белгородской области при атаках дронов ВСУ пострадали три человека",
+      "normalized_title": "в белгородской области при атаках дронов всу пострадали три человека",
+      "excerpt": "Повреждены остекление социального объекта и три автомобиля",
+      "published_at": "2026-09-01T19:20:10Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "ru",
       "topic_hints": [
         "russian-state-source"
@@ -435,15 +561,15 @@
       "engagement": null
     },
     {
-      "id": "5a9cf079828848290fb1",
+      "id": "402475f643631c29de8c",
       "source_id": "tass",
       "source_name": "ТАСС",
-      "canonical_url": "https://tass.ru/armiya-i-opk/28066555",
-      "title": "Марочко: удары БПЛА с ИИ по гражданским объектам в ЛНР не являются ошибками операторов",
-      "normalized_title": "марочко: удары бпла с ии по гражданским объектам в лнр не являются ошибками операторов",
-      "excerpt": "В последнее время украинские войска усилили число ударов по авто, частным домам и гражданской инфраструктуре по всей территории Луганской Народной Республики, отметил военный эксперт",
-      "published_at": "2026-09-01T15:04:00Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "canonical_url": "https://tass.ru/proisshestviya/28067253",
+      "title": "В Запорожской области при атаке ВСУ повреждена линяя электропередачи",
+      "normalized_title": "в запорожской области при атаке всу повреждена линяя электропередачи",
+      "excerpt": "Также повреждения получил автомобиль",
+      "published_at": "2026-09-01T19:04:16Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "ru",
       "topic_hints": [
         "russian-state-source"
@@ -456,15 +582,15 @@
       "engagement": null
     },
     {
-      "id": "b642d2fe7055e90b7030",
+      "id": "6a27c6fc59c18e71737c",
       "source_id": "tass",
       "source_name": "ТАСС",
-      "canonical_url": "https://tass.ru/armiya-i-opk/28066525",
-      "title": "Марочко рассказал, откуда ВСУ запускают большинство дронов по ЛНР",
-      "normalized_title": "марочко рассказал, откуда всу запускают большинство дронов по лнр",
-      "excerpt": "Военный эксперт отметил, что противник запускает их из Харьковской области и оккупированной части ДНР",
-      "published_at": "2026-09-01T15:02:46Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "canonical_url": "https://tass.ru/proisshestviya/28067239",
+      "title": "ВСУ атаковали пожарных при тушении поля в ЛНР",
+      "normalized_title": "всу атаковали пожарных при тушении поля в лнр",
+      "excerpt": "Никто не пострадал",
+      "published_at": "2026-09-01T18:59:44Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
       "language": "ru",
       "topic_hints": [
         "russian-state-source"
@@ -477,22 +603,190 @@
       "engagement": null
     },
     {
-      "id": "cb062e5f584200362e5c",
-      "source_id": "tass",
-      "source_name": "ТАСС",
-      "canonical_url": "https://tass.ru/armiya-i-opk/28066547",
-      "title": "Марочко: Киев стягивает резервы и националистов в оккупированную часть Донбасса",
-      "normalized_title": "марочко: киев стягивает резервы и националистов в оккупированную часть донбасса",
-      "excerpt": "Эксперт также отметил, что командование ВСУ поставило задачу увеличить число ударов БПЛА по тыловым районам РФ",
-      "published_at": "2026-09-01T14:56:56Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
-      "language": "ru",
+      "id": "8b77ca2c0bf6cfc03f3c",
+      "source_id": "ukrainska-pravda",
+      "source_name": "Ukrainska Pravda",
+      "canonical_url": "https://www.pravda.com.ua/eng/news/2026/09/01/8051409",
+      "title": "Russia attacks Kyiv again with jet-powered UAVs in evening, sparking fires",
+      "normalized_title": "russia attacks kyiv again with jet-powered uavs in evening, sparking fires",
+      "excerpt": "Russian forces attacked Kyiv with jet-powered UAVs on the evening of 1 September, with Ukrainian air defence responding.",
+      "published_at": "2026-09-01T17:45:00Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
       "topic_hints": [
-        "russian-state-source"
+        "ukrainian-source"
       ],
-      "source_perspective": "russian",
+      "source_perspective": "ukrainian",
+      "source_ownership": "independent",
+      "source_disclosure": "Независимое украинское издание; заявления украинских официальных лиц атрибутировать.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "30533c2ea371506c0d1e",
+      "source_id": "ukrainska-pravda",
+      "source_name": "Ukrainska Pravda",
+      "canonical_url": "https://www.pravda.com.ua/eng/news/2026/09/01/8051402",
+      "title": "Germany announces response to Russia following Leipzig drone incident",
+      "normalized_title": "germany announces response to russia following leipzig drone incident",
+      "excerpt": "Germany will close the Russian Consulate General in Bonn and Russian House in Berlin, tighten border controls and pursue new sanctions in response to the Leipzig drone attack.",
+      "published_at": "2026-09-01T17:01:00Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "independent",
+      "source_disclosure": "Независимое украинское издание; заявления украинских официальных лиц атрибутировать.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "a3aa5106a49efa59958e",
+      "source_id": "ukrainska-pravda",
+      "source_name": "Ukrainska Pravda",
+      "canonical_url": "https://www.pravda.com.ua/eng/news/2026/09/01/8051394",
+      "title": "Germany says Russia responsible for hybrid drone attack at Leipzig Airport",
+      "normalized_title": "germany says russia responsible for hybrid drone attack at leipzig airport",
+      "excerpt": "German Interior Minister Alexander Dobrindt says Russia was responsible for a hybrid attack involving a drone carrying explosives near a Ukrainian cargo aircraft at Leipzig/Halle Airport.",
+      "published_at": "2026-09-01T16:16:00Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "independent",
+      "source_disclosure": "Независимое украинское издание; заявления украинских официальных лиц атрибутировать.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "3aef8c0707364c2d8c40",
+      "source_id": "ukrainska-pravda",
+      "source_name": "Ukrainska Pravda",
+      "canonical_url": "https://www.pravda.com.ua/eng/news/2026/09/01/8051377",
+      "title": "Russian forces damage equipment at Odesa Combined Heat and Power Plant",
+      "normalized_title": "russian forces damage equipment at odesa combined heat and power plant",
+      "excerpt": "Russian strikes on the Odesa Combined Heat and Power Plant (CHP), which is part of the Naftogaz Group, have damaged some of its main and auxiliary equipment.",
+      "published_at": "2026-09-01T14:49:00Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "independent",
+      "source_disclosure": "Независимое украинское издание; заявления украинских официальных лиц атрибутировать.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "339ec34ee2da7fce897e",
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159916-consequences-of-russian-drone-attack-recorded-in-four-kyiv-districts.html",
+      "title": "Consequences of Russian drone attack recorded in four Kyiv districts",
+      "normalized_title": "consequences of russian drone attack recorded in four kyiv districts",
+      "excerpt": "The aftermath of a Russian drone attack has been recorded in four districts of Kyiv, including falling debris and fires.",
+      "published_at": "2026-09-01T18:40:00Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-state-source"
+      ],
+      "source_perspective": "ukrainian",
       "source_ownership": "state",
-      "source_disclosure": "Государственное информационное агентство России; сведения о войне считать заявлением российской стороны до независимого подтверждения.",
+      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
+      "source_trust_tier": "primary",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "bb940ba3359b98e14dda",
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159823-russian-military-attacks-kushuhum-in-zaporizhzhia-region-fatalities-reported.html",
+      "title": "Russian military attacks Kushuhum in Zaporizhzhia region, fatalities reported",
+      "normalized_title": "russian military attacks kushuhum in zaporizhzhia region, fatalities reported",
+      "excerpt": "The Russian army attacked a civilian vehicle in Kushuhum, Zaporizhzhia region. Two people were killed and one was wounded as a result of the strike.",
+      "published_at": "2026-09-01T14:30:00Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-state-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "state",
+      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
+      "source_trust_tier": "primary",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "011fd9ba95bc4555e0f4",
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159791-russian-drone-attacks-taxi-in-kherson-injuring-two-children.html",
+      "title": "Russian drone attacks taxi in Kherson, injuring two children",
+      "normalized_title": "russian drone attacks taxi in kherson, injuring two children",
+      "excerpt": "In Kherson, two children and three adults were injured as a result of a Russian drone attack on a taxi.",
+      "published_at": "2026-09-01T13:59:00Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-state-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "state",
+      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
+      "source_trust_tier": "primary",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "125eba413f5fdca0cab0",
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159744-russian-forces-strike-nova-poshta-terminal-in-odesa.html",
+      "title": "Russian forces strike Nova Poshta terminal in Odesa",
+      "normalized_title": "russian forces strike nova poshta terminal in odesa",
+      "excerpt": "Russian forces have again attacked a Nova Poshta terminal in Odesa that had previously been damaged in enemy strikes.",
+      "published_at": "2026-09-01T11:32:00Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-state-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "state",
+      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
+      "source_trust_tier": "primary",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "928894a62389965ed743",
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159716-russian-forces-attack-enterprise-in-poltava-community-three-injured.html",
+      "title": "Russian forces attack enterprise in Poltava community, three injured",
+      "normalized_title": "russian forces attack enterprise in poltava community, three injured",
+      "excerpt": "Russian forces have attacked an enterprise in the Poltava community, injuring three people.",
+      "published_at": "2026-09-01T10:31:00Z",
+      "collected_at": "2026-09-01T19:46:11.011259Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-state-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "state",
+      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
       "source_trust_tier": "primary",
       "entities": [],
       "engagement": null
@@ -561,6 +855,27 @@
       "engagement": null
     },
     {
+      "id": "c06417fa9d6a761013e5",
+      "source_id": "tass",
+      "source_name": "ТАСС",
+      "canonical_url": "https://tass.ru/armiya-i-opk/28065337",
+      "title": "Минобороны показало кадры освобождения Червоной Криницы",
+      "normalized_title": "минобороны показало кадры освобождения червоной криницы",
+      "excerpt": "На видео, в частности, показаны удары российскими FPV-дронами по блиндажам ВСУ",
+      "published_at": "2026-09-01T10:11:48Z",
+      "collected_at": "2026-09-01T10:20:19.714399Z",
+      "language": "ru",
+      "topic_hints": [
+        "russian-state-source"
+      ],
+      "source_perspective": "russian",
+      "source_ownership": "state",
+      "source_disclosure": "Государственное информационное агентство России; сведения о войне считать заявлением российской стороны до независимого подтверждения.",
+      "source_trust_tier": "primary",
+      "entities": [],
+      "engagement": null
+    },
+    {
       "id": "219fcc8e26da00740a7d",
       "source_id": "ukrainska-pravda",
       "source_name": "Ukrainska Pravda",
@@ -582,106 +897,22 @@
       "engagement": null
     },
     {
-      "id": "b2554121777d9aa9f45a",
-      "source_id": "ukrainska-pravda",
-      "source_name": "Ukrainska Pravda",
-      "canonical_url": "https://www.pravda.com.ua/eng/news/2026/09/01/8051312",
-      "title": "Russia causes new power outages in five Ukrainian oblasts",
-      "normalized_title": "russia causes new power outages in five ukrainian oblasts",
-      "excerpt": "New power outages were recorded in Kyiv, Donetsk, Sumy, Odesa and Kharkiv oblasts on the morning of 1 September as a result of Russian missile and drone strikes.",
-      "published_at": "2026-09-01T09:16:00Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
-      "language": "en",
+      "id": "c28bb6ce85f8d284ee1b",
+      "source_id": "tass",
+      "source_name": "ТАСС",
+      "canonical_url": "https://tass.ru/mezhdunarodnaya-panorama/28065311",
+      "title": "Гутерриш заявил, что пришло время для полного прекращения огня на Украине",
+      "normalized_title": "гутерриш заявил, что пришло время для полного прекращения огня на украине",
+      "excerpt": null,
+      "published_at": "2026-09-01T10:04:55Z",
+      "collected_at": "2026-09-01T10:20:19.714399Z",
+      "language": "ru",
       "topic_hints": [
-        "ukrainian-source"
+        "russian-state-source"
       ],
-      "source_perspective": "ukrainian",
-      "source_ownership": "independent",
-      "source_disclosure": "Независимое украинское издание; заявления украинских официальных лиц атрибутировать.",
-      "source_trust_tier": "major",
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "bb940ba3359b98e14dda",
-      "source_id": "ukrinform",
-      "source_name": "Ukrinform",
-      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159823-russian-military-attacks-kushuhum-in-zaporizhzhia-region-fatalities-reported.html",
-      "title": "Russian military attacks Kushuhum in Zaporizhzhia region, fatalities reported",
-      "normalized_title": "russian military attacks kushuhum in zaporizhzhia region, fatalities reported",
-      "excerpt": "The Russian army attacked a civilian vehicle in Kushuhum, Zaporizhzhia region. Two people were killed and one was wounded as a result of the strike.",
-      "published_at": "2026-09-01T14:30:00Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
-      "language": "en",
-      "topic_hints": [
-        "ukrainian-state-source"
-      ],
-      "source_perspective": "ukrainian",
+      "source_perspective": "russian",
       "source_ownership": "state",
-      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
-      "source_trust_tier": "primary",
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "011fd9ba95bc4555e0f4",
-      "source_id": "ukrinform",
-      "source_name": "Ukrinform",
-      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159791-russian-drone-attacks-taxi-in-kherson-injuring-two-children.html",
-      "title": "Russian drone attacks taxi in Kherson, injuring two children",
-      "normalized_title": "russian drone attacks taxi in kherson, injuring two children",
-      "excerpt": "In Kherson, two children and three adults were injured as a result of a Russian drone attack on a taxi.",
-      "published_at": "2026-09-01T13:59:00Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
-      "language": "en",
-      "topic_hints": [
-        "ukrainian-state-source"
-      ],
-      "source_perspective": "ukrainian",
-      "source_ownership": "state",
-      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
-      "source_trust_tier": "primary",
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "125eba413f5fdca0cab0",
-      "source_id": "ukrinform",
-      "source_name": "Ukrinform",
-      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159744-russian-forces-strike-nova-poshta-terminal-in-odesa.html",
-      "title": "Russian forces strike Nova Poshta terminal in Odesa",
-      "normalized_title": "russian forces strike nova poshta terminal in odesa",
-      "excerpt": "Russian forces have again attacked a Nova Poshta terminal in Odesa that had previously been damaged in enemy strikes.",
-      "published_at": "2026-09-01T11:32:00Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
-      "language": "en",
-      "topic_hints": [
-        "ukrainian-state-source"
-      ],
-      "source_perspective": "ukrainian",
-      "source_ownership": "state",
-      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
-      "source_trust_tier": "primary",
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "928894a62389965ed743",
-      "source_id": "ukrinform",
-      "source_name": "Ukrinform",
-      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159716-russian-forces-attack-enterprise-in-poltava-community-three-injured.html",
-      "title": "Russian forces attack enterprise in Poltava community, three injured",
-      "normalized_title": "russian forces attack enterprise in poltava community, three injured",
-      "excerpt": "Russian forces have attacked an enterprise in the Poltava community, injuring three people.",
-      "published_at": "2026-09-01T10:31:00Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
-      "language": "en",
-      "topic_hints": [
-        "ukrainian-state-source"
-      ],
-      "source_perspective": "ukrainian",
-      "source_ownership": "state",
-      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
+      "source_disclosure": "Государственное информационное агентство России; сведения о войне считать заявлением российской стороны до независимого подтверждения.",
       "source_trust_tier": "primary",
       "entities": [],
       "engagement": null
@@ -708,86 +939,23 @@
       "engagement": null
     },
     {
-      "id": "81c28d8c394012795bd1",
-      "source_id": "ukrinform",
-      "source_name": "Ukrinform",
-      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159626-five-injured-in-russian-strikes-in-kharkiv-region-over-past-day.html",
-      "title": "Five injured in Russian strikes in Kharkiv region over past day",
-      "normalized_title": "five injured in russian strikes in kharkiv region over past day",
-      "excerpt": "Over the past day, Russian forces attacked Kharkiv and 15 other settlements in the Kharkiv region, injuring three people in the village of Zolochiv in the Bohodukhiv district, including two children.",
-      "published_at": "2026-09-01T07:00:00Z",
+      "id": "b2554121777d9aa9f45a",
+      "source_id": "ukrainska-pravda",
+      "source_name": "Ukrainska Pravda",
+      "canonical_url": "https://www.pravda.com.ua/eng/news/2026/09/01/8051312",
+      "title": "Russia causes new power outages in five Ukrainian oblasts",
+      "normalized_title": "russia causes new power outages in five ukrainian oblasts",
+      "excerpt": "New power outages were recorded in Kyiv, Donetsk, Sumy, Odesa and Kharkiv oblasts on the morning of 1 September as a result of Russian missile and drone strikes.",
+      "published_at": "2026-09-01T09:16:00Z",
       "collected_at": "2026-09-01T15:25:47.978886Z",
       "language": "en",
       "topic_hints": [
-        "ukrainian-state-source"
+        "ukrainian-source"
       ],
       "source_perspective": "ukrainian",
-      "source_ownership": "state",
-      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
-      "source_trust_tier": "primary",
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "79d829eb557b24a8e406",
-      "source_id": "ukrinform",
-      "source_name": "Ukrinform",
-      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159617-air-defenses-neutralize-10-missiles-and-187-drones-used-by-russia-to-attack-ukraine-overnight.html",
-      "title": "Air defenses neutralize 10 missiles and 187 drones used by Russia to attack Ukraine overnight",
-      "normalized_title": "air defenses neutralize 10 missiles and 187 drones used by russia to attack ukraine overnight",
-      "excerpt": "Ukraine’s air defense forces neutralized five ballistic missiles, five Kalibr cruise missiles, two S8000 Banderyl missiles and 187 drones used by Russian forces to attack Ukraine since the evening of August 31.",
-      "published_at": "2026-09-01T06:25:00Z",
-      "collected_at": "2026-09-01T15:25:47.978886Z",
-      "language": "en",
-      "topic_hints": [
-        "ukrainian-state-source"
-      ],
-      "source_perspective": "ukrainian",
-      "source_ownership": "state",
-      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
-      "source_trust_tier": "primary",
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "c06417fa9d6a761013e5",
-      "source_id": "tass",
-      "source_name": "ТАСС",
-      "canonical_url": "https://tass.ru/armiya-i-opk/28065337",
-      "title": "Минобороны показало кадры освобождения Червоной Криницы",
-      "normalized_title": "минобороны показало кадры освобождения червоной криницы",
-      "excerpt": "На видео, в частности, показаны удары российскими FPV-дронами по блиндажам ВСУ",
-      "published_at": "2026-09-01T10:11:48Z",
-      "collected_at": "2026-09-01T10:20:19.714399Z",
-      "language": "ru",
-      "topic_hints": [
-        "russian-state-source"
-      ],
-      "source_perspective": "russian",
-      "source_ownership": "state",
-      "source_disclosure": "Государственное информационное агентство России; сведения о войне считать заявлением российской стороны до независимого подтверждения.",
-      "source_trust_tier": "primary",
-      "entities": [],
-      "engagement": null
-    },
-    {
-      "id": "c28bb6ce85f8d284ee1b",
-      "source_id": "tass",
-      "source_name": "ТАСС",
-      "canonical_url": "https://tass.ru/mezhdunarodnaya-panorama/28065311",
-      "title": "Гутерриш заявил, что пришло время для полного прекращения огня на Украине",
-      "normalized_title": "гутерриш заявил, что пришло время для полного прекращения огня на украине",
-      "excerpt": null,
-      "published_at": "2026-09-01T10:04:55Z",
-      "collected_at": "2026-09-01T10:20:19.714399Z",
-      "language": "ru",
-      "topic_hints": [
-        "russian-state-source"
-      ],
-      "source_perspective": "russian",
-      "source_ownership": "state",
-      "source_disclosure": "Государственное информационное агентство России; сведения о войне считать заявлением российской стороны до независимого подтверждения.",
-      "source_trust_tier": "primary",
+      "source_ownership": "independent",
+      "source_disclosure": "Независимое украинское издание; заявления украинских официальных лиц атрибутировать.",
+      "source_trust_tier": "major",
       "entities": [],
       "engagement": null
     },
@@ -855,22 +1023,43 @@
       "engagement": null
     },
     {
-      "id": "145e700c06c68281a219",
-      "source_id": "ukrainska-pravda",
-      "source_name": "Ukrainska Pravda",
-      "canonical_url": "https://www.pravda.com.ua/eng/news/2026/09/01/8051273",
-      "title": "Russia hits firefighters responding to emergency in Zaporizhzhia, injuring four first responders – photos",
-      "normalized_title": "russia hits firefighters responding to emergency in zaporizhzhia, injuring four first responders – photos",
-      "excerpt": "Russian forces attacked a fire and rescue vehicle on the outskirts of Zaporizhzhia, injuring four first responders.",
-      "published_at": "2026-09-01T06:22:00Z",
-      "collected_at": "2026-09-01T10:20:19.714399Z",
+      "id": "79d829eb557b24a8e406",
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "canonical_url": "https://www.ukrinform.net/rubric-ato/4159617-air-defenses-neutralize-10-missiles-and-187-drones-used-by-russia-to-attack-ukraine-overnight.html",
+      "title": "Air defenses neutralize 10 missiles and 187 drones used by Russia to attack Ukraine overnight",
+      "normalized_title": "air defenses neutralize 10 missiles and 187 drones used by russia to attack ukraine overnight",
+      "excerpt": "Ukraine’s air defense forces neutralized five ballistic missiles, five Kalibr cruise missiles, two S8000 Banderyl missiles and 187 drones used by Russian forces to attack Ukraine since the evening of August 31.",
+      "published_at": "2026-09-01T06:25:00Z",
+      "collected_at": "2026-09-01T15:25:47.978886Z",
       "language": "en",
       "topic_hints": [
-        "ukrainian-source"
+        "ukrainian-state-source"
       ],
       "source_perspective": "ukrainian",
-      "source_ownership": "independent",
-      "source_disclosure": "Независимое украинское издание; заявления украинских официальных лиц атрибутировать.",
+      "source_ownership": "state",
+      "source_disclosure": "Государственное информационное агентство Украины; сведения о боевых действиях считать заявлением украинской стороны до независимого подтверждения.",
+      "source_trust_tier": "primary",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "3fd3ecb90211b2369f4d",
+      "source_id": "france24-ukraine",
+      "source_name": "France 24 Ukraine",
+      "canonical_url": "https://www.france24.com/en/europe/20260901-live-deadly-russian-air-attack-hits-railway-depot-in-kyiv",
+      "title": "Live: Deadly Russian air attack hits energy and rail infrastructure in Kyiv",
+      "normalized_title": "live: deadly russian air attack hits energy and rail infrastructure in kyiv",
+      "excerpt": "Russian ballistic missile strikes apparently targeting energy and railway infrastructure rained down on Kyiv and surrounding areas in the early hours of Tuesday, Ukrainian authorities said, killing at least 12 people. It's the sixth consecutive day of Russian strikes on Ukraine's capital. Follow our liveblog for all the latest updates.",
+      "published_at": "2026-09-01T06:04:26Z",
+      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "language": "en",
+      "topic_hints": [
+        "international-ukraine-reporting"
+      ],
+      "source_perspective": "international",
+      "source_ownership": "public",
+      "source_disclosure": "Французский международный общественный вещатель.",
       "source_trust_tier": "major",
       "entities": [],
       "engagement": null
@@ -913,6 +1102,27 @@
       "source_perspective": "ukrainian",
       "source_ownership": "independent",
       "source_disclosure": "Независимое украинское издание; заявления украинских официальных лиц атрибутировать.",
+      "source_trust_tier": "major",
+      "entities": [],
+      "engagement": null
+    },
+    {
+      "id": "0a8309ce208aa9e94704",
+      "source_id": "kyiv-independent",
+      "source_name": "The Kyiv Independent",
+      "canonical_url": "https://kyivindependent.com/ukraine-war-latest-kyiv-under-near-constant-air-raid-alerts-for-5th-day-as-russia-steps-up-jet-powered-drone-attacks",
+      "title": "Ukraine war latest: Kyiv under near-constant air raid alerts for 5th day as Russia steps up jet-powered drone attacks",
+      "normalized_title": "ukraine war latest: kyiv under near-constant air raid alerts for 5th day as russia steps up jet-powered drone attacks",
+      "excerpt": "Key developments on Aug. 31: Kyiv endures 5th day of near-constant air raid alerts as Russian jet-powered drones continue to swarm city Exclusive: Musk opposes allowing Ukraine to use Starlink for strikes on Russia, despite recent media reports, sources say Ukrainian forces reportedly target Wildberries warehouse in Yekaterinburg, over 1,",
+      "published_at": "2026-08-31T17:48:11Z",
+      "collected_at": "2026-09-01T15:25:47.978886Z",
+      "language": "en",
+      "topic_hints": [
+        "ukrainian-source"
+      ],
+      "source_perspective": "ukrainian",
+      "source_ownership": "independent",
+      "source_disclosure": "Независимое украинское англоязычное издание; сообщения военных и властей атрибутировать.",
       "source_trust_tier": "major",
       "entities": [],
       "engagement": null
@@ -963,13 +1173,13 @@
   "events": [
     {
       "id": "ukraine-war-0f40a189ae47b617",
-      "slug": "россия-нанесла-массированные-ракетные-удары-по-киеву-погибли-12-человек",
-      "title": "Россия нанесла массированные ракетные удары по Киеву, погибли 12 человек",
-      "brief": "В ночь на вторник, 1 сентября 2026 года, российские войска нанесли массированные ракетные и дроновые удары по Киеву и Киевской области. По данным украинских властей, в результате атаки погибли по меньшей мере 12 человек, есть раненые. Удары, предположительно, были нацелены на энергетическую и железнодорожную инфраструктуру. Это шестой день подряд, когда украинская столица подвергается российским атакам. Воздушные тревоги в Киеве продолжаются пятый день.",
-      "context": "Российская Федерация продолжает наращивать интенсивность воздушных атак на украинскую столицу. Ракетные удары, предположительно с использованием баллистических ракет, обрушились на Киев и прилегающие районы в ранние часы вторника. По сообщениям украинских властей, атака привела к гибели как минимум 12 человек. Это уже шестой день подряд, когда Киев подвергается российским ударам. Накануне, 31 августа, в Киеве пятый день подряд звучали сигналы воздушной тревоги из-за продолжающихся атак российских дронов, запущенных с самолетов. Россия начала полномасштабное вторжение в Украину в 2022 году, и в последние месяцы активизировала воздушные атаки, в то время как наземные успехи замедлились.",
-      "why_it_matters": "Массированные ракетные и дроновые атаки на Киев, которые продолжаются уже шестой день подряд, свидетельствуют об эскалации конфликта и нацеленности России на разрушение критически важной инфраструктуры Украины. Гибель мирных жителей и повреждение энергетических и транспортных объектов имеют серьезные гуманитарные и экономические последствия, а также влияют на способность Украины поддерживать оборону и жизнедеятельность населения. Продолжающиеся атаки подчеркивают уязвимость украинской столицы и необходимость усиления систем противовоздушной обороны.",
+      "slug": "россия-увеличила-использование-реактивных-дронов-в-августе-меняя-тактику-ударов-",
+      "title": "Россия увеличила использование реактивных дронов в августе, меняя тактику ударов по Украине",
+      "brief": "В августе Россия выпустила более 2800 реактивных дронов по Украине, что представляет собой значительное увеличение использования этого типа беспилотников. Реактивные дроны сложнее перехватывать, и, по сообщениям украинских властей, они поступают на вооружение почти сразу после производства. Это изменение тактики ударов, которые стали практически круглосуточными, направлено на изменение хода войны. Россия активно применяет новые модели дронов, что усложняет их противодействие.",
+      "context": "В течение августа Россия осуществила более 2800 атак с использованием реактивных дронов против Украины. Этот тип беспилотников, отличающийся повышенной сложностью перехвата, стал ключевым элементом новой тактики российских войск. Украинские власти отмечают, что новые модели дронов вводятся в эксплуатацию практически сразу после схода с конвейера, что свидетельствует о стремлении России оперативно наращивать свои ударные возможности. Изменения в тактике включают переход от преимущественно ночных атак к практически круглосуточным, что создает дополнительное давление на украинскую противовоздушную оборону. По мнению аналитиков, Россия стремится использовать эти новые дроны для достижения перелома в войне.",
+      "why_it_matters": "Увеличение использования Россией реактивных дронов и изменение тактики атак представляют собой серьезный вызов для украинской противовоздушной обороны. Сложность перехвата этих современных беспилотников может привести к увеличению разрушений и жертв среди гражданского населения, а также к истощению ресурсов ПВО. Эта новая стратегия может оказать существенное влияние на ход конфликта, потенциально позволяя России достичь своих военных целей за счет более интенсивного и технологически продвинутого применения ударных средств. Эффективность украинской обороны в противодействии этим угрозам будет иметь решающее значение для дальнейшего развития событий.",
       "importance": 8,
-      "status": "updated",
+      "status": "new",
       "verification_status": "independent_confirmation",
       "category": "Военный конфликт",
       "article_ids": [
@@ -984,7 +1194,10 @@
         "79d829eb557b24a8e406",
         "b2554121777d9aa9f45a",
         "571771688600d85e56e7",
-        "55f465ba2f29303ec447"
+        "55f465ba2f29303ec447",
+        "ccca8d34e8d5e569b0f6",
+        "a553d0dbaebe822c41d4",
+        "8b77ca2c0bf6cfc03f3c"
       ],
       "facts": [
         {
@@ -1193,6 +1406,62 @@
           "article_ids": [
             "b33e416ca809cd8cbcea"
           ]
+        },
+        {
+          "text": "В ночь на 1 сентября российские войска нанесли удары по Киеву и Киевской области, в результате которых погибли по меньшей мере 12 человек.",
+          "article_ids": [
+            "ccca8d34e8d5e569b0f6",
+            "a553d0dbaebe822c41d4",
+            "09b90f8dbaa3a961b2eb",
+            "00a713e80a88b5fe42a3",
+            "c8ae7a230d5aeb692f24"
+          ]
+        },
+        {
+          "text": "Среди погибших в Киеве — шесть железнодорожных рабочих, погибших на железнодорожном узле на левом берегу города.",
+          "article_ids": [
+            "ccca8d34e8d5e569b0f6",
+            "09b90f8dbaa3a961b2eb"
+          ]
+        },
+        {
+          "text": "Четыре человека погибли в Борисполе в результате российских ударов.",
+          "article_ids": [
+            "09b90f8dbaa3a961b2eb"
+          ]
+        },
+        {
+          "text": "Российские силы атаковали Киев реактивными БПЛА вечером 1 сентября, украинская ПВО отвечала на нападение.",
+          "article_ids": [
+            "8b77ca2c0bf6cfc03f3c"
+          ]
+        },
+        {
+          "text": "Удары произошли на шестой день подряд российских воздушных атак на украинскую столицу.",
+          "article_ids": [
+            "ccca8d34e8d5e569b0f6",
+            "00a713e80a88b5fe42a3",
+            "09b90f8dbaa3a961b2eb"
+          ]
+        },
+        {
+          "text": "Президент Украины Владимир Зеленский заявил, что Москва использует нехватку американских перехватчиков Patriot для снижения морального духа в столице.",
+          "article_ids": [
+            "09b90f8dbaa3a961b2eb"
+          ]
+        },
+        {
+          "text": "Реактивные дроны сложнее сбивать, чем другие типы беспилотников.",
+          "article_ids": [
+            "88b0dd9536d82bbea804",
+            "fcd6fcc7e5e9d76136c6"
+          ]
+        },
+        {
+          "text": "Украинские власти сообщают, что новые модели дронов поступают на вооружение почти сразу после производства.",
+          "article_ids": [
+            "fcd6fcc7e5e9d76136c6"
+          ]
         }
       ],
       "updates": [
@@ -1235,29 +1504,110 @@
           "article_ids": [
             "09b90f8dbaa3a961b2eb"
           ]
+        },
+        {
+          "at": "2026-09-01T19:46:10.986763Z",
+          "summary": "В ночь на 1 сентября российские войска нанесли удары по Киеву и Киевской области, в результате которых погибли по меньшей мере 12 человек. Среди погибших в Киеве — шесть железнодорожных рабочих, погибших на железнодорожном узле на левом берегу города.",
+          "article_ids": [
+            "ccca8d34e8d5e569b0f6",
+            "a553d0dbaebe822c41d4",
+            "8b77ca2c0bf6cfc03f3c",
+            "09b90f8dbaa3a961b2eb",
+            "00a713e80a88b5fe42a3",
+            "c8ae7a230d5aeb692f24"
+          ]
         }
       ],
       "identity": {
-        "event_type": "missile_attack",
+        "event_type": "drone_attacks",
         "primary_entities": [
           "Russia",
           "Ukraine"
         ],
         "geographies": [
+          "Ukraine",
           "Kyiv"
         ],
-        "occurred_at": "2026-09-01T06:04:26Z"
+        "occurred_at": null
       },
       "first_seen_at": "2026-08-31T17:48:11Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
+      "updated_at": "2026-09-01T19:46:10.986763Z"
     },
     {
-      "id": "ukraine-war-1a859952b18f60fc",
+      "id": "ukraine-war-503caa897019005c",
+      "slug": "германия-обвинила-россию-в-атаке-дрона-в-лейпциге-и-закрывает-российское-консуль",
+      "title": "Германия обвинила Россию в атаке дрона в Лейпциге и закрывает российское консульство",
+      "brief": "Германия возложила на Россию ответственность за попытку атаки с использованием дрона со взрывчаткой в аэропорту Лейпциг/Галле 4 августа. В ответ на инцидент, правительство Германии приняло решение закрыть Генеральное консульство России в Бонне и Российский дом в Берлине, а также ужесточить пограничный контроль и ввести новые санкции против Москвы. Президент Франции Эммануэль Макрон поддержал введение новых европейских санкций против России.",
+      "context": "4 августа в аэропорту Лейпциг/Галле произошла попытка атаки с использованием дрона, начиненного взрывчаткой, направленного на украинский грузовой самолет. Немецкие власти провели расследование, в ходе которого собрали информацию от разведывательных служб Германии и стран-партнеров. По итогам расследования, министр внутренних дел Германии Александр Добриндт заявил, что имеются \"четкие указания\" на причастность России к этому \"гибридному нападению\". В качестве ответных мер Германия решила закрыть Генеральное консульство России в Бонне и Российский дом в Берлине, усилить пограничный контроль и ввести новые санкции. Президент Франции Эммануэль Макрон выразил поддержку введению дополнительных европейских санкций против России в связи с этим инцидентом.",
+      "why_it_matters": "Инцидент с дроном в аэропорту Лейпцига и последующие действия Германии, включая закрытие российских дипломатических представительств и введение санкций, свидетельствуют о серьезной эскалации напряженности между Германией и Россией. Это событие подчеркивает растущую угрозу гибридных атак и использование дронов в военных и диверсионных целях. Реакция Германии и поддержка со стороны Франции указывают на консолидированную позицию европейских стран в противодействии действиям, которые они считают враждебными, и могут привести к дальнейшему ухудшению отношений и новым ограничительным мерам на международном уровне.",
+      "importance": 7,
+      "status": "new",
+      "verification_status": "independent_confirmation",
+      "category": "Геополитика",
+      "article_ids": [
+        "30533c2ea371506c0d1e",
+        "c3edabc02790d88900f2",
+        "a3aa5106a49efa59958e",
+        "0f7a473453d27f1b74b0"
+      ],
+      "facts": [
+        {
+          "text": "Германия возложила на Россию ответственность за попытку атаки с использованием дрона со взрывчаткой в аэропорту Лейпциг/Галле 4 августа.",
+          "article_ids": [
+            "c3edabc02790d88900f2",
+            "a3aa5106a49efa59958e",
+            "0f7a473453d27f1b74b0"
+          ]
+        },
+        {
+          "text": "Германия закроет Генеральное консульство России в Бонне и Российский дом в Берлине.",
+          "article_ids": [
+            "30533c2ea371506c0d1e"
+          ]
+        },
+        {
+          "text": "Германия ужесточит пограничный контроль и введет новые санкции против России.",
+          "article_ids": [
+            "30533c2ea371506c0d1e"
+          ]
+        },
+        {
+          "text": "Президент Франции Эммануэль Макрон заявил о поддержке введения новых европейских санкций против России.",
+          "article_ids": [
+            "c3edabc02790d88900f2"
+          ]
+        },
+        {
+          "text": "Министр внутренних дел Германии Александр Добриндт заявил, что имеются \"четкие указания\" на причастность России к атаке.",
+          "article_ids": [
+            "0f7a473453d27f1b74b0"
+          ]
+        }
+      ],
+      "updates": [],
+      "identity": {
+        "event_type": "drone_attack_response",
+        "primary_entities": [
+          "Germany",
+          "Russia"
+        ],
+        "geographies": [
+          "Leipzig",
+          "Bonn",
+          "Berlin"
+        ],
+        "occurred_at": "2026-09-01T17:01:00Z"
+      },
+      "first_seen_at": "2026-09-01T15:52:59Z",
+      "updated_at": "2026-09-01T19:46:10.986763Z"
+    },
+    {
+      "id": "ukraine-war-5f36e8864c4b706d",
       "slug": "сша-не-снимут-санкции-с-россии-до-окончания-войны-в-украине-заявил-минфин",
       "title": "США не снимут санкции с России до окончания войны в Украине, заявил Минфин",
-      "brief": "Министр финансов США Джанет Йеллен (предполагается, что речь идет о ней, так как Скотт Бессент является заместителем министра финансов США по международным делам, а не главой ведомства) заявила главе Минфина РФ Антону Силуанову, что Россия не получит никаких экономических послаблений до тех пор, пока не завершится война в Украине. Об этом стало известно из источников изданий Politico и Reuters. Заявление было сделано на фоне участия Силуанова в саммите G20, которое вызвало неоднозначную реакцию. Премьер-министр Индии Нарендра Моди также призвал к немедленному прекращению боевых действий.",
-      "context": "В ходе саммита G20 министр финансов США Джанет Йеллен провела встречу с российским коллегой Антоном Силуановым. На этой встрече Йеллен четко обозначила позицию Соединенных Штатов: никаких смягчений экономических санкций, введенных против России, не будет до тех пор, пока не закончится военный конфликт на территории Украины. Эта информация была передана изданиям Politico и Reuters через источники, близкие к переговорам. Участие российского министра в саммите вызвало определенные споры, однако оно состоялось. На полях саммита также выступил премьер-министр Индии Нарендра Моди, который подчеркнул необходимость скорейшего завершения войны.",
-      "why_it_matters": "Заявление главы Минфина США подчеркивает, что экономическое давление на Россию будет сохраняться до полного прекращения боевых действий в Украине. Это означает, что российская экономика продолжит испытывать ограничения, влияющие на ее развитие и стабильность. Для Украины это означает продолжение международной поддержки и сохранение фокуса на восстановлении территориальной целостности. Для мирового сообщества это сигнал о том, что урегулирование конфликта остается приоритетом, а экономические рычаги будут использоваться для достижения этой цели.",
+      "brief": "Министр финансов США Скотт Бессент во время встречи с российским коллегой Антоном Силуановым заявил, что Соединенные Штаты не предоставят никаких экономических послаблений Москве до тех пор, пока Россия не прекратит военные действия на территории Украины. Об этом стало известно из источников, близких к изданию Politico и агентству Reuters. Заявление подчеркивает позицию США относительно условий снятия экономических ограничений, введенных против России.",
+      "context": "Встреча министров финансов США и России состоялась на фоне продолжающегося вооруженного конфликта на Украине. Санкционное давление на Российскую Федерацию остается одним из ключевых инструментов внешней политики США и их союзников, направленных на изменение поведения России на международной арене. Заявление Бессента подтверждает, что экономические меры будут сохраняться как рычаг давления до достижения политического урегулирования украинского кризиса.",
+      "why_it_matters": "Это заявление имеет значительные последствия для российской экономики, поскольку указывает на сохранение жестких экономических ограничений со стороны одной из ведущих мировых держав. Оно также демонстрирует, что США связывают любые шаги по нормализации экономических отношений с полным прекращением боевых действий и выводом российских войск с территории Украины. Это может повлиять на долгосрочные экономические перспективы России и ее способность восстанавливать связи с западными финансовыми рынками.",
       "importance": 8,
       "status": "updated",
       "verification_status": "independent_confirmation",
@@ -1266,7 +1616,10 @@
         "9bd6b269ec2d2b5ffdd3",
         "d5f91cd2eda55d1b6bb2",
         "894747cdac9b2c023abb",
-        "1a45f91dfa8302dee428"
+        "1a45f91dfa8302dee428",
+        "0c2e1afec61c3bd162a1",
+        "18489402176c1e13e851",
+        "4d558cd8e093fb9806fa"
       ],
       "facts": [
         {
@@ -1319,6 +1672,54 @@
           "article_ids": [
             "1a45f91dfa8302dee428"
           ]
+        },
+        {
+          "text": "Министр финансов США Скотт Бессент заявил главе Минфина РФ Антону Силуанову, что Россия не получит экономических послаблений, пока не закончит войну с Украиной.",
+          "article_ids": [
+            "894747cdac9b2c023abb"
+          ]
+        },
+        {
+          "text": "Информация о заявлении Бессента стала известна источникам изданий Politico и Reuters.",
+          "article_ids": [
+            "894747cdac9b2c023abb"
+          ]
+        },
+        {
+          "text": "Президент Украины Владимир Зеленский приказал военным увеличить дальнобойные удары по России до 1000 в день, что является увеличением примерно с 300 ударов.",
+          "article_ids": [
+            "4d558cd8e093fb9806fa"
+          ]
+        },
+        {
+          "text": "Российское производство бензина упало примерно до 70% от уровня внутреннего потребления к концу августа из-за серии атак беспилотников, вынудивших крупные нефтеперерабатывающие заводы приостановить работу.",
+          "article_ids": [
+            "4d558cd8e093fb9806fa"
+          ]
+        },
+        {
+          "text": "Министерство обороны России заявило о начале подготовки к «массированным ударам» по объектам энергетического сектора Украины в ответ на атаки Киева.",
+          "article_ids": [
+            "0c2e1afec61c3bd162a1"
+          ]
+        },
+        {
+          "text": "Запорожская атомная электростанция, оккупированная Россией, работает на аварийных дизельных генераторах, так как более недели находится без внешнего электроснабжения.",
+          "article_ids": [
+            "18489402176c1e13e851"
+          ]
+        },
+        {
+          "text": "Международное агентство по атомной энергии (МАГАТЭ) сообщило, что на Запорожской АЭС имеется запас дизельного топлива всего на 10 дней.",
+          "article_ids": [
+            "18489402176c1e13e851"
+          ]
+        },
+        {
+          "text": "Министр финансов США встретился с российским коллегой, который принял участие в переговорах G20, в то время как премьер-министр Индии Нарендра Моди заявил, что война должна закончиться.",
+          "article_ids": [
+            "1a45f91dfa8302dee428"
+          ]
         }
       ],
       "updates": [
@@ -1339,10 +1740,17 @@
             "894747cdac9b2c023abb",
             "1a45f91dfa8302dee428"
           ]
+        },
+        {
+          "at": "2026-09-01T19:46:10.986763Z",
+          "summary": "Министр финансов США Скотт Бессент заявил главе Минфина РФ Антону Силуанову, что Россия не получит экономических послаблений, пока не закончит войну с Украиной. Информация о заявлении Бессента стала известна источникам изданий Politico и Reuters.",
+          "article_ids": [
+            "894747cdac9b2c023abb"
+          ]
         }
       ],
       "identity": {
-        "event_type": "diplomatic-statement",
+        "event_type": "diplomatic_statement",
         "primary_entities": [
           "United States Department of the Treasury",
           "Ministry of Finance of the Russian Federation"
@@ -1351,10 +1759,148 @@
           "Russia",
           "Ukraine"
         ],
-        "occurred_at": "2026-09-01T01:03:22Z"
+        "occurred_at": "2026-09-01T06:30:55Z"
       },
-      "first_seen_at": "2026-08-31T16:09:23Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
+      "first_seen_at": "2026-08-29T01:26:28Z",
+      "updated_at": "2026-09-01T19:46:10.986763Z"
+    },
+    {
+      "id": "ukraine-war-b8a66ea0c5918601",
+      "slug": "украина-наносит-удары-по-российским-нпз-вынуждая-москву-искать-переработку-нефти",
+      "title": "Украина наносит удары по российским НПЗ, вынуждая Москву искать переработку нефти за рубежом",
+      "brief": "Украинские беспилотники нанесли удары по крупным нефтеперерабатывающим заводам в России, что привело к сокращению переработки нефти внутри страны. В ответ Россия заключила соглашение с Казахстаном об использовании частного НПЗ «Конденсат» для переработки своей нефти. Один из ударов был нанесен по порту Усть-Луга в Ленинградской области, что подтвердили украинские власти.",
+      "context": "Украина активизировала атаки на российскую нефтеперерабатывающую инфраструктуру с помощью беспилотников. Эти удары выводят из строя крупные НПЗ, что создает дефицит топлива в России. В связи с этим Россия вынуждена искать альтернативные пути для переработки своей нефти. Одним из таких решений стало заключение соглашения с Казахстаном, которое позволит использовать частный НПЗ «Конденсат». Это свидетельствует о стремлении России минимизировать последствия украинских атак на ее энергетический сектор. Удары по портовой инфраструктуре, такой как Усть-Луга, также могут влиять на экспортные возможности России.",
+      "why_it_matters": "Атаки Украины на российские нефтеперерабатывающие заводы имеют значительные последствия как для России, так и для мирового энергетического рынка. Сокращение переработки нефти в России может привести к росту цен на топливо и повлиять на экспортные доходы страны. Поиск Россией альтернативных площадок для переработки нефти, таких как НПЗ в Казахстане, указывает на уязвимость ее энергетической инфраструктуры и потенциальное изменение логистических цепочек. Эти события подчеркивают эскалацию конфликта и его влияние на глобальную энергетическую безопасность.",
+      "importance": 7,
+      "status": "updated",
+      "verification_status": "independent_confirmation",
+      "category": "Энергетика и конфликты",
+      "article_ids": [
+        "54c07a80ae09c07abf95",
+        "2bb8aacb192090fffa63",
+        "14034f99c36a1365dddb"
+      ],
+      "facts": [
+        {
+          "text": "В российском порту Усть-Луга произошел пожар после атаки дрона.",
+          "article_ids": [
+            "54c07a80ae09c07abf95"
+          ]
+        },
+        {
+          "text": "Украинский беспилотник атаковал российский порт Усть-Луга в Ленинградской области, что привело к повреждению объекта.",
+          "article_ids": [
+            "2bb8aacb192090fffa63"
+          ]
+        },
+        {
+          "text": "Губернатор Ленинградской области Александр Дрозденко сообщил о повреждении порта Усть-Луга в результате атаки дрона.",
+          "article_ids": [
+            "2bb8aacb192090fffa63"
+          ]
+        },
+        {
+          "text": "Украинские атаки беспилотников вывели из строя крупные российские нефтеперерабатывающие заводы.",
+          "article_ids": [
+            "14034f99c36a1365dddb"
+          ]
+        },
+        {
+          "text": "Россия заключила соглашение с частным НПЗ «Конденсат» в Казахстане для переработки своей нефти.",
+          "article_ids": [
+            "14034f99c36a1365dddb"
+          ]
+        },
+        {
+          "text": "Украина подтвердила удар беспилотника по российскому порту Усть-Луга в Ленинградской области.",
+          "article_ids": [
+            "2bb8aacb192090fffa63"
+          ]
+        }
+      ],
+      "updates": [
+        {
+          "at": "2026-09-01T19:46:10.986763Z",
+          "summary": "Украинские атаки беспилотников вывели из строя крупные российские нефтеперерабатывающие заводы. Россия заключила соглашение с частным НПЗ «Конденсат» в Казахстане для переработки своей нефти.",
+          "article_ids": [
+            "14034f99c36a1365dddb",
+            "2bb8aacb192090fffa63"
+          ]
+        }
+      ],
+      "identity": {
+        "event_type": "drone_strike",
+        "primary_entities": [
+          "Ukraine",
+          "Russia"
+        ],
+        "geographies": [
+          "Russia",
+          "Kazakhstan",
+          "Leningrad Oblast"
+        ],
+        "occurred_at": "2026-09-01T02:55:06Z"
+      },
+      "first_seen_at": "2026-09-01T02:55:06Z",
+      "updated_at": "2026-09-01T19:46:10.986763Z"
+    },
+    {
+      "id": "ukraine-war-64dcd0876312fab8",
+      "slug": "российский-дрон-атаковал-такси-в-херсоне-пострадали-двое-детей",
+      "title": "Российский дрон атаковал такси в Херсоне, пострадали двое детей",
+      "brief": "В Херсоне в результате атаки российского дрона на такси пострадали два ребенка и трое взрослых. Инцидент произошел в городе Херсон, где беспилотник противника нанес удар по гражданскому транспортному средству. Пострадавшие получили ранения различной степени тяжести и им была оказана необходимая медицинская помощь. Украинская сторона расценивает этот инцидент как военное преступление, совершенное российскими вооруженными силами.",
+      "context": "Вооруженный конфликт между Россией и Украиной продолжается, и обе стороны регулярно обвиняют друг друга в совершении военных преступлений и нарушении международного гуманитарного права. Атаки на гражданскую инфраструктуру и мирное население являются одной из наиболее острых проблем конфликта. Херсон, как прифронтовой город, часто подвергается обстрелам и атакам с использованием различных видов вооружений, включая беспилотные летательные аппараты.",
+      "why_it_matters": "Атака на гражданское такси с детьми является грубым нарушением международного гуманитарного права и может быть квалифицирована как военное преступление. Подобные инциденты подчеркивают необходимость усиления мер по защите гражданского населения в зонах конфликта и привлечения виновных к ответственности. Международное сообщество должно осудить подобные действия и принять меры для предотвращения их повторения в будущем, а также для обеспечения доступа к правосудию для пострадавших.",
+      "importance": 7,
+      "status": "updated",
+      "verification_status": "same_perspective",
+      "category": "Военный конфликт",
+      "article_ids": [
+        "011fd9ba95bc4555e0f4",
+        "6e1389c0de43d2a6196a"
+      ],
+      "facts": [
+        {
+          "text": "В Херсоне в результате атаки российского дрона на такси пострадали два ребенка и три взрослых.",
+          "article_ids": [
+            "011fd9ba95bc4555e0f4"
+          ]
+        },
+        {
+          "text": "43-летний мужчина погиб в результате атаки российского дрона в Корабельном районе Херсона.",
+          "article_ids": [
+            "6e1389c0de43d2a6196a"
+          ]
+        },
+        {
+          "text": "В Херсоне в результате атаки российского дрона на такси пострадали два ребенка и трое взрослых.",
+          "article_ids": [
+            "011fd9ba95bc4555e0f4"
+          ]
+        }
+      ],
+      "updates": [
+        {
+          "at": "2026-09-01T19:46:10.986763Z",
+          "summary": "В Херсоне в результате атаки российского дрона на такси пострадали два ребенка и трое взрослых.",
+          "article_ids": [
+            "011fd9ba95bc4555e0f4"
+          ]
+        }
+      ],
+      "identity": {
+        "event_type": "drone_attack",
+        "primary_entities": [
+          "Russian forces",
+          "Ukrainian civilians"
+        ],
+        "geographies": [
+          "Kherson"
+        ],
+        "occurred_at": "2026-09-01T13:59:00Z"
+      },
+      "first_seen_at": "2026-09-01T11:36:00Z",
+      "updated_at": "2026-09-01T19:46:10.986763Z"
     },
     {
       "id": "ukraine-war-cde35da3ceb1578c",
@@ -1418,71 +1964,20 @@
       "updated_at": "2026-09-01T10:20:19.671717Z"
     },
     {
-      "id": "ukraine-war-b8a66ea0c5918601",
-      "slug": "в-россии-произошел-пожар-на-крупном-экспортном-терминале-в-усть-луге-после-атаки",
-      "title": "В России произошел пожар на крупном экспортном терминале в Усть-Луге после атаки дрона",
-      "brief": "В ночь на 1 сентября крупный российский нефтеэкспортный терминал в порту Усть-Луга, Ленинградская область, загорелся в результате атаки украинского беспилотника. Пожар произошел в районе Санкт-Петербурга. Губернатор Ленинградской области Александр Дрозденко подтвердил повреждение объекта в результате атаки дрона.",
-      "context": "В ночь на 1 сентября 2026 года на крупном российском экспортном терминале, расположенном в порту Усть-Луга Ленинградской области, произошел сильный пожар. По сообщениям украинских изданий, инцидент стал результатом атаки украинского беспилотника. Губернатор Ленинградской области Александр Дрозденко подтвердил, что атака дрона привела к повреждению объекта. Порт Усть-Луга является важным логистическим узлом для экспорта российских нефтепродуктов, расположенным вблизи Санкт-Петербурга.",
-      "why_it_matters": "Атака на крупный нефтеэкспортный терминал в Усть-Луге имеет значительные последствия для российской нефтяной промышленности и экспортных поставок. Повреждение такого объекта может привести к временной приостановке или сокращению объемов экспорта нефтепродуктов, что потенциально повлияет на мировые цены на энергоносители и доходы российского бюджета. Кроме того, инцидент подчеркивает уязвимость российской энергетической инфраструктуры к атакам с использованием беспилотных летательных аппаратов, что может усилить опасения по поводу безопасности энергетических объектов в регионе.",
-      "importance": 7,
-      "status": "completed",
-      "verification_status": "same_perspective",
-      "category": "Военный конфликт",
-      "article_ids": [
-        "54c07a80ae09c07abf95",
-        "2bb8aacb192090fffa63"
-      ],
-      "facts": [
-        {
-          "text": "В российском порту Усть-Луга произошел пожар после атаки дрона.",
-          "article_ids": [
-            "54c07a80ae09c07abf95"
-          ]
-        },
-        {
-          "text": "Украинский беспилотник атаковал российский порт Усть-Луга в Ленинградской области, что привело к повреждению объекта.",
-          "article_ids": [
-            "2bb8aacb192090fffa63"
-          ]
-        },
-        {
-          "text": "Губернатор Ленинградской области Александр Дрозденко сообщил о повреждении порта Усть-Луга в результате атаки дрона.",
-          "article_ids": [
-            "2bb8aacb192090fffa63"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "drone_attack",
-        "primary_entities": [
-          "Ust-Luga oil terminal",
-          "Russian port of Ust-Luga"
-        ],
-        "geographies": [
-          "Ust-Luga",
-          "Leningrad Oblast",
-          "Russia"
-        ],
-        "occurred_at": "2026-09-01T00:00:00Z"
-      },
-      "first_seen_at": "2026-09-01T02:55:06Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
-    },
-    {
       "id": "ukraine-war-3f5f5b62c5171776",
-      "slug": "российские-войска-повторно-атаковали-терминал-новой-почты-в-одесской-области",
-      "title": "Российские войска повторно атаковали терминал \"Новой Почты\" в Одесской области",
-      "brief": "Российские войска вновь нанесли удар по логистическому терминалу компании \"Новая Почта\" в Одесской области. Объект, принадлежащий крупнейшей частной службе доставки Украины, ранее уже подвергался атакам. Информация о последствиях удара уточняется.",
-      "context": "Российские вооруженные силы повторно атаковали логистический терминал компании \"Новая Почта\", расположенный в Одесской области. Этот объект, являющийся частью крупнейшей частной службы доставки Украины, уже был поврежден в результате предыдущих вражеских ударов. Информация о масштабах повреждений и возможных жертвах в результате последней атаки уточняется.",
-      "why_it_matters": "Атаки на логистическую инфраструктуру, такую как терминалы \"Новой Почты\", могут иметь значительные последствия для экономики Украины, нарушая цепочки поставок и затрудняя доставку товаров как внутри страны, так и за ее пределы. Повторные удары по одному и тому же объекту могут свидетельствовать о целенаправленном стремлении нарушить работу критически важной гражданской инфраструктуры, что вызывает обеспокоенность относительно соблюдения норм международного гуманитарного права.",
+      "slug": "российские-удары-повредили-объекты-в-одессе-включая-теплоэлектростанцию-и-термин",
+      "title": "Российские удары повредили объекты в Одессе, включая теплоэлектростанцию и терминал \"Новой Почты\"",
+      "brief": "Российские войска нанесли удары по Одессе, в результате которых было повреждено основное и вспомогательное оборудование Одесской ТЭЦ, входящей в группу \"Нафтогаз\". Также сообщается о повторном ударе по терминалу \"Новой Почты\", который ранее уже был поврежден. Информация о пострадавших или масштабах ущерба не уточняется.",
+      "context": "В течение дня 1 сентября 2026 года российские силы нанесли удары по Одессе. По данным украинских источников, были атакованы два важных объекта: Одесская теплоэлектроцентраль (ТЭЦ) и терминал логистической компании \"Новая Почта\". Удары по ТЭЦ привели к повреждению основного и вспомогательного оборудования предприятия, которое является частью группы \"Нафтогаз\". Это не первый случай атаки на терминал \"Новой Почты\", который уже ранее получал повреждения в результате боевых действий.",
+      "why_it_matters": "Атаки на энергетическую инфраструктуру, такую как ТЭЦ, могут привести к перебоям в энергоснабжении и отоплении, что особенно критично в условиях военного времени. Повреждение логистических узлов, как терминал \"Новой Почты\", нарушает цепочки поставок и экономическую активность. Эти события подчеркивают продолжающиеся риски для гражданской инфраструктуры в прифронтовых городах и их влияние на повседневную жизнь населения и экономику.",
       "importance": 6,
-      "status": "new",
+      "status": "updated",
       "verification_status": "same_perspective",
       "category": "военный конфликт",
       "article_ids": [
         "125eba413f5fdca0cab0",
-        "219fcc8e26da00740a7d"
+        "219fcc8e26da00740a7d",
+        "3aef8c0707364c2d8c40"
       ],
       "facts": [
         {
@@ -1502,22 +1997,103 @@
           "article_ids": [
             "219fcc8e26da00740a7d"
           ]
+        },
+        {
+          "text": "Российские удары повредили основное и вспомогательное оборудование Одесской ТЭЦ, которая входит в группу \"Нафтогаз\".",
+          "article_ids": [
+            "3aef8c0707364c2d8c40"
+          ]
+        },
+        {
+          "text": "Российские силы повторно атаковали терминал \"Новой Почты\" в Одессе, который ранее уже был поврежден.",
+          "article_ids": [
+            "125eba413f5fdca0cab0"
+          ]
+        }
+      ],
+      "updates": [
+        {
+          "at": "2026-09-01T19:46:10.986763Z",
+          "summary": "Российские удары повредили основное и вспомогательное оборудование Одесской ТЭЦ, которая входит в группу \"Нафтогаз\". Российские силы повторно атаковали терминал \"Новой Почты\" в Одессе, который ранее уже был поврежден.",
+          "article_ids": [
+            "3aef8c0707364c2d8c40",
+            "125eba413f5fdca0cab0"
+          ]
+        }
+      ],
+      "identity": {
+        "event_type": "strike",
+        "primary_entities": [
+          "Russian forces"
+        ],
+        "geographies": [
+          "Odesa"
+        ],
+        "occurred_at": "2026-09-01T11:32:00Z"
+      },
+      "first_seen_at": "2026-09-01T10:10:00Z",
+      "updated_at": "2026-09-01T19:46:10.986763Z"
+    },
+    {
+      "id": "ukraine-war-f16741812bd05600",
+      "slug": "украинские-и-российские-источники-сообщают-о-различных-инцидентах",
+      "title": "Украинские и российские источники сообщают о различных инцидентах",
+      "brief": "Российское информационное агентство ТАСС сообщило о нескольких инцидентах на территории России и ЛНР, связанных с атаками украинских беспилотников и обстрелами. В Белгородской области пострадали три человека, повреждены остекление социального объекта и три автомобиля. В Запорожской области повреждена линия электропередачи и автомобиль. В ЛНР украинские военные атаковали пожарных при тушении поля, никто не пострадал. В то же время, украинское агентство Ukrinform сообщило о последствиях российской атаки дронами в Киеве, зафиксировав падение обломков и пожары в четырех районах города.",
+      "context": "В течение дня 1 сентября 2026 года поступали сообщения о различных инцидентах, связанных с боевыми действиями. Российское агентство ТАСС сообщило о трех пострадавших в Белгородской области в результате атак дронов ВСУ, а также о повреждении линии электропередачи и автомобиля в Запорожской области. Кроме того, ТАСС передает, что ВСУ атаковали пожарных в ЛНР. Украинское агентство Ukrinform, в свою очередь, сообщает о последствиях российской атаки дронами в Киеве, которая привела к падению обломков и пожарам в четырех районах столицы Украины.",
+      "why_it_matters": "Данные инциденты демонстрируют продолжающиеся боевые действия и их влияние на гражданскую инфраструктуру и население с обеих сторон конфликта. Сообщения от российских и украинских государственных агентств подчеркивают необходимость критического анализа информации, поступающей от воюющих сторон, и поиска независимых подтверждений для формирования объективной картины событий.",
+      "importance": 5,
+      "status": "disputed",
+      "verification_status": "conflicting_accounts",
+      "category": "военный конфликт",
+      "article_ids": [
+        "15dbe189452e25b7cc93",
+        "402475f643631c29de8c",
+        "6a27c6fc59c18e71737c",
+        "339ec34ee2da7fce897e"
+      ],
+      "facts": [
+        {
+          "text": "По заявлению российской стороны, в Белгородской области при атаках дронов ВСУ пострадали три человека и повреждены остекление социального объекта и три автомобиля.",
+          "article_ids": [
+            "15dbe189452e25b7cc93"
+          ]
+        },
+        {
+          "text": "По заявлению российской стороны, в Запорожской области при атаке ВСУ повреждена линия электропередачи и автомобиль.",
+          "article_ids": [
+            "402475f643631c29de8c"
+          ]
+        },
+        {
+          "text": "По заявлению российской стороны, ВСУ атаковали пожарных при тушении поля в ЛНР, никто не пострадал.",
+          "article_ids": [
+            "6a27c6fc59c18e71737c"
+          ]
+        },
+        {
+          "text": "По заявлению украинской стороны, последствия российской атаки дронами зафиксированы в четырех районах Киева, включая падение обломков и пожары.",
+          "article_ids": [
+            "339ec34ee2da7fce897e"
+          ]
         }
       ],
       "updates": [],
       "identity": {
-        "event_type": "strike",
+        "event_type": "military_conflict_incident",
         "primary_entities": [
-          "Nova Poshta",
-          "Russian forces"
+          "ВСУ",
+          "Россия"
         ],
         "geographies": [
-          "Odesa Oblast"
+          "Белгородская область",
+          "Запорожская область",
+          "ЛНР",
+          "Киев"
         ],
-        "occurred_at": "2026-09-01T10:10:00Z"
+        "occurred_at": "2026-09-01T18:40:00Z"
       },
-      "first_seen_at": "2026-09-01T10:10:00Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
+      "first_seen_at": "2026-09-01T18:40:00Z",
+      "updated_at": "2026-09-01T19:46:10.986763Z"
     },
     {
       "id": "ukraine-war-578db972920e7f5a",
@@ -1566,13 +2142,13 @@
     },
     {
       "id": "ukraine-war-37f19fb81d726c4e",
-      "slug": "российский-удар-по-гражданскому-автомобилю-в-запорожской-области-двое-погибших",
-      "title": "Российский удар по гражданскому автомобилю в Запорожской области: двое погибших",
-      "brief": "Российские военные нанесли удар по гражданскому автомобилю в населенном пункте Камыш-Зоря (Кушугум) Запорожской области. В результате атаки погибли два человека, еще один получил ранения. По данным украинской стороны, удар был нанесен с использованием беспилотника. Среди погибших — 73-летний мужчина и 47-летняя женщина.",
-      "context": "Российские вооруженные силы нанесли удар по гражданскому автомобилю в населенном пункте Камыш-Зоря (Кушугум), расположенном в Запорожской области. Атака произошла 1 сентября 2026 года. По сообщениям украинских источников, удар был осуществлен с помощью беспилотника. В результате нападения погибли два человека, еще один получил ранения. Среди погибших опознаны мужчина 73 лет и женщина 47 лет.",
-      "why_it_matters": "Данный инцидент подчеркивает продолжающиеся риски для гражданского населения в зонах конфликта. Атаки на гражданскую инфраструктуру и транспортные средства, даже если они не являются военными целями, приводят к гибели и ранениям мирных жителей. Это вызывает обеспокоенность международного сообщества по поводу соблюдения норм международного гуманитарного права и необходимости защиты гражданских лиц во время вооруженных конфликтов.",
+      "slug": "российские-военные-атаковали-автомобиль-в-запорожской-области-есть-погибшие",
+      "title": "Российские военные атаковали автомобиль в Запорожской области, есть погибшие",
+      "brief": "Российская армия нанесла удар по гражданскому автомобилю в населенном пункте Кашугум (Кушугум) Запорожской области. В результате атаки погибли два человека, еще один получил ранения. Информация предоставлена украинской стороной.",
+      "context": "Вооруженные силы Российской Федерации совершили нападение на гражданское транспортное средство, находившееся в населенном пункте Кашугум (Кушугум), расположенном в Запорожской области. Данное событие произошло в ходе продолжающегося конфликта.",
+      "why_it_matters": "Атака на гражданский автомобиль приводит к гибели и ранениям мирных жителей, что является нарушением норм международного гуманитарного права. Подобные инциденты подчеркивают риски, которым подвергается гражданское население в зонах конфликта, и требуют тщательного расследования для установления ответственности.",
       "importance": 4,
-      "status": "completed",
+      "status": "updated",
       "verification_status": "same_perspective",
       "category": "военный конфликт",
       "article_ids": [
@@ -1605,75 +2181,51 @@
           "article_ids": [
             "853505f11a567368d926"
           ]
+        },
+        {
+          "text": "Российская армия атаковала гражданский автомобиль в населенном пункте Кашугум (Кушугум) Запорожской области.",
+          "article_ids": [
+            "bb940ba3359b98e14dda"
+          ]
+        },
+        {
+          "text": "В результате атаки погибли два человека и один получил ранения.",
+          "article_ids": [
+            "bb940ba3359b98e14dda"
+          ]
         }
       ],
-      "updates": [],
+      "updates": [
+        {
+          "at": "2026-09-01T19:46:10.986763Z",
+          "summary": "Российская армия атаковала гражданский автомобиль в населенном пункте Кашугум (Кушугум) Запорожской области. В результате атаки погибли два человека и один получил ранения.",
+          "article_ids": [
+            "bb940ba3359b98e14dda"
+          ]
+        }
+      ],
       "identity": {
         "event_type": "attack",
         "primary_entities": [
           "Russian military"
         ],
         "geographies": [
-          "Zaporizhzhia Oblast"
+          "Zaporizhzhia region"
         ],
-        "occurred_at": "2026-09-01T13:18:00Z"
+        "occurred_at": "2026-09-01T14:30:00Z"
       },
       "first_seen_at": "2026-09-01T13:18:00Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
-    },
-    {
-      "id": "ukraine-war-64dcd0876312fab8",
-      "slug": "российский-дрон-атаковал-такси-в-херсоне-двое-детей-пострадали",
-      "title": "Российский дрон атаковал такси в Херсоне, двое детей пострадали",
-      "brief": "В Херсоне в результате атаки российского дрона на такси пострадали два ребенка и три взрослых. Один из пострадавших, 43-летний мужчина, скончался от полученных травм в больнице. Инцидент произошел в Корабельном районе города около полудня.",
-      "context": "Российские военные нанесли удар беспилотником по автомобилю такси в городе Херсон. По сообщению украинской стороны, в результате атаки пострадали как минимум пять человек, среди которых двое детей и трое взрослых. Один из взрослых, 43-летний мужчина, получил ранения, несовместимые с жизнью, и скончался в медицинском учреждении. Инцидент произошел в Корабельном районе города.",
-      "why_it_matters": "Атаки на гражданскую инфраструктуру и мирное население являются грубым нарушением международного гуманитарного права. Подобные инциденты подчеркивают необходимость защиты гражданских лиц в зонах конфликта и привлечения виновных к ответственности. Информация о пострадавших детях вызывает особую обеспокоенность и требует тщательного расследования.",
-      "importance": 4,
-      "status": "completed",
-      "verification_status": "same_perspective",
-      "category": "военный конфликт",
-      "article_ids": [
-        "011fd9ba95bc4555e0f4",
-        "6e1389c0de43d2a6196a"
-      ],
-      "facts": [
-        {
-          "text": "В Херсоне в результате атаки российского дрона на такси пострадали два ребенка и три взрослых.",
-          "article_ids": [
-            "011fd9ba95bc4555e0f4"
-          ]
-        },
-        {
-          "text": "43-летний мужчина погиб в результате атаки российского дрона в Корабельном районе Херсона.",
-          "article_ids": [
-            "6e1389c0de43d2a6196a"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "drone_attack",
-        "primary_entities": [
-          "Russian forces",
-          "civilians"
-        ],
-        "geographies": [
-          "Kherson"
-        ],
-        "occurred_at": "2026-09-01T11:36:00Z"
-      },
-      "first_seen_at": "2026-09-01T11:36:00Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
+      "updated_at": "2026-09-01T19:46:10.986763Z"
     },
     {
       "id": "ukraine-war-beb9078e8c05c392",
-      "slug": "ключевая-осень-для-украины-давление-на-фронте-и-угроза-с-воздуха",
-      "title": "Ключевая осень для Украины: давление на фронте и угроза с воздуха",
-      "brief": "Осень 2026 года станет критически важной для Украины из-за усиления давления российских войск на линии фронта, активизации воздушных атак и кадровых перестановок в Вооруженных силах Украины (ВСУ). Аналитики отмечают неопределенность ситуации на поле боя. Российские силы приближаются к захвату оставшихся населенных пунктов Донбасса, что может стать финальным этапом в достижении их целей в регионе.",
-      "context": "Осень 2026 года оценивается как критический период для Украины. На это влияют несколько факторов: усиление давления на линии фронта, увеличение интенсивности российских воздушных бомбардировок и частая смена руководства в Вооруженных силах Украины. Эти обстоятельства создают сложную и неопределенную картину для военных аналитиков. По имеющимся оценкам, российские войска находятся ближе, чем когда-либо, к полному контролю над оставшимися населенными пунктами Донбасса, что может означать завершение их кампании по захвату региона.",
-      "why_it_matters": "Усиление давления на фронте и активизация воздушных атак со стороны России создают прямую угрозу территориальной целостности Украины и безопасности ее граждан. Кадровые перестановки в ВСУ могут повлиять на боеспособность и стратегию обороны страны. Потенциальный захват оставшихся населенных пунктов Донбасса будет иметь серьезные геополитические и гуманитарные последствия, а также может повлиять на дальнейший ход конфликта.",
+      "slug": "осенняя-кампания-на-донбассе-украина-готовится-к-критическому-этапу",
+      "title": "Осенняя кампания на Донбассе: Украина готовится к критическому этапу",
+      "brief": "Осень 2026 года обещает стать критически важным периодом для Украины на фоне усиления давления российских войск на линии фронта, активизации воздушных атак и кадровых перестановок в Вооруженных силах Украины (ВСУ). Аналитики отмечают неопределенность ситуации, поскольку российские силы приближаются к захвату оставшихся населенных пунктов Донбасса. Это создает сложную и неясную картину для военных экспертов, требуя от Украины максимальной мобилизации ресурсов и стратегического планирования для противостояния наступающим угрозам.",
+      "context": "Осенний период 2026 года характеризуется как критический для Украины. На линии фронта наблюдается усиление давления со стороны российских войск, которые, по некоторым оценкам, приблизились к захвату последних населенных пунктов на Донбассе. Параллельно с этим, Россия активизировала воздушные бомбардировки, а в высшем командовании ВСУ произошли значительные кадровые перестановки. Эти факторы в совокупности создают сложную и неопределенную картину для военных аналитиков, требуя от украинской стороны повышенной готовности и адаптации к меняющимся условиям боевых действий.",
+      "why_it_matters": "Предстоящая осенняя кампания имеет решающее значение для дальнейшего хода конфликта и территориальной целостности Украины. Успех или неудача в удержании позиций на Донбассе, а также способность противостоять воздушным атакам, определят стратегический баланс сил. Кадровые изменения в ВСУ могут повлиять на эффективность военного командования и координацию действий. Неопределенность ситуации требует от Украины мобилизации всех ресурсов и разработки гибких стратегий для защиты своих территорий и населения.",
       "importance": 8,
-      "status": "new",
+      "status": "updated",
       "verification_status": "single_source",
       "category": "Военный конфликт",
       "article_ids": [
@@ -1691,9 +2243,35 @@
           "article_ids": [
             "dc26494f3ec35676838d"
           ]
+        },
+        {
+          "text": "Осень 2026 года будет критической для Украины из-за давления на линии фронта, российских воздушных бомбардировок и смены руководства в ВСУ.",
+          "article_ids": [
+            "dc26494f3ec35676838d"
+          ]
+        },
+        {
+          "text": "Российские силы приблизились к захвату оставшихся населенных пунктов Донбасса.",
+          "article_ids": [
+            "dc26494f3ec35676838d"
+          ]
+        },
+        {
+          "text": "Ситуация на фронте описывается как сложная и неопределенная для военных аналитиков.",
+          "article_ids": [
+            "dc26494f3ec35676838d"
+          ]
         }
       ],
-      "updates": [],
+      "updates": [
+        {
+          "at": "2026-09-01T19:46:10.986763Z",
+          "summary": "Осень 2026 года будет критической для Украины из-за давления на линии фронта, российских воздушных бомбардировок и смены руководства в ВСУ. Российские силы приблизились к захвату оставшихся населенных пунктов Донбасса.",
+          "article_ids": [
+            "dc26494f3ec35676838d"
+          ]
+        }
+      ],
       "identity": {
         "event_type": "military-conflict",
         "primary_entities": [
@@ -1701,24 +2279,23 @@
           "Российские силы"
         ],
         "geographies": [
-          "Украина",
           "Донбасс"
         ],
         "occurred_at": null
       },
       "first_seen_at": "2026-09-01T15:16:42Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
+      "updated_at": "2026-09-01T19:46:10.986763Z"
     },
     {
       "id": "ukraine-war-62a237027b6d28fc",
-      "slug": "российские-войска-атаковали-предприятие-в-полтавской-области-есть-пострадавшие",
-      "title": "Российские войска атаковали предприятие в Полтавской области, есть пострадавшие",
-      "brief": "Российские войска атаковали предприятие в Полтавской общине, в результате чего пострадали как минимум четыре человека. Инцидент произошел 1 сентября. По данным украинской стороны, в результате атаки получили ранения три человека, а по данным другого украинского источника, пострадали четыре человека.",
-      "context": "Российские вооруженные силы совершили атаку на предприятие, расположенное в Полтавской общине. В результате нападения есть пострадавшие. Украинские источники сообщают о трех раненых, а также о четырех пострадавших в результате атаки на бизнес в Полтавской области, которая произошла 1 сентября.",
-      "why_it_matters": "Атаки на гражданскую инфраструктуру и предприятия имеют серьезные последствия для экономики и безопасности региона. Пострадавшие получают медицинскую помощь, а разрушение или повреждение объектов может привести к долгосрочным экономическим убыткам и нарушению нормальной жизнедеятельности.",
+      "slug": "российские-войска-атаковали-предприятие-в-полтавской-общине-трое-пострадавших",
+      "title": "Российские войска атаковали предприятие в Полтавской общине, трое пострадавших",
+      "brief": "Российские войска совершили атаку на предприятие в Полтавской общине, в результате чего пострадали три человека. Инцидент произошел в Полтавской области, где силы РФ нанесли удар по объекту инфраструктуры. По данным украинской стороны, в результате атаки есть раненые. Детали происшествия и точный характер повреждений уточняются.",
+      "context": "Российские вооруженные силы провели атаку на одно из предприятий, расположенных в Полтавской общине. В результате боевых действий, по сообщению украинской стороны, получили ранения три человека. Событие произошло в Полтавской области, которая является одной из административных единиц Украины. Информация о типе предприятия и масштабах разрушений уточняется.",
+      "why_it_matters": "Атаки на гражданскую инфраструктуру, включая промышленные объекты, имеют серьезные последствия для экономики и жизнедеятельности региона. Пострадавшие в результате таких атак требуют медицинской помощи, а повреждение предприятий может привести к нарушению производственных цепочек и снижению уровня занятости. Важно отслеживать подобные инциденты для понимания общей картины конфликта и его влияния на мирное население.",
       "importance": 4,
-      "status": "disputed",
-      "verification_status": "conflicting_accounts",
+      "status": "updated",
+      "verification_status": "same_perspective",
       "category": "военный конфликт",
       "article_ids": [
         "928894a62389965ed743",
@@ -1742,165 +2319,35 @@
           "article_ids": [
             "4d0a1dcd1b12c7e44e31"
           ]
+        },
+        {
+          "text": "В результате атаки пострадали три человека.",
+          "article_ids": [
+            "928894a62389965ed743"
+          ]
         }
       ],
-      "updates": [],
+      "updates": [
+        {
+          "at": "2026-09-01T19:46:10.986763Z",
+          "summary": "В результате атаки пострадали три человека.",
+          "article_ids": [
+            "928894a62389965ed743"
+          ]
+        }
+      ],
       "identity": {
         "event_type": "attack",
         "primary_entities": [
           "Russian forces"
         ],
         "geographies": [
-          "Poltava Oblast"
+          "Poltava"
         ],
-        "occurred_at": "2026-09-01T00:00:00Z"
+        "occurred_at": "2026-09-01T10:31:00Z"
       },
       "first_seen_at": "2026-09-01T10:23:00Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
-    },
-    {
-      "id": "ukraine-war-4bd272f622bea7a0",
-      "slug": "российская-сторона-заявляет-о-проблемах-с-продовольствием-и-боеприпасами-у-всу-в",
-      "title": "Российская сторона заявляет о проблемах с продовольствием и боеприпасами у ВСУ в Славянске и Краматорске",
-      "brief": "Российское информационное агентство ТАСС, ссылаясь на военного эксперта, сообщает о проблемах с обеспечением украинских военных в Славянске и Краматорске. По данным агентства, украинские подразделения в этих городах испытывают нехватку продовольствия и боеприпасов, что, как утверждается, негативно сказывается на их морально-психологическом состоянии. Также сообщается об усилении ударов БПЛА по гражданским объектам в ЛНР, которые, по мнению эксперта, не являются ошибками операторов. Отмечается, что Киев стягивает резервы и националистов в оккупированную часть Донбасса и ставит задачу увеличить число ударов БПЛА по тыловым районам РФ.",
-      "context": "Российское информационное агентство ТАСС публикует серию сообщений, основанных на заявлениях военного эксперта, касающихся ситуации на востоке Украины. Согласно этим сообщениям, украинские военные в Славянске и Краматорске сталкиваются с нехваткой продовольствия и боеприпасов. Эксперт, на которого ссылается ТАСС, также утверждает, что украинские войска усилили атаки беспилотников по гражданской инфраструктуре в Луганской Народной Республике, и эти удары не являются случайными. Кроме того, сообщается о переброске украинских резервов и националистических подразделений в оккупированные части Донбасса. Поставлена задача увеличить количество ударов БПЛА по тыловым районам Российской Федерации.",
-      "why_it_matters": "Заявления российской стороны о проблемах с обеспечением украинских войск и об усилении атак беспилотников на гражданскую инфраструктуру могут свидетельствовать о попытках повлиять на общественное мнение и представить украинскую армию в негативном свете. Информация о нехватке продовольствия и боеприпасов у ВСУ, если она соответствует действительности, может указывать на логистические трудности или эффективность оборонительных действий. Утверждения о намеренных ударах по гражданским объектам и переброске резервов требуют независимого подтверждения, но могут быть использованы для оправдания ответных действий или для формирования нарратива о характере конфликта.",
-      "importance": 7,
-      "status": "new",
-      "verification_status": "single_source",
-      "category": "военный конфликт",
-      "article_ids": [
-        "13efa5e553f08b52e607",
-        "5a9cf079828848290fb1",
-        "b642d2fe7055e90b7030",
-        "cb062e5f584200362e5c"
-      ],
-      "facts": [
-        {
-          "text": "По заявлению российской стороны, военные ВСУ в Славянске и Краматорске испытывают нехватку еды и снарядов.",
-          "article_ids": [
-            "13efa5e553f08b52e607"
-          ]
-        },
-        {
-          "text": "Российская сторона утверждает, что удары БПЛА по гражданским объектам в ЛНР не являются ошибками операторов.",
-          "article_ids": [
-            "5a9cf079828848290fb1"
-          ]
-        },
-        {
-          "text": "По заявлению российской стороны, украинские войска усилили число ударов по авто, частным домам и гражданской инфраструктуре по всей территории Луганской Народной Республики.",
-          "article_ids": [
-            "5a9cf079828848290fb1"
-          ]
-        },
-        {
-          "text": "Российская сторона сообщает, что противник запускает дроны из Харьковской области и оккупированной части ДНР.",
-          "article_ids": [
-            "b642d2fe7055e90b7030"
-          ]
-        },
-        {
-          "text": "По заявлению российской стороны, Киев стягивает резервы и националистов в оккупированную часть Донбасса.",
-          "article_ids": [
-            "cb062e5f584200362e5c"
-          ]
-        },
-        {
-          "text": "Российская сторона утверждает, что командование ВСУ поставило задачу увеличить число ударов БПЛА по тыловым районам РФ.",
-          "article_ids": [
-            "cb062e5f584200362e5c"
-          ]
-        }
-      ],
-      "updates": [],
-      "identity": {
-        "event_type": "military_operations",
-        "primary_entities": [
-          "ВСУ",
-          "Российская сторона"
-        ],
-        "geographies": [
-          "Славянск",
-          "Краматорск",
-          "ЛНР",
-          "ДНР",
-          "Харьковская область"
-        ],
-        "occurred_at": "2026-09-01T15:08:09Z"
-      },
-      "first_seen_at": "2026-09-01T14:56:56Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
-    },
-    {
-      "id": "ukraine-war-ebe794798919302d",
-      "slug": "пять-человек-пострадали-в-результате-российских-ударов-в-харьковской-области-за-",
-      "title": "Пять человек пострадали в результате российских ударов в Харьковской области за сутки",
-      "brief": "За прошедшие сутки российские войска атаковали Харьков и еще 15 населенных пунктов Харьковской области. В селе Золочев Богодуховского района пострадали три человека, в том числе двое детей. Всего за сутки в регионе ранения получили пять человек.",
-      "context": "Российские вооруженные силы продолжают наносить удары по территории Украины. За последние 24 часа были атакованы Харьков и 15 других населенных пунктов в Харьковской области. По сообщению украинской стороны, в селе Золочев Богодуховского района в результате обстрела пострадали трое мирных жителей, среди которых двое детей. Информация о пострадавших в других населенных пунктах также поступает от украинских источников.",
-      "why_it_matters": "Атаки на гражданскую инфраструктуру и мирное население приводят к человеческим жертвам и разрушениям, усугубляя гуманитарную ситуацию в регионе. Подобные инциденты подчеркивают необходимость соблюдения международного гуманитарного права и поиска путей деэскалации конфликта для предотвращения дальнейших страданий.",
-      "importance": 4,
-      "status": "updated",
-      "verification_status": "same_perspective",
-      "category": "Военные действия",
-      "article_ids": [
-        "81c28d8c394012795bd1",
-        "145e700c06c68281a219"
-      ],
-      "facts": [
-        {
-          "text": "По заявлению украинской стороны, за прошедшие сутки российские войска атаковали Харьковскую область и 15 других населенных пунктов. В селе Золочев Богодуховского района пострадали три человека, включая двоих детей.",
-          "article_ids": [
-            "81c28d8c394012795bd1"
-          ]
-        },
-        {
-          "text": "Украинская правда сообщает, что российские силы атаковали пожарную и спасательную машину на окраине Запорожья, в результате чего получили ранения четыре человека из числа первых спасателей.",
-          "article_ids": [
-            "145e700c06c68281a219"
-          ]
-        },
-        {
-          "text": "За прошедшие сутки российские войска атаковали Харьков и 15 других населенных пунктов в Харьковской области.",
-          "article_ids": [
-            "81c28d8c394012795bd1"
-          ]
-        },
-        {
-          "text": "В селе Золочев Богодуховского района пострадали трое человек, в том числе двое детей.",
-          "article_ids": [
-            "81c28d8c394012795bd1"
-          ]
-        },
-        {
-          "text": "Всего за сутки в Харьковской области ранения получили пять человек.",
-          "article_ids": [
-            "81c28d8c394012795bd1"
-          ]
-        }
-      ],
-      "updates": [
-        {
-          "at": "2026-09-01T15:25:47.953578Z",
-          "summary": "За прошедшие сутки российские войска атаковали Харьков и 15 других населенных пунктов в Харьковской области. В селе Золочев Богодуховского района пострадали трое человек, в том числе двое детей.",
-          "article_ids": [
-            "81c28d8c394012795bd1"
-          ]
-        }
-      ],
-      "identity": {
-        "event_type": "shelling",
-        "primary_entities": [
-          "Russian forces"
-        ],
-        "geographies": [
-          "Kharkiv region",
-          "Zolochiv"
-        ],
-        "occurred_at": "2026-09-01T07:00:00Z"
-      },
-      "first_seen_at": "2026-09-01T06:22:00Z",
-      "updated_at": "2026-09-01T15:25:47.953578Z"
+      "updated_at": "2026-09-01T19:46:10.986763Z"
     }
   ]
 }
