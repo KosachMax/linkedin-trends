@@ -1,0 +1,1313 @@
+{
+  "started_at": "2026-09-06T14:02:20.613842+00:00",
+  "raw_articles": 731,
+  "normalized_articles": 731,
+  "dedupe": {
+    "input_articles": 731,
+    "exact_url_duplicates": 1,
+    "same_source_near_duplicates": 3,
+    "output_articles": 727
+  },
+  "sources": [
+    {
+      "source_id": "aljazeera",
+      "source_name": "Al Jazeera",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 127,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "arxiv-ai",
+      "source_name": "arXiv AI",
+      "state": "degraded",
+      "fetched": 0,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 556,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "astral-uv-releases",
+      "source_name": "Astral uv Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1026,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-liverpool",
+      "source_name": "BBC Sport Liverpool",
+      "state": "available",
+      "fetched": 4,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 473,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-sport",
+      "source_name": "BBC Sport Football",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 139,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "bbc-world",
+      "source_name": "BBC World",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1311,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "celery-releases",
+      "source_name": "Celery Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 929,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "devto-python",
+      "source_name": "DEV Community Python",
+      "state": "available",
+      "fetched": 12,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 463,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "django-weblog",
+      "source_name": "Django Weblog",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 626,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "docker-blog",
+      "source_name": "Docker Blog",
+      "state": "unavailable",
+      "fetched": 0,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 555,
+      "error_code": "HTTPStatusError",
+      "history": []
+    },
+    {
+      "source_id": "dw-world",
+      "source_name": "Deutsche Welle",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1299,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "euronews-world",
+      "source_name": "Euronews",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 540,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "fastapi-releases",
+      "source_name": "FastAPI Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 587,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "france24-ukraine",
+      "source_name": "France 24 Ukraine",
+      "state": "available",
+      "fetched": 24,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1215,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "france24-world",
+      "source_name": "France 24",
+      "state": "available",
+      "fetched": 24,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 636,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "guardian-liverpool",
+      "source_name": "The Guardian Liverpool",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1203,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "guardian-ukraine",
+      "source_name": "The Guardian Ukraine",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 821,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "guardian-world",
+      "source_name": "The Guardian World",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 695,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "hackernews-backend",
+      "source_name": "Hacker News Backend",
+      "state": "degraded",
+      "fetched": 0,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 2408,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "infoq-development",
+      "source_name": "InfoQ Development",
+      "state": "available",
+      "fetched": 15,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 731,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "kyiv-independent",
+      "source_name": "The Kyiv Independent",
+      "state": "available",
+      "fetched": 15,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 830,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "le-monde",
+      "source_name": "Le Monde",
+      "state": "available",
+      "fetched": 16,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 703,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "liverpool-echo",
+      "source_name": "Liverpool Echo",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1231,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "lobsters-backend",
+      "source_name": "Lobsters Backend",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1467,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "mediazona",
+      "source_name": "Медиазона",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1169,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "meduza",
+      "source_name": "Meduza",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1114,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "npr-world",
+      "source_name": "NPR World",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 551,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "planet-python",
+      "source_name": "Planet Python",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1828,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "politico-europe",
+      "source_name": "Politico Europe",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 770,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "postgresql-news",
+      "source_name": "PostgreSQL News",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1870,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "psycopg-releases",
+      "source_name": "Psycopg Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1130,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "pydantic-releases",
+      "source_name": "Pydantic Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1150,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "python-insider",
+      "source_name": "Python Insider",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 789,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "rbc",
+      "source_name": "RBC",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 2214,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "rferl-ukraine-war",
+      "source_name": "RFE/RL · Russia Invades Ukraine",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1570,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "spiegel",
+      "source_name": "Der Spiegel",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1618,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "sqlalchemy-releases",
+      "source_name": "SQLAlchemy Releases",
+      "state": "available",
+      "fetched": 10,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1437,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "tass",
+      "source_name": "ТАСС",
+      "state": "available",
+      "fetched": 40,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 2295,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "thisisanfield",
+      "source_name": "This Is Anfield",
+      "state": "available",
+      "fetched": 16,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 562,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "ukrainska-pravda",
+      "source_name": "Ukrainska Pravda",
+      "state": "available",
+      "fetched": 20,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1534,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "ukrinform",
+      "source_name": "Ukrinform",
+      "state": "available",
+      "fetched": 30,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 2089,
+      "error_code": null,
+      "history": []
+    },
+    {
+      "source_id": "un-news",
+      "source_name": "UN News",
+      "state": "available",
+      "fetched": 25,
+      "accepted": 0,
+      "represented_events": 0,
+      "latency_ms": 1490,
+      "error_code": null,
+      "history": []
+    }
+  ],
+  "digests": {
+    "fc-liverpool": {
+      "selected": 60,
+      "published": 0,
+      "quarantined": [
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "3a0a1f0316155902872a"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "8d03d47bf348aeb58bcc"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "aac7952c1e85d0e0f09b"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "4f8a5c7541ba5ce3345b"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "6671c928eef74312296c"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "40a1368dd4644304deaf"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "04f0234f982d2e280b88"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "da1b69129e83408b1865"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "0715547b039438296a6d"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "22742d6ffbad9bb41e01"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "fd45921a5d24ee39bb80"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "e0f67d0f94383d4798ea"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "fd83be1805d3bb131bf7"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "fcc512661b0214a4f545"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "f5eb10e1371327e131ec"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "e39a4d0b425ae0b4ab97",
+            "f8786aa962aa483fc483"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "25073aa4f8e4062a01dd"
+          ]
+        },
+        {
+          "reason": "insufficient_sources",
+          "required": 2,
+          "article_ids": [
+            "1882c7067b568e46e806"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "afce35a9fe33d5997295",
+            "cf649f7a216afc90cb7c",
+            "0e46020fa461f0a5970f",
+            "252e2042a6cc15d8de1f",
+            "0e71b43272bc6b89cc68",
+            "94ec33943c0d3964dd60"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "af3c071a3e5337317a85",
+            "cabce19b9bd65be50094"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "embeddings:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "feed_audit:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": null,
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 130,
+        "candidate_bundles": 3,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 20,
+        "reused_event_ids": 0,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 6,
+        "candidate_clusters": 53,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 33,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "standard": 2
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 2,
+        "dedupe_degraded": true
+      }
+    },
+    "tech": {
+      "selected": 172,
+      "published": 0,
+      "quarantined": [
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "fb21598f103b7eb68c59",
+            "dc71cf4506e9ecf63c65",
+            "6313393520797f59e164",
+            "15b9a0566e54e02b6d43"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "faa994a53de4ef698884",
+            "a1e7d1694b05d473c257"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "fa5475958f55f12ed26a",
+            "f8fde9668eae387606c3"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "eea7bd1e195411c57508",
+            "cd28b27967ff169584e2",
+            "c1f17399e9a78d19864a",
+            "c15d8429ccf8a4aaad56",
+            "939a3b39b52e6a0ed1f0",
+            "7ba8775e88c51b12d932",
+            "7502e2988f1f122a957c",
+            "718be40819a0a5131953",
+            "57438b26fee768f840d8",
+            "37100ab5fab07fd44730"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "ee76dbde761514a817fd",
+            "a9d0275059758867b03f",
+            "4a9e9d328fa3a484577a"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "e3cffb7c585e23bdae9a",
+            "aeb2811c1406ed9a74df",
+            "2fe8c6345b117b2db80c"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "d923d5bee682b95137a5",
+            "953a9cfee753c1d52837",
+            "3cf955c4fd0ae2a453ea"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c9186fcb71c14e34f6f0",
+            "8efda70519efd36ca590",
+            "691601b33b49ca57dcfd"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c0ffbcdeddfecbf37e21",
+            "b61554c6d43913007b4e",
+            "a1d4347400d27bc06b4e",
+            "961ca14145174a464024",
+            "7e822593b20255da9321",
+            "27b379ff2efebfb8e6c8",
+            "0fc5429cab4f1a7d0239"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "b8bd899daf6e49891307",
+            "9d8c0e90141c2c80a6b1",
+            "7de5347ff6080398d32f",
+            "628354091947c0847c49",
+            "563c32c6ab5defaf4956",
+            "496eb7ed9962c466ec7d",
+            "3281ad06097ecc9cc32a"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "b4dee4012bd3289697d3",
+            "6b30e06ef76e26d52403",
+            "5c1eeaad9308388a8c25"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "a58d660bf3bea9a6c944",
+            "a332ebe803ff43d7ea9a",
+            "7a889611f5011715b261",
+            "4b909aad6562b9f4deae",
+            "23e23abbcb7c350d1d76",
+            "082179b04a5a3552f593"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "a0d8c16e6685c5dd2a96"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "939d0617328e32c5b2e2",
+            "89668743c79a9bb35f9a"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "5371dc3d7f8d402ce721",
+            "30b6221d9ba1f0e9f6a5"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "42da36572f7690d0c100"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "2d5d8a794396b52516b0"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "f2c27607191d9d3efc0a"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "50540ee0b8f51872a7a7"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "f03c66146b1eccc133a8"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "embeddings:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "feed_audit:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": null,
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 177,
+        "candidate_bundles": 19,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 20,
+        "reused_event_ids": 0,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 10,
+        "candidate_clusters": 121,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 101,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "standard": 20
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 20,
+        "dedupe_degraded": true
+      }
+    },
+    "ukraine-war": {
+      "selected": 54,
+      "published": 12,
+      "quarantined": [
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "65200e729a72531fd2d1",
+            "1e8a129aa8ece3f90ea0"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "22a8e4d62713b35c2827",
+            "def6ac802f856b882221",
+            "bec310407c84b47031fe"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "5a557a7d5311e96504e6",
+            "5418819ae3334cbc02f2"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "083905799eea12b29705"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "6e6d0aec3b40ed37ca44"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "5106f607ee1c00041423"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "54631725364ec47046f2"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "2ee04c2cdea44fa1a533"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "2a5b4cf4ef4df899daf3"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "6a6fa2bef04581574e84"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "027264ec175e0f574eaa"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "9085156e9a97a00940ba"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "5761d7ad2558ecde2c7c"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c201425e94cc4dbb3dc8"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "17a3bac8657a64cfa443"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "667a81ac7d34ae508691"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "80109a5324d8cd137b37"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "embeddings:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "event_match:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "feed_audit:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": null,
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 5,
+        "candidate_bundles": 3,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 24,
+        "reused_event_ids": 1,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 3,
+        "candidate_clusters": 50,
+        "synthesized_clusters": 24,
+        "skipped_low_rank_clusters": 26,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "same_perspective": 3,
+          "single_source": 28
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 17,
+        "dedupe_degraded": true
+      }
+    },
+    "world": {
+      "selected": 236,
+      "published": 0,
+      "quarantined": [
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "45619059dc4f142dcba9",
+            "a38fd3217046fbb51335",
+            "e32baca3b970753381d9",
+            "3256c7d6bedf6c15df39"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "ceccfcebf7f6df0e3ae4",
+            "faefda4c050a8d86c8a3",
+            "84d20eb2a6d97456e95c",
+            "f96ab56e1d50272e5656"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "da14bb61700ef2a8e483",
+            "47de40e4b95d3ec7dd0e"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "a72a501a2d784718c6ea",
+            "2f0da784490aa7afd536",
+            "6f57bcdea4e03c5e5e79"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "7d5555e6c70bf464070b",
+            "784b580768d1243feff2"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "36c8563cf64191e9c065",
+            "fa3b5a4218ae7a90c5dc"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "f4faca831f3923745b8e"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "f3970c6736d044cb2df4"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "e3e7378b11affccd6810"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c9ed2d361c75116c58ef"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c98cb7ef724b63aa077b"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "c7515666753d243db965"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "bed41a5f6bdef5e6eaae"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "bc4edaf33e756aefafea"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "bb0620ff0f0d61730557"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "9b4b164a06e60d070821"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "8f256e0fe40338159ca7"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "80110d9ea92a052fb439"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "7155abbf83f3024f77b0"
+          ]
+        },
+        {
+          "reason": "non_russian_editorial_output",
+          "article_ids": [
+            "5ef763bc02fd79dd3c2a"
+          ]
+        }
+      ],
+      "dedupe": {
+        "degraded": true,
+        "errors": [
+          "embeddings:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "partition:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "synthesis:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'API_K",
+          "feed_audit:ClientError:400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'INVALID_ARGUMENT', 'details': [{'@type': 'type.googleapis.com"
+        ],
+        "generation_model": "gemini-2.5-flash-lite",
+        "embedding_model": null,
+        "thresholds": {
+          "lookback_hours": 72,
+          "candidate_similarity": 0.72,
+          "max_neighbors": 8,
+          "max_bundle_size": 20,
+          "event_match_confidence": 0.9,
+          "final_audit_confidence": 0.95
+        },
+        "semantic_candidate_pairs": 25,
+        "candidate_bundles": 12,
+        "ai_partitions": 0,
+        "ai_splits": 0,
+        "fallback_events": 20,
+        "reused_event_ids": 0,
+        "article_overlap_merges": 0,
+        "final_audit_merges": 0,
+        "largest_bundle": 4,
+        "candidate_clusters": 219,
+        "synthesized_clusters": 20,
+        "skipped_low_rank_clusters": 199,
+        "local_title_duplicate_groups": 0,
+        "verification_statuses": {
+          "standard": 20
+        },
+        "orphaned_events": 0,
+        "non_russian_events_filtered": 20,
+        "dedupe_degraded": true
+      }
+    }
+  }
+}
